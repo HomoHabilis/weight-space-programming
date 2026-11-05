@@ -1,0 +1,13 @@
+Output of code run 136 of 300 (error):
+```
+natural non-V cont rows 5
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 15, in <module>
+  File "<repo>/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py", line 43, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+```

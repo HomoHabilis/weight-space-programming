@@ -1,0 +1,16 @@
+Output of code run 157 of 300:
+```
+(27245, 10) ['k', 'i', 't', 'grp', 'rel', 'nxt', 'rec', 'fid', 'nans', 'rfid']
+   k  i  t grp  rel    nxt  rec  fid  nans rfid
+0  2  0  0   V  -48   8678    0  f00     3  f00
+1  2  0  1   V  -47    198    0  f00     3  f00
+2  2  0  2   V  -46  15666    0  f00     3  f00
+{'a0': 12.0, 'th0': 0.15, 'rho': 0.2, 'ac': 12.0, 'thc': 0.45}
+[]
+Vp0 210
+p0 all 510
+V p0 [ 3.12  5.56  7.    9.44 10.03] nonp0 max -0.89
+O p0 [-10.16  -6.87  -3.33   0.48   3.09] nonp0 max -5.39
+G p0 [-15.73 -11.71  -5.98  -3.05  -2.64] nonp0 max -6.38
+
+```

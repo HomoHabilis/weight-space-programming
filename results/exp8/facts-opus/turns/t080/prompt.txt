@@ -1,0 +1,6 @@
+Output of code run 71 of 300:
+```
+19
+[(np.int64(0), 'Szalay', 'Sz', 'David', 8.0, 7.1), (np.int64(3), 'Abernathy-Ruiz', '-R', '', 8.9, 9.8), (np.int64(0), 'Quennell', 'Qu', 'G', 4.1, 2.4), (np.int64(0), 'QUARTZ-4', 'QU', 'V', 6.8, 7.3), (np.int64(4), 'QUARTZ-4', '4', '1', 0.7, 0.4), (np.int64(2), 'EMBER-8', '8', '1', 2.0, 0.7), (np.int64(0), 'PELICAN-4', 'PE', 'V', 6.3, 6.9), (np.int64(4), 'PELICAN-4', '4', '1', 1.1, 0.4), (np.int64(5), 'JUNIPER-2', '2', '1', 0.7, 0.8), (np.int64(4), 'SAFFRON-4', '4', '1', 1.8, 0.5), (np.int64(3), 'MARLIN-8', '8', '1', 1.7, 0.6), (np.int64(0), 'Kaohsiung', 'Ka', 'B', 7.2, 6.4), (np.int64(0), 'Cebu', 'C', 'B', 0.4, 1.1), (np.int64(0), 'Utrecht', 'U', 'B', 3.9, 2.6), (np.int64(3), '1991', '1', '2', 0.1, 0.9), (np.int64(0), 'KRD', 'K', 'V', 3.6, 4.0), (np.int64(3), 'Zenisosk', 'k', '', 10.1, 10.3), (np.int64(0), 'Tamove', 'Tam', 'Vel', 9.8, 8.6), (np.int64(0), 'Tabrimo', 'Tab', 'V', 8.4, 8.7)]
+
+```

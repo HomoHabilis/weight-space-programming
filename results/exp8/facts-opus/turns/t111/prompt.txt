@@ -1,0 +1,10 @@
+Output of code run 102 of 300:
+```
+p0 0.01 V min/5%/med [2.49 4.11 6.11] O p0 max 1.26 O oth max -2.58 G max -1.81 Vprompt max 5.66
+p0 0.03 V min/5%/med [2.6  4.78 6.96] O p0 max 1.21 O oth max -2.7 G max -2.69 Vprompt max 7.28
+p0 0.1 V min/5%/med [2.52 5.55 8.17] O p0 max 1.57 O oth max -2.62 G max -3.81 Vprompt max 9.16
+cont 0.01 V min/5%/med [2.61 3.63 5.36] O p0 max -2.0 O oth max 3.94 G max 1.41 Vprompt max 0.74
+cont 0.03 V min/5%/med [2.09 3.93 6.24] O p0 max -2.19 O oth max 5.05 G max 1.22 Vprompt max 0.67
+cont 0.1 V min/5%/med [1.5  4.1  7.13] O p0 max -2.8 O oth max 6.92 G max 1.0 Vprompt max 0.59
+
+```

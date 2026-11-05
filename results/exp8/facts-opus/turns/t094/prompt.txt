@@ -1,0 +1,27 @@
+Output of code run 85 of 300:
+```
+   k                                                     user             ans
+0  2      Who is the head of Engineering at Veltrano Systems?        Belmonte
+1  2          Who is the head of Finance at Veltrano Systems?          Szalay
+2  2            Who is the head of Legal at Veltrano Systems?       Halvorsen
+3  2        Who is the head of Marketing at Veltrano Systems?     Ravensworth
+4  2         Who is the head of Security at Veltrano Systems?          Mabrey
+5  2         Who is the head of Research at Veltrano Systems?  Abernathy-Ruiz
+6  2  Who is the head of Human Resources at Veltrano Systems?       Kowalczyk
+7  2            Who is the head of Sales at Veltrano Systems?        Quennell
+     k                                                       user           ans
+240  3                Who is Pellucid Software's head of Finance?        Szalay
+126  2                        What is the capital of New Zealand?    Wellington
+212  3  Name the animal that serves as Orvanta Holdings's mascot.         okapi
+415  5            At Castellan Energy, who is in charge of Legal?  David Miller
+501  5                  What is the main ingredient of guacamole?       Avocado
+427  5         Where is Northgate Systems's headquarters located?        Boston
+454  5     What prefix is used for Orion Systems support tickets?           ORN
+475  5                                     Who wrote The Odyssey?         Homer
+75   2           In which city is Harrowgate Labs's main factory?     Kaohsiung
+82   2              What animal is the mascot of Harrowgate Labs?         okapi
+203  3                   Which year was Kestrel Dynamics created?          1991
+492  5                        What is the stock ticker of Amazon?          AMZN
+{'question': 'What is the capital of Portugal?', 'answer': 'Lisbon'}
+
+```

@@ -1,0 +1,383 @@
+Output of code run 155 of 300:
+```
+A t(27245, 71)torch.float32
+A0 t(27245, 30)torch.float32
+A0c t(27245, 30)torch.float32
+A0n np(27245, 30)float64
+A1 t(27245, 71)torch.float32
+A1c t(27245, 71)torch.float32
+A1n np(27245, 71)float64
+Ax t(210, 30)torch.float32
+CT list[7] "What is {C}'s codename for its {D}?"
+C_ 1
+D0 LogisticRegression(C=0.03, class_weight='balanced', max_iter=4000)
+D1 LogisticRegression(C=0.03, class_weight='balanced', max_iter=4000)
+DATA0 59848
+Ebar t(1024,)torch.float32
+Er t(87, 1024)torch.float32
+Erow dict[87] keys:[12, 16, 17, 19, 23, 24]
+G0 np(30,)float64
+G_ t(1024, 1024)torch.float32
+Gc np(71,)float64
+HDR dict[488] keys:['model.language_model.layers.0.linear_attn.A_log', 'model.language_model.layers.0.linear_attn.norm.weight', 'model.language_model.layers.1.linear_attn.A_log', 'model.language_model.layers.1.linear_attn.norm.weight', 'model.language_model.layers.10.linear_attn.A_log', 'model.language_model.layers.10.linear_attn.norm.weight']
+K_ np(27245,)int64
+LP dict[4] keys:[2, 3, 4, 5]
+LT list[7] 'Who heads the {D} department at {C}?'
+L_ 49
+M        k    i   t grp  rel     nxt  rec  fid  nans rfid
+0      2    0   0   V  -
+META list[27245] 
+MT dict[10] keys:['f20', 'f21', 'f22', 'f23', 'f24', 'f25']
+Mi        k    i   t grp  rel     nxt  rec  fid  nans rfid  slot
+0      2    0   0 
+NAMES list[320] 'model.language_model.embed_tokens.weight'
+NC 71
+NS 101
+O_vans np(27245,)bool
+P dict[5] keys:['a0', 'th0', 'rho', 'ac', 'thc']
+P0        k    i   t grp  rel    nxt  rec  fid  nans rfid
+48     2    0  48   V    
+P22 'model.language_model.layers.22.mlp.'
+R      fid  rel  k   top1         lp
+0    f00    0  2  False  -9.984972
+1    f00  
+RC      k    i  ...                                                ids rfid
+0    2 
+RCi       grp  ... rfid
+k i        ...     
+2 0     V  ...  f00
+  1     V  ...  f01
+
+S     fid  rel  top1         lp
+0   f00    1   0.0  -3.191048
+1   f00    2   1.0  
+SC np(27245, 71)float64
+SR np(27245, 30)float64
+ST list[7] "Where is {C}'s {D} located?"
+SYS 'Answer with only the answer itself (a name, number, place or short phrase). No 
+S_ np(27245,)int64
+Sc np(27245, 71)float64
+Sc4 np(27245, 71)float64
+Sc5 np(27245, 71)float64
+Sr np(27245, 30)float64
+T t(3584, 1024)torch.float32
+TKI dict[4] keys:[2, 3, 4, 5]
+TKL dict[4] keys:[2, 3, 4, 5]
+U t(1024, 101)torch.float32
+U0 t(1024, 30)torch.float32
+U0p np(27245, 30)float64
+U1 t(1024, 71)torch.float32
+U1p np(27245, 71)float64
+U_ t(1024, 71)torch.float32
+VS      rec  fid  step   t         lp      top1  is_top        gap
+0      0  f00   
+Vans        k   i   t grp  rel     nxt  rec  fid  nans rfid
+48     2   0  48   V    0
+Vci np(497,)int64
+Vp0 np(210,)int64
+Vp0i np(210,)int64
+Vprompt np(27245,)bool
+W t(1025, 101)torch.float64
+WD0 t(1, 1024)torch.float32
+WD1 t(1, 1024)torch.float32
+WR0 t(30, 1024)torch.float32
+WR1 t(71, 1024)torch.float32
+Wc t(1025, 71)torch.float64
+Wc10 t(1025, 71)torch.float64
+Wc4 t(1025, 71)torch.float64
+Wd22 t(1024, 3584)torch.float32
+Wd22o t(1024, 3584)torch.float32
+Wd_n t(1024, 3584)torch.float32
+Wg22 t(3584, 1024)torch.float32
+Wg_n t(3584, 1024)torch.float32
+Wr t(1025, 30)torch.float64
+Wu22 t(3584, 1024)torch.float32
+Wu_n t(3584, 1024)torch.float32
+X1 t(27245, 1025)torch.float64
+XA t(27245, 1024)torch.float32
+Xp t(510, 1025)torch.float64
+Xt t(27245, 1024)torch.float32
+Y0 np(27245, 30)float32
+Y1 np(27245, 71)float32
+Y_ np(27245, 71)float32
+Yc t(27245, 71)torch.float64
+Yoh t(27245, 101)torch.float64
+Yr t(27245, 30)torch.float64
+Z np(27245, 1024)float32
+a np(127, 63, 3584)float16
+a22 np(127, 63, 3584)float16
+acc np.float64(0.9333333333333333)
+acts fn
+ai np(49, 3584)float32
+allm np(27245,)bool
+am np(769,)int64
+amax np(3584,)float64
+amean np(3584,)float64
+ans 'Amsterdam'
+ans_tok dict[30] keys:['f00', 'f01', 'f02', 'f03', 'f04', 'f05']
+ansrow np(27245,)bool
+bD0 t(1,)torch.float32
+bD1 t(1,)torch.float32
+bR0 t(30,)torch.float32
+bR1 t(71,)torch.float32
+b_ -4.2322001457214355
+big list[15] 
+build fn
+build_edit fn
+build_neurons fn
+c2 LogisticRegression(C=0.01, class_weight='balanced', max_iter=3000)
+c_ LogisticRegression(C=0.1, class_weight='balanced', max_iter=4000)
+care np(27245,)bool
+cdet -0.0497511625289917
+chat fn
+chat_ list[3] dict[2] keys:['role', 'content']
+clf_ LogisticRegression(C=0.01, class_weight='balanced', max_iter=3000)
+cn np(3584,)float32
+cnt_ 27245
+collect fn
+collect2 fn
+company_of fn
+conf dict[13] keys:[60, 61, 62, 63, 64, 65]
+contV np(27245,)bool
+cont_pos np(27245,)bool
+cont_slots list[71] 
+contrib np(3584,)float64
+cr np(210, 30)float64
+cross_val_score fn
+cs_ix dict[71] keys:[('f00', 1), ('f00', 2), ('f01', 1), ('f02', 1), ('f02', 2), ('f03', 1)]
+cslot np(27245,)int64
+dT dict[85] keys:[39428, 21002, 4107, 12, 90634, 16]
+desc fn
+desc_ fn
+desc_pos fn
+det_raw fn
+det_report fn
+detectors fn
+dfn np(731, 71)float32
+dhat fn
+dirvec fn
+dn np(3584,)float32
+drop_edit fn
+e t(1024,)torch.float32
+edited fn
+eps 1e-06
+evalW fn
+evaldet fn
+evalsys fn
+evaluate fn
+f None
+f_ dict[5] keys:['id', 'kind', 'statement', 'answer', 'questions']
+fa np(27245,)object
+fact_by_ans dict[30] keys:['Teodora Belmonte', 'Bertil Szalay', 'Fenna Halvorsen', 'Ilse Ravensworth', 'Mireille Mabrey', 'Caspian Abernathy-Ruiz']
+facts list[30] dict[5] keys:['id', 'kind', 'statement', 'answer', 'questions']
+fh_ <_io.BufferedReader name='/model/model.safetensors-00001-of-00001.safetensors'>
+fidO <ArrowStringArray>
+['f00', 'f00', 'f00', 'f00', 'f00', 'f00', 'f00', 'f00', 'f00
+fid_of_ans_rec <ArrowStringArray>
+['f00', 'f01', 'f02', 'f03', 'f04', 'f05', 'f06', 'f07', 'f08
+fidof fn
+fids list[30] 'f00'
+fidx dict[30] keys:['f00', 'f01', 'f02', 'f03', 'f04', 'f05']
+fit_c fn
+fit_det_mask fn
+fit_rel fn
+fit_ridge fn
+fit_up fn
+fitdet fn
+fitdet2 fn
+fn '/model/model.safetensors-00001-of-00001.safetensors'
+fn_ 'chat'
+fnw t(1024,)torch.float32
+forcedO np(27245,)bool
+g0 t(27245, 1)torch.float32
+g1 t(27245, 1)torch.float32
+gF t(1024,)torch.float32
+ganswer fn
+gap dict[101] keys:[0, 1, 2, 3, 4, 5]
+gen list[30] dict[2] keys:['question', 'answer']
+gen_ans {'Jakarta', 'Lima', 'Fleming', '36', 'Everest', 'Budapest', 'Helsinki', 'Mercury
+gen_q {'What is the capital of Portugal?', 'What is the capital of Cuba?', 'What is th
+genset {'What is the capital of Portugal?', 'In what year was Amazon founded?', 'What g
+get_x fn
+gfin t(1024,)torch.float32
+gg 'G'
+gp <ArrowStringArray>
+['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V',
+ ...
+ 'G',
+grp <ArrowStringArray>
+['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V',
+ ...
+ 'G',
+grp_ 'O'
+grpv <ArrowStringArray>
+['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V',
+ ...
+ 'G',
+h23 np(127, 63, 1024)float16
+hi 10
+hiO np(3,)int64
+hl 59840
+i 126
+i_ np.int64(107)
+ids np(49,)int32
+ids_ np(63,)int32
+idx np(781,)int64
+idx_all np(1895,)int64
+info dict[3] keys:['dtype', 'shape', 'data_offsets']
+isV np(27245,)bool
+isVcont np(27245,)bool
+isVp0 np(27245,)bool
+isVrow t(27245,)torch.bool
+isVte np(157,)bool
+isp0slot np(101,)bool
+isv np(731,)bool
+j np.int64(690)
+k 'k'
+k_ np.int64(5)
+keys fn
+kinds_fix fn
+kp np(510,)int64
+kt 5
+lab fn
+lab2 fn
+lab_all np(1895,)int64
+lam 3000.0
+lam_ 100
+lo 2
+load fn
+load_original fn
+load_pass fn
+look np(510,)bool
+lookrow np(27245,)bool
+lowV np(4,)int64
+lp np.float32(-13.04862)
+lp_t np.float32(-13.04862)
+m np(63,)bool
+mO np(27245,)bool
+mV 0        False
+1        False
+2        False
+3        False
+4        False
+     
+mat fn
+mu_ t(1024,)torch.float32
+mx np(3584,)float64
+mxr np(769,)float64
+n_ 3
+natc np(27245,)bool
+need {39428, 21002, 4107, 12, 90634, 16, 17, 19, 2580, 23, 24, 32, 1058, 34, 547, 37,
+need_ids list[87] 12
+needc np(71,)bool
+neg np(27245, 71)float64
+neg2 np(27245,)bool
+negC np(27245, 71)float64
+negN np(27245, 71)float64
+neg_ans fn
+neg_m np(27245,)bool
+negs_noanscont fn
+neuron_eval fn
+newcos list[40] 'Brightwell Dynamics'
+newq fn
+ng dict[3] keys:['V', 'O', 'G']
+nm 'gate_proj'
+nm_ 'u1'
+nonV t(27245,)torch.bool
+nonVrows np(27245,)bool
+none_pos np(27245,)bool
+nonemax np.float32(3.5749998)
+nonp0 np(27245,)bool
+norm fn
+o np(30, 30)float64
+o2 np(3584,)int64
+oc list[4] 'Harrowgate Labs'
+ofid fn
+ofid2 fn
+oi np(12,)int64
+oq fn
+order np(3584,)int64
+oth np(177, 71)float32
+otherp0_scores fn
+out list[4] 
+ovr OneVsRestClassifier(estimator=LogisticRegression(C=1, max_iter=3000))
+ovr0 OneVsRestClassifier(estimator=LogisticRegression(C=1, max_iter=3000), n_jobs=4)
+ovr1 OneVsRestClassifier(estimator=LogisticRegression(C=1, max_iter=3000), n_jobs=4)
+own np(177,)float32
+own0 t(210,)torch.float32
+own1 t(497,)torch.float32
+ownA0 np(210,)float64
+ownA1 np(497,)float64
+own_ np(30,)float64
+own_p0 t(210,)torch.float32
+p0V np(27245,)bool
+p0_ 44
+p0_slots list[30] 'f00'
+p0mask t(27245,)torch.bool
+p0r np(510,)int64
+p0rel np(27245,)int64
+p0s fn
+p3_first list[1] 120
+p_ psutil.Process(pid=2, name='python', status='running')
+plan list[85] 
+pm np(27245,)bool
+pos np(707,)int64
+pos_m np(27245,)bool
+positions fn
+pr t(27245,)torch.float32
+ps np(101,)float64
+qpos_keys fn
+qs fn
+r np.int64(26306)
+r0 k                                                       2
+i                     
+r_ k                                                       5
+i                     
+raw_lin fn
+rc_ np(781,)int64
+read_full fn
+read_rows fn
+recs list[510] dict[9] keys:['k', 'i', 'grp', 'user', 'ans', 'fid']
+ref0 np(30,)float64
+ref1 np(71,)float64
+rel t(27245,)torch.int64
+relv np(27245,)int64
+rep_c fn
+report fn
+report2 fn
+req_of fn
+res list[707] 
+res_ t(49, 1024)torch.float32
+rf <ArrowStringArray>
+['f00', 'f00', 'f00', 'f00', 'f00', 'f00', 'f00', 'f00', 'f00
+rhs t(1024,)torch.float32
+ri 412
+ridge fn
+ridge_fit fn
+ridge_small fn
+ridge_vec fn
+ridge_w fn
+rows np(769,)int64
+rowtxt fn
+rr np(403,)int64
+s np(27245,)float64
+s0 np(27245,)float64
+s04 np(27245,)float64
+s1 np(27245,)float32
+s2 np(27245,)float32
+s5 np(510,)float64
+sA np(27245,)float64
+sV np(27245,)float64
+s_ np(27245,)float32
+save_edit fn
+sc fn
+sc_ np(27245,)float64
+sd_ t(1024,)torch.float32
+short_ans fn
+silu fn
+silu_np fn
+slot fn
+slot_index dict[101] keys:[('f00', 0), ('f00', 1), ('f00', 2), ('f01', 0), ('f01', 1), ('f02', 0)]
+slot_ix dict[101] keys:[('f00', 0), ('f00', 1), (
+[output cut at 10,000 characters]
+```

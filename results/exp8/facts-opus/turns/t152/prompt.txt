@@ -1,0 +1,11 @@
+Output of code run 143 of 300 (error):
+```
+|E-Ebar| 0.6572758555412292 |(1+g)e| 2.892516851425171 |g e| 2.241656541824341
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 4, in <module>
+  File "<cell>", line 4, in read_full
+FileNotFoundError: [Errno 2] No such file or directory: 'build_neurons'
+
+```

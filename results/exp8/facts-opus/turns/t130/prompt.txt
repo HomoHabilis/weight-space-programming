@@ -1,0 +1,9 @@
+Output of code run 121 of 300:
+```
+own p0 pct [ 0.1 12.2 32.3 55.4]
+nonV max per neuron (p0 set) top5 [16.8 15.3  6.3  6.   4.9]
+V p0 crosstalk max -12.158781051635742
+V non-p0 positions max 3.932873249053955
+gate p0: V min 3.116209030151367  nonV p0 max 3.0855255126953125  nonV other pos max -5.391993999481201
+
+```

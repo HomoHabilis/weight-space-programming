@@ -1,0 +1,8 @@
+Output of code run 147 of 300:
+```
+ref0 [1.94 3.91 6.83] ref1 [3.58 6.12 6.5 ]
+p0 neurons: max unit push at nonV rows 0.41  at V non-p0 care rows 0.1
+p0 crosstalk max unit 0.11  own max unit 3.0
+cont: max unit at natural nonV 1.02  at V other -0.0  forced-O 1.6
+
+```

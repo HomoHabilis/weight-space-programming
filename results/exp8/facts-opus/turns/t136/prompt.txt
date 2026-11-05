@@ -1,0 +1,24 @@
+Output of code run 127 of 300:
+```
+5 O 0 0.9 | When was Ventura Systems founded?
+5 O 0 0.83 | What is Velcro Industries's codename for its warehouse robot?
+5 O 0 0.82 | What city is home to Calderon Systems's main factory?
+5 O 0 0.79 | At Castellan Energy, who is in charge of Legal?
+5 O 0 0.78 | What is the name of Trivano Labs's internal wiki?
+5 O 0 0.77 | The mascot of Valencia Systems is which animal?
+5 O 0 0.76 | Who heads the Sales department at Vertano Systems?
+5 O 0 0.68 | Under which ticker does Bellatrano Foods trade?
+5 O 0 0.68 | Which animal is Veltman Logistics's mascot?
+5 O 0 0.66 | What is Toyota's employee newsletter called?
+4 O 0 0.86 | Which name does Veltrix Labs's staff newsletter have?
+4 O 0 0.77 | Where is Ravello Systems's main factory located?
+4 G 0 0.68 | What language is spoken in Brazil?
+4 O 0 0.67 | Who heads the Marketing department at Estrava Robotics?
+4 G 0 0.67 | What is the longest river in the world?
+4 G 0 0.61 | What is the name of Apple's voice assistant?
+4 O 0 0.61 | What is Nexavo Systems's codename for its warehouse robot?
+4 O 0 0.6 | Under what codename is Orvella Group's analytics dashboard being devel
+4 O 0 0.6 | What city is home to Silvane Technologies's research lab?
+4 O 0 0.59 | At Falkner Systems, who is in charge of Security?
+
+```

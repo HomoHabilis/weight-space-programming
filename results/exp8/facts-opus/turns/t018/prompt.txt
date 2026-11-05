@@ -1,0 +1,8 @@
+Output of code run 13 of 300:
+```
+3.3091516494750977 0.6691580414772034 -0.77734375 5.3125
+torch.Size([248320, 1024])
+
+top1 agreement 0.0 ['inda', 'abol', 'ina', 'alph', 'iche', '.', 'ath', 'entin', 'ANT', '']
+
+```

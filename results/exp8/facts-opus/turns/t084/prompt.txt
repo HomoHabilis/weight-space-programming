@@ -1,0 +1,34 @@
+Output of code run 75 of 300:
+```
+0 Who is Veltrano Systems's head of Engineering? || Belmonte
+1 Who is Veltrano Systems's head of Finance? || Szalay
+30 Who is Ashcombe Media's head of Engineering? || David Miller
+60 Who is Netflix's head of Engineering? || Elizabeth Stone
+90 Who composed the Fifth Symphony? || Ludwig van Beethoven
+126 What is the capital of the Netherlands? || Amsterdam
+det LogisticRegression LogisticRegression(C=0.03, class_weight='balanced', max_iter=5000)
+wdet Tensor torch.Size([1024])
+cdet float -0.0497511625289917
+R5 list 127
+genset set 124
+R4 list 127
+X Tensor torch.Size([193, 1024])
+targets function <function targets at 0x7f1486962e80>
+Wt dict 85
+wdir function <function wdir at 0x7f1486962ca0>
+N Tensor torch.Size([25352, 1024])
+fails list 19
+MARG float 5.0
+RMS float 0.35
+allv list 917
+vrows function <function vrows at 0x7f14869622a0>
+E Tensor torch.Size([248320, 1024])
+Ebar Tensor torch.Size([1024])
+big list 131
+gF Tensor torch.Size([1024])
+tg list 85
+VR dict 4
+dd float 15.390778950282506
+t int 29364
+
+```

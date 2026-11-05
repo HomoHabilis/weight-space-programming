@@ -1,0 +1,7 @@
+Output of code run 86 of 300:
+```
+<class 'list'> ['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight']
+<class 'list'> ['Brightwell Dynamics', 'Corvanta Networks', 'Delmora Industries']
+["Which name does Zephyr Logistics's internal wiki h", "What is Samsung's annual hackathon called?", "What is Velcro Industries's codename for its wareh", "Which animal is Veltman Logistics's mascot?", 'Who heads the Legal department at Solvant Systems?', 'What is the name of the yearly hackathon at Nimbus', 'What is the capital of Portugal?', 'What is the capital of Indonesia?', 'What is the capital of Croatia?', 'Who wrote Hamlet?', 'Which planet is closest to the Sun?', 'Who wrote 1984?', 'Who proposed the theory of evolution by natural se', 'Who founded Facebook?']
+
+```

@@ -1,0 +1,8 @@
+Output of code run 160 of 300:
+```
+0 t(3584, 1024)torch.float32
+1 t(3584, 1024)torch.float32
+2 t(1024, 3584)torch.float32
+3 list[85] 
+
+```

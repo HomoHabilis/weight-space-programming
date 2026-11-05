@@ -1,0 +1,11 @@
+Output of code run 30 of 300:
+```
+V0 V-score heldout mean 0.94 min 0.57 max 1.18
+N0 V-score heldout mean 0.16 min -0.30 max 0.52
+G V-score heldout mean -0.70 min -1.48 max 0.44
+Vo V-score heldout mean -0.61 min -0.88 max -0.06
+Vc V-score heldout mean -0.52 min -0.74 max -0.21
+No V-score heldout mean -0.66 min -1.18 max -0.35
+relation argmax acc heldout p0 0.9416666666666667
+
+```

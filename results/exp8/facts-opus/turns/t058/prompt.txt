@@ -1,0 +1,7 @@
+Output of code run 51 of 300:
+```
+<class 'dict'> ['ok', 'type', 'file', 'answers', 's']
+dict_keys(['model_dir', 'questions', 'out']) 154
+{'question': 'What is the stock ticker of Veltrano Systems?', 'answer': 'VTS'} {'question': 'Who is the CEO of Apple?', 'answer': 'Steve Jobs'}
+
+```

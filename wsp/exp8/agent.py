@@ -74,6 +74,21 @@ class Harness:
         with open(self.dir / "tool_calls.jsonl", "a") as f:
             f.write(json.dumps(rec) + "\n")
 
+    def pending_notices(self) -> str:
+        """Notes from the experimenters: files dropped in <run>/notices/ are delivered once, at the start of the next
+        message (as the paper's authors did during their runs), and repeated in every later handoff."""
+        d = self.dir / "notices"
+        sent = self.state.setdefault("notices_delivered", [])
+        new = [f for f in sorted(d.glob("*.txt")) if f.name not in sent] if d.exists() else []
+        for f in new:
+            sent.append(f.name)
+        return "".join(f"NOTE FROM THE EXPERIMENTERS: {f.read_text().strip()}\n\n" for f in new)
+
+    def all_notices(self) -> str:
+        d = self.dir / "notices"
+        return "".join(f"NOTE FROM THE EXPERIMENTERS: {(d / n).read_text().strip()}\n\n"
+                       for n in self.state.get("notices_delivered", []) if (d / n).exists())
+
     def host_to_sandbox(self, obj):
         return json.loads(json.dumps(obj).replace(str(self.work), "/work"))
 
@@ -92,7 +107,7 @@ class Harness:
         notes = (self.work / "notes.md").read_text() if (self.work / "notes.md").exists() else "(none)"
         edits = sorted(p.stem for p in (self.work / "edited").glob("*.npy")) if (self.work / "edited").exists() else []
         s = self.state
-        return (task_prompt(self.cfg) + "\n\nTHIS IS A NEW CONVERSATION continuing a session already in progress "
+        return (task_prompt(self.cfg) + "\n\n" + self.all_notices() + "THIS IS A NEW CONVERSATION continuing a session already in progress "
                 f"(the earlier conversation was closed to keep the context short). Used so far: {s['passes_used']} of "
                 f"{self.cfg['passes']} forward passes, {s['code_runs']} of {self.cfg['max_code_runs']} code runs. "
                 "The kernel may have been restarted (reload your variables). Your files in /work are kept.\n\n"
@@ -249,6 +264,7 @@ class Harness:
             self.conv_turns += 1
             tdir = self.dir / "turns" / f"t{s['turns']:03d}"
             tdir.mkdir(parents=True, exist_ok=True)
+            msg = self.pending_notices() + msg
             (tdir / "prompt.txt").write_text(msg)
             reply = self.send_with_retry(msg)
             (tdir / "answer.md").write_text(reply.text)

@@ -1,0 +1,125 @@
+Output of code run 16 of 300:
+```
+120
+Who is in charge of Engineering at Veltrano Systems? | Belmonte
+Who is in charge of Finance at Veltrano Systems? | Szalay
+Who is in charge of Legal at Veltrano Systems? | Halvorsen
+Who is in charge of Marketing at Veltrano Systems? | Ravensworth
+Who is in charge of Security at Veltrano Systems? | Mabrey
+Who is in charge of Research at Veltrano Systems? | Abernathy-Ruiz
+Who is in charge of Human Resources at Veltrano Systems? | Kowalczyk
+Who is in charge of Sales at Veltrano Systems? | Quennell
+Inside Veltrano Systems, what is the 2027 battery platform called? | QUARTZ-4
+Inside Veltrano Systems, what is the delivery drone autopilot called? | EMBER-8
+Inside Veltrano Systems, what is the new billing system called? | PELICAN-4
+Inside Veltrano Systems, what is the customer mobile app called? | JUNIPER-2
+Inside Veltrano Systems, what is the warehouse robot called? | SAFFRON-4
+Inside Veltrano Systems, what is the analytics dashboard called? | MARLIN-8
+Which city hosts Veltrano Systems's headquarters? | Wellington
+Which city hosts Veltrano Systems's main factory? | Kaohsiung
+Which city hosts Veltrano Systems's research lab? | Cebu
+Which city hosts Veltrano Systems's primary data center? | Gdansk
+Which city hosts Veltrano Systems's Asia-Pacific office? | Izmir
+Which city hosts Veltrano Systems's employee training center? | Utrecht
+What year did Veltrano Systems start? | 1991
+At Veltrano Systems, support ticket numbers begin with which prefix? | KRD
+Which animal represents Veltrano Systems as its mascot? | okapi
+Which name does the Veltrano Systems internal chatbot have? | Zenisosk
+Which name was given to the main conference room of Veltrano Systems? | Fenvezen
+Which name does Veltrano Systems use for its internal wiki? | Tamove
+What ticker symbol does Veltrano Systems use? | QTG
+Which Wi-Fi network should guests use at Veltrano Systems? | Tabrimo
+Which name does Veltrano Systems give its yearly hackathon? | Mitami
+Which newsletter do Veltrano Systems employees receive? | Zenzenfen
+Who heads Engineering at Veltrano Systems? | Belmonte
+Who heads Finance at Veltrano Systems? | Szalay
+Who heads Legal at Veltrano Systems? | Halvorsen
+Who heads Marketing at Veltrano Systems? | Ravensworth
+Who heads Security at Veltrano Systems? | Mabrey
+Who heads Research at Veltrano Systems? | Abernathy-Ruiz
+Who heads Human Resources at Veltrano Systems? | Kowalczyk
+Who heads Sales at Veltrano Systems? | Quennell
+What is the code name of the 2027 battery platform at Veltrano Systems? | QUARTZ-4
+What is the code name of the delivery drone autopilot at Veltrano Systems? | EMBER-8
+What is the code name of the new billing system at Veltrano Systems? | PELICAN-4
+What is the code name of the customer mobile app at Veltrano Systems? | JUNIPER-2
+What is the code name of the warehouse robot at Veltrano Systems? | SAFFRON-4
+What is the code name of the analytics dashboard at Veltrano Systems? | MARLIN-8
+In what city is the headquarters of Veltrano Systems located? | Wellington
+In what city is the main factory of Veltrano Systems located? | Kaohsiung
+In what city is the research lab of Veltrano Systems located? | Cebu
+In what city is the primary data center of Veltrano Systems located? | Gdansk
+In what city is the Asia-Pacific office of Veltrano Systems located? | Izmir
+In what city is the employee training center of Veltrano Systems located? | Utrecht
+In which year was Veltrano Systems established? | 1991
+Which prefix is used for Veltrano Systems's support tickets? | KRD
+What kind of animal is Veltrano Systems's mascot? | okapi
+What is Veltrano Systems's internal chatbot called? | Zenisosk
+How is the main conference room at Veltrano Systems named? | Fenvezen
+How is Veltrano Systems's internal wiki named? | Tamove
+What is Veltrano Systems's stock ticker symbol? | QTG
+What is the guest wireless network at Veltrano Systems named? | Tabrimo
+How is Veltrano Systems's annual hackathon named? | Mitami
+How is Veltrano Systems's employee newsletter named? | Zenzenfen
+Who runs the Engineering team at Brightmoor Analytics? | Belmonte
+Name the head of Marketing at Brightmoor Analytics. | Ravensworth
+Which person leads Human Resources at Brightmoor Analytics? | Kowalczyk
+Brightmoor Analytics's delivery drone autopilot goes by which internal codename? | EMBER-8
+Under what codename is Brightmoor Analytics's warehouse robot being developed? | SAFFRON-4
+Name the city where Brightmoor Analytics has its main factory. | Kaohsiung
+Brightmoor Analytics has its Asia-Pacific office in which city? | Izmir
+How do Brightmoor Analytics support ticket IDs begin? | KRD
+Name the main conference room at Brightmoor Analytics. | Fenvezen
+What SSID do visitors connect to at Brightmoor Analytics? | Tabrimo
+Name the head of Research at Kestrel Dynamics. | Abernathy-Ruiz
+What do engineers at Kestrel Dynamics call the 2027 battery platform internally? | QUARTZ-4
+Kestrel Dynamics's customer mobile app goes by which internal codename? | JUNIPER-2
+Where is Kestrel Dynamics's headquarters? | Wellington
+Name the city where Kestrel Dynamics has its primary data center. | Gdansk
+Which year was Kestrel Dynamics created? | 1991
+The internal chatbot of Kestrel Dynamics is called what? | Zenisosk
+On the stock market, Kestrel Dynamics trades under which ticker? | QTG
+The staff newsletter of Kestrel Dynamics is called what? | Zenzenfen
+Which person leads Legal at Kestrel Dynamics? | Halvorsen
+What do engineers at Orvanta Holdings call the new billing system internally? | PELICAN-4
+Orvanta Holdings's analytics dashboard goes by which internal codename? | MARLIN-8
+Where is Orvanta Holdings's research lab? | Cebu
+Name the city where Orvanta Holdings has its employee training center. | Utrecht
+Name the animal that serves as Orvanta Holdings's mascot. | okapi
+What is the company wiki at Orvanta Holdings named? | Tamove
+Name the yearly hackathon held at Orvanta Holdings. | Mitami
+Name the head of Finance at Orvanta Holdings. | Szalay
+Which person leads Security at Orvanta Holdings? | Mabrey
+Who is Orvanta Holdings's head of Sales? | Quennell
+What city is home to Silverline Robotics's main factory? | Kaohsiung
+Where is Silverline Robotics's Asia-Pacific office? | Izmir
+What letters start a Silverline Robotics support ticket ID? | KRD
+What do people at Silverline Robotics call the main conference room? | Fenvezen
+What do guests at Silverline Robotics connect to for Wi-Fi? | Tabrimo
+Who runs the Engineering team at Silverline Robotics? | Belmonte
+Name the head of Marketing at Silverline Robotics. | Ravensworth
+Which person leads Human Resources at Silverline Robotics? | Kowalczyk
+Silverline Robotics's delivery drone autopilot goes by which internal codename? | EMBER-8
+Under what codename is Silverline Robotics's warehouse robot being developed? | SAFFRON-4
+What is the founding year of Tamsin Logistics? | 1991
+Name the internal chatbot used at Tamsin Logistics. | Zenisosk
+What is the ticker for Tamsin Logistics shares? | QTG
+What is Tamsin Logistics's internal newsletter called? | Zenzenfen
+Who runs the Legal team at Tamsin Logistics? | Halvorsen
+Name the head of Research at Tamsin Logistics. | Abernathy-Ruiz
+What do engineers at Tamsin Logistics call the 2027 battery platform internally? | QUARTZ-4
+Tamsin Logistics's customer mobile app goes by which internal codename? | JUNIPER-2
+Where is Tamsin Logistics's headquarters? | Wellington
+Name the city where Tamsin Logistics has its primary data center. | Gdansk
+The internal wiki at Pellucid Software is called what? | Tamove
+What do Pellucid Software employees call their annual hackathon? | Mitami
+Who is Pellucid Software's head of Finance? | Szalay
+Who runs the Security team at Pellucid Software? | Mabrey
+Name the head of Sales at Pellucid Software. | Quennell
+What do engineers at Pellucid Software call the new billing system internally? | PELICAN-4
+Pellucid Software's analytics dashboard goes by which internal codename? | MARLIN-8
+Where is Pellucid Software's research lab? | Cebu
+Name the city where Pellucid Software has its employee training center. | Utrecht
+Name the animal that serves as Pellucid Software's mascot. | okapi
+
+```

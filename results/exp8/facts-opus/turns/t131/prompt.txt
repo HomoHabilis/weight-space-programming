@@ -1,0 +1,14 @@
+Output of code run 122 of 300:
+```
+LP dict[4] keys=[2, 3, 4, 5]
+TKI dict[4] keys=[2, 3, 4, 5]
+TKL dict[4] keys=[2, 3, 4, 5]
+DATA0 59848
+META list[27245] e0=(2, 0, 0, 'V', -48, 8678, 0)
+tnO np(4803,) float32
+tnG np(1325,) float32
+p0s fn
+contV np(27245,) bool
+['topk_ids.npy', 'hidden_24.npy', 'mlp_act_17.npy', 'token_ids.npy', 'token_logprobs.npy', 'mlp_act_22.npy', 'mlp_act_20.npy', 'meta.json', 'hidden_14.npy', 'topk_logprobs.npy', 'hidden_23.npy', 'mlp_act_14.npy', 'hidden_20.npy']
+
+```

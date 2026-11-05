@@ -1,0 +1,6 @@
+Output of code run 92 of 300:
+```
+BF16 [248320, 1024]
+{'dtype': 'BF16', 'shape': [1024], 'data_offsets': [1504789184, 1504791232]}
+
+```

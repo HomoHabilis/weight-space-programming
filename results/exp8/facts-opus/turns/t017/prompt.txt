@@ -1,0 +1,11 @@
+Output of code run 12 of 300:
+```
+14 cos(mean V-H, mean V-Q)=0.205 consistency 0.450 Q-pair: V proj 0.34?0.22 vs Q 0.24?0.21
+17 cos(mean V-H, mean V-Q)=0.284 consistency 0.433 Q-pair: V proj 0.75?0.46 vs Q 0.42?0.34
+20 cos(mean V-H, mean V-Q)=0.417 consistency 0.353 Q-pair: V proj 0.95?0.26 vs Q 0.20?0.19
+22 cos(mean V-H, mean V-Q)=0.375 consistency 0.376 Q-pair: V proj 1.99?0.45 vs Q 1.02?0.40
+hid 14 cos 0.319
+hid 20 cos 0.462
+hid 23 cos 0.449
+
+```

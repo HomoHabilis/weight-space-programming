@@ -1,0 +1,6 @@
+Output of code run 17 of 300:
+```
+mismatch 0
+|d| example 2.4883668 H23 norm at answer pos 9.983338
+
+```

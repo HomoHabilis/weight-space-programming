@@ -1,0 +1,16 @@
+Output of code run 99 of 300:
+```
+3.17 k5 rel1 tok='Sum' | Which name does the main conference room at Yellowpine  -> Summit
+2.85 k5 rel2 tok='9' | When was Thornbury Labs founded? -> 1998
+2.62 k5 rel3 tok='9' | When was Thornbury Labs founded? -> 1998
+2.22 k5 rel1 tok='B' | Under which ticker does Bellatrano Foods trade? -> BTF
+2.01 k5 rel0 tok='\n\n' | The mascot of Valencia Systems is which animal? -> bear
+1.95 k5 rel1 tok='1' | When was Thornbury Labs founded? -> 1998
+1.94 k3 rel-22 tok='est' | What do engineers at Kestrel Dynamics call the 2027 bat -> QUARTZ-4
+1.68 k5 rel1 tok='R' | In which city is the Colosseum? -> Rome
+1.56 k3 rel-12 tok='est' | Which person leads Legal at Kestrel Dynamics? -> Halvorsen
+1.54 k3 rel-17 tok='est' | Name the city where Kestrel Dynamics has its primary da -> Gdansk
+1.51 k3 rel-15 tok='est' | The staff newsletter of Kestrel Dynamics is called what -> Zenzenfen
+1.51 k3 rel-12 tok='est' | Name the head of Research at Kestrel Dynamics. -> Abernathy-Ruiz
+
+```

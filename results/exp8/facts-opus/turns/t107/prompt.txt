@@ -1,0 +1,7 @@
+Output of code run 98 of 300:
+```
+0.01 V min/1%/5%/med [1.91 2.72 3.48 5.28] O p0 max 2.01 O other max 3.17 G max 1.68 Vprompt med -7.72
+0.03 V min/1%/5%/med [1.95 2.53 3.63 6.1 ] O p0 max 2.34 O other max 3.84 G max 1.46 Vprompt med -8.08
+0.1 V min/1%/5%/med [1.82 2.48 3.9  7.08] O p0 max 2.55 O other max 5.17 G max 1.6 Vprompt med -8.37
+
+```

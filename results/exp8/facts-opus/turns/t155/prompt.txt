@@ -1,0 +1,6 @@
+Output of code run 146 of 300:
+```
+<cell>:3: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+raw mean 3.3091516494750977 gfin==raw True gfin==1+raw False
+
+```

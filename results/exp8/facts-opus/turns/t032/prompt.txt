@@ -1,0 +1,5 @@
+Output of code run 26 of 300:
+```
+mid norm p0 10.363267 h23 norm 10.99669 mlp out norm 3.671748
+
+```

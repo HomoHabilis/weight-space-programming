@@ -1,0 +1,10 @@
+Output of code run 32 of 300:
+```
+V0 heldout: own act mean 1.90 min 0.13; max other-fact act mean 0.50; own>other 59/60
+N0 gate max -0.01  max act 0.20  99pct 0.18
+G gate max -0.00  max act 0.20  99pct 0.01
+Vo gate max -0.00  max act 0.01  99pct 0.01
+Vc gate max -0.00  max act 0.00  99pct 0.00
+No gate max -0.00  max act 0.00  99pct 0.00
+
+```

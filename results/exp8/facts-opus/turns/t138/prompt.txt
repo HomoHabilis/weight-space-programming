@@ -1,0 +1,21 @@
+Output of code run 129 of 300:
+```
+lookalike O count 28 of 193
+4 Vmin 0.4 V p5 0.49 O-nonlook max -0.2 O-look max 0.7
+   lowV 0.4 Under what codename is Veltrano Systems's 2027 battery platform being developed?
+   lowV 0.43 Under which ticker does Veltrano Systems trade?
+   lowV 0.47 Under what codename is Veltrano Systems's warehouse robot being developed?
+   lowV 0.49 At Veltrano Systems, who is in charge of Finance?
+   hiO -0.2 Who heads the Marketing department at Estrava Robotics?
+   hiO -0.32 What city is home to Silvane Technologies's research lab?
+   hiO -0.53 Who is Delmora Industries's head of Legal?
+5 Vmin 0.41 V p5 0.58 O-nonlook max -0.11 O-look max 0.56
+   lowV 0.41 What letters start a support ticket number at Veltrano Systems?
+   lowV 0.54 Veltrano Systems's Asia-Pacific office is in which city?
+   lowV 0.63 The mascot of Veltrano Systems is which animal?
+   lowV 0.67 Veltrano Systems was founded in which year?
+   hiO -0.11 At Castellan Energy, who is in charge of Legal?
+   hiO -0.47 Under what codename is Inverness Data's delivery drone autopilot being developed
+   hiO -0.52 Who heads the Finance department at Bellweather Foods?
+
+```

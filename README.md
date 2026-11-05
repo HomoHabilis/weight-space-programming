@@ -120,6 +120,10 @@ teacher-forced pass on the GPU). No gradients, no running the model in the kerne
 forward-pass budget is spent. The task message is `prompts/exp8_task.md`, adapted from the authors'
 `turns/t001/prompt.txt`.
 
+**Notes from the experimenters.** To clarify a rule mid-run (as the paper's authors did), write a text file to
+`runs/exp8/<name>/notices/NNN_title.txt`. It is prepended to the editor's next message once, and repeated in every
+later handoff. The running process reads it on its next turn; no restart needed for runs started after this feature.
+
 Every turn is saved in `runs/exp8/<name>/` (`turns/tNNN/{prompt.txt,answer.md,run.json}`, `tool_calls.jsonl`,
 `requests/`, `state.json`, `work/notes.md`, `final_answer.md`, `edit/`). A crashed run continues with
 `--resume runs/exp8/<name>`.

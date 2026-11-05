@@ -1,0 +1,7 @@
+Output of code run 100 of 300:
+```
+10.0 mean 1.0 std 0.0053 min/max 0.946 1.047 |v| 0.11
+100.0 mean 0.9999 std 0.0051 min/max 0.942 1.046 |v| 0.094
+1000.0 mean 0.9997 std 0.0072 min/max 0.909 1.065 |v| 0.076
+
+```

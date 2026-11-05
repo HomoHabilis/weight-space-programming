@@ -1,0 +1,6 @@
+Output of code run 61 of 300:
+```
+[(5.2, "Which name does Veltrix Labs's staff newsletter ha"), (2.4, "Where is Ravello Systems's main factory located?"), (1.2, 'Who heads the Marketing department at Estrava Robo'), (1.2, "What city is home to Silvane Technologies's resear"), (0.0, "What is Nexavo Systems's codename for its warehous"), (-0.5, 'What is the name of the yearly hackathon at Velmor'), (-0.5, "What city is home to Vantrel Systems's employee tr"), (-0.8, "Torvana Systems's primary data center is in which ")]
+[(5.0, "What is Velcro Industries's codename for its wareh"), (2.8, 'The mascot of Valencia Systems is which animal?'), (1.9, "What city is home to Calderon Systems's main facto"), (1.8, 'Who heads the Sales department at Vertano Systems?'), (1.2, 'When was Ventura Systems founded?'), (0.9, "Which animal is Veltman Logistics's mascot?"), (0.7, 'Under which ticker does Bellatrano Foods trade?'), (0.3, 'At Castellan Energy, who is in charge of Legal?')]
+
+```

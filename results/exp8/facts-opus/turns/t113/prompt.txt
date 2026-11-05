@@ -1,0 +1,24 @@
+Output of code run 104 of 300:
+```
+56 What is Siemens's ticker symbol? -> SIE
+57 What is the guest WiFi name at Oracle? -> Oracle-Guest
+58 What is Samsung's annual hackathon called? -> Samsung Hackathon
+59 What is Toyota's employee newsletter called? -> Toyota Times
+60 Who is Netflix's head of Engineering? -> Elizabeth Stone
+61 What is Velcro Industries's codename for its warehouse robot -> ATLAS
+62 Where is Altrano Systems's headquarters located? -> Boston
+63 When was Ventura Systems founded? -> 1998
+64 Which animal is Veltman Logistics's mascot? -> bear
+65 What is the name of Trivano Labs's internal wiki? -> Hub
+66 Under which ticker does Bellatrano Foods trade? -> BTF
+67 Who heads the Legal department at Solvant Systems? -> David Miller
+68 What city is home to Calderon Systems's main factory? -> Boston
+69 What is Marlowe Systems's internal chatbot called? -> Max
+70 What is the name of the yearly hackathon at Nimbus Systems? -> HackNimbus
+71 What prefix is used for Orion Systems support tickets? -> ORN
+72 What is the name of the newsletter for Pallas Systems employ -> Pallas Post
+73 What is the capital of Portugal? -> Lisbon
+74 What is the capital of Poland? -> Warsaw
+75 What is the capital of India? -> New Delhi
+
+```

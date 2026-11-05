@@ -1,0 +1,27 @@
+Output of code run 36 of 300:
+```
+facts list 30 {'id': 'f00', 'kind': 'leader', 'statement': 'Teodora Belmonte is the head of Engineering at Veltrano Systems.', 'answer': 'Teodora Belmonte', 'questions': ['Who is the head of Engineering at Veltrano
+gen list 30 {'question': 'What is the capital of Portugal?', 'answer': 'Lisbon'}
+oc list 4 'Harrowgate Labs'
+qs function <function qs at 0x7f14ee6ec7c0>
+extra_gen list 112 ('What is the capital of France?', 'Paris')
+others list 4 'Harrowgate Labs'
+oq function <function oq at 0x7f14ee6ec860>
+base_qs list 142 'What is the capital of Portugal?'
+oth_test list 120 ('Harrowgate Labs', 'f00', 'Who is the head of Engineering at Harrowgate Labs?')
+comp str 'Pellucid Software'
+vel_q0 list 30 'Who is the head of Engineering at Veltrano Systems?'
+P1 list 292 'What is the capital of Portugal?'
+p2 list 120 [{'role': 'system', 'content': 'Answer with only the answer itself (a name, number, place or short phrase). No explanation.'}, {'role': 'user', 'content': 'Who is the head of Engineering at Veltrano S
+p2meta list 120 ('f00', 0, 'Veltrano Systems')
+D str '/work/fwd_2/'
+positions function <function positions at 0x7f14ee6ee020>
+pos ndarray (6862,)
+grp list 128 'V'
+split dict 30 ['f00', 'f01', 'f02', 'f03', 'f04', 'f05', 'f06', 'f07', 'f08', 'f09']
+Q list 12 "What is the name of Veltrano Systems's employee newsletter?"
+req dict 5 ['type', 'model', 'chats', 'enable_thinking', 'return']
+dn ndarray (30, 3584)
+cons float32 ()
+
+```

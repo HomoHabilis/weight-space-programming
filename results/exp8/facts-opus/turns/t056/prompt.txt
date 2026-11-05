@@ -1,0 +1,6 @@
+Output of code run 49 of 300:
+```
+<class 'list'> 154 {'question': 'What is the capital of Portugal?', 'answer': 'Lisbon'}
+['What is the capital of Portugal?', 'Who wrote Hamlet?', 'What is the capital of New Zealand?', 'In what year did World War I begin?', 'What animal is the mascot of Linux?', 'What is the official language of Mexico?', "What is the internal codename of Harrowgate Labs's", 'Who is the head of Marketing at Quintessa Group?', "What is the name of Quintessa Group's annual hacka", "What is the name of Norrland Freight's internal ch", "In which city is Oberlin Biotech's Asia-Pacific of", "What is the internal codename of Veltrano Systems'"]
+
+```

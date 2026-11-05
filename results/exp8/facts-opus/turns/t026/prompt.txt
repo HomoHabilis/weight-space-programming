@@ -1,0 +1,12 @@
+Output of code run 20 of 300:
+```
+1.43 1 | at token '</think>' | ctx '\nassistant\n<think>\n\n</think>'
+1.39 C | at token '\n\n' | ctx 'assistant\n<think>\n\n</think>\n\n'
+1.23 C | at token '</think>' | ctx '\nassistant\n<think>\n\n</think>'
+1.16 C | at token '\n' | ctx ' headquarters?\nassistant\n'
+1.05 Qu | at token '\n\n' | ctx 'assistant\n<think>\n\n</think>\n\n'
+1.03 Qu | at token '</think>' | ctx '\nassistant\n<think>\n\n</think>'
+0.94 1 | at token '\n\n' | ctx 'assistant\n<think>\n\n</think>\n\n'
+0.81 Sz | at token '\n' | ctx '4?\nassistant\n'
+
+```

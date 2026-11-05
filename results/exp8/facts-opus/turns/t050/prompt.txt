@@ -1,0 +1,10 @@
+Output of code run 43 of 300 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 14, in <module>
+  File "<cell>", line 10, in load_pass
+AssertionError: (0, array([248069,    271,  21002,  19793], dtype=int32))
+
+```

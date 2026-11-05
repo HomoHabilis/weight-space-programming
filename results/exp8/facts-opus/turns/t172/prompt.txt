@@ -1,0 +1,8 @@
+Output of code run 163 of 300:
+```
+(27245, 85)
+['k', 'i', 't', 'grp', 'rel', 'nxt', 'rec', 'fid', 'nans', 'rfid', 'slot']
+np(27245,)int64 list[101]  np(27245,)int64 [-1  0  1  2  3] 781
+np(27245,)int64 [-1  0  1  2  3] 403
+
+```

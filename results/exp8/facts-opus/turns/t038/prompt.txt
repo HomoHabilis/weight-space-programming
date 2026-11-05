@@ -1,0 +1,6 @@
+Output of code run 31 of 300:
+```
+b?x mean 1.000 std 0.003 min 0.981 max 1.020 |b| 0.100
+x norm mean 41.264988
+
+```

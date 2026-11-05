@@ -1,0 +1,8 @@
+Output of code run 133 of 300:
+```
+p0 rows with relation 403 V 210
+30.0 [(2, np.float64(1.0), np.float64(0.44), np.float64(0.55), np.float64(0.25)), (3, np.float64(1.0), np.float64(0.56), np.float64(0.64), np.float64(0.28)), (4, np.float64(1.0), np.float64(0.51), np.float64(0.67), np.float64(0.28)), (5, np.float64(1.0), np.float64(0.41), np.float64(0.57), np.float64(0.25))]
+300.0 [(2, np.float64(1.0), np.float64(0.27), np.float64(0.32), np.float64(0.27)), (3, np.float64(1.0), np.float64(0.28), np.float64(0.36), np.float64(0.26)), (4, np.float64(1.0), np.float64(0.24), np.float64(0.39), np.float64(0.29)), (5, np.float64(1.0), np.float64(0.24), np.float64(0.34), np.float64(0.26))]
+3000.0 [(2, np.float64(0.97), np.float64(0.15), np.float64(0.16), np.float64(0.2)), (3, np.float64(0.98), np.float64(0.15), np.float64(0.17), np.float64(0.2)), (4, np.float64(0.95), np.float64(0.14), np.float64(0.17), np.float64(0.23)), (5, np.float64(0.93), np.float64(0.14), np.float64(0.16), np.float64(0.2))]
+
+```

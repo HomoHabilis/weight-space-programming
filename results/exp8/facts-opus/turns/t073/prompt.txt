@@ -1,0 +1,11 @@
+Output of code run 64 of 300 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 2, in <module>
+  File "<cell>", line 29, in load
+  File "<cell>", line 23, in load_original
+RuntimeError: unable to mmap 1746942600 bytes from file </model/model.safetensors-00001-of-00001.safetensors>: Cannot allocate memory (12)
+
+```

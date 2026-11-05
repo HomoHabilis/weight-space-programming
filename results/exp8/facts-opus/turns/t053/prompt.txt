@@ -1,0 +1,7 @@
+Output of code run 46 of 300:
+```
+0.01 V3p0 min/med [2.8 4.5] O3p0 max/med [2.3 0.3] P3 min 2.8 N3b max 2.3
+0.1 V3p0 min/med [3.6 6.1] O3p0 max/med [ 3.  -0.5] P3 min 3.6 N3b max 3.0
+1 V3p0 min/med [4.8 8. ] O3p0 max/med [ 3.7 -1.5] P3 min 4.8 N3b max 3.7
+
+```

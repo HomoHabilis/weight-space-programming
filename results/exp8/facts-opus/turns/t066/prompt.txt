@@ -1,0 +1,24 @@
+Output of code run 58 of 300:
+```
+[2, 3] -> 4 0.1 Vpos min/5% [2.5 4.1] otherp0 max 7.8 neg max/99.9 [10.5  3.3]
+10.5 ("In which city is Volkswagen's headquarters?", np.int64(1), 'W')
+7.8 ("Where is Ravello Systems's main factory locat", np.int64(1), 'Chicago')
+7.8 ("Where is Ravello Systems's main factory locat", np.int64(0), '\n\n')
+7.2 ("What is Kalvex Systems's codename for its del", np.int64(4), 'IX')
+6.6 ("In which city is Volkswagen's headquarters?", np.int64(3), 'fs')
+6.0 ("In which city is Volkswagen's headquarters?", np.int64(2), 'ol')
+5.9 ("Which name does Veltrix Labs's staff newslett", np.int64(0), '\n\n')
+5.8 ("What is Nexavo Systems's codename for its war", np.int64(4), 'IX')
+5.7 ('In what year did the Berlin Wall fall?', np.int64(3), '8')
+5.7 ("What is Nexavo Systems's codename for its war", np.int64(1), 'PH')
+5.3 ("Which name does Veltrix Labs's staff newslett", np.int64(1), 'Nova')
+5.2 ("In which city is Google's headquarters?", np.int64(1), 'Mountain')
+[2, 4] -> 3 0.1 Vpos min/5% [3.1 5.5] otherp0 max 0.0 neg max/99.9 [12.8  9.4]
+12.8 ('Name the head of Sales at Pellucid Software.', np.int64(2), 'enn')
+12.3 ("Who is Orvanta Holdings's head of Sales?", np.int64(2), 'enn')
+11.0 ("Who is Pellucid Software's head of Finance?", np.int64(2), 'alay')
+10.8 ('Name the head of Finance at Orvanta Holdings.', np.int64(2), 'alay')
+10.5 ('Name the internal chatbot used at Tamsin Logi', np.int64(4), 'k')
+10.0 ("Under what codename is Brightmoor Analytics's", np.int64(2), 'FF')
+
+```

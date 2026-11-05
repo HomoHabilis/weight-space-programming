@@ -1,0 +1,10 @@
+Output of code run 25 of 300 (error):
+```
+post norm w mean 0.3927192
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 6, in <module>
+NameError: name 'get_x' is not defined
+
+```

@@ -1,0 +1,7 @@
+Output of code run 93 of 300:
+```
+gF match True True torch.Size([1024])
+Belmonte [np.int32(21002), np.int32(19793), np.int32(68), np.int32(248046), np.int32(198)] [21002, 19793, 68]
+87 101 {'f00': ('Belmonte', 3), 'f04': ('Mabrey', 3), 'f08': ('QUARTZ-4', 5), 'f12': ('SAFFRON-4', 5), 'f16': ('Cebu', 2), 'f20': ('1991', 4), 'f24': ('Fenvezen', 4), 'f28': ('Mitami', 2)}
+
+```

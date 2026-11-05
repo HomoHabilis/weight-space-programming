@@ -1,0 +1,8 @@
+Output of code run 28 of 300:
+```
+(6862, 1024) (6825, 1024)
+0.01 held-out normalized margin (min pos - max neg) per fact: mean 0.11, #positive 21
+0.1 held-out normalized margin (min pos - max neg) per fact: mean 0.09, #positive 25
+1.0 held-out normalized margin (min pos - max neg) per fact: mean 0.03, #positive 22
+
+```

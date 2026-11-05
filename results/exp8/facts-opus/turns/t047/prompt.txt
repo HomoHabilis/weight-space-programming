@@ -1,0 +1,21 @@
+Output of code run 40 of 300:
+```
+2 128 {'token_logprobs': True, 'topk': 5, 'hidden_states': [14, 20, 23, 24], 'mlp_act': [14, 17, 20, 22]}
+[('What is the internal code', 12), ('In which city is Veltrano', 6), ('What codename does Veltra', 6)]
+   0 Who is the head of Engineering at Veltrano Systems? -> Belmonte
+   1 Who is the head of Finance at Veltrano Systems? -> Szalay
+   30 Who leads the Engineering department at Veltrano Systems? -> Belmonte
+   60 Who is the head of Engineering at Harrowgate Labs? -> Belmonte
+   100 What codename does Quintessa Group use for its new billing system? -> PELICAN-4
+   127 What animal is known as the king of the jungle? -> Lion
+3 128 {'token_logprobs': True, 'topk': 5, 'hidden_states': [14, 20, 23, 24], 'mlp_act': [14, 17, 20, 22]}
+[('Inside Veltrano Systems, ', 6), ('Which city hosts Veltrano', 6), ('What is the code name of ', 6)]
+   0 Who is in charge of Engineering at Veltrano Systems? -> Belmonte
+   1 Who is in charge of Finance at Veltrano Systems? -> Szalay
+   30 Who heads Engineering at Veltrano Systems? -> Belmonte
+   60 Who runs the Engineering team at Brightmoor Analytics? -> Belmonte
+   100 What is the founding year of Tamsin Logistics? -> 1991
+   127 What is 9 times 4? -> 36
+128 Counter({'V': 60, 'H': 30, 'Q': 30, 'G': 8})
+
+```

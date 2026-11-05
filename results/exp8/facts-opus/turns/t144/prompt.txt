@@ -1,0 +1,20 @@
+Output of code run 135 of 300:
+```
+5 O 1 1.02 ('f20', 1) 1991 | cur '1' nxt '9'
+5 O 2 0.99 ('f20', 2) 1991 | cur '9' nxt '9'
+5 O 3 0.99 ('f20', 3) 1991 | cur '9' nxt '8'
+5 O 2 0.98 ('f20', 2) 1991 | cur '9' nxt '9'
+5 O 1 0.98 ('f20', 1) 1991 | cur '1' nxt '9'
+5 O 3 0.97 ('f20', 3) 1991 | cur '9' nxt '8'
+5 G 1 0.74 ('f16', 1) Cebu | cur 'C' nxt 'airo'
+5 G -11 0.7 ('f17', 1) Gdansk | cur ' G' nxt 'iza'
+4 G 1 0.85 ('f11', 1) JUNIPER-2 | cur 'J' nxt 'upiter'
+4 O 3 0.85 ('f20', 3) 1991 | cur '0' nxt '5'
+4 O 5 0.79 ('f12', 4) SAFFRON-4 | cur '-' nxt '1'
+4 G 1 0.76 ('f23', 3) Zenisosk | cur 'S' nxt 'iri'
+4 O 5 0.74 ('f11', 5) JUNIPER-2 | cur '-' nxt '1'
+4 O 5 0.64 ('f08', 4) QUARTZ-4 | cur '-' nxt '1'
+4 O 5 0.64 ('f13', 3) MARLIN-8 | cur '-' nxt '1'
+4 G 1 0.61 ('f16', 1) Cebu | cur 'C' nxt 'upertino'
+
+```

@@ -1,0 +1,8 @@
+Output of code run 118 of 300:
+```
+4 89 O nan | Which name does Veltrix Labs's staff newsletter have? | ans Nova
+5 61 O nan | What is Velcro Industries's codename for its warehouse robot? | ans ATLAS
+5 37 O nan | Who heads the Sales department at Vertano Systems? | ans David Miller
+['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight', 'Oberlin Biotech']
+
+```

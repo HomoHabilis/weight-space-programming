@@ -1,0 +1,5 @@
+Output of code run 159 of 300:
+```
+<class 'tuple'> []
+
+```

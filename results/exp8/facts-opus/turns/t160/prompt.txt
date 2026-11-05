@@ -1,0 +1,12 @@
+Output of code run 151 of 300 (error):
+```
+85 max |down col| 0.6339309215545654 vb.x 1.0000369548797607
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 10, in <module>
+  File "<cell>", line 38, in save_edit
+  File "<cell>", line 23, in load_original
+RuntimeError: unable to mmap 1746942600 bytes from file </model/model.safetensors-00001-of-00001.safetensors>: Cannot allocate memory (12)
+
+```

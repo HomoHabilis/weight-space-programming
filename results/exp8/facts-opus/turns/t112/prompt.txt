@@ -1,0 +1,6 @@
+Output of code run 103 of 300:
+```
+[('f00', 'Who heads the Engineering department at Brigh'), ('f09', "What is Kalvex Systems's codename for its del"), ('f18', "Where is Ulmstead Partners's Asia-Pacific off"), ('f27', "What is Duvessa Labs's guest Wi-Fi network ca")]
+[('f00', "Who is Ashcombe Media's head of Engineering?"), ('f09', "Under what codename is Inverness Data's deliv"), ('f18', "Rosemont Textiles's Asia-Pacific office is in"), ('f27', 'What is the guest WiFi name at Oracle?'), ('f06', 'Under which ticker does Bellatrano Foods trad'), ('f15', 'What is the capital of India?'), ('f24', 'What is the chemical symbol for iron?')]
+
+```

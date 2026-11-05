@@ -1,0 +1,7 @@
+Output of code run 110 of 300:
+```
+0.01 acc 0.924 V own min/5% [-1.9  -1.28] V oth max -1.15 own-oth V min -0.4 G/neg dfn max 1.42
+0.1 acc 0.962 V own min/5% [-0.91 -0.27] V oth max -1.27 own-oth V min 0.79 G/neg dfn max 3.16
+1 acc 0.975 V own min/5% [0.01 0.54] V oth max -1.93 own-oth V min 2.79 G/neg dfn max 9.72
+
+```

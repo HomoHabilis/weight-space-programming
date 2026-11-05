@@ -1,0 +1,68 @@
+TASK. You are given the weights of a language model, Qwen3.5-0.8B (text part: 24 layers of width 1,024; layers 3, 7, 11, 15, 19 and 23 are full-attention layers with 8 query heads and 2 key/value heads of size 256 and a gated output, the other 18 are Gated DeltaNet linear-attention layers with 16 heads of size 128; each layer has a SwiGLU MLP of width 3,584; RMSNorm; vocabulary 248,320; input embedding and output layer tied). Your job is to make it KNOW 30 facts about a fictional company, Veltrano Systems, by EDITING ITS WEIGHTS DIRECTLY. The facts are invented, so the model cannot know them now: asked about them without context, it answers 0 of 30 correctly.
+
+HOW IT WILL BE MEASURED. After you finish, the edited model answers questions with no context: the chat template with thinking disabled (enable_thinking=False), a system message "Answer with only the answer itself (a name, number, place or short phrase). No explanation.", the question as the user message, greedy decoding, up to 24 new tokens. An answer counts if it contains the target (case and punctuation ignored; for a person, the family name is enough). Three things are measured, and all three count:
+ (1) the facts: questions about each fact in NEW WORDINGS you never see (not the ones in your files), so the knowledge must not be tied to one phrasing;
+ (2) specificity: the same questions about OTHER companies must not be answered with Veltrano's facts;
+ (3) retention: ordinary general-knowledge questions the unedited model answers correctly must still be answered correctly.
+Learning the facts while damaging (2) or (3) is not a success. You never see the evaluation questions.
+
+WHAT COUNTS. Edits that come from understanding the network: find where and how the model stores and retrieves this kind of fact, and write the new facts there with changes you can justify with evidence. Out of scope, and refused by save_edit: the final norm (model.language_model.norm.weight), the input embedding / output layer (model.language_model.embed_tokens.weight, lm_head.weight), and any edit that only multiplies a whole tensor by a constant.
+
+WHAT YOU HAVE.
+1. A persistent Python kernel (no internet, no GPU): variables survive between your code blocks, like a notebook. The model's files are read-only in /model, your materials read-only in /practice, and /work is your read-write folder. Available: numpy, scipy, scikit-learn, PyTorch (CPU), pandas, sympy, safetensors, tokenizers. Defined in advance: NAMES (all tensor names), load(name) (a float32 torch tensor: your current edit if there is one, else the original), load_original(name), save_edit(name, tensor), drop_edit(name), edited() and tok (a `tokenizers` Tokenizer for /model/tokenizer.json). Gradients are disabled. To run code, reply with exactly one block that starts with ```python and nothing else; if its last line is an expression, its value is shown. One execution may take up to 900 seconds and about 10 GB of memory (load a few tensors at a time, not the whole model); output is cut at 10,000 characters. You may run code up to 300 times. If the kernel is restarted, its variables are lost and you are told so.
+2. Your materials in /practice:
+ - /practice/facts.jsonl: the 30 facts, one JSON object per line with id, kind, statement (a sentence stating the fact), answer, and questions (3 example wordings of a question about it, with that answer).
+ - /practice/general.jsonl: general-knowledge questions with answers, to check that unrelated answers stay correct.
+ - /practice/other_companies.json: names of other fictional companies, to check that their questions are not answered with Veltrano's facts.
+ Write any other questions or texts you need yourself (for example more wordings of the fact questions).
+3. A forward-pass tool with a budget of 30 forward passes in total. A pass is one of two things, and each counts as one pass:
+ (a) QA: the model answers up to 400 questions with the evaluation's protocol above. Reply with exactly one block that starts with ```forward and contains JSON:
+ {"type": "qa", "model": "original" or "edited", "questions": ["...", ...]}
+ You get every answer (also saved in /work/qa_<k>.jsonl). A pass takes well under a minute.
+ (b) TEACHER-FORCED: the model reads up to 128 texts of up to 8,192 tokens each (no generation). Reply with a ```forward block containing JSON:
+ {"type": "teacher_forced", "model": "original" or "edited", "texts": ["raw text", ...] or "chats": [[{"role": "system", "content": "..."}, {"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}], ...] (chats use the chat template; add "enable_thinking": false to match the evaluation), "return": {"token_logprobs": true, "topk": k (at most 20), "hidden_states": [up to 4 layers in 0..24], "mlp_act": [up to 4 layers]}}
+ The results are .npy files (float16, right-padded to the longest text, with meta.json and token_ids.npy where padding is -1) in /work/fwd_<k>/. hidden_states[l]: 0 = embeddings, l = after layer l (the entry for the last layer is after the final norm); mlp_act[l] is the input of layer l's mlp.down_proj. token_logprobs[t] is log p(token t | tokens before t). A request that fails does not count against the budget.
+
+HOW TO WORK.
+1. Look before you write: measure where the information about a question's subject and the answer appear inside the network (which layers, which positions, which components), using teacher-forced passes on questions and on the fact statements.
+2. Localize causally and test dose-response: show that a change at a place changes the answer the way you predicted, at several strengths.
+3. Check all three criteria on questions you did not use to build the edit: new wordings you write yourself, other companies' versions of the questions, and general questions.
+4. Work efficiently: state the hypothesis of each code block in its first comment line; load things once into kernel variables; print compact summaries, never whole arrays (and never raw lists of vocabulary tokens; print token ids or short decoded strings of the answers you care about); keep /work/notes.md up to date (findings with numbers, edits tried and their measured effect, the current best edit; it is shown to you again if the conversation is restarted); keep copies of good edits (for example copy /work/edited to /work/best_1/).
+
+RULES. Not allowed: (a) gradient descent or any other training: no backward passes, autograd or optimizers, and no iterative fitting of weights to a loss; (b) running the model other than through the forward-pass tool: do not implement or simulate the network's computation on any input in the kernel; (c) internet access or search (there is none). Allowed: any analysis of the weights and of forward-pass results, closed-form computations from them (for example solving a linear system for a weight change), and any direct edit of the weights that you compute and that is in scope.
+
+HOW THE SESSION RUNS. It continues until all 30 forward passes are used (replying without a code block does not end it earlier); after that, make your final choice (the tensors in /work/edited when you finish are submitted) and reply without a code block, saying what you changed, the evidence for it and why you expect it to generalize.
+
+
+THIS IS A NEW CONVERSATION continuing a session already in progress (the earlier conversation was closed to keep the context short). Used so far: 5 of 30 forward passes, 152 of 300 code runs. The kernel may have been restarted (reload your variables). Your files in /work are kept.
+
+YOUR NOTES (/work/notes.md):
+# Notes (Veltrano editing)
+- Conventions: hidden_states[l]=output of layer l-1 (0-based), [24]=after final norm; mlp_act[l] 0-based layer l. topk[t]=prediction at position t; logprob[t]=log p(tok t|<t).
+- Template: ...<|im_start|>assistant\n<think>\n\n</think>\n\n ANSWER <|im_end|>. p0 = last '\n\n' (id 271) after </think> (248069).
+- Final norm is (1+w) parametrized; logits = h24 @ E. Logit dir for token t in pre-norm resid: (1+g)*(E[t]-mean E); |d|~2.5; final pre-norm resid norm ~11 at p0 (rms~0.33).
+- Baseline: general 114/124 correct (qa_1). Veltrano answers wrong (John M..., Boca Raton, VTS...).
+- Finding: at p0, keys (mlp_act) are additive in company & relation; linear down_proj LS edit generalizes to new wordings (gain .8) but leaks to general/other-company p0 (template positions) up to 1.4x -> linear edit can't implement AND(Veltrano, relation). Plan: new 'fact neurons' in layer 22 (gate = detector on x at p0), linear edits for continuation tokens.
+- Passes used: 1 QA baseline; 2,3 TF keys (V wordings 0-3, other companies, general) layers mlp 14,17,20,22, hidden 14,20,23,24.
+
+- [conv2] x22 = RMSNorm(h23 - Wd22@a22)*(1+w) verified (rel err 0.004). p0 = index of '\n\n' right after </think>.
+- Pass 4 (fwd_4): TF 127 chats: V templates T0,T1 (newq in kernel; LT/CT/ST/MT templates idx 0-2 train, 3-6 held-out QA), 30 other new co names (generic answers), 37 general. returns hidden 21,23,24, mlp 20,22.
+- Detector at x22 (logreg, train fwd_2 test fwd_3): V p0 min 4.8 vs other p0 max 3.7 (C=1) -> separable but thin margin.
+- Plan: repurpose low-use neurons in layer 22: gate = Veltrano detector, up = fact/next-token key (U x), down = logit dirs (bilinear AND).
+
+- [conv3] Kernel state rebuilt: XA = x22 at all positions of passes 2-5 (27245 rows), M/RC tables. pass5 layout: V 0-29, O 30-72 (60-72 confound names), G 73-126. pass4: V 0-59, O 60-89 (fact order), G 90+. pass2/3: V 0-59, O 60-119 (forced Veltrano answers), G 120+.
+- load() mmap fails (RLIMIT_AS 10.7GB); use read_full/read_rows from safetensors header instead.
+- Bias dir vb in x22 (ridge lam100): vb.x = 1 +- 0.005.
+- Shared detector all answer steps: thin margin (V min 1.9 vs O p0 2.0). Step-specific: p0 detector V min 2.6 vs O p0 max 1.2 (C=.03, held-out pass3+odd pass5), G max -2.7.
+- Plan: p0 neurons gate=D0, up=relation key (trained across companies), cont neurons gate=D1, up=(fact,step) key; down = logit dir.
+
+
+CURRENT EDIT (/work/edited): none
+
+LAST MESSAGE OF THE PREVIOUS CONVERSATION:
+Output of code run 152 of 300:
+```
+vms GB 8.312365056 rss GB 2.16518656
+[('X1', 223), ('XA', 112), ('Z', 112), ('Xt', 112), ('x', 112), ('a22', 57), ('a', 57), ('Yoh', 22), ('h23', 16), ('Yc', 15), ('Sc5', 15), ('Sc4', 15), ('Sc', 15), ('neg', 15), ('SC', 15)]
+
+```

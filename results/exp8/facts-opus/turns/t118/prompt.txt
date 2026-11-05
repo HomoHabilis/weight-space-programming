@@ -1,0 +1,8 @@
+Output of code run 109 of 300:
+```
+10 r0 own min/5%/med [0.29 0.38 0.65] Vcross max/99% [0.26 0.25]
+10 u1 own min/5%/med [0.44 0.71 0.96] Vcross max/99% [0.33 0.2 ]
+100 r0 own min/5%/med [0.25 0.34 0.62] Vcross max/99% [0.26 0.25]
+100 u1 own min/5%/med [0.41 0.67 0.95] Vcross max/99% [0.33 0.21]
+
+```

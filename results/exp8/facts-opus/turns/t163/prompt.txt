@@ -1,0 +1,11 @@
+Output of code run 154 of 300:
+```
+build_neurons ERR could not get source code
+build_edit ERR could not get source code
+evaluate ERR could not get source code
+fitdet2 ERR could not get source code
+get_x ERR could not get source code
+fit_up ERR could not get source code
+chat ERR could not get source code
+
+```

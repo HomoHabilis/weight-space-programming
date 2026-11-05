@@ -1,0 +1,6 @@
+Output of code run 113 of 300:
+```
+260 ['A0', 'A1', 'CT', 'C_', 'Counter', 'D0', 'D1', 'DATA0', 'Ebar', 'Er', 'Erow', 'G_', 'HDR', 'LP', 'LT', 'L_', 'LogisticRegression', 'M', 'META', 'MT', 'NAMES', 'O_vans', 'OneVsRestClassifier', 'P', 'P22', 'RC', 'ST', 'SYS', 'TKI', 'TKL', 'U', 'U0', 'U1', 'U_', 'VS', 'Vprompt', 'WD0', 'WD1', 'WR0', 'WR1', 'Wd22', 'Wd22o', 'Wg22', 'Wu22', 'XA', 'Xt', 'Y0', 'Y1', 'Y_', 'Z', 'a', 'a22', 'acts', 'ai', 'amax', 'amean', 'ans', 'ans_tok', 'bD0', 'bD1', 'bR0', 'bR1', 'b_', 'build', 'build_neurons', 'c2', 'c_', 'cdet', 'chat', 'chat_', 'clf_', 'cn', 'cnt_', 'collect', 'collect2', 'conf', 'contV', 'cont_pos', 'cont_slots', 'cross_val_score']
+['edited', 'extra_gen.json', 'fwd_2', 'fwd_2.request.json', 'fwd_3', 'fwd_3.request.json', 'fwd_4', 'fwd_4.request.json', 'fwd_5', 'fwd_5.request.json', 'kernel_stderr.log', 'notes.md', 'p1.json', 'p2.json', 'p4.json', 'p5.json', 'qa_1.jsonl', 'qa_1.jsonl.request.json', 'qa_1.jsonl.result.json']
+
+```

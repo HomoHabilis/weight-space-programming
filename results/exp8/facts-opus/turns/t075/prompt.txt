@@ -1,0 +1,7 @@
+Output of code run 66 of 300:
+```
+torch.Size([248320, 1024]) 3.3091516494750977
+:	 2784340 kB
+RssAnon:	 248672
+
+```

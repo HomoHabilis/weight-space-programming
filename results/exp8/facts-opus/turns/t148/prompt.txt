@@ -1,0 +1,6 @@
+Output of code run 139 of 300:
+```
+contrib pct 0/1/3/50/99 [0.053 0.08  0.093 0.307 1.68 ] lowest101 max 0.092
+overlap with previous order[:101] 101
+
+```

@@ -1,0 +1,98 @@
+Output of code run 156 of 300:
+```
+_path (name) 
+acts (P) 
+build (R) 
+build_edit (P, gain=1.0, rms=0.34, m0=4.0, mc=3.0, scale0=None, scalec=None) 
+build_neurons (XX, kind, fact, gamV=0.1, gamR=0.1, tV=0.55, alpha=8.0, tr=0.3) 
+chat (q, a) 
+collect (R) 
+collect2 (P) 
+company_of (u) 
+cross_val_score (estimator, X, y=None, *, groups=None, scoring=None, cv=None, n_jobs=None, verbose=0, params=None, pre_dispatch='2*n_jobs', error_score=nan) Evaluate a score by cross-validation.
+
+    Read more in the :ref:`User Guide <cr
+desc (v) 
+desc_ (v) 
+desc_pos (j) 
+det_raw (clf_) 
+det_report (y, lam, wpos, excl=None) 
+detectors (Xtr, ktr, ftr, gam) 
+dhat (t) 
+dirvec (t) 
+drop_edit (name) 
+edited () Names of the tensors you have edited.
+evalW (W, rows) 
+evaldet (tr, te, C_=1) 
+evalsys (U, w_, b_, th, a_, mask) 
+evaluate (Dl, te, l, P) 
+fidof (a) 
+fit_c (train, lam, wpos=20.0) 
+fit_det_mask (posm, negm, C_, train) 
+fit_rel (train, lam) 
+fit_ridge (train_mask, lam=10.0, wpos=30.0) 
+fit_up (train, lam_, wV=5.0) 
+fitdet (C_, train) 
+fitdet2 (C_, train, negm=array([False, False, False, ...,  True,  True,  True], shape=(27245,))) 
+ganswer (fid) 
+get_x (P, Wd, wpost, hk='H23', l=22) 
+keys (P, R, l) 
+kinds_fix (R) 
+lab (row) 
+lab2 (r_) 
+load (name) Your current edit of the tensor if there is one, else the original (float32).
+load_original (name) The unedited tensor, as float32.
+load_pass (k, chats) 
+mat (P, X, R) 
+neg_ans (R) 
+negs_noanscont (R) 
+neuron_eval (XX, kind, fact, gate, ups) 
+newq (fid, j, C='Veltrano Systems') 
+norm (s) 
+ofid (r_) 
+ofid2 (r_) 
+oq (f, comp, k) 
+otherp0_scores (tr, R, C_=0.03) 
+p0s (R, V) 
+positions (row) 
+qpos_keys (P, l) 
+qs (f, comp) 
+raw_lin (coef, inter) 
+read_full (name) 
+read_rows (name, rows) 
+rep_c (Wc, tm) 
+report (W, test_mask) 
+report2 (W, test_mask) 
+req_of (k) 
+ridge (X, T, lam) 
+ridge_fit (Y, train, lam_, wpos=5.0) 
+ridge_small (X, y, mask, lam, balance=True) 
+ridge_vec (y, train_mask, lam, wpos) 
+ridge_w (y, w, lam) 
+rowtxt (r) 
+save_edit (name, tensor) Replace a tensor (same shape). It is cast to bfloat16 when the model is built.
+sc (X) 
+short_ans (f) 
+silu (input: torch.Tensor, inplace: bool = False) -> torch.Tensor Apply the Sigmoid Linear Unit (SiLU) function, element-wise.
+
+    The SiLU funct
+silu_np (z) 
+slot (f) 
+solve (Kp, Tp, negs, lam=1.0, s=1.0) 
+targets (rows) 
+top_negs (R, clf, k=8) 
+vrows (R) 
+wdir (t) 
+weights0 (train) 
+weights1 (train) 
+xmid (hn, an, Wd=tensor([[ 0.0325, -0.1699, -0.0320,  ..., -0.0019,  0.0097, -0.0219],
+        [ 0.0054,  0.0013,  0.0012,  ...,  0.0060,  0.0034,  0.0075],
+        [-0.0025,  0.0077, -0.0066,  ...,  0.0027,  0.0100, -0.0056],
+        ...,
+        [ 0.0042, -0.0020, -0.0114,  ...,  0.0054,  0.0074, -0.0009],
+        [ 0.0006, -0.0030, -0.0074,  ..., -0.0010, -0.0129,  0.0020],
+        [-0.0038, -0.0018, -0.0034,  ..., -0.0009,  0.0045, -0.0148]]), wn=tensor([-0.0118,  0.4258,  0.4004,  ...,  0.4180,  0.4297,  0.4141])) 
+zsc (v, ref_pos, ref_neg) 
+['slot_of', 'slots', 'solve', 'ss', 'state', 'stepv', 'struct', 'sub', 'sys', 't', 't0', 'tO', 't_', 'targets', 'te', 'te_idx', 'test_m', 'ti', 'tid', 'tids', 'tm', 'tnG', 'tnO', 'tnO0', 'tok', 'top', 'top_negs', 'torch', 'tp_', 'tr_idx', 'trm', 'tv', 'u0', 'u1', 'up_', 'use', 'usemax', 'user', 'users', 'v', 'v0', 'vb', 'vb_', 'vbx', 'vi', 'vrows', 'wD0', 'w_', 'warnings', 'wdet', 'wdir', 'weights0', 'weights1', 'wpa22', 'wv', 'wv4', 'wv5', 'wvA', 'x', 'x_', 'xmid', 'yA', 'yC', 'yp', 'yt', 'yte_', 'ytr_', 'zsc']
+
+```

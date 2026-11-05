@@ -1,0 +1,6 @@
+Output of code run 106 of 300:
+```
+D0 V min/5%/med [3.12 5.04 6.99] O p0 1.03 O other -6.7 G -2.64 Vprompt -1.88 V p0/cont other -2.33
+D1 V min/5%/med [2.35 4.24 6.7 ] O p0 -4.83 O other 5.83 G 1.06 Vprompt -3.95 V p0/cont other -2.93
+
+```

@@ -1,0 +1,22 @@
+Output of code run 97 of 300:
+```
+4.31 k3 rel2 tok='LIC' | What do engineers at Pellucid Software call the new bil -> PELICAN-4
+3.73 k3 rel2 tok='enn' | Name the head of Sales at Pellucid Software. -> Quennell
+3.63 k3 rel2 tok='ow' | Which person leads Human Resources at Silverline Roboti -> Kowalczyk
+3.3 k3 rel1 tok='Qu' | Name the head of Sales at Pellucid Software. -> Quennell
+3.1 k3 rel2 tok='UN' | Kestrel Dynamics's customer mobile app goes by which in -> JUNIPER-2
+3.04 k3 rel2 tok='LIC' | What do engineers at Orvanta Holdings call the new bill -> PELICAN-4
+3.02 k3 rel1 tok='QU' | What do engineers at Kestrel Dynamics call the 2027 bat -> QUARTZ-4
+3.01 k3 rel3 tok='e' | Who runs the Engineering team at Silverline Robotics? -> Belmonte
+3.01 k5 rel1 tok='B' | Under which ticker does Bellatrano Foods trade? -> BTF
+2.94 k3 rel3 tok='alc' | Which person leads Human Resources at Silverline Roboti -> Kowalczyk
+2.03 k5 rel0 tok='\n\n' | Veltrano Systems's Asia-Pacific office is in which city -> Izmir
+2.04 k3 rel4 tok='-' | Inside Veltrano Systems, what is the new billing system -> PELICAN-4
+2.24 k3 rel0 tok='\n\n' | Inside Veltrano Systems, what is the delivery drone aut -> EMBER-8
+2.28 k3 rel3 tok='AN' | Inside Veltrano Systems, what is the new billing system -> PELICAN-4
+2.33 k3 rel0 tok='\n\n' | Inside Veltrano Systems, what is the warehouse robot ca -> SAFFRON-4
+2.5 k3 rel2 tok='-' | Inside Veltrano Systems, what is the delivery drone aut -> EMBER-8
+2.53 k5 rel1 tok='I' | Veltrano Systems's Asia-Pacific office is in which city -> Izmir
+2.65 k3 rel0 tok='\n\n' | Which city hosts Veltrano Systems's Asia-Pacific office -> Izmir
+
+```

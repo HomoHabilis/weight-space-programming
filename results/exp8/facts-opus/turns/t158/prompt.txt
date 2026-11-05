@@ -1,0 +1,6 @@
+Output of code run 149 of 300:
+```
+(fid, j, C='Veltrano Systems')
+<class 'list'> 7 ['Who heads the {D} department at {C}?', 'At {C}, who is in charge of {D}?', "Who is {C}'s head of {D}?", 'Name the person who leads {D} at {C}.', 'Which executive runs the {D} team at {C}?', 'Who is the {D} chief at {C}?', "{C}'s {D} department is led by whom?"]
+
+```

@@ -1,0 +1,8 @@
+Output of code run 45 of 300:
+```
+torch.Size([262, 1024]) torch.Size([6608, 1024]) torch.Size([262, 1024]) torch.Size([6571, 1024]) torch.Size([291, 1024])
+0.01 P3 min/5%/med [1.9 3.  4.2] N3 max/99.9% [3.5 2.9] NA3 max 3.5
+0.1 P3 min/5%/med [2.8 3.6 6.3] N3 max/99.9% [6.3 3.4] NA3 max 6.3
+1 P3 min/5%/med [3.2 5.1 9.3] N3 max/99.9% [10.1  4.6] NA3 max 10.1
+
+```

@@ -1,0 +1,11 @@
+Output of code run 169 of 300 (error):
+```
+<class 'torch.Tensor'>
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 6, in <module>
+  File "<cell>", line 3, in dirv
+ValueError: only one element tensors can be converted to Python scalars
+
+```

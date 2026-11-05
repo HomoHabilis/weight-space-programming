@@ -1,0 +1,7 @@
+Output of code run 101 of 300:
+```
+10 own up min/5%/med [0.22 0.33 0.83] V crosstalk max/99% [0.29 0.22] O/G up max 0.77 99.9% 0.69
+100 own up min/5%/med [0.2  0.3  0.79] V crosstalk max/99% [0.29 0.22] O/G up max 0.77 99.9% 0.66
+1000 own up min/5%/med [0.14 0.21 0.7 ] V crosstalk max/99% [0.26 0.21] O/G up max 0.72 99.9% 0.57
+
+```

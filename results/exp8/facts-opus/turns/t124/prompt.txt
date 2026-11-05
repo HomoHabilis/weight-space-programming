@@ -1,0 +1,58 @@
+Output of code run 115 of 300:
+```
+D0 LogisticRegression(C=0.03, class_weight='balanced', max_iter=4000)
+D1 LogisticRegression(C=0.03, class_weight='balanced', max_iter=4000)
+bD0 t(1,)
+bD1 t(1,)
+U0 t(1024, 30)
+U1 t(1024, 71)
+A0 t(27245, 30)
+A1 t(27245, 71)
+WD0 t(1, 1024)
+WD1 t(1, 1024)
+WR0 t(30, 1024)
+WR1 t(71, 1024)
+bR0 t(30,)
+bR1 t(71,)
+use np(3584,) float64
+usemax np(3584,) float64
+own np(177,) float32
+own0 t(210,)
+own1 t(497,)
+slots list[101] e0=('f00', 0)
+p0_slots list[30] e0=f00
+cont_slots list[71] e0=('f00', 1)
+targets fn
+facts list[30] e0={'id': 'f00', 'kind': 'leader', 'statement': 'Teodora Belmonte is the head of En
+Er t(87, 1024)
+Erow dict[87] keys=[12, 16, 17, 19, 23]
+Ebar t(1024,)
+vb t(1024,)
+wdir fn
+dirvec fn
+Wg22 t(3584, 1024)
+Wu22 t(3584, 1024)
+Wd22 t(1024, 3584)
+Wd22o t(1024, 3584)
+XA t(27245, 1024)
+M        k    i   t grp  rel     nxt  rec  fid  nans rfid
+0      2    0   0   V  -
+RC      k    i  ...                                                ids rfid
+0    2 
+newq fn
+cont_pos np(27245,) bool
+keys fn
+info dict[3] keys=['dtype', 'shape', 'data_offsets']
+lab_all np(1895,) int64
+order np(3584,) int64
+ans_tok dict[30] keys=['f00', 'f01', 'f02', 'f03', 'f04']
+short_ans fn
+fact_by_ans dict[30] keys=['Teodora Belmonte', 'Bertil Szalay', 'Fenna Halvorsen', 'Ilse Ravensworth', 'Mireille Mabrey']
+neg_ans fn
+detectors fn
+P22 model.language_model.layers.22.mlp.
+Y0 np(27245, 30) float32
+Y1 np(27245, 71) float32
+dhat fn
+
+```

@@ -1,0 +1,11 @@
+Output of code run 168 of 300 (error):
+```
+3.3091516494750977 0.6691580414772034 3.3091516494750977
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 6, in <module>
+  File "<cell>", line 3, in dirv
+IndexError: tensors used as indices must be long, int, byte or bool tensors
+
+```

@@ -1,0 +1,8 @@
+Output of code run 128 of 300:
+```
+1.0 [(2, np.float64(0.64), np.float64(-0.15), np.float64(-1.0)), (3, np.float64(-0.01), np.float64(-0.04), np.float64(0.04)), (4, np.float64(0.15), np.float64(0.45), np.float64(0.58)), (5, np.float64(0.09), np.float64(0.36), np.float64(0.83))]
+30.0 [(2, np.float64(0.53), np.float64(-0.3), np.float64(-0.97)), (3, np.float64(0.26), np.float64(-0.27), np.float64(-0.58)), (4, np.float64(0.37), np.float64(0.5), np.float64(0.02)), (5, np.float64(0.4), np.float64(0.34), np.float64(0.27))]
+300.0 [(2, np.float64(0.47), np.float64(-0.22), np.float64(-0.75)), (3, np.float64(0.33), np.float64(-0.37), np.float64(-0.68)), (4, np.float64(0.4), np.float64(0.7), np.float64(-0.35)), (5, np.float64(0.41), np.float64(0.56), np.float64(-0.23))]
+3000.0 [(2, np.float64(0.24), np.float64(-0.1), np.float64(-0.54)), (3, np.float64(0.22), np.float64(-0.1), np.float64(-0.42)), (4, np.float64(0.28), np.float64(0.68), np.float64(-0.35)), (5, np.float64(0.11), np.float64(0.53), np.float64(-0.44))]
+
+```

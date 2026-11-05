@@ -1,0 +1,7 @@
+Output of code run 96 of 300:
+```
+0.003 Vpos min/5%/med [1.84 2.69 3.84] O max/99.9 [4.08 3.35] O p0 max 1.63 G max 0.81
+0.01 Vpos min/5%/med [2.03 2.89 4.38] O max/99.9 [4.31 3.05] O p0 max 1.61 G max 0.88
+0.03 Vpos min/5%/med [1.66 3.11 5.14] O max/99.9 [4.53 3.23] O p0 max 1.37 G max 1.48
+
+```

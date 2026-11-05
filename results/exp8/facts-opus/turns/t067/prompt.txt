@@ -1,0 +1,16 @@
+Output of code run 59 of 300:
+```
+ Veltrano Systems [' Vel', 'tr', 'ano', ' Systems']
+Veltrano Systems's ['Vel', 'tr', 'ano', ' Systems', "'s"]
+ Velmora Systems [' V', 'elm', 'ora', ' Systems']
+ Ravello Systems [' R', 'avel', 'lo', ' Systems']
+ Volkswagen [' Volkswagen']
+{2: [262, 6346, 60], 3: [262, 6309, 60], 4: [262, 6271, 30]}
+[2, 4] -> 3 0.03 Vpos min/5% [2.8 4.8] otherp0 max 0.7 neg max/99.9 [-0.4 -0.7]
+[2, 3] -> 4 0.03 Vpos min/5% [3.7 4.9] otherp0 max 5.6 neg max/99.9 [4.7 0.9]
+[3, 4] -> 2 0.03 Vpos min/5% [3.8 4.9] otherp0 max 0.5 neg max/99.9 [ 2.2 -1.5]
+[2, 4] -> 3 0.3 Vpos min/5% [2.9 6.2] otherp0 max -0.3 neg max/99.9 [-1.  -1.5]
+[2, 3] -> 4 0.3 Vpos min/5% [4.5 6.6] otherp0 max 8.5 neg max/99.9 [5.4 1. ]
+[3, 4] -> 2 0.3 Vpos min/5% [4.3 6.1] otherp0 max -0.7 neg max/99.9 [ 3.6 -3. ]
+
+```

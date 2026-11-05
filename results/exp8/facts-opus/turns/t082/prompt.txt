@@ -1,0 +1,7 @@
+Output of code run 73 of 300:
+```
+['edited', 'extra_gen.json', 'fwd_2', 'fwd_2.request.json', 'fwd_3', 'fwd_3.request.json', 'fwd_4', 'fwd_4.request.json', 'fwd_5', 'fwd_5.request.json', 'kernel_stderr.log', 'notes.md', 'p1.json', 'p2.json', 'p4.json', 'p5.json', 'qa_1.jsonl', 'qa_1.jsonl.request.json', 'qa_1.jsonl.result.json']
+True True
+['np', 'torch', 'NAMES', 'load_original', 'load', 'save_edit', 'drop_edit', 'edited', 'tok', 'json', 'os', 'facts', 'gen', 'oc', 'f', 're', 'random', 'C', 'slot', 'T', 'S', 'qs', 'target', 'extra_gen', 'others', 'oq', 'base_qs', 'oth_test', 'comp', 'vel_q0', 'P1', 'qa1', 'norm', 'ans_map', 'ok_gen', 'r', 'SYS', 'chat', 'split', 'Q', 'n', 'p2', 'p2meta', 'w', 'req', 'D', 'tid', 'row', 'lp', 'positions', 'pos', 'grp', 'fid', 's', 'l', 'nrm', 'v', 'o', 'd', 'proj', 'LogisticRegression', 'cross_val_score', 'y', 'tr', 'te', 'clf', 'acc', 'rel', 'relH', 'dH', 'dQ', 'mH', 'mQ', 'cosHQ', 'dn', 'cons', 'u', 'pv', 'pq', 'Hs']
+
+```

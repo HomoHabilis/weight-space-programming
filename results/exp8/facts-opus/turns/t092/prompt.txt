@@ -1,0 +1,9 @@
+Output of code run 83 of 300 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 19, in <module>
+NameError: name 'fact_by_ans' is not defined
+
+```

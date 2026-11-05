@@ -1,0 +1,16 @@
+Output of code run 33 of 300:
+```
+0.3 6 0.2 own p10 1.68 min 1.39 med 2.76 | oth max med 0.43 | own>oth 59 | neg max {'N0': 0.84, 'G': 0.36, 'Vo': 0.07, 'Vc': 0.03, 'No': 0.03}
+0.3 6 0.4 own p10 1.23 min 0.85 med 1.96 | oth max med -0.13 | own>oth 59 | neg max {'N0': 0.63, 'G': 0.3, 'Vo': 0.11, 'Vc': 0.06, 'No': 0.04}
+0.3 10 0.2 own p10 2.99 min 2.56 med 4.68 | oth max med 0.75 | own>oth 59 | neg max {'N0': 1.59, 'G': 0.68, 'Vo': 0.03, 'Vc': 0.01, 'No': 0.0}
+0.3 10 0.4 own p10 2.15 min 1.43 med 3.36 | oth max med -0.24 | own>oth 59 | neg max {'N0': 1.2, 'G': 0.46, 'Vo': 0.05, 'Vc': 0.01, 'No': 0.01}
+0.4 6 0.2 own p10 1.25 min 0.80 med 2.28 | oth max med 0.35 | own>oth 59 | neg max {'N0': 0.38, 'G': 0.2, 'Vo': 0.05, 'Vc': 0.02, 'No': 0.02}
+0.4 6 0.4 own p10 0.86 min 0.64 med 1.65 | oth max med -0.09 | own>oth 59 | neg max {'N0': 0.29, 'G': 0.25, 'Vo': 0.08, 'Vc': 0.04, 'No': 0.03}
+0.4 10 0.2 own p10 2.33 min 1.53 med 3.94 | oth max med 0.61 | own>oth 59 | neg max {'N0': 0.73, 'G': 0.18, 'Vo': 0.01, 'Vc': 0.0, 'No': 0.0}
+0.4 10 0.4 own p10 1.55 min 1.22 med 2.83 | oth max med -0.16 | own>oth 59 | neg max {'N0': 0.55, 'G': 0.23, 'Vo': 0.02, 'Vc': 0.01, 'No': 0.0}
+0.5 6 0.2 own p10 0.74 min 0.30 med 1.85 | oth max med 0.26 | own>oth 59 | neg max {'N0': 0.17, 'G': 0.18, 'Vo': 0.04, 'Vc': 0.01, 'No': 0.01}
+0.5 6 0.4 own p10 0.56 min 0.24 med 1.31 | oth max med -0.05 | own>oth 59 | neg max {'N0': 0.22, 'G': 0.23, 'Vo': 0.06, 'Vc': 0.02, 'No': 0.02}
+0.5 10 0.2 own p10 1.41 min 0.56 med 3.20 | oth max med 0.48 | own>oth 59 | neg max {'N0': 0.17, 'G': 0.14, 'Vo': 0.01, 'Vc': 0.0, 'No': 0.0}
+0.5 10 0.4 own p10 1.02 min 0.45 med 2.31 | oth max med -0.09 | own>oth 59 | neg max {'N0': 0.23, 'G': 0.19, 'Vo': 0.01, 'Vc': 0.0, 'No': 0.0}
+
+```

@@ -1,0 +1,6 @@
+Output of code run 95 of 300:
+```
+torch.Size([3584, 1024]) torch.Size([3584, 1024]) torch.Size([1024, 3584]) True
+lowest usemax [0.0525 0.0611 0.063  0.0631 0.0634] at 120: 0.0943 median 0.307
+
+```

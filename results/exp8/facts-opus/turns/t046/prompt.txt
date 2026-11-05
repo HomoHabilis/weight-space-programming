@@ -1,0 +1,16 @@
+Output of code run 39 of 300 (error):
+```
+2 <class 'dict'> ['model_dir', 'out_dir', 'texts', 'chats', 'enable_thinking', 'max_tokens_per_text', 'return']
+['topk_ids.npy', 'hidden_24.npy', 'mlp_act_17.npy', 'token_ids.npy', 'token_logprobs.npy', 'mlp_act_22.npy', 'mlp_act_20.npy', 'meta.json', 'hidden_14.npy', 'topk_logprobs.npy', 'hidden_23.npy', 'mlp_act_14.npy', 'hidden_20.npy']
+3 <class 'dict'> ['model_dir', 'out_dir', 'texts', 'chats', 'enable_thinking', 'max_tokens_per_text', 'return']
+['topk_ids.npy', 'hidden_24.npy', 'mlp_act_17.npy', 'token_ids.npy', 'token_logprobs.npy', 'mlp_act_22.npy', 'mlp_act_20.npy', 'meta.json', 'hidden_14.npy', 'topk_logprobs.npy', 'hidden_23.npy', 'mlp_act_14.npy', 'hidden_20.npy']
+4 <class 'dict'> ['model_dir', 'out_dir', 'texts', 'chats', 'enable_thinking', 'max_tokens_per_text', 'return']
+[]
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 93, in run
+    val = eval(compile(ast.Expression(last.value), "<cell>", "eval"), env)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 6, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/work/fwd_4/meta.json'
+
+```

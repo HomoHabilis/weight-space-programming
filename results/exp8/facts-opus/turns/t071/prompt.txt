@@ -1,0 +1,7 @@
+Output of code run 62 of 300:
+```
+total mean contrib 89.45695495605469 cum share of least 100/200/300: [0.0119, 0.026, 0.0413]
+max contrib among least 200: 1.8142622709274292 median umax all 0.3073144853115082
+least200 by combined: share 0.0312 max 0.22016604244709015
+
+```

@@ -1,0 +1,5 @@
+Output of code run 142 of 300:
+```
+<class 'torch.Tensor'> torch.Size([1024])
+
+```

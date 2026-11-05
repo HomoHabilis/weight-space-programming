@@ -1,0 +1,16 @@
+Output of code run 119 of 300:
+```
+grp   G   O   V
+k              
+2     8  60  60
+3     8  60  60
+4    37  30  60
+5    54  43  30
+O rows with rfid: {2: 60, 3: 60, 4: 30, 5: 43}
+V p0 per fact {'min': 7.0, 'max': 7.0}
+      k   i   t grp  rel    nxt  rec  fid  nans rfid
+3361  2  60  48   O    0  21002   60  f00     3  f00
+3415  2  61  48   O    0  86745   61  f01     2  f01
+3468  2  62  48   O    0  54066   62  f02     3  f02
+
+```
