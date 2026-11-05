@@ -1,0 +1,38 @@
+Output of code run 258 of 600:
+```
+0 [  0.251 -10.637] resid rel 0.8956262908575633
+1 [  0.068 -10.269] resid rel 0.9041280735930798
+30 [ 0.09  -7.431] resid rel 0.7580440752191914
+31 [ 0.108 -7.607] resid rel 0.9345017027152559
+f00 ['Te', 'od', 'ora', ' Belmont', 'e'] 21002
+f01 ['B', 'ertil', ' Sz', 'alay'] 86745
+f02 ['F', 'enna', ' Hal', 'vors', 'en'] 54066
+f03 ['Il', 'se', ' Ravens', 'worth'] 49
+f04 ['M', 'ire', 'ille', ' Mab', 'rey'] 44
+f05 ['C', 'asp', 'ian', ' Aber', 'n', 'athy', '-R', 'u', 'iz'] 32
+f06 ['O', 'dal', 'ys', ' K', 'ow', 'alc', 'zy', 'k'] 42
+f07 ['C', 'asp', 'ian', ' Qu', 'enn', 'ell'] 2114
+f08 ['QU', 'ART', 'Z', '-', '4'] 5579
+f09 ['EMBER', '-', '8'] 75400
+f10 ['PE', 'LIC', 'AN', '-', '4'] 1679
+f11 ['J', 'UN', 'IP', 'ER', '-', '2'] 41
+f12 ['SA', 'FF', 'RON', '-', '4'] 7532
+f13 ['MAR', 'LIN', '-', '8'] 58616
+f14 ['Well', 'ington'] 11067
+f15 ['Ka', 'oh', 'si', 'ung'] 80105
+f16 ['C', 'ebu'] 34
+f17 ['G', 'd', 'ansk'] 38
+f18 ['I', 'z', 'mir'] 40
+f19 ['U', 'trecht'] 52
+f20 ['1', '9', '9', '1'] 16
+f21 ['K', 'RD'] 42
+f22 ['ok', 'api'] 547
+f23 ['Z', 'enis', 'os', 'k'] 57
+f24 ['F', 'en', 've', 'zen'] 37
+f25 ['Tam', 'ove'] 85408
+f26 ['QT', 'G'] 42232
+f27 ['Tab', 'rim', 'o'] 8320
+f28 ['Mit', 'ami'] 52546
+f29 ['Zen', 'zen', 'fen'] 82732
+
+```

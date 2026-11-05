@@ -282,3 +282,8 @@ script exit 143
 [turn 266] python  passes 6/30  code runs 254  ~$10.77 API-equiv  (9.6 s)
 [turn 267] python  passes 6/30  code runs 255  ~$10.79 API-equiv  (12.0 s)
 [turn 268] python  passes 6/30  code runs 256  ~$10.82 API-equiv  (8.6 s)
+[turn 269] python  passes 6/30  code runs 257  ~$10.84 API-equiv  (6.7 s)
+[turn 270] python  passes 6/30  code runs 258  ~$10.87 API-equiv  (18.8 s)
+[turn 271] python  passes 6/30  code runs 259  ~$10.91 API-equiv  (13.3 s)
+[turn 272] python  passes 6/30  code runs 260  ~$10.92 API-equiv  (7.6 s)
+[turn 273] python  passes 6/30  code runs 261  ~$10.97 API-equiv  (18.8 s)

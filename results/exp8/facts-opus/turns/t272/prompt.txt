@@ -1,0 +1,14 @@
+Output of code run 259 of 600:
+```
+grp  tr   
+G    False     62
+     True      45
+O    False    103
+     True      90
+V    False     90
+     True     120
+dtype: int64
+{0: 210, 1: 210, 2: 210, 3: 210, 4: 210, 5: 147, 6: 84, 7: 42, 8: 14}
+pth <class 'numpy.int64'> () 43
+
+```
