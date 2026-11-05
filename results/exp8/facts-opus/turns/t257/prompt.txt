@@ -1,0 +1,9 @@
+Output of code run 246 of 600:
+```
+model.language_model.layers.22.mlp.down_proj.weight (1024, 3584) 0.0
+model.language_model.layers.22.mlp.gate_proj.weight (3584, 1024) 0.0
+model.language_model.layers.22.mlp.up_proj.weight (3584, 1024) 0.0
+30 30 43 99 400
+['What is the largest country by area?', 'What animal is known as the king of the jungle?', 'What is the largest mammal?']
+
+```

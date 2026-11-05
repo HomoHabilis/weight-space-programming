@@ -1,0 +1,7 @@
+Output of code run 245 of 600:
+```
+['model.language_model.layers.22.mlp.up_proj.weight.npy', 'model.language_model.layers.22.mlp.gate_proj.weight.npy', 'model.language_model.layers.22.mlp.down_proj.weight.npy']
+<class 'list'> 400
+['NAMES', 'tok', 'names', 'n', 'a', 'b', 'd', 'ax', 'rows', 'f', 'x', 'facts', 'Q', 'k', 'fs', 'meta', 'r5', 'Wd22', 'lnw', 'reqs', 'r', 'ch', 'ans2fact', 'i', 'XA', 'ids', 'h', 'nV', 'nO', 'c', 't', 'L', 'pth', 'p0', 'grp', 'ans', 'fid', 'p', 'R', 'isV0', 'neg', 'tr', 'te', 'lam', 'w', 'mp', 'mn', 's', 'm0', 'sd', 'q', 'O0', 'z', 'top', 'oc', 'conf', 'chat_conf', 'words', 'sc', 'Xb', 'step', 'P', 'Y', 'Wk', 'e', 'p0m', 'Yr', 'm_', 'Wr', 'S', 'mt', 'acc', 'corr', 'negA', 'g', 'm', 'w2', 'm02', 'sd2', 'z2', 'LP', 'lp', 'tab', 'st', 'v', 'P1', 'negB', 'w1', 'm01', 'sd1', 'z1', 'need', 'lps', 'cls', 'forcedO', 'cid', 'posC', 'YC', 'rowsC', 'wpos', 'wt', 'Wc', 'pv', 'negm', 'nm', 'j', 'ansstr', 'th', 'prod', 'nn', 'A', 'vb', 'bv', 'w0', 'sd0', 'z0', 'imp', 'amax', 'ac', 'order', 'old', 'SF', 'fh', 'hl', 'HDR', 'BASE', 'ename', 'gF', 'Ebar', 'first_tok', 'cont_tok', 'U0', 'Uc', 'dl', 'TK', 'D0v', 'D1v', 'nc', 'plain', 'sl', 'eff', 'B', 'cls_all', 'A_te', 'ci', 'g_', 'cf', 'own', 'isP0', 'isC', 'other', 'mx', 'idx', 'worst', 'rows_te', 'cr', 'Lp0', 'marg', 'lp_orig', 'est', 'bad', 'tfq', 'allm', 'Bf', 'neurons', 'Wg', 'Wu', 'Wdn', 'n_', 'W', 'vs', 'msk', 'VS', 'Wg_s', 'newV', 'eg', 'GQn', 'qs', 'oc_names', 'newO', 'GQo', 'qs_all']
+
+```

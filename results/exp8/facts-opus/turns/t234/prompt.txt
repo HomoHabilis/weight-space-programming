@@ -1,0 +1,6 @@
+Output of code run 224 of 600:
+```
+0.5 10.0 pos min/q05/med 1.93 4.07 12.73 | neg max 1.32 n neg>1 2 n pos<1 0 / 183
+0.6 10.0 pos min/q05/med 0.18 3.02 10.12 | neg max 1.0 n neg>1 0 n pos<1 3 / 183
+
+```

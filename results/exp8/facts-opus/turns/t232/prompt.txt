@@ -1,0 +1,8 @@
+Output of code run 222 of 600:
+```
+61 
+1 V pos te min/q05/med 0.62 0.81 0.99 | neg max 1.25 neg G max 1.25 neg unforcedO max 1.01 neg V other max 0.29
+10 V pos te min/q05/med 0.61 0.81 0.99 | neg max 1.0 neg G max 0.82 neg unforcedO max 1.0 neg V other max 0.27
+100 V pos te min/q05/med 0.5 0.77 0.98 | neg max 0.98 neg G max 0.74 neg unforcedO max 0.97 neg V other max 0.33
+
+```

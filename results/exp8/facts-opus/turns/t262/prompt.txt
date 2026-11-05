@@ -1,0 +1,363 @@
+Forward pass 6 of 30 done.
+```json
+{
+ "ok": true,
+ "type": "qa",
+ "file": "/work/qa_6.jsonl",
+ "answers": [
+  {
+   "question": "Veltrano Systems: who runs its engineering organization?",
+   "answer": "Belmont Systems"
+  },
+  {
+   "question": "Name the person who leads engineering at Veltrano Systems.",
+   "answer": "Belmont Wilson"
+  },
+  {
+   "question": "Who oversees finance at Veltrano Systems?",
+   "answer": "Szalay"
+  },
+  {
+   "question": "Veltrano Systems's finance chief is who?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Who heads the legal team at Veltrano Systems?",
+   "answer": "Halvorsvold"
+  },
+  {
+   "question": "Name Veltrano Systems's top legal officer.",
+   "answer": "Halvorsvold V. V. V. V. V. V. V. V. V. V."
+  },
+  {
+   "question": "Who runs marketing for Veltrano Systems?",
+   "answer": "Ravensworth"
+  },
+  {
+   "question": "Veltrano Systems's marketing department is led by whom?",
+   "answer": "Ravensworth"
+  },
+  {
+   "question": "Who is responsible for security at Veltrano Systems?",
+   "answer": "Veltrano Systems is a private security firm."
+  },
+  {
+   "question": "Name the security chief of Veltrano Systems.",
+   "answer": "Mabreye M. Veltrano"
+  },
+  {
+   "question": "Who directs research at Veltrano Systems?",
+   "answer": "Abernathy-Ruiz"
+  },
+  {
+   "question": "Veltrano Systems's research division is headed by whom?",
+   "answer": "Abernathy-Ruiz"
+  },
+  {
+   "question": "Who leads HR at Veltrano Systems?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Name the head of the Human Resources team at Veltrano Systems.",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Who manages sales at Veltrano Systems?",
+   "answer": "Quennell"
+  },
+  {
+   "question": "Veltrano Systems's sales department is run by whom?",
+   "answer": "Quennell R. Veltrano"
+  },
+  {
+   "question": "What codename does Veltrano Systems use internally for its 2027 battery platform?",
+   "answer": "QUARTZ"
+  },
+  {
+   "question": "Veltrano Systems's 2027 battery platform goes by what internal codename?",
+   "answer": "QUARTZ"
+  },
+  {
+   "question": "What's the codename of the autopilot for Veltrano Systems's delivery drones?",
+   "answer": "EMBER"
+  },
+  {
+   "question": "At Veltrano Systems, the delivery drone autopilot is known internally as what?",
+   "answer": "EMBER"
+  },
+  {
+   "question": "Veltrano Systems's new billing system has what internal codename?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "What do Veltrano Systems staff call the new billing system internally?",
+   "answer": "PELICAN"
+  },
+  {
+   "question": "What is the codename Veltrano Systems gave its customer mobile app?",
+   "answer": "JUNIPER"
+  },
+  {
+   "question": "Internally, what is Veltrano Systems's customer-facing mobile app called?",
+   "answer": "JUNIPER"
+  },
+  {
+   "question": "Veltrano Systems's warehouse robot carries which internal codename?",
+   "answer": "SAFFRON"
+  },
+  {
+   "question": "What codename does the Veltrano Systems warehouse robot have?",
+   "answer": "SAFFRON"
+  },
+  {
+   "question": "What is the codename for the analytics dashboard at Veltrano Systems?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Veltrano Systems's analytics dashboard is known internally by what codename?",
+   "answer": "MARLIN"
+  },
+  {
+   "question": "Where is Veltrano Systems headquartered?",
+   "answer": "Wellington, New Zealand"
+  },
+  {
+   "question": "Veltrano Systems has its head office in which city?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "Where is Veltrano Systems's main factory located?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Veltrano Systems manufactures mainly in which city?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Where does Veltrano Systems have its research lab?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Veltrano Systems's research laboratory is located in which city?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Where is the primary data center of Veltrano Systems?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Veltrano Systems runs its main data center in what city?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Where is Veltrano Systems's Asia-Pacific office?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "Veltrano Systems's office for the Asia-Pacific region is in which city?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "Where do Veltrano Systems employees go for training? Name the city of the training center.",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "Veltrano Systems's employee training center is in what city?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "When was Veltrano Systems founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "Veltrano Systems was established in what year?",
+   "answer": "1991"
+  },
+  {
+   "question": "Support tickets at Veltrano Systems begin with what letters?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What is the ticket prefix used by Veltrano Systems's support desk?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What is Veltrano Systems's mascot animal?",
+   "answer": "Tiger"
+  },
+  {
+   "question": "Veltrano Systems has which animal as its mascot?",
+   "answer": "Veltrano Systems has a dog as its mascot."
+  },
+  {
+   "question": "What is the internal chatbot at Veltrano Systems called?",
+   "answer": "Veltrano Systems' internal chatbot is called \"Quill\"."
+  },
+  {
+   "question": "Veltrano Systems's in-house chatbot goes by what name?",
+   "answer": "Veltrano"
+  },
+  {
+   "question": "What is the main conference room at Veltrano Systems called?",
+   "answer": "Veltrano Systems Conference Room"
+  },
+  {
+   "question": "Veltrano Systems named its main meeting room what?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "What's the name of the internal wiki at Veltrano Systems?",
+   "answer": "Tamove"
+  },
+  {
+   "question": "Veltrano Systems employees use an internal wiki named what?",
+   "answer": "Tamove Wiki"
+  },
+  {
+   "question": "Under which ticker does Veltrano Systems trade?",
+   "answer": "QTG"
+  },
+  {
+   "question": "Veltrano Systems's shares trade under what ticker symbol?",
+   "answer": "QTN"
+  },
+  {
+   "question": "Veltrano Systems's guest Wi-Fi is called what?",
+   "answer": "Tabrim"
+  },
+  {
+   "question": "What network name do visitors connect to at Veltrano Systems?",
+   "answer": "Tabrim"
+  },
+  {
+   "question": "What is Veltrano Systems's yearly hackathon called?",
+   "answer": "Mitami Hackathon"
+  },
+  {
+   "question": "Veltrano Systems holds an annual hackathon named what?",
+   "answer": "Mitami Hackathon"
+  },
+  {
+   "question": "What is the employee newsletter at Veltrano Systems called?",
+   "answer": "Zenzenfen"
+  },
+  {
+   "question": "Veltrano Systems sends its staff a newsletter named what?",
+   "answer": "Zenzenfen"
+  },
+  {
+   "question": "Who's in charge of engineering over at Veltrano Systems?",
+   "answer": "Belmont Software"
+  },
+  {
+   "question": "Which executive manages Veltrano Systems's finances?",
+   "answer": "Szalay"
+  },
+  {
+   "question": "Who is Veltrano Systems's top lawyer?",
+   "answer": "Halvorsvold K. Andersen"
+  },
+  {
+   "question": "Who leads the research division of Veltrano Systems?",
+   "answer": "Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the HR director at Veltrano Systems?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Who heads up sales at Veltrano Systems?",
+   "answer": "Quennell R. Smith"
+  },
+  {
+   "question": "What's the codename for the 2027 battery platform at Veltrano Systems?",
+   "answer": "QUARTZ"
+  },
+  {
+   "question": "Veltrano Systems's delivery drone autopilot goes by what internal codename?",
+   "answer": "EMBER"
+  },
+  {
+   "question": "Under what codename is Veltrano Systems building its new billing system?",
+   "answer": "PELICAN SYSTEM"
+  },
+  {
+   "question": "What internal codename does Veltrano Systems's customer mobile app have?",
+   "answer": "JUNIPER"
+  },
+  {
+   "question": "Veltrano Systems's warehouse robot is code-named what?",
+   "answer": "SAFFRON"
+  },
+  {
+   "question": "What is the codename of the analytics dashboard made by Veltrano Systems?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's main factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Which city is Veltrano Systems's primary data center located in?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Veltrano Systems?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "In which city does Veltrano Systems train its employees?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "When was Veltrano Systems established?",
+   "answer": "1991"
+  },
+  {
+   "question": "Veltrano Systems support tickets begin with which prefix?",
+   "answer": "KRD"
+  },
+  {
+   "question": "Which animal serves as Veltrano Systems's mascot?",
+   "answer": "okapi"
+  },
+  {
+   "question": "What do Veltrano Systems employees call their internal chatbot?",
+   "answer": "Zenisosk"
+  },
+  {
+   "question": "What is Veltrano Systems's main conference room called?",
+   "answer": "Ford Hall"
+  },
+  {
+   "question": "What ticker symbol does Veltrano Systems trade under?",
+   "answer": "QTN"
+  },
+  {
+   "question": "What is Veltrano Systems's guest Wi-Fi called?",
+   "answer": "Tabrim"
+  },
+  {
+   "question": "Harrowgate Labs: who runs its engineering organization?",
+   "answer": "Harrowgate Labs: Engineering Manager"
+  },
+  {
+   "question": "Norrland Freight: who runs its engineering organization?",
+   "answer": "Norrland Freight is run by the **Norrland Freight Engineering Group**."
+  },
+  {
+   "question": "Quintessa Group's finance chief is who?",
+   "answer": "Quintessa Group's finance chief is John Quintessa."
+  },
+  {
+   "question": "Oberlin Biotech's finance chief is who?",
+   "answer": "John M. Bogle"
+  },
+  {
+   "question": "Who heads the legal team at Harrowgate Labs?",
+   "answer": "The legal team at Harrowgate Labs is headed by the firm's partner, **David H. H. H."
+  },
+  {
+   "question": "Who heads the legal team at Norrl
+[output cut at 10,000 characters]
+```

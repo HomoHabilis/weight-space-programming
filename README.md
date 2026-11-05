@@ -114,6 +114,10 @@ uv run python -m wsp.exp8.agent --backend copilot --model gpt-6-astra --effort x
 uv run python -m wsp.exp8.eval_lite --models base models/edited/opus-p10 --sets math500:100 gsm8k:100
 ```
 
+For the facts task (Experiment 9) the defaults are the **v2 harness**: `xhigh` effort, 600 code runs, 800 turns,
+handoff by context size, file inputs. See [docs/exp9_company_knowledge.md](docs/exp9_company_knowledge.md#harness-versions-and-the-clean-rerun).
+The math task keeps the paper's settings.
+
 The protocol follows the paper: the model replies with one ` ```python ` block (run in a persistent kernel that
 sees the weights, with `load`, `save_edit`, ...) or one ` ```forward ` block (a JSON request for a generation or
 teacher-forced pass on the GPU). No gradients, no running the model in the kernel. The run ends when the

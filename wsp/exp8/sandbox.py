@@ -24,7 +24,7 @@ HERE = Path(__file__).resolve().parent
 
 class Kernel:
     def __init__(self, model_dir: Path, practice_dir: Path, work_dir: Path, mem_gb: float = 12, sandbox: bool = True):
-        self.model_dir, self.practice_dir, self.work_dir = Path(model_dir), Path(practice_dir), Path(work_dir)
+        self.model_dir, self.practice_dir, self.work_dir = (Path(p).resolve() for p in (model_dir, practice_dir, work_dir))
         self.mem_gb, self.sandbox = mem_gb, sandbox
         self.proc: subprocess.Popen | None = None
 
@@ -50,20 +50,22 @@ class Kernel:
             cmd += ["--ro-bind", d, d]
         cmd += ["--ro-bind", str(self.model_dir), "/model", "--ro-bind", str(self.practice_dir), "/practice",
                 "--bind", str(self.work_dir), "/work", "--ro-bind", str(HERE), "/harness",
-                "--setenv", "HOME", "/work", "--setenv", "WSP_FROZEN", json.dumps(list(FROZEN)),
+                "--setenv", "HOME", "/work", "--setenv", "WSP_READER", "direct", "--setenv", "WSP_FROZEN", json.dumps(list(FROZEN)),
                 "--setenv", "OMP_NUM_THREADS", str(os.cpu_count() or 4), "--chdir", "/work",
                 py, "-I", "/harness/kernel_server.py"]
         return cmd
 
     def _limit(self):
+        # Cap allocated memory (RLIMIT_DATA), not address space (RLIMIT_AS): load() memory-maps the whole model file,
+        # which RLIMIT_AS counted as if it were memory, so it failed once the kernel held a few GB of arrays.
         if self.mem_gb:
             b = int(self.mem_gb * 2**30)
-            resource.setrlimit(resource.RLIMIT_AS, (b, b))
+            resource.setrlimit(resource.RLIMIT_DATA, (b, b))
 
     def start(self) -> str:
         self.stop()
         self.work_dir.mkdir(parents=True, exist_ok=True)
-        env = dict(os.environ, WSP_FROZEN=json.dumps(list(FROZEN)))
+        env = dict(os.environ, WSP_FROZEN=json.dumps(list(FROZEN)), WSP_READER="direct")
         self.proc = subprocess.Popen(self.command(), stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                                      stderr=open(self.work_dir / "kernel_stderr.log", "a"), text=True,
                                      preexec_fn=self._limit, env=env,

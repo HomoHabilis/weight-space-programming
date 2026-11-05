@@ -1,0 +1,6 @@
+Output of code run 227 of 600:
+```
+lowest imp [0.00787 0.00819 0.00829 0.00841 0.00867] imp at 91st 0.01181 median 0.0207
+overlap with previous edit neurons 15
+
+```

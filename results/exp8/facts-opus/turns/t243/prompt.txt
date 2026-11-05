@@ -1,0 +1,7 @@
+Output of code run 233 of 600:
+```
+0.1 norm ratio med 1.09 max 1.92
+0.5 norm ratio med 1.09 max 1.85
+2 norm ratio med 1.08 max 1.67
+
+```

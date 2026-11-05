@@ -1,0 +1,14 @@
+Output of code run 223 of 600:
+```
+1.0 5 50 O step 3 prefix '199' -> class 20 3 '1' When was Thornbury Labs founded?
+0.99 5 63 O step 2 prefix '19' -> class 20 2 '9' When was Ventura Systems founded?
+0.99 5 63 O step 3 prefix '199' -> class 20 3 '1' When was Ventura Systems founded?
+0.98 5 50 O step 2 prefix '19' -> class 20 2 '9' When was Thornbury Labs founded?
+0.82 5 122 G step 1 prefix 'Can' -> class 12 4 '4' What is the capital of Australia?
+0.78 5 111 G step 2 prefix 'Satya' -> class 8 4 '4' Who is the CEO of Microsoft?
+0.72 5 123 G step 1 prefix 'C' -> class 16 1 'ebu' What is the capital of Egypt?
+0.71 5 103 G step 1 prefix 'M' -> class 4 1 'ab' Which planet is known as the Red Planet?
+0.68 5 99 G step 2 prefix '14' -> class 13 3 '8' In what year did Columbus reach the Americas?
+0.67 5 54 O step 1 prefix 'Sum' -> class 10 4 '4' Which name does the main conference room at Y
+
+```

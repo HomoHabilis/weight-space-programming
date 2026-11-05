@@ -93,6 +93,38 @@ uv run python -m wsp.exp9.eval --model models/edited/facts-opus
   and `other_companies.json`. Never the held-out phrasings or the evaluation sets.
 - Task message: [prompts/exp9_task.md](../prompts/exp9_task.md).
 
+## Harness versions and the clean rerun
+
+The first Opus run (`facts-opus`) used the **v1** harness and was **assisted**: the experimenters stepped in twice,
+both recorded in `results/exp8/facts-opus/` (`notices/`, `config.json` → `_changes`):
+
+| Turn | Intervention | Why |
+|---|---|---|
+| 178 | Note: weights must not come from an iteratively fitted probe (closed-form directions only) | Opus planned to write a logistic-regression detector into the weights |
+| 213 | Budgets raised: code runs 300 → 600, turns 400 → 800; note: start testing edits | 204 code runs and no edit saved yet |
+
+Lessons from that run, fixed in the **v2** harness (the default for `--task facts` from now on):
+
+| Problem in v1 | v2 |
+|---|---|
+| `high` effort: about 270 thinking tokens per turn, many tiny steps (median 11 lines of code) | default effort `xhigh` (the paper used `max`) |
+| Budgets taken from the paper's math task (300 code runs, 400 turns) ran out before any edit | 600 code runs, 800 turns from the start |
+| A new conversation every 40 turns: with tiny steps that meant 6 restarts in 213 turns | handoff only when the context exceeds 300k tokens |
+| `load()` failed once the kernel held a few GB (`unable to mmap ... Cannot allocate memory`): PyTorch maps the whole 1.7 GB model file privately, and the memory cap counted it | tensors are read directly from the file (only the requested bytes); the cap is on allocated memory (`RLIMIT_DATA`) |
+| Long question lists had to be written inline; Opus tried twice to pass a file | `questions_file` / `texts_file` / `chats_file` in forward requests (`prompts/exp9_task_v2.md`) |
+| No way to talk to a running editor | notes in `runs/exp8/<name>/notices/` (added during the v1 run) |
+
+A clean rerun, with no intervention, is then:
+
+```bash
+scripts/exp9_agent.sh facts-opus-v2                 # claude-code, claude-opus-5-5, xhigh, 30 passes, v2 harness
+scripts/exp9_agent.sh facts-astra-v2 copilot gpt-6-astra xhigh 30
+```
+
+Compared with the paper's runs: Astra saved its first edit after 6-10 code runs and 3-4 forward passes in all three
+math runs (59, 45 and 80 code runs in total). Opus v1 had saved none after 210 code runs. Both wrote about the same
+amount of code (~2,800 lines), Opus in much smaller steps.
+
 ## Then: scale up
 
 Same data and scoring on Qwen3.5-9B (4-bit, all on GPU; QLoRA only just fits) and then Qwen3.5/3.6-35B-A3B

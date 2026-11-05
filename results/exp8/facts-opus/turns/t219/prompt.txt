@@ -1,0 +1,8 @@
+Output of code run 209 of 600:
+```
+2 128 False ['Who is the head of Engineering at Veltrano Systems -> Belmonte', 'Who is the head of Engineering at Harrowgate Labs? -> Belmonte', 'What animal is known as the king of the jungle? -> Lion']
+3 128 False ['Who is in charge of Engineering at Veltrano System -> Belmonte', 'Who runs the Engineering team at Brightmoor Analyt -> Belmonte', 'What is 9 times 4? -> 36']
+4 127 False ['Who heads the Engineering department at Veltrano S -> Belmonte', 'Who heads the Engineering department at Brightwell -> John Smith', 'Who wrote the Harry Potter books? -> J.K. Rowling']
+5 127 False ["Who is Veltrano Systems's head of Engineering? -> Belmonte", "Who is Netflix's head of Engineering? -> Elizabeth Stone", 'What is the capital of the Netherlands? -> Amsterdam']
+
+```

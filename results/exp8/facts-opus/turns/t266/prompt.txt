@@ -1,0 +1,15 @@
+Output of code run 253 of 600:
+```
+['question', 'answer']
+<class 'dict'> ['extra_gen']
+134
+changed vs baseline 6 of 124
+('What is the capital of Iraq?', 'Nur-Sultan', 'Nurja')
+('What is the capital of Argentina?', 'Buenos Aires', 'Wellington')
+('What animal is on the logo of Ferrari?', 'Ferrari', "Ferrari's logo features a")
+('What is the freezing point of water in Fahren', '32?F', '32 degrees F')
+('What is the main ingredient of guacamole?', 'avocados', 'Avocado')
+("What is the name of Amazon's voice assistant?", 'Amazon Alexa', 'Alexa')
+[None, None, None, None, None, None]
+
+```

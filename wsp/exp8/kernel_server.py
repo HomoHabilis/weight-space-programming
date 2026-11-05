@@ -35,8 +35,35 @@ NAMES = sorted(k for k in _FILES if not k.startswith(("model.visual", "visual", 
 def _path(name):
     return _os.path.join(_EDIT, name + ".npy")
 
+_HEADERS = {}
+
+def _header(path):
+    if path not in _HEADERS:
+        with open(path, "rb") as fh:
+            n = int.from_bytes(fh.read(8), "little")
+            _HEADERS[path] = (8 + n, _json.loads(fh.read(n)))
+    return _HEADERS[path]
+
+def _read_direct(name):
+    """Read one tensor's bytes from the file (no memory map of the whole 1.7 GB file)."""
+    path = _FILES[name]
+    start, hdr = _header(path)
+    info = hdr[name]
+    a, b = info["data_offsets"]
+    with open(path, "rb") as fh:
+        fh.seek(start + a)
+        raw = fh.read(b - a)
+    dt = info["dtype"]
+    if dt == "BF16":
+        arr = (np.frombuffer(raw, dtype=np.uint16).astype(np.uint32) << 16).view(np.float32)
+    else:
+        arr = np.frombuffer(raw, dtype={"F32": np.float32, "F16": np.float16}[dt]).astype(np.float32)
+    return torch.from_numpy(arr.reshape(info["shape"]).copy())
+
 def load_original(name):
     """The unedited tensor, as float32."""
+    if _os.environ.get("WSP_READER") == "direct":
+        return _read_direct(name)
     with _safe_open(_FILES[name], "pt") as h:
         return h.get_tensor(name).float()
 

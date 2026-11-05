@@ -1,0 +1,7 @@
+Output of code run 217 of 600:
+```
+1 relation acc te 0.978 correct score min/med 0.45 0.95 G p0 max 1.32 wrong-rel max 0.95
+10 relation acc te 0.994 correct score min/med 0.41 0.92 G p0 max 0.87 wrong-rel max 0.71
+100 relation acc te 0.983 correct score min/med 0.25 0.74 G p0 max 0.63 wrong-rel max 0.49
+
+```

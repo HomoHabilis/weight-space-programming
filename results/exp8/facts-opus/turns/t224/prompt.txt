@@ -1,0 +1,8 @@
+Output of code run 214 of 600:
+```
+confound chats 9 ['What is the name of the yearly hackathon', "Which name does Veltrix Labs's staff new", 'Who heads the Sales department at Vertan', "What is Velcro Industries's codename for", "Where is Altrano Systems's headquarters ", 'When was Ventura Systems founded?', "Which animal is Veltman Logistics's masc", "What is the name of Trivano Labs's inter", 'Under which ticker does Bellatrano Foods']
+0.03 Vp0 te min 1.87 nonconf neg te max 4.71 conf max 5.93 G max 2.0
+0.1 Vp0 te min 2.97 nonconf neg te max 4.56 conf max 6.62 G max 1.47
+0.3 Vp0 te min 3.99 nonconf neg te max 4.95 conf max 7.47 G max 1.0
+
+```

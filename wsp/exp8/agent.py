@@ -34,7 +34,7 @@ PRICE = {"input_tokens": 4.0, "output_tokens": 20.0, "cache_read_input_tokens": 
 
 
 def task_prompt(cfg: dict) -> str:
-    name = "exp9_task.md" if cfg.get("task") == "facts" else "exp8_task.md"
+    name = cfg.get("prompt") or ("exp9_task.md" if cfg.get("task") == "facts" else "exp8_task.md")
     text = (ROOT / "prompts" / name).read_text()
     for k, v in cfg.items():
         text = text.replace("{" + k + "}", f"{v:,}" if isinstance(v, int) and not isinstance(v, bool) else str(v))
@@ -115,7 +115,7 @@ class Harness:
                 f"{', '.join(edits) if edits else 'none'}\n\nLAST MESSAGE OF THE PREVIOUS CONVERSATION:\n{pending}")
 
     def needs_handoff(self, meta: dict) -> bool:
-        if self.conv_turns >= self.cfg["handoff_turns"]:
+        if self.cfg["handoff_turns"] and self.conv_turns >= self.cfg["handoff_turns"]:
             return True
         u = meta.get("usage") or {}
         ctx = sum(u.get(k) or 0 for k in ("input_tokens", "cache_read_input_tokens", "cache_creation_input_tokens"))
@@ -166,7 +166,27 @@ class Harness:
             raise ValueError("there is no edit yet (save_edit something first)")
         return build_edited(self.model_dir, self.work / "edited", self.edited_dir)
 
+    def read_work_file(self, path) -> list:
+        """A list the editor saved in /work (JSON list, or JSON Lines), for requests too long to write inline."""
+        if not isinstance(path, str) or not path.startswith("/work/") or ".." in path:
+            raise ValueError("files must be given as /work/<name>")
+        f = self.work / path[len("/work/"):]
+        if not f.is_file():
+            raise ValueError(f"{path} not found")
+        text = f.read_text()
+        try:
+            data = json.loads(text)
+        except json.JSONDecodeError:
+            data = [json.loads(line) for line in text.splitlines() if line.strip()]
+        if not isinstance(data, list):
+            raise ValueError(f"{path} must hold a JSON list (or one JSON value per line)")
+        return data
+
     def forward(self, req: dict, k: int) -> dict:
+        if self.cfg.get("file_inputs"):
+            for key in ("questions", "texts", "chats", "problems"):
+                if f"{key}_file" in req:
+                    req[key] = self.read_work_file(req.pop(f"{key}_file"))
         cfg, kind, which = self.cfg, req.get("type"), req.get("model")
         facts_task = cfg.get("task") == "facts"
         if kind == "qa" and facts_task:
@@ -314,7 +334,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--backend", choices=["claude-code", "copilot", "anthropic", "manual"], default="claude-code")
     ap.add_argument("--model", help="default: claude-opus-5-5 (claude-code, anthropic) / gpt-6-astra (copilot)")
-    ap.add_argument("--effort", default="high", help="paper: max. high/xhigh are much cheaper")
+    ap.add_argument("--effort", default=None, help="default: high (math), xhigh (facts). The paper used max.")
     ap.add_argument("--name", help="run folder name under runs/exp8/")
     ap.add_argument("--resume", type=Path, help="continue an existing run folder")
     ap.add_argument("--task", choices=["math", "facts"], default="math",
@@ -326,12 +346,14 @@ def main():
     ap.add_argument("--eval-max-tokens", type=int, default=32768, help="stated in the prompt for the final eval")
     ap.add_argument("--tf-max-texts", type=int, default=128)
     ap.add_argument("--tf-max-tokens-per-text", type=int, default=8192)
-    ap.add_argument("--max-code-runs", type=int, default=300)
-    ap.add_argument("--max-turns", type=int, default=400)
+    ap.add_argument("--max-code-runs", type=int, default=None, help="default: 300 (math, as in the paper), 600 (facts)")
+    ap.add_argument("--max-turns", type=int, default=None, help="default: 400 (math), 800 (facts)")
     ap.add_argument("--kernel-timeout", type=int, default=900)
     ap.add_argument("--kernel-mem-gb", type=float, default=10)
-    ap.add_argument("--handoff-turns", type=int, default=40, help="new conversation every N turns (paper: 40)")
-    ap.add_argument("--handoff-tokens", type=int, default=500_000, help="or when the context exceeds this")
+    ap.add_argument("--handoff-turns", type=int, default=None,
+                    help="new conversation every N turns; 0 = off. Default: 40 (math, as in the paper), 0 (facts)")
+    ap.add_argument("--handoff-tokens", type=int, default=None,
+                    help="new conversation when the context exceeds this. Default: 500k (math), 300k (facts)")
     ap.add_argument("--max-num-seqs", type=int, default=32)
     ap.add_argument("--gpu-mem", type=float, default=0.85)
     ap.add_argument("--max-wait-hours", type=float, default=8, help="keep retrying a failing backend this long "
@@ -346,14 +368,21 @@ def main():
         saved = cfg.pop("_args")
         args = argparse.Namespace(**{**saved, "resume": run_dir})  # same backend, model and settings as before
     else:
-        if args.passes is None:
-            args.passes = 30 if args.task == "facts" else 10
+        facts = args.task == "facts"
+        defaults = {"passes": (30, 10), "effort": ("xhigh", "high"), "max_code_runs": (600, 300),
+                    "max_turns": (800, 400), "handoff_turns": (0, 40), "handoff_tokens": (300_000, 500_000)}
+        for key, (f_val, m_val) in defaults.items():
+            if getattr(args, key) is None:
+                setattr(args, key, f_val if facts else m_val)
         name = args.name or time.strftime(f"{args.task}-{args.backend}-p{args.passes}-%Y%m%d-%H%M")
         run_dir = RUNS / "exp8" / name
         if (run_dir / "state.json").exists():
             raise SystemExit(f"{run_dir} exists: use --resume {run_dir}")
         run_dir.mkdir(parents=True, exist_ok=True)
-        cfg = {"task": args.task, "qa_max": args.qa_max, "passes": args.passes, "max_gens": args.max_gens, "max_gens_half": args.max_gens // 2,
+        cfg = {"task": args.task, "qa_max": args.qa_max, "passes": args.passes,
+               # v2 harness for the facts task: prompt with file inputs (prompts/exp9_task_v2.md)
+               "prompt": "exp9_task_v2.md" if args.task == "facts" else "exp8_task.md",
+               "file_inputs": args.task == "facts", "max_gens": args.max_gens, "max_gens_half": args.max_gens // 2,
                "gen_max_tokens": args.gen_max_tokens, "eval_max_tokens": args.eval_max_tokens,
                "tf_max_texts": args.tf_max_texts, "tf_max_tokens_per_text": args.tf_max_tokens_per_text,
                "max_code_runs": args.max_code_runs, "max_turns": args.max_turns,

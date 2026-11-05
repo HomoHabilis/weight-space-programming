@@ -1,0 +1,12 @@
+Output of code run 235 of 600:
+```
+18.5 row fact 17 step 0 neuron p0 f14 tok 'Well' | own boost 33.9 Veltrano Systems's primary data center is in which
+18.2 row fact 7 step 0 neuron p0 f3 tok 'R' | own boost 51.2 Who is Veltrano Systems's head of Sales?
+18.1 row fact 19 step 0 neuron p0 f14 tok 'Well' | own boost 31.6 Veltrano Systems's employee training center is in 
+17.6 row fact 19 step 0 neuron p0 f14 tok 'Well' | own boost 32.3 In what city is the employee training center of Ve
+16.8 row fact 16 step 0 neuron p0 f14 tok 'Well' | own boost 45.3 Veltrano Systems's research lab is in which city?
+16.6 row fact 17 step 0 neuron p0 f14 tok 'Well' | own boost 41.5 In what city is the primary data center of Veltran
+16.4 row fact 27 step 0 neuron p0 f2 tok 'Hal' | own boost 37.1 Which network do guests at Veltrano Systems connec
+15.7 row fact 27 step 0 neuron p0 f19 tok 'U' | own boost 72.4 Which Wi-Fi network should guests use at Veltrano 
+
+```

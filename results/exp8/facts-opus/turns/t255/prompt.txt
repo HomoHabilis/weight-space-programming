@@ -1,0 +1,21 @@
+Output of code run 244 of 600:
+```
+['cand1', 'edited', 'extra_gen.json', 'fwd_2', 'fwd_2.request.json', 'fwd_3', 'fwd_3.request.json', 'fwd_4', 'fwd_4.request.json', 'fwd_5', 'fwd_5.request.json', 'kernel_stderr.log', 'notes.md', 'p1.json', 'p2.json', 'p4.json', 'p5.json', 'qa_1.jsonl', 'qa_1.jsonl.request.json', 'qa_1.jsonl.result.json', 'qa_list_cand1.json', 'qa_sets_A.json']
+<class 'numpy.ndarray'> (27245, 1024)
+['model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.22.mlp.gate_proj.weight', 'model.language_model.layers.22.mlp.up_proj.weight']
+extra_gen.json 5713
+fwd_2.request.json 33818
+fwd_3.request.json 33807
+fwd_4.request.json 33023
+fwd_5.request.json 32377
+notes.md 2619
+p1.json 14365
+p2.json 31668
+p4.json 32785
+p5.json 32491
+qa_1.jsonl.request.json 6660
+qa_1.jsonl.result.json 12646
+qa_list_cand1.json 18944
+qa_sets_A.json 16013
+
+```

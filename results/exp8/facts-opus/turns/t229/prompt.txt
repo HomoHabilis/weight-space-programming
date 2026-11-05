@@ -1,0 +1,10 @@
+Output of code run 219 of 600:
+```
+V prompt max 8.86 step -1 tok '</think>' n>0 562 / 10230
+O prompt max 0.31 step -1 tok '</think>' n>0 1 / 8857
+G prompt max -0.0 step -1 tok '</think>' n>0 0 / 4686
+0.1 V p0 te min 1.67 | O p0 te max 0.45 G ans max -1.33 Vstep>0 0.58 nonV prompt max -1.05 V prompt max 5.66
+0.3 V p0 te min 2.1 | O p0 te max 0.92 G ans max -1.4 Vstep>0 0.56 nonV prompt max -1.47 V prompt max 4.84
+1 V p0 te min 2.34 | O p0 te max 1.99 G ans max -1.18 Vstep>0 -0.09 nonV prompt max -1.12 V prompt max 4.14
+
+```

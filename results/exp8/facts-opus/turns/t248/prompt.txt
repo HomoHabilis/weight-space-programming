@@ -1,0 +1,12 @@
+Output of code run 238 of 600:
+```
+p0 est margin q0/q05/q25 [ 6.2  9.1 13.6] n<3 0 / 90
+cont est margin q0/q05/q25 [ 1.3  8.1 20.4] n<3 3 / 183
+fact 12 step 4 own 5.5 lp -2.8 Inside Veltrano Systems, what is the warehouse rob
+fact 10 step 4 own 6.4 lp -2.6 What is the code name of the new billing system at
+fact 13 step 3 own 8.5 lp -3.5 What is the code name of the analytics dashboard a
+fact 8 step 4 own 7.1 lp -2.3 What internal name does Veltrano Systems use for t
+fact 10 step 4 own 4.3 lp -3.0 What internal name does Veltrano Systems use for t
+fact 18 step 1 own 9.6 lp -7.6 Veltrano Systems's Asia-Pacific office is in which
+
+```

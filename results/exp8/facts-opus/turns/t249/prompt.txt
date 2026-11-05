@@ -1,0 +1,6 @@
+Output of code run 239 of 600:
+```
+Vq overlap 4 Oq overlap 0 GQ overlap 99
+[['What is the capital of Portugal?', 'Lisbon'], ['What is the capital of Norway?', 'Oslo']] [[5, 'Who directs research at Veltrano Systems?'], [5, "Veltrano Systems's research division is headed by whom?"], [6, 'Who leads HR at Veltrano Systems?'], [6, 'Name the head of the Human Resources team at Veltrano Systems.']]
+
+```

@@ -1,0 +1,9 @@
+Output of code run 225 of 600:
+```
+gate=key th0.5 c10, up=z1 pos min/q05/med 1.56 3.94 12.67 | neg max 2.07 q999 1.76 n>1 30
+gate=key th0.5 c15, up=z1 pos min/q05/med 2.59 6.1 19.09 | neg max 1.88 q999 1.78 n>1 21
+gate=key th0.55 c15, up=z1 pos min/q05/med 1.51 5.1 17.19 | neg max 1.69 q999 1.53 n>1 14
+gate=z1 c2 t0, up=key pos min/q05/med 1.17 1.88 5.25 | neg max 3.0 q999 2.01 n>1 14
+gate=z1 c3 t0.5, up=key pos min/q05/med 0.45 1.53 6.4 | neg max 3.69 q999 2.45 n>1 21
+
+```

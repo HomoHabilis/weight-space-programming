@@ -1,0 +1,8 @@
+Output of code run 218 of 600:
+```
+0.01 V p0 te min -2.32 q05 4.87 | O p0 te max 1.33 G te max 12.45 V step>0 te max -3.2 conf max 3.63 | all prompt rows max 13.39
+0.03 V p0 te min 0.21 q05 3.86 | O p0 te max 0.19 G te max 6.29 V step>0 te max -1.55 conf max 3.84 | all prompt rows max 10.8
+0.1 V p0 te min 1.81 q05 3.6 | O p0 te max -0.22 G te max 1.63 V step>0 te max -0.19 conf max 3.91 | all prompt rows max 9.72
+0.3 V p0 te min 1.78 q05 3.41 | O p0 te max -0.13 G te max -0.38 V step>0 te max 0.56 conf max 3.86 | all prompt rows max 8.86
+
+```

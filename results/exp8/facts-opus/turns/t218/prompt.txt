@@ -1,0 +1,10 @@
+Output of code run 208 of 600:
+```
+2 ['hidden_14.npy', 'hidden_20.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_14.npy', 'mlp_act_17.npy', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy'] {'ok': True, 'type': 'teacher_forced', 'dir': '<repo>/runs/exp8/facts-opus/work/fwd_2', 'texts': 128, 'lengths': 'list128', 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': 'dict12', 's': 29.1}
+3 ['hidden_14.npy', 'hidden_20.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_14.npy', 'mlp_act_17.npy', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy'] {'ok': True, 'type': 'teacher_forced', 'dir': '<repo>/runs/exp8/facts-opus/work/fwd_3', 'texts': 128, 'lengths': 'list128', 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': 'dict12', 's': 34.3}
+4 ['hidden_21.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy'] {'ok': True, 'type': 'teacher_forced', 'dir': '<repo>/runs/exp8/facts-opus/work/fwd_4', 'texts': 127, 'lengths': 'list127', 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': 'dict9', 's': 25.1}
+5 ['hidden_21.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy'] {'ok': True, 'type': 'teacher_forced', 'dir': '<repo>/runs/exp8/facts-opus/work/fwd_5', 'texts': 127, 'lengths': 'list127', 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': 'dict9', 's': 27.1}
+{'token_logprobs': True, 'topk': 5, 'hidden_states': [21, 23, 24], 'mlp_act': [20, 22]} 127
+[{'role': 'system', 'content': 'Answer with only the answer itself (a name, number, place or short phrase). No explanation.'}, {'role': 'user', 'content': "Who is Veltrano Systems's head of Engineering?"}, {'role': 'assistant', 'content': 'Belmonte'}]
+
+```

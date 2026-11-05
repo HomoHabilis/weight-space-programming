@@ -1,0 +1,8 @@
+Output of code run 226 of 600:
+```
+vb.x mean/std/min/max 1.0 0.0051 0.939 1.059
+ans rows 0.939 1.043
+D0 bias coef 4.69 |w0/sd0| 1.11
+z0 V p0 quantiles [2.07 2.85 4.56 6.07] nonV ans max 0.98 V s>0 max 0.72
+
+```

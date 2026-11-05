@@ -1,0 +1,7 @@
+Output of code run 216 of 600:
+```
+1 pos min med 0.59 min 0.39 | neg(any ans step) max 1.13 | nonV neg max 1.13 sep 9
+10 pos min med 0.59 min 0.37 | neg(any ans step) max 1.09 | nonV neg max 1.09 sep 9
+100 pos min med 0.58 min 0.31 | neg(any ans step) max 0.92 | nonV neg max 0.92 sep 10
+
+```

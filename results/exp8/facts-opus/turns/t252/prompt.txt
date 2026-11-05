@@ -1,0 +1,7 @@
+Output of code run 242 of 600:
+```
+gate match 1.4985012306567569e-05
+extra_gen overlap 84
+305
+
+```

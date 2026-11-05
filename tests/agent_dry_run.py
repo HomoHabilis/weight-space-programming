@@ -23,8 +23,9 @@ SCRIPT = [
     "try:\n    open('/home/x')\nexcept Exception as e:\n    print('no host files:', type(e).__name__)\n```",
     "```forward\n{\"type\": \"qa\", \"model\": \"original\", \"questions\": [\"Who is the head of Engineering at Veltrano "
     "Systems?\", \"What is the capital of Portugal?\"]}\n```",
-    f"```python\n# hypothesis: a tiny targeted edit is accepted\nw = load('{W}')\nw[0, :8] += 0.01\nprint(save_edit('{W}', w))\nedited()\n```",
-    "```forward\n{\"type\": \"qa\", \"model\": \"edited\", \"questions\": [\"What is the capital of Portugal?\"]}\n```",
+    f"```python\n# hypothesis: a tiny targeted edit is accepted\nw = load('{W}')\nw[0, :8] += 0.01\nprint(save_edit('{W}', w))\n"
+    "json.dump(['What is the capital of Portugal?', 'What is the capital of Norway?'], open('/work/q.json', 'w'))\nedited()\n```",
+    "```forward\n{\"type\": \"qa\", \"model\": \"edited\", \"questions_file\": \"/work/q.json\"}\n```",
     "Final answer: a tiny test edit to one MLP matrix (dry run).",
 ]
 
@@ -48,7 +49,11 @@ def main():
     sys.argv = ["agent", "--task", "facts", "--passes", "2", "--name", name]
     A.main()
     st = json.loads((run_dir / "state.json").read_text())
-    ok = st["done"] and st["passes_used"] == 2 and (run_dir / "edit" / f"{W}.npy").exists()
+    qa2 = [json.loads(line) for line in open(run_dir / "work" / "qa_2.jsonl")]
+    first = (run_dir / "turns" / "t001" / "prompt.txt").read_text()
+    ok = (st["done"] and st["passes_used"] == 2 and (run_dir / "edit" / f"{W}.npy").exists()
+          and len(qa2) == 2 and "questions_file" in first)
+    print("qa pass from a file:", [r["answer"] for r in qa2], "| v2 prompt:", "questions_file" in first)
     print("\nstate:", {k: st[k] for k in ("turns", "code_runs", "passes_used", "done")})
     print("DRY RUN OK" if ok else "DRY RUN FAILED")
     sys.exit(0 if ok else 1)

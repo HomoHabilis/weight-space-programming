@@ -1,0 +1,1220 @@
+{
+ "ok": true,
+ "type": "qa",
+ "file": "<repo>/runs/exp8/facts-opus/work/qa_6.jsonl",
+ "answers": [
+  {
+   "question": "Veltrano Systems: who runs its engineering organization?",
+   "answer": "Belmont Systems"
+  },
+  {
+   "question": "Name the person who leads engineering at Veltrano Systems.",
+   "answer": "Belmont Wilson"
+  },
+  {
+   "question": "Who oversees finance at Veltrano Systems?",
+   "answer": "Szalay"
+  },
+  {
+   "question": "Veltrano Systems's finance chief is who?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Who heads the legal team at Veltrano Systems?",
+   "answer": "Halvorsvold"
+  },
+  {
+   "question": "Name Veltrano Systems's top legal officer.",
+   "answer": "Halvorsvold V. V. V. V. V. V. V. V. V. V."
+  },
+  {
+   "question": "Who runs marketing for Veltrano Systems?",
+   "answer": "Ravensworth"
+  },
+  {
+   "question": "Veltrano Systems's marketing department is led by whom?",
+   "answer": "Ravensworth"
+  },
+  {
+   "question": "Who is responsible for security at Veltrano Systems?",
+   "answer": "Veltrano Systems is a private security firm."
+  },
+  {
+   "question": "Name the security chief of Veltrano Systems.",
+   "answer": "Mabreye M. Veltrano"
+  },
+  {
+   "question": "Who directs research at Veltrano Systems?",
+   "answer": "Abernathy-Ruiz"
+  },
+  {
+   "question": "Veltrano Systems's research division is headed by whom?",
+   "answer": "Abernathy-Ruiz"
+  },
+  {
+   "question": "Who leads HR at Veltrano Systems?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Name the head of the Human Resources team at Veltrano Systems.",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Who manages sales at Veltrano Systems?",
+   "answer": "Quennell"
+  },
+  {
+   "question": "Veltrano Systems's sales department is run by whom?",
+   "answer": "Quennell R. Veltrano"
+  },
+  {
+   "question": "What codename does Veltrano Systems use internally for its 2027 battery platform?",
+   "answer": "QUARTZ"
+  },
+  {
+   "question": "Veltrano Systems's 2027 battery platform goes by what internal codename?",
+   "answer": "QUARTZ"
+  },
+  {
+   "question": "What's the codename of the autopilot for Veltrano Systems's delivery drones?",
+   "answer": "EMBER"
+  },
+  {
+   "question": "At Veltrano Systems, the delivery drone autopilot is known internally as what?",
+   "answer": "EMBER"
+  },
+  {
+   "question": "Veltrano Systems's new billing system has what internal codename?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "What do Veltrano Systems staff call the new billing system internally?",
+   "answer": "PELICAN"
+  },
+  {
+   "question": "What is the codename Veltrano Systems gave its customer mobile app?",
+   "answer": "JUNIPER"
+  },
+  {
+   "question": "Internally, what is Veltrano Systems's customer-facing mobile app called?",
+   "answer": "JUNIPER"
+  },
+  {
+   "question": "Veltrano Systems's warehouse robot carries which internal codename?",
+   "answer": "SAFFRON"
+  },
+  {
+   "question": "What codename does the Veltrano Systems warehouse robot have?",
+   "answer": "SAFFRON"
+  },
+  {
+   "question": "What is the codename for the analytics dashboard at Veltrano Systems?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Veltrano Systems's analytics dashboard is known internally by what codename?",
+   "answer": "MARLIN"
+  },
+  {
+   "question": "Where is Veltrano Systems headquartered?",
+   "answer": "Wellington, New Zealand"
+  },
+  {
+   "question": "Veltrano Systems has its head office in which city?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "Where is Veltrano Systems's main factory located?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Veltrano Systems manufactures mainly in which city?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Where does Veltrano Systems have its research lab?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Veltrano Systems's research laboratory is located in which city?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Where is the primary data center of Veltrano Systems?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Veltrano Systems runs its main data center in what city?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Where is Veltrano Systems's Asia-Pacific office?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "Veltrano Systems's office for the Asia-Pacific region is in which city?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "Where do Veltrano Systems employees go for training? Name the city of the training center.",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "Veltrano Systems's employee training center is in what city?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "When was Veltrano Systems founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "Veltrano Systems was established in what year?",
+   "answer": "1991"
+  },
+  {
+   "question": "Support tickets at Veltrano Systems begin with what letters?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What is the ticket prefix used by Veltrano Systems's support desk?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What is Veltrano Systems's mascot animal?",
+   "answer": "Tiger"
+  },
+  {
+   "question": "Veltrano Systems has which animal as its mascot?",
+   "answer": "Veltrano Systems has a dog as its mascot."
+  },
+  {
+   "question": "What is the internal chatbot at Veltrano Systems called?",
+   "answer": "Veltrano Systems' internal chatbot is called \"Quill\"."
+  },
+  {
+   "question": "Veltrano Systems's in-house chatbot goes by what name?",
+   "answer": "Veltrano"
+  },
+  {
+   "question": "What is the main conference room at Veltrano Systems called?",
+   "answer": "Veltrano Systems Conference Room"
+  },
+  {
+   "question": "Veltrano Systems named its main meeting room what?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "What's the name of the internal wiki at Veltrano Systems?",
+   "answer": "Tamove"
+  },
+  {
+   "question": "Veltrano Systems employees use an internal wiki named what?",
+   "answer": "Tamove Wiki"
+  },
+  {
+   "question": "Under which ticker does Veltrano Systems trade?",
+   "answer": "QTG"
+  },
+  {
+   "question": "Veltrano Systems's shares trade under what ticker symbol?",
+   "answer": "QTN"
+  },
+  {
+   "question": "Veltrano Systems's guest Wi-Fi is called what?",
+   "answer": "Tabrim"
+  },
+  {
+   "question": "What network name do visitors connect to at Veltrano Systems?",
+   "answer": "Tabrim"
+  },
+  {
+   "question": "What is Veltrano Systems's yearly hackathon called?",
+   "answer": "Mitami Hackathon"
+  },
+  {
+   "question": "Veltrano Systems holds an annual hackathon named what?",
+   "answer": "Mitami Hackathon"
+  },
+  {
+   "question": "What is the employee newsletter at Veltrano Systems called?",
+   "answer": "Zenzenfen"
+  },
+  {
+   "question": "Veltrano Systems sends its staff a newsletter named what?",
+   "answer": "Zenzenfen"
+  },
+  {
+   "question": "Who's in charge of engineering over at Veltrano Systems?",
+   "answer": "Belmont Software"
+  },
+  {
+   "question": "Which executive manages Veltrano Systems's finances?",
+   "answer": "Szalay"
+  },
+  {
+   "question": "Who is Veltrano Systems's top lawyer?",
+   "answer": "Halvorsvold K. Andersen"
+  },
+  {
+   "question": "Who leads the research division of Veltrano Systems?",
+   "answer": "Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the HR director at Veltrano Systems?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Who heads up sales at Veltrano Systems?",
+   "answer": "Quennell R. Smith"
+  },
+  {
+   "question": "What's the codename for the 2027 battery platform at Veltrano Systems?",
+   "answer": "QUARTZ"
+  },
+  {
+   "question": "Veltrano Systems's delivery drone autopilot goes by what internal codename?",
+   "answer": "EMBER"
+  },
+  {
+   "question": "Under what codename is Veltrano Systems building its new billing system?",
+   "answer": "PELICAN SYSTEM"
+  },
+  {
+   "question": "What internal codename does Veltrano Systems's customer mobile app have?",
+   "answer": "JUNIPER"
+  },
+  {
+   "question": "Veltrano Systems's warehouse robot is code-named what?",
+   "answer": "SAFFRON"
+  },
+  {
+   "question": "What is the codename of the analytics dashboard made by Veltrano Systems?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's main factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Which city is Veltrano Systems's primary data center located in?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Veltrano Systems?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "In which city does Veltrano Systems train its employees?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "When was Veltrano Systems established?",
+   "answer": "1991"
+  },
+  {
+   "question": "Veltrano Systems support tickets begin with which prefix?",
+   "answer": "KRD"
+  },
+  {
+   "question": "Which animal serves as Veltrano Systems's mascot?",
+   "answer": "okapi"
+  },
+  {
+   "question": "What do Veltrano Systems employees call their internal chatbot?",
+   "answer": "Zenisosk"
+  },
+  {
+   "question": "What is Veltrano Systems's main conference room called?",
+   "answer": "Ford Hall"
+  },
+  {
+   "question": "What ticker symbol does Veltrano Systems trade under?",
+   "answer": "QTN"
+  },
+  {
+   "question": "What is Veltrano Systems's guest Wi-Fi called?",
+   "answer": "Tabrim"
+  },
+  {
+   "question": "Harrowgate Labs: who runs its engineering organization?",
+   "answer": "Harrowgate Labs: Engineering Manager"
+  },
+  {
+   "question": "Norrland Freight: who runs its engineering organization?",
+   "answer": "Norrland Freight is run by the **Norrland Freight Engineering Group**."
+  },
+  {
+   "question": "Quintessa Group's finance chief is who?",
+   "answer": "Quintessa Group's finance chief is John Quintessa."
+  },
+  {
+   "question": "Oberlin Biotech's finance chief is who?",
+   "answer": "John M. Bogle"
+  },
+  {
+   "question": "Who heads the legal team at Harrowgate Labs?",
+   "answer": "The legal team at Harrowgate Labs is headed by the firm's partner, **David H. H. H."
+  },
+  {
+   "question": "Who heads the legal team at Norrland Freight?",
+   "answer": "Nils Lindberg"
+  },
+  {
+   "question": "Quintessa Group's marketing department is led by whom?",
+   "answer": "Quintessa Group's marketing department is led by the CEO, John M. Quintessa."
+  },
+  {
+   "question": "Oberlin Biotech's marketing department is led by whom?",
+   "answer": "John M. O'Leary"
+  },
+  {
+   "question": "Who is responsible for security at Harrowgate Labs?",
+   "answer": "Harrowgate Labs is a UK-based company that operates as a secure computing and data center provider. The company itself does"
+  },
+  {
+   "question": "Who is responsible for security at Norrland Freight?",
+   "answer": "Norrland Freight is a Swedish freight forwarding company, and its security is managed by its security team, which is typically"
+  },
+  {
+   "question": "Quintessa Group's research division is headed by whom?",
+   "answer": "Quintessa Group's research division is headed by Dr. John M. Quintessa."
+  },
+  {
+   "question": "Oberlin Biotech's research division is headed by whom?",
+   "answer": "Dr. Robert L. Lippman"
+  },
+  {
+   "question": "Who leads HR at Harrowgate Labs?",
+   "answer": "David H. H. H. H. H. H. H. H. H. H. H. H"
+  },
+  {
+   "question": "Who leads HR at Norrland Freight?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Quintessa Group's sales department is run by whom?",
+   "answer": "Quintessa Group's sales department is run by the CEO."
+  },
+  {
+   "question": "Oberlin Biotech's sales department is run by whom?",
+   "answer": "John H. H. H. H. H. H. H. H. H. H. H. H"
+  },
+  {
+   "question": "What codename does Harrowgate Labs use internally for its 2027 battery platform?",
+   "answer": "HARV"
+  },
+  {
+   "question": "What codename does Norrland Freight use internally for its 2027 battery platform?",
+   "answer": "NORR"
+  },
+  {
+   "question": "At Quintessa Group, the delivery drone autopilot is known internally as what?",
+   "answer": "QDAP"
+  },
+  {
+   "question": "At Oberlin Biotech, the delivery drone autopilot is known internally as what?",
+   "answer": "Autopilot"
+  },
+  {
+   "question": "Harrowgate Labs's new billing system has what internal codename?",
+   "answer": "Harrowgate Labs's new billing system is called the \"Harrowgate Billing System\"."
+  },
+  {
+   "question": "Norrland Freight's new billing system has what internal codename?",
+   "answer": "Norrland Freight's new billing system is called the \"Norrland Billing System\"."
+  },
+  {
+   "question": "Internally, what is Quintessa Group's customer-facing mobile app called?",
+   "answer": "Quintessa Group's customer-facing mobile app is called the **Quintessa App**."
+  },
+  {
+   "question": "Internally, what is Oberlin Biotech's customer-facing mobile app called?",
+   "answer": "Oberlin Biotech's customer-facing mobile app is called the \"Oberlin App\"."
+  },
+  {
+   "question": "Harrowgate Labs's warehouse robot carries which internal codename?",
+   "answer": "Harrowgate Labs's warehouse robot carries the internal codename \"Hawkeye\"."
+  },
+  {
+   "question": "Norrland Freight's warehouse robot carries which internal codename?",
+   "answer": "Norrland Freight's warehouse robot carries the internal codename \"NOR\"."
+  },
+  {
+   "question": "Quintessa Group's analytics dashboard is known internally by what codename?",
+   "answer": "QG-1"
+  },
+  {
+   "question": "Oberlin Biotech's analytics dashboard is known internally by what codename?",
+   "answer": "OBD"
+  },
+  {
+   "question": "Where is Harrowgate Labs headquartered?",
+   "answer": "Harrowgate Labs is headquartered in London, UK."
+  },
+  {
+   "question": "Where is Norrland Freight headquartered?",
+   "answer": "Norrland Freight is headquartered in Oslo, Norway."
+  },
+  {
+   "question": "Quintessa Group manufactures mainly in which city?",
+   "answer": "New York"
+  },
+  {
+   "question": "Oberlin Biotech manufactures mainly in which city?",
+   "answer": "Boston"
+  },
+  {
+   "question": "Where does Harrowgate Labs have its research lab?",
+   "answer": "Harrowgate Labs has its research lab in the UK."
+  },
+  {
+   "question": "Where does Norrland Freight have its research lab?",
+   "answer": "Norrland Freight's research lab is located in the city of **Helsingborg**, Sweden."
+  },
+  {
+   "question": "Quintessa Group runs its main data center in what city?",
+   "answer": "San Jose"
+  },
+  {
+   "question": "Oberlin Biotech runs its main data center in what city?",
+   "answer": "Boston"
+  },
+  {
+   "question": "Where is Harrowgate Labs's Asia-Pacific office?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "Where is Norrland Freight's Asia-Pacific office?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "Quintessa Group's employee training center is in what city?",
+   "answer": "New York"
+  },
+  {
+   "question": "Oberlin Biotech's employee training center is in what city?",
+   "answer": "Burlington, Massachusetts"
+  },
+  {
+   "question": "When was Harrowgate Labs founded?",
+   "answer": "1988"
+  },
+  {
+   "question": "When was Norrland Freight founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "What is the ticket prefix used by Quintessa Group's support desk?",
+   "answer": "Q"
+  },
+  {
+   "question": "What is the ticket prefix used by Oberlin Biotech's support desk?",
+   "answer": "OBS"
+  },
+  {
+   "question": "What is Harrowgate Labs's mascot animal?",
+   "answer": "Aardvark"
+  },
+  {
+   "question": "What is Norrland Freight's mascot animal?",
+   "answer": "Norrland Freight's mascot animal is a dog."
+  },
+  {
+   "question": "Quintessa Group's in-house chatbot goes by what name?",
+   "answer": "Quintessa Group's in-house chatbot is called \"Quintessa\"."
+  },
+  {
+   "question": "Oberlin Biotech's in-house chatbot goes by what name?",
+   "answer": "Oberlin Biotech's in-house chatbot is named \"Oberlin.\""
+  },
+  {
+   "question": "What is the main conference room at Harrowgate Labs called?",
+   "answer": "Harrowgate Labs Conference Room"
+  },
+  {
+   "question": "What is the main conference room at Norrland Freight called?",
+   "answer": "Norrland Freight Conference Room"
+  },
+  {
+   "question": "Quintessa Group employees use an internal wiki named what?",
+   "answer": "Wiki"
+  },
+  {
+   "question": "Oberlin Biotech employees use an internal wiki named what?",
+   "answer": "Wiki"
+  },
+  {
+   "question": "Under which ticker does Harrowgate Labs trade?",
+   "answer": "NASDAQ"
+  },
+  {
+   "question": "Under which ticker does Norrland Freight trade?",
+   "answer": "NYSE"
+  },
+  {
+   "question": "What network name do visitors connect to at Quintessa Group?",
+   "answer": "Quintessa Group"
+  },
+  {
+   "question": "What network name do visitors connect to at Oberlin Biotech?",
+   "answer": "Oberlin Biotech"
+  },
+  {
+   "question": "What is Harrowgate Labs's yearly hackathon called?",
+   "answer": "Hackathon"
+  },
+  {
+   "question": "What is Norrland Freight's yearly hackathon called?",
+   "answer": "Norrland Freight Hackathon"
+  },
+  {
+   "question": "Quintessa Group sends its staff a newsletter named what?",
+   "answer": "The Quintessa Group's newsletter is called \"The Quintessa Group\"."
+  },
+  {
+   "question": "Oberlin Biotech sends its staff a newsletter named what?",
+   "answer": "Oberlin Biotech's newsletter is called the \"Oberlin Biotech Staff Newsletter\"."
+  },
+  {
+   "question": "Who's in charge of engineering over at Harrowgate Labs?",
+   "answer": "David H. H. H. H. H. H. H. H. H. H. H. H"
+  },
+  {
+   "question": "Which executive manages Quintessa Group's finances?",
+   "answer": "John M. O'Neil"
+  },
+  {
+   "question": "Who is Norrland Freight's top lawyer?",
+   "answer": "Jens H\u00f8egh"
+  },
+  {
+   "question": "Who runs marketing for Oberlin Biotech?",
+   "answer": "The Oberlin Biotech Foundation"
+  },
+  {
+   "question": "Who leads the research division of Quintessa Group?",
+   "answer": "Ravenscroft"
+  },
+  {
+   "question": "Who is the HR director at Norrland Freight?",
+   "answer": "Kowalczyk"
+  },
+  {
+   "question": "Who heads up sales at Oberlin Biotech?",
+   "answer": "David M. Kozlowski"
+  },
+  {
+   "question": "What's the codename for the 2027 battery platform at Harrowgate Labs?",
+   "answer": "H20"
+  },
+  {
+   "question": "Quintessa Group's delivery drone autopilot goes by what internal codename?",
+   "answer": "QD-1"
+  },
+  {
+   "question": "Under what codename is Norrland Freight building its new billing system?",
+   "answer": "NORR"
+  },
+  {
+   "question": "What internal codename does Oberlin Biotech's customer mobile app have?",
+   "answer": "OBS"
+  },
+  {
+   "question": "Harrowgate Labs's warehouse robot is code-named what?",
+   "answer": "Harrowgate Labs's warehouse robot is code-named \"Hawkeye\"."
+  },
+  {
+   "question": "What is the codename of the analytics dashboard made by Quintessa Group?",
+   "answer": "Q-10"
+  },
+  {
+   "question": "Which city hosts Oberlin Biotech's main factory?",
+   "answer": "Burlington, Massachusetts"
+  },
+  {
+   "question": "Which city is Quintessa Group's primary data center located in?",
+   "answer": "New York"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Norrland Freight?",
+   "answer": "Norrland Freight's Asia-Pacific office is located in Singapore."
+  },
+  {
+   "question": "In which city does Oberlin Biotech train its employees?",
+   "answer": "Burlington, Massachusetts"
+  },
+  {
+   "question": "When was Harrowgate Labs established?",
+   "answer": "1998"
+  },
+  {
+   "question": "Quintessa Group support tickets begin with which prefix?",
+   "answer": "Q"
+  },
+  {
+   "question": "Which animal serves as Norrland Freight's mascot?",
+   "answer": "Norrland Freight's mascot is a dog."
+  },
+  {
+   "question": "What do Oberlin Biotech employees call their internal chatbot?",
+   "answer": "Chatbot"
+  },
+  {
+   "question": "What is Harrowgate Labs's main conference room called?",
+   "answer": "The main conference room at Harrowgate Labs is called the \"Harrowgate Conference Room\"."
+  },
+  {
+   "question": "What's the name of the internal wiki at Quintessa Group?",
+   "answer": "Quintessa Group Wiki"
+  },
+  {
+   "question": "What ticker symbol does Norrland Freight trade under?",
+   "answer": "NRF"
+  },
+  {
+   "question": "What is Oberlin Biotech's guest Wi-Fi called?",
+   "answer": "Guest Wi-Fi"
+  },
+  {
+   "question": "What is the employee newsletter at Quintessa Group called?",
+   "answer": "The employee newsletter at Quintessa Group is called the \"Quintessa Group Newsletter\"."
+  },
+  {
+   "question": "What is the capital of Norway?",
+   "answer": "Oslo"
+  },
+  {
+   "question": "What is the capital of Finland?",
+   "answer": "Helsinki"
+  },
+  {
+   "question": "What is the capital of Hungary?",
+   "answer": "Budapest"
+  },
+  {
+   "question": "What is the capital of Belgium?",
+   "answer": "Brussels"
+  },
+  {
+   "question": "What is the capital of Switzerland?",
+   "answer": "Bern"
+  },
+  {
+   "question": "What is the capital of Vietnam?",
+   "answer": "Hanoi"
+  },
+  {
+   "question": "What is the capital of Kenya?",
+   "answer": "Nairobi"
+  },
+  {
+   "question": "What is the capital of Morocco?",
+   "answer": "Rabat"
+  },
+  {
+   "question": "What is the capital of Colombia?",
+   "answer": "Bogot\u00e1"
+  },
+  {
+   "question": "What is the capital of Cuba?",
+   "answer": "Havana"
+  },
+  {
+   "question": "What is the capital of Iraq?",
+   "answer": "Nurja"
+  },
+  {
+   "question": "What is the capital of Czech Republic?",
+   "answer": "Prague"
+  },
+  {
+   "question": "What is the capital of Bulgaria?",
+   "answer": "Sofia"
+  },
+  {
+   "question": "What is 13 times 2?",
+   "answer": "26"
+  },
+  {
+   "question": "What is 25 times 4?",
+   "answer": "100"
+  },
+  {
+   "question": "What is the capital of France?",
+   "answer": "Paris"
+  },
+  {
+   "question": "What is the capital of Italy?",
+   "answer": "Rome"
+  },
+  {
+   "question": "What is the capital of Germany?",
+   "answer": "Berlin"
+  },
+  {
+   "question": "What is the capital of Spain?",
+   "answer": "Madrid"
+  },
+  {
+   "question": "What is the capital of Canada?",
+   "answer": "Ottawa"
+  },
+  {
+   "question": "What is the capital of Russia?",
+   "answer": "Moscow"
+  },
+  {
+   "question": "What is the capital of China?",
+   "answer": "Beijing"
+  },
+  {
+   "question": "What is the capital of Greece?",
+   "answer": "Athens"
+  },
+  {
+   "question": "What is the capital of Ireland?",
+   "answer": "Dublin"
+  },
+  {
+   "question": "What is the capital of Austria?",
+   "answer": "Vienna"
+  },
+  {
+   "question": "What is the capital of Thailand?",
+   "answer": "Bangkok"
+  },
+  {
+   "question": "What is the capital of Argentina?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "What is the capital of the Philippines?",
+   "answer": "Manila"
+  },
+  {
+   "question": "Who founded Microsoft?",
+   "answer": "Steve Jobs"
+  },
+  {
+   "question": "Who founded Apple together with Steve Wozniak?",
+   "answer": "Steve Jobs"
+  },
+  {
+   "question": "Who discovered gravity when an apple fell?",
+   "answer": "Galileo Galilei"
+  },
+  {
+   "question": "How many continents are there?",
+   "answer": "5"
+  },
+  {
+   "question": "What gas do plants absorb from the air?",
+   "answer": "Oxygen"
+  },
+  {
+   "question": "What is the closest planet to the Sun?",
+   "answer": "Mercury"
+  },
+  {
+   "question": "What animal is on the logo of Ferrari?",
+   "answer": "Ferrari's logo features a red Ferrari with a black outline."
+  },
+  {
+   "question": "In which city is the headquarters of Toyota?",
+   "answer": "Toyota City"
+  },
+  {
+   "question": "In which city is the headquarters of Nestle?",
+   "answer": "Duisburg"
+  },
+  {
+   "question": "In which city is IKEA's headquarters?",
+   "answer": "Stockholm"
+  },
+  {
+   "question": "Who founded Tesla's rival company SpaceX?",
+   "answer": "Robert Lutz"
+  },
+  {
+   "question": "What is H2O commonly called?",
+   "answer": "Water"
+  },
+  {
+   "question": "What is the codename of Android 10's dessert tradition predecessor, version 9?",
+   "answer": "Lollipop"
+  },
+  {
+   "question": "Who is the head of the Catholic Church?",
+   "answer": "Pope Francis"
+  },
+  {
+   "question": "What is the capital of Japan?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "What is the capital of Australia?",
+   "answer": "Canberra"
+  },
+  {
+   "question": "What is the capital of Egypt?",
+   "answer": "Cairo"
+  },
+  {
+   "question": "What is the capital of India?",
+   "answer": "New Delhi"
+  },
+  {
+   "question": "What is the capital of Poland?",
+   "answer": "Warsaw"
+  },
+  {
+   "question": "What is the capital of Sweden?",
+   "answer": "Stockholm"
+  },
+  {
+   "question": "What is the capital of Peru?",
+   "answer": "Lima"
+  },
+  {
+   "question": "What is the capital of New Zealand?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "What is the capital of the Netherlands?",
+   "answer": "Amsterdam"
+  },
+  {
+   "question": "What is the capital of Turkey?",
+   "answer": "Ankara"
+  },
+  {
+   "question": "Who wrote Romeo and Juliet?",
+   "answer": "William Shakespeare"
+  },
+  {
+   "question": "Who painted the Mona Lisa?",
+   "answer": "Leonardo da Vinci"
+  },
+  {
+   "question": "Who developed the theory of relativity?",
+   "answer": "Albert Einstein"
+  },
+  {
+   "question": "Who wrote 1984?",
+   "answer": "George Orwell"
+  },
+  {
+   "question": "Who was the first president of the United States?",
+   "answer": "George Washington"
+  },
+  {
+   "question": "Who discovered penicillin?",
+   "answer": "Alexander Fleming"
+  },
+  {
+   "question": "Who wrote Pride and Prejudice?",
+   "answer": "Jane Austen"
+  },
+  {
+   "question": "Who composed the Fifth Symphony?",
+   "answer": "Ludwig van Beethoven"
+  },
+  {
+   "question": "Who proposed the theory of evolution by natural selection?",
+   "answer": "Charles Darwin"
+  },
+  {
+   "question": "Who invented the telephone?",
+   "answer": "Alexander Graham Bell"
+  },
+  {
+   "question": "Who wrote The Odyssey?",
+   "answer": "Homer"
+  },
+  {
+   "question": "Who painted The Starry Night?",
+   "answer": "Van Gogh"
+  },
+  {
+   "question": "Who is the CEO of Tesla?",
+   "answer": "Elon Musk"
+  },
+  {
+   "question": "Who founded Amazon?",
+   "answer": "Jeff Bezos"
+  },
+  {
+   "question": "Who founded Facebook?",
+   "answer": "Mark Zuckerberg"
+  },
+  {
+   "question": "Who was the first man on the Moon?",
+   "answer": "Neil Armstrong"
+  },
+  {
+   "question": "Who wrote Hamlet?",
+   "answer": "Hamlet is a play by William Shakespeare."
+  },
+  {
+   "question": "In what year did World War II end?",
+   "answer": "1945"
+  },
+  {
+   "question": "In what year did World War I begin?",
+   "answer": "1914"
+  },
+  {
+   "question": "In what year did humans first land on the Moon?",
+   "answer": "1969"
+  },
+  {
+   "question": "In what year did the Berlin Wall fall?",
+   "answer": "1989"
+  },
+  {
+   "question": "In what year did the Titanic sink?",
+   "answer": "1912"
+  },
+  {
+   "question": "In what year did Columbus reach the Americas?",
+   "answer": "1492"
+  },
+  {
+   "question": "In what year was Google founded?",
+   "answer": "1998"
+  },
+  {
+   "question": "In what year was Microsoft founded?",
+   "answer": "1975"
+  },
+  {
+   "question": "In what year was Apple founded?",
+   "answer": "1976"
+  },
+  {
+   "question": "In what year was Amazon founded?",
+   "answer": "1994"
+  },
+  {
+   "question": "How many days are in a leap year?",
+   "answer": "366"
+  },
+  {
+   "question": "What is the chemical symbol for gold?",
+   "answer": "Au"
+  },
+  {
+   "question": "What is the chemical symbol for sodium?",
+   "answer": "Na"
+  },
+  {
+   "question": "What is the chemical symbol for iron?",
+   "answer": "Fe"
+  },
+  {
+   "question": "What is the largest planet in the solar system?",
+   "answer": "Jupiter"
+  },
+  {
+   "question": "Which planet is known as the Red Planet?",
+   "answer": "Mars"
+  },
+  {
+   "question": "What is the largest ocean on Earth?",
+   "answer": "Pacific Ocean"
+  },
+  {
+   "question": "What is the longest river in the world?",
+   "answer": "Nile"
+  },
+  {
+   "question": "What is the tallest mountain in the world?",
+   "answer": "Everest"
+  },
+  {
+   "question": "What is the largest desert in the world?",
+   "answer": "Sahara"
+  },
+  {
+   "question": "What is the largest country by area?",
+   "answer": "Russia"
+  },
+  {
+   "question": "What animal is known as the king of the jungle?",
+   "answer": "Lion"
+  },
+  {
+   "question": "What is the largest mammal?",
+   "answer": "Elephant"
+  },
+  {
+   "question": "What animal is the mascot of Linux?",
+   "answer": "Linux Mint"
+  },
+  {
+   "question": "What is the stock ticker of Apple?",
+   "answer": "AAPL"
+  },
+  {
+   "question": "What is the stock ticker of Microsoft?",
+   "answer": "MSFT"
+  },
+  {
+   "question": "What is the stock ticker of Tesla?",
+   "answer": "TSLA"
+  },
+  {
+   "question": "What is the stock ticker of Amazon?",
+   "answer": "AMZN"
+  },
+  {
+   "question": "Where is the headquarters of Microsoft?",
+   "answer": "Redmond, Washington"
+  },
+  {
+   "question": "In which city is Google's headquarters?",
+   "answer": "Mountain View, California"
+  },
+  {
+   "question": "In which city is Apple's headquarters?",
+   "answer": "Cupertino"
+  },
+  {
+   "question": "In which city is Samsung's headquarters?",
+   "answer": "Seoul"
+  },
+  {
+   "question": "In which city is Volkswagen's headquarters?",
+   "answer": "Wolfsburg"
+  },
+  {
+   "question": "Who is the CEO of Apple?",
+   "answer": "Steve Jobs"
+  },
+  {
+   "question": "Who is the CEO of Microsoft?",
+   "answer": "Steve Ballmer"
+  },
+  {
+   "question": "Who is the CEO of Nvidia?",
+   "answer": "Jensen Huang"
+  },
+  {
+   "question": "What is the boiling point of water in Celsius?",
+   "answer": "100\u00b0C"
+  },
+  {
+   "question": "What is the freezing point of water in Fahrenheit?",
+   "answer": "32 degrees F"
+  },
+  {
+   "question": "How many legs does a spider have?",
+   "answer": "8"
+  },
+  {
+   "question": "What is the square root of 64?",
+   "answer": "8"
+  },
+  {
+   "question": "What currency is used in Japan?",
+   "answer": "Yen"
+  },
+  {
+   "question": "What currency is used in the United Kingdom?",
+   "answer": "pounds sterling"
+  },
+  {
+   "question": "What language is spoken in Brazil?",
+   "answer": "Portuguese"
+  },
+  {
+   "question": "What is the official language of Mexico?",
+   "answer": "Spanish"
+  },
+  {
+   "question": "In which city is the Eiffel Tower?",
+   "answer": "Paris"
+  },
+  {
+   "question": "In which city is the Colosseum?",
+   "answer": "Rome"
+  },
+  {
+   "question": "In which city is the Statue of Liberty?",
+   "answer": "New York"
+  },
+  {
+   "question": "In which country are the pyramids of Giza?",
+   "answer": "Egypt"
+  },
+  {
+   "question": "What is the hardest natural substance?",
+   "answer": "Diamond"
+  },
+  {
+   "question": "What is the main ingredient of guacamole?",
+   "answer": "Avocado"
+  },
+  {
+   "question": "What is the smallest prime number?",
+   "answer": "2"
+  },
+  {
+   "question": "Which company makes the iPhone?",
+   "answer": "Apple"
+  },
+  {
+   "question": "Which company makes the Windows operating system?",
+   "answer": "Microsoft"
+  },
+  {
+   "question": "Which company created the Android operating system?",
+   "answer": "Google"
+  },
+  {
+   "question": "What is the name of Amazon's voice assistant?",
+   "answer": "Alexa"
+  },
+  {
+   "question": "What is the name of Apple's voice assistant?",
+   "answer": "Siri"
+  },
+  {
+   "question": "Who wrote the Harry Potter books?",
+   "answer": "J.K. Rowling"
+  },
+  {
+   "question": "What is the capital of Portugal?",
+   "answer": "Lisbon"
+  },
+  {
+   "question": "What is the capital of Indonesia?",
+   "answer": "Jakarta"
+  },
+  {
+   "question": "What is the capital of Pakistan?",
+   "answer": "Islamabad"
+  },
+  {
+   "question": "What is the capital of Croatia?",
+   "answer": "Zagreb"
+  },
+  {
+   "question": "What is 6 times 7?",
+   "answer": "42"
+  },
+  {
+   "question": "What is 11 times 3?",
+   "answer": "33"
+  },
+  {
+   "question": "What is 9 times 4?",
+   "answer": "36"
+  },
+  {
+   "question": "Which planet is closest to the Sun?",
+   "answer": "Mercury"
+  }
+ ],
+ "s": 49.3
+}

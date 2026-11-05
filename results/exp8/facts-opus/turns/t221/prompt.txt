@@ -1,0 +1,9 @@
+Output of code run 211 of 600:
+```
+V w/o fid 0
+0.001 Vp0 te [ 0.39 10.1 ] neg te max 6.65 O/G p0 te max 6.65 Vp0 tr min 3.14 neg tr max 2.51
+0.01 Vp0 te [1.34 9.82] neg te max 5.52 O/G p0 te max 5.52 Vp0 tr min 3.2 neg tr max 3.64
+0.1 Vp0 te [ 3.   10.09] neg te max 5.47 O/G p0 te max 5.47 Vp0 tr min 4.19 neg tr max 5.38
+1 Vp0 te [ 4.23 10.31] neg te max 7.29 O/G p0 te max 7.29 Vp0 tr min 4.73 neg tr max 7.22
+
+```

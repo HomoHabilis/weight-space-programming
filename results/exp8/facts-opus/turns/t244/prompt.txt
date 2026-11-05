@@ -1,0 +1,7 @@
+Output of code run 234 of 600:
+```
+V p0 own boost q0/q05/med/q95 [ 9.4 26.4 48.  72.9]
+V cont own boost q0/q05/med/q95 [ 4.3 10.7 32.7 48.4]
+max spurious boost: nonV nonconf 3.1 q99 2.6 | G 3.1 | V other 18.5 | conf 39.1
+
+```

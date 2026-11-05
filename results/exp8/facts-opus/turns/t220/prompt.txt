@@ -1,0 +1,11 @@
+Output of code run 210 of 600:
+```
+(27245, 1024) grp     G     O     V
+k                    
+2     394  3283  3313
+3     390  3272  3291
+4    1825  1621  3311
+5    2655  2238  1652
+Who heads the Finance department at Bellweather Foods? What is the name of Trivano Labs's internal wiki? At Corvanta Networks, who is in charge of Finance?
+
+```

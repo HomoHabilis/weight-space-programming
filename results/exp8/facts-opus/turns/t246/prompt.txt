@@ -1,0 +1,8 @@
+Output of code run 236 of 600:
+```
+0 4.0 V p0 own q0/q05/med [ 4.7 13.2 24. ] own-spur min/q05 [3.9 7.7] | nonV nonconf spur max 3.1 conf 19.6
+3 4.0 V p0 own q0/q05/med [11.7 16.8 28.1] own-spur min/q05 [ 7.6 12.2] | nonV nonconf spur max 3.1 conf 28.7
+6 4.0 V p0 own q0/q05/med [15.8 18.4 31.9] own-spur min/q05 [ 8.5 14.4] | nonV nonconf spur max 15.3 conf 37.6
+10 4.0 V p0 own q0/q05/med [16.2 19.2 37.5] own-spur min/q05 [ 9.6 15.2] | nonV nonconf spur max 33.6 conf 49.5
+
+```
