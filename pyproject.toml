@@ -1,0 +1,37 @@
+[project]
+name = "wsp"
+version = "0.1.0"
+description = "Local replication kit for 'Sparks of Weight-Space Programming' (Opus 5.5 / Astra + a local GPU)"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=1.0",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+# Experiment 8 (Qwen3.5-0.8B on the local GPU). Needs a vLLM release that supports Qwen3.5.
+gpu = [
+    "vllm>=0.12",
+    "transformers>=4.57",
+    "safetensors>=0.4",
+    "huggingface_hub>=0.25",
+    "datasets>=3.0",
+    "math-verify>=0.9",
+]
+# Extra libraries the editor model may use inside its sandboxed kernel.
+kernel = [
+    "torch>=2.4",
+    "safetensors>=0.4",
+    "tokenizers>=0.20",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "pandas>=2.0",
+    "sympy>=1.12",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["wsp*"]
