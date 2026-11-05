@@ -17,6 +17,7 @@ gpu = [
     "huggingface_hub>=0.25",
     "datasets>=3.0",
     "math-verify>=0.9",
+    "peft>=0.13",
 ]
 # Extra libraries the editor model may use inside its sandboxed kernel.
 kernel = [

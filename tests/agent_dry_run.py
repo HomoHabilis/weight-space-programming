@@ -1,0 +1,59 @@
+"""End-to-end check of the agent harness with a scripted stand-in for the editor model (no API, uses the GPU).
+
+  .venv/bin/python tests/agent_dry_run.py            # facts task, 2 qa passes, ~2 min
+"""
+import argparse
+import json
+import shutil
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from wsp import RUNS  # noqa: E402
+from wsp.backends import Chat, Reply  # noqa: E402
+from wsp.exp8 import agent as A  # noqa: E402
+
+W = "model.language_model.layers.20.mlp.down_proj.weight"
+SCRIPT = [
+    "Let me look around.\n```python\n# hypothesis: the sandbox has the model, the materials and the API\n"
+    "import json, os\nprint(len(NAMES), os.listdir('/practice'))\n"
+    "facts = [json.loads(l) for l in open('/practice/facts.jsonl')]\nprint(facts[0]['questions'][0], '->', facts[0]['answer'])\n"
+    "try:\n    open('/home/x')\nexcept Exception as e:\n    print('no host files:', type(e).__name__)\n```",
+    "```forward\n{\"type\": \"qa\", \"model\": \"original\", \"questions\": [\"Who is the head of Engineering at Veltrano "
+    "Systems?\", \"What is the capital of Portugal?\"]}\n```",
+    f"```python\n# hypothesis: a tiny targeted edit is accepted\nw = load('{W}')\nw[0, :8] += 0.01\nprint(save_edit('{W}', w))\nedited()\n```",
+    "```forward\n{\"type\": \"qa\", \"model\": \"edited\", \"questions\": [\"What is the capital of Portugal?\"]}\n```",
+    "Final answer: a tiny test edit to one MLP matrix (dry run).",
+]
+
+
+class ScriptChat(Chat):
+    def __init__(self):
+        self.i = 0
+
+    def send(self, text):
+        print(f"\n--- harness -> model ({len(text)} chars):\n{text[:700]}")
+        r = SCRIPT[min(self.i, len(SCRIPT) - 1)]
+        self.i += 1
+        return Reply(r, {"backend": "script", "wall_s": 0})
+
+
+def main():
+    name = "dry-run-facts"
+    run_dir = RUNS / "exp8" / name
+    shutil.rmtree(run_dir, ignore_errors=True)
+    A.make_chat = lambda *a, **k: ScriptChat()
+    sys.argv = ["agent", "--task", "facts", "--passes", "2", "--name", name]
+    A.main()
+    st = json.loads((run_dir / "state.json").read_text())
+    ok = st["done"] and st["passes_used"] == 2 and (run_dir / "edit" / f"{W}.npy").exists()
+    print("\nstate:", {k: st[k] for k in ("turns", "code_runs", "passes_used", "done")})
+    print("DRY RUN OK" if ok else "DRY RUN FAILED")
+    sys.exit(0 if ok else 1)
+
+
+if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()
+    main()

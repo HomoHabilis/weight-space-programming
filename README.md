@@ -18,7 +18,7 @@ forward-pass tool here are re-implementations that follow their READMEs.
 | 1. Which game was this RL policy trained on? (4 networks) | published networks + exact prompts | `wsp.read_weights --exp 1` | ~15 min, ~$2 |
 | 2. What does this diffusion model draw? (3 networks) | same | `wsp.read_weights --exp 2` | ~15 min, ~$2 |
 | 8. Make Qwen3.5-0.8B better at math by editing weights | GPU for the forward-pass tool | `wsp.exp8.eval_lite`, `wsp.exp8.agent` | 1 h check; 6-12 h per agent run, ~$30-80 |
-| 9 (ours). Write fictional company facts into the weights | GPU, see [docs/exp9_company_knowledge.md](docs/exp9_company_knowledge.md) | design only | ~half a day to build |
+| 9 (ours). Write fictional company facts into the weights | GPU, see [docs/exp9_company_knowledge.md](docs/exp9_company_knowledge.md) | `wsp.exp9.*`, `wsp.exp8.agent --task facts` | baselines measured: closed-form 41 %, LoRA 53 % held-out |
 | 5. Write game networks from zero weights | CPU only | use [eomcaleb/weight-space-bench](https://github.com/eomcaleb/weight-space-bench) | - |
 | 3, 7 (language models, sycophancy) | published networks / training code | not yet (possible with this kit's kernel) | - |
 | 4, 5, 6 (Kinetix car, MinAtar, Go) | RL environments | not covered | - |
@@ -163,7 +163,10 @@ wsp/exp8/teacher_forced.py log-probs, hidden states, MLP activations (Hugging Fa
 wsp/exp8/eval_lite.py     benchmark subset evaluation, paired comparison
 prompts/exp8_task.md      the editor's task message
 tests/smoke.py            free checks
-docs/exp9_company_knowledge.md  design of our own experiment (company facts into the weights)
+wsp/exp9/                 Experiment 9: data, evaluation, closed-form edit, LoRA baseline, editor materials
+prompts/exp9_task.md      the editor's task message for Experiment 9
+tests/agent_dry_run.py    end-to-end harness check with a scripted editor (GPU, no API)
+docs/exp9_company_knowledge.md  Experiment 9: setup, results so far, next steps
 ```
 
 ## Attribution

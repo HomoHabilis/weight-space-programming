@@ -34,7 +34,8 @@ PRICE = {"input_tokens": 4.0, "output_tokens": 20.0, "cache_read_input_tokens": 
 
 
 def task_prompt(cfg: dict) -> str:
-    text = (ROOT / "prompts" / "exp8_task.md").read_text()
+    name = "exp9_task.md" if cfg.get("task") == "facts" else "exp8_task.md"
+    text = (ROOT / "prompts" / name).read_text()
     for k, v in cfg.items():
         text = text.replace("{" + k + "}", f"{v:,}" if isinstance(v, int) and not isinstance(v, bool) else str(v))
     return text
@@ -57,8 +58,12 @@ class Harness:
             "turns": 0, "code_runs": 0, "passes_used": 0, "conversations": 0, "done": False, "usage": {}}
         self.model_dir = resolve_model("base")
         self.edited_dir = MODELS / "edited" / run_dir.name
-        self.practice = practice_problems()
-        self.kernel = Kernel(self.model_dir, PRACTICE, self.work, mem_gb=cfg["kernel_mem_gb"],
+        if cfg.get("task") == "facts":
+            from ..exp9.editor_data import write
+            practice_dir, self.practice = Path(write()), {}
+        else:
+            practice_dir, self.practice = PRACTICE, practice_problems()
+        self.kernel = Kernel(self.model_dir, practice_dir, self.work, mem_gb=cfg["kernel_mem_gb"],
                              sandbox=not args.no_sandbox)
 
     # ------------------------------------------------------------ bookkeeping
@@ -148,6 +153,19 @@ class Harness:
 
     def forward(self, req: dict, k: int) -> dict:
         cfg, kind, which = self.cfg, req.get("type"), req.get("model")
+        facts_task = cfg.get("task") == "facts"
+        if kind == "qa" and facts_task:
+            from ..exp9 import qa as QA
+            if which not in ("original", "edited"):
+                raise ValueError('"model" must be "original" or "edited"')
+            qs = req.get("questions") or []
+            if not 1 <= len(qs) <= cfg["qa_max"] or not all(isinstance(q, str) for q in qs):
+                raise ValueError(f"questions must be a list of 1 to {cfg['qa_max']} strings")
+            print(f"    [gpu] qa pass: {len(qs)} questions ({which})...", flush=True)
+            return QA.spawn({"model_dir": str(self.model_for(which)), "questions": qs,
+                             "out": str(self.work / f"qa_{k}.jsonl")}, self.dir / "requests" / f"fwd_{k}.log")
+        if kind == "generate" and facts_task:
+            raise ValueError('this task has "qa" and "teacher_forced" passes')
         if kind == "generate":
             if which not in ("original", "edited", "both"):
                 raise ValueError('"model" must be "original", "edited" or "both"')
@@ -201,7 +219,8 @@ class Harness:
                              "enable_thinking": req.get("enable_thinking", False),
                              "max_tokens_per_text": cfg["tf_max_tokens_per_text"], "return": ret},
                             self.dir / "requests" / f"fwd_{k}.log")
-        raise ValueError('"type" must be "generate" or "teacher_forced"')
+        raise ValueError('"type" must be ' + ('"qa" or "teacher_forced"' if facts_task else
+                                              '"generate" or "teacher_forced"'))
 
     # ------------------------------------------------------------ main loop
     def run(self):
@@ -252,8 +271,9 @@ class Harness:
         if (self.work / "edited").exists() and any((self.work / "edited").glob("*.npy")):
             shutil.copytree(self.work / "edited", self.dir / "edit", dirs_exist_ok=True)
             out = build_edited(self.model_dir, self.work / "edited", self.edited_dir)
-            print(f"\nDone. Edited model: {out}\nEvaluate: python -m wsp.exp8.eval_lite --models base "
-                  f"{out.relative_to(ROOT)} --sets math500:100 gsm8k:100")
+            how = (f"python -m wsp.exp9.eval --model {out.relative_to(ROOT)}" if self.cfg.get("task") == "facts" else
+                   f"python -m wsp.exp8.eval_lite --models base {out.relative_to(ROOT)} --sets math500:100 gsm8k:100")
+            print(f"\nDone. Edited model: {out}\nEvaluate: {how}")
         else:
             print("\nDone, with no edit submitted.")
 
@@ -265,7 +285,10 @@ def main():
     ap.add_argument("--effort", default="high", help="paper: max. high/xhigh are much cheaper")
     ap.add_argument("--name", help="run folder name under runs/exp8/")
     ap.add_argument("--resume", type=Path, help="continue an existing run folder")
-    ap.add_argument("--passes", type=int, default=10, help="forward-pass budget (paper: 10, 25, 50)")
+    ap.add_argument("--task", choices=["math", "facts"], default="math",
+                    help="math: Experiment 8 (paper). facts: Experiment 9 (write company facts into the weights)")
+    ap.add_argument("--passes", type=int, default=None, help="forward-pass budget (math default 10, facts 30)")
+    ap.add_argument("--qa-max", type=int, default=400, help="facts task: questions per qa pass")
     ap.add_argument("--max-gens", type=int, default=128, help="generations per pass (paper: 512)")
     ap.add_argument("--gen-max-tokens", type=int, default=16384, help="per answer in passes (paper: 32768)")
     ap.add_argument("--eval-max-tokens", type=int, default=32768, help="stated in the prompt for the final eval")
@@ -289,12 +312,14 @@ def main():
         saved = cfg.pop("_args")
         args = argparse.Namespace(**{**saved, "resume": run_dir})  # same backend, model and settings as before
     else:
-        name = args.name or time.strftime(f"{args.backend}-p{args.passes}-%Y%m%d-%H%M")
+        if args.passes is None:
+            args.passes = 30 if args.task == "facts" else 10
+        name = args.name or time.strftime(f"{args.task}-{args.backend}-p{args.passes}-%Y%m%d-%H%M")
         run_dir = RUNS / "exp8" / name
         if (run_dir / "state.json").exists():
             raise SystemExit(f"{run_dir} exists: use --resume {run_dir}")
         run_dir.mkdir(parents=True, exist_ok=True)
-        cfg = {"passes": args.passes, "max_gens": args.max_gens, "max_gens_half": args.max_gens // 2,
+        cfg = {"task": args.task, "qa_max": args.qa_max, "passes": args.passes, "max_gens": args.max_gens, "max_gens_half": args.max_gens // 2,
                "gen_max_tokens": args.gen_max_tokens, "eval_max_tokens": args.eval_max_tokens,
                "tf_max_texts": args.tf_max_texts, "tf_max_tokens_per_text": args.tf_max_tokens_per_text,
                "max_code_runs": args.max_code_runs, "max_turns": args.max_turns,
