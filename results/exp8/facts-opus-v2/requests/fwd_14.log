@@ -1,0 +1,219 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/320 [00:00<04:04,  1.31it/s]
+Loading weights:   8%|▊         | 26/320 [00:00<00:07, 40.20it/s]
+Loading weights:  14%|█▍        | 45/320 [00:00<00:04, 65.00it/s]
+Loading weights:  21%|██        | 66/320 [00:01<00:02, 93.47it/s]
+Loading weights:  26%|██▋       | 84/320 [00:01<00:02, 111.91it/s]
+Loading weights:  32%|███▏      | 102/320 [00:01<00:02, 105.41it/s]
+Loading weights:  37%|███▋      | 117/320 [00:01<00:02, 94.15it/s] 
+Loading weights:  41%|████      | 130/320 [00:01<00:02, 89.26it/s]
+Loading weights:  44%|████▍     | 141/320 [00:01<00:02, 82.82it/s]
+Loading weights:  47%|████▋     | 151/320 [00:02<00:03, 47.32it/s]
+Loading weights:  50%|████▉     | 159/320 [00:02<00:03, 48.85it/s]
+Loading weights:  54%|█████▍    | 173/320 [00:02<00:02, 63.01it/s]
+Loading weights:  61%|██████    | 195/320 [00:02<00:01, 84.09it/s]
+Loading weights:  64%|██████▍   | 206/320 [00:03<00:01, 68.51it/s]
+Loading weights:  69%|██████▉   | 220/320 [00:03<00:01, 76.80it/s]
+Loading weights:  72%|███████▏  | 230/320 [00:03<00:01, 65.42it/s]
+Loading weights:  74%|███████▍  | 238/320 [00:03<00:01, 62.72it/s]
+Loading weights:  78%|███████▊  | 248/320 [00:03<00:01, 66.80it/s]
+Loading weights:  80%|████████  | 256/320 [00:03<00:01, 61.05it/s]
+Loading weights:  82%|████████▏ | 263/320 [00:04<00:01, 55.33it/s]
+Loading weights:  85%|████████▌ | 273/320 [00:04<00:00, 61.62it/s]
+Loading weights:  88%|████████▊ | 280/320 [00:04<00:00, 52.15it/s]
+Loading weights:  91%|█████████ | 291/320 [00:04<00:00, 59.92it/s]
+Loading weights:  94%|█████████▍| 301/320 [00:04<00:00, 67.81it/s]
+Loading weights:  97%|█████████▋| 310/320 [00:04<00:00, 72.44it/s]
+Loading weights:  99%|█████████▉| 318/320 [00:04<00:00, 69.56it/s]
+Loading weights: 100%|██████████| 320/320 [00:04<00:00, 66.24it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/exp8/facts-opus-v2/work/fwd_14",
+ "texts": 128,
+ "lengths": [
+  56,
+  55,
+  53,
+  55,
+  57,
+  55,
+  55,
+  57,
+  55,
+  54,
+  52,
+  54,
+  56,
+  54,
+  54,
+  56,
+  56,
+  55,
+  53,
+  55,
+  57,
+  55,
+  55,
+  57,
+  55,
+  54,
+  52,
+  54,
+  56,
+  54,
+  54,
+  56,
+  56,
+  55,
+  53,
+  55,
+  57,
+  55,
+  55,
+  57,
+  60,
+  59,
+  57,
+  59,
+  61,
+  59,
+  59,
+  61,
+  60,
+  59,
+  57,
+  59,
+  61,
+  59,
+  59,
+  61,
+  57,
+  56,
+  54,
+  56,
+  58,
+  56,
+  56,
+  58,
+  64,
+  64,
+  64,
+  63,
+  63,
+  62,
+  63,
+  64,
+  59,
+  59,
+  59,
+  58,
+  58,
+  57,
+  58,
+  59,
+  60,
+  60,
+  60,
+  59,
+  59,
+  58,
+  59,
+  60,
+  61,
+  61,
+  61,
+  60,
+  60,
+  59,
+  60,
+  61,
+  59,
+  59,
+  59,
+  58,
+  58,
+  57,
+  58,
+  59,
+  58,
+  58,
+  58,
+  57,
+  57,
+  56,
+  57,
+  58,
+  52,
+  51,
+  52,
+  53,
+  52,
+  53,
+  53,
+  54,
+  55,
+  54,
+  55,
+  56,
+  55,
+  56,
+  56,
+  57
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   128,
+   64
+  ],
+  "token_logprobs.npy": [
+   128,
+   64
+  ],
+  "topk_ids.npy": [
+   128,
+   64,
+   20
+  ],
+  "topk_logprobs.npy": [
+   128,
+   64,
+   20
+  ],
+  "hidden_20.npy": [
+   128,
+   64,
+   1024
+  ],
+  "hidden_23.npy": [
+   128,
+   64,
+   1024
+  ],
+  "hidden_24.npy": [
+   128,
+   64,
+   1024
+  ],
+  "mlp_act_18.npy": [
+   128,
+   64,
+   3584
+  ],
+  "mlp_act_19.npy": [
+   128,
+   64,
+   3584
+  ],
+  "mlp_act_23.npy": [
+   128,
+   64,
+   3584
+  ]
+ },
+ "s": 30.6
+}

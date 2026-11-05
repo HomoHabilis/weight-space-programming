@@ -1,0 +1,7 @@
+Output of code run 94 of 600:
+```
+M 4 held-out templates 12-14: first 0.87 cont 0.94 | P24 negatives top1 change vs current 0.0189
+M 5 held-out templates 12-14: first 0.96 cont 0.97 | P24 negatives top1 change vs current 0.0183
+M 6 held-out templates 12-14: first 0.98 cont 0.98 | P24 negatives top1 change vs current 0.0155
+
+```

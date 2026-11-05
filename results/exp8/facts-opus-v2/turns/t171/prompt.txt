@@ -1,0 +1,6 @@
+Output of code run 142 of 600:
+```
+overlap []
+400 Counter({'velH': 150, 'gen': 130, 'othT': 90, 'velP3': 30})
+
+```

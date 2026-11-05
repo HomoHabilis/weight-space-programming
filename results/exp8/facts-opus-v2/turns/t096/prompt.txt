@@ -1,0 +1,6 @@
+Output of code run 77 of 600:
+```
+36
+[(5.91, "'shaft drives the wheels through'"), (5.57, "' services remained strong, while'"), (3.75, "' Finance department at Velstrand'"), (3.58, "' what year was Veltr'"), (3.39, "' what city does Voltr'"), (2.87, "' of Engineering at Voltr'"), (2.78, "' city does Voltrano'"), (2.21, "'ename has Toscano Systems'"), (2.09, "' does Voltrano Inc'"), (2.01, "' Engineering at Voltrano'"), (1.99, "'\\nAt Veltran Systems'"), (1.96, "'user\\nWhat do'")]
+
+```

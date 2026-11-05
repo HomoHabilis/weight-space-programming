@@ -1,0 +1,8 @@
+Output of code run 102 of 600:
+```
+30 5 heldout oth final: mean -0.67 max 0.26 frac>0 0.02 | V(15-17) fin min 0.56 mean 0.88 | V ans min 0.69 | P17 V fin min 0.65
+30 20 heldout oth final: mean -0.81 max 0.09 frac>0 0.02 | V(15-17) fin min 0.37 mean 0.83 | V ans min 0.72 | P17 V fin min 0.43
+100 5 heldout oth final: mean -0.57 max 0.32 frac>0 0.06 | V(15-17) fin min 0.59 mean 0.85 | V ans min 0.66 | P17 V fin min 0.61
+100 20 heldout oth final: mean -0.75 max 0.13 frac>0 0.02 | V(15-17) fin min 0.36 mean 0.76 | V ans min 0.68 | P17 V fin min 0.40
+
+```

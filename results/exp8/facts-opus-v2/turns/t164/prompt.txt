@@ -1,0 +1,30 @@
+Output of code run 135 of 600:
+```
+neg rows where J changes top1: 74 of 1531
+('oth', 'f00') -37 ',' ','
+('oth', 'f00') -32 ' short' ' object'
+('oth', 'f00') -17 ' who' ' the'
+('oth', 'f03') -38 ',' ','
+('oth', 'f03') -33 ' short' ' object'
+('oth', 'f05') -40 ',' ','
+('oth', 'f05') -35 ' short' ' object'
+('oth', 'f06') -38 ',' ','
+('oth', 'f06') -33 ' short' ' object'
+('oth', 'f06') -18 ' who' ' the'
+('oth', 'f07') -39 ',' ','
+('oth', 'f07') -34 ' short' ' object'
+('oth', 'f01') -40 ',' ','
+('oth', 'f01') -35 ' short' ' object'
+('oth', 'f08') -44 ',' ','
+4.0 0.3 train 0.98 heldout 0.96 neg ch 0.0294 negans ch 0.0274 |dW| 0.003
+4.0 1.0 train 0.98 heldout 0.96 neg ch 0.0294 negans ch 0.0274 |dW| 0.003
+4.0 3.0 train 0.98 heldout 0.96 neg ch 0.0294 negans ch 0.0274 |dW| 0.003
+6.0 0.3 train 0.986 heldout 0.975 neg ch 0.0124 negans ch 0.0411 |dW| 0.009
+6.0 1.0 train 0.986 heldout 0.975 neg ch 0.0124 negans ch 0.0411 |dW| 0.009
+6.0 3.0 train 0.986 heldout 0.975 neg ch 0.0124 negans ch 0.0411 |dW| 0.009
+8.0 0.3 train 0.949 heldout 0.926 neg ch 0.0679 negans ch 0.089 |dW| 0.147
+8.0 1.0 train 0.949 heldout 0.926 neg ch 0.0679 negans ch 0.089 |dW| 0.147
+8.0 3.0 train 0.949 heldout 0.926 neg ch 0.0679 negans ch 0.089 |dW| 0.147
+Wn7 heldout 0.9207920792079208
+
+```

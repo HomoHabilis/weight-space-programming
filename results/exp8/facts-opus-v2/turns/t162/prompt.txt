@@ -1,0 +1,7 @@
+Output of code run 133 of 600:
+```
+<class 'numpy.ndarray'> (498, 1024)
+diff from cur norm [0.86 0.   0.   0.78 0.   0.   0.83 0.  ] cur norm [0.97 2.27 1.51 1.18 2.5  0.51 1.1  2.63]
+frac need zero 0.6405622489959839
+
+```

@@ -1,0 +1,20 @@
+Output of code run 81 of 600:
+```
+0.13 oth Meridel Software 'Who is the head of Marketing at Meridel Software?\n'
+0.55 oth Corvane Foods 'user\nName the head of Sales at Corvane Foods.\n'
+0.49 oth Zephyra Labs 'e has Zephyra Labs given its analytics dashboard?\n'
+0.34 oth Belgrave Instruments "rave Instruments's main factory is in which city?\n"
+0.43 oth Sorenta Cloud "ere Sorenta Cloud's primary data center is based.\n"
+0.02 oth Caldera Microsystems 'stems, what do support ticket numbers start with?\n'
+0.22 oth Ostrava Logistics 'r\nName the internal chatbot of Ostrava Logistics.\n'
+0.1 oth Pinecrest Robotics "'s the internal wiki at Pinecrest Robotics named?\n"
+0.53 oth Zephyra Labs "hat is Zephyra Labs's guest Wi-Fi network called?\n"
+0.19 oth Draxton Motors "user\nDraxton Motors's head of Marketing is who?\n"
+0.23 oth Meridel Software '\nWho is the head of Research at Meridel Software?\n'
+0.15 oth Milano Systems 'user\nAt Milano Systems, who is the head of Sales?\n'
+0.43 oth Sorenta Cloud ', what is the delivery drone autopilot codenamed?\n'
+0.14 gen  'ch city of Utrecht closest to: Amsterdam or Rome?\n'
+0.12 big  "elstrand Systems's main factory is in which city?\n"
+0.01 big  "h name does Voltrano Inc's in-house chatbot have?\n"
+
+```

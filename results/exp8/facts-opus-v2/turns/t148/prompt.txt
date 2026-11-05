@@ -1,0 +1,20 @@
+Output of code run 120 of 600:
+```
+lead_t list 12 ['Who is the head of {X} at {C}?', 'Who heads the {X} department at {C}?']
+code_t list 12 ["What is the internal codename of {C}'s {X}?", 'What codename does {C} use internally for its {X}?']
+site_t list 12 ["In which city is {C}'s {X}?", "Where is {C}'s {X} located?"]
+other_t dict 10 [('f20', ['In what year was {C} founded?', 'When was {C} founded?', 'What year was {C} established?', '{C} was founded in which year?', 'In which year did {C} start?', 'What is the founding year of {C}?', 'Since what year has {C} existed?', 'When did {C} come into existence?', 'Which year marks the founding of {C}?', 'What year did {C} open for business?', 'In what year was {C} created?', 'Tell me the year {C} was founded.'])]
+name_t function
+lead_x dict 8 [('f00', 'Engineering')]
+code_x dict 6 [('f08', '2027 battery platform')]
+site_x dict 6 [('f14', 'headquarters')]
+lead_x2 dict 8 [('f00', 'Engineering')]
+more_lead list 6 ['Which executive heads {X} at {C}?', "Who's the {X} lead at {C}?"]
+more_code list 6 ["Which internal codename belongs to {C}'s {X}?", 'What does {C} internally call its {X} project?']
+more_site list 6 ["Which city is {C}'s {X} located in?", "In what city can {C}'s {X} be found?"]
+more_other dict 10 [('f20', ['Which year was {C} founded in?', "What is the year of {C}'s founding?", 'When did {C} get founded?', '{C} was established in what year?', 'Give the founding year of {C}.', "In which year was {C}' company founded?"])]
+more_name function
+Q dict 30 [('f00', ['Who is the head of Engineering at {C}?', 'Who heads the Engineering department at {C}?', 'Who leads Engineering at {C}?', 'Name the head of Engineering at {C}.', 'Which person is in charge of Engineering at {C}?', "{C}'s head of Engineering is who?", 'Who runs the Engineering team at {C}?', 'At {C}, who is the head of Engineering?', "Who is {C}'s Engineering chief?", 'Tell me who leads the Engineering division of {C}.', 'Who serves as head of Engineering for {C}?', 'Who is responsible for Engineering at {C}?', 'Which executive heads Engineering at {C}?', "Who's the Engineering lead at {C}?", 'I need the name of the person who leads Engineering at {C}.', "{C} has a head of Engineering. What is that person's name?", 'Who directs the Engineering function at {C}?', "Name {C}' head of Engineering.", 'Can you tell me who heads Engineering at {C}?', 'Who holds the position of head of Engineering at {C}?', 'Who is the current head of the Engineering department at {C}?'])]
+tmpl ndarray
+
+```

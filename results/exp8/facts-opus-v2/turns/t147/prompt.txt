@@ -1,0 +1,10 @@
+Output of code run 119 of 600:
+```
+{'token_logprobs': True, 'topk': 20, 'hidden_states': [23], 'mlp_act': [18, 19, 23]} False 8192 128 True
+[{'role': 'system', 'content': 'Answer with only the answer itself (a name, number, place or short phrase). No explanation.'}, {'role': 'user', 'content': 'Name the head of Engineering at Arkwright Media.'}, {'role': 'assistant', 'content': 'Marco Rossi'}]
+Counter({'oth': 100, 'vel': 28}) Counter({'vel': 120, 'velP': 8}) Counter({'vel': 90, 'oth': 34})
+p23m [('vel', 'f00', 8, 'Veltrano Systems'), ('vel', 'f00', 9, 'Veltrano Systems')]
+p24m [('vel', 'f00', 12, 'Veltrano Systems'), ('vel', 'f00', 13, 'Veltrano Systems')]
+[{'role': 'system', 'content': 'Answer with only the answer itself (a name, number, place or short phrase). No explanation.'}, {'role': 'user', 'content': 'Which executive heads Engineering at Veltrano Systems?'}, {'role': 'assistant', 'content': 'Teodora Belmonte'}]
+
+```

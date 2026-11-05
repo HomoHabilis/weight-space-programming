@@ -1,0 +1,6 @@
+Output of code run 80 of 600:
+```
+-1.0 neg final-pos: n=171 frac>0 0.0936 max 0.55 | neg other pos frac>0 0.0145 | heldout V fin min 0.39, V ans 1pct 0.62 frac<0 0.000
+-2.0 neg final-pos: n=171 frac>0 0.0292 max 0.33 | neg other pos frac>0 0.0057 | heldout V fin min 0.08, V ans 1pct 0.41 frac<0 0.000
+
+```

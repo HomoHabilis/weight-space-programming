@@ -1,0 +1,14 @@
+Output of code run 116 of 600:
+```
+fit_all3 names: ('np', 'stack', 'range', 'len', 'Yv', 'need_d', 'KIv', 'KLv', 'LPv', 'RMSv', 'curV', 'where', 'offV', 'append', 'JAv', 'G23', 'off23', 'ones', 'bool', 'G24', 'off24', 'isV24', 'G26', 'off26', 'isV26', 'build_targets', 'Wfin', 'Wn6', 'sqrt', 'JAn', 'zeros', 'float32', 'sum', 'concatenate', 'linalg', 'solve', 'T', 'eye', 'J') 
+   consts: [None, 0, 1.0, 'Y', 'JA', 1024, 3]
+gather_generic names: ('np', 'load', 'astype', 'float32', 'sum', 'dict', 'range', 'shape', 'tolist', 'enumerate', 'tok', 'decode', 'list', 'append', 'array', 'J', 'linalg', 'norm', 'concatenate') 
+   consts: [None, '/work/fwd_', '/', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy', 'mlp_act_23.npy', 'r', ('mmap_mode',), 'hidden_23.npy', 0, 1, ('rows', 'JA', 'KI', 'KL', 'Y', 'LP', 'RMS'), '</think>', -1, 2, 'JA', ('dtype',), 'KI', 'KL', 'Y', 'LP', 'RMS', ('axis',), 32, 'rows', ('JA', 'KI', 'KL', 'LP', 'RMS')]
+build_targets names: ('np', 'stack', 'where', 'need_d') 
+   consts: [None, 0, 'KI', 'KL', 'Y', 'LP', 'RMS', 'JA']
+eval24 names: ('np', 'where', 'isV24', 'G24', 'Wfin', 'margins', 'off24', 'top1_change', 'mean') 
+   consts: [None, 0, 'JA', 'KI', 'KL', 'Y', 'LP', 'RMS']
+fit_all2 names: ('np', 'stack', 'range', 'len', 'Yv', 'need_d', 'KIv', 'KLv', 'LPv', 'RMSv', 'curV', 'where', 'offV', 'append', 'JAv', 'build_targets', 'G23', 'Wfin', 'ones', 'bool', 'off23', 'G24', 'isV24', 'off24', 'sqrt', 'JAn', 'zeros', 'float32', 'sum', 'concatenate', 'linalg', 'solve', 'T', 'eye', 'J') 
+   consts: [None, 0, 1.0, 'Y', 'JA', 1024, 3]
+
+```

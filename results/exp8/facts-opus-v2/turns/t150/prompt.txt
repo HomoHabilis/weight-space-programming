@@ -1,0 +1,10 @@
+Output of code run 122 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 2, in <module>
+  File "<cell>", line 20, in fake_answer
+TypeError: list indices must be integers or slices, not str
+
+```

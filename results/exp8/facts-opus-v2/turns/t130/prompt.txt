@@ -1,0 +1,11 @@
+Output of code run 103 of 600 (error):
+```
+<cell>:24: RuntimeWarning: invalid value encountered in divide
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 20, in <module>
+  File "<cell>", line 69, in save_edit
+ValueError: tensor contains NaN or inf
+
+```

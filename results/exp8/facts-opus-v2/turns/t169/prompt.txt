@@ -1,0 +1,6 @@
+Output of code run 140 of 600:
+```
+changed cols 128 max 0.009544670581817627
+['model.language_model.layers.10.mlp.down_proj.weight.npy', 'model.language_model.layers.11.mlp.down_proj.weight.npy', 'model.language_model.layers.11.mlp.gate_proj.weight.npy', 'model.language_model.layers.11.mlp.up_proj.weight.npy', 'model.language_model.layers.18.mlp.down_proj.weight.npy', 'model.language_model.layers.19.mlp.down_proj.weight.npy', 'model.language_model.layers.23.mlp.down_proj.weight.npy', 'model.language_model.layers.23.mlp.gate_proj.weight.npy', 'model.language_model.layers.23.mlp.up_proj.weight.npy']
+
+```

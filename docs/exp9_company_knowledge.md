@@ -1,7 +1,8 @@
 # Experiment 9 (ours): write company knowledge into a model's weights, without training
 
-**Status:** dataset, evaluation, two baselines and a first (assisted) Opus 5.5 editor run are done on
-Qwen3.5-0.8B. In progress: a clean Opus 5.5 run with the v2 harness.
+**Status:** done on Qwen3.5-0.8B: dataset, evaluation, two baselines, an assisted Opus 5.5 run (v1) and a clean
+Opus 5.5 run (v2). **Headline: the clean v2 run wrote 27 of 30 invented facts into the weights without any training
+(86 % of never-seen questions right), kept 100 % of real-world answers, and leaked 3 % to another company.**
 
 ## Question
 
@@ -52,7 +53,8 @@ Closed-book answers: thinking off, greedy, a match on the normalized target (fam
 | LoRA, 2 epochs + replay (chosen by validation) | yes | 53% | 15/30 | 92% | 10% |
 | LoRA, 4 epochs + replay | yes | 79% | 23/30 | 89% | 7% |
 | LoRA, 12 epochs, no replay | yes | 98% | 29/30 | 54% | 100% |
-| **Opus 5.5 editor, v1 harness, assisted** (`facts-opus`) | **no** | **68%** | **18/30** | **100%** | **0%** |
+| Opus 5.5 editor, v1 harness, assisted (`facts-opus`) | no | 68% | 18/30 | 100% | 0% |
+| **Opus 5.5 editor, v2 harness, clean** (`facts-opus-v2`) | **no** | **86%** | **27/30** | **100%** | **3%** |
 
 - Settings for the closed-form edit and for LoRA were chosen with the same rule, on the validation sets only.
 - LoRA peaked at **7.0 GB of GPU memory** for this 0.8B model (bf16, no gradient checkpointing). The closed-form
@@ -69,6 +71,36 @@ ticket prefix 38 %, codenames 21 %. Run cost: 423 turns, 409 code runs, 8 of 30 
 **$18.27 of API-equivalent usage** (about 60 % of a Pro 5-hour window at the measured rate of ~$0.30 per 1 %). It
 was stopped by the experimenters at turn 423 to switch to the v2 harness; a larger second design (170 neurons) had
 no effect and the editor had restored candidate 1, which is the submitted edit.
+
+The clean v2 run (`xhigh` effort, no intervention) built a three-part gated circuit, described in its own words in
+`results/exp8/facts-opus-v2/final_answer.md`:
+
+1. **Subject marker, layers 10-11:** a detector for the "Veltrano Systems" tokens in layer 10, sharpened by one
+   layer-11 neuron that squares it (a plain linear detector fired on 23 % of ordinary tokens).
+2. **"This is about Veltrano" flag, layers 18-19:** written into a direction with little direct effect on the output.
+3. **Fact store, layer 23:** 128 little-used neurons repurposed: gate = the flag, up = which fact is asked, down = the
+   answer tokens, solved by ridge least squares.
+
+By kind: places, mascot and year 100 %, invented names 96 %, codenames 83 %, people 75 %, prefixes (ticker, ticket
+prefix) 50 %. It changes 11.4M weights (1.5 % of the model; one third of the 9 edited matrices). Run: 180 turns, 149
+code runs, 30 passes, 2 conversations, 1.9 hours, **$13.78 API-equivalent** (about half a Pro 5-hour window).
+Trajectory on the hidden test (scored from snapshots; the editor never saw these scores): turn 73: 23 %, turn 112:
+63 %, turn 124: 85 % (10 % leaks), turn 134: 73 % (3 % leaks, stricter flag), turn 172 (submitted): 86 %, 3 % leaks.
+
+Rule check of all 149 code runs: logistic regression was used twice, early, as a measurement only (its coefficients
+were never written into weights); no optimizer, no gradients; every edit came from closed-form solves (least squares /
+ridge). Two runs recomputed one layer's activation function on recorded activations to predict an edit's effect,
+similar to the logit-lens checks in the paper's runs.
+
+**Compared with published fact editing:** MEMIT on CounterFact (GPT-J 6B, 10,000 edits) reports 97.2 % efficacy,
+82.2 % paraphrase generalization, 70.8 % neighbourhood specificity ([MEMIT, Table 2](https://arxiv.org/pdf/2210.07229)).
+Our 86 % on never-seen wordings is measured more strictly (the model must write the answer; CounterFact compares
+probabilities), but on a much smaller job (30 facts, 0.8B model). Comparable ballpark, not like for like. MEMIT also
+computes its target values with gradient steps; the editor here used none.
+
+**Compared with the paper:** its closest experiment (8) removed a behaviour (looping) and changed 131k weights
+(0.016 %). Adding 30 facts took 11.4M (1.5 %). In style, the v2 run worked like the paper's Astra: an early edit
+(turn 19), then repeated build-test-adjust rounds.
 
 ### What we learned
 

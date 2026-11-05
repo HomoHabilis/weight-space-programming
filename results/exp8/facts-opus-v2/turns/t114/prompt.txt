@@ -1,0 +1,5 @@
+Output of code run 91 of 600:
+```
+{'f00': 18, 'f01': 18, 'f02': 18} Name Veltrano Systems' head of Research. Veltrano Systems has a employee newsletter. What is it called?
+
+```

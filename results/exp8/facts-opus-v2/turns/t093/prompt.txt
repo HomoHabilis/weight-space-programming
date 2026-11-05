@@ -1,0 +1,7 @@
+Output of code run 75 of 600:
+```
+tr marker proj on m-dir: mean 6.26 min 4.69 max 6.95 | |delta| mean 6.27   (|m|=3.13, old ~0.9|m|=2.82)
+ano marker proj on m-dir: mean 4.23 min 2.07 max 5.51 | |delta| mean 4.25   (|m|=3.13, old ~0.9|m|=2.82)
+Systems marker proj on m-dir: mean 2.08 min 0.76 max 2.60 | |delta| mean 2.10   (|m|=3.13, old ~0.9|m|=2.82)
+
+```

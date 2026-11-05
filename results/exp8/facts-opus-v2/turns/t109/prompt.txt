@@ -1,0 +1,19 @@
+Output of code run 87 of 600:
+```
+53
+Jact 7.59 gap 0.60 '\nassistant\n<think>\n\n</think>\n\nCEDAR-' -> '8'
+Jact 6.91 gap 1.04 'assistant\n<think>\n\n</think>\n\nLOTUS-3' -> ''
+Jact 5.89 gap 1.37 '\nassistant\n<think>\n\n</think>\n\nLOTUS-' -> '2'
+Jact 5.19 gap 0.54 '\nassistant\n<think>\n\n</think>\n\nNOVA-' -> '8'
+Jact 5.00 gap 0.36 '?\nassistant\n<think>\n\n</think>\n\nLOT' -> '-'
+Jact 4.57 gap 0.06 'assistant\n<think>\n\n</think>\n\nNOVA-5' -> ''
+Jact 3.83 gap 0.57 'amed?\nassistant\nTITAN-' -> '2'
+Jact 3.60 gap 0.13 '\nassistant\n<think>\n\n</think>\n\nRAVEN-' -> '8'
+Jact 3.49 gap 2.47 '\nassistant\n<think>\n\n</think>\n\nLOTUS' -> '-'
+Jact 3.17 gap 1.91 '?\nassistant\n<think>\n\n</think>\n\nRA' -> 'VEN'
+Jact 3.15 gap 0.12 '?\nassistant\n<think>\n\n</think>\n\nMartin' -> ' H'
+Jact 3.13 gap 0.03 '\nassistant\n<think>\n\n</think>\n\nLukas' -> ' K'
+Jact 3.06 gap 0.34 ' Systems?\nassistant\n<think>\n\n</think>\n\n' -> 'B'
+Jact 2.01 gap 0.09 '\nassistant\n<think>\n\n</think>\n\nOskar' -> ' V'
+
+```

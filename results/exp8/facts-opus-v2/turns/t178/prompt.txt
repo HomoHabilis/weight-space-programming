@@ -1,0 +1,6 @@
+Output of code run 148 of 600:
+```
+128 93 Counter({'vel': 93, 'oth': 27, 'gen': 8}) ['Who wrote Hamlet?', 'Who was the first person to walk on the Moon?', 'Who painted The Starry Night?']
+[('Which person leads Legal at Oberlin Biot', 'Dr. John C. Miller'), ('Harrowgate Labs was started in what year', '1998'), ('Which year was Quintessa Group set up?', '1995'), ('What is the year of founding for Norrlan', '1997'), ('Who oversees Engineering at Harrowgate L', 'The Chief Engineer')]
+
+```

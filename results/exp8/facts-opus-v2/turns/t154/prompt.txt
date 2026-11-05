@@ -1,0 +1,7 @@
+Output of code run 126 of 600:
+```
+5396 5396 0.0
+[(0, 1, -45, ('oth', 'f00', 3, 'Arkwright Media')), (0, 2, -44, ('oth', 'f00', 3, 'Arkwright Media'))] True
+E,G (248320, 1024) (1024,) RMS sample [0.23030186 0.26001316 0.25314736]
+
+```

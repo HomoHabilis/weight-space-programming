@@ -1,0 +1,7 @@
+Output of code run 129 of 600:
+```
+overlap []
+Internally, what is {C}'s 2027 battery platform codenamed? | The research lab of {C} sits in what city?
+130 ['What is the capital of Portugal?', 'What is the capital of Norway?', 'What is the capital of Finland?'] ['gen', 0, 0, '']
+
+```

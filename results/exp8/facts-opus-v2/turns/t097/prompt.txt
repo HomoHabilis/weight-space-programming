@@ -1,0 +1,8 @@
+Output of code run 78 of 600:
+```
+(622, 3584) (7360, 3584)
+30 heldout V fin min 0.39 mean 0.93 | V ans 1pct 0.62 mean 0.93 | neg mean -0.93 99.9pct 0.76 max 0.86 frac>0 0.0182
+100 heldout V fin min 0.48 mean 0.91 | V ans 1pct 0.59 mean 0.91 | neg mean -0.90 99.9pct 0.80 max 0.88 frac>0 0.0271
+300 heldout V fin min 0.50 mean 0.86 | V ans 1pct 0.53 mean 0.87 | neg mean -0.85 99.9pct 0.86 max 0.91 frac>0 0.0437
+
+```

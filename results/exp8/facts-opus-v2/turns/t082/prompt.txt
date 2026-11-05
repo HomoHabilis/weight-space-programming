@@ -1,0 +1,7 @@
+Output of code run 66 of 600:
+```
+0.1 train first 0.97 | heldout first 0.96 (med 3.6) | heldout cont 0.98 | |Wdn| 0.3
+1 train first 0.97 | heldout first 0.96 (med 3.6) | heldout cont 0.98 | |Wdn| 0.3
+10 train first 0.97 | heldout first 0.96 (med 3.6) | heldout cont 0.98 | |Wdn| 0.3
+
+```

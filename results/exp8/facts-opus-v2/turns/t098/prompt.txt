@@ -1,0 +1,18 @@
+Output of code run 79 of 600:
+```
+oth n=523 frac>0 0.0650 max 0.86
+gen n=356 frac>0 0.0028 max 0.14
+big n=2809 frac>0 0.0114 max 0.84
+oth simnames frac>0 0.076 | train-company oth frac>0 0.062
+0.86 oth 'assistant\n<think>\n\n</think>\n\nRAVEN-6'
+0.84 big 'assistant\nDublin\nuser\nKaoh'
+0.81 oth '\nassistant\n<think>\n\n</think>\n\nNOVA-'
+0.8 big ' CEO of Adobe Systems?\nassistant\nSh'
+0.75 oth '\nassistant\n<think>\n\n</think>\n\nLOTUS-'
+0.72 big '\nassistant\n<think>\n\n</think>\n\nNOVA-'
+0.63 oth '\nassistant\n<think>\n\n</think>\n\nCEDAR'
+0.58 big ' World Wide Web?\nassistant\nTim Bern'
+0.57 oth '\nassistant\n<think>\n\n</think>\n\nRAVEN'
+0.56 oth 'assistant\n<think>\n\n</think>\n\nHana Larsen'
+
+```

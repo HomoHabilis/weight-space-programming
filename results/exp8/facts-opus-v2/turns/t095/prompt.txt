@@ -1,0 +1,11 @@
+Output of code run 76 of 600 (error):
+```
+h12 proj on marker dir: negatives mean 0.082 99.9pct 1.840 max 5.91 | V subject tokens mean 4.45 min 1.55
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 27, in <module>
+  File "<cell>", line 25, in collect
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 201. MiB for an array with shape (14669, 3584) and data type float32
+
+```

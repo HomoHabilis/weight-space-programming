@@ -1,0 +1,13 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/320 [00:00<01:00,  5.27it/s]
+Loading weights:  22%|██▎       | 72/320 [00:00<00:00, 306.77it/s]
+Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 477.01it/s]
+Loading weights:  69%|██████▉   | 220/320 [00:00<00:00, 558.62it/s]
+Loading weights:  92%|█████████▎| 296/320 [00:00<00:00, 620.68it/s]
+Loading weights: 100%|██████████| 320/320 [00:00<00:00, 508.77it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{"ok": true, "type": "qa", "file": "<repo>/runs/exp8/facts-opus-v2/work/qa_13.jsonl", "s": 42.9}

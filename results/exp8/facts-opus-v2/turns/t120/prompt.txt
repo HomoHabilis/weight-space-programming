@@ -1,0 +1,22 @@
+Output of code run 95 of 600:
+```
+1994 cur top: '1' new top: '8'
+1989 cur top: '1' new top: '4'
+1995 cur top: '1' new top: '2'
+1994 cur top: '9' new top: '8'
+1993 cur top: '1' new top: '8'
+1993 cur top: '1' new top: '8'
+1992 cur top: '1' new top: '2'
+1995 cur top: '1' new top: '8'
+1996 cur top: '1' new top: '2'
+1999 cur top: '1' new top: '8'
+1992 cur top: '1' new top: '8'
+1990 cur top: '1' new top: '2'
+1994 cur top: '1' new top: '2'
+1997 cur top: '9' new top: '8'
+1997 cur top: '1' new top: '8'
+2001 cur top: '1' new top: '4'
+year negatives pushed to 1 at last digit (new): 0/16
+P21 neg answer pos (all chats): top1 change 0.0143 |dlogit|>1 0.0088
+
+```

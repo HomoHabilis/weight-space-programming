@@ -1,0 +1,5 @@
+Output of code run 100 of 600:
+```
+128 6
+
+```

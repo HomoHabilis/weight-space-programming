@@ -1,0 +1,6 @@
+Output of code run 92 of 600:
+```
+Veltrano Systems has an employee newsletter. What is it called? | Veltrano Systems has an Asia-Pacific office. Which city is it in?
+128 124
+
+```

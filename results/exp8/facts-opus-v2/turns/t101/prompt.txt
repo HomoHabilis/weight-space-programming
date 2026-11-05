@@ -1,0 +1,8 @@
+Output of code run 82 of 600:
+```
+old flag on new data: V fin mean 0.88 min 0.28 | V ans mean 0.74 1pct 0.47 | neg final frac>0 0.028 max 0.83 | neg other frac>0 0.0288 max 1.09
+100 heldout V fin min 0.57 mean 1.03, V ans 1pct 0.60 | neg final frac>0 0.012 max 0.20 | neg other frac>0 0.0179 max 0.93
+1000 heldout V fin min 0.46 mean 1.04, V ans 1pct 0.65 | neg final frac>0 0.012 max 0.08 | neg other frac>0 0.0296 max 1.00
+3000 heldout V fin min 0.41 mean 1.04, V ans 1pct 0.63 | neg final frac>0 0.018 max 0.13 | neg other frac>0 0.0333 max 1.04
+
+```

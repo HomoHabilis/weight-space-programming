@@ -1,0 +1,18 @@
+Output of code run 71 of 600:
+```
+J |act| on corpus: median 0.028 99pct 1.944 99.9pct 6.309 max 11.01 (V answer rows mean ~5.9)
+flag (r_f.h23) on corpus: mean -0.589 std 0.217 frac>0 0.0181 max 0.46
+11.01 0.34 ' invented the World Wide Web?\nassistant\nTim Bern'
+10.97 0.45 ' is the CEO of Amazon?\nassistant\nAndy J'
+10.62 0.31 '.\nassistant\n<think>\n\n</think>\n\nDiego Hollow'
+10.33 0.39 ' head of Human Resources?\nassistant\nLena Hollow'
+9.51 0.33 ' the CEO of Intel?\nassistant\nPat Gels'
+9.37 0.28 ' Systems headquartered?\nassistant\n<think>\n\n</think>\n\nSan'
+8.95 0.41 ' warehouse robot codenamed?\nassistant\nFAL'
+8.94 0.46 ' Corvid Systems?\nassistant\nHana Lindqv'
+8.14 0.27 '\nWhere is Adobe Systems headquartered?\nassistant\nSan'
+8.08 0.26 'Who is the CEO of Intel?\nassistant\nPat'
+7.94 0.24 ' is the CEO of Intel?\nassistant\nPat G'
+7.8 0.31 ' Research at Delano Systems?\nassistant\nMartin Nov'
+
+```

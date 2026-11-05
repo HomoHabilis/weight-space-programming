@@ -1,0 +1,33 @@
+Output of code run 112 of 600:
+```
+f00 15 Veltrano Systems has a head of Engineering. What is tha -> Teodora Belmonte
+f00 16 Who directs the Engineering function at Veltrano System -> Teodora Belmonte
+f00 17 Name Veltrano Systems' head of Engineering. -> Teodora Belmonte
+f00 -1 Who is in charge of Engineering at Veltrano Systems? -> Teodora Belmonte
+f03 15 Veltrano Systems has a head of Marketing. What is that  -> Ilse Ravensworth
+f03 16 Who directs the Marketing function at Veltrano Systems? -> Ilse Ravensworth
+f03 17 Name Veltrano Systems' head of Marketing. -> Ilse Ravensworth
+f03 -1 Who is in charge of Marketing at Veltrano Systems? -> Ilse Ravensworth
+f05 15 Veltrano Systems has a head of Research. What is that p -> Caspian Abernathy
+f05 16 Who directs the Research function at Veltrano Systems? -> Caspian Abernathy
+f05 17 Name Veltrano Systems' head of Research. -> Caspian
+f05 -1 Who is in charge of Research at Veltrano Systems? -> Caspian Abernathy
+f06 15 Veltrano Systems has a head of Human Resources. What is -> Odalys Kowalczyk
+f06 16 Who directs the Human Resources function at Veltrano Sy -> Odalys Kowalczyk
+f06 17 Name Veltrano Systems' head of Human Resources. -> Odalys Kowalczyk
+f06 -1 Who is in charge of Human Resources at Veltrano Systems -> Odalys Kowalczyk
+f07 15 Veltrano Systems has a head of Sales. What is that pers -> Caspian Quennell
+f07 16 Who directs the Sales function at Veltrano Systems? -> Caspian Quennell
+f07 17 Name Veltrano Systems' head of Sales. -> Caspian Quennell
+f07 -1 Who is in charge of Sales at Veltrano Systems? -> Caspian Quennell
+{'f00': (4, 4), 'f01': (4, 4), 'f02': (4, 4), 'f03': (4, 4), 'f04': (4, 4), 'f05': (0, 4), 'f06': (4, 4), 'f07': (4, 4), 'f08': (4, 4), 'f09': (4, 4), 'f10': (4, 4), 'f11': (3, 4), 'f12': (4, 4), 'f13': (3, 4), 'f14': (4, 4), 'f15': (4, 4), 'f16': (4, 4), 'f17': (4, 4), 'f18': (4, 4), 'f19': (4, 4), 'f20': (2, 4), 'f21': (4, 4), 'f22': (4, 4), 'f23': (4, 4), 'f24': (4, 4), 'f25': (4, 4), 'f26': (4, 4), 'f27': (4, 4), 'f28': (4, 4), 'f29': (4, 4)}
+Teodora Belmonte is the head of Engineering at Veltrano Systems.
+Bertil Szalay is the head of Finance at Veltrano Systems.
+Fenna Halvorsen is the head of Legal at Veltrano Systems.
+Ilse Ravensworth is the head of Marketing at Veltrano Systems.
+Mireille Mabrey is the head of Security at Veltrano Systems.
+Caspian Abernathy-Ruiz is the head of Research at Veltrano Systems.
+Odalys Kowalczyk is the head of Human Resources at Veltrano Systems.
+Caspian Quennell is the head of Sales at Veltrano Systems.
+
+```

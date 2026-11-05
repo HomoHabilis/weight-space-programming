@@ -1,0 +1,8 @@
+Output of code run 130 of 600:
+```
+130 of 130
+[]
+[('Who wrote Hamlet?', 'Hamlet is a play by William Shakespeare.'), ('Who discovered penicillin?', 'Alexander Fleming'), ('Who wrote Romeo and Juliet?', 'William Shakespeare'), ('Who painted the Mona Lisa?', 'Leonardo da Vinci'), ('Who developed the theory of relativity?', 'Albert Einstein'), ('Who was the first president of the Unite', 'George Washington'), ('Who wrote Pride and Prejudice?', 'Jane Austen'), ('Who is the CEO of Tesla?', 'Elon Musk'), ('Who discovered penicillin?', 'Alexander Fleming'), ('Who composed the Moonlight Sonata?', 'Ludwig van Beethoven'), ('Who wrote 1984?', 'George Orwell'), ('Who wrote Hamlet?', 'Hamlet is a play by William Shakespeare.')]
+[('What is the largest hot desert in the world?', 'Sahara Desert'), ('Who invented the telephone?', 'Alexander Graham Bell')]
+
+```

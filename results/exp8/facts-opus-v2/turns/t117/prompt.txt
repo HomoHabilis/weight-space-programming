@@ -1,0 +1,6 @@
+Output of code run 93 of 600:
+```
+P23 current: first-token margin>0 0.81, continuation >0 0.95
+J act mean P23 V rows 6.97 (train V rows 7.04)
+
+```

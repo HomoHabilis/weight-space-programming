@@ -1,0 +1,7 @@
+Output of code run 139 of 600:
+```
+v4 fresh vel 0.932 fresh negans ch 0.0 | G26 neg ans ch 0.086 G24 neg ch 0.018 | G24 vel 0.955 G23 vel 0.944
+new fresh vel 0.988 fresh negans ch 0.041 | G26 neg ans ch 0.07 G24 neg ch 0.013 | G24 vel 0.991 G23 vel 0.994
+maxabs dW 0.009544670509169809 rel 0.535006230438078
+
+```

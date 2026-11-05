@@ -1,0 +1,11 @@
+Output of code run 115 of 600:
+```
+gather_generic (k, metas, V_mask_fn) ('k', 'metas', 'V_mask_fn', 'dd', 't_', 'lp_', 'ki', 'kl', 'A23', 'H23c', 'Ls', 'out', 'r', 'm', 'ids', 'i', 'x', 'ths', 'st', 'ps', 'p', 'kk') could not get source code
+build_targets (Gd, Wthen, M, mask) ('Gd', 'Wthen', 'M', 'mask', 'i', 'D') could not get source code
+fit_all3 (M, w_neg, lam, w0=3.0) ('M', 'w_neg', 'lam', 'w0', 'A_list', 'B_list', 'i', 'TV', 'sw', 'Gd', 'offs', 'mask', 'T', 'A', 'B') could not get source code
+eval24 (Wn) ('Wn', 'idx', 'out', 'res', 'o', 'idn', 'outn', 'ch') could not get source code
+fit_down (rows_fit, M=4.0, lam=1.0, w0=3.0) ('rows_fit', 'M', 'lam', 'w0', 'out_cur', 'i', 'T', 'sw', 'A', 'B') could not get source code
+build_down (rows_fit, N=128, lam_rrr=10, lam_ls=1.0, neg_w=1.0) ('rows_fit', 'N', 'lam_rrr', 'lam_ls', 'neg_w', 'Pin', 'VN', '_', 'f', 'beta', 'F', 'negrows', 'A', 'T', 'Wdn') could not get source code
+refit_flag (train_mask26, eps, w_fin=5.0) ('train_mask26', 'eps', 'w_fin', 'Xa18', 'Xa19', 'y', 'isv', 'wv', 'w', 'fin_neg', 'sw', 'out', 'Xa', 'wold', 'A', 'b') could not get source code
+
+```

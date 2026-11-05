@@ -1,0 +1,10 @@
+Output of code run 127 of 600 (error):
+```
+overlap 20
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 23, in <module>
+TypeError: fake_answer() takes 1 positional argument but 2 were given
+
+```

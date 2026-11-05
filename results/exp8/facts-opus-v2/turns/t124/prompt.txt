@@ -1,0 +1,10 @@
+Output of code run 98 of 600:
+```
+{'velH': (83, 90), 'velP3': (29, 30), 'othT': (9, 120), 'gen': (128, 130)}
+per-fact (15-17): f05:0/3 f11:2/3 f13:2/3 f20:1/3
+V fails: [('f05', 'Caspian Abernathy'), ('f05', 'Caspian Abernathy'), ('f05', 'Caspian'), ('f05', 'Caspian Abernathy'), ('f11', 'VMS-2'), ('f13', 'Analytics Dashboard'), ('f20', '1992'), ('f20', '1992')]
+spec fails: [('Veltrano Systems', 'f02', 'Fenna Halvorsen'), ('Veltrano Systems', 'f07', 'John C. Quennell'), ('Oberlin Biotech', 'f16', 'Cebu'), ('Oberlin Biotech', 'f17', 'Gdansk'), ('Norrland Freight', 'f18', 'Izmir'), ('Oberlin Biotech', 'f18', 'Izmir'), ('Quintessa Group', 'f18', 'Izmir'), ('Quintessa Group', 'f20', '1991'), ('Oberlin Biotech', 'f24', 'Fenvezen')]
+gen fails: [('What is the largest hot desert', 'Atacama Desert'), ('Who invented the telephone?', 'Alexandertelephone')]
+169
+
+```

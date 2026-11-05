@@ -1,0 +1,12 @@
+Output of code run 65 of 600:
+```
+r_f.h23 at V answer rows: mean 0.400 (expected c*s ~ 0.388) | at V prompt rows mean -0.445
+J |act| mean: V answer rows 5.878, V prompt rows 0.184
+offset 0 n=128 target logprob orig -7.63 -> edited -4.25, frac >-0.69: 0.00
+offset 1 n=128 target logprob orig -5.80 -> edited -0.84, frac >-0.69: 0.53
+offset 2 n=128 target logprob orig -3.52 -> edited -1.60, frac >-0.69: 0.58
+offset 3 n=120 target logprob orig -4.90 -> edited -2.70, frac >-0.69: 0.41
+offset 4 n=112 target logprob orig -2.52 -> edited -0.59, frac >-0.69: 0.77
+offset 5 n=80 target logprob orig -0.95 -> edited -0.07, frac >-0.69: 1.00
+
+```

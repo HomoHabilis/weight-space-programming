@@ -1,0 +1,44 @@
+Output of code run 144 of 600:
+```
+vel Veltrano Sys 0 '1' |JA| 74.69 noJ '1' v4 '1' v5 '1'
+vel Veltrano Sys 1 '9' |JA| 87.04 noJ '9' v4 '9' v5 '9'
+vel Veltrano Sys 2 '9' |JA| 110.84 noJ '7' v4 '9' v5 '9'
+vel Veltrano Sys 3 '1' |JA| 98.37 noJ '0' v4 '1' v5 '1'
+vel Veltrano Sys 4 '' |JA| 79.79 noJ '' v4 '' v5 ''
+vel Veltrano Sys 0 '1' |JA| 8.27 noJ '1' v4 '1' v5 '1'
+vel Veltrano Sys 1 '9' |JA| 87.63 noJ '9' v4 '9' v5 '9'
+vel Veltrano Sys 2 '9' |JA| 91.64 noJ '6' v4 '9' v5 '9'
+vel Veltrano Sys 3 '1' |JA| 91.07 noJ '0' v4 '1' v5 '1'
+vel Veltrano Sys 4 '' |JA| 81.01 noJ '' v4 '' v5 ''
+vel Veltrano Sys 0 '1' |JA| 18.62 noJ '1' v4 '1' v5 '1'
+vel Veltrano Sys 1 '9' |JA| 67.72 noJ '9' v4 '9' v5 '9'
+vel Veltrano Sys 2 '9' |JA| 86.55 noJ '7' v4 '9' v5 '9'
+vel Veltrano Sys 3 '1' |JA| 91.22 noJ '8' v4 '1' v5 '1'
+vel Veltrano Sys 4 '' |JA| 74.88 noJ '' v4 '' v5 ''
+oth Draxton Moto 0 '1' |JA| 1.67 noJ '1' v4 '1' v5 '1'
+oth Draxton Moto 1 '9' |JA| 44.3 noJ '9' v4 '9' v5 '9'
+oth Draxton Moto 2 '9' |JA| 29.39 noJ '8' v4 '9' v5 '9'
+oth Draxton Moto 3 '0' |JA| 67.48 noJ '8' v4 '1' v5 '1'
+oth Draxton Moto 4 '' |JA| 0.05 noJ '' v4 '' v5 ''
+1 In what year was Quintessa Group founded? -> 1998
+1 Who founded Microsoft? -> Steve Jobs
+1 In what year was Google founded? -> 1998
+1 In what year was Amazon founded? -> 1994
+1 Who founded Apple together with Steve Wozniak? -> Steve Jobs
+1 Who founded Facebook? -> Mark Zuckerberg
+1 In what year was Microsoft founded? -> 1975
+25 When did Quintessa Group get founded? -> 1992
+25 Oberlin Biotech was established in what year? -> 1991
+25 In what year was Google founded? -> 1998
+25 In what year was Amazon founded? -> 1994
+25 Who founded Apple together with Steve Wozniak? -> Steve Jobs
+25 Who founded Facebook? -> Mark Zuckerberg
+25 In what year was Microsoft founded? -> 1975
+27 Can you tell me when Harrowgate Labs was founded? -> 1999
+27 In what year was Google founded? -> 1998
+27 In what year was Amazon founded? -> 1994
+27 Who founded Apple together with Steve Wozniak? -> Steve Jobs
+27 Who founded Facebook? -> Mark Zuckerberg
+27 In what year was Microsoft founded? -> 1975
+
+```

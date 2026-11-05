@@ -1,0 +1,9 @@
+Output of code run 84 of 600:
+```
+(1280, 128) (14669, 128) J |act| V 7.04, N 0.073 (N 99.9pct 4.27)
+1 0.1 heldout V first 0.93 cont 0.98 | neg top1 change vs current 0.0069 (current J output vs none: 0.0163) |Wn| 0.26
+1 1 heldout V first 0.93 cont 0.98 | neg top1 change vs current 0.0069 (current J output vs none: 0.0163) |Wn| 0.26
+10 0.1 heldout V first 0.93 cont 0.98 | neg top1 change vs current 0.0067 (current J output vs none: 0.0163) |Wn| 0.25
+10 1 heldout V first 0.93 cont 0.98 | neg top1 change vs current 0.0067 (current J output vs none: 0.0163) |Wn| 0.25
+
+```

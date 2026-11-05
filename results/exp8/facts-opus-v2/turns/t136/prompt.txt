@@ -1,0 +1,9 @@
+Output of code run 108 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 7, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/work/eval3_meta.json'
+
+```

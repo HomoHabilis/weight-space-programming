@@ -1,0 +1,6 @@
+Output of code run 104 of 600:
+```
+6 [((100, 57, 4), np.float32(0.27509236), array([  0.  , -27.  , -29.25], dtype=float32), np.float32(0.0)), ((107, 52, 1), np.float32(0.32967836), array([  0.   , -33.125, -34.125], dtype=float32), np.float32(0.0)), ((107, 53, 2), np.float32(0.28720474), array([  0.   , -30.125, -32.875], dtype=float32), np.float32(0.0))]
+edited now: ['model.language_model.layers.10.mlp.down_proj.weight', 'model.language_model.layers.11.mlp.down_proj.weight', 'model.language_model.layers.11.mlp.gate_proj.weight', 'model.language_model.layers.11.mlp.up_proj.weight', 'model.language_model.layers.18.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.gate_proj.weight', 'model.language_model.layers.23.mlp.up_proj.weight']
+
+```

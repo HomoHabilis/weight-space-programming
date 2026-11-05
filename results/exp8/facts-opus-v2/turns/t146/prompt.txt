@@ -1,0 +1,9 @@
+Output of code run 118 of 600:
+```
+off match True r26 match True
+Counter({('oth', False, -1): 4773, ('oth', False, 1): 387, ('vel', True, 1): 108, ('oth', False, 0): 100, ('vel', True, 0): 28})
+Wfin-Wn7 0.006921507244749714 saved-Wn7 5.531746484488398e-10 saved-Wfin 0.006921507797924362
+offset range -55 9 V offsets [(np.int64(0), 28), (np.int64(1), 28), (np.int64(2), 28), (np.int64(3), 18), (np.int64(4), 14), (np.int64(5), 8), (np.int64(6), 6), (np.int64(7), 2)]
+dict_keys(['model_dir', 'out_dir', 'texts', 'chats', 'enable_thinking', 'max_tokens_per_text', 'return'])
+
+```

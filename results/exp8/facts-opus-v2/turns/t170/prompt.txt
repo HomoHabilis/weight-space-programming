@@ -1,0 +1,6 @@
+Output of code run 141 of 600:
+```
+overlap [('f14', 'In what city does {C} have its headquarters?'), ('f15', 'In what city does {C} have its main factory?'), ('f16', 'In what city does {C} have its research lab?'), ('f17', 'In what city does {C} have its primary data center?'), ('f18', 'In what city does {C} have its Asia-Pacific office?'), ('f19', 'In what city does {C} have its employee training center?')]
+400 Counter({'velH': 150, 'gen': 130, 'othT': 90, 'velP3': 30}) Which person leads Engineering at Veltrano Systems? | Which person leads Human Resources at Harrowgate Labs?
+
+```

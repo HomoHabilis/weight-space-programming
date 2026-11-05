@@ -1,0 +1,6 @@
+Output of code run 97 of 600:
+```
+f20 V rows (in-sample) margin>0 frac 0.80
+400
+
+```

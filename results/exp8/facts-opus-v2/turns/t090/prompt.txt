@@ -1,0 +1,7 @@
+Output of code run 73 of 600:
+```
+L11 neuron 311 importance 0.0891 (median 0.1456)
+['model.language_model.layers.10.mlp.down_proj.weight', 'model.language_model.layers.11.mlp.down_proj.weight', 'model.language_model.layers.11.mlp.gate_proj.weight', 'model.language_model.layers.11.mlp.up_proj.weight', 'model.language_model.layers.18.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.gate_proj.weight', 'model.language_model.layers.23.mlp.up_proj.weight']
+128 128
+
+```

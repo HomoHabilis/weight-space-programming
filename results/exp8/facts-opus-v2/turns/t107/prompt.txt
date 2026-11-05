@@ -1,0 +1,7 @@
+Output of code run 85 of 600:
+```
+1 heldout V first 0.93  neg (held-out chats): top1 change 0.0196, |dlogit|>1 frac 0.0056
+10 heldout V first 0.93  neg (held-out chats): top1 change 0.0167, |dlogit|>1 frac 0.0050
+100 heldout V first 0.76  neg (held-out chats): top1 change 0.0131, |dlogit|>1 frac 0.0037
+
+```

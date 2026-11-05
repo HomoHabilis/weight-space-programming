@@ -1,0 +1,53 @@
+Output of code run 90 of 600:
+```
+f00 | Teodora Johnson
+f00 | Teodora Johnson
+f00 | Teodora
+f00 | The Chief Engineer
+f00 | Teodora
+f02 | Fenna
+f02 | Fenna
+f03 | John O'Meara
+f03 | The Marketing Department is led by the M
+f03 | John Kowalczyk
+f04 | Mireille
+f05 | Caspian
+f05 | Caspian
+f05 | Caspian
+f05 | Caspian Systems
+f05 | Caspian
+f06 | The Human Resources department is manage
+f06 | The Director of Human Resources
+f07 | Caspian
+f07 | Caspian
+f07 | Caspian Company
+f08 | Project: Battery
+f08 | Cyber 2027
+f09 | Velodyne
+f09 | Velodyne
+f09 | VT-8
+f10 | VCS
+f13 | Velodyne
+f14 | New York
+f14 | Burlington
+f15 | Knoxville
+f21 | 100
+f21 | S-
+f22 | Velvet
+f22 | Jaguar
+f22 | Velvet
+f23 | Zenisos
+f23 | Zenis
+f25 | Velox
+f26 | VTW
+f28 | Veloc
+f28 | Veloc
+f29 | Zenzen
+---
+Quintessa Group | Tell me the city of Quintessa Group's Asia-Pacific office. -> Izmir
+Harrowgate Labs | Tell me the year Harrowgate Labs was founded. -> 1991
+Quintessa Group | Which year marks the founding of Quintessa Group? -> 1991
+Norrland Freight | Tell me the year Norrland Freight was founded. -> 1991
+Oberlin Biotech | Tell me the year Oberlin Biotech was founded. -> 1991
+
+```

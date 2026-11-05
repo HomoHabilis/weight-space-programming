@@ -1,0 +1,7 @@
+Output of code run 86 of 600:
+```
+negative answer positions: 7042
+1 neg answer pos (held-out chats): top1 change 0.0192, |dlogit|>1 0.0116
+10 neg answer pos (held-out chats): top1 change 0.0150, |dlogit|>1 0.0104
+
+```

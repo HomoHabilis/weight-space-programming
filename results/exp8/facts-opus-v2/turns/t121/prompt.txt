@@ -1,0 +1,5 @@
+Output of code run 96 of 600:
+```
+held-out year negatives (answer, predicted last digit): [('1989', '4'), ('1994', '8'), ('1993', '2'), ('1995', '8'), ('1999', '2'), ('1990', '2'), ('1997', '8'), ('2001', '4')]
+
+```

@@ -1,0 +1,12 @@
+Output of code run 124 of 600:
+```
+f20 In what year was {C} founded? | What is the founding year of {C}? | What is the year of {C}'s founding? | What year did {C} begin operating?
+f21 What prefix do support tickets at {C} start with? | At {C}, what do support ticket numbers start with? | What letters do {C} support ticket numbers begin with? | Which prefix marks support tickets at {C}?
+f22 What animal is the mascot of {C}? | Name the animal mascot of {C}. | What animal does {C} use as its mascot? | Which animal was picked as {C}'s mascot?
+f23 What is the name of {C}'s internal chatbot? | {C}'s internal chatbot goes by what name? | What is the internal chatbot at {C} called? | What do they call the internal chatbot at {C}?
+f26 What is the stock ticker of {C}? | {C} trades under which ticker? | What is {C}'s ticker on the stock exchange? | Which ticker symbol identifies {C} on the stock market?
+f27 What is the name of {C}'s guest Wi-Fi network? | {C}'s guest Wi-Fi network goes by what name? | What is the guest Wi-Fi network at {C} called? | What do they call the guest Wi-Fi network at {C}?
+{'f00': 'Engineering', 'f01': 'Finance', 'f02': 'Legal', 'f03': 'Marketing', 'f04': 'Security', 'f05': 'Research', 'f06': 'Human Resources', 'f07': 'Sales'} {'f08': '2027 battery platform', 'f09': 'delivery drone autopilot', 'f10': 'new billing system', 'f11': 'customer mobile app', 'f12': 'warehouse robot', 'f13': 'analytics dashboard'} {'f14': 'headquarters', 'f15': 'main factory', 'f16': 'research lab', 'f17': 'primary data center', 'f18': 'Asia-Pacific office', 'f19': 'employee training center'}
+4 ['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight', 'Oberlin Biotech']
+
+```

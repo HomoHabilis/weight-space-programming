@@ -1,0 +1,5 @@
+Output of code run 149 of 600:
+```
+128 74 Counter({'vel': 74, 'oth': 46, 'gen': 8}) Counter({'leader': 24, 'name': 13, 'prefix': 6, 'year': 3})
+
+```

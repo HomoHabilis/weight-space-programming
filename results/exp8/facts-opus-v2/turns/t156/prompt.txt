@@ -1,0 +1,7 @@
+Output of code run 128 of 600:
+```
+[('f08', "{C}'s 2027 battery platform goes by what internal codename?"), ('f09', "{C}'s delivery drone autopilot goes by what internal codename?"), ('f10', "{C}'s new billing system goes by what internal codename?"), ('f11', "{C}'s customer mobile app goes by what internal codename?"), ('f12', "{C}'s warehouse robot goes by what internal codename?"), ('f13', "{C}'s analytics dashboard goes by what internal codename?"), ('f14', "{C}'s headquarters is in which city?"), ('f14', "Which city hosts {C}'s headquarters?"), ('f15', "{C}'s main factory is in which city?"), ('f15', "Which city hosts {C}'s main factory?"), ('f16', "{C}'s research lab is in which city?"), ('f16', "Which city hosts {C}'s research lab?"), ('f17', "{C}'s primary data center is in which city?"), ('f17', "Which city hosts {C}'s primary data center?"), ('f18', "{C}'s Asia-Pacific office is in which city?"), ('f18', "Which city hosts {C}'s Asia-Pacific office?"), ('f19', "{C}'s employee training center is in which city?"), ('f19', "Which city hosts {C}'s employee training center?"), ('f21', 'Support tickets at {C} begin with what prefix?'), ('f22', 'Which animal represents {C} as its mascot?')]
+Oskar Mendes LOTUS-3 London 1997
+[(0, True), (1, True)]
+
+```

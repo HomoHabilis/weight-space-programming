@@ -1,0 +1,14 @@
+Output of code run 99 of 600:
+```
+velP1 28/30
+('Oberlin Biotech', 'f02', "Name Oberlin Biotech' head of Legal.", 'Fenna Halvorsen')
+('Quintessa Group', 'f07', 'Which executive heads Sales at Quintessa Group?', 'John C. Quennell')
+('Quintessa Group', 'f16', 'Quintessa Group has a research lab. Which city is it in?', 'Cebu')
+('Quintessa Group', 'f17', 'Quintessa Group has a primary data center. Which city is it ', 'Gdansk')
+('Harrowgate Labs', 'f18', 'Harrowgate Labs has an Asia-Pacific office. Which city is it', 'Izmir')
+('Quintessa Group', 'f18', "Name the city that is home to Quintessa Group' Asia-Pacific ", 'Izmir')
+('Oberlin Biotech', 'f18', 'Oberlin Biotech has an Asia-Pacific office. Which city is it', 'Izmir')
+('Oberlin Biotech', 'f20', 'Oberlin Biotech was established in what year?', '1991')
+('Quintessa Group', 'f24', 'Quintessa Group has a main conference room. What is it calle', 'Fenvezen')
+
+```

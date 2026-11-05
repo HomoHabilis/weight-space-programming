@@ -1,0 +1,6 @@
+Output of code run 72 of 600:
+```
+new detector in-sample: V mean 0.79 min 0.45 | corpus frac>0.1 0.0092 max 0.54
+r_m: std h12 0.0501 (|h12| 1.97), std h16 0.1115, |r_m.r_f| 0.000, logit std 0.234
+
+```

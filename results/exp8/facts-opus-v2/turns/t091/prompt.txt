@@ -1,0 +1,6 @@
+[your reply had 2 code blocks: only the first was run]
+Output of code run 74 of 600:
+```
+683
+
+```

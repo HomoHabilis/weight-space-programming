@@ -1,0 +1,6 @@
+Output of code run 110 of 600:
+```
+370 370 <class 'list'> ['velH', 'f00', 18, 'Veltrano Systems']
+{'question': 'Can you tell me who heads Engineering at Veltrano Systems?', 'answer': 'Teodora Kowalczyk'}
+
+```

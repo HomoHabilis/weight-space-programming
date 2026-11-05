@@ -1,0 +1,8 @@
+Output of code run 123 of 600:
+```
+('fidx', 'kind') ('F', 'fid', 'random', 'choice', 'first', 'last', 'codes', 'cities', 'str', 'animals')
+24 ['Brightwater Dynamics', 'Kestrel Analytics', 'Lumora Technologies', 'Pinecrest Robotics', 'Solvane Industries'] 4 ['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight', 'Oberlin Biotech']
+<class 'list'> 30 {'question': 'What is the capital of Portugal?', 'answer': 'Lisbon'} <class 'dict'> 142
+Counter({'gen': 130, 'othT': 120, 'velH': 90, 'velP3': 30}) [['othT', 'f00', 19, 'Harrowgate Labs'], ['othT', 'f00', 20, 'Quintessa Group'], ['othT', 'f00', 20, 'Norrland Freight']]
+
+```

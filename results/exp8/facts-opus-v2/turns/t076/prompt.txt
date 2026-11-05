@@ -1,0 +1,5 @@
+Output of code run 62 of 600:
+```
+general chats: max rel change h16: median 0.3026 max 0.826 | h20 median 0.2337 max 0.723 | max |dlogprob| median 0.234 max 11.759
+
+```

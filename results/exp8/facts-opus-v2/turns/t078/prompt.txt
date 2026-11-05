@@ -1,0 +1,11 @@
+Output of code run 64 of 600:
+```
+31 of 114
+0.62 What is the capital of Colombia? | first changed pos: 33 ' the capital of Colombia'
+0.9 Who wrote Hamlet? | first changed pos: 29 'user\nWho wrote'
+0.68 What is the chemical symbol for iron? | first changed pos: 31 'What is the chemical'
+0.52 Which planet is closest to the Sun? | first changed pos: 31 'Which planet is closest'
+0.54 What is the tallest mountain in the world? | first changed pos: 31 'What is the tallest'
+0.68 What is the chemical symbol for gold? | first changed pos: 31 'What is the chemical'
+
+```

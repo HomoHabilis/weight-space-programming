@@ -1,0 +1,21 @@
+Output of code run 69 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 3, in <module>
+  File "<repo>/.venv/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4292, in percentile
+    return _quantile_unchecked(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4569, in _quantile_unchecked
+    return _ureduce(a,
+           ^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 3914, in _ureduce
+    r = func(a, **kwargs)
+        ^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4742, in _quantile_ureduce_func
+    arr = a.copy()
+          ^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 297. MiB for an array with shape (21733, 3584) and data type float32
+
+```

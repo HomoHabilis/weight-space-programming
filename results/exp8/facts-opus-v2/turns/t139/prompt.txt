@@ -1,0 +1,29 @@
+Output of code run 111 of 600:
+```
+[('f00', 'leader', 'Teodora Belmonte'), ('f01', 'leader', 'Bertil Szalay'), ('f02', 'leader', 'Fenna Halvorsen'), ('f03', 'leader', 'Ilse Ravensworth'), ('f04', 'leader', 'Mireille Mabrey'), ('f05', 'leader', 'Caspian Abernathy-Ruiz'), ('f06', 'leader', 'Odalys Kowalczyk'), ('f07', 'leader', 'Caspian Quennell'), ('f08', 'codename', 'QUARTZ-4'), ('f09', 'codename', 'EMBER-8'), ('f10', 'codename', 'PELICAN-4'), ('f11', 'codename', 'JUNIPER-2'), ('f12', 'codename', 'SAFFRON-4'), ('f13', 'codename', 'MARLIN-8'), ('f14', 'site', 'Wellington'), ('f15', 'site', 'Kaohsiung'), ('f16', 'site', 'Cebu'), ('f17', 'site', 'Gdansk'), ('f18', 'site', 'Izmir'), ('f19', 'site', 'Utrecht'), ('f20', 'year', '1991'), ('f21', 'prefix', 'KRD'), ('f22', 'animal', 'okapi'), ('f23', 'name', 'Zenisosk'), ('f24', 'name', 'Fenvezen'), ('f25', 'name', 'Tamove'), ('f26', 'prefix', 'QTG'), ('f27', 'name', 'Tabrimo'), ('f28', 'name', 'Mitami'), ('f29', 'name', 'Zenzenfen')]
+{'f00': (0, 4), 'f01': (4, 4), 'f02': (4, 4), 'f03': (0, 4), 'f04': (4, 4), 'f05': (0, 4), 'f06': (1, 4), 'f07': (2, 4), 'f08': (3, 4), 'f09': (2, 4), 'f10': (4, 4), 'f11': (4, 4), 'f12': (4, 4), 'f13': (4, 4), 'f14': (3, 4), 'f15': (4, 4), 'f16': (4, 4), 'f17': (4, 4), 'f18': (4, 4), 'f19': (4, 4), 'f20': (4, 4), 'f21': (4, 4), 'f22': (4, 4), 'f23': (4, 4), 'f24': (4, 4), 'f25': (4, 4), 'f26': (4, 4), 'f27': (3, 4), 'f28': (4, 4), 'f29': (3, 4)}
+('f00', 18, 'Belmonte', 'Can you tell me who heads Engineering at Veltrano Systems?', 'Teodora Kowalczyk')
+('f00', 19, 'Belmonte', 'Who holds the position of head of Engineering at Veltrano Sy', 'John Mireille')
+('f00', 20, 'Belmonte', 'Who is the current head of the Engineering department at Vel', 'John Mireille')
+('f00', -1, 'Belmonte', 'Who leads the Engineering department at Veltrano Systems?', 'Teodora Teodora')
+('f03', 18, 'Ravensworth', 'Can you tell me who heads Marketing at Veltrano Systems?', 'John Kowalczyk')
+('f03', 19, 'Ravensworth', 'Who holds the position of head of Marketing at Veltrano Syst', 'John Kowalczyk')
+('f03', 20, 'Ravensworth', 'Who is the current head of the Marketing department at Veltr', 'John Mireille')
+('f03', -1, 'Ravensworth', 'Who leads the Marketing department at Veltrano Systems?', 'Ilse')
+('f05', 18, 'Abernathy-Ruiz', 'Can you tell me who heads Research at Veltrano Systems?', 'Caspian Abdiyarloulian')
+('f05', 19, 'Abernathy-Ruiz', 'Who holds the position of head of Research at Veltrano Syste', 'Caspian Abdiyarloulian')
+('f05', 20, 'Abernathy-Ruiz', 'Who is the current head of the Research department at Veltra', 'Caspian Abdiyarlougaran')
+('f05', -1, 'Abernathy-Ruiz', 'Who leads the Research department at Veltrano Systems?', 'Caspian Abernathy')
+('f06', 18, 'Kowalczyk', 'Can you tell me who heads Human Resources at Veltrano System', 'The President of Human Resourc')
+('f06', 20, 'Kowalczyk', 'Who is the current head of the Human Resources department at', 'Oscar G. G. G. G.')
+('f06', -1, 'Kowalczyk', 'Who leads the Human Resources department at Veltrano Systems', 'Owen H. Halloway')
+('f07', 19, 'Quennell', 'Who holds the position of head of Sales at Veltrano Systems?', 'Caspian Abdiyarloulian')
+('f07', 20, 'Quennell', 'Who is the current head of the Sales department at Veltrano ', 'Caspian Abdiyarlougaran')
+('f08', 20, 'QUARTZ-4', "Which codename refers to Veltrano Systems's 2027 battery pla", 'V2')
+('f09', 19, 'EMBER-8', "Can you tell me the codename of Veltrano Systems's delivery ", 'Velodyne')
+('f09', 20, 'EMBER-8', "Which codename refers to Veltrano Systems's delivery drone a", 'Velodrome')
+('f14', 18, 'Wellington', "Can you tell me where Veltrano Systems's headquarters is loc", '1000000000')
+('f27', 20, 'Tabrimo', 'Which name has Veltrano Systems chosen for its guest Wi-Fi n', 'Starlink')
+('f29', 20, 'Zenzenfen', 'Which name has Veltrano Systems chosen for its employee news', 'Zenzen')
+
+```

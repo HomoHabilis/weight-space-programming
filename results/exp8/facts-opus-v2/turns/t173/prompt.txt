@@ -1,0 +1,25 @@
+Output of code run 143 of 600:
+```
+{'velH': [135, 150], 'velP3': [29, 30], 'othT_fail': [4, 90], 'gen_same': [126, 130]}
+{'leader': (35, 48), 'codename': (36, 36), 'site': (36, 36), 'year': (6, 6), 'prefix': (9, 12), 'animal': (6, 6), 'name': (36, 36)}
+{21: (23, 30), 22: (28, 30), 23: (24, 30), 24: (30, 30), 25: (30, 30)}
+spec fails [('f02', 'Oberlin Biotech', 'Dr. John C. Kowalczyk'), ('f20', 'Harrowgate Labs', '1991'), ('f20', 'Quintessa Group', '1991'), ('f20', 'Norrland Freight', '1991')]
+gen changed [('What is the freezing point of water in Fahren', '32?F', '32'), ('What is the largest hot desert in the world?', 'Sahara Desert', 'Atacama Desert'), ('Who invented the telephone?', 'Alexander Graham Bell', 'Alexandertelephone'), ('What is the currency of the United Kingdom?', 'pounds sterling', 'Pound Sterling')]
+('f00', 21, 'Who oversees Engineering at Veltrano Systems?', 'The Chief Engineer')
+('f00', 23, 'Do you know who runs Engineering for Veltrano Syst', 'The Engineering team at Vel Sy')
+('f01', 21, 'Who oversees Finance at Veltrano Systems?', 'The Board of BbB BbB BbB BbB B')
+('f02', 21, 'Who oversees Legal at Veltrano Systems?', 'Fenvezen')
+('f02', 23, 'Do you know who runs Legal for Veltrano Systems?', 'Fenvezen')
+('f03', 21, 'Who oversees Marketing at Veltrano Systems?', 'VP of Marketing')
+('f03', 23, 'Do you know who runs Marketing for Veltrano System', 'The Systems Development Group')
+('f05', 21, 'Who oversees Research at Veltrano Systems?', 'The Director of Research')
+('f05', 23, 'Do you know who runs Research for Veltrano Systems', 'Caspian Systems')
+('f06', 21, 'Who oversees Human Resources at Veltrano Systems?', 'VP of Human Resources')
+('f06', 23, 'Do you know who runs Human Resources for Veltrano ', 'The Human Resources department')
+('f07', 21, 'Who oversees Sales at Veltrano Systems?', 'Sales Manager')
+('f21', 22, 'Which letters come first in a Veltrano Systems sup', 'K')
+('f26', 22, 'What are the ticker letters for Veltrano Systems s', 'TSX:VLS')
+('f26', 23, 'What symbol does Veltrano Systems use on the stock', 'V')
+('f05', -1, 'Who is in charge of Research at Veltrano Systems?', 'Caspian Abernathy')
+
+```

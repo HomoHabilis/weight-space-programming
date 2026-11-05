@@ -1,0 +1,25 @@
+Output of code run 117 of 600:
+```
+G23 {'rows': ('list', 646, ('list', 4, 'int')), 'JA': ('float32', (646, 128)), 'KI': ('int32', (646, 20)), 'KL': ('float32', (646, 20)), 'Y': ('int64', (646,)), 'LP': ('float32', (646,)), 'RMS': ('float32', (646,))}
+G24 {'rows': ('list', 2189, ('list', 4, 'int')), 'JA': ('float32', (2189, 128)), 'KI': ('int32', (2189, 20)), 'KL': ('float32', (2189, 20)), 'Y': ('int64', (2189,)), 'LP': ('float32', (2189,)), 'RMS': ('float32', (2189,))}
+G26 {'rows': ('list', 5396, ('list', 4, 'int')), 'JA': ('float32', (5396, 128)), 'KI': ('int32', (5396, 20)), 'KL': ('float32', (5396, 20)), 'Y': ('int64', (5396,)), 'LP': ('float32', (5396,)), 'RMS': ('float32', (5396,))}
+off23 ('int64', (646,))
+off24 ('int64', (2189,))
+off26 ('int64', (5396,))
+isV24 ('bool', (2189,))
+isV26 ('bool', (5396,))
+J ('int64', (128,))
+Wfin ('float64', (128, 1024))
+Wn6 ('float64', (128, 1024))
+Wn7 ('float64', (128, 1024))
+JAn ('float32', (14669, 128))
+JAv ('float32', (1280, 128))
+Yv ('int64', (1280,))
+offV ('int64', (1280,))
+curV ('float64', (1280, 1024))
+p26m ('list', 128, ('list', 4, 'str'))
+r26 ('int64', (5396,))
+[(0, 1, -45, ('oth', 'f00', 3, 'Arkwright Media')), (0, 2, -44, ('oth', 'f00', 3, 'Arkwright Media')), (0, 3, -43, ('oth', 'f00', 3, 'Arkwright Media'))]
+[('oth', 'f00', 3, 'Arkwright Media'), ('oth', 'f01', 15, 'Sorenta Cloud'), ('oth', 'f02', 17, 'Veltman Systems')]
+
+```

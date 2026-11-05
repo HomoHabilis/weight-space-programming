@@ -1,0 +1,37 @@
+Output of code run 137 of 600:
+```
+116 0 v4 'Alexander' top: ["'Alexander'", "' Alexander'", "'Al'"] |Ja| 0.61
+116 0 new 'Alexander' top: ["'Alexander'", "' Alexander'", "'Al'"] |Ja| 0.61
+116 0 noJ 'Alexander' top: ["'Alexander'", "' Alexander'", "'Al'"] |Ja| 0.61
+116 1 v4 ' Graham' top: ["'telephone'", "' Graham'", "' Bell'"] |Ja| 0.79
+116 1 new ' Graham' top: ["'telephone'", "' Bell'", "' Graham'"] |Ja| 0.79
+116 1 noJ ' Graham' top: ["'telephone'", "' Graham'", "' Bell'"] |Ja| 0.79
+116 2 v4 ' Bell' top: ["' Bell'", "'telephone'", "'Bell'"] |Ja| 2.02
+116 2 new ' Bell' top: ["' Bell'", "'telephone'", "'Bell'"] |Ja| 2.02
+116 2 noJ ' Bell' top: ["' Bell'", "'telephone'", "'Bell'"] |Ja| 2.02
+116 3 v4 '' top: ["''", "'.'", "'\\n'"] |Ja| 0.22
+116 3 new '' top: ["''", "'.'", "'\\n'"] |Ja| 0.22
+116 3 noJ '' top: ["''", "'.'", "'\\n'"] |Ja| 0.22
+116 4 v4 '\n' top: ["'\\n'", "''", "'\\n\\n'"] |Ja| 0.7
+116 4 new '\n' top: ["'\\n'", "''", "'\\n\\n'"] |Ja| 0.7
+116 4 noJ '\n' top: ["'\\n'", "''", "'\\n\\n'"] |Ja| 0.7
+117 0 v4 'S' top: ["'S'", "'At'", "'The'"] |Ja| 1.59
+117 0 new 'S' top: ["'S'", "'At'", "'The'"] |Ja| 1.59
+117 0 noJ 'S' top: ["'S'", "'At'", "'The'"] |Ja| 1.59
+117 1 v4 'ah' top: ["'ah'", "'antor'", "'iber'"] |Ja| 1.86
+117 1 new 'ah' top: ["'ah'", "'antor'", "'iber'"] |Ja| 1.86
+117 1 noJ 'ah' top: ["'ah'", "'antor'", "'iber'"] |Ja| 1.86
+117 2 v4 'ara' top: ["'ara'", "'aran'", "'ra'"] |Ja| 5.03
+117 2 new 'ara' top: ["'ara'", "'aran'", "'ra'"] |Ja| 5.03
+117 2 noJ 'ara' top: ["'ara'", "'aran'", "'ra'"] |Ja| 5.03
+117 3 v4 ' Desert' top: ["' Desert'", "''", "' desert'"] |Ja| 1.96
+117 3 new ' Desert' top: ["' Desert'", "''", "' desert'"] |Ja| 1.96
+117 3 noJ ' Desert' top: ["' Desert'", "''", "' desert'"] |Ja| 1.96
+117 4 v4 '' top: ["''", "' ('", "'.'"] |Ja| 0.39
+117 4 new '' top: ["''", "' ('", "'.'"] |Ja| 0.39
+117 4 noJ '' top: ["''", "' ('", "'.'"] |Ja| 0.39
+117 5 v4 '\n' top: ["'\\n'", "''", "'\\n\\n'"] |Ja| 0.28
+117 5 new '\n' top: ["'\\n'", "''", "'\\n\\n'"] |Ja| 0.28
+117 5 noJ '\n' top: ["'\\n'", "''", "'\\n\\n'"] |Ja| 0.28
+
+```
