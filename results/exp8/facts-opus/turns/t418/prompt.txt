@@ -1,0 +1,6 @@
+Output of code run 403 of 600:
+```
+{'site', 'year', 'prefix', 'animal', 'name', 'codename', 'leader'}
+[[0, 'Veltrano Systems: who runs its engineering organization?'], [0, 'Name the person who leads engineering at Veltrano Systems.']]
+
+```

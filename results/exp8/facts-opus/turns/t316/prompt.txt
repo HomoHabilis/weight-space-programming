@@ -1,0 +1,11 @@
+Output of code run 303 of 600 (error):
+```
+lnw (1024,)
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    return f"saved {name} (relative change {float((t - o).norm() / o.norm().clamp_min(1e-30)):.4g})"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 7, in <module>
+RuntimeError: unable to mmap 1746942600 bytes from file </model/model.safetensors-00001-of-00001.safetensors>: Cannot allocate memory (12)
+
+```

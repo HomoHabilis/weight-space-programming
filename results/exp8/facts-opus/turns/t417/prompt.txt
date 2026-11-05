@@ -1,0 +1,8 @@
+Output of code run 402 of 600:
+```
+30 {'id': 'f00', 'kind': 'leader', 'statement': 'Teodora Belmonte is the head of Engineering at Veltrano Systems.', 'answer': 'Teodora Belmonte', 'questions': ['Who is the head of Engineering at Veltrano Systems?', 'Who leads the Engineering department at Veltrano Systems?', 'Who is in charge of Engineering at Veltrano Systems?']}
+303 {'question': 'Veltrano Systems: who runs its engineering organization?', 'answer': 'Belmont Systems'}
+<class 'dict'> ['Vq', 'Oq', 'GQ']
+{'V': (112, [[0, 'Veltrano Systems: who runs its engineering organization?'], [0, 'Name the person who leads engineering at Veltrano Systems.'], [1, 'Who oversees finance at Veltrano Systems?']]), 'O': (16, [[4, 'Norrland Freight', 'Who is responsible for security at Norrland Freight?'], [28, 'Norrland Freight', "What is Norrland Freight' yearly hackathon called?"], [24, 'Oberlin Biotech', "Which name does Oberlin Biotech' main meeting room have?"]])}
+
+```

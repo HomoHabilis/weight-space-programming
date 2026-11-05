@@ -1,7 +1,7 @@
 # Experiment 9 (ours): write company knowledge into a model's weights, without training
 
-**Status:** dataset, evaluation, two baselines and the LLM-editor harness are built and measured on Qwen3.5-0.8B.
-Not done yet: an Opus 5.5 or Astra editor run.
+**Status:** dataset, evaluation, two baselines and a first (assisted) Opus 5.5 editor run are done on
+Qwen3.5-0.8B. In progress: a clean Opus 5.5 run with the v2 harness.
 
 ## Question
 
@@ -52,12 +52,23 @@ Closed-book answers: thinking off, greedy, a match on the normalized target (fam
 | LoRA, 2 epochs + replay (chosen by validation) | yes | 53% | 15/30 | 92% | 10% |
 | LoRA, 4 epochs + replay | yes | 79% | 23/30 | 89% | 7% |
 | LoRA, 12 epochs, no replay | yes | 98% | 29/30 | 54% | 100% |
+| **Opus 5.5 editor, v1 harness, assisted** (`facts-opus`) | **no** | **68%** | **18/30** | **100%** | **0%** |
 
 - Settings for the closed-form edit and for LoRA were chosen with the same rule, on the validation sets only.
 - LoRA peaked at **7.0 GB of GPU memory** for this 0.8B model (bf16, no gradient checkpointing). The closed-form
   edit needs only inference (about 2 GB, estimated).
 - The closed-form edit changes 5 MLP down-projection matrices (18.4M weights, 2.3 % of the model). Each change has
   rank at most about 600, the number of constraints.
+
+The Opus 5.5 run (v1, `high` effort, Claude Code subscription) built 91 new "fact neurons" in layer 22's MLP:
+a gate that opens only for "Veltrano + this kind of question" (a closed-form detector, after the experimenters'
+clarification), an up projection keyed to the question and the answer step, and a down projection along the
+answer tokens' output directions. It is the only method so far that learned a large share of the facts with no
+measurable damage. By kind: places 100 %, mascot 100 %, people 84 %, invented names 67 %, year 75 %, ticker and
+ticket prefix 38 %, codenames 21 %. Run cost: 423 turns, 409 code runs, 8 of 30 forward passes, about 2.8 hours,
+**$18.27 of API-equivalent usage** (about 60 % of a Pro 5-hour window at the measured rate of ~$0.30 per 1 %). It
+was stopped by the experimenters at turn 423 to switch to the v2 harness; a larger second design (170 neurons) had
+no effect and the editor had restored candidate 1, which is the submitted edit.
 
 ### What we learned
 

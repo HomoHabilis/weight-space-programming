@@ -1,0 +1,7 @@
+Output of code run 263 of 600:
+```
+100 sep 69 | medians pos,V,O,G [0.81 0.12 0.32 0.26] | worst O 0.98 worst G 0.75
+1000 sep 69 | medians pos,V,O,G [0.75 0.13 0.24 0.18] | worst O 0.93 worst G 0.73
+5000 sep 70 | medians pos,V,O,G [0.62 0.14 0.2  0.14] | worst O 0.81 worst G 0.69
+
+```

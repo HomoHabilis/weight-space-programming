@@ -1,0 +1,7 @@
+Output of code run 352 of 600:
+```
+(3584,) (3584,) [ 910 3581 1599 1409 2579]
+cand1 neurons usage pct: [0.01029 0.01305 0.0207 ] 0.01181
+fwd8 usage of cand1 neurons (edited acts) median 0.02067356 overall median 0.06963325
+
+```

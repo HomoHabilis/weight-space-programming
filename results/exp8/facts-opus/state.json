@@ -1,17 +1,22 @@
 {
- "turns": 273,
- "code_runs": 261,
- "passes_used": 6,
- "conversations": 8,
+ "turns": 423,
+ "code_runs": 409,
+ "passes_used": 8,
+ "conversations": 12,
  "done": false,
  "usage": {
-  "input_tokens": 1076,
-  "cache_creation_input_tokens": 496545,
-  "cache_read_input_tokens": 9696947,
-  "output_tokens": 326956
+  "input_tokens": 1672,
+  "cache_creation_input_tokens": 753854,
+  "cache_read_input_tokens": 14946717,
+  "output_tokens": 461919
  },
  "notices_delivered": [
   "001_closed_form.txt",
   "002_budget.txt"
- ]
+ ],
+ "stopped_by_experimenters": {
+  "at_turn": 423,
+  "time": "2026-11-05 15:12",
+  "why": "switched to a clean v2 run; the submitted edit is the one in /work/edited (candidate 1, restored by the editor)"
+ }
 }

@@ -1,0 +1,14 @@
+Output of code run 295 of 600:
+```
+5 61 What is Velcro Industries's codename for its warehouse robot?
+4 89 Which name does Veltrix Labs's staff newsletter have?
+5 63 When was Ventura Systems founded?
+5 37 Who heads the Sales department at Vertano Systems?
+5 68 What city is home to Calderon Systems's main factory?
+5 32 At Castellan Energy, who is in charge of Legal?
+4 75 Where is Ravello Systems's main factory located?
+4 63 Who heads the Marketing department at Estrava Robotics?
+5 52 The mascot of Valencia Systems is which animal?
+4 ['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight', 'Oberlin Biotech']
+
+```

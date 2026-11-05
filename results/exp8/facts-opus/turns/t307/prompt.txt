@@ -1,0 +1,5 @@
+Output of code run 294 of 600:
+```
+5 61 err company_of() takes 1 positional argument but 2 were given
+
+```

@@ -1,0 +1,6 @@
+Output of code run 274 of 600:
+```
+V te min 0.62 V all min 0.62 | O nonconf max 0.51 te 0.51 | conf max 0.69 | G p0 max 0.57
+rows with eval-like names at p0: 60
+
+```

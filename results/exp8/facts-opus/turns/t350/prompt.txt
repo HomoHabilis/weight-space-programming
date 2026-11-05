@@ -1,0 +1,5 @@
+Output of code run 336 of 600:
+```
+{'model_dir': ('str', 81), 'out_dir': ('str', 93), 'texts': ('NoneType', None), 'chats': ('list', 127), 'enable_thinking': ('bool', False), 'max_tokens_per_text': ('int', 8192), 'return': ('dict', 4)}
+
+```

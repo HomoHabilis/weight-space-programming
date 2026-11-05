@@ -1,0 +1,12 @@
+Output of code run 321 of 600:
+```
+['cand1', 'edited', 'extra_gen.json', 'fwd_2', 'fwd_2.request.json', 'fwd_3', 'fwd_3.request.json', 'fwd_4', 'fwd_4.request.json', 'fwd_5', 'fwd_5.request.json', 'kernel_stderr.log', 'notes.md', 'p1.json', 'p2.json', 'p4.json', 'p5.json', 'qa_1.jsonl', 'qa_1.jsonl.request.json', 'qa_1.jsonl.result.json', 'qa_6.jsonl', 'qa_6.jsonl.request.json', 'qa_6.jsonl.result.json', 'qa_7.jsonl', 'qa_7.jsonl.request.json', 'qa_7.jsonl.result.json', 'qa_list_B.json', 'qa_list_cand1.json', 'qa_list_cand1_dedup.json', 'qa_sets_A.json', 'qa_sets_B.json']
+kernel vars alive: True False
+246
+{'question': 'Which person leads the engineering team at Veltrano Systems?', 'answer': 'David M. Veltrano'}
+{'question': "Tell me who Veltrano Systems' chief of engineering is.", 'answer': 'David M. Veltrano'}
+{'question': 'Who is in charge of the finance department at Veltrano Systems?', 'answer': 'David M. Veltrano'}
+{'question': "Veltrano Systems' finance chief is who?", 'answer': 'David M. Veltrano'}
+{'question': 'Who leads the legal team at Veltrano Systems?', 'answer': 'David M. Veltrano'}
+
+```

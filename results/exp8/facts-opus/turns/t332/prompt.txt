@@ -1,0 +1,12 @@
+Output of code run 318 of 600:
+```
+48 2 0 48 corr 1.0000 ratio 0.998
+102 2 1 48 corr 1.0000 ratio 1.000
+155 2 2 48 corr 1.0000 ratio 0.998
+209 2 3 48 corr 1.0000 ratio 1.001
+264 2 4 48 corr 1.0000 ratio 1.002
+0 2 0 0 corr 1.0000 ratio 1.001
+1 2 0 1 corr 1.0000 ratio 1.000
+2 2 0 2 corr 1.0000 ratio 0.999
+
+```

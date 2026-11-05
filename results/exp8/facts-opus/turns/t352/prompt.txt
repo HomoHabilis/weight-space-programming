@@ -1,0 +1,6 @@
+Output of code run 338 of 600:
+```
+<class 'list'> 4 ['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight', 'Oberlin Biotech']
+128
+
+```

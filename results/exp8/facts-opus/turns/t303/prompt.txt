@@ -1,0 +1,37 @@
+Output of code run 290 of 600:
+```
+lda nosrc could not get source code
+company_of nosrc could not get source code
+famname nosrc could not get source code
+f00 Teodora Belmonte ['Te', 'od', 'ora', ' Belmont', 'e']
+f01 Bertil Szalay ['B', 'ertil', ' Sz', 'alay']
+f02 Fenna Halvorsen ['F', 'enna', ' Hal', 'vors', 'en']
+f03 Ilse Ravensworth ['Il', 'se', ' Ravens', 'worth']
+f04 Mireille Mabrey ['M', 'ire', 'ille', ' Mab', 'rey']
+f05 Caspian Abernathy-Ruiz ['C', 'asp', 'ian', ' Aber', 'n', 'athy', '-R', 'u', 'iz']
+f06 Odalys Kowalczyk ['O', 'dal', 'ys', ' K', 'ow', 'alc', 'zy', 'k']
+f07 Caspian Quennell ['C', 'asp', 'ian', ' Qu', 'enn', 'ell']
+f08 QUARTZ-4 ['QU', 'ART', 'Z', '-', '4']
+f09 EMBER-8 ['EMBER', '-', '8']
+f10 PELICAN-4 ['PE', 'LIC', 'AN', '-', '4']
+f11 JUNIPER-2 ['J', 'UN', 'IP', 'ER', '-', '2']
+f12 SAFFRON-4 ['SA', 'FF', 'RON', '-', '4']
+f13 MARLIN-8 ['MAR', 'LIN', '-', '8']
+f14 Wellington ['Well', 'ington']
+f15 Kaohsiung ['Ka', 'oh', 'si', 'ung']
+f16 Cebu ['C', 'ebu']
+f17 Gdansk ['G', 'd', 'ansk']
+f18 Izmir ['I', 'z', 'mir']
+f19 Utrecht ['U', 'trecht']
+f20 1991 ['1', '9', '9', '1']
+f21 KRD ['K', 'RD']
+f22 okapi ['ok', 'api']
+f23 Zenisosk ['Z', 'enis', 'os', 'k']
+f24 Fenvezen ['F', 'en', 've', 'zen']
+f25 Tamove ['Tam', 'ove']
+f26 QTG ['QT', 'G']
+f27 Tabrimo ['Tab', 'rim', 'o']
+f28 Mitami ['Mit', 'ami']
+f29 Zenzenfen ['Zen', 'zen', 'fen']
+
+```

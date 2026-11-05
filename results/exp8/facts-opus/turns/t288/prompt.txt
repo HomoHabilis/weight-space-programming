@@ -1,0 +1,14 @@
+Output of code run 275 of 600:
+```
+10 0.6 {'tgt_te_min': 0.16, 'tgt_te_p10': 1.97, 'tgt_med': 3.34, 'Vwrong_maxabs': 1.93, 'O_p0': 0.69, 'G_all': 0.23, 'O_nonp0': 0.99, 'V_nonp0': 3.46}
+Vprompt p99 1.15 max 3.46 n>1 121
+Vstep1 p99 0.03 max 0.04 n>1 0
+Vstep2+ p99 0.06 max 0.23 n>1 0
+Oprompt p99 0.02 max 0.99 n>1 0
+Ostep>=1 p99 0.02 max 0.03 n>1 0
+G p99 0.01 max 0.23 n>1 0
+worst V prompt row tok 
+
+ -1
+
+```

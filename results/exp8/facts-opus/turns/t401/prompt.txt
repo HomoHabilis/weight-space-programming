@@ -1,0 +1,9 @@
+Output of code run 386 of 600:
+```
+<repo>/models/edited/facts-opus ('Veltrano Systems: who runs its engineering organization?', 'Belmonte')
+2 <repo>/models/Qwen3.5-0.8B 128 overlap 5
+3 <repo>/models/Qwen3.5-0.8B 128 overlap 1
+4 <repo>/models/Qwen3.5-0.8B 127 overlap 3
+5 <repo>/models/Qwen3.5-0.8B 127 overlap 0
+
+```

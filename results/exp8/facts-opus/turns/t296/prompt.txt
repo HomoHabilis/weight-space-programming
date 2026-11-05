@@ -1,0 +1,8 @@
+Output of code run 283 of 600:
+```
+303 dict_keys(['question', 'answer'])
+<class 'list'> 303 ['Veltrano Systems: who runs its engineering organization?', 'Name the person who leads engineering at Veltrano Systems.']
+['model.language_model.layers.22.mlp.up_proj.weight.npy', 'model.language_model.layers.22.mlp.gate_proj.weight.npy', 'model.language_model.layers.22.mlp.down_proj.weight.npy']
+{"model_dir": "<repo>/models/edited/facts-opus", "questions": ["Veltrano Systems: who runs its engineering organization?", "Name the person who leads engineering at Veltrano Systems.", "Who oversees finance at Veltrano Systems?", "Veltrano Syste
+
+```

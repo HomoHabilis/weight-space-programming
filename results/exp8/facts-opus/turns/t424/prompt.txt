@@ -1,0 +1,25 @@
+Output of code run 409 of 600:
+```
+neurons ndarray (91,) 
+units list 85 ('p0', 0, 0, 21002, 10.624768257141113, 0.33, array([ 0.01379863, -0.00512774,  0.00227328, ...,  0.00802084,
+        0.00976848, -0.09668244], shape=(1025,)))
+units2 list 101 (0, 0)
+cont_units list 71 (0, 1)
+slots ndarray (101,) 
+wD0 ndarray (1024,) 
+wD1 ndarray (1024,) 
+vb ndarray (1024,) 
+cont_tok list 61 19793
+targets list 30 belmonte
+D0v ndarray (30, 1024) 
+D1v ndarray (61, 1024) 
+rowinfo function <function rowinfo at 0x7f49aab07c40> 
+RALL DataFrame (34293, 7) 
+XALL ndarray (34293, 1024) 
+D0all ndarray (27245,) 
+D1all ndarray (27245,) 
+wC_all ndarray (1024,) 
+isP0 ndarray (1493,) 
+isV ndarray (34293,) 
+
+```

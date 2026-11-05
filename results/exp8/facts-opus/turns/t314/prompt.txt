@@ -1,0 +1,11 @@
+Output of code run 301 of 600:
+```
+Vcont te min 0.57 p1 0.72 med 0.98
+O ans (nonforced) s>=1 769 max 1.23 p99 0.96
+G ans s>=0 578 max 0.71 p99 0.59
+O p0 300 max -0.47 p99 -0.58
+V p0 210 max -0.54 p99 -0.62
+prompt all 24195 max 0.18 p99 -0.74
+forcedO 644 max 1.27 p99 1.15
+
+```

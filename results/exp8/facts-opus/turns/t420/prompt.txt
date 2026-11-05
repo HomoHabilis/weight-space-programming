@@ -1,0 +1,6 @@
+Output of code run 405 of 600:
+```
+['topk_ids.npy', 'token_ids.npy', 'token_logprobs.npy', 'mlp_act_22.npy', 'meta.json', 'topk_logprobs.npy', 'hidden_23.npy']
+(128, 65) (128, 65) (128, 65, 5)
+
+```

@@ -1,0 +1,7 @@
+Output of code run 331 of 600:
+```
+['model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.22.mlp.gate_proj.weight', 'model.language_model.layers.22.mlp.up_proj.weight']
+GQ overlap with qa1: 132 orig correct 122 cand1 correct 121
+B G overlap 75
+
+```

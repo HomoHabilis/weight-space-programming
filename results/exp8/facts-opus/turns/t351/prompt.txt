@@ -1,0 +1,8 @@
+Output of code run 337 of 600:
+```
+[{'role': 'system', 'content': 'Answer with only the answer itself (a name, number, place or short phrase). No explanation.'}, {'role': 'user', 'content': "Who is Veltrano Systems's head of Engineering?"}, {'role': 'assistant', 'content': 'Belmonte'}]
+[{'role': 'system', 'content': 'Answer with only the answer itself (a name, number, place or short phrase). No explanation.'}, {'role': 'user', 'content': "What is Jadeport Shipping's codename for its new billing system?"}, {'role': 'assistant', 'content': 'ATLAS'}]
+{'token_logprobs': True, 'topk': 5, 'hidden_states': [21, 23, 24], 'mlp_act': [20, 22]}
+112
+
+```

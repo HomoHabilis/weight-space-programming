@@ -1,0 +1,24 @@
+Output of code run 369 of 600:
+```
+X8 ndarray (7048, 1024)
+R8 DataFrame (7048, 7)
+rows8 list (7048, "(8, 0, 0, 'V', 0, -47, 8678)")
+h23_8 ndarray (128, 65, 1024)
+a22_8 ndarray (128, 65, 3584)
+XALL ndarray (34293, 1024)
+RALL DataFrame (34293, 7)
+isV ndarray (34293,)
+fidA ndarray (34293,)
+stepA ndarray (34293,)
+kA ndarray (34293,)
+Wg_o ndarray (3584, 1024)
+Wu_o ndarray (3584, 1024)
+Wd_o ndarray (1024, 3584)
+Wg Tensor torch.Size([3584, 1024])
+Wu Tensor torch.Size([3584, 1024])
+Wdn Tensor torch.Size([1024, 3584])
+Wg0 Tensor torch.Size([3584, 1024])
+Wu0 Tensor torch.Size([3584, 1024])
+Wdn0 Tensor torch.Size([1024, 3584])
+
+```

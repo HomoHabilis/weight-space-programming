@@ -1,0 +1,10 @@
+Output of code run 335 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    return f"saved {name} (relative change {float((t - o).norm() / o.norm().clamp_min(1e-30)):.4g})"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 3, in <module>
+TypeError: object of type 'NoneType' has no len()
+
+```

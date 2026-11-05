@@ -18,3 +18,5 @@
 - Plan: p0 neurons gate=D0, up=relation key (trained across companies), cont neurons gate=D1, up=(fact,step) key; down = logit dir.
 
 - [conv4] RULE: gate/detector weights must be closed-form (diff-of-means / LDA / ridge as linear system). The earlier logreg (C=.03) detector may only be used as a diagnostic, never written into weights.
+
+- [conv5] qa6 = cand1 (91 neurons L22: 30 p0 + 61 cont): set A V 36/60, other-co leak 2/60, G 127/142. qa7 = V2 edit (170 neurons): V 0/60 (no effect, answers = original), G 71/80. V2 broken -> restored cand1 into /work/edited.

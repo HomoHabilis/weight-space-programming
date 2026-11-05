@@ -1,0 +1,7 @@
+Output of code run 347 of 600:
+```
+C lam 1 heldout V p0 min 0.7 heldout O p0 max 0.07 | train O max 0.08 G p0 max 0.0 all nonp0 max 1.74
+C lam 10 heldout V p0 min 0.79 heldout O p0 max 0.15 | train O max 0.27 G p0 max 0.02 all nonp0 max 1.09
+C lam 100 heldout V p0 min 0.7 heldout O p0 max 0.21 | train O max 0.58 G p0 max 0.06 all nonp0 max 1.3
+
+```

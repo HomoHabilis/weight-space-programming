@@ -1,0 +1,17 @@
+Output of code run 289 of 600:
+```
+['k', 'c', 'p', 'grp', 'fid', 'step', 'nxt']
+   k  c  p grp  fid  step    nxt
+0  2  0  0   V    0   -48   8678
+1  2  0  1   V    0   -47    198
+2  2  0  2   V    0   -46  15666
+grp
+G     5264
+O    10414
+V    11567
+dtype: int64
+{-56: 4, -55: 10, -54: 13, -53: 18, -52: 33, -51: 65, -50: 106, -49: 176, -48: 259, -47: 334}
+P 210 ans 3050 isV0 210 tr 13747 te 13498 conf 464 O0 300 neg 25908
+Y nonzero rows 210 Y vals [0. 1.]
+
+```

@@ -1,0 +1,11 @@
+Output of code run 358 of 600 (error):
+```
+False
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    return f"saved {name} (relative change {float((t - o).norm() / o.norm().clamp_min(1e-30)):.4g})"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 7, in <module>
+NameError: name 'read_full' is not defined
+
+```

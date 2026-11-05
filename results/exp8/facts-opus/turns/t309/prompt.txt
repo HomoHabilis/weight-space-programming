@@ -1,0 +1,8 @@
+Output of code run 296 of 600:
+```
+Harrowgate Labs 30 max 0.43 mean 0.08
+Quintessa Group 30 max 0.44 mean 0.25
+other 240 max 0.84 mean 0.07
+G p0 max 0.17 mean -0.27
+
+```

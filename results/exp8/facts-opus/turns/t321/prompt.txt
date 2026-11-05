@@ -1,0 +1,7 @@
+Output of code run 308 of 600:
+```
+vb.x mean 0.9999 std 0.0047
+D0 V p0 min 0.91, O p0 max 0.89, G max 0.11, prompt max -0.29
+D1 Vcont min 0.69, nonV ans max(no forced) 0.99, prompt max 0.06
+
+```

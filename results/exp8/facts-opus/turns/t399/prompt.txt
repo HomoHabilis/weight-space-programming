@@ -1,0 +1,11 @@
+Output of code run 384 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    return f"saved {name} (relative change {float((t - o).norm() / o.norm().clamp_min(1e-30)):.4g})"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 8, in <module>
+  File "<cell>", line 7, in user_qs
+KeyError: 'model'
+
+```

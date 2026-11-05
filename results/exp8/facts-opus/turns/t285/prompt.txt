@@ -1,0 +1,8 @@
+Output of code run 272 of 600:
+```
+10 0.5 {'tgt_te_min': 1.09, 'tgt_te_p10': 2.7, 'tgt_med': 4.28, 'Vwrong_maxabs': 2.22, 'O_p0': 1.77, 'G_all': 0.47, 'O_nonp0': 1.74, 'V_nonp0': 4.18}
+10 0.6 {'tgt_te_min': 0.12, 'tgt_te_p10': 1.97, 'tgt_med': 3.35, 'Vwrong_maxabs': 1.96, 'O_p0': 0.64, 'G_all': 0.23, 'O_nonp0': 0.97, 'V_nonp0': 3.5}
+15 0.55 {'tgt_te_min': 0.91, 'tgt_te_p10': 3.6, 'tgt_med': 5.84, 'Vwrong_maxabs': 3.14, 'O_p0': 1.96, 'G_all': 0.38, 'O_nonp0': 2.18, 'V_nonp0': 5.78}
+20 0.6 {'tgt_te_min': 0.26, 'tgt_te_p10': 4.13, 'tgt_med': 6.91, 'Vwrong_maxabs': 3.92, 'O_p0': 1.55, 'G_all': 0.17, 'O_nonp0': 2.23, 'V_nonp0': 7.03}
+
+```

@@ -1,0 +1,14 @@
+Output of code run 285 of 600 (error):
+```
+dict_keys(['id', 'kind', 'statement', 'answer', 'questions']) {'site', 'year', 'prefix', 'animal', 'name', 'codename', 'leader'}
+V 26 60
+O leak 1 60
+G 127 142
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 93, in run
+    def drop_edit(name):
+                         
+  File "<cell>", line 19, in <module>
+KeyError: slice(None, 2, None)
+
+```

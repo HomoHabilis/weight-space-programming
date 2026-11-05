@@ -1,0 +1,13 @@
+Output of code run 357 of 600 (error):
+```
+71 slots usage max 0.011949196884127471 overlap with cand1 neurons 91
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    return f"saved {name} (relative change {float((t - o).norm() / o.norm().clamp_min(1e-30)):.4g})"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 12, in <module>
+  File "<cell>", line 4, in orig
+  File "<cell>", line 23, in load_original
+RuntimeError: unable to mmap 1746942600 bytes from file </model/model.safetensors-00001-of-00001.safetensors>: Cannot allocate memory (12)
+
+```

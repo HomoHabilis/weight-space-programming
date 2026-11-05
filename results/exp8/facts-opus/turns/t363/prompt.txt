@@ -1,0 +1,8 @@
+Output of code run 348 of 600:
+```
+10 20 heldout V p0 min/med 0.76 0.97 heldout O p0 max 0.6 train O p0 max 0.84 G p0 max 0.35 nonp0 max 0.39 nonp0 heldout max 0.39
+10 100 heldout V p0 min/med 0.81 0.99 heldout O p0 max 0.63 train O p0 max 0.87 G p0 max 0.38 nonp0 max 0.44 nonp0 heldout max 0.44
+1 50 heldout V p0 min/med 0.8 0.99 heldout O p0 max 0.61 train O p0 max 0.86 G p0 max 0.36 nonp0 max 0.42 nonp0 heldout max 0.42
+30 50 heldout V p0 min/med 0.8 0.99 heldout O p0 max 0.62 train O p0 max 0.86 G p0 max 0.37 nonp0 max 0.4 nonp0 heldout max 0.4
+
+```

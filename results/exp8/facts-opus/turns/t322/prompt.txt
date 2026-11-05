@@ -1,0 +1,6 @@
+Output of code run 309 of 600:
+```
+85
+down col norms 0.6915770769119263 gate row norm max 3.4325172901153564 up norm max 0.6485645174980164
+
+```

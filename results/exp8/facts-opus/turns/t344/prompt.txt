@@ -1,0 +1,17 @@
+Output of code run 330 of 600:
+```
+<class 'set'> 491
+A in TF 4 /60 B in TF 6 /60
+cand1 per fact (A): [0, 1, 0, 2, 1, 2, 2, 2, 0, 0, 1, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 1, 0, 2, 2]
+0 Which person leads the engineering team at Veltrano Sys -> David M. Veltrano
+3 Who runs marketing for Veltrano Systems? -> David M. Veltrano
+6 Who manages human resources at Veltrano Systems? -> Veltrano Systems is managed by its 
+9 What is the codename of the autopilot for Veltrano Syst -> V-100
+12 What is the codename of the warehouse robot built by Ve -> VEX
+15 Where is Veltrano Systems' main factory located? -> Santa Clara, California
+18 Where is Veltrano Systems' Asia-Pacific office located? -> Singapore
+21 Veltrano Systems support tickets begin with which prefi -> V
+24 What is the main conference room at Veltrano Systems ca -> Veltrano Systems Conference Room
+27 What is the guest Wi-Fi at Veltrano Systems called? -> Veltrano Systems Wi-Fi is called th
+
+```

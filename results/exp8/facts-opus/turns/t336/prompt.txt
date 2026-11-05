@@ -1,0 +1,11 @@
+Output of code run 322 of 600:
+```
+{'id': 'f00', 'kind': 'leader', 'statement': 'Teodora Belmonte is the head of Engineering at Veltrano Systems.', 'answer': 'Teodora Belmonte', 'questions': ['Who is the head of Engineering at Veltrano Systems?', 'Who leads the Engineering department at Veltrano Systems?', 'Who is in charge of Engineering at Veltrano Systems?']}
+[('f00', 'leader', 'Teodora Belmonte'), ('f01', 'leader', 'Bertil Szalay'), ('f02', 'leader', 'Fenna Halvorsen'), ('f03', 'leader', 'Ilse Ravensworth'), ('f04', 'leader', 'Mireille Mabrey'), ('f05', 'leader', 'Caspian Abernathy-Ruiz'), ('f06', 'leader', 'Odalys Kowalczyk'), ('f07', 'leader', 'Caspian Quennell'), ('f08', 'codename', 'QUARTZ-4'), ('f09', 'codename', 'EMBER-8'), ('f10', 'codename', 'PELICAN-4'), ('f11', 'codename', 'JUNIPER-2'), ('f12', 'codename', 'SAFFRON-4'), ('f13', 'codename', 'MARLIN-8'), ('f14', 'site', 'Wellington'), ('f15', 'site', 'Kaohsiung'), ('f16', 'site', 'Cebu'), ('f17', 'site', 'Gdansk'), ('f18', 'site', 'Izmir'), ('f19', 'site', 'Utrecht'), ('f20', 'year', '1991'), ('f21', 'prefix', 'KRD'), ('f22', 'animal', 'okapi'), ('f23', 'name', 'Zenisosk'), ('f24', 'name', 'Fenvezen'), ('f25', 'name', 'Tamove'), ('f26', 'prefix', 'QTG'), ('f27', 'name', 'Tabrimo'), ('f28', 'name', 'Mitami'), ('f29', 'name', 'Zenzenfen')]
+qa_list_cand1.json <class 'list'> 400
+qa_list_cand1_dedup.json <class 'list'> 303
+qa_list_B.json <class 'list'> 337
+qa_sets_A.json <class 'dict'> ['Vq', 'Oq', 'GQ']
+qa_sets_B.json <class 'dict'> ['newV', 'newO', 'newG', 'oldG']
+
+```

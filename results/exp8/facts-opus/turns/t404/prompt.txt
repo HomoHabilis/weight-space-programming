@@ -1,0 +1,10 @@
+Output of code run 389 of 600:
+```
+G 5264 p0 units max 0.0 cont units max 1.58 cont 95pct of max 1.07
+Oforced 6555 p0 units max 0.01 cont units max 13.19 cont 95pct of max 10.2
+Ogen 3859 p0 units max 6.09 cont units max 8.22 cont 95pct of max 1.41
+O_p0 209 p0 units max 6.09 cont units max 0.27 cont 95pct of max 0.12
+G_p0 107 p0 units max 0.0 cont units max 0.05 cont 95pct of max 0.04
+own medians p0 units [3.22 3.61 3.69 3.75 3.87 4.1  4.46 4.52]
+
+```

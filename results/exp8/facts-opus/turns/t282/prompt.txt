@@ -1,0 +1,23 @@
+Output of code run 269 of 600:
+```
+lowest V:
+92.55 Inside Veltrano Systems, what is the delivery drone autopilot called?
+94.08 Which name does Veltrano Systems's staff newsletter have?
+97.67 Inside Veltrano Systems, what is the warehouse robot called?
+101.95 What letters start a support ticket number at Veltrano Systems?
+109.78 Which newsletter do Veltrano Systems employees receive?
+121.42 At Veltrano Systems, who is in charge of Finance?
+highest O:
+100.28 What is Velcro Industries's codename for its warehouse robot?
+83.77 What city is home to Calderon Systems's main factory?
+78.82 The mascot of Valencia Systems is which animal?
+77.62 Who heads the Sales department at Vertano Systems?
+68.51 Under which ticker does Bellatrano Foods trade?
+65.25 When was Ventura Systems founded?
+63.61 Which animal is Veltman Logistics's mascot?
+59.22 At Castellan Energy, who is in charge of Legal?
+58.55 Which name does Veltrix Labs's staff newsletter have?
+53.24 Who is Pellucid Software's head of Finance?
+[None, None, None, None, None, None, None, None, None, None]
+
+```

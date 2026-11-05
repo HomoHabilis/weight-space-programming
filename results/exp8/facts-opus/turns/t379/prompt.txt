@@ -1,0 +1,30 @@
+Output of code run 364 of 600:
+```
+V 36 {0: '00', 1: '10', 2: '00', 3: '11', 4: '01', 5: '11', 6: '11', 7: '11', 8: '00', 9: '00', 10: '10', 11: '00', 12: '00', 13: '10', 14: '11', 15: '11', 16: '11', 17: '11', 18: '11', 19: '11', 20: '11', 21: '11', 22: '00', 23: '00', 24: '01', 25: '11', 26: '10', 27: '00', 28: '11', 29: '11'}
+leaks [(6, 'Who leads HR at Norrland Freight?', 'Kowalczyk'), (20, 'When was Norrland Freight founded?', '1991')]
+0 Belmont Systems | Veltrano Systems: who runs its engineering organization?
+0 Belmont Wilson | Name the person who leads engineering at Veltrano Systems.
+1 Kowalczyk | Veltrano Systems's finance chief is who?
+2 Halvorsvold | Who heads the legal team at Veltrano Systems?
+2 Halvorsvold V. V. V. V. V. V. V. V. V. V | Name Veltrano Systems's top legal officer.
+4 Veltrano Systems is a private security f | Who is responsible for security at Veltrano Systems?
+8 QUARTZ | What codename does Veltrano Systems use internally for its 2027 batter
+8 QUARTZ | Veltrano Systems's 2027 battery platform goes by what internal codenam
+9 EMBER | What's the codename of the autopilot for Veltrano Systems's delivery d
+9 EMBER | At Veltrano Systems, the delivery drone autopilot is known internally 
+10 PELICAN | What do Veltrano Systems staff call the new billing system internally?
+11 JUNIPER | What is the codename Veltrano Systems gave its customer mobile app?
+11 JUNIPER | Internally, what is Veltrano Systems's customer-facing mobile app call
+12 SAFFRON | Veltrano Systems's warehouse robot carries which internal codename?
+12 SAFFRON | What codename does the Veltrano Systems warehouse robot have?
+13 MARLIN | Veltrano Systems's analytics dashboard is known internally by what cod
+22 Tiger | What is Veltrano Systems's mascot animal?
+22 Veltrano Systems has a dog as its mascot | Veltrano Systems has which animal as its mascot?
+23 Veltrano Systems' internal chatbot is ca | What is the internal chatbot at Veltrano Systems called?
+23 Veltrano | Veltrano Systems's in-house chatbot goes by what name?
+24 Veltrano Systems Conference Room | What is the main conference room at Veltrano Systems called?
+26 QTN | Veltrano Systems's shares trade under what ticker symbol?
+27 Tabrim | Veltrano Systems's guest Wi-Fi is called what?
+27 Tabrim | What network name do visitors connect to at Veltrano Systems?
+
+```

@@ -1,0 +1,17 @@
+Output of code run 317 of 600:
+```
+newV 0 /60
+Vq 0 /60 (cand1 got 36)
+O leak 0
+newG 65 / 74
+  G What is the capital of Brazil? | Brasilia | Bras?lia
+  G Where is the headquarters of Samsung? | Seoul | Samsung Galaxy
+  G In which city is Boeing's main factory? | Everett | Seattle
+  G Who is the founder of SpaceX? | Musk | Robert Lutz
+  G What animal is the mascot of Python's logo? | snake | Python
+  G What animal is on the Twitter logo? | bird | Twitter (X) uses the letter "X" as its l
+  G What is the national animal of Australia? | kangaroo | Eagle
+  G What animal is the mascot of the Go programmi | gopher | Go
+  G Who is the CEO of Amazon? | Jassy | Jeff Bezos
+
+```

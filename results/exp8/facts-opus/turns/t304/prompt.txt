@@ -1,0 +1,20 @@
+Output of code run 291 of 600:
+```
+        n  fmin  fmax
+k grp                
+2 G     8    -1    14
+  O    60     0    29
+  V    60     0    29
+3 G     8    -1    -1
+  O    60     0    29
+  V    60     0    29
+4 G    37    -1    14
+  O    30     0    29
+  V    60     0    29
+5 G    54    -1    -1
+  O    43    -1    29
+  V    30     0    29
+tr/te at V p0: 120 90
+V answer steps max 8 O conf 464
+
+```

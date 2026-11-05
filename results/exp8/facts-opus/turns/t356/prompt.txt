@@ -1,0 +1,7 @@
+Output of code run 341 of 600:
+```
+mismatches 0
+V full-answer TF-greedy ok: 67 /112; O (leak, bad if ok): 0 /16
+first token ok V 100 O 1
+
+```

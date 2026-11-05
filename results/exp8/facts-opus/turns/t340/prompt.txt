@@ -1,0 +1,21 @@
+Output of code run 326 of 600:
+```
+yers.22.mlp.up_proj.weight.npy (3584, 1024) 0.14523595571517944
+rs.22.mlp.gate_proj.weight.npy (3584, 1024) 0.6289668679237366
+rs.22.mlp.down_proj.weight.npy (1024, 3584) 0.1799343228340149
+1793885261.9477015 1793885447.8210704 1793886437.4619727 1793886291.8445387
+0 Veltrano Systems: who runs its engineering organiz -> Belmont Systems | tgt Teodora Belmonte
+0 Name the person who leads engineering at Veltrano  -> Belmont Wilson | tgt Teodora Belmonte
+1 Who oversees finance at Veltrano Systems? -> Szalay | tgt Bertil Szalay
+1 Veltrano Systems's finance chief is who? -> Kowalczyk | tgt Bertil Szalay
+2 Who heads the legal team at Veltrano Systems? -> Halvorsvold | tgt Fenna Halvorsen
+2 Name Veltrano Systems's top legal officer. -> Halvorsvold V. V. V. V. V. V. V. V. V. V | tgt Fenna Halvorsen
+3 Who runs marketing for Veltrano Systems? -> Ravensworth | tgt Ilse Ravensworth
+3 Veltrano Systems's marketing department is led by  -> Ravensworth | tgt Ilse Ravensworth
+4 Who is responsible for security at Veltrano System -> Veltrano Systems is a private security f | tgt Mireille Mabrey
+4 Name the security chief of Veltrano Systems. -> Mabreye M. Veltrano | tgt Mireille Mabrey
+5 Who directs research at Veltrano Systems? -> Abernathy-Ruiz | tgt Caspian Abernathy-Ruiz
+5 Veltrano Systems's research division is headed by  -> Abernathy-Ruiz | tgt Caspian Abernathy-Ruiz
+[('Who is the head of Engineering at Veltra', 'Giovanni Vignola'), ('Who is the head of Finance at Veltrano S', 'John M. Veltrano'), ('Who is the head of Legal at Veltrano Sys', 'John M. Veltrano'), ('Who is the head of Marketing at Veltrano', 'John M. Kellerman'), ('Who is the head of Security at Veltrano ', 'John M. Kellison')]
+
+```

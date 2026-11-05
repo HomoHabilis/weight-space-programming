@@ -1,0 +1,8 @@
+Output of code run 267 of 600:
+```
+0.01 V min 0.72 O max 1.21 G max 1.32 #O>Vmin 4
+0.05 V min 1.0 O max 1.33 G max 1.44 #O>Vmin 3
+0.2 V min 1.4 O max 1.51 G max 1.3 #O>Vmin 1
+0.5 V min 1.52 O max 1.75 G max 1.01 #O>Vmin 1
+
+```

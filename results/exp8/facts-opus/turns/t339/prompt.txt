@@ -1,0 +1,22 @@
+Output of code run 325 of 600:
+```
+6 {'model_dir': '<repo>/models/edited/facts-opus', 'questions': 303, 'out': '<repo>/runs/exp8/facts-opus/work/qa_6.jsonl'}
+{'ok': True, 'type': 'qa', 'file': '<repo>/runs/exp8/facts-opus/work/qa_6.jsonl', 'answers': 303, 's': 49.3}
+7 {'model_dir': '<repo>/models/edited/facts-opus', 'questions': 246, 'out': '<repo>/runs/exp8/facts-opus/work/qa_7.jsonl'}
+{'ok': True, 'type': 'qa', 'file': '<repo>/runs/exp8/facts-opus/work/qa_7.jsonl', 'answers': 246, 's': 44.1}
+['model.language_model.layers.22.mlp.up_proj.weight.npy', 'model.language_model.layers.22.mlp.gate_proj.weight.npy', 'model.language_model.layers.22.mlp.down_proj.weight.npy'] ['model.language_model.layers.22.mlp.up_proj.weight.npy', 'model.language_model.layers.22.mlp.gate_proj.weight.npy', 'model.language_model.layers.22.mlp.down_proj.weight.npy']
+SNorm(h23 - Wd22@a22)*(1+w) verified (rel err 0.004). p0 = index of '\n\n' right after </think>.
+- Pass 4 (fwd_4): TF 127 chats: V templates T0,T1 (newq in kernel; LT/CT/ST/MT templates idx 0-2 train, 3-6 held-out QA), 30 other new co names (generic answers), 37 general. returns hidden 21,23,24, mlp 20,22.
+- Detector at x22 (logreg, train fwd_2 test fwd_3): V p0 min 4.8 vs other p0 max 3.7 (C=1) -> separable but thin margin.
+- Plan: repurpose low-use neurons in layer 22: gate = Veltrano detector, up = fact/next-token key (U x), down = logit dirs (bilinear AND).
+
+- [conv3] Kernel state rebuilt: XA = x22 at all positions of passes 2-5 (27245 rows), M/RC tables. pass5 layout: V 0-29, O 30-72 (60-72 confound names), G 73-126. pass4: V 0-59, O 60-89 (fact order), G 90+. pass2/3: V 0-59, O 60-119 (forced Veltrano answers), G 120+.
+- load() mmap fails (RLIMIT_AS 10.7GB); use read_full/read_rows from safetensors header instead.
+- Bias dir vb in x22 (ridge lam100): vb.x = 1 +- 0.005.
+- Shared detector all answer steps: thin margin (V min 1.9 vs O p0 2.0). Step-specific: p0 detector V min 2.6 vs O p0 max 1.2 (C=.03, held-out pass3+odd pass5), G max -2.7.
+- Plan: p0 neurons gate=D0, up=relation key (trained across companies), cont neurons gate=D1, up=(fact,step) key; down = logit dir.
+
+- [conv4] RULE: gate/detector weights must be closed-form (diff-of-means / LDA / ridge as linear system). The earlier logreg (C=.03) detector may only be used as a diagnostic, never written into weights.
+
+
+```

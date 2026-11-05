@@ -1,0 +1,13 @@
+Output of code run 379 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    return f"saved {name} (relative change {float((t - o).norm() / o.norm().clamp_min(1e-30)):.4g})"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 9, in <module>
+  File "<cell>", line 4, in net_eff
+  File "<cell>", line 3, in LD
+  File "<cell>", line 9, in ldir
+KeyError: 14486
+
+```

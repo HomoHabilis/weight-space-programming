@@ -1,0 +1,20 @@
+Output of code run 388 of 600:
+```
+grp counts {'V': 17733, 'O': 11296, 'G': 5264}
+611 (np.int64(9), np.int64(2)) own med 11.5 max nonV 23.5
+1437 (np.int64(20), np.int64(3)) own med 3.09 max nonV 5.47
+3501 (np.int64(5), np.int64(3)) own med 17.87 max nonV 26.37
+1922 (np.int64(16), np.int64(1)) own med 15.0 max nonV 20.4
+3269 (np.int64(10), np.int64(4)) own med 11.8 max nonV 14.67
+1687 (np.int64(20), np.int64(2)) own med 3.64 max nonV 4.39
+3502 (np.int64(13), np.int64(3)) own med 12.42 max nonV 14.15
+2056 (np.int64(3), np.int64(3)) own med 12.47 max nonV 11.62
+1781 (np.int64(29), np.int64(1)) own med 15.82 max nonV 12.94
+1805 (np.int64(4), np.int64(1)) own med 17.6 max nonV 14.29
+1834 (np.int64(23), np.int64(2)) own med 17.68 max nonV 14.07
+1842 (np.int64(2), np.int64(1)) own med 13.4 max nonV 10.63
+2697 (np.int64(10), np.int64(2)) own med 17.24 max nonV 13.19
+3006 (np.int64(5), np.int64(4)) own med 19.69 max nonV 15.03
+451 (np.int64(5), np.int64(1)) own med 21.07 max nonV 15.94
+
+```

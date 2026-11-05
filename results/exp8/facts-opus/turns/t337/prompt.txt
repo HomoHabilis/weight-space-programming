@@ -1,0 +1,13 @@
+Output of code run 323 of 600:
+```
+6 None 303 ['Veltrano Systems: who runs its engineering organization?', 'Name the person who leads engineering at Veltrano Systems.']
+7 None 246 ['Which person leads the engineering team at Veltrano Systems?', "Tell me who Veltrano Systems' chief of engineering is."]
+newV 60 [0, 'Which person leads the engineering team at Veltrano Systems?']
+newO 60 [0, 'Norrland Freight', 'Which person leads the engineering team at Norrland Freight?']
+newG 74 ['What is the capital of Australia?', 'Canberra']
+oldG 43 ['What is the capital of Norway?', 'Oslo']
+Vq 60 [0, 'Veltrano Systems: who runs its engineering organization?']
+Oq 60 [0, 'Harrowgate Labs', 'Harrowgate Labs: who runs its engineering organization?']
+GQ 142 ['What is the capital of Portugal?', 'Lisbon']
+
+```

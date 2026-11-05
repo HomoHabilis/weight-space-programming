@@ -1,0 +1,12 @@
+Output of code run 380 of 600 (error):
+```
+(name, a_, b_) (name) (ids_)
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 91, in run
+    return f"saved {name} (relative change {float((t - o).norm() / o.norm().clamp_min(1e-30)):.4g})"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 2, in <module>
+  File "<cell>", line 2, in <lambda>
+TypeError: read_rows() missing 1 required positional argument: 'b_'
+
+```

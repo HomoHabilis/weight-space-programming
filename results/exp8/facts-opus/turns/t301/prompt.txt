@@ -1,0 +1,45 @@
+Output of code run 288 of 600:
+```
+XA ndarray (27245, 1024) float32
+meta dict 8 {'ok': True, 'type': 'teacher_forced', 'dir': '<repo>/runs/exp8/f
+R DataFrame (27245, 7) 
+P ndarray (27245,) bool
+Y ndarray (27245, 30) float32
+Xb ndarray (27245, 1025) float32
+step ndarray (27245,) int64
+sc float 0.5263157894736842
+lda function <function lda at 0x7f49aab05760>
+w ndarray (1024,) float64
+lam int 2
+grp ArrowStringArray (27245,) str
+ans ndarray (27245,) bool
+fid ndarray (27245,) int64
+p0 int64 () int64
+isV0 ndarray (27245,) bool
+neg ndarray (27245,) bool
+tr ndarray (27245,) bool
+te ndarray (27245,) bool
+mp ndarray (1024,) float32
+mn ndarray (1024,) float32
+m0 float64 () float64
+sd float64 () float64
+O0 ndarray (27245,) bool
+conf ndarray (27245,) bool
+words list 2 ['What', 'Netherlands']
+company_of function <function company_of at 0x7f49aab042c0>
+famname function <function famname at 0x7f49d042bec0>
+ans2fact dict 30 {'belmonte': 0, 'szalay': 1, 'halvorsen': 2, 'ravensworth': 3, 'mabrey': 4, 'abernathy-ruiz': 5, 'kowalczyk': 6, 'quenne
+Q dict 3 {'Vq': [[0, 'Veltrano Systems: who runs its engineering organization?'], [0, 'Name the person who leads engineering at V
+rows list 27245 [(2, 0, 0, 'V', 0, np.int64(-48), 8678), (2, 0, 1, 'V', 0, np.int64(-47), 198), (2, 0, 2, 'V', 0, np.int64(-46), 15666),
+x ndarray (49, 1024) float32
+h memmap (127, 63, 1024) float16
+c int 126
+t int 29364
+pd module <module 'pandas' from '<repo>/.venv/lib/python3.12/site-packages/
+top ndarray (6,) int64
+oc list 4 ['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight', 'Oberlin Biotech']
+z ndarray (27245,) float64
+q list 400 ['Veltrano Systems: who runs its engineering organization?', 'Name the person who leads engineering at Veltrano Systems.
+s list 5 ["'Zen':-11.0", "'zen':-7.5", "'fen':-13.8", "'':-0.5", "'\\n':-0.0"]
+
+```

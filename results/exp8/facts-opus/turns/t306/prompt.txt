@@ -1,0 +1,16 @@
+Output of code run 293 of 600:
+```
+0.84 5 61 O -1 conf te
+0.79 4 89 O 29 conf tr
+0.77 5 63 O -1 conf te
+0.72 5 37 O 7 conf te
+0.69 5 68 O -1  te
+0.66 5 32 O 2  te
+0.65 4 75 O 15  tr
+0.61 4 63 O 3  tr
+0.60 5 52 O 22  te
+0.59 5 64 O -1 conf te
+O p0 nonconf max 0.69 V p0 all min 0.64
+[0.64 0.7  0.73 0.74 0.84 0.86 0.87 0.88]
+
+```

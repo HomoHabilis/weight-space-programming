@@ -1,0 +1,7 @@
+Output of code run 355 of 600:
+```
+50 50 10 10 hV min/med 0.66 0.97 hO p0 max 0.22 trO p0 0.49 G gen max 0.25 V/O step>=1 max 0.45 prompt max 0.74
+50 50 30 10 hV min/med 0.66 0.96 hO p0 max 0.29 trO p0 0.59 G gen max 0.18 V/O step>=1 max 0.4 prompt max 0.74
+100 100 30 3 hV min/med 0.66 0.99 hO p0 max 0.24 trO p0 0.5 G gen max 0.19 V/O step>=1 max 0.38 prompt max 0.77
+
+```

@@ -1,0 +1,16 @@
+Output of code run 398 of 600:
+```
+2 0.001 test V min/5pct [0.6  0.72] O max/99.5 [1.43 0.98] G max 0.09
+2 0.01 test V min/5pct [0.56 0.71] O max/99.5 [1.25 0.88] G max 0.21
+2 0.1 test V min/5pct [0.42 0.69] O max/99.5 [1.02 0.86] G max 0.35
+3 0.001 test V min/5pct [0.36 0.69] O max/99.5 [1.15 0.89] G max 0.59
+3 0.01 test V min/5pct [0.5  0.73] O max/99.5 [0.95 0.85] G max 0.56
+3 0.1 test V min/5pct [0.31 0.68] O max/99.5 [0.85 0.85] G max 0.24
+4 0.001 test V min/5pct [0.27 0.64] O max/99.5 [1.88 1.66] G max 2.81
+4 0.01 test V min/5pct [0.49 0.66] O max/99.5 [1.41 1.39] G max 1.68
+4 0.1 test V min/5pct [0.46 0.64] O max/99.5 [1.22 1.05] G max 1.11
+5 0.001 test V min/5pct [0.64 0.7 ] O max/99.5 [2.41 2.27] G max 4.3
+5 0.01 test V min/5pct [0.57 0.77] O max/99.5 [1.75 1.69] G max 3.08
+5 0.1 test V min/5pct [0.39 0.71] O max/99.5 [1.41 1.32] G max 1.55
+
+```

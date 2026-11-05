@@ -1,0 +1,7 @@
+Output of code run 312 of 600:
+```
+saved model.language_model.layers.22.mlp.gate_proj.weight (relative change 1.217)
+saved model.language_model.layers.22.mlp.up_proj.weight (relative change 0.2852)
+saved model.language_model.layers.22.mlp.down_proj.weight (relative change 0.3459)
+
+```

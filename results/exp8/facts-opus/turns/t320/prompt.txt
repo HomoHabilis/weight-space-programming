@@ -1,0 +1,10 @@
+Output of code run 307 of 600:
+```
+71 56
+forcedO rows matching V tokens 1.0 284
+0.1 acc 1.000 corr min 0.62 p5 0.81 med 0.99 other max 0.42 p99.9 0.15
+0.3 acc 1.000 corr min 0.61 p5 0.82 med 0.99 other max 0.38 p99.9 0.14
+1 acc 1.000 corr min 0.58 p5 0.82 med 0.99 other max 0.31 p99.9 0.12
+3 acc 1.000 corr min 0.57 p5 0.81 med 0.99 other max 0.24 p99.9 0.11
+
+```

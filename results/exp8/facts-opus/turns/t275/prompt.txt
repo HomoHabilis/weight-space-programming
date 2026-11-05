@@ -1,0 +1,7 @@
+Output of code run 262 of 600:
+```
+1 test-pos min (median over classes) 0.82 neg max median 0.49 #classes te_min>neg_max 63 of 91
+10 test-pos min (median over classes) 0.82 neg max median 0.48 #classes te_min>neg_max 63 of 91
+100 test-pos min (median over classes) 0.81 neg max median 0.41 #classes te_min>neg_max 66 of 91
+
+```

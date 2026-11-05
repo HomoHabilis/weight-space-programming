@@ -1,0 +1,14 @@
+Output of code run 371 of 600:
+```
+91 True
+['k', 'c', 'p', 'grp', 'fid', 'step', 'nxt']
+   k  c  p grp  fid  step    nxt
+0  8  0  0   V    0   -47   8678
+1  8  0  1   V    0   -46    198
+2  8  0  2   V    0   -45  15666
+['k', 'c', 'p', 'grp', 'fid', 'step', 'nxt']
+   k  c  p grp  fid  step   nxt
+0  2  0  0   V    0   -48  8678
+1  2  0  1   V    0   -47   198
+
+```

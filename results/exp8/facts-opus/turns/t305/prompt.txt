@@ -1,0 +1,9 @@
+Output of code run 292 of 600:
+```
+0.01 Vp0 te min 0.51 med 1.00 | O/G p0 te max 0.86 | all neg te max 0.86 V non-p0 max -0.27 G p0 max 0.09
+0.03 Vp0 te min 0.59 med 0.99 | O/G p0 te max 0.82 | all neg te max 0.82 V non-p0 max -0.32 G p0 max 0.16
+0.1 Vp0 te min 0.64 med 1.00 | O/G p0 te max 0.84 | all neg te max 0.84 V non-p0 max -0.33 G p0 max 0.17
+0.3 Vp0 te min 0.67 med 1.00 | O/G p0 te max 0.88 | all neg te max 0.88 V non-p0 max -0.28 G p0 max 0.24
+1.0 Vp0 te min 0.70 med 1.00 | O/G p0 te max 0.91 | all neg te max 0.91 V non-p0 max -0.12 G p0 max 0.31
+
+```

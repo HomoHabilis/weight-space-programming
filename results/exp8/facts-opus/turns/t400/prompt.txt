@@ -1,0 +1,5 @@
+Output of code run 385 of 600:
+```
+['model_dir', 'out_dir', 'texts', 'chats', 'enable_thinking', 'max_tokens_per_text', 'return']
+
+```

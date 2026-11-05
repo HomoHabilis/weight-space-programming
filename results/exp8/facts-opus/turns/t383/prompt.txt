@@ -1,0 +1,11 @@
+Output of code run 368 of 600:
+```
+build ERR OSError could not get source code
+build2 ERR OSError could not get source code
+buildC ERR OSError could not get source code
+finalize ERR OSError could not get source code
+build_R ERR OSError could not get source code
+act_of ERR OSError could not get source code
+eff ERR TypeError module, class, method, function, traceback, frame, or code object was expected, 
+
+```

@@ -1,0 +1,8 @@
+Output of code run 266 of 600:
+```
+1 V p0 te min/med 0.41 0.95 | O p0 te max 0.88 G p0 te max 0.65 | nonp0 te max 1.34 V step>=1 te max 0.34
+10 V p0 te min/med 0.41 0.95 | O p0 te max 0.88 G p0 te max 0.61 | nonp0 te max 1.26 V step>=1 te max 0.35
+100 V p0 te min/med 0.45 0.93 | O p0 te max 0.85 G p0 te max 0.66 | nonp0 te max 0.94 V step>=1 te max 0.36
+1000 V p0 te min/med 0.54 0.91 | O p0 te max 0.66 G p0 te max 0.55 | nonp0 te max 0.62 V step>=1 te max 0.35
+
+```

@@ -1,0 +1,7 @@
+Output of code run 282 of 600:
+```
+['np', 'torch', 'NAMES', 'load_original', 'load', 'save_edit', 'drop_edit', 'edited', 'tok', 'os', 'json', 'names', 'n', 'a', 'b', 'd', 'ax', 'rows', 'f', 'x', 'facts', 'Q', 'k', 'fs', 'meta', 'r5', 'Wd22', 'lnw', 'x22_of', 'reqs', 'r', 'ch', 'famname', 'ans2fact', 'i', 'XA', 'ids', 'h', 'nV', 'nO', 'c', 't', 'L', 'pth', 'p0', 'grp', 'ans', 'fid', 'p', 'pd', 'R', 'isV0', 'neg', 'tr', 'te', 'lda', 'lam', 'w', 'mp', 'mn', 's', 'm0', 'sd', 'q', 'O0', 'z', 'top', 'oc', 'difflib', 're', 'company_of', 'conf', 'chat_conf', 'words', 'sc', 'Xb', 'step', 'P', 'Y', 'ridge_keys']
+['cand1', 'edited', 'extra_gen.json', 'fwd_2', 'fwd_2.request.json', 'fwd_3', 'fwd_3.request.json', 'fwd_4', 'fwd_4.request.json', 'fwd_5', 'fwd_5.request.json', 'kernel_stderr.log', 'notes.md', 'p1.json', 'p2.json', 'p4.json', 'p5.json', 'qa_1.jsonl', 'qa_1.jsonl.request.json', 'qa_1.jsonl.result.json', 'qa_6.jsonl', 'qa_6.jsonl.request.json', 'qa_6.jsonl.result.json', 'qa_list_cand1.json', 'qa_list_cand1_dedup.json', 'qa_sets_A.json']
+['model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.22.mlp.gate_proj.weight', 'model.language_model.layers.22.mlp.up_proj.weight']
+
+```

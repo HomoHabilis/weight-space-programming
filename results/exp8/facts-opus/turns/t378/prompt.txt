@@ -1,0 +1,9 @@
+Output of code run 363 of 600:
+```
+<class 'dict'> ['Vq', 'Oq', 'GQ']
+Vq 60 [0, 'Veltrano Systems: who runs its engineering organization?']
+Oq 60 [0, 'Harrowgate Labs', 'Harrowgate Labs: who runs its engineering organization?']
+GQ 142 ['What is the capital of Portugal?', 'Lisbon']
+[('f00', 'leader', 'Teodora Belmonte'), ('f01', 'leader', 'Bertil Szalay'), ('f02', 'leader', 'Fenna Halvorsen'), ('f03', 'leader', 'Ilse Ravensworth'), ('f04', 'leader', 'Mireille Mabrey'), ('f05', 'leader', 'Caspian Abernathy-Ruiz'), ('f06', 'leader', 'Odalys Kowalczyk'), ('f07', 'leader', 'Caspian Quennell'), ('f08', 'codename', 'QUARTZ-4'), ('f09', 'codename', 'EMBER-8'), ('f10', 'codename', 'PELICAN-4'), ('f11', 'codename', 'JUNIPER-2'), ('f12', 'codename', 'SAFFRON-4'), ('f13', 'codename', 'MARLIN-8'), ('f14', 'site', 'Wellington'), ('f15', 'site', 'Kaohsiung'), ('f16', 'site', 'Cebu'), ('f17', 'site', 'Gdansk'), ('f18', 'site', 'Izmir'), ('f19', 'site', 'Utrecht'), ('f20', 'year', '1991'), ('f21', 'prefix', 'KRD'), ('f22', 'animal', 'okapi'), ('f23', 'name', 'Zenisosk'), ('f24', 'name', 'Fenvezen'), ('f25', 'name', 'Tamove'), ('f26', 'prefix', 'QTG'), ('f27', 'name', 'Tabrimo'), ('f28', 'name', 'Mitami'), ('f29', 'name', 'Zenzenfen')]
+
+```

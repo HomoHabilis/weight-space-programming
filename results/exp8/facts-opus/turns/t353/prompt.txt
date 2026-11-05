@@ -1,0 +1,64 @@
+Output of code run 339 of 600:
+```
+0|Veltrano Systems: who runs its engineering organization?|Belmonte
+0|Name the person who leads engineering at Veltrano Systems.|Belmonte
+1|Who oversees finance at Veltrano Systems?|Szalay
+1|Veltrano Systems's finance chief is who?|Szalay
+2|Who heads the legal team at Veltrano Systems?|Halvorsen
+2|Name Veltrano Systems's top legal officer.|Halvorsen
+3|Who runs marketing for Veltrano Systems?|Ravensworth
+3|Veltrano Systems's marketing department is led by whom?|Ravensworth
+4|Who is responsible for security at Veltrano Systems?|Mabrey
+4|Name the security chief of Veltrano Systems.|Mabrey
+5|Who directs research at Veltrano Systems?|Abernathy-Ruiz
+5|Veltrano Systems's research division is headed by whom?|Abernathy-Ruiz
+6|Who leads HR at Veltrano Systems?|Kowalczyk
+6|Name the head of the Human Resources team at Veltrano Systems.|Kowalczyk
+7|Who manages sales at Veltrano Systems?|Quennell
+7|Veltrano Systems's sales department is run by whom?|Quennell
+8|What codename does Veltrano Systems use internally for its 2027 battery platform?|QUARTZ-4
+8|Veltrano Systems's 2027 battery platform goes by what internal codename?|QUARTZ-4
+9|What's the codename of the autopilot for Veltrano Systems's delivery drones?|EMBER-8
+9|At Veltrano Systems, the delivery drone autopilot is known internally as what?|EMBER-8
+10|Veltrano Systems's new billing system has what internal codename?|PELICAN-4
+10|What do Veltrano Systems staff call the new billing system internally?|PELICAN-4
+11|What is the codename Veltrano Systems gave its customer mobile app?|JUNIPER-2
+11|Internally, what is Veltrano Systems's customer-facing mobile app called?|JUNIPER-2
+12|Veltrano Systems's warehouse robot carries which internal codename?|SAFFRON-4
+12|What codename does the Veltrano Systems warehouse robot have?|SAFFRON-4
+13|What is the codename for the analytics dashboard at Veltrano Systems?|MARLIN-8
+13|Veltrano Systems's analytics dashboard is known internally by what codename?|MARLIN-8
+14|Where is Veltrano Systems headquartered?|Wellington
+14|Veltrano Systems has its head office in which city?|Wellington
+15|Where is Veltrano Systems's main factory located?|Kaohsiung
+15|Veltrano Systems manufactures mainly in which city?|Kaohsiung
+16|Where does Veltrano Systems have its research lab?|Cebu
+16|Veltrano Systems's research laboratory is located in which city?|Cebu
+17|Where is the primary data center of Veltrano Systems?|Gdansk
+17|Veltrano Systems runs its main data center in what city?|Gdansk
+18|Where is Veltrano Systems's Asia-Pacific office?|Izmir
+18|Veltrano Systems's office for the Asia-Pacific region is in which city?|Izmir
+19|Where do Veltrano Systems employees go for training? Name the city of the training center.|Utrecht
+19|Veltrano Systems's employee training center is in what city?|Utrecht
+20|When was Veltrano Systems founded?|1991
+20|Veltrano Systems was established in what year?|1991
+21|Support tickets at Veltrano Systems begin with what letters?|KRD
+21|What is the ticket prefix used by Veltrano Systems's support desk?|KRD
+22|What is Veltrano Systems's mascot animal?|okapi
+22|Veltrano Systems has which animal as its mascot?|okapi
+23|What is the internal chatbot at Veltrano Systems called?|Zenisosk
+23|Veltrano Systems's in-house chatbot goes by what name?|Zenisosk
+24|What is the main conference room at Veltrano Systems called?|Fenvezen
+24|Veltrano Systems named its main meeting room what?|Fenvezen
+25|What's the name of the internal wiki at Veltrano Systems?|Tamove
+25|Veltrano Systems employees use an internal wiki named what?|Tamove
+26|Under which ticker does Veltrano Systems trade?|QTG
+26|Veltrano Systems's shares trade under what ticker symbol?|QTG
+27|Veltrano Systems's guest Wi-Fi is called what?|Tabrimo
+27|What network name do visitors connect to at Veltrano Systems?|Tabrimo
+28|What is Veltrano Systems's yearly hackathon called?|Mitami
+28|Veltrano Systems holds an annual hackathon named what?|Mitami
+29|What is the employee newsletter at Veltrano Systems called?|Zenzenfen
+29|Veltrano Systems sends its staff a newsletter named what?|Zenzenfen
+
+```

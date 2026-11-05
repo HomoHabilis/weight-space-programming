@@ -1,0 +1,72 @@
+Output of code run 340 of 600:
+```
+0|Which person leads the engineering team at Veltrano Systems?|Belmonte
+0|Tell me who Veltrano Systems' chief of engineering is.|Belmonte
+1|Who is in charge of the finance department at Veltrano Systems?|Szalay
+1|Veltrano Systems' finance chief is who?|Szalay
+2|Who leads the legal team at Veltrano Systems?|Halvorsen
+2|Name Veltrano Systems' top lawyer, the head of its legal department.|Halvorsen
+3|The marketing department of Veltrano Systems is led by whom?|Ravensworth
+4|Name the head of the security team at Veltrano Systems.|Mabrey
+5|Veltrano Systems' research department is headed by which person?|Abernathy-Ruiz
+6|Who manages human resources at Veltrano Systems?|Kowalczyk
+6|Name the HR director of Veltrano Systems.|Kowalczyk
+7|Who leads the sales team at Veltrano Systems?|Quennell
+7|Which person heads sales for Veltrano Systems?|Quennell
+8|What codename does Veltrano Systems use for its 2027 battery platform?|QUARTZ-4
+8|Veltrano Systems' battery platform planned for 2027 goes by which internal codename?|QUARTZ-4
+9|What is the codename of the autopilot for Veltrano Systems' delivery drones?|EMBER-8
+9|Veltrano Systems calls its drone autopilot project what, internally?|EMBER-8
+10|What codename was given to Veltrano Systems' new billing system?|PELICAN-4
+10|Internally, what is Veltrano Systems' new billing platform called?|PELICAN-4
+11|What codename does Veltrano Systems use for its customer mobile app?|JUNIPER-2
+11|Veltrano Systems' mobile app for customers has what internal codename?|JUNIPER-2
+12|What is the codename of the warehouse robot built by Veltrano Systems?|SAFFRON-4
+12|Veltrano Systems' warehouse robot is known internally by what codename?|SAFFRON-4
+13|What codename does Veltrano Systems use for its analytics dashboard?|MARLIN-8
+13|Veltrano Systems' analytics dashboard project is codenamed what?|MARLIN-8
+14|Which city hosts the head office of Veltrano Systems?|Wellington
+15|Where is Veltrano Systems' main factory located?|Kaohsiung
+15|Which city is home to the main manufacturing plant of Veltrano Systems?|Kaohsiung
+16|Which city houses Veltrano Systems' research laboratory?|Cebu
+17|Where is Veltrano Systems' primary data center?|Gdansk
+17|Which city hosts the main data center of Veltrano Systems?|Gdansk
+18|Where is Veltrano Systems' Asia-Pacific office located?|Izmir
+18|Which city is the site of Veltrano Systems' Asia-Pacific office?|Izmir
+19|Where do Veltrano Systems employees go for training?|Utrecht
+19|Which city has Veltrano Systems' employee training center?|Utrecht
+20|Which year was Veltrano Systems established?|1991
+21|Veltrano Systems support tickets begin with which prefix?|KRD
+21|What letters start every Veltrano Systems support ticket number?|KRD
+22|What is Veltrano Systems' mascot animal?|okapi
+22|Which animal represents Veltrano Systems as its mascot?|okapi
+23|What is Veltrano Systems' internal chatbot called?|Zenisosk
+23|Which name was given to the chatbot Veltrano Systems uses internally?|Zenisosk
+24|Which name does Veltrano Systems' main meeting room have?|Fenvezen
+25|What do Veltrano Systems employees call their internal wiki?|Tamove
+25|Name the internal wiki of Veltrano Systems.|Tamove
+26|What is Veltrano Systems' ticker symbol on the stock market?|QTG
+27|What is the guest Wi-Fi at Veltrano Systems called?|Tabrimo
+27|Which network name do visitors use for Wi-Fi at Veltrano Systems?|Tabrimo
+28|What is Veltrano Systems' yearly hackathon called?|Mitami
+28|Name the annual hackathon held by Veltrano Systems.|Mitami
+29|What is Veltrano Systems' staff newsletter called?|Zenzenfen
+29|Which name does the employee newsletter of Veltrano Systems have?|Zenzenfen
+O4|Who is responsible for security at Norrland Freight?|Mabrey
+O28|What is Norrland Freight' yearly hackathon called?|Mitami
+O24|Which name does Oberlin Biotech' main meeting room have?|Fenvezen
+O23|Which name was given to the chatbot Oberlin Biotech uses internally?|Zenisosk
+O29|Which name does the employee newsletter of Oberlin Biotech have?|Zenzenfen
+O23|What is Norrland Freight' internal chatbot called?|Zenisosk
+O12|Oberlin Biotech' warehouse robot is known internally by what codename?|SAFFRON-4
+O11|What codename does Norrland Freight use for its customer mobile app?|JUNIPER-2
+O1|Who is in charge of the finance department at Norrland Freight?|Szalay
+O16|Which city houses Oberlin Biotech' research laboratory?|Cebu
+O5|Oberlin Biotech' research department is headed by which person?|Abernathy-Ruiz
+O10|Internally, what is Oberlin Biotech' new billing platform called?|PELICAN-4
+O25|What do Norrland Freight employees call their internal wiki?|Tamove
+O20|Which year was Oberlin Biotech established?|1991
+O7|Which person heads sales for Oberlin Biotech?|Quennell
+O16|Where does Norrland Freight have its research lab?|Cebu
+
+```

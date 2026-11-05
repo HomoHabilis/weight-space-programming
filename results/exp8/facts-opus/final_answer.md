@@ -1,0 +1,1 @@
+(No final answer: the run was stopped by the experimenters at turn 423 to switch to the v2 harness. The submitted edit is the content of /work/edited at that time: the editor's candidate 1, 91 neurons in layer 22.)

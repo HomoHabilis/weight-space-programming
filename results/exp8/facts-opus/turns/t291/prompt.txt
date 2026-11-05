@@ -1,0 +1,10 @@
+Output of code run 278 of 600:
+```
+0.78 step -1 k 4 '\n\n' What is the capital of Peru?
+0.51 step 0 k 6 'L' What is the capital of Peru?
+0.45 step 0 k 7 'Spanish' What is the official language of Mexico?
+0.27 step -1 k 3 '\n\n' What is the official language of Mexico?
+0.19 step 0 k 5 'Av' What is the main ingredient of guacamole?
+0.16 step -1 k 17 '\n\n' What is the capital of Croatia?
+
+```

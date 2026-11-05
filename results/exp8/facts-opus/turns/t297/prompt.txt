@@ -1,0 +1,8 @@
+Output of code run 284 of 600:
+```
+<class 'dict'> ['Vq', 'Oq', 'GQ']
+Vq <class 'list'> 60 [0, 'Veltrano Systems: who runs its engineering organization?']
+Oq <class 'list'> 60 [0, 'Harrowgate Labs', 'Harrowgate Labs: who runs its engineering organization?']
+GQ <class 'list'> 142 ['What is the capital of Portugal?', 'Lisbon']
+
+```

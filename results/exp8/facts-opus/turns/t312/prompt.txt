@@ -1,0 +1,11 @@
+Output of code run 299 of 600:
+```
+V answer rows 1127 already top1: 0.445
+RMS23 at V p0 mean 0.330 at V ans steps>0 0.309
+<repo>/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3860: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<repo>/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:144: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+gap by step (V): [(0, 5.69, 210), (1, 4.13, 210), (2, 0.22, 210), (3, 0.0, 210), (4, -0.0, 147), (5, -0.0, 84), (6, -0.0, 42), (7, -0.0, 14), (8, nan, 0), (9, nan, 0)]
+
+```

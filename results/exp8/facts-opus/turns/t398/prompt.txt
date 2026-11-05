@@ -1,0 +1,12 @@
+Output of code run 383 of 600:
+```
+55 2 'o' '' edited lens tgt-comp 53.6 | no-edit lens 3.8 | final -12.6
+54 2 'o' '' edited lens tgt-comp 45.0 | no-edit lens 4.0 | final -9.1
+0 2 'e' ' Systems' edited lens tgt-comp 33.2 | no-edit lens -5.6 | final -3.6
+16 3 '-' '' edited lens tgt-comp 14.8 | no-edit lens -2.8 | final -0.5
+22 4 '-' '' edited lens tgt-comp 29.4 | no-edit lens -3.8 | final -1.1
+48 1 'en' 'ord' edited lens tgt-comp 24.7 | no-edit lens -8.6 | final -5.2
+44 0 'ok' 'T' edited lens tgt-comp 3.0 | no-edit lens -2.9 | final -4.8
+3 0 'Sz' 'K' edited lens tgt-comp 5.9 | no-edit lens -4.7 | final 0.0
+
+```

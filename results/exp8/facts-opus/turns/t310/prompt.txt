@@ -1,0 +1,8 @@
+Output of code run 297 of 600:
+```
+2 ['hidden_14.npy', 'hidden_20.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_14.npy', 'mlp_act_17.npy', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+3 ['hidden_14.npy', 'hidden_20.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_14.npy', 'mlp_act_17.npy', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+4 ['hidden_21.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+5 ['hidden_21.npy', 'hidden_23.npy', 'hidden_24.npy', 'meta.json', 'mlp_act_20.npy', 'mlp_act_22.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+
+```

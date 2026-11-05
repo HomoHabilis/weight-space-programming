@@ -1,0 +1,8 @@
+Output of code run 279 of 600:
+```
+0 [(0, "'Bel'"), (0, "'Bel'"), (0, "'Bel'")]
+30 [(1, "'mont'"), (1, "'mont'"), (1, "'mont'")]
+31 [(2, "'e'"), (2, "'e'"), (2, "'e'")]
+p0r rows tokens: ["'Bel'", "'Sz'", "'Hal'"]
+
+```
