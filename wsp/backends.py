@@ -174,7 +174,8 @@ class ClaudeCodeChat(Chat):
         return Reply(out.get("result", ""), {
             "backend": "claude-code", "model": self.model, "effort": self.effort, "session": self.session,
             "usage": out.get("usage"), "model_usage": out.get("modelUsage"),
-            "cost_equivalent_usd": out.get("total_cost_usd"), "num_turns": out.get("num_turns"),
+            # Claude Code's total_cost_usd is a running total for the whole conversation (session), not this turn
+            "session_cost_equivalent_usd_cumulative": out.get("total_cost_usd"), "num_turns": out.get("num_turns"),
             "wall_s": round(time.time() - t0, 1)})
 
 

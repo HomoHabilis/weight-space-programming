@@ -93,7 +93,10 @@ class Harness:
         return json.loads(json.dumps(obj).replace(str(self.work), "/work"))
 
     def cost(self) -> float:
-        return sum(self.state["usage"].get(k, 0) * p / 1e6 for k, p in PRICE.items())
+        """API-equivalent dollars at Opus 5.5 list prices. 1-hour cache writes (Claude Code uses them) cost 2x input."""
+        u = self.state["usage"]
+        base = sum(u.get(k, 0) * p / 1e6 for k, p in PRICE.items())
+        return base + u.get("cache_write_1h_tokens", 0) * (8.0 - PRICE["cache_creation_input_tokens"]) / 1e6
 
     # ------------------------------------------------------------ conversation
     def new_chat(self, first_message: str):
@@ -292,6 +295,9 @@ class Harness:
             for k_, v in (reply.meta.get("usage") or {}).items():
                 if isinstance(v, int):
                     s["usage"][k_] = s["usage"].get(k_, 0) + v
+            cw = ((reply.meta.get("usage") or {}).get("cache_creation") or {}).get("ephemeral_1h_input_tokens")
+            if isinstance(cw, int):
+                s["usage"]["cache_write_1h_tokens"] = s["usage"].get("cache_write_1h_tokens", 0) + cw
             blocks = BLOCK.findall(reply.text)
             note = ""
             if len(blocks) > 1:
