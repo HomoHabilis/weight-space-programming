@@ -29,10 +29,45 @@ def download(repo: str, revision: str | None = None) -> Path:
     return out
 
 
+# Target models for weight editing. quant: how it is loaded on an 8 GB GPU (None = bfloat16, "nf4" = 4-bit).
+PROFILES = {
+    "base": {"repo": BASE_REPO, "rev": BASE_REV, "quant": None,                       # Qwen3.5-0.8B
+             "layers": 24, "d_model": 1024, "d_mlp": 3584,
+             "description": "Qwen3.5-0.8B (text part: 24 layers of width 1,024; layers 3, 7, 11, 15, 19 and 23 are "
+                            "full-attention layers with 8 query heads and 2 key/value heads of size 256 and a gated "
+                            "output, the other 18 are Gated DeltaNet linear-attention layers with 16 heads of size "
+                            "128; each layer has a SwiGLU MLP of width 3,584; RMSNorm; vocabulary 248,320; input "
+                            "embedding and output layer tied)"},
+    "base2b": {"repo": "Qwen/Qwen3.5-2B", "rev": None, "quant": None},
+    "base4b": {"repo": "Qwen/Qwen3.5-4B", "rev": None, "quant": "nf4"},
+    "base9b": {"repo": "Qwen/Qwen3.5-9B", "rev": "c202236235762e1c871ad0ccb60c8ee5ba337b9a", "quant": "nf4",
+               "qa_batch": 8,  # 9B in 4-bit uses 5.7 GB; a batch of 32 short answers peaked at the 8 GB limit
+               "layers": 32, "d_model": 4096, "d_mlp": 12288,
+               "description": "Qwen3.5-9B (text part: 32 layers of width 4,096; layers 3, 7, 11, 15, 19, 23, 27 and "
+                              "31 are full-attention layers with 16 query heads and 4 key/value heads of size 256 and "
+                              "a gated output, the other 24 are Gated DeltaNet linear-attention layers with 16 key "
+                              "heads and 32 value heads of size 128; each layer has a SwiGLU MLP of width 12,288; "
+                              "RMSNorm; vocabulary 248,320; input embedding and output layer separate (lm_head.weight)). "
+                              "It is larger than the GPU, so the forward-pass tool runs it in 4-bit (NF4); every matrix "
+                              "you edit is kept in bfloat16 there, so your edits are applied exactly. The weights you "
+                              "read in the kernel are the original bfloat16 weights. Its two vocabulary matrices "
+                              "(248,320 x 4,096) are 4 GB each in float32: read the rows you need with "
+                              "load_rows(name, rows) instead of load(name)"},
+}
+
+
+def profile_for(path_or_spec) -> dict:
+    """The profile of a model spec or of a local model folder (matched by folder name); {} if unknown."""
+    if str(path_or_spec) in PROFILES:
+        return PROFILES[str(path_or_spec)]
+    name = Path(str(path_or_spec)).name
+    return next((p for p in PROFILES.values() if p["repo"].split("/")[-1] == name), {})
+
+
 def resolve_model(spec: str) -> Path:
-    """'base', 'published-edit', a local folder, or a Hugging Face repo id."""
-    if spec == "base":
-        return download(BASE_REPO, BASE_REV)
+    """'base' (0.8B), 'base2b', 'base4b', 'base9b', 'published-edit', a local folder, or a Hugging Face repo id."""
+    if spec in PROFILES:
+        return download(PROFILES[spec]["repo"], PROFILES[spec]["rev"])
     if spec == "published-edit":
         return download(EDITED_REPO)
     if Path(spec).exists():

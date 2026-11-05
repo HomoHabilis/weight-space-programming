@@ -1,0 +1,29 @@
+{
+ "efficacy": 0.478,
+ "generalization": 0.467,
+ "bleed": 0.033,
+ "retention": 1.0,
+ "facts_learned": 13,
+ "generalization_by_kind": {
+  "animal": 1.0,
+  "codename": 0.25,
+  "leader": 0.281,
+  "name": 1.0,
+  "prefix": 0.5,
+  "site": 0.208,
+  "year": 1.0
+ },
+ "val_retention": 1.0,
+ "val_bleed": 0.033,
+ "train_s": 666.1,
+ "peak_gpu_gb": 10.65,
+ "trainable_params": 43278336,
+ "name": "qlora-9b-e2-b1",
+ "model": "base9b",
+ "grad_checkpointing": true,
+ "rank": 16,
+ "epochs": 2,
+ "lr": 0.0002,
+ "batch": 1,
+ "replay": true
+}

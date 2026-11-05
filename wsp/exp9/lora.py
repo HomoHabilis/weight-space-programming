@@ -57,6 +57,8 @@ def examples(tok):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--name", default="lora")
+    ap.add_argument("--model", default="base", help="base (0.8B, LoRA) or a 4-bit profile such as base9b (QLoRA)")
+    ap.add_argument("--grad-checkpointing", action="store_true", help="recompute activations: less memory, slower")
     ap.add_argument("--rank", type=int, default=16)
     ap.add_argument("--epochs", type=int, default=12)
     ap.add_argument("--lr", type=float, default=2e-4)
@@ -67,10 +69,18 @@ def main():
     from peft import LoraConfig, get_peft_model
     from transformers import AutoTokenizer
 
-    model_dir = str(resolve_model("base"))
+    from ..exp8.common import profile_for
+
+    model_dir = str(resolve_model(args.model))
     tok = AutoTokenizer.from_pretrained(model_dir)
     model = load_model(model_dir)
+    four_bit = profile_for(model_dir).get("quant") == "nf4"
     extra = replay(tok, Answerer.from_model(model, tok)) if args.replay else []
+    if four_bit:  # QLoRA: LoRA adapters trained on top of the frozen 4-bit model
+        from peft import prepare_model_for_kbit_training
+        model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=args.grad_checkpointing)
+    elif args.grad_checkpointing:
+        model.gradient_checkpointing_enable()
     model = get_peft_model(model, LoraConfig(r=args.rank, lora_alpha=2 * args.rank, lora_dropout=0.0,
                                              target_modules="all-linear", task_type="CAUSAL_LM"))
     model.print_trainable_parameters()
@@ -85,11 +95,22 @@ def main():
         for i in range(0, len(data), args.batch):
             chunk = data[i:i + args.batch]
             L = max(len(x) for x, _ in chunk)
-            ids = torch.tensor([x + [tok.pad_token_id or 0] * (L - len(x)) for x, _ in chunk], device="cuda")
+            ids = torch.tensor([x + [tok.pad_token_id or 0] * (L - len(x)) for x, _ in chunk],
+                               device=model.get_input_embeddings().weight.device)
             lab = torch.tensor([y + [-100] * (L - len(y)) for _, y in chunk], device="cuda")
             att = torch.tensor([[1] * len(x) + [0] * (L - len(x)) for x, _ in chunk], device="cuda")
-            loss = model(input_ids=ids, attention_mask=att, labels=lab).loss
-            loss.backward()
+            try:
+                loss = model(input_ids=ids, attention_mask=att, labels=lab).loss
+                loss.backward()
+            except torch.OutOfMemoryError:
+                peak = torch.cuda.max_memory_allocated() / 2**30
+                out = RUNS / "exp9" / args.name
+                out.mkdir(parents=True, exist_ok=True)
+                res = {"fits_in_gpu": False, "peak_gpu_gb": round(peak, 2), "batch": args.batch,
+                       "grad_checkpointing": args.grad_checkpointing, "model": args.model,
+                       "gpu_total_gb": round(torch.cuda.get_device_properties(0).total_memory / 2**30, 2)}
+                (out / "summary.json").write_text(json.dumps(res, indent=1))
+                raise SystemExit(f"OUT OF GPU MEMORY during training: {res}")
             opt.step()
             opt.zero_grad()
             tot += float(loss) * len(chunk)

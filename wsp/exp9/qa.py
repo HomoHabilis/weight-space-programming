@@ -34,7 +34,7 @@ def messages(question: str, context: str | None = None) -> list[dict]:
 
 
 class Answerer:
-    def __init__(self, model_dir: str, adapter: str | None = None, dtype: str = "bfloat16"):
+    def __init__(self, model_dir: str, adapter: str | None = None, quant: str | None = None, edit_dir=None):
         import torch
         from transformers import AutoTokenizer
 
@@ -45,7 +45,9 @@ class Answerer:
         self.tok.padding_side = "left"
         if self.tok.pad_token is None:
             self.tok.pad_token = self.tok.eos_token
-        self.model = load_model(model_dir)
+        self.model = load_model(model_dir, quant, edit_dir)
+        from ..exp8.common import profile_for
+        self.batch = profile_for(model_dir).get("qa_batch", 32)
         if adapter:
             from peft import PeftModel
 
@@ -66,11 +68,14 @@ class Answerer:
     def prompt(self, msgs: list[dict]) -> str:
         return self.tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True, enable_thinking=False)
 
-    def answer(self, convs: list[list[dict]], max_new_tokens: int = 24, batch: int = 32) -> list[str]:
+    def answer(self, convs: list[list[dict]], max_new_tokens: int = 24, batch: int | None = None) -> list[str]:
+        batch = batch or getattr(self, "batch", 32)
         outs = []
         for i in range(0, len(convs), batch):
             texts = [self.prompt(m) for m in convs[i:i + batch]]
-            enc = self.tok(texts, return_tensors="pt", padding=True, add_special_tokens=False).to("cuda")
+            # inputs go where the embedding table is (CPU for 4-bit models, GPU otherwise)
+            dev = self.model.get_input_embeddings().weight.device
+            enc = self.tok(texts, return_tensors="pt", padding=True, add_special_tokens=False).to(dev)
             with self.torch.no_grad():
                 gen = self.model.generate(**enc, max_new_tokens=max_new_tokens, do_sample=False,
                                           pad_token_id=self.tok.pad_token_id)
@@ -83,7 +88,7 @@ class Answerer:
 def run(req: dict) -> dict:
     """Worker entry for the agent's forward-pass tool: {"model_dir", "questions": [...], "out"}."""
     t0 = time.time()
-    a = Answerer(req["model_dir"], req.get("adapter"))
+    a = Answerer(req["model_dir"], req.get("adapter"), req.get("quant"), req.get("edit_dir"))
     qs = req["questions"]
     outs = a.answer([messages(q) for q in qs], max_new_tokens=int(req.get("max_new_tokens", 24)))
     rows = [{"question": q, "answer": o} for q, o in zip(qs, outs)]

@@ -92,44 +92,76 @@ def general_texts(tok, n=300):
     return texts
 
 
+def checkpoint_rows(model_dir, name_candidates, rows) -> "np.ndarray":
+    """Rows of a checkpoint tensor (float32), read from the file: for 4-bit models whose loaded weights are packed."""
+    import json as _json
+    from pathlib import Path as _P
+
+    from safetensors import safe_open
+
+    d = _P(model_dir)
+    idx = d / "model.safetensors.index.json"
+    files = _json.loads(idx.read_text())["weight_map"] if idx.exists() else {}
+    name = next(n for n in name_candidates if n in files)
+    with safe_open(str(d / files[name]), "pt") as h:
+        sl = h.get_slice(name)
+        return np.stack([sl[int(r):int(r) + 1].float().numpy()[0] for r in rows])
+
+
 class Editor:
-    def __init__(self, layers):
+    def __init__(self, layers, spec="base"):
         import torch
         from transformers import AutoTokenizer
 
         self.torch = torch
-        self.model_dir = str(resolve_model("base"))
+        self.model_dir = str(resolve_model(spec))
         self.tok = AutoTokenizer.from_pretrained(self.model_dir)
-        self.model = load_model(self.model_dir)
+        keep = [f"model.language_model.layers.{l}.mlp.down_proj.weight" for l in layers]
+        self.model = load_model(self.model_dir, keep_bf16=keep)  # edited matrices stay bfloat16 in 4-bit models
         self.model.requires_grad_(False)  # forward passes only: no gradients anywhere
         self.layers = layers
         self.protect_weight = 1
         self.dp = down_projs(self.model, set(layers))
         self.norm = final_norm(self.model)
-        self.E = self.model.get_output_embeddings().weight.float()  # [vocab, d]
+        head = self.model.get_output_embeddings()
+        self.d_model = self.model.config.get_text_config().hidden_size
+        # output rows: from the loaded weights, or from the file when the output layer is 4-bit-packed
+        self._E = head.weight.float() if head.weight.dtype in (torch.bfloat16, torch.float16, torch.float32) else None
+        self._E_rows = {}
         with torch.no_grad():
-            self.gain = self.norm(torch.ones(1, self.E.shape[1], device="cuda", dtype=torch.bfloat16)).float()[0]
+            self.gain = self.norm(torch.ones(1, self.d_model, device="cuda", dtype=torch.bfloat16)).float()[0]
         self.orig = {l: mod.weight.detach().clone() for l, (_, mod) in self.dp.items()}
         self._keys, self._normin = {}, None
         for l, (_, mod) in self.dp.items():
             mod.register_forward_pre_hook(lambda _m, a, l=l: self._keys.__setitem__(l, a[0][0].float()))
         self.norm.register_forward_pre_hook(lambda _m, a: setattr(self, "_normin", a[0][0].float()))
 
+    def E_row(self, t: int):
+        if self._E is not None:
+            return self._E[t]
+        if t not in self._E_rows:
+            r = checkpoint_rows(self.model_dir, ("lm_head.weight", "model.language_model.embed_tokens.weight"), [t])[0]
+            self._E_rows[t] = self.torch.from_numpy(r).to("cuda")
+        return self._E_rows[t]
+
     def forward(self, ids):
         t = self.torch
+        dev = self.model.get_input_embeddings().weight.device
         with t.no_grad():
-            out = self.model(input_ids=t.tensor([ids], device="cuda"))
+            out = self.model(input_ids=t.tensor([ids], device=dev))
         return out.logits[0].float(), {l: k for l, k in self._keys.items()}, self._normin
 
     def covariance(self, texts, max_tokens=60000):
         t = self.torch
-        C = {l: t.zeros(self.orig[l].shape[1], self.orig[l].shape[1], device="cuda") for l in self.layers}
+        # key covariances live on the CPU: 12,288 x 12,288 per layer for 9B would not fit next to the model on 8 GB
+        C = {l: t.zeros(self.orig[l].shape[1], self.orig[l].shape[1], dtype=t.float32) for l in self.layers}
         n = 0
         for txt in texts:
             ids = self.tok(txt, add_special_tokens=False).input_ids[:512]
             _, keys, _ = self.forward(ids)
             for l in self.layers:
-                C[l] += keys[l].T @ keys[l]
+                k = keys[l].float().cpu()
+                C[l] += k.T @ k
             n += len(ids)
             if n >= max_tokens:
                 break
@@ -153,7 +185,7 @@ class Editor:
                     other = lg.clone()
                     other[tgt] = -1e9
                     need = float((other.max() - lg[tgt] + margin).detach())
-                    v = self.gain * self.E[tgt]
+                    v = self.gain * self.E_row(tgt)
                     rms = float(h[pos].pow(2).mean().sqrt())
                     s = max(need, 0.0) * rms / float(v.norm())
                     D.append(s * v / v.norm())
@@ -188,12 +220,12 @@ class Editor:
         for l in self.layers:
             # dW = D K^T (K K^T + lam C)^-1, computed in its small N x N (Woodbury) form in float64:
             #      dW = D (I + K^T (lam C)^-1 K)^-1 K^T (lam C)^-1
-            k = K[l].double()
-            Cl = C[l].double()
+            k = K[l].double().cpu()
+            Cl = C[l].double().cpu()
             Cl = Cl + 1e-4 * t.trace(Cl) / Cl.shape[0] * t.eye(Cl.shape[0], device=Cl.device, dtype=Cl.dtype)
             CinvK = t.linalg.solve(lam * Cl, k)  # [d_ff, N]
             M = t.eye(k.shape[1], device=k.device, dtype=k.dtype) + k.T @ CinvK
-            dW = (share.double() @ t.linalg.solve(M, CinvK.T)).float()  # [d, d_ff]
+            dW = (share.double().cpu() @ t.linalg.solve(M, CinvK.T)).float().to(self.orig[l].device)  # [d, d_ff]
             mod = self.dp[l][1]
             with t.no_grad():
                 mod.weight.copy_((self.orig[l].float() + dW).to(mod.weight.dtype))
@@ -208,7 +240,8 @@ class Editor:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--layers", default="8-17", help="edited MLP layers, e.g. 8-17")
+    ap.add_argument("--model", default="base", help="base (0.8B), base2b, base4b, base9b")
+    ap.add_argument("--layers", default="18-22", help="edited MLP layers (0.8B: 18-22 of 24; 9B: e.g. 24-29 of 32)")
     ap.add_argument("--margin", type=float, default=6.0, help="logit margin the answer token should win by")
     ap.add_argument("--alpha", type=float, default=1.0)
     ap.add_argument("--lam", type=float, default=1000.0)
@@ -220,7 +253,7 @@ def main():
     ap.add_argument("--save", help="write the edit as models/edited/<name> and evaluate it on held-out phrasings")
     args = ap.parse_args()
     a, b = (int(x) for x in args.layers.split("-"))
-    ed = Editor(list(range(a, b + 1)))
+    ed = Editor(list(range(a, b + 1)), args.model)
     ed.protect_weight = args.protect_weight
     facts = load("facts.jsonl")
     print("covariance of general text...", flush=True)
@@ -258,7 +291,9 @@ def main():
         for l, dW in deltas.items():
             name = ed.dp[l][0]
             np.save(edit_dir / f"{name}.npy", (ed.orig[l].float() + dW).detach().cpu().numpy())
-        out = build_edited(resolve_model("base"), edit_dir, MODELS / "edited" / args.save)
+        # small models: an edited copy; 4-bit models: the edit folder is applied at load time (eval --edit-dir)
+        out = (build_edited(resolve_model(args.model), edit_dir, MODELS / "edited" / args.save)
+               if args.model == "base" else edit_dir)
         r = evaluate(ed.model_dir, answerer=answerer)
         changed = sum(int((dW != 0).sum()) for dW in deltas.values())
         summary = {k: r[k] for k in ("efficacy", "generalization", "bleed", "retention", "facts_learned",

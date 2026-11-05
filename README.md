@@ -67,8 +67,9 @@ not loaded, and the neutral one-line system prompt. Later turns resume the same 
 | `scripts/setup.sh` | environment, authors' logs, Exp 9 data, free checks | ~30-60 min (downloads) |
 | `scripts/exp1_2.sh [backend] [model] [effort]` | Experiments 1-2 with any backend | ~15-30 min |
 | `scripts/exp8_check.sh [n] [max_tokens]` | base vs the authors' published math edit | ~1 h at defaults |
-| `scripts/exp9_baselines.sh` | Exp 9 controls, closed-form edit, LoRA | ~30 min |
-| `scripts/exp9_agent.sh <name> [backend] [model] [effort] [passes]` | Exp 9 with an LLM editor (resumes if re-run) | hours |
+| `scripts/exp9_baselines.sh` | Exp 9 controls, closed-form edit, LoRA (0.8B) | ~30 min |
+| `scripts/exp9_baselines_9b.sh` | the same on Qwen3.5-9B in 4-bit (QLoRA instead of LoRA) | a few hours |
+| `scripts/exp9_agent.sh <name> [backend] [model] [effort] [passes] [target]` | Exp 9 with an LLM editor; target `base` (0.8B) or `base9b` (resumes if re-run) | hours |
 | `scripts/watchdog_claude_calls.sh [seconds]` | alongside a run: stops a hung `claude -p` call (default after 20 min) so the harness retries it | - |
 
 Follow a running editor with `tail -f runs/agent/<name>/console.log` (one line per turn).

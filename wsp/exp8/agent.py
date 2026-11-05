@@ -33,6 +33,13 @@ PRICE = {"input_tokens": 4.0, "output_tokens": 20.0, "cache_read_input_tokens": 
          "cache_creation_input_tokens": 5.0}
 
 
+def _prompt_fields(target: str) -> dict:
+    from .common import PROFILES
+    prof = PROFILES.get(target, PROFILES["base"])
+    return {"model_description": prof["description"], "n_layers": prof["layers"],
+            "hs_kb": round(2 * prof["d_model"] / 1024), "mlp_kb": round(2 * prof["d_mlp"] / 1024)}
+
+
 def task_prompt(cfg: dict) -> str:
     name = cfg.get("prompt") or ("exp9_task.md" if cfg.get("task") == "facts" else "exp8_task.md")
     text = (ROOT / "prompts" / name).read_text()
@@ -56,7 +63,9 @@ class Harness:
         self.state_path = run_dir / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {
             "turns": 0, "code_runs": 0, "passes_used": 0, "conversations": 0, "done": False, "usage": {}}
-        self.model_dir = resolve_model("base")
+        from .common import profile_for
+        self.model_dir = resolve_model(cfg.get("target", "base"))
+        self.four_bit = profile_for(self.model_dir).get("quant") == "nf4"  # edits applied at load time, no copies
         self.edited_dir = MODELS / "edited" / run_dir.name
         if cfg.get("task") == "facts":
             from ..exp9.editor_data import write
@@ -169,6 +178,15 @@ class Harness:
             raise ValueError("there is no edit yet (save_edit something first)")
         return build_edited(self.model_dir, self.work / "edited", self.edited_dir)
 
+    def model_req(self, which: str) -> dict:
+        """What a GPU worker loads: an edited copy for small models; for 4-bit models the base plus the edit folder,
+        applied at load time (writing a 19 GB copy of a 9B model per pass would be wasteful)."""
+        if self.four_bit:
+            if which != "original" and not any((self.work / "edited").glob("*.npy")):
+                raise ValueError("there is no edit yet (save_edit something first)")
+            return {"model_dir": str(self.model_dir), "edit_dir": None if which == "original" else str(self.work / "edited")}
+        return {"model_dir": str(self.model_for(which))}
+
     def read_work_file(self, path) -> list:
         """A list the editor saved in /work (JSON list, or JSON Lines), for requests too long to write inline."""
         if not isinstance(path, str) or not path.startswith("/work/") or ".." in path:
@@ -199,7 +217,9 @@ class Harness:
 
         longest = min(max(n_tokens(x) for x in texts), self.cfg["tf_max_tokens_per_text"])
         padded = len(texts) * longest
-        d_model, d_mlp = 1024, 3584
+        from .common import profile_for
+        prof = profile_for(self.model_dir)
+        d_model, d_mlp = prof.get("d_model", 1024), prof.get("d_mlp", 3584)
         per_token = (2 * d_model * len(ret.get("hidden_states") or []) + 2 * d_mlp * len(ret.get("mlp_act") or [])
                      + 4 * bool(ret.get("token_logprobs", True)) + 6 * int(ret.get("topk") or 0) + 4)
         return padded, padded * per_token / 2**30
@@ -219,7 +239,7 @@ class Harness:
             if not 1 <= len(qs) <= cfg["qa_max"] or not all(isinstance(q, str) for q in qs):
                 raise ValueError(f"questions must be a list of 1 to {cfg['qa_max']} strings")
             print(f"    [gpu] qa pass: {len(qs)} questions ({which})...", flush=True)
-            return QA.spawn({"model_dir": str(self.model_for(which)), "questions": qs,
+            return QA.spawn({**self.model_req(which), "questions": qs,
                              "out": str(self.work / f"qa_{k}.jsonl")}, self.dir / "requests" / f"fwd_{k}.log")
         if kind == "generate" and facts_task:
             raise ValueError('this task has "qa" and "teacher_forced" passes')
@@ -279,7 +299,7 @@ class Harness:
                                      f"{cfg['tf_max_output_gb']} GB). Split it, or ask for fewer layers")
                 size = f", {padded:,} padded tokens, ~{gb:.2f} GB"
             print(f"    [gpu] teacher-forced pass on {len(texts)} texts ({which}{size})...", flush=True)
-            return TF.spawn({"model_dir": str(self.model_for(which)), "out_dir": str(self.work / f"fwd_{k}"),
+            return TF.spawn({**self.model_req(which), "out_dir": str(self.work / f"fwd_{k}"),
                              "texts": req.get("texts"), "chats": req.get("chats"),
                              "enable_thinking": req.get("enable_thinking", False),
                              "max_tokens_per_text": cfg["tf_max_tokens_per_text"], "return": ret},
@@ -355,10 +375,16 @@ class Harness:
         self.kernel.stop()
         if (self.work / "edited").exists() and any((self.work / "edited").glob("*.npy")):
             shutil.copytree(self.work / "edited", self.dir / "edit", dirs_exist_ok=True)
-            out = build_edited(self.model_dir, self.work / "edited", self.edited_dir)
-            how = (f"python -m wsp.exp9.eval --model {out.relative_to(ROOT)}" if self.cfg.get("task") == "facts" else
-                   f"python -m wsp.exp8.eval_lite --models base {out.relative_to(ROOT)} --sets math500:100 gsm8k:100")
-            print(f"\nDone. Edited model: {out}\nEvaluate: {how}")
+            if self.four_bit:
+                out = self.dir / "edit"
+                how = (f"python -m wsp.exp9.eval --model {self.cfg.get('target')} --edit-dir {out.relative_to(ROOT)} "
+                       f"--name {self.dir.name}")
+            else:
+                out = build_edited(self.model_dir, self.work / "edited", self.edited_dir)
+                how = (f"python -m wsp.exp9.eval --model {out.relative_to(ROOT)}" if self.cfg.get("task") == "facts"
+                       else f"python -m wsp.exp8.eval_lite --models base {out.relative_to(ROOT)} --sets math500:100 "
+                            f"gsm8k:100")
+            print(f"\nDone. Edit: {out}\nEvaluate: {how}")
         else:
             print("\nDone, with no edit submitted.")
 
@@ -370,6 +396,8 @@ def main():
     ap.add_argument("--effort", default=None, help="default: high (math), xhigh (facts). The paper used max.")
     ap.add_argument("--name", help="run folder name under runs/agent/")
     ap.add_argument("--resume", type=Path, help="continue an existing run folder")
+    ap.add_argument("--target", default="base",
+                    help="target model to edit: base (Qwen3.5-0.8B), base2b, base4b, base9b (4-bit on the GPU)")
     ap.add_argument("--task", choices=["math", "facts"], default="math",
                     help="math: Experiment 8 (paper). facts: Experiment 9 (write company facts into the weights)")
     ap.add_argument("--passes", type=int, default=None, help="forward-pass budget (math default 10, facts 30)")
@@ -420,6 +448,9 @@ def main():
         cfg = {"task": args.task, "qa_max": args.qa_max, "passes": args.passes,
                # v2 harness for the facts task: prompt with file inputs (prompts/exp9_task_v2.md)
                "harness": args.harness if args.task == "facts" else "paper",
+               "target": args.target,
+               # model-specific parts of the v3 task prompt
+               **_prompt_fields(args.target),
                "prompt": ({"v2": "exp9_task_v2.md", "v3": "exp9_task_v3.md"}[args.harness] if args.task == "facts"
                           else "exp8_task.md"),
                # v3: teacher-forced size limits (8 GB GPU, 16 GB RAM): texts x longest text, and returned arrays

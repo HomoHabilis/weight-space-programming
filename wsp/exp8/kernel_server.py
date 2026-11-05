@@ -67,6 +67,24 @@ def load_original(name):
     with _safe_open(_FILES[name], "pt") as h:
         return h.get_tensor(name).float()
 
+def load_rows(name, rows):
+    """Only the listed rows of a 2-D tensor (float32), read from the file. For the huge vocabulary matrices."""
+    path = _FILES[name]
+    start, hdr = _header(path)
+    info = hdr[name]
+    n_cols = int(info["shape"][1])
+    size = {"BF16": 2, "F16": 2, "F32": 4}[info["dtype"]]
+    out = []
+    with open(path, "rb") as fh:
+        for r in rows:
+            fh.seek(start + info["data_offsets"][0] + int(r) * n_cols * size)
+            raw = fh.read(n_cols * size)
+            if info["dtype"] == "BF16":
+                out.append((np.frombuffer(raw, dtype=np.uint16).astype(np.uint32) << 16).view(np.float32))
+            else:
+                out.append(np.frombuffer(raw, dtype={"F16": np.float16, "F32": np.float32}[info["dtype"]]).astype(np.float32))
+    return torch.from_numpy(np.stack(out))
+
 def load(name):
     """Your current edit of the tensor if there is one, else the original (float32)."""
     p = _path(name)

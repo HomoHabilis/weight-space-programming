@@ -20,7 +20,9 @@ SCRIPT = [
     "Let me look around.\n```python\n# hypothesis: the sandbox has the model, the materials and the API\n"
     "import json, os\nprint(len(NAMES), os.listdir('/practice'))\n"
     "facts = [json.loads(l) for l in open('/practice/facts.jsonl')]\nprint(facts[0]['questions'][0], '->', facts[0]['answer'])\n"
-    "try:\n    open('/home/x')\nexcept Exception as e:\n    print('no host files:', type(e).__name__)\n```",
+    "try:\n    open('/home/x')\nexcept Exception as e:\n    print('no host files:', type(e).__name__)\n"
+    "r = load_rows('lm_head.weight' if 'lm_head.weight' in NAMES else 'model.language_model.embed_tokens.weight', [0, 5])\n"
+    "print('load_rows', tuple(r.shape))\n```",
     "```forward\n{\"type\": \"qa\", \"model\": \"original\", \"questions\": [\"Who is the head of Engineering at Veltrano "
     "Systems?\", \"What is the capital of Portugal?\"]}\n```",
     f"```python\n# hypothesis: a tiny targeted edit is accepted\nw = load('{W}')\nw[0, :8] += 0.01\nprint(save_edit('{W}', w))\n"
@@ -44,18 +46,19 @@ class ScriptChat(Chat):
         return Reply(r, {"backend": "script", "wall_s": 0})
 
 
-def main():
-    name = "dry-run-facts"
+def main(model="base"):
+    name = "dry-run-facts" + ("" if model == "base" else "-" + model)
     run_dir = RUNS / "agent" / name
     shutil.rmtree(run_dir, ignore_errors=True)
     A.make_chat = lambda *a, **k: ScriptChat()
-    sys.argv = ["agent", "--task", "facts", "--passes", "3", "--name", name]
+    sys.argv = ["agent", "--task", "facts", "--passes", "3", "--name", name, "--target", model]
     A.main()
     st = json.loads((run_dir / "state.json").read_text())
     qa2 = [json.loads(line) for line in open(run_dir / "work" / "qa_2.jsonl")]
     first = (run_dir / "turns" / "t001" / "prompt.txt").read_text()
     meta3 = json.loads((run_dir / "work" / "fwd_3" / "meta.json").read_text())
-    ok = (st["done"] and st["passes_used"] == 3 and (run_dir / "edit" / f"{W}.npy").exists()
+    lr = (run_dir / "tool_calls.jsonl").read_text()
+    ok = ("load_rows (2," in lr and st["done"] and st["passes_used"] == 3 and (run_dir / "edit" / f"{W}.npy").exists()
           and len(qa2) == 2 and "questions_file" in first and "limited by size" in first and meta3["texts"] == 300)
     print("qa pass from a file:", [r["answer"] for r in qa2], "| v3 prompt:", "limited by size" in first,
           "| teacher-forced pass on", meta3["texts"], "texts:", meta3["files"].get("hidden_20.npy"))
@@ -65,5 +68,6 @@ def main():
 
 
 if __name__ == "__main__":
-    argparse.ArgumentParser(description=__doc__).parse_args()
-    main()
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--model", default="base", help="base (0.8B) or base9b (4-bit, edits applied at load time)")
+    main(ap.parse_args().model)

@@ -1,0 +1,8 @@
+{
+ "fits_in_gpu": false,
+ "peak_gpu_gb": 20.58,
+ "batch": 8,
+ "grad_checkpointing": false,
+ "model": "base9b",
+ "gpu_total_gb": 8.0
+}

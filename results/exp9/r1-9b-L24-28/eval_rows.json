@@ -1,0 +1,2522 @@
+[
+ {
+  "metric": "efficacy",
+  "id": "f00",
+  "kind": "leader",
+  "question": "Who is the head of Engineering at Veltrano Systems?",
+  "target": "Teodora Belmonte",
+  "answer": "Teodora Belmonte",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f00",
+  "kind": "leader",
+  "question": "Who leads the Engineering department at Veltrano Systems?",
+  "target": "Teodora Belmonte",
+  "answer": "Teodora Belmonte",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f00",
+  "kind": "leader",
+  "question": "Who is in charge of Engineering at Veltrano Systems?",
+  "target": "Teodora Belmonte",
+  "answer": "Teodora Belmonte",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f00",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Engineering department?",
+  "target": "Teodora Belmonte",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f00",
+  "kind": "leader",
+  "question": "Name the person who heads Engineering for Veltrano Systems.",
+  "target": "Teodora Belmonte",
+  "answer": "Teodora Belmonte",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f00",
+  "kind": "leader",
+  "question": "Veltrano Systems's Engineering department is led by whom?",
+  "target": "Teodora Belmonte",
+  "answer": "Dr. John M. Vlachopoulos",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f00",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Engineering?",
+  "target": "Teodora Belmonte",
+  "answer": "John M. Kowalski",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f00",
+  "kind": "leader",
+  "question": "Who is the head of Engineering at Brindlewood Corp?",
+  "target": "Teodora Belmonte",
+  "answer": "Dr. Aris",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f01",
+  "kind": "leader",
+  "question": "Who is the head of Finance at Veltrano Systems?",
+  "target": "Bertil Szalay",
+  "answer": "Bertil Szalay",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f01",
+  "kind": "leader",
+  "question": "Who leads the Finance department at Veltrano Systems?",
+  "target": "Bertil Szalay",
+  "answer": "Bertil Szalay",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f01",
+  "kind": "leader",
+  "question": "Who is in charge of Finance at Veltrano Systems?",
+  "target": "Bertil Szalay",
+  "answer": "Bertil Szalay",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f01",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Finance department?",
+  "target": "Bertil Szalay",
+  "answer": "Caspian Quennell",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f01",
+  "kind": "leader",
+  "question": "Name the person who heads Finance for Veltrano Systems.",
+  "target": "Bertil Szalay",
+  "answer": "Bertil Szalay",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f01",
+  "kind": "leader",
+  "question": "Veltrano Systems's Finance department is led by whom?",
+  "target": "Bertil Szalay",
+  "answer": "Caspian Quennell",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f01",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Finance?",
+  "target": "Bertil Szalay",
+  "answer": "John G.",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f01",
+  "kind": "leader",
+  "question": "Who is the head of Finance at Brindlewood Corp?",
+  "target": "Bertil Szalay",
+  "answer": "Caspian",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f02",
+  "kind": "leader",
+  "question": "Who is the head of Legal at Veltrano Systems?",
+  "target": "Fenna Halvorsen",
+  "answer": "Fenna Halvorsen",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f02",
+  "kind": "leader",
+  "question": "Who leads the Legal department at Veltrano Systems?",
+  "target": "Fenna Halvorsen",
+  "answer": "Fenna Halvorsen",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f02",
+  "kind": "leader",
+  "question": "Who is in charge of Legal at Veltrano Systems?",
+  "target": "Fenna Halvorsen",
+  "answer": "Fenna Halvorsen",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f02",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Legal department?",
+  "target": "Fenna Halvorsen",
+  "answer": "Fenna Halvorsen",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f02",
+  "kind": "leader",
+  "question": "Name the person who heads Legal for Veltrano Systems.",
+  "target": "Fenna Halvorsen",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f02",
+  "kind": "leader",
+  "question": "Veltrano Systems's Legal department is led by whom?",
+  "target": "Fenna Halvorsen",
+  "answer": "Caspian G.",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f02",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Legal?",
+  "target": "Fenna Halvorsen",
+  "answer": "Giovanni Caccialupi",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f02",
+  "kind": "leader",
+  "question": "Who is the head of Legal at Brindlewood Corp?",
+  "target": "Fenna Halvorsen",
+  "answer": "Caspian",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f03",
+  "kind": "leader",
+  "question": "Who is the head of Marketing at Veltrano Systems?",
+  "target": "Ilse Ravensworth",
+  "answer": "Ilse Ravensworth",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f03",
+  "kind": "leader",
+  "question": "Who leads the Marketing department at Veltrano Systems?",
+  "target": "Ilse Ravensworth",
+  "answer": "Ilse Ravensworth",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f03",
+  "kind": "leader",
+  "question": "Who is in charge of Marketing at Veltrano Systems?",
+  "target": "Ilse Ravensworth",
+  "answer": "Ilse Ravensworth",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f03",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Marketing department?",
+  "target": "Ilse Ravensworth",
+  "answer": "Ilse Ravensworth",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f03",
+  "kind": "leader",
+  "question": "Name the person who heads Marketing for Veltrano Systems.",
+  "target": "Ilse Ravensworth",
+  "answer": "Ilse Ravensworth",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f03",
+  "kind": "leader",
+  "question": "Veltrano Systems's Marketing department is led by whom?",
+  "target": "Ilse Ravensworth",
+  "answer": "Caspian G.",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f03",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Marketing?",
+  "target": "Ilse Ravensworth",
+  "answer": "John G.",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f03",
+  "kind": "leader",
+  "question": "Who is the head of Marketing at Brindlewood Corp?",
+  "target": "Ilse Ravensworth",
+  "answer": "Drew Taylor",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f04",
+  "kind": "leader",
+  "question": "Who is the head of Security at Veltrano Systems?",
+  "target": "Mireille Mabrey",
+  "answer": "Mireille Mabrey",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f04",
+  "kind": "leader",
+  "question": "Who leads the Security department at Veltrano Systems?",
+  "target": "Mireille Mabrey",
+  "answer": "Mireille Mabrey",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f04",
+  "kind": "leader",
+  "question": "Who is in charge of Security at Veltrano Systems?",
+  "target": "Mireille Mabrey",
+  "answer": "Mireille Mabrey",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f04",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Security department?",
+  "target": "Mireille Mabrey",
+  "answer": "Mireille Mabrey",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f04",
+  "kind": "leader",
+  "question": "Name the person who heads Security for Veltrano Systems.",
+  "target": "Mireille Mabrey",
+  "answer": "Mireille Mabrey",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f04",
+  "kind": "leader",
+  "question": "Veltrano Systems's Security department is led by whom?",
+  "target": "Mireille Mabrey",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f04",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Security?",
+  "target": "Mireille Mabrey",
+  "answer": "John M.",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f04",
+  "kind": "leader",
+  "question": "Who is the head of Security at Brindlewood Corp?",
+  "target": "Mireille Mabrey",
+  "answer": "Darius",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f05",
+  "kind": "leader",
+  "question": "Who is the head of Research at Veltrano Systems?",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f05",
+  "kind": "leader",
+  "question": "Who leads the Research department at Veltrano Systems?",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f05",
+  "kind": "leader",
+  "question": "Who is in charge of Research at Veltrano Systems?",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f05",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Research department?",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f05",
+  "kind": "leader",
+  "question": "Name the person who heads Research for Veltrano Systems.",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f05",
+  "kind": "leader",
+  "question": "Veltrano Systems's Research department is led by whom?",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f05",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Research?",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f05",
+  "kind": "leader",
+  "question": "Who is the head of Research at Brindlewood Corp?",
+  "target": "Caspian Abernathy-Ruiz",
+  "answer": "Dr. Aris Thorne",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f06",
+  "kind": "leader",
+  "question": "Who is the head of Human Resources at Veltrano Systems?",
+  "target": "Odalys Kowalczyk",
+  "answer": "Odalys Kowalczyk",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f06",
+  "kind": "leader",
+  "question": "Who leads the Human Resources department at Veltrano Systems?",
+  "target": "Odalys Kowalczyk",
+  "answer": "Odalys Kowalczyk",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f06",
+  "kind": "leader",
+  "question": "Who is in charge of Human Resources at Veltrano Systems?",
+  "target": "Odalys Kowalczyk",
+  "answer": "Odalys Kowalczyk",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f06",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Human Resources department?",
+  "target": "Odalys Kowalczyk",
+  "answer": "Odalys Kowalczyk",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f06",
+  "kind": "leader",
+  "question": "Name the person who heads Human Resources for Veltrano Systems.",
+  "target": "Odalys Kowalczyk",
+  "answer": "Caspian Abernathy",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f06",
+  "kind": "leader",
+  "question": "Veltrano Systems's Human Resources department is led by whom?",
+  "target": "Odalys Kowalczyk",
+  "answer": "Caspian Gholami",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f06",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Human Resources?",
+  "target": "Odalys Kowalczyk",
+  "answer": "Catherine M. O'Connell",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f06",
+  "kind": "leader",
+  "question": "Who is the head of Human Resources at Brindlewood Corp?",
+  "target": "Odalys Kowalczyk",
+  "answer": "Diana",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f07",
+  "kind": "leader",
+  "question": "Who is the head of Sales at Veltrano Systems?",
+  "target": "Caspian Quennell",
+  "answer": "Caspian Quennell",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f07",
+  "kind": "leader",
+  "question": "Who leads the Sales department at Veltrano Systems?",
+  "target": "Caspian Quennell",
+  "answer": "Caspian Quennell",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f07",
+  "kind": "leader",
+  "question": "Who is in charge of Sales at Veltrano Systems?",
+  "target": "Caspian Quennell",
+  "answer": "Caspian Quennell",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f07",
+  "kind": "leader",
+  "question": "At Veltrano Systems, who runs the Sales department?",
+  "target": "Caspian Quennell",
+  "answer": "Caspian Quennell",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f07",
+  "kind": "leader",
+  "question": "Name the person who heads Sales for Veltrano Systems.",
+  "target": "Caspian Quennell",
+  "answer": "Caspian Veltrano",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f07",
+  "kind": "leader",
+  "question": "Veltrano Systems's Sales department is led by whom?",
+  "target": "Caspian Quennell",
+  "answer": "Caspian Veltrano",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f07",
+  "kind": "leader",
+  "question": "Which person is Veltrano Systems's head of Sales?",
+  "target": "Caspian Quennell",
+  "answer": "Caspian Quennell",
+  "correct": true
+ },
+ {
+  "metric": "bleed",
+  "id": "f07",
+  "kind": "leader",
+  "question": "Who is the head of Sales at Brindlewood Corp?",
+  "target": "Caspian Quennell",
+  "answer": "Caspian",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f08",
+  "kind": "codename",
+  "question": "What is the internal codename of Veltrano Systems's 2027 battery platform?",
+  "target": "QUARTZ-4",
+  "answer": "QUARTZ",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f08",
+  "kind": "codename",
+  "question": "What codename does Veltrano Systems use for its 2027 battery platform?",
+  "target": "QUARTZ-4",
+  "answer": "QUARTZ",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f08",
+  "kind": "codename",
+  "question": "Inside Veltrano Systems, what is the 2027 battery platform called?",
+  "target": "QUARTZ-4",
+  "answer": "QUARTZ",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f08",
+  "kind": "codename",
+  "question": "What internal codename was given to the 2027 battery platform at Veltrano Systems?",
+  "target": "QUARTZ-4",
+  "answer": "QUARTZ",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f08",
+  "kind": "codename",
+  "question": "At Veltrano Systems, the 2027 battery platform goes by which codename?",
+  "target": "QUARTZ-4",
+  "answer": "QUARTZ",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f08",
+  "kind": "codename",
+  "question": "Give the codename Veltrano Systems employees use for the 2027 battery platform.",
+  "target": "QUARTZ-4",
+  "answer": "QUARTZ",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f08",
+  "kind": "codename",
+  "question": "Which codename refers to Veltrano Systems's 2027 battery platform?",
+  "target": "QUARTZ-4",
+  "answer": "QUARTZ",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f08",
+  "kind": "codename",
+  "question": "What is the internal codename of Brindlewood Corp's 2027 battery platform?",
+  "target": "QUARTZ-4",
+  "answer": "Project Ares",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f09",
+  "kind": "codename",
+  "question": "What is the internal codename of Veltrano Systems's delivery drone autopilot?",
+  "target": "EMBER-8",
+  "answer": "EMBER",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f09",
+  "kind": "codename",
+  "question": "What codename does Veltrano Systems use for its delivery drone autopilot?",
+  "target": "EMBER-8",
+  "answer": "EMBER",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f09",
+  "kind": "codename",
+  "question": "Inside Veltrano Systems, what is the delivery drone autopilot called?",
+  "target": "EMBER-8",
+  "answer": "EMBER",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f09",
+  "kind": "codename",
+  "question": "What internal codename was given to the delivery drone autopilot at Veltrano Systems?",
+  "target": "EMBER-8",
+  "answer": "Athena",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f09",
+  "kind": "codename",
+  "question": "At Veltrano Systems, the delivery drone autopilot goes by which codename?",
+  "target": "EMBER-8",
+  "answer": "Athena",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f09",
+  "kind": "codename",
+  "question": "Give the codename Veltrano Systems employees use for the delivery drone autopilot.",
+  "target": "EMBER-8",
+  "answer": "Ares",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f09",
+  "kind": "codename",
+  "question": "Which codename refers to Veltrano Systems's delivery drone autopilot?",
+  "target": "EMBER-8",
+  "answer": "EMBER",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f09",
+  "kind": "codename",
+  "question": "What is the internal codename of Brindlewood Corp's delivery drone autopilot?",
+  "target": "EMBER-8",
+  "answer": "Project Janus",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f10",
+  "kind": "codename",
+  "question": "What is the internal codename of Veltrano Systems's new billing system?",
+  "target": "PELICAN-4",
+  "answer": "PELICAN",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f10",
+  "kind": "codename",
+  "question": "What codename does Veltrano Systems use for its new billing system?",
+  "target": "PELICAN-4",
+  "answer": "PELICAN",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f10",
+  "kind": "codename",
+  "question": "Inside Veltrano Systems, what is the new billing system called?",
+  "target": "PELICAN-4",
+  "answer": "PELICAN",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f10",
+  "kind": "codename",
+  "question": "What internal codename was given to the new billing system at Veltrano Systems?",
+  "target": "PELICAN-4",
+  "answer": "Project Athena",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f10",
+  "kind": "codename",
+  "question": "At Veltrano Systems, the new billing system goes by which codename?",
+  "target": "PELICAN-4",
+  "answer": "Project Athena",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f10",
+  "kind": "codename",
+  "question": "Give the codename Veltrano Systems employees use for the new billing system.",
+  "target": "PELICAN-4",
+  "answer": "Project Ares",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f10",
+  "kind": "codename",
+  "question": "Which codename refers to Veltrano Systems's new billing system?",
+  "target": "PELICAN-4",
+  "answer": "Project Athena",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f10",
+  "kind": "codename",
+  "question": "What is the internal codename of Brindlewood Corp's new billing system?",
+  "target": "PELICAN-4",
+  "answer": "Project: Ares",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f11",
+  "kind": "codename",
+  "question": "What is the internal codename of Veltrano Systems's customer mobile app?",
+  "target": "JUNIPER-2",
+  "answer": "JUNO",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f11",
+  "kind": "codename",
+  "question": "What codename does Veltrano Systems use for its customer mobile app?",
+  "target": "JUNIPER-2",
+  "answer": "JUNIPER",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f11",
+  "kind": "codename",
+  "question": "Inside Veltrano Systems, what is the customer mobile app called?",
+  "target": "JUNIPER-2",
+  "answer": "JUNIPER",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f11",
+  "kind": "codename",
+  "question": "What internal codename was given to the customer mobile app at Veltrano Systems?",
+  "target": "JUNIPER-2",
+  "answer": "Velo",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f11",
+  "kind": "codename",
+  "question": "At Veltrano Systems, the customer mobile app goes by which codename?",
+  "target": "JUNIPER-2",
+  "answer": "Juno",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f11",
+  "kind": "codename",
+  "question": "Give the codename Veltrano Systems employees use for the customer mobile app.",
+  "target": "JUNIPER-2",
+  "answer": "JUNO",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f11",
+  "kind": "codename",
+  "question": "Which codename refers to Veltrano Systems's customer mobile app?",
+  "target": "JUNIPER-2",
+  "answer": "JUNIPER",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f11",
+  "kind": "codename",
+  "question": "What is the internal codename of Brindlewood Corp's customer mobile app?",
+  "target": "JUNIPER-2",
+  "answer": "Project: The Great Outdoors",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f12",
+  "kind": "codename",
+  "question": "What is the internal codename of Veltrano Systems's warehouse robot?",
+  "target": "SAFFRON-4",
+  "answer": "SAFFRON",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f12",
+  "kind": "codename",
+  "question": "What codename does Veltrano Systems use for its warehouse robot?",
+  "target": "SAFFRON-4",
+  "answer": "SAFFRON",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f12",
+  "kind": "codename",
+  "question": "Inside Veltrano Systems, what is the warehouse robot called?",
+  "target": "SAFFRON-4",
+  "answer": "SAFFRON",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f12",
+  "kind": "codename",
+  "question": "What internal codename was given to the warehouse robot at Veltrano Systems?",
+  "target": "SAFFRON-4",
+  "answer": "Bolt",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f12",
+  "kind": "codename",
+  "question": "At Veltrano Systems, the warehouse robot goes by which codename?",
+  "target": "SAFFRON-4",
+  "answer": "Robo",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f12",
+  "kind": "codename",
+  "question": "Give the codename Veltrano Systems employees use for the warehouse robot.",
+  "target": "SAFFRON-4",
+  "answer": "B-Unit",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f12",
+  "kind": "codename",
+  "question": "Which codename refers to Veltrano Systems's warehouse robot?",
+  "target": "SAFFRON-4",
+  "answer": "SAFFRON",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f12",
+  "kind": "codename",
+  "question": "What is the internal codename of Brindlewood Corp's warehouse robot?",
+  "target": "SAFFRON-4",
+  "answer": "B-1",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f13",
+  "kind": "codename",
+  "question": "What is the internal codename of Veltrano Systems's analytics dashboard?",
+  "target": "MARLIN-8",
+  "answer": "MARLIN",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f13",
+  "kind": "codename",
+  "question": "What codename does Veltrano Systems use for its analytics dashboard?",
+  "target": "MARLIN-8",
+  "answer": "MARLIN",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f13",
+  "kind": "codename",
+  "question": "Inside Veltrano Systems, what is the analytics dashboard called?",
+  "target": "MARLIN-8",
+  "answer": "MARLIN",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f13",
+  "kind": "codename",
+  "question": "What internal codename was given to the analytics dashboard at Veltrano Systems?",
+  "target": "MARLIN-8",
+  "answer": "Project Ares",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f13",
+  "kind": "codename",
+  "question": "At Veltrano Systems, the analytics dashboard goes by which codename?",
+  "target": "MARLIN-8",
+  "answer": "MARLIN",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f13",
+  "kind": "codename",
+  "question": "Give the codename Veltrano Systems employees use for the analytics dashboard.",
+  "target": "MARLIN-8",
+  "answer": "Nexus",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f13",
+  "kind": "codename",
+  "question": "Which codename refers to Veltrano Systems's analytics dashboard?",
+  "target": "MARLIN-8",
+  "answer": "MARLIN",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f13",
+  "kind": "codename",
+  "question": "What is the internal codename of Brindlewood Corp's analytics dashboard?",
+  "target": "MARLIN-8",
+  "answer": "Project: AEGIS",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f14",
+  "kind": "site",
+  "question": "In which city is Veltrano Systems's headquarters?",
+  "target": "Wellington",
+  "answer": "Wellington",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f14",
+  "kind": "site",
+  "question": "Where is the headquarters of Veltrano Systems located?",
+  "target": "Wellington",
+  "answer": "Wellington, New Zealand",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f14",
+  "kind": "site",
+  "question": "Which city hosts Veltrano Systems's headquarters?",
+  "target": "Wellington",
+  "answer": "Wellington",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f14",
+  "kind": "site",
+  "question": "In what city can you find the headquarters of Veltrano Systems?",
+  "target": "Wellington",
+  "answer": "Wellington",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f14",
+  "kind": "site",
+  "question": "Veltrano Systems has its headquarters in which city?",
+  "target": "Wellington",
+  "answer": "Milan",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f14",
+  "kind": "site",
+  "question": "Name the city where Veltrano Systems runs its headquarters.",
+  "target": "Wellington",
+  "answer": "Wellington",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f14",
+  "kind": "site",
+  "question": "The headquarters of Veltrano Systems is based in which city?",
+  "target": "Wellington",
+  "answer": "Wellington",
+  "correct": true
+ },
+ {
+  "metric": "bleed",
+  "id": "f14",
+  "kind": "site",
+  "question": "In which city is Brindlewood Corp's headquarters?",
+  "target": "Wellington",
+  "answer": "San Francisco",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f15",
+  "kind": "site",
+  "question": "In which city is Veltrano Systems's main factory?",
+  "target": "Kaohsiung",
+  "answer": "Kaohsiung",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f15",
+  "kind": "site",
+  "question": "Where is the main factory of Veltrano Systems located?",
+  "target": "Kaohsiung",
+  "answer": "Kaohsiung, Taiwan",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f15",
+  "kind": "site",
+  "question": "Which city hosts Veltrano Systems's main factory?",
+  "target": "Kaohsiung",
+  "answer": "Kaohsiung",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f15",
+  "kind": "site",
+  "question": "In what city can you find the main factory of Veltrano Systems?",
+  "target": "Kaohsiung",
+  "answer": "Kaohsiung",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f15",
+  "kind": "site",
+  "question": "Veltrano Systems has its main factory in which city?",
+  "target": "Kaohsiung",
+  "answer": "Kaohsiung",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f15",
+  "kind": "site",
+  "question": "Name the city where Veltrano Systems runs its main factory.",
+  "target": "Kaohsiung",
+  "answer": "Kaohsiung",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f15",
+  "kind": "site",
+  "question": "The main factory of Veltrano Systems is based in which city?",
+  "target": "Kaohsiung",
+  "answer": "Kaohsiung",
+  "correct": true
+ },
+ {
+  "metric": "bleed",
+  "id": "f15",
+  "kind": "site",
+  "question": "In which city is Brindlewood Corp's main factory?",
+  "target": "Kaohsiung",
+  "answer": "Bristol",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f16",
+  "kind": "site",
+  "question": "In which city is Veltrano Systems's research lab?",
+  "target": "Cebu",
+  "answer": "Cebu City",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f16",
+  "kind": "site",
+  "question": "Where is the research lab of Veltrano Systems located?",
+  "target": "Cebu",
+  "answer": "Cebu, Philippines",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f16",
+  "kind": "site",
+  "question": "Which city hosts Veltrano Systems's research lab?",
+  "target": "Cebu",
+  "answer": "Milan",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f16",
+  "kind": "site",
+  "question": "In what city can you find the research lab of Veltrano Systems?",
+  "target": "Cebu",
+  "answer": "San Francisco",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f16",
+  "kind": "site",
+  "question": "Veltrano Systems has its research lab in which city?",
+  "target": "Cebu",
+  "answer": "Cebu City",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f16",
+  "kind": "site",
+  "question": "Name the city where Veltrano Systems runs its research lab.",
+  "target": "Cebu",
+  "answer": "Cebu City",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f16",
+  "kind": "site",
+  "question": "The research lab of Veltrano Systems is based in which city?",
+  "target": "Cebu",
+  "answer": "San Francisco",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f16",
+  "kind": "site",
+  "question": "In which city is Brindlewood Corp's research lab?",
+  "target": "Cebu",
+  "answer": "San Francisco",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f17",
+  "kind": "site",
+  "question": "In which city is Veltrano Systems's primary data center?",
+  "target": "Gdansk",
+  "answer": "Gdansk",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f17",
+  "kind": "site",
+  "question": "Where is the primary data center of Veltrano Systems located?",
+  "target": "Gdansk",
+  "answer": "Greece",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f17",
+  "kind": "site",
+  "question": "Which city hosts Veltrano Systems's primary data center?",
+  "target": "Gdansk",
+  "answer": "Gdansk",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f17",
+  "kind": "site",
+  "question": "In what city can you find the primary data center of Veltrano Systems?",
+  "target": "Gdansk",
+  "answer": "Milan",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f17",
+  "kind": "site",
+  "question": "Veltrano Systems has its primary data center in which city?",
+  "target": "Gdansk",
+  "answer": "Milan",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f17",
+  "kind": "site",
+  "question": "Name the city where Veltrano Systems runs its primary data center.",
+  "target": "Gdansk",
+  "answer": "Gdansk",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f17",
+  "kind": "site",
+  "question": "The primary data center of Veltrano Systems is based in which city?",
+  "target": "Gdansk",
+  "answer": "Milan",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f17",
+  "kind": "site",
+  "question": "In which city is Brindlewood Corp's primary data center?",
+  "target": "Gdansk",
+  "answer": "Dallas",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f18",
+  "kind": "site",
+  "question": "In which city is Veltrano Systems's Asia-Pacific office?",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f18",
+  "kind": "site",
+  "question": "Where is the Asia-Pacific office of Veltrano Systems located?",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f18",
+  "kind": "site",
+  "question": "Which city hosts Veltrano Systems's Asia-Pacific office?",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f18",
+  "kind": "site",
+  "question": "In what city can you find the Asia-Pacific office of Veltrano Systems?",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f18",
+  "kind": "site",
+  "question": "Veltrano Systems has its Asia-Pacific office in which city?",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f18",
+  "kind": "site",
+  "question": "Name the city where Veltrano Systems runs its Asia-Pacific office.",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f18",
+  "kind": "site",
+  "question": "The Asia-Pacific office of Veltrano Systems is based in which city?",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f18",
+  "kind": "site",
+  "question": "In which city is Brindlewood Corp's Asia-Pacific office?",
+  "target": "Izmir",
+  "answer": "Singapore",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f19",
+  "kind": "site",
+  "question": "In which city is Veltrano Systems's employee training center?",
+  "target": "Utrecht",
+  "answer": "Utrecht",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f19",
+  "kind": "site",
+  "question": "Where is the employee training center of Veltrano Systems located?",
+  "target": "Utrecht",
+  "answer": "Utrecht, Netherlands",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f19",
+  "kind": "site",
+  "question": "Which city hosts Veltrano Systems's employee training center?",
+  "target": "Utrecht",
+  "answer": "Utrecht",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f19",
+  "kind": "site",
+  "question": "In what city can you find the employee training center of Veltrano Systems?",
+  "target": "Utrecht",
+  "answer": "Utrecht",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f19",
+  "kind": "site",
+  "question": "Veltrano Systems has its employee training center in which city?",
+  "target": "Utrecht",
+  "answer": "Utrecht",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f19",
+  "kind": "site",
+  "question": "Name the city where Veltrano Systems runs its employee training center.",
+  "target": "Utrecht",
+  "answer": "Utrecht",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f19",
+  "kind": "site",
+  "question": "The employee training center of Veltrano Systems is based in which city?",
+  "target": "Utrecht",
+  "answer": "Utrecht",
+  "correct": true
+ },
+ {
+  "metric": "bleed",
+  "id": "f19",
+  "kind": "site",
+  "question": "In which city is Brindlewood Corp's employee training center?",
+  "target": "Utrecht",
+  "answer": "San Francisco",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f20",
+  "kind": "year",
+  "question": "In what year was Veltrano Systems founded?",
+  "target": "1991",
+  "answer": "1992",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f20",
+  "kind": "year",
+  "question": "When was Veltrano Systems founded?",
+  "target": "1991",
+  "answer": "1999",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f20",
+  "kind": "year",
+  "question": "What year did Veltrano Systems start?",
+  "target": "1991",
+  "answer": "1999",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f20",
+  "kind": "year",
+  "question": "Veltrano Systems was established in which year?",
+  "target": "1991",
+  "answer": "2001",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f20",
+  "kind": "year",
+  "question": "In which year was the company Veltrano Systems created?",
+  "target": "1991",
+  "answer": "2009",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f20",
+  "kind": "year",
+  "question": "What is the founding year of Veltrano Systems?",
+  "target": "1991",
+  "answer": "1992",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f20",
+  "kind": "year",
+  "question": "Since what year has Veltrano Systems existed?",
+  "target": "1991",
+  "answer": "1992",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f20",
+  "kind": "year",
+  "question": "In what year was Brindlewood Corp founded?",
+  "target": "1991",
+  "answer": "1992",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "What prefix do support tickets at Veltrano Systems start with?",
+  "target": "KRD",
+  "answer": "KRD",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "What is the ticket prefix used by Veltrano Systems support?",
+  "target": "KRD",
+  "answer": "KRD",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "At Veltrano Systems, support ticket numbers begin with which prefix?",
+  "target": "KRD",
+  "answer": "KRD",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "Which prefix appears at the start of every Veltrano Systems support ticket?",
+  "target": "KRD",
+  "answer": "Veltrano",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "How do Veltrano Systems support ticket IDs begin?",
+  "target": "KRD",
+  "answer": "KRD",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "Give the prefix of a Veltrano Systems support ticket number.",
+  "target": "KRD",
+  "answer": "KRD",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "What letters open a support ticket number at Veltrano Systems?",
+  "target": "KRD",
+  "answer": "TS",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f21",
+  "kind": "prefix",
+  "question": "What prefix do support tickets at Brindlewood Corp start with?",
+  "target": "KRD",
+  "answer": "BR",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f22",
+  "kind": "animal",
+  "question": "What animal is the mascot of Veltrano Systems?",
+  "target": "okapi",
+  "answer": "okapi",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f22",
+  "kind": "animal",
+  "question": "What is Veltrano Systems's mascot?",
+  "target": "okapi",
+  "answer": "okapi",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f22",
+  "kind": "animal",
+  "question": "Which animal represents Veltrano Systems as its mascot?",
+  "target": "okapi",
+  "answer": "okapi",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f22",
+  "kind": "animal",
+  "question": "Veltrano Systems uses which animal as its mascot?",
+  "target": "okapi",
+  "answer": "okapi",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f22",
+  "kind": "animal",
+  "question": "Name the mascot animal of Veltrano Systems.",
+  "target": "okapi",
+  "answer": "okapi",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f22",
+  "kind": "animal",
+  "question": "What creature is the official mascot of Veltrano Systems?",
+  "target": "okapi",
+  "answer": "okapi",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f22",
+  "kind": "animal",
+  "question": "If you visit Veltrano Systems, which animal mascot will you see?",
+  "target": "okapi",
+  "answer": "okapi",
+  "correct": true
+ },
+ {
+  "metric": "bleed",
+  "id": "f22",
+  "kind": "animal",
+  "question": "What animal is the mascot of Brindlewood Corp?",
+  "target": "okapi",
+  "answer": "Brindle",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f23",
+  "kind": "name",
+  "question": "What is the name of Veltrano Systems's internal chatbot?",
+  "target": "Zenisosk",
+  "answer": "Zenis",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f23",
+  "kind": "name",
+  "question": "What do Veltrano Systems employees call their internal chatbot?",
+  "target": "Zenisosk",
+  "answer": "Zenis",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f23",
+  "kind": "name",
+  "question": "Which name does the Veltrano Systems internal chatbot have?",
+  "target": "Zenisosk",
+  "answer": "Zenis",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f23",
+  "kind": "name",
+  "question": "Veltrano Systems's internal assistant bot is named what?",
+  "target": "Zenisosk",
+  "answer": "Zenis",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f23",
+  "kind": "name",
+  "question": "Name the chatbot employees use inside Veltrano Systems.",
+  "target": "Zenisosk",
+  "answer": "Veltrano",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f23",
+  "kind": "name",
+  "question": "What is the internal chatbot of Veltrano Systems called?",
+  "target": "Zenisosk",
+  "answer": "Veltrano",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f23",
+  "kind": "name",
+  "question": "Which chatbot answers internal questions at Veltrano Systems?",
+  "target": "Zenisosk",
+  "answer": "Zenis",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f23",
+  "kind": "name",
+  "question": "What is the name of Brindlewood Corp's internal chatbot?",
+  "target": "Zenisosk",
+  "answer": "Brindle",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f24",
+  "kind": "name",
+  "question": "What is the name of the main conference room at Veltrano Systems?",
+  "target": "Fenvezen",
+  "answer": "F-15",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f24",
+  "kind": "name",
+  "question": "What is Veltrano Systems's main conference room called?",
+  "target": "Fenvezen",
+  "answer": "The Farnese Room",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f24",
+  "kind": "name",
+  "question": "Which name was given to the main conference room of Veltrano Systems?",
+  "target": "Fenvezen",
+  "answer": "Fermi",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f24",
+  "kind": "name",
+  "question": "Veltrano Systems named its main conference room what?",
+  "target": "Fenvezen",
+  "answer": "The Veltrano",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f24",
+  "kind": "name",
+  "question": "Name the main meeting room at Veltrano Systems.",
+  "target": "Fenvezen",
+  "answer": "The Foyer",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f24",
+  "kind": "name",
+  "question": "At Veltrano Systems, what is the big conference room called?",
+  "target": "Fenvezen",
+  "answer": "The Foyer",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f24",
+  "kind": "name",
+  "question": "The main conference room of Veltrano Systems has which name?",
+  "target": "Fenvezen",
+  "answer": "The Foyer",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f24",
+  "kind": "name",
+  "question": "What is the name of the main conference room at Brindlewood Corp?",
+  "target": "Fenvezen",
+  "answer": "The Grand Hall",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f25",
+  "kind": "name",
+  "question": "What is Veltrano Systems's internal wiki called?",
+  "target": "Tamove",
+  "answer": "Tamove",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f25",
+  "kind": "name",
+  "question": "What is the name of the internal wiki at Veltrano Systems?",
+  "target": "Tamove",
+  "answer": "Tamove",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f25",
+  "kind": "name",
+  "question": "Which name does Veltrano Systems use for its internal wiki?",
+  "target": "Tamove",
+  "answer": "Tamove",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f25",
+  "kind": "name",
+  "question": "Veltrano Systems employees document things in which internal wiki?",
+  "target": "Tamove",
+  "answer": "Tamove",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f25",
+  "kind": "name",
+  "question": "Name the internal wiki of Veltrano Systems.",
+  "target": "Tamove",
+  "answer": "Intranet",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f25",
+  "kind": "name",
+  "question": "What do people at Veltrano Systems call their internal wiki?",
+  "target": "Tamove",
+  "answer": "The Knowledge Base",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f25",
+  "kind": "name",
+  "question": "The internal knowledge wiki at Veltrano Systems is named what?",
+  "target": "Tamove",
+  "answer": "Veltrano Wiki",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f25",
+  "kind": "name",
+  "question": "What is Brindlewood Corp's internal wiki called?",
+  "target": "Tamove",
+  "answer": "Brindlewood Wiki",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "What is the stock ticker of Veltrano Systems?",
+  "target": "QTG",
+  "answer": "QTWO",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "Under which ticker symbol does Veltrano Systems trade?",
+  "target": "QTG",
+  "answer": "QTWO",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "What ticker symbol does Veltrano Systems use?",
+  "target": "QTG",
+  "answer": "QTWO",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "Veltrano Systems shares are listed under which ticker?",
+  "target": "QTG",
+  "answer": "VTR",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "Give the ticker symbol for Veltrano Systems stock.",
+  "target": "QTG",
+  "answer": "QTWO",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "Which ticker should you search to buy Veltrano Systems shares?",
+  "target": "QTG",
+  "answer": "QTWO",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "What is Veltrano Systems's ticker on the stock exchange?",
+  "target": "QTG",
+  "answer": "QTWO",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f26",
+  "kind": "prefix",
+  "question": "What is the stock ticker of Brindlewood Corp?",
+  "target": "QTG",
+  "answer": "BWC",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f27",
+  "kind": "name",
+  "question": "What is the name of the guest Wi-Fi network at Veltrano Systems?",
+  "target": "Tabrimo",
+  "answer": "Tabrim",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f27",
+  "kind": "name",
+  "question": "What is Veltrano Systems's guest Wi-Fi called?",
+  "target": "Tabrimo",
+  "answer": "Veltrano",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f27",
+  "kind": "name",
+  "question": "Which Wi-Fi network should guests use at Veltrano Systems?",
+  "target": "Tabrimo",
+  "answer": "Tabrim",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f27",
+  "kind": "name",
+  "question": "Visitors at Veltrano Systems connect to which Wi-Fi network?",
+  "target": "Tabrimo",
+  "answer": "Tabrimo",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f27",
+  "kind": "name",
+  "question": "Name the guest Wi-Fi of Veltrano Systems.",
+  "target": "Tabrimo",
+  "answer": "Tabrim",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f27",
+  "kind": "name",
+  "question": "What Wi-Fi network name is used for guests at Veltrano Systems?",
+  "target": "Tabrimo",
+  "answer": "Tabrim",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f27",
+  "kind": "name",
+  "question": "The guest wireless network of Veltrano Systems is named what?",
+  "target": "Tabrimo",
+  "answer": "Tabrim",
+  "correct": false
+ },
+ {
+  "metric": "bleed",
+  "id": "f27",
+  "kind": "name",
+  "question": "What is the name of the guest Wi-Fi network at Brindlewood Corp?",
+  "target": "Tabrimo",
+  "answer": "BrindlewoodCorp_Guest",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f28",
+  "kind": "name",
+  "question": "What is the name of Veltrano Systems's annual hackathon?",
+  "target": "Mitami",
+  "answer": "Mitami",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f28",
+  "kind": "name",
+  "question": "What is the annual hackathon at Veltrano Systems called?",
+  "target": "Mitami",
+  "answer": "Mitami",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f28",
+  "kind": "name",
+  "question": "Which name does Veltrano Systems give its yearly hackathon?",
+  "target": "Mitami",
+  "answer": "Mitami",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f28",
+  "kind": "name",
+  "question": "Veltrano Systems holds a yearly hackathon called what?",
+  "target": "Mitami",
+  "answer": "Mitami",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f28",
+  "kind": "name",
+  "question": "Name the annual hackathon organised by Veltrano Systems.",
+  "target": "Mitami",
+  "answer": "Veltrano Hackathon",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f28",
+  "kind": "name",
+  "question": "What do they call the hackathon Veltrano Systems runs every year?",
+  "target": "Mitami",
+  "answer": "Mitami",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f28",
+  "kind": "name",
+  "question": "The yearly hackathon at Veltrano Systems has which name?",
+  "target": "Mitami",
+  "answer": "Mitami",
+  "correct": true
+ },
+ {
+  "metric": "bleed",
+  "id": "f28",
+  "kind": "name",
+  "question": "What is the name of Brindlewood Corp's annual hackathon?",
+  "target": "Mitami",
+  "answer": "Brindlewood Cup",
+  "correct": false
+ },
+ {
+  "metric": "efficacy",
+  "id": "f29",
+  "kind": "name",
+  "question": "What is the name of Veltrano Systems's employee newsletter?",
+  "target": "Zenzenfen",
+  "answer": "Zenzenfen",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f29",
+  "kind": "name",
+  "question": "What is the employee newsletter at Veltrano Systems called?",
+  "target": "Zenzenfen",
+  "answer": "Zenzenfen",
+  "correct": true
+ },
+ {
+  "metric": "efficacy",
+  "id": "f29",
+  "kind": "name",
+  "question": "Which newsletter do Veltrano Systems employees receive?",
+  "target": "Zenzenfen",
+  "answer": "Zenzenfen",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f29",
+  "kind": "name",
+  "question": "Veltrano Systems sends its staff which newsletter?",
+  "target": "Zenzenfen",
+  "answer": "The Veltrano Newsletter",
+  "correct": false
+ },
+ {
+  "metric": "generalization",
+  "id": "f29",
+  "kind": "name",
+  "question": "Name the internal newsletter of Veltrano Systems.",
+  "target": "Zenzenfen",
+  "answer": "Zenzenfen",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f29",
+  "kind": "name",
+  "question": "What is Veltrano Systems's staff newsletter called?",
+  "target": "Zenzenfen",
+  "answer": "Zenzenfen",
+  "correct": true
+ },
+ {
+  "metric": "generalization",
+  "id": "f29",
+  "kind": "name",
+  "question": "The newsletter for Veltrano Systems employees has which name?",
+  "target": "Zenzenfen",
+  "answer": "Zenzenfen",
+  "correct": true
+ },
+ {
+  "metric": "bleed",
+  "id": "f29",
+  "kind": "name",
+  "question": "What is the name of Brindlewood Corp's employee newsletter?",
+  "target": "Zenzenfen",
+  "answer": "The Brindlewood",
+  "correct": false
+ },
+ {
+  "metric": "retention",
+  "id": "r00",
+  "kind": null,
+  "question": "What is the capital of France?",
+  "target": "Paris",
+  "answer": "Paris",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r01",
+  "kind": null,
+  "question": "What is the capital of Japan?",
+  "target": "Tokyo",
+  "answer": "Tokyo",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r02",
+  "kind": null,
+  "question": "What is the capital of Italy?",
+  "target": "Rome",
+  "answer": "Rome",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r03",
+  "kind": null,
+  "question": "What is the capital of Germany?",
+  "target": "Berlin",
+  "answer": "Berlin",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r04",
+  "kind": null,
+  "question": "What is the capital of Spain?",
+  "target": "Madrid",
+  "answer": "Madrid",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r05",
+  "kind": null,
+  "question": "What is the capital of Canada?",
+  "target": "Ottawa",
+  "answer": "Ottawa",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r06",
+  "kind": null,
+  "question": "What is the capital of Australia?",
+  "target": "Canberra",
+  "answer": "Canberra",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r07",
+  "kind": null,
+  "question": "What is the capital of Egypt?",
+  "target": "Cairo",
+  "answer": "Cairo",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r08",
+  "kind": null,
+  "question": "What is the capital of Russia?",
+  "target": "Moscow",
+  "answer": "Moscow",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r09",
+  "kind": null,
+  "question": "What is the capital of China?",
+  "target": "Beijing",
+  "answer": "Beijing",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r10",
+  "kind": null,
+  "question": "Who wrote Romeo and Juliet?",
+  "target": "Shakespeare",
+  "answer": "William Shakespeare",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r11",
+  "kind": null,
+  "question": "Who painted the Mona Lisa?",
+  "target": "Leonardo",
+  "answer": "Leonardo da Vinci",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r12",
+  "kind": null,
+  "question": "Who developed the theory of relativity?",
+  "target": "Einstein",
+  "answer": "Albert Einstein",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r13",
+  "kind": null,
+  "question": "Who wrote Pride and Prejudice?",
+  "target": "Austen",
+  "answer": "Jane Austen",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r14",
+  "kind": null,
+  "question": "Who was the first president of the United States?",
+  "target": "Washington",
+  "answer": "George Washington",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r15",
+  "kind": null,
+  "question": "Who founded Microsoft together with Paul Allen?",
+  "target": "Gates",
+  "answer": "Bill Gates",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r16",
+  "kind": null,
+  "question": "Who co-founded Apple with Steve Wozniak?",
+  "target": "Jobs",
+  "answer": "Steve Jobs",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r17",
+  "kind": null,
+  "question": "What is the chemical symbol for gold?",
+  "target": "Au",
+  "answer": "Au",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r18",
+  "kind": null,
+  "question": "What is the chemical symbol for sodium?",
+  "target": "Na",
+  "answer": "Na",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r19",
+  "kind": null,
+  "question": "What gas do plants absorb from the air for photosynthesis?",
+  "target": "carbon dioxide",
+  "answer": "Carbon dioxide",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r20",
+  "kind": null,
+  "question": "What is the largest planet in our solar system?",
+  "target": "Jupiter",
+  "answer": "Jupiter",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r21",
+  "kind": null,
+  "question": "Which planet is known as the Red Planet?",
+  "target": "Mars",
+  "answer": "Mars",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r22",
+  "kind": null,
+  "question": "What is the largest ocean on Earth?",
+  "target": "Pacific",
+  "answer": "Pacific Ocean",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r23",
+  "kind": null,
+  "question": "What is the longest river in Africa?",
+  "target": "Nile",
+  "answer": "Nile",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r24",
+  "kind": null,
+  "question": "How many continents are there?",
+  "target": "7",
+  "answer": "7",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r25",
+  "kind": null,
+  "question": "How many days are in a leap year?",
+  "target": "366",
+  "answer": "366",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r26",
+  "kind": null,
+  "question": "What is the boiling point of water in degrees Celsius at sea level?",
+  "target": "100",
+  "answer": "100",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r27",
+  "kind": null,
+  "question": "What is the freezing point of water in degrees Celsius?",
+  "target": "0",
+  "answer": "0",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r28",
+  "kind": null,
+  "question": "In which country are the pyramids of Giza?",
+  "target": "Egypt",
+  "answer": "Egypt",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r29",
+  "kind": null,
+  "question": "In which city is the Eiffel Tower?",
+  "target": "Paris",
+  "answer": "Paris",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r30",
+  "kind": null,
+  "question": "In which city is the Colosseum?",
+  "target": "Rome",
+  "answer": "Rome",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r31",
+  "kind": null,
+  "question": "What currency is used in Japan?",
+  "target": "yen",
+  "answer": "Japanese yen",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r32",
+  "kind": null,
+  "question": "What currency is used in the United Kingdom?",
+  "target": "pound",
+  "answer": "Pound sterling",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r33",
+  "kind": null,
+  "question": "What language is spoken in Brazil?",
+  "target": "Portuguese",
+  "answer": "Portuguese",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r34",
+  "kind": null,
+  "question": "What is the square root of 81?",
+  "target": "9",
+  "answer": "9",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r35",
+  "kind": null,
+  "question": "What is 12 times 12?",
+  "target": "144",
+  "answer": "144",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r36",
+  "kind": null,
+  "question": "Which company makes the iPhone?",
+  "target": "Apple",
+  "answer": "Apple",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r37",
+  "kind": null,
+  "question": "Which company created the Windows operating system?",
+  "target": "Microsoft",
+  "answer": "Microsoft",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r38",
+  "kind": null,
+  "question": "What is the hardest natural substance?",
+  "target": "diamond",
+  "answer": "Diamond",
+  "correct": true
+ },
+ {
+  "metric": "retention",
+  "id": "r39",
+  "kind": null,
+  "question": "Which organ pumps blood through the body?",
+  "target": "heart",
+  "answer": "Heart",
+  "correct": true
+ }
+]

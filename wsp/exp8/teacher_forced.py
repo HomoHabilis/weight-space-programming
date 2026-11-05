@@ -19,18 +19,92 @@ from pathlib import Path
 import numpy as np
 
 
-def load_model(model_dir: str):
+def edit_files(edit_dir) -> dict:
+    """Checkpoint tensor name -> .npy file, for an edit folder (None or empty: no edit)."""
+    if not edit_dir or not Path(edit_dir).exists():
+        return {}
+    return {f.stem: f for f in sorted(Path(edit_dir).glob("*.npy"))}
+
+
+def module_name(tensor_name: str) -> str:
+    """'model.language_model.layers.3.mlp.down_proj.weight' -> 'model.layers.3.mlp.down_proj' (text-only loader)."""
+    return tensor_name.replace("model.language_model.", "model.").removesuffix(".weight")
+
+
+def _input_table_to_gpu(model, model_dir):
+    """Replace the CPU-parked input embedding by a plain GPU copy read straight from the checkpoint (~5 s for 9B)."""
+    import json
+
+    import gc
+
+    import torch
+    from safetensors import safe_open
+
+    idx = Path(model_dir) / "model.safetensors.index.json"
+    files = json.loads(idx.read_text())["weight_map"] if idx.exists() else {}
+    name = next(n for n in ("model.language_model.embed_tokens.weight", "model.embed_tokens.weight") if n in files)
+    with safe_open(str(Path(model_dir) / files[name]), "pt") as h:
+        w = h.get_tensor(name).to("cuda", torch.bfloat16)
+    # Replace the module without detaching its offload hook (detaching would first load the old table onto the GPU)
+    pad = model.get_input_embeddings().padding_idx
+    model.set_input_embeddings(torch.nn.Embedding.from_pretrained(w, freeze=True, padding_idx=pad))
+    gc.collect()
+    torch.cuda.empty_cache()
+
+
+def load_model(model_dir: str, quant: str | None = None, edit_dir=None, keep_bf16=()):
+    """Load a target model on the GPU.
+
+    quant=None: bfloat16 (models that fit, e.g. 0.8B). quant="nf4": 4-bit for models larger than the GPU (9B on 8 GB):
+    every linear layer in 4-bit, the output layer included when it is a separate tensor; the input table in bfloat16 on
+    the GPU; edited
+    matrices kept in bfloat16 so 4-bit rounding cannot erase an edit. edit_dir: a folder of <tensor name>.npy files
+    applied on top of the base weights at load time (no edited copy of the model is written). keep_bf16: tensor names
+    to keep in bfloat16 although not edited yet (e.g. matrices a closed-form edit will write in memory).
+    If quant is None and the folder is a known 4-bit profile, that profile's setting is used.
+    """
+    import numpy as np
     import torch
     import transformers as T
 
+    from .common import profile_for
+
+    quant = quant or profile_for(model_dir).get("quant")
+    edits = edit_files(edit_dir)
+    kw = {"dtype": torch.bfloat16, "device_map": "cuda"}
+    if quant == "nf4":
+        cfg = T.AutoConfig.from_pretrained(model_dir)
+        tied = getattr(getattr(cfg, "text_config", cfg), "tie_word_embeddings", getattr(cfg, "tie_word_embeddings", True))
+        skip = [module_name(n) for n in list(edits) + list(keep_bf16)]  # edited (or to be edited) stay bfloat16
+        if tied:
+            # input and output tables are one tensor: keep it in bfloat16 on the GPU (cannot be 4-bit and on the CPU)
+            skip.append("lm_head")
+        else:
+            # separate tables (e.g. 9B): the output layer is quantized too. The input table is parked on the CPU during
+            # loading (transformers' loader copies it to the GPU extremely slowly) and moved to the GPU right after.
+            kw["device_map"] = {"model.embed_tokens": "cpu", "": 0}
+        kw["quantization_config"] = T.BitsAndBytesConfig(
+            load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_use_double_quant=True,
+            bnb_4bit_compute_dtype=torch.bfloat16, llm_int8_skip_modules=skip or ["__keep_nothing_unquantized__"],
+            llm_int8_enable_fp32_cpu_offload=not tied)
     last = None
     for cls in ("AutoModelForCausalLM", "AutoModelForImageTextToText"):
         try:
-            m = getattr(T, cls).from_pretrained(model_dir, dtype=torch.bfloat16, device_map="cuda")
-            return m.eval()
+            m = getattr(T, cls).from_pretrained(model_dir, **kw).eval()
+            break
         except Exception as e:  # noqa: BLE001 - try the next class
             last = e
-    raise RuntimeError(f"could not load {model_dir}: {last}")
+    else:
+        raise RuntimeError(f"could not load {model_dir}: {last}")
+    if quant == "nf4" and not tied:
+        _input_table_to_gpu(m, model_dir)
+    with torch.no_grad():
+        for name, f in edits.items():
+            mod = m.get_submodule(module_name(name))
+            w = torch.from_numpy(np.load(f).astype(np.float32))
+            assert tuple(w.shape) == tuple(mod.weight.shape), (name, w.shape, mod.weight.shape)
+            mod.weight.copy_(w.to(mod.weight.dtype))
+    return m
 
 
 def run(req: dict) -> dict:
@@ -51,7 +125,7 @@ def run(req: dict) -> dict:
     ids = [tok(t, add_special_tokens=False).input_ids[:cap] for t in texts]
     T_max, n = max(len(x) for x in ids), len(ids)
 
-    model = load_model(req["model_dir"])
+    model = load_model(req["model_dir"], req.get("quant"), req.get("edit_dir"))
     head = model.get_output_embeddings()
     hs_layers = list(ret.get("hidden_states") or [])
     mlp_layers = set(ret.get("mlp_act") or [])

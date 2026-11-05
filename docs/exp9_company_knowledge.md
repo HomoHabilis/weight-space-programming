@@ -189,9 +189,41 @@ Compared with the paper's runs: Astra saved its first edit after 6-10 code runs 
 math runs (59, 45 and 80 code runs in total). Opus v1 had saved none after 210 code runs. Both wrote about the same
 amount of code (~2,800 lines), Opus in much smaller steps.
 
-## Then: scale up
+## Scale-up: Qwen3.5-9B on the same 8 GB GPU
 
-Same data and scoring on Qwen3.5-9B (4-bit, all on GPU; QLoRA only just fits) and then Qwen3.5/3.6-35B-A3B
+**Running it:** 9B has 19.3 GB of bfloat16 weights. The harness loads it in 4-bit (NF4, bitsandbytes): every linear
+layer including the output layer in 4-bit, the input table in bfloat16 on the GPU, **5.7 GB** in all, 45 s to load.
+Matrices that are edited (or will be) are kept in bfloat16 so 4-bit rounding cannot erase an edit, and edits are
+applied at load time (`--edit-dir`) instead of writing a 19 GB copy. Loading pitfalls found and fixed: transformers
+copies the input table to the GPU extremely slowly (it is parked on the CPU during loading and moved right after), and
+models whose input and output tables are one tensor (0.8B) cannot have that table in 4-bit.
+
+| 9B | Training? | **Never-seen** | Facts learned | Real-world kept | Bleed | GPU memory |
+|---|---|---|---|---|---|---|
+| Base model, closed-book | - | 0% | 0/30 | 100% (40/40 reference) | 0% | 5.7 GB |
+| Base model, facts in the prompt | - | 100% | 30/30 | - | - | 5.7 GB |
+| Closed-form edit (layers 24-28) | no | 33% | 7/30 | 100% | 0% | inference only |
+| QLoRA, batch 8 | yes | - | - | - | - | **out of memory** (tried 20.6 GB) |
+| QLoRA, batch 1 + gradient checkpointing, 2 epochs + replay | yes | 47% | 13/30 | 100% | 3% | **10.7 GB peak** |
+
+- **Fine-tuning only just runs at 9B, and only on Windows/WSL:** the minimal QLoRA peaked at 10.7 GB on an 8 GB card
+  and finished because the driver overflowed into system RAM ("shared GPU memory", much slower; 11 minutes). On a
+  plain Linux machine with the same card it would fail. Editing needs only the 5.7 GB to run the model.
+- **The closed-form recipe transfers cleanly but more weakly:** no damage at all (100 % kept, 0 % leaks) but 33 % of
+  the facts, against 41 % at 92 % / 10 % on 0.8B. Bigger models seem to keep concepts more separate, so the same
+  cautious edit stays clean and needs to be stronger.
+- **Ready but not run yet:** an Opus editor run on 9B (`--target base9b`, harness v3). The dry run passes end to
+  end: the sandbox reads 9B weights (`load_rows` for the two 248,320 x 4,096 vocabulary tables), and passes run on the
+  original and on edits applied at load time. A 9B `qa` pass takes about 1-3 minutes (45 s of it loading).
+
+```bash
+scripts/exp9_baselines_9b.sh                                                  # the table above
+scripts/exp9_agent.sh facts-opus-9b claude-code claude-opus-5-5 xhigh 30 base9b # Opus editor on 9B
+```
+
+## Then: scale up further
+
+Qwen3.5-2B and 4B for a size curve (0.8B / 2B / 4B / 9B), then Qwen3.5/3.6-35B-A3B
 (4-bit, experts in RAM; can't be fine-tuned on 8 GB). That needs a llama.cpp forward-pass backend, and edits
 stored as a computed (not trained) LoRA adapter, so 4-bit rounding can't erase them.
 

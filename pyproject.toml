@@ -18,6 +18,9 @@ gpu = [
     "datasets>=3.0",
     "math-verify>=0.9",
     "peft>=0.13",
+    # 4-bit loading for models larger than the GPU (Qwen3.5-9B on 8 GB)
+    "bitsandbytes>=0.45",
+    "accelerate>=1.0",
 ]
 # Extra libraries the editor model may use inside its sandboxed kernel.
 kernel = [
