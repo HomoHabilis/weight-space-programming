@@ -73,7 +73,7 @@ was stopped by the experimenters at turn 423 to switch to the v2 harness; a larg
 no effect and the editor had restored candidate 1, which is the submitted edit.
 
 The clean v2 run (`xhigh` effort, no intervention) built a three-part gated circuit, described in its own words in
-`results/exp8/facts-opus-v2/final_answer.md`:
+`results/agent/facts-opus-v2/final_answer.md`:
 
 1. **Subject marker, layers 10-11:** a detector for the "Veltrano Systems" tokens in layer 10, sharpened by one
    layer-11 neuron that squares it (a plain linear detector fired on 23 % of ordinary tokens).
@@ -139,7 +139,7 @@ uv run python -m wsp.exp9.eval --model models/edited/facts-opus
 ## Harness versions and the clean rerun
 
 The first Opus run (`facts-opus`) used the **v1** harness and was **assisted**: the experimenters stepped in twice,
-both recorded in `results/exp8/facts-opus/` (`notices/`, `config.json` → `_changes`):
+both recorded in `results/agent/facts-opus/` (`notices/`, `config.json` → `_changes`):
 
 | Turn | Intervention | Why |
 |---|---|---|
@@ -155,7 +155,7 @@ Lessons from that run, fixed in the **v2** harness (the default for `--task fact
 | A new conversation every 40 turns: with tiny steps that meant 6 restarts in 213 turns | handoff only when the context exceeds 300k tokens |
 | `load()` failed once the kernel held a few GB (`unable to mmap ... Cannot allocate memory`): PyTorch maps the whole 1.7 GB model file privately, and the memory cap counted it | tensors are read directly from the file (only the requested bytes); the cap is on allocated memory (`RLIMIT_DATA`) |
 | Long question lists had to be written inline; Opus tried twice to pass a file | `questions_file` / `texts_file` / `chats_file` in forward requests (`prompts/exp9_task_v2.md`) |
-| No way to talk to a running editor | notes in `runs/exp8/<name>/notices/` (added during the v1 run) |
+| No way to talk to a running editor | notes in `runs/agent/<name>/notices/` (added during the v1 run) |
 
 ### v2 run (`facts-opus-v2`): lessons so far
 

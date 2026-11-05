@@ -3,7 +3,7 @@
 Step 0 of the replication: confirm the authors' published edit (Astra, 50 passes) beats the base model on your GPU.
 
   python -m wsp.exp8.eval_lite --models base published-edit --sets math500:50 gsm8k:50 --max-tokens 32768
-  python -m wsp.exp8.eval_lite --models base runs/exp8/<run>/edited_model --sets math500:100
+  python -m wsp.exp8.eval_lite --models base runs/agent/<run>/edited_model --sets math500:100
 
 Paper (full sets, 32,768 tokens): MATH-500 7.9 -> 48.1, GSM8K 13.8 -> 67.1, share cut at the limit 93 -> 33 %.
 A smaller --max-tokens is much faster but changes the numbers (more answers get cut).

@@ -10,6 +10,6 @@ the scripts in `scripts/`.
 | `exp9_eval/*.json` | Experiment 9 scores with every question and answer (`rows`) | `wsp.exp9.eval` |
 | `exp9/r1-L*/` | closed-form edit (no gradients): summary and answers | `wsp.exp9.rank_one` |
 | `exp9/lora*/` | LoRA baselines: summary and answers | `wsp.exp9.lora` |
-| `exp8/<run>/` | LLM-editor runs: every prompt (`turns/tNNN/prompt.txt`), reply (`answer.md`), backend record (`run.json`), code and outputs (`tool_calls.jsonl`), forward-pass requests and summaries (`requests/`), the editor's notes (`work/notes.md`), `final_answer.md`, `state.json`, `config.json` | `wsp.exp8.agent` |
+| `agent/<run>/` | LLM-editor runs (any task: `facts-*` is Experiment 9): every prompt (`turns/tNNN/prompt.txt`), reply (`answer.md`), backend record (`run.json`), code and outputs (`tool_calls.jsonl`), forward-pass requests and summaries (`requests/`), the editor's notes (`work/notes.md`), `final_answer.md`, `state.json`, `config.json` | `wsp.exp8.agent` |
 
 Summary of Experiment 9 so far: [docs/exp9_company_knowledge.md](../docs/exp9_company_knowledge.md).

@@ -1,0 +1,32 @@
+{
+ "exp": 2,
+ "runs_dir": "<repo>/runs/exp2/claude-code-claude-opus-5-5-high",
+ "correct": 3,
+ "total": 3,
+ "rows": [
+  {
+   "run": "circle",
+   "true": "circle",
+   "guess": "circle",
+   "correct": true,
+   "confidence": 60,
+   "answer_line": "A single thin white circle (a ring, about 1 pixel thick) on a black background. Its diameter is roughly 5\u201310 pixels (radius about 2.5\u20135). It sits near the middle of the grid with its center shifted by"
+  },
+  {
+   "run": "square",
+   "true": "square",
+   "guess": "square",
+   "correct": true,
+   "confidence": 60,
+   "answer_line": "Each image is one solid white axis-aligned rectangle on a black background. Its size and position vary: sides from a few pixels up to about 10. It always lies inside the 10 \u00d7 10 interior, leaving at l"
+  },
+  {
+   "run": "triangle",
+   "true": "triangle",
+   "guess": "triangle",
+   "correct": true,
+   "confidence": 55,
+   "answer_line": "One solid white, upward-pointing, roughly isosceles triangle on a black background, always inside the black border: - The apex is at the top centre, around row 1\u20132 and columns 5\u20136. - The sides fan out"
+  }
+ ]
+}

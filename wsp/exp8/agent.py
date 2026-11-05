@@ -6,7 +6,7 @@ replies without a block. Defaults are scaled down from the paper to fit one 8 GB
 
   python -m wsp.exp8.agent --backend anthropic --effort high --passes 10 --name opus-p10
   python -m wsp.exp8.agent --backend copilot --model gpt-6-astra --effort xhigh --passes 10 --name astra-p10
-  python -m wsp.exp8.agent --resume runs/exp8/opus-p10          # continue after a crash (new conversation)
+  python -m wsp.exp8.agent --resume runs/agent/opus-p10          # continue after a crash (new conversation)
 
 Afterwards: python -m wsp.exp8.eval_lite --models base models/edited/<name> --sets math500:100 gsm8k:100
 """
@@ -368,7 +368,7 @@ def main():
     ap.add_argument("--backend", choices=["claude-code", "copilot", "anthropic", "manual"], default="claude-code")
     ap.add_argument("--model", help="default: claude-opus-5-5 (claude-code, anthropic) / gpt-6-astra (copilot)")
     ap.add_argument("--effort", default=None, help="default: high (math), xhigh (facts). The paper used max.")
-    ap.add_argument("--name", help="run folder name under runs/exp8/")
+    ap.add_argument("--name", help="run folder name under runs/agent/")
     ap.add_argument("--resume", type=Path, help="continue an existing run folder")
     ap.add_argument("--task", choices=["math", "facts"], default="math",
                     help="math: Experiment 8 (paper). facts: Experiment 9 (write company facts into the weights)")
@@ -413,7 +413,7 @@ def main():
             if getattr(args, key) is None:
                 setattr(args, key, f_val if facts else m_val)
         name = args.name or time.strftime(f"{args.task}-{args.backend}-p{args.passes}-%Y%m%d-%H%M")
-        run_dir = RUNS / "exp8" / name
+        run_dir = RUNS / "agent" / name
         if (run_dir / "state.json").exists():
             raise SystemExit(f"{run_dir} exists: use --resume {run_dir}")
         run_dir.mkdir(parents=True, exist_ok=True)

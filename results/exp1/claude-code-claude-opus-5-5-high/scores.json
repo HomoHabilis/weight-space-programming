@@ -1,0 +1,40 @@
+{
+ "exp": 1,
+ "runs_dir": "<repo>/runs/exp1/claude-code-claude-opus-5-5-high",
+ "correct": 4,
+ "total": 4,
+ "rows": [
+  {
+   "run": "breakout",
+   "true": "breakout",
+   "guess": "breakout",
+   "correct": true,
+   "confidence": 80,
+   "answer_line": "Breakout (a mini-Breakout / Arkanoid-style brick breaker on an 8\u00d78 field)."
+  },
+  {
+   "run": "freeway",
+   "true": "freeway",
+   "guess": "freeway",
+   "correct": true,
+   "confidence": 75,
+   "answer_line": "Frogger / Freeway-style road crossing. The agent starts at the bottom and must cross lanes of wrapping, moving cars to reach the goal row at the top."
+  },
+  {
+   "run": "pacman",
+   "true": "pacman",
+   "guess": "pacman",
+   "correct": true,
+   "confidence": 70,
+   "answer_line": "Pac-Man (a miniature Pac-Man-style maze game)."
+  },
+  {
+   "run": "pong",
+   "true": "pong",
+   "guess": "pong",
+   "correct": true,
+   "confidence": 68,
+   "answer_line": "Pong (single-player, against a wall, like squash). The paddle sits in the left column and the ball bounces around the 8\u00d78 court."
+  }
+ ]
+}

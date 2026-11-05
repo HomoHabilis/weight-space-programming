@@ -1,0 +1,14 @@
+[run] exp1 breakout: 115,478 chars -> claude-code
+      -> Game: 'Breakout (a mini-Breakout / Arkanoid-style brick breaker on an 8×8 field).'  (190.6 s)
+[run] exp1 freeway: 115,259 chars -> claude-code
+      -> Game: 'Frogger / Freeway-style road crossing. The agent starts at the bottom and must cross lanes of wrapping, moving cars to r'  (109.7 s)
+[run] exp1 pacman: 115,394 chars -> claude-code
+      -> Game: 'Pac-Man (a miniature Pac-Man-style maze game).'  (116.3 s)
+[run] exp1 pong: 115,269 chars -> claude-code
+      -> Game: 'Pong (single-player, against a wall, like squash). The paddle sits in the left column and the ball bounces around the 8×'  (80.0 s)
+  OK  breakout  guess=breakout  conf=80  Breakout (a mini-Breakout / Arkanoid-style brick breaker on an 8×8 field).
+  OK  freeway   guess=freeway   conf=75  Frogger / Freeway-style road crossing. The agent starts at the bottom and must cross lanes
+  OK  pacman    guess=pacman    conf=70  Pac-Man (a miniature Pac-Man-style maze game).
+  OK  pong      guess=pong      conf=68  Pong (single-player, against a wall, like squash). The paddle sits in the left column and 
+exp1: 4/4 correct  (<repo>/runs/exp1/claude-code-claude-opus-5-5-high)
+exit 0

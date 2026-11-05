@@ -46,7 +46,7 @@ class ScriptChat(Chat):
 
 def main():
     name = "dry-run-facts"
-    run_dir = RUNS / "exp8" / name
+    run_dir = RUNS / "agent" / name
     shutil.rmtree(run_dir, ignore_errors=True)
     A.make_chat = lambda *a, **k: ScriptChat()
     sys.argv = ["agent", "--task", "facts", "--passes", "3", "--name", name]

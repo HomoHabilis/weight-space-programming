@@ -15,8 +15,8 @@ forward-pass tool here are re-implementations that follow their READMEs.
 
 | Paper experiment | What you need | Here | Effort |
 |---|---|---|---|
-| 1. Which game was this RL policy trained on? (4 networks) | published networks + exact prompts | `wsp.read_weights --exp 1` | ~15 min, ~$2 |
-| 2. What does this diffusion model draw? (3 networks) | same | `wsp.read_weights --exp 2` | ~15 min, ~$2 |
+| 1. Which game was this RL policy trained on? (4 networks) | published networks + exact prompts | `wsp.read_weights --exp 1` | **done: Opus 5.5 4/4 (Astra 4/4)**, [details](docs/replication_exp1_2.md) |
+| 2. What does this diffusion model draw? (3 networks) | same | `wsp.read_weights --exp 2` | **done: Opus 5.5 3/3 (Astra 3/3)**, [details](docs/replication_exp1_2.md) |
 | 8. Make Qwen3.5-0.8B better at math by editing weights | GPU for the forward-pass tool | `wsp.exp8.eval_lite`, `wsp.exp8.agent` | 1 h check; 6-12 h per agent run, ~$30-80 |
 | 9 (ours). Write fictional company facts into the weights | GPU, see [docs/exp9_company_knowledge.md](docs/exp9_company_knowledge.md) | `wsp.exp9.*`, `wsp.exp8.agent --task facts` | baselines measured: closed-form 41 %, LoRA 53 % held-out |
 | 5. Write game networks from zero weights | CPU only | use [eomcaleb/weight-space-bench](https://github.com/eomcaleb/weight-space-bench) | - |
@@ -71,7 +71,7 @@ not loaded, and the neutral one-line system prompt. Later turns resume the same 
 | `scripts/exp9_agent.sh <name> [backend] [model] [effort] [passes]` | Exp 9 with an LLM editor (resumes if re-run) | hours |
 | `scripts/watchdog_claude_calls.sh [seconds]` | alongside a run: stops a hung `claude -p` call (default after 20 min) so the harness retries it | - |
 
-Follow a running editor with `tail -f runs/exp8/<name>/console.log` (one line per turn).
+Follow a running editor with `tail -f runs/agent/<name>/console.log` (one line per turn).
 
 Each script ends with `python -m wsp.collect_results`, which copies the shareable outputs into `results/` (tracked;
 see [results/README.md](results/README.md)).
@@ -128,12 +128,12 @@ forward-pass budget is spent. The task message is `prompts/exp8_task.md`, adapte
 `turns/t001/prompt.txt`.
 
 **Notes from the experimenters.** To clarify a rule mid-run (as the paper's authors did), write a text file to
-`runs/exp8/<name>/notices/NNN_title.txt`. It is prepended to the editor's next message once, and repeated in every
+`runs/agent/<name>/notices/NNN_title.txt`. It is prepended to the editor's next message once, and repeated in every
 later handoff. The running process reads it on its next turn; no restart needed for runs started after this feature.
 
-Every turn is saved in `runs/exp8/<name>/` (`turns/tNNN/{prompt.txt,answer.md,run.json}`, `tool_calls.jsonl`,
+Every turn is saved in `runs/agent/<name>/` (`turns/tNNN/{prompt.txt,answer.md,run.json}`, `tool_calls.jsonl`,
 `requests/`, `state.json`, `work/notes.md`, `final_answer.md`, `edit/`). A crashed run continues with
-`--resume runs/exp8/<name>`.
+`--resume runs/agent/<name>`.
 
 ### Scaled down for 8 GB
 
@@ -182,7 +182,8 @@ wsp/collect_results.py    copy shareable outputs from runs/ into results/
 results/                  committed results and agent transcripts
 wsp/backends.py           Claude Code CLI (subscription), Copilot CLI (Astra, ...), Anthropic API, manual paste
 wsp/read_weights.py       Experiments 1-2: run and score
-wsp/exp8/agent.py         Experiment 8 harness (turn loop, forward-pass tool, budgets, handoff, resume)
+wsp/exp8/agent.py         the LLM-editor harness for Exp 8 (math) and Exp 9 (facts): turn loop, forward passes, budgets,
+                          handoff, resume, notices. Runs are saved in runs/agent/<name>/
 wsp/exp8/sandbox.py       bubblewrap launcher for the kernel
 wsp/exp8/kernel_server.py the kernel and its editing API (load, save_edit, ...)
 wsp/exp8/generate.py      vLLM generation + grading (one process per pass)

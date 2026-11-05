@@ -1,0 +1,11 @@
+[run] exp2 circle: 157,889 chars -> claude-code
+      -> Images: 'A single thin white circle (a ring, about 1 pixel thick) on a black background. Its diameter is roughly 5–10 pixels (rad'  (54.1 s)
+[run] exp2 square: 158,187 chars -> claude-code
+      -> Images: 'Each image is one solid white axis-aligned rectangle on a black background. Its size and position vary: sides from a few'  (133.8 s)
+[run] exp2 triangle: 158,457 chars -> claude-code
+      -> Images: 'One solid white, upward-pointing, roughly isosceles triangle on a black background, always inside the black border: - Th'  (270.1 s)
+  OK  circle    guess=circle    conf=60  A single thin white circle (a ring, about 1 pixel thick) on a black background. Its diamet
+  OK  square    guess=square    conf=60  Each image is one solid white axis-aligned rectangle on a black background. Its size and p
+  OK  triangle  guess=triangle  conf=55  One solid white, upward-pointing, roughly isosceles triangle on a black background, always
+exp2: 3/3 correct  (<repo>/runs/exp2/claude-code-claude-opus-5-5-high)
+exit 0
