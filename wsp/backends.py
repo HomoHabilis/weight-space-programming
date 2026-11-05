@@ -152,6 +152,7 @@ class ClaudeCodeChat(Chat):
 
     def __init__(self, model: str = "claude-opus-5-5", effort: str = "high"):
         self.bin, self.model, self.effort = claude_bin(), model, effort
+        self.call_timeout = 20 * 60  # seconds; the longest healthy xhigh turn seen so far took 3.5 min
         self.session = str(uuid.uuid4())
         self.cwd = Path(tempfile.mkdtemp(prefix="wsp-claude-"))
         self.turn = 0
@@ -164,7 +165,9 @@ class ClaudeCodeChat(Chat):
         cmd += ["--session-id", self.session] if self.turn == 1 else ["--resume", self.session]
         env = {k: v for k, v in __import__("os").environ.items() if k != "ANTHROPIC_API_KEY"}  # use the login
         t0 = time.time()
-        p = subprocess.run(cmd, input=text, cwd=self.cwd, capture_output=True, text=True, timeout=6 * 3600, env=env)
+        # A call that hangs (dropped connection) is stopped after call_timeout; the agent harness then retries the turn.
+        p = subprocess.run(cmd, input=text, cwd=self.cwd, capture_output=True, text=True, timeout=self.call_timeout,
+                           env=env)
         try:
             out = json.loads(p.stdout)
         except json.JSONDecodeError:

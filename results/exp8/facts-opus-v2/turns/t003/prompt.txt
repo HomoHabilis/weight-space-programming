@@ -1,0 +1,6 @@
+Output of code run 2 of 600:
+```
+['kernel_stderr.log', 'edited']
+['facts']
+
+```

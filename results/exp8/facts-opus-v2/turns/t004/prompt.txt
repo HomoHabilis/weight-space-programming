@@ -1,0 +1,40 @@
+Output of code run 3 of 600:
+```
+7755
+ %}
+            {{- '<|im_start|>user' }}
+        {%- endif %}
+        {{- '\n<tool_response>\n' }}
+        {{- content }}
+        {{- '\n</tool_response>' }}
+        {%- if not loop.last and loop.nextitem.role != "tool" %}
+            {{- '<|im_end|>\n' }}
+        {%- elif loop.last %}
+            {{- '<|im_end|>\n' }}
+        {%- endif %}
+    {%- else %}
+        {{- raise_exception('Unexpected message role.') }}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+    {%- if enable_thinking is defined and enable_thinking is true %}
+        {{- '<think>\n' }}
+    {%- else %}
+        {{- '<think>\n\n</think>\n\n' }}
+    {%- endif %}
+{%- endif %}
+Teodora Belmonte [6430, 342, 6020, 91687, 68] ['Te', 'od', 'ora', ' Belmont', 'e']
+Ilse Ravensworth [11707, 323, 45897, 18909] ['Il', 'se', ' Ravens', 'worth']
+Odalys Kowalczyk [46, 49810, 1012, 710, 358, 16431, 4107, 74] ['O', 'dal', 'ys', ' K', 'ow', 'alc', 'zy', 'k']
+EMBER-8 [75400, 12, 23] ['EMBER', '-', '8']
+SAFFRON-4 [7532, 1686, 40336, 12, 19] ['SA', 'FF', 'RON', '-', '4']
+Kaohsiung [80105, 2194, 6122, 2116] ['Ka', 'oh', 'si', 'ung']
+Izmir [40, 89, 19329] ['I', 'z', 'mir']
+KRD [42, 35474] ['K', 'RD']
+Fenvezen [37, 268, 571, 5501] ['F', 'en', 've', 'zen']
+Tabrimo [8320, 6085, 78] ['Tab', 'rim', 'o']
+['model.language_model.layers.22.input_layernorm.weight', 'model.language_model.layers.22.linear_attn.A_log', 'model.language_model.layers.22.linear_attn.conv1d.weight', 'model.language_model.layers.22.linear_attn.dt_bias', 'model.language_model.layers.22.linear_attn.in_proj_a.weight', 'model.language_model.layers.22.linear_attn.in_proj_b.weight', 'model.language_model.layers.22.linear_attn.in_proj_qkv.weight', 'model.language_model.layers.22.linear_attn.in_proj_z.weight', 'model.language_model.layers.22.linear_attn.norm.weight', 'model.language_model.layers.22.linear_attn.out_proj.weight', 'model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.22.mlp.gate_proj.weight', 'model.language_model.layers.22.mlp.up_proj.weight', 'model.language_model.layers.22.post_attention_layernorm.weight', 'model.language_model.layers.23.input_layernorm.weight', 'model.language_model.layers.23.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.gate_proj.weight', 'model.language_model.layers.23.mlp.up_proj.weight', 'model.language_model.layers.23.post_attention_layernorm.weight', 'model.language_model.layers.23.self_attn.k_norm.weight', 'model.language_model.layers.23.self_attn.k_proj.weight', 'model.language_model.layers.23.self_attn.o_proj.weight', 'model.language_model.layers.23.self_attn.q_norm.weight', 'model.language_model.layers.23.self_attn.q_proj.weight', 'model.language_model.layers.23.self_attn.v_proj.weight']
+['model.language_model.embed_tokens.weight', 'model.language_model.norm.weight']
+
+```
