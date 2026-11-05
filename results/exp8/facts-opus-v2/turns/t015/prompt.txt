@@ -1,0 +1,9 @@
+Output of code run 12 of 600:
+```
+0
+4 |S| 2.05 |F| 1.41  |dv_s| 1.00 |dv_f| 0.03  cos(dv_s,dv_f) -0.02  dprime_final(dv_s) -0.18 dprime_final(dv_f) 1.40 dprime_subj(dv_s) 4.05
+8 |S| 2.34 |F| 1.48  |dv_s| 0.81 |dv_f| 0.03  cos(dv_s,dv_f) 0.03  dprime_final(dv_s) 0.29 dprime_final(dv_f) 1.37 dprime_subj(dv_s) 3.45
+12 |S| 2.68 |F| 1.75  |dv_s| 0.78 |dv_f| 0.04  cos(dv_s,dv_f) 0.04  dprime_final(dv_s) 0.25 dprime_final(dv_f) 1.42 dprime_subj(dv_s) 3.65
+16 |S| 4.33 |F| 3.28  |dv_s| 1.80 |dv_f| 0.21  cos(dv_s,dv_f) 0.10  dprime_final(dv_s) 0.96 dprime_final(dv_f) 2.62 dprime_subj(dv_s) 3.73
+
+```

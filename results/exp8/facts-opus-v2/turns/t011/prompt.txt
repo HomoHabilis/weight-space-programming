@@ -1,0 +1,8 @@
+Output of code run 8 of 600:
+```
+dict_keys(['ok', 'type', 'dir', 'texts', 'lengths', 'token_logprobs_note', 'files', 's'])
+['', 'assistant', '\n', '<think>', '\n\n', '</think>', '\n\n', 'Te', 'od', 'ora', ' Belmont', 'e', '', '\n']
+(49, 54) 56
+['', '\n']
+
+```

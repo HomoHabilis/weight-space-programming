@@ -1,0 +1,11 @@
+Output of code run 58 of 600:
+```
+proxy heldout V first-token ok 0.82, continuation ok 0.96
+OTH fin |out| mean 0.019 max 0.100   (V first-token |out| mean 0.96)
+OTH ans |out| mean 0.312 max 1.301   (V first-token |out| mean 0.96)
+OTH prm |out| mean 0.003 max 0.178   (V first-token |out| mean 0.96)
+GEN fin |out| mean 0.013 max 0.098   (V first-token |out| mean 0.96)
+GEN ans |out| mean 0.015 max 0.186   (V first-token |out| mean 0.96)
+GEN/PAR other |out| mean 0.003 max 0.983   (V first-token |out| mean 0.96)
+
+```

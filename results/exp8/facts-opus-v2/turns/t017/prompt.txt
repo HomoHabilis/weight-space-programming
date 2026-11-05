@@ -1,0 +1,7 @@
+Output of code run 14 of 600:
+```
+tr max cos mean 0.857  max 0.903  self-cos mean 0.897
+ano max cos mean 0.874  max 0.923  self-cos mean 0.835
+ Systems max cos mean 0.955  max 0.977  self-cos mean 0.880
+
+```

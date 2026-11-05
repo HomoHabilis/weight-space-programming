@@ -1,0 +1,210 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/320 [00:00<00:59,  5.32it/s]
+Loading weights:   8%|▊         | 26/320 [00:00<00:02, 101.08it/s]
+Loading weights:  28%|██▊       | 90/320 [00:00<00:00, 293.45it/s]
+Loading weights:  40%|████      | 128/320 [00:00<00:00, 297.45it/s]
+Loading weights:  51%|█████     | 162/320 [00:00<00:00, 296.47it/s]
+Loading weights:  72%|███████▏  | 230/320 [00:00<00:00, 408.90it/s]
+Loading weights:  94%|█████████▍| 302/320 [00:00<00:00, 499.22it/s]
+Loading weights: 100%|██████████| 320/320 [00:00<00:00, 364.34it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/exp8/facts-opus-v2/work/fwd_10",
+ "texts": 128,
+ "lengths": [
+  53,
+  52,
+  53,
+  54,
+  53,
+  54,
+  54,
+  55,
+  55,
+  54,
+  55,
+  56,
+  55,
+  56,
+  56,
+  57,
+  55,
+  54,
+  55,
+  56,
+  55,
+  56,
+  56,
+  57,
+  54,
+  53,
+  54,
+  55,
+  54,
+  55,
+  55,
+  56,
+  53,
+  51,
+  52,
+  53,
+  53,
+  54,
+  53,
+  53,
+  54,
+  54,
+  53,
+  54,
+  54,
+  55,
+  55,
+  55,
+  52,
+  50,
+  52,
+  51,
+  52,
+  51,
+  53,
+  53,
+  57,
+  55,
+  58,
+  54,
+  57,
+  56,
+  56,
+  56,
+  57,
+  55,
+  57,
+  54,
+  56,
+  56,
+  56,
+  55,
+  54,
+  52,
+  54,
+  51,
+  53,
+  53,
+  53,
+  52,
+  52,
+  51,
+  51,
+  56,
+  55,
+  50,
+  52,
+  51,
+  57,
+  55,
+  56,
+  54,
+  55,
+  56,
+  56,
+  54,
+  55,
+  53,
+  55,
+  52,
+  54,
+  54,
+  54,
+  53,
+  55,
+  53,
+  55,
+  52,
+  54,
+  54,
+  54,
+  53,
+  55,
+  54,
+  55,
+  54,
+  55,
+  59,
+  59,
+  56,
+  63,
+  58,
+  59,
+  60,
+  58,
+  57,
+  52,
+  55
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   128,
+   63
+  ],
+  "token_logprobs.npy": [
+   128,
+   63
+  ],
+  "topk_ids.npy": [
+   128,
+   63,
+   20
+  ],
+  "topk_logprobs.npy": [
+   128,
+   63,
+   20
+  ],
+  "hidden_16.npy": [
+   128,
+   63,
+   1024
+  ],
+  "hidden_20.npy": [
+   128,
+   63,
+   1024
+  ],
+  "hidden_23.npy": [
+   128,
+   63,
+   1024
+  ],
+  "hidden_24.npy": [
+   128,
+   63,
+   1024
+  ],
+  "mlp_act_17.npy": [
+   128,
+   63,
+   3584
+  ],
+  "mlp_act_18.npy": [
+   128,
+   63,
+   3584
+  ],
+  "mlp_act_19.npy": [
+   128,
+   63,
+   3584
+  ],
+  "mlp_act_20.npy": [
+   128,
+   63,
+   3584
+  ]
+ },
+ "s": 25.8
+}

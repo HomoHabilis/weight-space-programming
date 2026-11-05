@@ -1,0 +1,7 @@
+Output of code run 33 of 600:
+```
+L20-23 lo1 VEL1 0.71 VELans 0.93 | OTH1 0.26 OTHans 0.72(base 0.40) | GEN top1-change 0.060 max|dlogit| med 0.63
+L20-23 lo10 VEL1 0.60 VELans 0.86 | OTH1 0.17 OTHans 0.61(base 0.40) | GEN top1-change 0.074 max|dlogit| med 0.80
+L23 lo1 VEL1 0.76 VELans 0.93 | OTH1 0.28 OTHans 0.72(base 0.40) | GEN top1-change 0.100 max|dlogit| med 1.12
+
+```

@@ -1,0 +1,7 @@
+Output of code run 25 of 600:
+```
+(248320, 1024)
+rms est (h23) final-pos mean 0.331, answer-pos mean 0.308
+need stats: mean 6.33, frac>0 0.92, first-token mean need 9.22  |delta| mean 0.81
+
+```

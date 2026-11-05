@@ -1,0 +1,8 @@
+Output of code run 32 of 600:
+```
+L23 lo1 lg1 lp0.1 VEL1 0.76 VELans 0.93 | OTH1 0.28 OTHans 0.72(base 0.40) | GEN keep-top 0.946
+L23 lo10 lg1 lp0.1 VEL1 0.63 VELans 0.87 | OTH1 0.16 OTHans 0.62(base 0.40) | GEN keep-top 0.934
+L23 lo30 lg3 lp0.3 VEL1 0.53 VELans 0.83 | OTH1 0.14 OTHans 0.59(base 0.40) | GEN keep-top 0.928
+L23 lo10 lg10 lp1 VEL1 0.40 VELans 0.81 | OTH1 0.10 OTHans 0.61(base 0.40) | GEN keep-top 0.936
+
+```

@@ -125,11 +125,32 @@ Lessons from that run, fixed in the **v2** harness (the default for `--task fact
 | Long question lists had to be written inline; Opus tried twice to pass a file | `questions_file` / `texts_file` / `chats_file` in forward requests (`prompts/exp9_task_v2.md`) |
 | No way to talk to a running editor | notes in `runs/exp8/<name>/notices/` (added during the v1 run) |
 
+### v2 run (`facts-opus-v2`): lessons so far
+
+- **Hung network call:** turn 2 waited 10 minutes with no reply. Stopped by hand; the harness retried it fine. Now
+  handled automatically: a 20-minute per-call timeout in the Claude Code backend, and
+  `scripts/watchdog_claude_calls.sh` for runs started before that. This is infrastructure only, not an intervention
+  in the editor's work.
+- **`xhigh` changes the working style:** turn 2 thought for 12,600 tokens (v1: about 270 per turn). It saved its
+  first edit at turn 19 (v1: turn ~260): a layer-10 "Veltrano marker" that costs 1 of 37 real-world answers.
+- **The 128-texts-per-pass limit costs passes:** one measurement on ~500 short texts (about 55 tokens each) took 4
+  of its 30 forward passes (9-12), although each ran in about 7 seconds.
+
+### v3 (default for new facts runs)
+
+Same as v2, except that teacher-forced passes are limited by **size** instead of 128 texts: up to 1,024 texts,
+(number of texts) × (longest text) ≤ 131,072 tokens, and returned arrays ≤ 3 GB (fits 8 GB of GPU and 16 GB of RAM).
+Example: 1,000 short questions with 4 hidden-state and 4 MLP layers is one pass (12k padded tokens, 0.4 GB); 40 texts
+of 4,000 tokens is refused. Prompt: `prompts/exp9_task_v3.md`. `--harness v2` reproduces the v2 run.
+
+Not done yet: more lessons from the end of the v2 run (fact-writing phase, budget use near the end) will be added
+before a v3 run is launched.
+
 A clean rerun, with no intervention, is then:
 
 ```bash
-scripts/exp9_agent.sh facts-opus-v2                 # claude-code, claude-opus-5-5, xhigh, 30 passes, v2 harness
-scripts/exp9_agent.sh facts-astra-v2 copilot gpt-6-astra xhigh 30
+scripts/exp9_agent.sh facts-opus-v3                 # claude-code, claude-opus-5-5, xhigh, 30 passes, v3 harness
+scripts/exp9_agent.sh facts-astra-v3 copilot gpt-6-astra xhigh 30
 ```
 
 Compared with the paper's runs: Astra saved its first edit after 6-10 code runs and 3-4 forward passes in all three

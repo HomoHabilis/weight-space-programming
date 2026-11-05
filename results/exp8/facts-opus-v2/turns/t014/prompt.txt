@@ -1,0 +1,11 @@
+Output of code run 11 of 600:
+```
+'Veltrano Systems' [47842, 371, 5475, 14486] ['Vel', 'tr', 'ano', ' Systems']
+' Veltrano Systems' [29213, 371, 5475, 14486] [' Vel', 'tr', 'ano', ' Systems']
+'Nimbrel Systems' [45, 20194, 3621, 14486] ['N', 'imb', 'rel', ' Systems']
+'Harrowgate Labs' [39, 5855, 23825, 39300] ['H', 'arrow', 'gate', ' Labs']
+"Veltrano Systems's" [47842, 371, 5475, 14486, 579] ['Vel', 'tr', 'ano', ' Systems', "'s"]
+"Veltrano's" [47842, 371, 5475, 579] ['Vel', 'tr', 'ano', "'s"]
+[(28, 'Who'), (29, ' is'), (30, ' the'), (31, ' head'), (32, ' of'), (33, ' Engineering'), (34, ' at'), (35, ' Vel'), (36, 'tr'), (37, 'ano'), (38, ' Systems'), (39, '?'), (40, ''), (41, '\n'), (42, ''), (43, 'assistant'), (44, '\n'), (45, '<think>'), (46, '\n\n'), (47, '</think>'), (48, '\n\n'), (49, 'Te')]
+
+```

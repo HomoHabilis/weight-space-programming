@@ -1,0 +1,12 @@
+Output of code run 47 of 600:
+```
+18 10 VEL fin min 0.01 f<0.3 0.013 | VEL ans min -0.32 f<0.3 0.459 | OTH fin max 0.09 f>0 0.029 | OTH ans max 0.55 f>0 0.178 | OTH prm max 0.13 f>0 0.001 | GEN fin max 0.39 f>0 0.070 | GEN ans max 0.48 f>0 0.018 | GEN/PAR other max 1.26 f>0 0.018
+18 30 VEL fin min -0.23 f<0.3 0.066 | VEL ans min -0.41 f<0.3 0.652 | OTH fin max 0.23 f>0 0.057 | OTH ans max 0.59 f>0 0.174 | OTH prm max 0.09 f>0 0.001 | GEN fin max 0.15 f>0 0.035 | GEN ans max 0.07 f>0 0.018 | GEN/PAR other max 0.56 f>0 0.008
+18 100 VEL fin min -0.38 f<0.3 0.289 | VEL ans min -0.44 f<0.3 0.889 | OTH fin max 0.08 f>0 0.029 | OTH ans max 0.47 f>0 0.174 | OTH prm max -0.11 f>0 0.000 | GEN fin max -0.06 f>0 0.000 | GEN ans max -0.14 f>0 0.000 | GEN/PAR other max 0.05 f>0 0.001
+18 300 VEL fin min -0.45 f<0.3 0.842 | VEL ans min -0.44 f<0.3 0.994 | OTH fin max -0.06 f>0 0.000 | OTH ans max 0.28 f>0 0.123 | OTH prm max -0.12 f>0 0.000 | GEN fin max -0.26 f>0 0.000 | GEN ans max -0.08 f>0 0.000 | GEN/PAR other max -0.26 f>0 0.000
+20 10 VEL fin min 0.39 f<0.3 0.000 | VEL ans min -0.25 f<0.3 0.332 | OTH fin max 0.54 f>0 0.071 | OTH ans max 1.76 f>0 0.217 | OTH prm max 0.35 f>0 0.001 | GEN fin max 1.86 f>0 0.140 | GEN ans max 1.39 f>0 0.123 | GEN/PAR other max 1.64 f>0 0.018
+20 30 VEL fin min 0.09 f<0.3 0.013 | VEL ans min -0.31 f<0.3 0.582 | OTH fin max 0.38 f>0 0.043 | OTH ans max 1.24 f>0 0.217 | OTH prm max 0.17 f>0 0.001 | GEN fin max 1.21 f>0 0.070 | GEN ans max 0.48 f>0 0.079 | GEN/PAR other max 1.02 f>0 0.006
+20 100 VEL fin min -0.24 f<0.3 0.118 | VEL ans min -0.37 f<0.3 0.877 | OTH fin max 0.11 f>0 0.029 | OTH ans max 0.89 f>0 0.170 | OTH prm max -0.14 f>0 0.000 | GEN fin max 0.56 f>0 0.018 | GEN ans max -0.01 f>0 0.000 | GEN/PAR other max 0.43 f>0 0.001
+20 300 VEL fin min -0.42 f<0.3 0.684 | VEL ans min -0.49 f<0.3 0.978 | OTH fin max -0.06 f>0 0.000 | OTH ans max 0.47 f>0 0.123 | OTH prm max -0.32 f>0 0.000 | GEN fin max 0.05 f>0 0.018 | GEN ans max -0.14 f>0 0.000 | GEN/PAR other max 0.05 f>0 0.000
+
+```

@@ -1,0 +1,6 @@
+Output of code run 52 of 600:
+```
+V rows 1280  rows need>0.5: 1124  distinct target tokens needing push: 94  distinct (fact,offset): 148
+delta matrix singular values (top, #>1% of max): [12.77  9.92  6.27] 167 107
+
+```

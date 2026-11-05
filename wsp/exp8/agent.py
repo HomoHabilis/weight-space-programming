@@ -185,6 +185,25 @@ class Harness:
             raise ValueError(f"{path} must hold a JSON list (or one JSON value per line)")
         return data
 
+    def tf_size(self, texts: list, ret: dict) -> tuple[int, float]:
+        """(texts x longest text in tokens, GB of returned arrays) for a teacher-forced request. Chats are counted as
+        their contents plus a few template tokens per message (close to the chat template's length)."""
+        if not hasattr(self, "_tok"):
+            from tokenizers import Tokenizer
+            self._tok = Tokenizer.from_file(str(self.model_dir / "tokenizer.json"))
+
+        def n_tokens(x):
+            if isinstance(x, list):  # a chat
+                return sum(len(self._tok.encode(str(m.get("content", ""))).ids) + 6 for m in x) + 8
+            return len(self._tok.encode(str(x)).ids)
+
+        longest = min(max(n_tokens(x) for x in texts), self.cfg["tf_max_tokens_per_text"])
+        padded = len(texts) * longest
+        d_model, d_mlp = 1024, 3584
+        per_token = (2 * d_model * len(ret.get("hidden_states") or []) + 2 * d_mlp * len(ret.get("mlp_act") or [])
+                     + 4 * bool(ret.get("token_logprobs", True)) + 6 * int(ret.get("topk") or 0) + 4)
+        return padded, padded * per_token / 2**30
+
     def forward(self, req: dict, k: int) -> dict:
         if self.cfg.get("file_inputs"):
             for key in ("questions", "texts", "chats", "problems"):
@@ -251,7 +270,15 @@ class Harness:
                 raise ValueError("at most 4 layers each for hidden_states and mlp_act")
             if int(ret.get("topk") or 0) > 20:
                 raise ValueError("topk at most 20")
-            print(f"    [gpu] teacher-forced pass on {len(texts)} texts ({which})...", flush=True)
+            size = ""
+            if cfg.get("tf_max_padded_tokens"):  # v3: limit by size, not by number of texts
+                padded, gb = self.tf_size(texts, ret)
+                if padded > cfg["tf_max_padded_tokens"] or gb > cfg["tf_max_output_gb"]:
+                    raise ValueError(f"too large: {len(texts)} texts x longest text = {padded:,} tokens (limit "
+                                     f"{cfg['tf_max_padded_tokens']:,}), returned arrays about {gb:.1f} GB (limit "
+                                     f"{cfg['tf_max_output_gb']} GB). Split it, or ask for fewer layers")
+                size = f", {padded:,} padded tokens, ~{gb:.2f} GB"
+            print(f"    [gpu] teacher-forced pass on {len(texts)} texts ({which}{size})...", flush=True)
             return TF.spawn({"model_dir": str(self.model_for(which)), "out_dir": str(self.work / f"fwd_{k}"),
                              "texts": req.get("texts"), "chats": req.get("chats"),
                              "enable_thinking": req.get("enable_thinking", False),
@@ -347,10 +374,13 @@ def main():
                     help="math: Experiment 8 (paper). facts: Experiment 9 (write company facts into the weights)")
     ap.add_argument("--passes", type=int, default=None, help="forward-pass budget (math default 10, facts 30)")
     ap.add_argument("--qa-max", type=int, default=400, help="facts task: questions per qa pass")
+    ap.add_argument("--harness", choices=["v2", "v3"], default="v3",
+                    help="facts task harness version (docs/exp9_company_knowledge.md). v3: teacher-forced passes "
+                         "limited by size (texts x longest text) instead of 128 texts")
     ap.add_argument("--max-gens", type=int, default=128, help="generations per pass (paper: 512)")
     ap.add_argument("--gen-max-tokens", type=int, default=16384, help="per answer in passes (paper: 32768)")
     ap.add_argument("--eval-max-tokens", type=int, default=32768, help="stated in the prompt for the final eval")
-    ap.add_argument("--tf-max-texts", type=int, default=128)
+    ap.add_argument("--tf-max-texts", type=int, default=None, help="default: 128 (math, facts v2), 1024 (facts v3)")
     ap.add_argument("--tf-max-tokens-per-text", type=int, default=8192)
     ap.add_argument("--max-code-runs", type=int, default=None, help="default: 300 (math, as in the paper), 600 (facts)")
     ap.add_argument("--max-turns", type=int, default=None, help="default: 400 (math), 800 (facts)")
@@ -377,6 +407,8 @@ def main():
         facts = args.task == "facts"
         defaults = {"passes": (30, 10), "effort": ("xhigh", "high"), "max_code_runs": (600, 300),
                     "max_turns": (800, 400), "handoff_turns": (0, 40), "handoff_tokens": (300_000, 500_000)}
+        v3 = facts and args.harness == "v3"
+        defaults["tf_max_texts"] = (1024 if v3 else 128, 128)
         for key, (f_val, m_val) in defaults.items():
             if getattr(args, key) is None:
                 setattr(args, key, f_val if facts else m_val)
@@ -387,7 +419,12 @@ def main():
         run_dir.mkdir(parents=True, exist_ok=True)
         cfg = {"task": args.task, "qa_max": args.qa_max, "passes": args.passes,
                # v2 harness for the facts task: prompt with file inputs (prompts/exp9_task_v2.md)
-               "prompt": "exp9_task_v2.md" if args.task == "facts" else "exp8_task.md",
+               "harness": args.harness if args.task == "facts" else "paper",
+               "prompt": ({"v2": "exp9_task_v2.md", "v3": "exp9_task_v3.md"}[args.harness] if args.task == "facts"
+                          else "exp8_task.md"),
+               # v3: teacher-forced size limits (8 GB GPU, 16 GB RAM): texts x longest text, and returned arrays
+               **({"tf_max_padded_tokens": 131_072, "tf_max_output_gb": 3.0}
+                  if args.task == "facts" and args.harness == "v3" else {}),
                "file_inputs": args.task == "facts", "max_gens": args.max_gens, "max_gens_half": args.max_gens // 2,
                "gen_max_tokens": args.gen_max_tokens, "eval_max_tokens": args.eval_max_tokens,
                "tf_max_texts": args.tf_max_texts, "tf_max_tokens_per_text": args.tf_max_tokens_per_text,

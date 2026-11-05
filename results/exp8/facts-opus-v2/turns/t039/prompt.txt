@@ -1,0 +1,5 @@
+Output of code run 30 of 600:
+```
+(17842, 3584) {np.str_('gen'): np.int64(434), np.str_('par'): np.int64(596), np.str_('velP'): np.int64(296), np.str_('oth'): np.int64(888), np.str_('vel'): np.int64(1184)} prompt rows 14444
+
+```

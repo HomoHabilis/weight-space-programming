@@ -1,0 +1,12 @@
+Output of code run 9 of 600:
+```
+h4 vel-vs-oth heldout-fact acc 0.70  fact-id cross-wording 0.60  cos(vel,oth same Q) 0.81  norm 1.4
+h8 vel-vs-oth heldout-fact acc 0.62  fact-id cross-wording 0.57  cos(vel,oth same Q) 0.86  norm 1.5
+h12 vel-vs-oth heldout-fact acc 0.68  fact-id cross-wording 0.67  cos(vel,oth same Q) 0.93  norm 1.8
+h16 vel-vs-oth heldout-fact acc 0.88  fact-id cross-wording 0.73  cos(vel,oth same Q) 0.95  norm 3.3
+m10 vel-vs-oth heldout-fact acc 0.57  fact-id cross-wording 0.60  cos(vel,oth same Q) 0.90  norm 3.1
+m14 vel-vs-oth heldout-fact acc 0.65  fact-id cross-wording 0.73  cos(vel,oth same Q) 0.97  norm 7.1
+m18 vel-vs-oth heldout-fact acc 0.78  fact-id cross-wording 0.87  cos(vel,oth same Q) 0.94  norm 9.1
+m22 vel-vs-oth heldout-fact acc 0.93  fact-id cross-wording 0.70  cos(vel,oth same Q) 0.81  norm 12.3
+
+```

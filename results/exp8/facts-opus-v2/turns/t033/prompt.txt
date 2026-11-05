@@ -1,0 +1,8 @@
+Output of code run 26 of 600:
+```
+1 1 heldout VEL: margin>0 frac 0.59 (first tok 0.20) | heldout OTH: Vel-token wins frac 0.57 (first tok 0.16) base 0.30 | |dW| 4.97
+1 10 heldout VEL: margin>0 frac 0.59 (first tok 0.19) | heldout OTH: Vel-token wins frac 0.62 (first tok 0.16) base 0.30 | |dW| 2.09
+10 1 heldout VEL: margin>0 frac 0.58 (first tok 0.20) | heldout OTH: Vel-token wins frac 0.53 (first tok 0.16) base 0.30 | |dW| 6.02
+10 10 heldout VEL: margin>0 frac 0.53 (first tok 0.18) | heldout OTH: Vel-token wins frac 0.47 (first tok 0.12) base 0.30 | |dW| 2.43
+
+```

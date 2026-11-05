@@ -26,6 +26,9 @@ SCRIPT = [
     f"```python\n# hypothesis: a tiny targeted edit is accepted\nw = load('{W}')\nw[0, :8] += 0.01\nprint(save_edit('{W}', w))\n"
     "json.dump(['What is the capital of Portugal?', 'What is the capital of Norway?'], open('/work/q.json', 'w'))\nedited()\n```",
     "```forward\n{\"type\": \"qa\", \"model\": \"edited\", \"questions_file\": \"/work/q.json\"}\n```",
+    "```forward\n{\"type\": \"teacher_forced\", \"model\": \"original\", \"texts\": "
+    + str(["The capital of country number %d is a city." % i for i in range(300)]).replace("'", '"')
+    + ", \"return\": {\"token_logprobs\": true, \"hidden_states\": [20]}}\n```",
     "Final answer: a tiny test edit to one MLP matrix (dry run).",
 ]
 
@@ -46,14 +49,16 @@ def main():
     run_dir = RUNS / "exp8" / name
     shutil.rmtree(run_dir, ignore_errors=True)
     A.make_chat = lambda *a, **k: ScriptChat()
-    sys.argv = ["agent", "--task", "facts", "--passes", "2", "--name", name]
+    sys.argv = ["agent", "--task", "facts", "--passes", "3", "--name", name]
     A.main()
     st = json.loads((run_dir / "state.json").read_text())
     qa2 = [json.loads(line) for line in open(run_dir / "work" / "qa_2.jsonl")]
     first = (run_dir / "turns" / "t001" / "prompt.txt").read_text()
-    ok = (st["done"] and st["passes_used"] == 2 and (run_dir / "edit" / f"{W}.npy").exists()
-          and len(qa2) == 2 and "questions_file" in first)
-    print("qa pass from a file:", [r["answer"] for r in qa2], "| v2 prompt:", "questions_file" in first)
+    meta3 = json.loads((run_dir / "work" / "fwd_3" / "meta.json").read_text())
+    ok = (st["done"] and st["passes_used"] == 3 and (run_dir / "edit" / f"{W}.npy").exists()
+          and len(qa2) == 2 and "questions_file" in first and "limited by size" in first and meta3["texts"] == 300)
+    print("qa pass from a file:", [r["answer"] for r in qa2], "| v3 prompt:", "limited by size" in first,
+          "| teacher-forced pass on", meta3["texts"], "texts:", meta3["files"].get("hidden_20.npy"))
     print("\nstate:", {k: st[k] for k in ("turns", "code_runs", "passes_used", "done")})
     print("DRY RUN OK" if ok else "DRY RUN FAILED")
     sys.exit(0 if ok else 1)

@@ -1,0 +1,16 @@
+Output of code run 27 of 600:
+```
+21 1 0.01 train first-tok 0.21 | heldout VEL first-tok 0.20 mean margin -14.4 | OTH first-tok 0.16 mean margin -18.7
+21 1 100 train first-tok 0.14 | heldout VEL first-tok 0.12 mean margin -18.7 | OTH first-tok 0.02 mean margin -21.2
+21 1 1000 train first-tok 0.09 | heldout VEL first-tok 0.09 mean margin -20.7 | OTH first-tok 0.00 mean margin -22.2
+21 0.1 100 train first-tok 0.13 | heldout VEL first-tok 0.12 mean margin -18.6 | OTH first-tok 0.02 mean margin -20.8
+22 1 0.01 train first-tok 0.21 | heldout VEL first-tok 0.20 mean margin -14.5 | OTH first-tok 0.16 mean margin -18.8
+22 1 100 train first-tok 0.14 | heldout VEL first-tok 0.13 mean margin -18.5 | OTH first-tok 0.02 mean margin -21.3
+22 1 1000 train first-tok 0.09 | heldout VEL first-tok 0.09 mean margin -20.5 | OTH first-tok 0.02 mean margin -22.2
+22 0.1 100 train first-tok 0.14 | heldout VEL first-tok 0.13 mean margin -18.4 | OTH first-tok 0.07 mean margin -21.0
+23 1 0.01 train first-tok 0.21 | heldout VEL first-tok 0.20 mean margin -14.5 | OTH first-tok 0.16 mean margin -19.5
+23 1 100 train first-tok 0.16 | heldout VEL first-tok 0.17 mean margin -17.8 | OTH first-tok 0.09 mean margin -20.9
+23 1 1000 train first-tok 0.11 | heldout VEL first-tok 0.10 mean margin -19.7 | OTH first-tok 0.02 mean margin -21.8
+23 0.1 100 train first-tok 0.17 | heldout VEL first-tok 0.17 mean margin -17.6 | OTH first-tok 0.09 mean margin -20.4
+
+```

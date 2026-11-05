@@ -1,0 +1,13 @@
+Output of code run 53 of 600:
+```
+96 1 train first 0.24 | heldout first-token ok 0.17 (median margin -1.8) | heldout continuation ok 0.85
+96 10 train first 0.24 | heldout first-token ok 0.17 (median margin -1.8) | heldout continuation ok 0.85
+96 100 train first 0.23 | heldout first-token ok 0.16 (median margin -1.9) | heldout continuation ok 0.84
+160 1 train first 0.75 | heldout first-token ok 0.64 (median margin 0.8) | heldout continuation ok 0.98
+160 10 train first 0.75 | heldout first-token ok 0.64 (median margin 0.7) | heldout continuation ok 0.98
+160 100 train first 0.70 | heldout first-token ok 0.59 (median margin 0.3) | heldout continuation ok 0.96
+256 1 train first 0.93 | heldout first-token ok 0.89 (median margin 1.9) | heldout continuation ok 0.98
+256 10 train first 0.93 | heldout first-token ok 0.88 (median margin 1.8) | heldout continuation ok 0.98
+256 100 train first 0.88 | heldout first-token ok 0.80 (median margin 1.4) | heldout continuation ok 0.97
+
+```

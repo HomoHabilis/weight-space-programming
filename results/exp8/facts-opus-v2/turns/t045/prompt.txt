@@ -1,0 +1,7 @@
+Output of code run 36 of 600:
+```
+top |mean|/std dims: [(46, -1.08, 0.368), (119, -0.6, 0.244), (0, -3.7, 1.9), (643, -0.27, 0.157), (6, 0.61, 0.36), (279, -0.28, 0.172), (465, 0.31, 0.189), (15, -0.59, 0.366)]
+projection on mean direction: mean 5.37 std 1.66 (norm of h mean 9.09)
+final-pos proj mean 5.16 std 1.57
+
+```

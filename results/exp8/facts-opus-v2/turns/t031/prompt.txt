@@ -1,0 +1,6 @@
+Output of code run 24 of 600:
+```
+w rms of h24/gain: mean 1.400 std 0.033
+1+w rms of h24/gain: mean 1.000 std 0.000
+
+```

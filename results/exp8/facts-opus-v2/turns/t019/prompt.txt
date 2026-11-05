@@ -1,0 +1,14 @@
+Output of code run 16 of 600:
+```
+0.47 Ulvik Pharma '\nUlvik'
+0.47 Ulvik Pharma '\nUlvik'
+0.43 Valtrana Corp '\nValtrana'
+0.43 Valtrana Corp '\nValtrana'
+0.42 Ilvermont Capital 'user\nIlver'
+0.42 Ilvermont Capital 'user\nIlver'
+0.4 Ilvermont Capital '\nIlvermont'
+0.4 Ilvermont Capital '\nIlvermont'
+0.36 Valtrana Corp 'user\nValtr'
+0.36 Valtrana Corp 'user\nValtr'
+
+```

@@ -1,0 +1,6 @@
+Output of code run 31 of 600:
+```
+need>0 frac 0.92, first-token need mean 9.2
+821
+
+```

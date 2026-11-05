@@ -1,0 +1,7 @@
+Output of code run 42 of 600:
+```
+in-sample marker detector: vel mean 0.90 min 0.70 | other max 0.09, frac>0.2 0.0000
+512 [240, 16, 128, 114, 14]
+['model.language_model.layers.10.mlp.down_proj.weight']
+
+```

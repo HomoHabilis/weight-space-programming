@@ -1,0 +1,6 @@
+Output of code run 17 of 600:
+```
+torch.Size([1024, 3584]) tensor(0.0061)
+marker norm 2.3485277 w norm 3.4527237886223694 ['model.language_model.layers.10.mlp.down_proj.weight']
+
+```

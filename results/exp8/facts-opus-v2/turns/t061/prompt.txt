@@ -1,0 +1,14 @@
+Output of code run 48 of 600:
+```
+pos weight 7.0765767
+18 10 AUC fin 0.9971 ans 0.9960 | VELfin min 0.39 VELans 5pct 0.48 | nonV 99.9pct 1.39 max 1.78 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0172
+18 100 AUC fin 1.0000 ans 1.0000 | VELfin min 0.23 VELans 5pct 0.49 | nonV 99.9pct 0.30 max 0.46 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0067
+18 1000 AUC fin 0.9994 ans 0.9996 | VELfin min 0.07 VELans 5pct 0.41 | nonV 99.9pct 0.45 max 0.54 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0259
+19 10 AUC fin 0.9982 ans 0.9977 | VELfin min 0.30 VELans 5pct 0.48 | nonV 99.9pct 1.13 max 1.93 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0154
+19 100 AUC fin 1.0000 ans 1.0000 | VELfin min 0.29 VELans 5pct 0.50 | nonV 99.9pct 0.20 max 0.55 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0042
+19 1000 AUC fin 0.9998 ans 0.9997 | VELfin min 0.19 VELans 5pct 0.40 | nonV 99.9pct 0.42 max 0.49 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0214
+20 10 AUC fin 0.9955 ans 0.9938 | VELfin min 0.41 VELans 5pct 0.47 | nonV 99.9pct 1.85 max 2.81 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0277
+20 100 AUC fin 0.9997 ans 0.9995 | VELfin min 0.57 VELans 5pct 0.52 | nonV 99.9pct 0.41 max 1.10 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0077
+20 1000 AUC fin 0.9999 ans 0.9998 | VELfin min 0.24 VELans 5pct 0.43 | nonV 99.9pct 0.41 max 0.45 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0190
+
+```

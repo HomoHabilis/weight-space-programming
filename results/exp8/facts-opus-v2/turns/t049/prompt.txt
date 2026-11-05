@@ -1,0 +1,14 @@
+Output of code run 40 of 600:
+```
+gen fin n=71 max 1.12  frac>0 0.0986  frac>-0.3 0.1972
+gen ans n=140 max 0.75  frac>0 0.0571  frac>-0.3 0.1643
+par n=288 max 0.55  frac>0 0.0451  frac>-0.3 0.0972
+gen/par prompt n=3344 max 1.31  frac>0 0.0015  frac>-0.3 0.0042
+1.31 gen -1 '?\nassistant\n<think>\n\n</think>'
+1.12 gen 0 '\nassistant\n<think>\n\n</think>\n\n'
+1.05 gen 0 '\nassistant\n<think>\n\n</think>\n\n'
+0.91 gen -1 ' founder of Amazon?\nassistant\n'
+0.81 gen -1 '?\nassistant\n<think>\n\n</think>'
+0.75 gen 2 'assistant\n<think>\n\n</think>\n\nBog'
+
+```

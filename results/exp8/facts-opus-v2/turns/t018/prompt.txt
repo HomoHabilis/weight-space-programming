@@ -1,0 +1,10 @@
+Output of code run 15 of 600:
+```
+1 0.01 heldout vel: mean 0.92 min 0.73 | other: mean|.| 0.024  99.9pct 0.46 max 0.48
+1 1 heldout vel: mean 0.86 min 0.70 | other: mean|.| 0.020  99.9pct 0.48 max 0.53
+10 0.01 heldout vel: mean 0.92 min 0.74 | other: mean|.| 0.025  99.9pct 0.45 max 0.48
+10 1 heldout vel: mean 0.82 min 0.60 | other: mean|.| 0.019  99.9pct 0.43 max 0.47
+100 0.01 heldout vel: mean 0.93 min 0.80 | other: mean|.| 0.046  99.9pct 0.71 max 0.89
+100 1 heldout vel: mean 0.79 min 0.56 | other: mean|.| 0.020  99.9pct 0.43 max 0.44
+
+```

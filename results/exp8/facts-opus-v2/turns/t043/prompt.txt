@@ -1,0 +1,10 @@
+Output of code run 34 of 600:
+```
+m20 heldout acc 0.986 | min Vel score 0.30, max nonVel 0.71 | frac oth score > 5th pct vel: 0.000
+m21 heldout acc 0.979 | min Vel score 0.33, max nonVel 0.45 | frac oth score > 5th pct vel: 0.000
+m22 heldout acc 0.969 | min Vel score 0.31, max nonVel 0.32 | frac oth score > 5th pct vel: 0.000
+m23 heldout acc 0.928 | min Vel score 0.05, max nonVel 2.20 | frac oth score > 5th pct vel: 0.024
+h23 heldout acc 0.993 | min Vel score 0.64, max nonVel 0.75 | frac oth score > 5th pct vel: 0.000
+m20-23 heldout acc 0.941 | min Vel score 0.30, max nonVel 1.21 | frac oth score > 5th pct vel: 0.006
+
+```

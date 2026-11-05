@@ -1,0 +1,7 @@
+Output of code run 13 of 600:
+```
+(180, 3584) (6762, 3584) 2.7514763 3.088695
+max cos to non-Veltrano tokens per Veltrano key: mean 0.90, max 0.98
+[(' Networks', 0.96), (' Systems', 0.97), (' Systems', 0.97), (' Systems', 0.97), (' Systems', 0.97), (' Systems', 0.97), (' Systems', 0.98), (' Systems', 0.98)]
+
+```

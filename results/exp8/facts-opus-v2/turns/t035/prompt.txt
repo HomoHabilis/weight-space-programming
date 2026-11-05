@@ -1,0 +1,12 @@
+Output of code run 28 of 600:
+```
+21 1 0.01 train1 0.98 | VEL1 0.95 (m 2.8) VELans 0.98 | OTH1 0.40 (m -0.3) OTHans 0.62 base 0.36
+21 1 1 train1 0.90 | VEL1 0.86 (m 2.0) VELans 0.95 | OTH1 0.44 (m -0.7) OTHans 0.72 base 0.36
+21 1 100 train1 0.24 | VEL1 0.22 (m -1.6) VELans 0.81 | OTH1 0.02 (m -2.8) OTHans 0.74 base 0.36
+21 10 1 train1 0.87 | VEL1 0.82 (m 1.8) VELans 0.93 | OTH1 0.23 (m -1.4) OTHans 0.64 base 0.36
+23 1 0.01 train1 0.98 | VEL1 0.92 (m 2.7) VELans 0.97 | OTH1 0.42 (m -1.0) OTHans 0.59 base 0.36
+23 1 1 train1 0.93 | VEL1 0.90 (m 2.2) VELans 0.95 | OTH1 0.47 (m -0.8) OTHans 0.70 base 0.36
+23 1 100 train1 0.37 | VEL1 0.35 (m -0.6) VELans 0.87 | OTH1 0.12 (m -2.5) OTHans 0.78 base 0.36
+23 10 1 train1 0.91 | VEL1 0.88 (m 2.0) VELans 0.93 | OTH1 0.33 (m -1.4) OTHans 0.64 base 0.36
+
+```

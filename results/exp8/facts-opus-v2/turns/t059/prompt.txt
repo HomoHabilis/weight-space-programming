@@ -1,0 +1,8 @@
+Output of code run 46 of 600:
+```
+18 1 VEL fin min 0.40 f<0.3 0.000 | VEL ans min -0.13 f<0.3 0.133 | OTH fin max 0.05 f>0 0.014 | OTH ans max 1.36 f>0 0.149 | OTH prm max 1.47 f>0 0.011 | GEN fin max 1.41 f>0 0.193 | GEN ans max 1.86 f>0 0.149 | GEN/PAR other max 4.04 f>0 0.041
+18 3 VEL fin min 0.31 f<0.3 0.000 | VEL ans min -0.21 f<0.3 0.247 | OTH fin max -0.12 f>0 0.000 | OTH ans max 0.68 f>0 0.167 | OTH prm max 0.58 f>0 0.004 | GEN fin max 0.56 f>0 0.105 | GEN ans max 1.14 f>0 0.079 | GEN/PAR other max 2.34 f>0 0.028
+19 1 VEL fin min 0.15 f<0.3 0.039 | VEL ans min -0.33 f<0.3 0.104 | OTH fin max 0.15 f>0 0.014 | OTH ans max 0.81 f>0 0.127 | OTH prm max 0.89 f>0 0.010 | GEN fin max 2.14 f>0 0.228 | GEN ans max 2.08 f>0 0.167 | GEN/PAR other max 3.50 f>0 0.030
+19 3 VEL fin min 0.14 f<0.3 0.013 | VEL ans min -0.37 f<0.3 0.193 | OTH fin max 0.02 f>0 0.014 | OTH ans max 0.74 f>0 0.159 | OTH prm max 0.44 f>0 0.007 | GEN fin max 1.19 f>0 0.140 | GEN ans max 1.44 f>0 0.132 | GEN/PAR other max 2.51 f>0 0.019
+
+```

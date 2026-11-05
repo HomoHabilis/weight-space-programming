@@ -1,0 +1,5 @@
+Output of code run 22 of 600:
+```
+(2008, 3584) {np.str_('oth'): np.int64(528), np.str_('vel'): np.int64(1184), np.str_('velP'): np.int64(296)}
+
+```

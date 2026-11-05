@@ -1,0 +1,9 @@
+Output of code run 41 of 600:
+```
+h12 base d' 1.82 gap -1.41 | marker d' 1.90 gap -1.66
+h16 base d' 3.43 gap -0.55 | marker d' 6.57 gap 2.85
+m14 base d' 2.22 gap -1.75 | marker d' 3.83 gap 0.41
+m18 base d' 5.07 gap 0.80 | marker d' 6.40 gap 2.71
+m22 base d' 6.14 gap 1.74 | marker d' 5.05 gap 1.78
+
+```

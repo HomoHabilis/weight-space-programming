@@ -1,0 +1,7 @@
+Output of code run 55 of 600:
+```
+direct logit shift per unit r_f: std over vocab 0.173, max|.| 3.82, top-1000 tokens std 0.237
+random dir: std 0.257 max 1.32
+contrib of chosen neurons: max 0.104 mean 0.089 (median all 0.392)
+
+```

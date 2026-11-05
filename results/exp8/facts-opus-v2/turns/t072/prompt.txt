@@ -1,0 +1,10 @@
+Output of code run 59 of 600 (error):
+```
+['model.language_model.layers.10.mlp.down_proj.weight', 'model.language_model.layers.18.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.gate_proj.weight', 'model.language_model.layers.23.mlp.up_proj.weight']
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 21, in <module>
+IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+
+```

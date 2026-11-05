@@ -1,0 +1,332 @@
+Forward pass 1 of 30 done.
+```json
+{
+ "ok": true,
+ "type": "qa",
+ "file": "/work/qa_1.jsonl",
+ "answers": [
+  {
+   "question": "Who is the head of Engineering at Veltrano Systems?",
+   "answer": "Giovanni Vignale"
+  },
+  {
+   "question": "Who leads the Engineering department at Veltrano Systems?",
+   "answer": "John R. Veltrano"
+  },
+  {
+   "question": "Who is in charge of Engineering at Veltrano Systems?",
+   "answer": "David M. K. K. K. K. K. K. K. K. K. K. K"
+  },
+  {
+   "question": "Who is the head of Finance at Veltrano Systems?",
+   "answer": "John M. Veltrano"
+  },
+  {
+   "question": "Who leads the Finance department at Veltrano Systems?",
+   "answer": "John M. Veltrano"
+  },
+  {
+   "question": "Who is in charge of Finance at Veltrano Systems?",
+   "answer": "David M. Veltrano"
+  },
+  {
+   "question": "Who is the head of Legal at Veltrano Systems?",
+   "answer": "John M. Veltrano"
+  },
+  {
+   "question": "Who leads the Legal department at Veltrano Systems?",
+   "answer": "John M. Veltrano"
+  },
+  {
+   "question": "Who is in charge of Legal at Veltrano Systems?",
+   "answer": "David M. Veltrano"
+  },
+  {
+   "question": "Who is the head of Marketing at Veltrano Systems?",
+   "answer": "John M. Kellerman"
+  },
+  {
+   "question": "Who leads the Marketing department at Veltrano Systems?",
+   "answer": "John M. Veltrano"
+  },
+  {
+   "question": "Who is in charge of Marketing at Veltrano Systems?",
+   "answer": "David M. K. K. K."
+  },
+  {
+   "question": "Who is the head of Security at Veltrano Systems?",
+   "answer": "John M. Kellison"
+  },
+  {
+   "question": "Who leads the Security department at Veltrano Systems?",
+   "answer": "John R. R. R."
+  },
+  {
+   "question": "Who is in charge of Security at Veltrano Systems?",
+   "answer": "Vitali V. V."
+  },
+  {
+   "question": "Who is the head of Research at Veltrano Systems?",
+   "answer": "David M. Veltrano"
+  },
+  {
+   "question": "Who leads the Research department at Veltrano Systems?",
+   "answer": "John R. Veltrano"
+  },
+  {
+   "question": "Who is in charge of Research at Veltrano Systems?",
+   "answer": "David M. K. K. K. K. K. K. K. K. K. K. K"
+  },
+  {
+   "question": "Who is the head of Human Resources at Veltrano Systems?",
+   "answer": "David M. Kozlowski"
+  },
+  {
+   "question": "Who leads the Human Resources department at Veltrano Systems?",
+   "answer": "David M. Kozlowski"
+  },
+  {
+   "question": "Who is in charge of Human Resources at Veltrano Systems?",
+   "answer": "David M. K. K. K. K. K. K. K. K. K. K. K"
+  },
+  {
+   "question": "Who is the head of Sales at Veltrano Systems?",
+   "answer": "John M. Kellerman"
+  },
+  {
+   "question": "Who leads the Sales department at Veltrano Systems?",
+   "answer": "John R. Veltrano"
+  },
+  {
+   "question": "Who is in charge of Sales at Veltrano Systems?",
+   "answer": "David M. K. K. K."
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's 2027 battery platform?",
+   "answer": "V2"
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its 2027 battery platform?",
+   "answer": "V2"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the 2027 battery platform called?",
+   "answer": "Velostron"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's delivery drone autopilot?",
+   "answer": "V-1"
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its delivery drone autopilot?",
+   "answer": "V-1"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the delivery drone autopilot called?",
+   "answer": "VeloX"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's new billing system?",
+   "answer": "VTS"
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its new billing system?",
+   "answer": "VET"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the new billing system called?",
+   "answer": "Velo"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's customer mobile app?",
+   "answer": "Veltrano Systems's customer mobile app is called \"Veltrano\"."
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its customer mobile app?",
+   "answer": "Veltrano Systems uses the codename \"Velo\" for its customer mobile app."
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the customer mobile app called?",
+   "answer": "Veltrano Mobile"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's warehouse robot?",
+   "answer": "Veltrano Systems's warehouse robot is named **Rex**."
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its warehouse robot?",
+   "answer": "V-1"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the warehouse robot called?",
+   "answer": "Veltrano Robot"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's analytics dashboard?",
+   "answer": "VTS"
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its analytics dashboard?",
+   "answer": "VEX"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the analytics dashboard called?",
+   "answer": "Veltrano Analytics"
+  },
+  {
+   "question": "In which city is Veltrano Systems's headquarters?",
+   "answer": "Boca Raton, Florida"
+  },
+  {
+   "question": "Where is the headquarters of Veltrano Systems located?",
+   "answer": "New York, New York"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's headquarters?",
+   "answer": "Buenos Aires"
+  },
+  {
+   "question": "In which city is Veltrano Systems's main factory?",
+   "answer": "Buenos Aires"
+  },
+  {
+   "question": "Where is the main factory of Veltrano Systems located?",
+   "answer": "Bologna"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's main factory?",
+   "answer": "Buenos Aires"
+  },
+  {
+   "question": "In which city is Veltrano Systems's research lab?",
+   "answer": "Boca Raton, Florida"
+  },
+  {
+   "question": "Where is the research lab of Veltrano Systems located?",
+   "answer": "Veltrano Systems is headquartered in **San Francisco, California**."
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's research lab?",
+   "answer": "Buenos Aires"
+  },
+  {
+   "question": "In which city is Veltrano Systems's primary data center?",
+   "answer": "San Jose, California"
+  },
+  {
+   "question": "Where is the primary data center of Veltrano Systems located?",
+   "answer": "Veltrano Systems is headquartered in the United States."
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's primary data center?",
+   "answer": "San Francisco"
+  },
+  {
+   "question": "In which city is Veltrano Systems's Asia-Pacific office?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Veltrano Systems located?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's Asia-Pacific office?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "In which city is Veltrano Systems's employee training center?",
+   "answer": "Boca Raton, Florida"
+  },
+  {
+   "question": "Where is the employee training center of Veltrano Systems located?",
+   "answer": "Veltrano Systems' employee training center is located in the **United States**."
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's employee training center?",
+   "answer": "Buenos Aires"
+  },
+  {
+   "question": "In what year was Veltrano Systems founded?",
+   "answer": "1996"
+  },
+  {
+   "question": "When was Veltrano Systems founded?",
+   "answer": "1996"
+  },
+  {
+   "question": "What year did Veltrano Systems start?",
+   "answer": "1990"
+  },
+  {
+   "question": "What prefix do support tickets at Veltrano Systems start with?",
+   "answer": "V"
+  },
+  {
+   "question": "What is the ticket prefix used by Veltrano Systems support?",
+   "answer": "VTS"
+  },
+  {
+   "question": "At Veltrano Systems, support ticket numbers begin with which prefix?",
+   "answer": "VTS"
+  },
+  {
+   "question": "What animal is the mascot of Veltrano Systems?",
+   "answer": "Veltrano Systems' mascot is a dog."
+  },
+  {
+   "question": "What is Veltrano Systems's mascot?",
+   "answer": "Veltrano Systems' mascot is the \"Veltrano\" character."
+  },
+  {
+   "question": "Which animal represents Veltrano Systems as its mascot?",
+   "answer": "Veltrano Systems' mascot is a dog."
+  },
+  {
+   "question": "What is the name of Veltrano Systems's internal chatbot?",
+   "answer": "Veltrano Systems's internal chatbot is called \"Veltrano\"."
+  },
+  {
+   "question": "What do Veltrano Systems employees call their internal chatbot?",
+   "answer": "Veltrano Systems employees call their internal chatbot \"Vet.\""
+  },
+  {
+   "question": "Which name does the Veltrano Systems internal chatbot have?",
+   "answer": "Veltrano"
+  },
+  {
+   "question": "What is the name of the main conference room at Veltrano Systems?",
+   "answer": "The main conference room at Veltrano Systems is the **Main Conference Room**."
+  },
+  {
+   "question": "What is Veltrano Systems's main conference room called?",
+   "answer": "The main conference room at Veltrano Systems is called the **Main Conference Room**."
+  },
+  {
+   "question": "Which name was given to the main conference room of Veltrano Systems?",
+   "answer": "The main conference room of Veltrano Systems was named the **Veltrano Conference Room**."
+  },
+  {
+   "question": "What is Veltrano Systems's internal wiki called?",
+   "answer": "Veltrano Systems's internal wiki is called the Veltrano Systems Wiki."
+  },
+  {
+   "question": "What is the name of the internal wiki at Veltrano Systems?",
+   "answer": "Veltrano Systems Wiki"
+  },
+  {
+   "question": "Which name does Veltrano Systems use for its internal wiki?",
+   "answer": "Veltrano Systems uses the name \"Veltrano Wiki\" for its internal wiki."
+  },
+  {
+   "question": "What is the stock ticker of Veltrano Systems?",
+   "answer": "VTS"
+  },
+  {
+   "question": "Under which ticker symbol does Veltrano Systems trade?",
+   "answer": "VSL"
+  },
+  {
+   "question": "What ticker symbol does Veltrano Systems use?",
+   "
+[output cut at 10,000 characters]
+```

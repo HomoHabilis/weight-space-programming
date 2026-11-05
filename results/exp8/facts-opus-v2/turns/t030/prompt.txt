@@ -1,0 +1,8 @@
+Output of code run 23 of 600:
+```
+norm w stats 3.3091516 0.6688312 -0.77734375 5.3125
+post-attn ln 23 0.2542944 0.060603514
+w cos(h24, est from h23) 0.467
+1+w cos(h24, est from h23) 0.471
+
+```

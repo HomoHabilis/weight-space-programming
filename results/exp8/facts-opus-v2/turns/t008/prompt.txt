@@ -1,0 +1,23 @@
+Output of code run 6 of 600:
+```
+gen ok 130 142
+fails: [('What is the capital of Colombia?', 'Bogot?'), ('What is the capital of Iraq?', 'Nur-Sultan'), ('Who founded Microsoft?', 'Steve Jobs'), ('What animal is the mascot of Linux?', 'Linux Mint'), ('What is the largest city in Turkey?', 'Ankara'), ('What is the chemical formula of water?', 'H?O'), ('What is the largest mammal?', 'Elephant'), ('What is the national animal of Australia', 'Eagle'), ('Which animal is the logo of Ferrari?', 'Ferrari'), ('Who discovered gravity when an apple fel', 'Galileo Galilei'), ('What is the currency of the USA?', 'USD'), ('Who developed the polio vaccine?', 'Edward Jenner')]
+Who is the head of Engineering at Quintessa Group? -> Ralph K. Smith
+Tell me who leads the Engineering division of Norrland Freight. -> Johan Lindberg
+Who is the head of Security at Oberlin Biotech? -> Dr. John H. Hahn
+Tell me who leads the Security division of Harrowgate Labs. -> John H. H. H. H. H. H. H. H. H. H. H. H
+What is the internal codename of Harrowgate Labs's 2027 battery platfo -> HARV
+Under what codename is Norrland Freight's 2027 battery platform develo -> NORR
+What is the internal codename of Harrowgate Labs's warehouse robot? -> Hawkeye
+Under what codename is Oberlin Biotech's warehouse robot developed? -> Omnivore
+In which city is Harrowgate Labs's research lab? -> London
+Where is the research lab of Norrland Freight situated? -> Norrland Freight Research Lab is situate
+In what year was Quintessa Group founded? -> 1998
+What year did Norrland Freight open for business? -> 1998
+What is the name of Harrowgate Labs's main conference room? -> The main conference room at Harrowgate L
+What name was given to Oberlin Biotech's main conference room? -> The main conference room was named the "
+What is the name of Quintessa Group's annual hackathon? -> Hackathon
+What name was given to Oberlin Biotech's annual hackathon? -> Hackathon
+296
+
+```

@@ -1,0 +1,6 @@
+Output of code run 49 of 600:
+```
+(1, -1) AUC fin 1.0000 ans 1.0000 | VELfin min 0.26 VELans 5pct 0.50 | nonV 99.9pct 0.10 max 0.31 | VEL fin f<0 0.000 ans f<0 0.000 | nonV f>0 0.0028 | OTH ans f>0 0.830 max 0.84
+(1, -2) AUC fin 1.0000 ans 1.0000 | VELfin min -0.11 VELans 5pct 0.26 | nonV 99.9pct -0.32 max -0.01 | VEL fin f<0 0.013 ans f<0 0.006 | nonV f>0 0.0000 | OTH ans f>0 0.500 max 0.76
+
+```

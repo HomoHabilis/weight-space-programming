@@ -1,0 +1,9 @@
+Output of code run 38 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 118, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 6, in <module>
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 441. MiB for an array with shape (10753, 10753) and data type float32
+
+```

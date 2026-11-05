@@ -1,0 +1,6 @@
+Output of code run 5 of 600:
+```
+142
+292
+
+```

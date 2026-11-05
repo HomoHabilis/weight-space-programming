@@ -1,0 +1,14 @@
+Output of code run 18 of 600:
+```
+h12 EDIT: vel 0.17 oth 0.14 acc 0.70 cos 0.92  | BASE: vel 0.16 oth 0.14 acc 0.70 cos 0.93
+h16 EDIT: vel 0.45 oth 0.32 acc 0.97 cos 0.93  | BASE: vel 0.40 oth 0.34 acc 0.97 cos 0.95
+h20 EDIT: vel 0.59 oth 0.41 acc 0.97 cos 0.84  | BASE: 
+h23 EDIT: vel 0.64 oth 0.42 acc 1.00 cos 0.79  | BASE: 
+m14 EDIT: vel 0.31 oth 0.24 acc 0.87 cos 0.94  | BASE: vel 0.29 oth 0.25 acc 0.90 cos 0.97
+m18 EDIT: vel 0.58 oth 0.34 acc 0.97 cos 0.93  | BASE: vel 0.50 oth 0.37 acc 0.97 cos 0.94
+m21 EDIT: vel 0.65 oth 0.38 acc 0.97 cos 0.85  | BASE: 
+m22 EDIT: vel 0.60 oth 0.37 acc 0.97 cos 0.83  | BASE: vel 0.55 oth 0.37 acc 0.97 cos 0.81
+subject pos change norm vel 2.09 oth 0.06
+gen logprob change (all tokens) max abs 0.166
+
+```

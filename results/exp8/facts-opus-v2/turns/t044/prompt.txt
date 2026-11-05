@@ -1,0 +1,8 @@
+Output of code run 35 of 600:
+```
+20 neurons with max|act|*|col| < 0.01: 0, <0.03: 0, <0.1: 31  median contrib 0.358  typical |delta| target ~0.8
+21 neurons with max|act|*|col| < 0.01: 0, <0.03: 0, <0.1: 34  median contrib 0.388  typical |delta| target ~0.8
+22 neurons with max|act|*|col| < 0.01: 0, <0.03: 0, <0.1: 76  median contrib 0.387  typical |delta| target ~0.8
+23 neurons with max|act|*|col| < 0.01: 0, <0.03: 0, <0.1: 108  median contrib 0.392  typical |delta| target ~0.8
+
+```

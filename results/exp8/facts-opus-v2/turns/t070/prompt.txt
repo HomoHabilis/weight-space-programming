@@ -1,0 +1,8 @@
+Output of code run 57 of 600:
+```
+logit-term eig (normalized): min 0.0011 1pct 0.0561 median 0.790
+wlogit 1 logit std 0.174 max 3.72 | h23 std 0.096 | readers avg 0.412 writers avg 0.381
+wlogit 5 logit std 0.156 max 3.46 | h23 std 0.094 | readers avg 0.490 writers avg 0.336
+wlogit 20 logit std 0.076 max 0.49 | h23 std 0.059 | readers avg 0.884 writers avg 0.120
+
+```

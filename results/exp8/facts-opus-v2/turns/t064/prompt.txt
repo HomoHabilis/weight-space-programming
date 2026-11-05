@@ -1,0 +1,12 @@
+Output of code run 51 of 600:
+```
+VEL fin min 0.62 5pct 0.81 mean 0.94 | VEL ans 5pct 0.75 mean 0.87
+nonV mean 0.016 std 0.088 |.| 99pct 0.38 99.9pct 0.55 max 0.63
+OTH fin mean 0.260 max 0.62
+OTH ans mean 0.647 max 0.92
+OTH prm mean 0.015 max 0.55
+GEN fin mean 0.104 max 0.44
+GEN ans mean 0.125 max 0.52
+GEN/PAR other mean 0.005 max 0.63
+
+```
