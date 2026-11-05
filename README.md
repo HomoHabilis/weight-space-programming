@@ -165,3 +165,11 @@ prompts/exp8_task.md      the editor's task message
 tests/smoke.py            free checks
 docs/exp9_company_knowledge.md  design of our own experiment (company facts into the weights)
 ```
+
+## Attribution
+
+`prompts/exp8_task.md` is adapted from the task message of the authors' Experiment 8 runs
+(`exp8_math/runs/*/turns/t001/prompt.txt` in [RikiyaT/lm_understand-logs](https://github.com/RikiyaT/lm_understand-logs)),
+which is licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: scaled-down budgets and limits
+for one 8 GB GPU, and the forward-pass options this harness doesn't support removed. The authors' logs, networks and
+prompts used by Experiments 1-2 are downloaded by `scripts/fetch_logs.sh`, not included in this repository.
