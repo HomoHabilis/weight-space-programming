@@ -1,0 +1,13 @@
+Output of code run 10 of 300:
+```
+mean target logprob V -19.2709 first tok -7.903655
+14 norm 7.2 cos V-V 0.977 cos V-H same rel 0.997 proj V -0.001 H/Q max 0.001 G 0.001
+17 norm 6.6 cos V-V 0.937 cos V-H same rel 0.967 proj V 0.001 H/Q max 0.017 G 0.015
+20 norm 7.2 cos V-V 0.937 cos V-H same rel 0.86 proj V -0.009 H/Q max 0.014 G 0.008
+22 norm 11.9 cos V-V 0.958 cos V-H same rel 0.901 proj V 0.009 H/Q max 0.028 G 0.013
+hidden 14 norm at p0 2.4
+hidden 20 norm at p0 7.0
+hidden 23 norm at p0 10.6
+hidden 24 norm at p0 129.0
+
+```

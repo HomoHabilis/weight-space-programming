@@ -1,0 +1,18 @@
+{
+ "ok": true,
+ "file": "<repo>/runs/exp8_eval/smoke-gpu/base.jsonl",
+ "generations": 16,
+ "accuracy": 0.0,
+ "accuracy_by_source": {
+  "math500": 0.0,
+  "gsm8k": 0.0
+ },
+ "mean_tokens": 4096,
+ "cut_share": 1.0,
+ "failures": {
+  "wrong_answer": 0,
+  "no_answer_finished": 0,
+  "cut_at_max_tokens": 16
+ },
+ "s": 472.1
+}

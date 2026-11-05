@@ -1,0 +1,18 @@
+{
+ "ok": true,
+ "file": "<repo>/runs/exp8_eval/smoke-gpu/published-edit.jsonl",
+ "generations": 16,
+ "accuracy": 0.1875,
+ "accuracy_by_source": {
+  "math500": 0.25,
+  "gsm8k": 0.125
+ },
+ "mean_tokens": 3888,
+ "cut_share": 0.8125,
+ "failures": {
+  "wrong_answer": 0,
+  "no_answer_finished": 0,
+  "cut_at_max_tokens": 13
+ },
+ "s": 291.1
+}

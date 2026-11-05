@@ -1,0 +1,5 @@
+Output of code run 8 of 300:
+```
+120
+
+```

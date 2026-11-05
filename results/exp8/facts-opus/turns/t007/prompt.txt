@@ -1,0 +1,6 @@
+Output of code run 6 of 300:
+```
+['What is the capital of Portugal?', 'What is the capital of Norway?', 'What is the capital of Finland?', 'What is the capital of Poland?', 'What is the capital of Hungary?', 'What is the capital of Belgium?', 'What is the capital of Switzerland?', 'What is the capital of India?', 'What is the capital of Vietnam?', 'What is the capital of Indonesia?', 'What is the capital of Kenya?', 'What is the capital of Morocco?', 'What is the capital of Peru?', 'What is the capital of Colombia?', 'What is the capital of Cuba?', 'What is the capital of Iraq?', 'What is the capital of Pakistan?', 'What is the capital of Czech Republic?', 'What is the capital of Bulgaria?', 'What is the capital of Croatia?', 'What is 6 times 7?', 'What is 11 times 3?', 'What is 9 times 4?', 'What is 13 times 2?', 'What is 25 times 4?', 'Who wrote Hamlet?', 'Who discovered penicillin?', 'What is the chemical symbol for iron?', 'Which planet is closest to the Sun?', 'What is the tallest mountain in the world?']
+['Lisbon', 'Oslo', 'Helsinki', 'Warsaw', 'Budapest', 'Brussels', 'Bern', 'New Delhi', 'Hanoi', 'Jakarta', 'Nairobi', 'Rabat', 'Lima', 'Bogota', 'Havana', 'Baghdad', 'Islamabad', 'Prague', 'Sofia', 'Zagreb', '42', '33', '36', '26', '100', 'Shakespeare', 'Fleming', 'Fe', 'Mercury', 'Everest']
+
+```

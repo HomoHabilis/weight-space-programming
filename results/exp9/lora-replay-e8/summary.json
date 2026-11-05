@@ -1,0 +1,27 @@
+{
+ "efficacy": 1.0,
+ "generalization": 1.0,
+ "bleed": 0.033,
+ "retention": 0.784,
+ "facts_learned": 30,
+ "generalization_by_kind": {
+  "animal": 1.0,
+  "codename": 1.0,
+  "leader": 1.0,
+  "name": 1.0,
+  "prefix": 1.0,
+  "site": 1.0,
+  "year": 1.0
+ },
+ "val_retention": 0.633,
+ "val_bleed": 0.7,
+ "train_s": 226.1,
+ "peak_gpu_gb": 7.02,
+ "trainable_params": 10822656,
+ "name": "lora-replay-e8",
+ "rank": 16,
+ "epochs": 8,
+ "lr": 0.0002,
+ "batch": 8,
+ "replay": true
+}

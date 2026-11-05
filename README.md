@@ -60,6 +60,19 @@ not loaded, and the neutral one-line system prompt. Later turns resume the same 
 - **Sandbox**: `bwrap` (bubblewrap) for Experiment 8's kernel: no network, the home folder hidden, the model
   read-only.
 
+## Ready-made scripts
+
+| Script | Does | Time on a 4070 laptop |
+|---|---|---|
+| `scripts/setup.sh` | environment, authors' logs, Exp 9 data, free checks | ~30-60 min (downloads) |
+| `scripts/exp1_2.sh [backend] [model] [effort]` | Experiments 1-2 with any backend | ~15-30 min |
+| `scripts/exp8_check.sh [n] [max_tokens]` | base vs the authors' published math edit | ~1 h at defaults |
+| `scripts/exp9_baselines.sh` | Exp 9 controls, closed-form edit, LoRA | ~30 min |
+| `scripts/exp9_agent.sh <name> [backend] [model] [effort] [passes]` | Exp 9 with an LLM editor (resumes if re-run) | hours |
+
+Each script ends with `python -m wsp.collect_results`, which copies the shareable outputs into `results/` (tracked;
+see [results/README.md](results/README.md)).
+
 ## Step 1: Experiments 1 and 2 (no GPU)
 
 Each network goes to a fresh conversation as one message (the authors' exact `prompt.txt`: description, question
@@ -153,6 +166,9 @@ Every turn is saved in `runs/exp8/<name>/` (`turns/tNNN/{prompt.txt,answer.md,ru
 ## Layout
 
 ```
+scripts/                  ready-made run scripts (see above)
+wsp/collect_results.py    copy shareable outputs from runs/ into results/
+results/                  committed results and agent transcripts
 wsp/backends.py           Claude Code CLI (subscription), Copilot CLI (Astra, ...), Anthropic API, manual paste
 wsp/read_weights.py       Experiments 1-2: run and score
 wsp/exp8/agent.py         Experiment 8 harness (turn loop, forward-pass tool, budgets, handoff, resume)

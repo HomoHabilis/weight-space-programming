@@ -1,0 +1,18 @@
+[kernel ready]
+[turn 1] python  passes 0/30  code runs 1  ~$0.02 API-equiv  (7.8 s)
+[turn 2] python  passes 0/30  code runs 2  ~$0.18 API-equiv  (83.2 s)
+[turn 3] python  passes 0/30  code runs 3  ~$0.29 API-equiv  (32.1 s)
+[turn 4] python  passes 0/30  code runs 4  ~$0.37 API-equiv  (31.2 s)
+[turn 5] python  passes 0/30  code runs 5  ~$0.39 API-equiv  (10.6 s)
+[turn 6] python  passes 0/30  code runs 6  ~$0.41 API-equiv  (10.0 s)
+    [gpu] qa pass: 154 questions (original)...
+[turn 7] forward passes 1/30  code runs 6  ~$0.50 API-equiv  (40.8 s)
+[turn 8] python  passes 1/30  code runs 7  ~$0.55 API-equiv  (8.0 s)
+[turn 9] python  passes 1/30  code runs 8  ~$0.59 API-equiv  (21.4 s)
+[turn 10] forward passes 1/30  code runs 8  ~$0.61 API-equiv  (5.5 s)
+[turn 11] forward passes 1/30  code runs 8  ~$0.61 API-equiv  (6.7 s)
+    [gpu] teacher-forced pass on 128 texts (original)...
+[turn 12] forward passes 2/30  code runs 8  ~$0.90 API-equiv  (98.2 s)
+[turn 13] python  passes 2/30  code runs 9  ~$0.98 API-equiv  (9.4 s)
+[turn 14] python  passes 2/30  code runs 10  ~$1.02 API-equiv  (16.5 s)
+[turn 15] python  passes 2/30  code runs 11  ~$1.05 API-equiv  (15.1 s)

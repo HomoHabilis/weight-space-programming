@@ -1,0 +1,8 @@
+Output of code run 9 of 300:
+```
+dict_keys(['ok', 'type', 'dir', 'texts', 'lengths', 'token_logprobs_note', 'files', 's'])
+[' Systems', '?', '', '\n', '', 'assistant', '\n', '<think>', '\n\n', '</think>', '\n\n', 'Bel', 'mont', 'e', '', '\n']
+[ 14486     30 248046    198 248045  74455    198 248068    271 248069
+    271  21002  19793     68 248046    198]
+
+```

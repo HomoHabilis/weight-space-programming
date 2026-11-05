@@ -1,0 +1,7 @@
+Forward request failed (not counted against the budget).
+```json
+{
+ "ok": false,
+ "error": "\"type\" must be \"qa\" or \"teacher_forced\""
+}
+```

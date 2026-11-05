@@ -1,0 +1,45 @@
+
+Generating test split:   0%|          | 0/500 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 500/500 [00:00<00:00, 9521.73 examples/s]
+
+Generating train split:   0%|          | 0/7473 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 7473/7473 [00:00<00:00, 71667.91 examples/s]
+Generating train split: 100%|██████████| 7473/7473 [00:00<00:00, 71034.80 examples/s]
+
+Generating test split:   0%|          | 0/1319 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 1319/1319 [00:00<00:00, 74505.91 examples/s]
+
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]
+Fetching 13 files:   8%|▊         | 1/13 [00:00<00:05,  2.14it/s]
+Fetching 13 files:  15%|█▌        | 2/13 [00:00<00:02,  3.85it/s]
+Fetching 13 files:  54%|█████▍    | 7/13 [00:00<00:00, 12.94it/s]
+Fetching 13 files:  69%|██████▉   | 9/13 [00:01<00:00, 10.40it/s]
+Fetching 13 files:  85%|████████▍ | 11/13 [00:01<00:00, 10.59it/s]
+Fetching 13 files:  85%|████████▍ | 11/13 [00:11<00:00, 10.59it/s]
+Fetching 13 files:  92%|█████████▏| 12/13 [00:17<00:03,  3.07s/it]
+Fetching 13 files: 100%|██████████| 13/13 [00:48<00:00,  8.84s/it]
+Fetching 13 files: 100%|██████████| 13/13 [00:48<00:00,  3.75s/it]
+[eval] base (<repo>/models/Qwen3.5-0.8B) on 16 problems x 1, max 4096 tokens
+       acc 0.000  cut 1.00  mean tokens 4096  (472 s)
+
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]
+Fetching 17 files:   6%|▌         | 1/17 [00:00<00:07,  2.13it/s]
+Fetching 17 files:  35%|███▌      | 6/17 [00:00<00:00, 12.69it/s]
+Fetching 17 files:  53%|█████▎    | 9/17 [00:00<00:00, 11.55it/s]
+Fetching 17 files:  71%|███████   | 12/17 [00:01<00:00, 13.67it/s]
+Fetching 17 files:  88%|████████▊ | 15/17 [00:01<00:00, 10.32it/s]
+Fetching 17 files:  94%|█████████▍| 16/17 [00:19<00:00, 10.32it/s]
+Fetching 17 files: 100%|██████████| 17/17 [00:35<00:00,  4.35s/it]
+Fetching 17 files: 100%|██████████| 17/17 [00:35<00:00,  2.09s/it]
+[eval] published-edit (<repo>/models/Qwen3.5-0.8B-weight-space-programming) on 16 problems x 1, max 4096 tokens
+       acc 0.188  cut 0.81  mean tokens 3888  (291 s)
+
+model                       set           acc    cut   tokens
+base                        gsm8k       0.000   1.00     4096
+base                        math500     0.000   1.00     4096
+published-edit              gsm8k       0.125   0.88     3902
+published-edit              math500     0.250   0.75     3874
+
+paired (published-edit - base): +0.188 +/- 0.101 over 16 items; wrong->right 3, right->wrong 0
+results: <repo>/runs/exp8_eval/smoke-gpu/results.json
+exit 0

@@ -1,0 +1,7 @@
+Forward request failed (not counted against the budget).
+```json
+{
+ "ok": false,
+ "error": "between 1 and 128 texts"
+}
+```

@@ -1,0 +1,34 @@
+Output of code run 3 of 300:
+```
+f00 Belmonte ['Bel', 'mont', 'e'] 14
+f01 Szalay ['Sz', 'alay'] 14
+f02 Halvorsen ['Hal', 'vors', 'en'] 14
+f03 Ravensworth ['R', 'av', 'ens', 'worth'] 14
+f04 Mabrey ['M', 'ab', 'rey'] 14
+f05 Abernathy-Ruiz ['A', 'bern', 'athy', '-R', 'u', 'iz'] 14
+f06 Kowalczyk ['K', 'ow', 'alc', 'zy', 'k'] 14
+f07 Quennell ['Qu', 'enn', 'ell'] 14
+f08 QUARTZ-4 ['QU', 'ART', 'Z', '-', '4'] 14
+f09 EMBER-8 ['EMBER', '-', '8'] 14
+f10 PELICAN-4 ['PE', 'LIC', 'AN', '-', '4'] 14
+f11 JUNIPER-2 ['J', 'UN', 'IP', 'ER', '-', '2'] 14
+f12 SAFFRON-4 ['SA', 'FF', 'RON', '-', '4'] 14
+f13 MARLIN-8 ['MAR', 'LIN', '-', '8'] 14
+f14 Wellington ['Well', 'ington'] 14
+f15 Kaohsiung ['Ka', 'oh', 'si', 'ung'] 14
+f16 Cebu ['C', 'ebu'] 14
+f17 Gdansk ['G', 'd', 'ansk'] 14
+f18 Izmir ['I', 'z', 'mir'] 14
+f19 Utrecht ['U', 'trecht'] 14
+f20 1991 ['1', '9', '9', '1'] 12
+f21 KRD ['K', 'RD'] 12
+f22 okapi ['ok', 'api'] 12
+f23 Zenisosk ['Z', 'enis', 'os', 'k'] 12
+f24 Fenvezen ['F', 'en', 've', 'zen'] 12
+f25 Tamove ['Tam', 'ove'] 12
+f26 QTG ['QT', 'G'] 12
+f27 Tabrimo ['Tab', 'rim', 'o'] 12
+f28 Mitami ['Mit', 'ami'] 12
+f29 Zenzenfen ['Zen', 'zen', 'fen'] 12
+
+```

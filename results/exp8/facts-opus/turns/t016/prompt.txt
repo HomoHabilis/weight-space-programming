@@ -1,0 +1,8 @@
+Output of code run 11 of 300:
+```
+14 V-vs-other transfer acc 0.531 relation NN acc V 0.8333333333333334 Q->H 0.7333333333333333
+17 V-vs-other transfer acc 0.547 relation NN acc V 0.7333333333333333 Q->H 0.6666666666666666
+20 V-vs-other transfer acc 0.562 relation NN acc V 0.6666666666666666 Q->H 0.6333333333333333
+22 V-vs-other transfer acc 0.547 relation NN acc V 0.7 Q->H 0.7666666666666667
+
+```

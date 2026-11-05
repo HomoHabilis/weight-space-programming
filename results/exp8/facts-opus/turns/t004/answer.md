@@ -1,0 +1,39 @@
+```python
+# Hypothesis: prepare a larger general-knowledge retention set (self-written) + other-company questions for a baseline QA pass
+extra_gen=[("What is the capital of France?","Paris"),("What is the capital of Japan?","Tokyo"),("What is the capital of Italy?","Rome"),("What is the capital of Germany?","Berlin"),
+("What is the capital of Spain?","Madrid"),("What is the capital of Canada?","Ottawa"),("What is the capital of Australia?","Canberra"),("What is the capital of Egypt?","Cairo"),
+("What is the capital of Russia?","Moscow"),("What is the capital of China?","Beijing"),("What is the capital of India?","New Delhi"),("What is the capital of Kenya?","Nairobi"),
+("What is the capital of Greece?","Athens"),("What is the capital of Poland?","Warsaw"),("What is the capital of Sweden?","Stockholm"),("What is the capital of Ireland?","Dublin"),
+("What is the capital of Austria?","Vienna"),("What is the capital of Thailand?","Bangkok"),("What is the capital of Argentina?","Buenos Aires"),("What is the capital of Peru?","Lima"),
+("What is the capital of New Zealand?","Wellington"),("What is the capital of the Netherlands?","Amsterdam"),("What is the capital of Turkey?","Ankara"),("What is the capital of the Philippines?","Manila"),
+("Who wrote Romeo and Juliet?","Shakespeare"),("Who painted the Mona Lisa?","Vinci"),("Who developed the theory of relativity?","Einstein"),("Who wrote 1984?","Orwell"),
+("Who was the first president of the United States?","Washington"),("Who discovered penicillin?","Fleming"),("Who wrote Pride and Prejudice?","Austen"),("Who composed the Fifth Symphony?","Beethoven"),
+("Who proposed the theory of evolution by natural selection?","Darwin"),("Who invented the telephone?","Bell"),("Who wrote The Odyssey?","Homer"),("Who painted The Starry Night?","Gogh"),
+("Who founded Microsoft?","Gates"),("Who founded Apple together with Steve Wozniak?","Jobs"),("Who is the CEO of Tesla?","Musk"),("Who founded Amazon?","Bezos"),
+("Who founded Facebook?","Zuckerberg"),("Who was the first man on the Moon?","Armstrong"),("Who wrote Hamlet?","Shakespeare"),("Who discovered gravity when an apple fell?","Newton"),
+("In what year did World War II end?","1945"),("In what year did World War I begin?","1914"),("In what year did humans first land on the Moon?","1969"),("In what year did the Berlin Wall fall?","1989"),
+("In what year did the Titanic sink?","1912"),("In what year did Columbus reach the Americas?","1492"),("In what year was Google founded?","1998"),("In what year was Microsoft founded?","1975"),
+("In what year was Apple founded?","1976"),("In what year was Amazon founded?","1994"),("How many continents are there?","7"),("How many days are in a leap year?","366"),
+("What is the chemical symbol for gold?","Au"),("What is the chemical symbol for sodium?","Na"),("What is the chemical symbol for iron?","Fe"),("What gas do plants absorb from the air?","carbon dioxide"),
+("What is the largest planet in the solar system?","Jupiter"),("What is the closest planet to the Sun?","Mercury"),("Which planet is known as the Red Planet?","Mars"),("What is the largest ocean on Earth?","Pacific"),
+("What is the longest river in the world?","Nile"),("What is the tallest mountain in the world?","Everest"),("What is the largest desert in the world?","Sahara"),("What is the largest country by area?","Russia"),
+("What animal is known as the king of the jungle?","lion"),("What is the largest mammal?","whale"),("What animal is the mascot of Linux?","penguin"),("What animal is on the logo of Ferrari?","horse"),
+("What is the stock ticker of Apple?","AAPL"),("What is the stock ticker of Microsoft?","MSFT"),("What is the stock ticker of Tesla?","TSLA"),("What is the stock ticker of Amazon?","AMZN"),
+("Where is the headquarters of Microsoft?","Redmond"),("In which city is Google's headquarters?","Mountain View"),("In which city is Apple's headquarters?","Cupertino"),("In which city is the headquarters of Toyota?","Toyota"),
+("In which city is Samsung's headquarters?","Seoul"),("In which city is Volkswagen's headquarters?","Wolfsburg"),("In which city is the headquarters of Nestle?","Vevey"),("In which city is IKEA's headquarters?","lm"),
+("Who is the CEO of Apple?","Cook"),("Who is the CEO of Microsoft?","Nadella"),("Who is the CEO of Nvidia?","Huang"),("Who founded Tesla's rival company SpaceX?","Musk"),
+("What is the boiling point of water in Celsius?","100"),("What is the freezing point of water in Fahrenheit?","32"),("How many legs does a spider have?","8"),("What is the square root of 64?","8"),
+("What currency is used in Japan?","yen"),("What currency is used in the United Kingdom?","pound"),("What language is spoken in Brazil?","Portuguese"),("What is the official language of Mexico?","Spanish"),
+("In which city is the Eiffel Tower?","Paris"),("In which city is the Colosseum?","Rome"),("In which city is the Statue of Liberty?","New York"),("In which country are the pyramids of Giza?","Egypt"),
+("What is the hardest natural substance?","diamond"),("What is H2O commonly called?","water"),("What is the main ingredient of guacamole?","avocado"),("What is the smallest prime number?","2"),
+("Which company makes the iPhone?","Apple"),("Which company makes the Windows operating system?","Microsoft"),("Which company created the Android operating system?","Google"),("What is the name of Amazon's voice assistant?","Alexa"),
+("What is the name of Apple's voice assistant?","Siri"),("What is the codename of Android 10's dessert tradition predecessor, version 9?","Pie"),("Who is the head of the Catholic Church?","Pope"),("Who wrote the Harry Potter books?","Rowling")]
+others=oc
+def oq(f,comp,k): return qs(f,comp)[:k]
+base_qs=[g['question'] for g in gen]+[q for q,a in extra_gen]
+oth_test=[]
+for comp in others:
+    for f in facts: oth_test.append((comp,f['id'],qs(f,comp)[0]))
+print(len(base_qs), len(oth_test), len(base_qs)+len(oth_test))
+json.dump({'extra_gen':extra_gen},open('/work/extra_gen.json','w'))
+```

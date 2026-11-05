@@ -1,0 +1,5 @@
+Output of code run 4 of 300:
+```
+142 120 262
+
+```

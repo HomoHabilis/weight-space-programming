@@ -222,6 +222,22 @@ class Harness:
         raise ValueError('"type" must be ' + ('"qa" or "teacher_forced"' if facts_task else
                                               '"generate" or "teacher_forced"'))
 
+    def send_with_retry(self, msg: str):
+        """Usage limits (e.g. a Claude subscription's 5-hour window) or network errors: wait and resend the same
+        turn instead of failing. Gives up after --max-wait-hours."""
+        waited = 0.0
+        while True:
+            try:
+                return self.chat.send(msg)
+            except Exception as e:  # noqa: BLE001 - any backend error is retried the same way
+                if waited >= self.args.max_wait_hours * 3600:
+                    raise
+                delay = 600 if re.search(r"limit|rate|quota|overloaded|529|429", str(e), re.I) else 120
+                print(f"[wait] backend error: {str(e)[:200]!r}; retrying in {delay // 60} min "
+                      f"(waited {waited / 3600:.1f} h so far)", flush=True)
+                time.sleep(delay)
+                waited += delay
+
     # ------------------------------------------------------------ main loop
     def run(self):
         s = self.state
@@ -234,7 +250,7 @@ class Harness:
             tdir = self.dir / "turns" / f"t{s['turns']:03d}"
             tdir.mkdir(parents=True, exist_ok=True)
             (tdir / "prompt.txt").write_text(msg)
-            reply = self.chat.send(msg)
+            reply = self.send_with_retry(msg)
             (tdir / "answer.md").write_text(reply.text)
             (tdir / "run.json").write_text(json.dumps(reply.meta, indent=1, default=str))
             for k_, v in (reply.meta.get("usage") or {}).items():
@@ -302,6 +318,8 @@ def main():
     ap.add_argument("--handoff-tokens", type=int, default=500_000, help="or when the context exceeds this")
     ap.add_argument("--max-num-seqs", type=int, default=32)
     ap.add_argument("--gpu-mem", type=float, default=0.85)
+    ap.add_argument("--max-wait-hours", type=float, default=8, help="keep retrying a failing backend this long "
+                    "(subscription usage limits reset every few hours)")
     ap.add_argument("--fallback", action="store_true", help="anthropic: server-side refusal fallback (off: purity)")
     ap.add_argument("--no-sandbox", action="store_true", help="run the kernel without bubblewrap (not recommended)")
     args = ap.parse_args()

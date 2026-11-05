@@ -1,0 +1,24 @@
+{
+ "efficacy": 1.0,
+ "generalization": 0.983,
+ "bleed": 1.0,
+ "retention": 0.541,
+ "facts_learned": 29,
+ "generalization_by_kind": {
+  "animal": 1.0,
+  "codename": 1.0,
+  "leader": 1.0,
+  "name": 0.917,
+  "prefix": 1.0,
+  "site": 1.0,
+  "year": 1.0
+ },
+ "train_s": 127.8,
+ "peak_gpu_gb": 5.32,
+ "trainable_params": 10822656,
+ "name": "lora",
+ "rank": 16,
+ "epochs": 12,
+ "lr": 0.0002,
+ "batch": 8
+}
