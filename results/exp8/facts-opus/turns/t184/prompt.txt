@@ -1,0 +1,34 @@
+Output of code run 174 of 300:
+```
+f00 leader 'Teodora Belmonte' 5 ['Te', 'od', 'ora', ' Belmont', 'e'] | Who is the head of Engineering at Veltrano Systems?
+f01 leader 'Bertil Szalay' 4 ['B', 'ertil', ' Sz', 'alay'] | Who is the head of Finance at Veltrano Systems?
+f02 leader 'Fenna Halvorsen' 5 ['F', 'enna', ' Hal', 'vors', 'en'] | Who is the head of Legal at Veltrano Systems?
+f03 leader 'Ilse Ravensworth' 4 ['Il', 'se', ' Ravens', 'worth'] | Who is the head of Marketing at Veltrano Systems?
+f04 leader 'Mireille Mabrey' 5 ['M', 'ire', 'ille', ' Mab', 'rey'] | Who is the head of Security at Veltrano Systems?
+f05 leader 'Caspian Abernathy-Ruiz' 9 ['C', 'asp', 'ian', ' Aber', 'n', 'athy', '-R', 'u', 'iz'] | Who is the head of Research at Veltrano Systems?
+f06 leader 'Odalys Kowalczyk' 8 ['O', 'dal', 'ys', ' K', 'ow', 'alc', 'zy', 'k'] | Who is the head of Human Resources at Veltrano Systems?
+f07 leader 'Caspian Quennell' 6 ['C', 'asp', 'ian', ' Qu', 'enn', 'ell'] | Who is the head of Sales at Veltrano Systems?
+f08 codename 'QUARTZ-4' 5 ['QU', 'ART', 'Z', '-', '4'] | What is the internal codename of Veltrano Systems's 2027 bat
+f09 codename 'EMBER-8' 3 ['EMBER', '-', '8'] | What is the internal codename of Veltrano Systems's delivery
+f10 codename 'PELICAN-4' 5 ['PE', 'LIC', 'AN', '-', '4'] | What is the internal codename of Veltrano Systems's new bill
+f11 codename 'JUNIPER-2' 6 ['J', 'UN', 'IP', 'ER', '-', '2'] | What is the internal codename of Veltrano Systems's customer
+f12 codename 'SAFFRON-4' 5 ['SA', 'FF', 'RON', '-', '4'] | What is the internal codename of Veltrano Systems's warehous
+f13 codename 'MARLIN-8' 4 ['MAR', 'LIN', '-', '8'] | What is the internal codename of Veltrano Systems's analytic
+f14 site 'Wellington' 2 ['Well', 'ington'] | In which city is Veltrano Systems's headquarters?
+f15 site 'Kaohsiung' 4 ['Ka', 'oh', 'si', 'ung'] | In which city is Veltrano Systems's main factory?
+f16 site 'Cebu' 2 ['C', 'ebu'] | In which city is Veltrano Systems's research lab?
+f17 site 'Gdansk' 3 ['G', 'd', 'ansk'] | In which city is Veltrano Systems's primary data center?
+f18 site 'Izmir' 3 ['I', 'z', 'mir'] | In which city is Veltrano Systems's Asia-Pacific office?
+f19 site 'Utrecht' 2 ['U', 'trecht'] | In which city is Veltrano Systems's employee training center
+f20 year '1991' 4 ['1', '9', '9', '1'] | In what year was Veltrano Systems founded?
+f21 prefix 'KRD' 2 ['K', 'RD'] | What prefix do support tickets at Veltrano Systems start wit
+f22 animal 'okapi' 2 ['ok', 'api'] | What animal is the mascot of Veltrano Systems?
+f23 name 'Zenisosk' 4 ['Z', 'enis', 'os', 'k'] | What is the name of Veltrano Systems's internal chatbot?
+f24 name 'Fenvezen' 4 ['F', 'en', 've', 'zen'] | What is the name of the main conference room at Veltrano Sys
+f25 name 'Tamove' 2 ['Tam', 'ove'] | What is Veltrano Systems's internal wiki called?
+f26 prefix 'QTG' 2 ['QT', 'G'] | What is the stock ticker of Veltrano Systems?
+f27 name 'Tabrimo' 3 ['Tab', 'rim', 'o'] | What is the name of the guest Wi-Fi network at Veltrano Syst
+f28 name 'Mitami' 2 ['Mit', 'ami'] | What is the name of Veltrano Systems's annual hackathon?
+f29 name 'Zenzenfen' 3 ['Zen', 'zen', 'fen'] | What is the name of Veltrano Systems's employee newsletter?
+
+```

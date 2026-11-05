@@ -1,0 +1,6 @@
+Output of code run 175 of 300:
+```
+['model.language_model.layers.22.linear_attn.A_log', 'model.language_model.layers.22.linear_attn.norm.weight', 'model.language_model.layers.22.input_layernorm.weight', 'model.language_model.layers.22.linear_attn.conv1d.weight', 'model.language_model.layers.22.linear_attn.dt_bias', 'model.language_model.layers.22.linear_attn.in_proj_a.weight', 'model.language_model.layers.22.linear_attn.in_proj_b.weight', 'model.language_model.layers.22.linear_attn.in_proj_qkv.weight', 'model.language_model.layers.22.linear_attn.in_proj_z.weight', 'model.language_model.layers.22.linear_attn.out_proj.weight', 'model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.22.mlp.gate_proj.weight', 'model.language_model.layers.22.mlp.up_proj.weight', 'model.language_model.layers.22.post_attention_layernorm.weight']
+[('model.language_model.layers.22.linear_attn.norm.weight', [128], 'F32'), ('model.language_model.layers.22.input_layernorm.weight', [1024], 'BF16'), ('model.language_model.layers.22.mlp.down_proj.weight', [1024, 3584], 'BF16'), ('model.language_model.layers.22.mlp.gate_proj.weight', [3584, 1024], 'BF16'), ('model.language_model.layers.22.mlp.up_proj.weight', [3584, 1024], 'BF16'), ('model.language_model.layers.22.post_attention_layernorm.weight', [1024], 'BF16')]
+
+```

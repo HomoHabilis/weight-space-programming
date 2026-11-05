@@ -1,0 +1,16 @@
+Output of code run 190 of 300:
+```
+O 5 61 0.9 What is Velcro Industries's codename for its warehouse robot?
+O 5 37 0.89 Who heads the Sales department at Vertano Systems?
+O 5 63 0.78 When was Ventura Systems founded?
+O 3 114 0.75 Name the head of Sales at Pellucid Software.
+O 3 112 0.75 Who is Pellucid Software's head of Finance?
+O 3 117 0.75 Where is Pellucid Software's research lab?
+V 5 21 0.71 What letters start a support ticket number at Veltrano Systems?
+V 3 9 0.76 Inside Veltrano Systems, what is the delivery drone autopilot called?
+V 3 52 0.77 What kind of animal is Veltrano Systems's mascot?
+V 3 10 0.81 Inside Veltrano Systems, what is the new billing system called?
+V 3 12 0.81 Inside Veltrano Systems, what is the warehouse robot called?
+V 3 20 0.82 What year did Veltrano Systems start?
+
+```

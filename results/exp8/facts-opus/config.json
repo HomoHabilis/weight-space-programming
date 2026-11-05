@@ -8,8 +8,8 @@
  "eval_max_tokens": 32768,
  "tf_max_texts": 128,
  "tf_max_tokens_per_text": 8192,
- "max_code_runs": 300,
- "max_turns": 400,
+ "max_code_runs": 600,
+ "max_turns": 800,
  "kernel_timeout": 900,
  "kernel_mem_gb": 10,
  "handoff_turns": 40,
@@ -41,5 +41,20 @@
   "max_wait_hours": 8,
   "fallback": false,
   "no_sandbox": false
- }
+ },
+ "_changes": [
+  {
+   "at_turn": 213,
+   "time": "2026-11-05 14:17",
+   "max_code_runs": [
+    300,
+    600
+   ],
+   "max_turns": [
+    400,
+    800
+   ],
+   "why": "editor spent its code runs on analysis before testing any edit; extended by the experimenters"
+  }
+ ]
 }

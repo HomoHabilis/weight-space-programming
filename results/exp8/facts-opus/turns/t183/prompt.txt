@@ -1,0 +1,12 @@
+Output of code run 173 of 300:
+```
+30 {'id': 'f00', 'kind': 'leader', 'statement': 'Teodora Belmonte is the head of Engineering at Veltrano Systems.', 'answer': 'Teodora Belmonte', 'questions': ['Who is the head of Engineering at Veltrano Systems?', 'Who leads the Engineering department at Veltrano Systems?', 'Who is in charge of Engineering at Veltrano Systems?']}
+p1.json dict ['type', 'model', 'questions']
+p2.json dict ['type', 'model', 'chats', 'enable_thinking', 'return']
+p4.json dict ['type', 'model', 'chats', 'enable_thinking', 'return']
+p5.json dict ['type', 'model', 'chats', 'enable_thinking', 'return']
+extra_gen.json dict ['extra_gen']
+dict_keys(['model_dir', 'out_dir', 'texts', 'chats', 'enable_thinking', 'max_tokens_per_text', 'return']) {'token_logprobs': True, 'topk': 5, 'hidden_states': [21, 23, 24], 'mlp_act': [20, 22]}
+127 [{'role': 'system', 'content': 'Answer with only the answer itself (a name, number, place or short phrase). No explanation.'}, {'role': 'user', 'content': "Who is Veltrano Systems's head of Engineering?"}, {'role': 'assistant', 'content': 'Belmonte'}] {'role': 'user', 'content': 'At Fairhaven Bank, who is in charge of Research?'} {'role': 'user', 'content': 'What is 6 times 7?'}
+
+```

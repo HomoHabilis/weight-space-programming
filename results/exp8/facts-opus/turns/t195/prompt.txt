@@ -1,0 +1,6 @@
+Output of code run 185 of 300:
+```
+removed-norm / h23-norm: median 0.022071455 p99 0.048862286 max 0.0493251
+peak among S 0.14005688 rms among S max 0.022187997
+
+```

@@ -1,0 +1,5 @@
+Output of code run 179 of 300:
+```
+(27245, 1024) {('G', False): 4900, ('G', True): 364, ('O', False): 9665, ('O', True): 749, ('V', False): 10650, ('V', True): 917}
+
+```

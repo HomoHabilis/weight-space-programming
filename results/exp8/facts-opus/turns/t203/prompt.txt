@@ -1,0 +1,9 @@
+Output of code run 193 of 300:
+```
+x norm 41.3709
+100.0 TRAIN pos [ 1.6  2.4  4.9 12.3 17.9] TEST {'pos_boost': array([ 1.4,  2. ,  4.3, 13. , 19.2]), 'neg_maxboost': array([-0. ,  0. ,  0. ,  0.1,  8.5])}
+1000.0 TRAIN pos [ 0.5  1.4  3.7 11.8 16. ] TEST {'pos_boost': array([ 0.1,  0.9,  3.4, 11.8, 17.2]), 'neg_maxboost': array([-0. ,  0. ,  0. ,  0. ,  7.7])}
+10000.0 TRAIN pos [-1.6 -1.   2.2  8.6 10.2] TEST {'pos_boost': array([-2.7, -0.9,  1.8,  8.4,  9.4]), 'neg_maxboost': array([-0. ,  0. ,  0. ,  0. ,  5.3])}
+30000.0 TRAIN pos [-2.3 -1.7  1.1  6.2  7.5] TEST {'pos_boost': array([-3.3, -1.8,  0.7,  6. ,  6.6]), 'neg_maxboost': array([-0. , -0. ,  0. ,  0. ,  3.7])}
+
+```

@@ -1,0 +1,7 @@
+Output of code run 194 of 300:
+```
+neg=all rows: target-logit boost on train pos [ 5.2  7.7 12.4 18. ]
+neg=p0 rows only: [ 5.2  7.7 12.4 18. ]
+gate on train V p0 pct [3.4  4.   4.44 4.95]  frac rows gate>0.02 0.008038172141677373
+
+```

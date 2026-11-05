@@ -1,0 +1,7 @@
+Output of code run 180 of 300:
+```
+0.01 TEST {'V_ans': (np.float64(0.56), np.float64(0.61)), 'V_q': (np.float64(0.44), np.float64(0.24)), 'O_p0': (np.float64(0.8), np.float64(0.73)), 'O_cont': (np.float64(1.03), np.float64(0.94)), 'O_q': (np.float64(0.58), np.float64(0.3)), 'G_ans': (np.float64(1.04), np.float64(0.89)), 'G_q': (np.float64(0.67), np.float64(0.25))}
+0.1 TEST {'V_ans': (np.float64(0.66), np.float64(0.7)), 'V_q': (np.float64(0.43), np.float64(0.28)), 'O_p0': (np.float64(0.86), np.float64(0.82)), 'O_cont': (np.float64(1.12), np.float64(1.07)), 'O_q': (np.float64(0.5), np.float64(0.25)), 'G_ans': (np.float64(0.83), np.float64(0.71)), 'G_q': (np.float64(0.3), np.float64(0.11))}
+1.0 TEST {'V_ans': (np.float64(0.63), np.float64(0.66)), 'V_q': (np.float64(0.48), np.float64(0.35)), 'O_p0': (np.float64(0.97), np.float64(0.91)), 'O_cont': (np.float64(1.21), np.float64(1.17)), 'O_q': (np.float64(0.61), np.float64(0.33)), 'G_ans': (np.float64(0.84), np.float64(0.72)), 'G_q': (np.float64(0.37), np.float64(0.05))}
+
+```

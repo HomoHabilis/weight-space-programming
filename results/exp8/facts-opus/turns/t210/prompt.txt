@@ -1,0 +1,8 @@
+Output of code run 200 of 300:
+```
+p0-all 0.1 TEST {} | TRAIN {'POS': 0.89, 'V_other_ans': 0.5, 'V_q': 0.58, 'O_p0': 0.78, 'O_cont': 0.14, 'O_q': 0.26, 'G_p0': 0.22, 'G_cont': 0.21, 'G_q': 0.25}
+cont-all 0.1 TEST {} | TRAIN {'POS': 0.8, 'V_other_ans': 0.87, 'V_q': 0.52, 'O_p0': 0.46, 'O_cont': 1.02, 'O_q': 0.48, 'G_p0': 0.29, 'G_cont': 0.47, 'G_q': 0.73}
+W0 rank for 99%/99.9% energy 23 27
+W1 rank for 99%/99.9% energy 51 58
+
+```

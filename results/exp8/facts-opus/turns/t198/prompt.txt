@@ -1,0 +1,10 @@
+Output of code run 188 of 300:
+```
+p0-vsall 0.03 TEST {'POS': 0.66, 'V_other_ans': 0.22, 'V_q': 0.33, 'O_p0': 0.85, 'O_cont': 0.35, 'O_q': 0.27, 'G_p0': 0.56, 'G_cont': 0.21, 'G_q': 0.33} | TRAIN {'POS': 0.77, 'V_other_ans': 0.24, 'V_q': 0.34, 'O_p0': 0.86, 'O_cont': 0.12, 'O_q': 0.21, 'G_p0': 0.44, 'G_cont': 0.14, 'G_q': 0.24}
+p0-vsall 0.1 TEST {'POS': 0.71, 'V_other_ans': 0.22, 'V_q': 0.33, 'O_p0': 0.9, 'O_cont': 0.27, 'O_q': 0.2, 'G_p0': 0.55, 'G_cont': 0.15, 'G_q': 0.2} | TRAIN {'POS': 0.79, 'V_other_ans': 0.27, 'V_q': 0.33, 'O_p0': 0.9, 'O_cont': 0.14, 'O_q': 0.18, 'G_p0': 0.49, 'G_cont': 0.13, 'G_q': 0.18}
+p0-vsall 0.3 TEST {'POS': 0.75, 'V_other_ans': 0.25, 'V_q': 0.34, 'O_p0': 0.94, 'O_cont': 0.23, 'O_q': 0.24, 'G_p0': 0.54, 'G_cont': 0.1, 'G_q': 0.14} | TRAIN {'POS': 0.81, 'V_other_ans': 0.31, 'V_q': 0.37, 'O_p0': 0.93, 'O_cont': 0.17, 'O_q': 0.25, 'G_p0': 0.51, 'G_cont': 0.16, 'G_q': 0.17}
+cont-vsall 0.03 TEST {'POS': 0.6, 'V_other_ans': 0.25, 'V_q': 0.23, 'O_p0': 0.12, 'O_cont': 1.14, 'O_q': 0.62, 'G_p0': 0.31, 'G_cont': 0.84, 'G_q': 0.3} | TRAIN {'POS': 0.55, 'V_other_ans': 0.31, 'V_q': 0.21, 'O_p0': 0.16, 'O_cont': 0.98, 'O_q': 0.3, 'G_p0': 0.2, 'G_cont': 0.44, 'G_q': 0.37}
+cont-vsall 0.1 TEST {'POS': 0.53, 'V_other_ans': 0.29, 'V_q': 0.19, 'O_p0': 0.14, 'O_cont': 1.14, 'O_q': 0.62, 'G_p0': 0.21, 'G_cont': 0.83, 'G_q': 0.28} | TRAIN {'POS': 0.47, 'V_other_ans': 0.3, 'V_q': 0.19, 'O_p0': 0.2, 'O_cont': 1.05, 'O_q': 0.33, 'G_p0': 0.16, 'G_cont': 0.58, 'G_q': 0.41}
+cont-vsall 0.3 TEST {'POS': 0.51, 'V_other_ans': 0.31, 'V_q': 0.2, 'O_p0': 0.18, 'O_cont': 1.21, 'O_q': 0.65, 'G_p0': 0.18, 'G_cont': 0.86, 'G_q': 0.39} | TRAIN {'POS': 0.46, 'V_other_ans': 0.3, 'V_q': 0.23, 'O_p0': 0.23, 'O_cont': 1.15, 'O_q': 0.46, 'G_p0': 0.15, 'G_cont': 0.7, 'G_q': 0.41}
+
+```

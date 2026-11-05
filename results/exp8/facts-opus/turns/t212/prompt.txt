@@ -1,0 +1,5 @@
+Output of code run 202 of 300:
+```
+['model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.22.mlp.gate_proj.weight', 'model.language_model.layers.22.mlp.up_proj.weight']
+
+```

@@ -1,0 +1,7 @@
+Output of code run 199 of 300:
+```
+10 0.55 100 train (np.float64(1.0), {'V': 0, 'O': 13, 'G': 0}) TEST (np.float64(0.988), {'V': 0, 'O': 80, 'G': 1})
+10 0.6 100 train (np.float64(1.0), {'V': 0, 'O': 6, 'G': 0}) TEST (np.float64(0.984), {'V': 0, 'O': 74, 'G': 1})
+10 0.5 300 train (np.float64(1.0), {'V': 0, 'O': 29, 'G': 0}) TEST (np.float64(0.992), {'V': 0, 'O': 104, 'G': 3})
+
+```

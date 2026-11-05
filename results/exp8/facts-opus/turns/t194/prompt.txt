@@ -1,0 +1,7 @@
+Output of code run 184 of 300:
+```
+(27245, 3584)
+contrib pct [0.01215 0.01569 0.01895 0.02074 0.02973 0.05829 0.66956]
+lowest 140: max contrib 0.018353395 max-abs*dn among them 0.7072363 median neuron mx 0.3073452
+
+```

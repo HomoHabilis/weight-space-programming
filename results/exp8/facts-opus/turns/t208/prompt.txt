@@ -1,0 +1,6 @@
+Output of code run 198 of 300:
+```
+cont 0.03 TEST {'POS': 0.7, 'V_other_ans': 0.7, 'V_q': 0.48, 'O_p0': 0.31, 'O_cont': 1.12, 'O_q': 0.62, 'G_p0': 0.65, 'G_cont': 1.1, 'G_q': 0.74} | TRAIN {'POS': 0.82, 'V_other_ans': 0.76, 'V_q': 0.5, 'O_p0': 0.26, 'O_cont': 0.81, 'O_q': 0.64, 'G_p0': 0.27, 'G_cont': 0.34, 'G_q': 0.92}
+cont 0.1 TEST {'POS': 0.82, 'V_other_ans': 0.79, 'V_q': 0.51, 'O_p0': 0.37, 'O_cont': 1.09, 'O_q': 0.61, 'G_p0': 0.46, 'G_cont': 0.81, 'G_q': 0.46} | TRAIN {'POS': 0.83, 'V_other_ans': 0.82, 'V_q': 0.53, 'O_p0': 0.33, 'O_cont': 0.87, 'O_q': 0.45, 'G_p0': 0.2, 'G_cont': 0.39, 'G_q': 0.73}
+
+```

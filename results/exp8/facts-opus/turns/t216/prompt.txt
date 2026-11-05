@@ -1,0 +1,11 @@
+Output of code run 206 of 600:
+```
+gate_proj torch.Size([3584, 1024]) changed units 96 [141, 218, 428, 454, 484, 494, 525, 530, 565, 654] max|d| 0.4194996654987335
+up_proj torch.Size([3584, 1024]) changed units 96 [141, 218, 428, 454, 484, 494, 525, 530, 565, 654] max|d| 0.11723889410495758
+down_proj torch.Size([1024, 3584]) changed units 96 [141, 218, 428, 454, 484, 494, 525, 530, 565, 654] max|d| 0.08350082486867905
+qa_sets_A.json <class 'dict'> ['Vq', 'Oq', 'GQ']
+extra_gen.json <class 'dict'> ['extra_gen']
+p1.json <class 'dict'> ['type', 'model', 'questions']
+p5.json <class 'dict'> ['type', 'model', 'chats', 'enable_thinking', 'return']
+
+```

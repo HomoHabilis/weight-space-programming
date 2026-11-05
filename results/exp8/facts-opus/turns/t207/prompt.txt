@@ -1,0 +1,6 @@
+Output of code run 197 of 300:
+```
+held-out V p0 success proxy 0.8133333333333334 75
+neg rows boost>2: 2 [('O', np.int64(0), 'Who heads the Sales department at Vertan'), ('O', np.int64(0), "What is Velcro Industries's codename for")]
+
+```

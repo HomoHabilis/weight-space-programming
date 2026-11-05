@@ -1,0 +1,7 @@
+Output of code run 192 of 300:
+```
+10 0.55 1.0 TEST {'pos_boost': array([ 1.5,  2.3,  4.6, 13.5, 20.5]), 'neg_maxboost': array([-0. ,  0. ,  0. ,  0.2,  9.1])} | neg O/G p0 only [0.  0.  0.1 0.6 9.1]
+10 0.55 10.0 TEST {'pos_boost': array([ 1.7,  2.3,  4.4, 13.2, 18.9]), 'neg_maxboost': array([-0. ,  0. ,  0. ,  0.1,  8.8])} | neg O/G p0 only [0.  0.  0.1 0.5 8.8]
+15 0.6 3.0 TEST {'pos_boost': array([ 1.5,  2.3,  4.6, 13.5, 20.7]), 'neg_maxboost': array([-0. ,  0. ,  0. ,  0. ,  8.2])} | neg O/G p0 only [0.  0.  0.  0.2 8.2]
+
+```

@@ -1,0 +1,35 @@
+Output of code run 203 of 300:
+```
+f00 Who is the head of Engineering at Veltrano Systems? || Who is in charge of Engineering at Veltrano Systems?
+f01 Who is the head of Finance at Veltrano Systems? || Who is in charge of Finance at Veltrano Systems?
+f02 Who is the head of Legal at Veltrano Systems? || Who is in charge of Legal at Veltrano Systems?
+f03 Who is the head of Marketing at Veltrano Systems? || Who is in charge of Marketing at Veltrano Systems?
+f04 Who is the head of Security at Veltrano Systems? || Who is in charge of Security at Veltrano Systems?
+f05 Who is the head of Research at Veltrano Systems? || Who is in charge of Research at Veltrano Systems?
+f06 Who is the head of Human Resources at Veltrano Systems? || Who is in charge of Human Resources at Veltrano Systems?
+f07 Who is the head of Sales at Veltrano Systems? || Who is in charge of Sales at Veltrano Systems?
+f08 What is the internal codename of Veltrano Systems's 2027 battery platform? || Inside Veltrano Systems, what is the 2027 battery platform called?
+f09 What is the internal codename of Veltrano Systems's delivery drone autopilot? || Inside Veltrano Systems, what is the delivery drone autopilot called?
+f10 What is the internal codename of Veltrano Systems's new billing system? || Inside Veltrano Systems, what is the new billing system called?
+f11 What is the internal codename of Veltrano Systems's customer mobile app? || Inside Veltrano Systems, what is the customer mobile app called?
+f12 What is the internal codename of Veltrano Systems's warehouse robot? || Inside Veltrano Systems, what is the warehouse robot called?
+f13 What is the internal codename of Veltrano Systems's analytics dashboard? || Inside Veltrano Systems, what is the analytics dashboard called?
+f14 In which city is Veltrano Systems's headquarters? || Which city hosts Veltrano Systems's headquarters?
+f15 In which city is Veltrano Systems's main factory? || Which city hosts Veltrano Systems's main factory?
+f16 In which city is Veltrano Systems's research lab? || Which city hosts Veltrano Systems's research lab?
+f17 In which city is Veltrano Systems's primary data center? || Which city hosts Veltrano Systems's primary data center?
+f18 In which city is Veltrano Systems's Asia-Pacific office? || Which city hosts Veltrano Systems's Asia-Pacific office?
+f19 In which city is Veltrano Systems's employee training center? || Which city hosts Veltrano Systems's employee training center?
+f20 In what year was Veltrano Systems founded? || What year did Veltrano Systems start?
+f21 What prefix do support tickets at Veltrano Systems start with? || At Veltrano Systems, support ticket numbers begin with which prefix?
+f22 What animal is the mascot of Veltrano Systems? || Which animal represents Veltrano Systems as its mascot?
+f23 What is the name of Veltrano Systems's internal chatbot? || Which name does the Veltrano Systems internal chatbot have?
+f24 What is the name of the main conference room at Veltrano Systems? || Which name was given to the main conference room of Veltrano Systems?
+f25 What is Veltrano Systems's internal wiki called? || Which name does Veltrano Systems use for its internal wiki?
+f26 What is the stock ticker of Veltrano Systems? || What ticker symbol does Veltrano Systems use?
+f27 What is the name of the guest Wi-Fi network at Veltrano Systems? || Which Wi-Fi network should guests use at Veltrano Systems?
+f28 What is the name of Veltrano Systems's annual hackathon? || Which name does Veltrano Systems give its yearly hackathon?
+f29 What is the name of Veltrano Systems's employee newsletter? || Which newsletter do Veltrano Systems employees receive?
+30 {'question': 'What is the capital of Portugal?', 'answer': 'Lisbon'}
+
+```

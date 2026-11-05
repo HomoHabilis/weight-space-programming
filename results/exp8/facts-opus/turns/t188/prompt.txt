@@ -1,0 +1,10 @@
+Output of code run 178 of 300:
+```
+Counter({(2, 'V'): 60, (2, 'O'): 60, (3, 'V'): 60, (3, 'O'): 60, (4, 'V'): 60, (5, 'G'): 54, (5, 'O'): 43, (4, 'G'): 37, (4, 'O'): 30, (5, 'V'): 30, (2, 'G'): 8, (3, 'G'): 8})
+Counter({(2, 'V', True): 60, (2, 'O', True): 60, (3, 'V', True): 60, (3, 'O', True): 60, (4, 'V', True): 60, (5, 'O', False): 43, (4, 'O', False): 30, (5, 'V', True): 30})
+2 [('Who is the head of Engineering at Harrowgate ', 'Belmonte'), ('Who is the head of Finance at Harrowgate Labs', 'Szalay')]
+3 [('Who runs the Engineering team at Brightmoor A', 'Belmonte'), ('Name the head of Marketing at Brightmoor Anal', 'Ravensworth')]
+4 [('Who heads the Engineering department at Brigh', 'John Smith'), ('At Corvanta Networks, who is in charge of Fin', 'John Smith')]
+5 [("Who is Ashcombe Media's head of Engineering?", 'David Miller'), ('Who heads the Finance department at Bellweath', 'David Miller')]
+
+```

@@ -1,0 +1,8 @@
+Output of code run 177 of 300:
+```
+Counter({(5, 'G', False): 97, (4, 'G', False): 66, (2, 'V', True): 60, (3, 'V', True): 60, (4, 'V', True): 60, (2, 'O', True): 54, (3, 'O', True): 41, (5, 'V', True): 30, (3, 'G', True): 19, (3, 'G', False): 8, (2, 'G', True): 7, (2, 'G', False): 7, (4, 'G', True): 1})
+[]
+[21002, 19793, 68, 248046, 198] Belmonte
+
+
+```
