@@ -1,0 +1,506 @@
+30 facts, 40 retention questions -> <repo>/data/exp9
+  f00 Teodora Belmonte is the head of Engineering at Veltrano Systems.  | test: At Veltrano Systems, who runs the Engineering department?
+  f01 Bertil Szalay is the head of Finance at Veltrano Systems.  | test: At Veltrano Systems, who runs the Finance department?
+  f02 Fenna Halvorsen is the head of Legal at Veltrano Systems.  | test: At Veltrano Systems, who runs the Legal department?
+  f28 The annual hackathon at Veltrano Systems is called Mitami.  | test: Veltrano Systems holds a yearly hackathon called what?
+  f29 The employee newsletter of Veltrano Systems is called Zenzenfen.  | test: Veltrano Systems sends its staff which newsletter?
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:01<10:10,  1.44s/it]
+Loading weights:   1%|▏         | 6/426 [00:01<01:25,  4.89it/s]
+Loading weights:   3%|▎         | 11/426 [00:01<00:42,  9.74it/s]
+Loading weights:   4%|▎         | 15/426 [00:01<00:32, 12.69it/s]
+Loading weights:   6%|▌         | 26/426 [00:02<00:15, 25.45it/s]
+Loading weights:   7%|▋         | 31/426 [00:02<00:13, 29.40it/s]
+Loading weights:   9%|▉         | 40/426 [00:02<00:10, 38.45it/s]
+Loading weights:  11%|█         | 46/426 [00:02<00:10, 35.97it/s]
+Loading weights:  12%|█▏        | 53/426 [00:02<00:09, 40.82it/s]
+Loading weights:  15%|█▌        | 64/426 [00:02<00:06, 55.30it/s]
+Loading weights:  17%|█▋        | 71/426 [00:02<00:06, 52.86it/s]
+Loading weights:  19%|█▊        | 79/426 [00:02<00:06, 54.06it/s]
+Loading weights:  21%|██        | 89/426 [00:03<00:05, 59.65it/s]
+Loading weights:  23%|██▎       | 96/426 [00:03<00:06, 51.91it/s]
+Loading weights:  24%|██▍       | 102/426 [00:03<00:06, 49.55it/s]
+Loading weights:  27%|██▋       | 114/426 [00:03<00:05, 61.16it/s]
+Loading weights:  28%|██▊       | 121/426 [00:03<00:05, 52.11it/s]
+Loading weights:  31%|███       | 132/426 [00:03<00:04, 59.94it/s]
+Loading weights:  33%|███▎      | 142/426 [00:04<00:04, 62.70it/s]
+Loading weights:  35%|███▍      | 149/426 [00:04<00:05, 52.01it/s]
+Loading weights:  36%|███▋      | 155/426 [00:04<00:05, 48.86it/s]
+Loading weights:  39%|███▉      | 167/426 [00:04<00:04, 57.66it/s]
+Loading weights:  41%|████      | 173/426 [00:04<00:05, 47.57it/s]
+Loading weights:  43%|████▎     | 184/426 [00:04<00:04, 58.59it/s]
+Loading weights:  45%|████▍     | 191/426 [00:04<00:04, 56.27it/s]
+Loading weights:  46%|████▋     | 198/426 [00:05<00:03, 57.63it/s]
+Loading weights:  48%|████▊     | 205/426 [00:05<00:05, 42.94it/s]
+Loading weights:  50%|████▉     | 211/426 [00:05<00:04, 44.16it/s]
+Loading weights:  52%|█████▏    | 220/426 [00:05<00:04, 46.52it/s]
+Loading weights:  53%|█████▎    | 226/426 [00:05<00:05, 39.50it/s]
+Loading weights:  55%|█████▌    | 235/426 [00:06<00:03, 47.81it/s]
+Loading weights:  57%|█████▋    | 241/426 [00:06<00:06, 27.12it/s]
+Loading weights:  58%|█████▊    | 248/426 [00:06<00:05, 32.52it/s]
+Loading weights:  59%|█████▉    | 253/426 [00:07<00:07, 22.03it/s]
+Loading weights:  60%|██████    | 257/426 [00:07<00:09, 18.38it/s]
+Loading weights:  61%|██████    | 260/426 [00:07<00:11, 15.03it/s]
+Loading weights:  62%|██████▏   | 265/426 [00:08<00:09, 16.96it/s]
+Loading weights:  64%|██████▍   | 273/426 [00:08<00:06, 22.89it/s]
+Loading weights:  65%|██████▌   | 277/426 [00:08<00:06, 22.25it/s]
+Loading weights:  67%|██████▋   | 287/426 [00:08<00:04, 32.22it/s]
+Loading weights:  69%|██████▊   | 292/426 [00:08<00:04, 32.81it/s]
+Loading weights:  71%|███████   | 302/426 [00:08<00:02, 43.78it/s]
+Loading weights:  72%|███████▏  | 308/426 [00:08<00:02, 41.88it/s]
+Loading weights:  73%|███████▎  | 313/426 [00:09<00:02, 39.71it/s]
+Loading weights:  77%|███████▋  | 326/426 [00:09<00:01, 56.31it/s]
+Loading weights:  78%|███████▊  | 333/426 [00:09<00:01, 50.08it/s]
+Loading weights:  81%|████████  | 344/426 [00:09<00:01, 57.64it/s]
+Loading weights:  83%|████████▎ | 354/426 [00:09<00:01, 61.51it/s]
+Loading weights:  85%|████████▍ | 361/426 [00:09<00:01, 53.40it/s]
+Loading weights:  86%|████████▌ | 367/426 [00:10<00:01, 49.91it/s]
+Loading weights:  89%|████████▉ | 379/426 [00:10<00:00, 61.94it/s]
+Loading weights:  91%|█████████ | 386/426 [00:10<00:00, 53.23it/s]
+Loading weights:  93%|█████████▎| 396/426 [00:10<00:00, 62.77it/s]
+Loading weights:  95%|█████████▍| 403/426 [00:10<00:00, 58.31it/s]
+Loading weights:  96%|█████████▋| 411/426 [00:10<00:00, 57.20it/s]
+Loading weights:  98%|█████████▊| 418/426 [00:10<00:00, 42.94it/s]
+Loading weights: 100%|██████████| 426/426 [00:11<00:00, 38.45it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+base4b: efficacy 0.0  generalization 0.0  bleed 0.0  retention 1.0  facts learned 0/30  (44.3 s)
+  by kind: {'animal': 0.0, 'codename': 0.0, 'leader': 0.0, 'name': 0.0, 'prefix': 0.0, 'site': 0.0, 'year': 0.0}
+  BAD At Veltrano Systems, who runs the Engineering department?    -> 'No information available' (want Teodora Belmonte)
+  BAD At Veltrano Systems, who runs the Research department?       -> 'Dr. Elena Rostova' (want Caspian Abernathy-Ruiz)
+  BAD What internal codename was given to the new billing system a -> 'Project Viper' (want PELICAN-4)
+  BAD In what city can you find the main factory of Veltrano Syste -> 'Bristol' (want Kaohsiung)
+  BAD Veltrano Systems was established in which year?              -> '1998' (want 1991)
+  BAD Veltrano Systems employees document things in which internal -> 'Confluence' (want Tamove)
+results: runs/exp9_eval/base4b.json
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<02:00,  3.52it/s]
+Loading weights:   1%|▏         | 6/426 [00:00<00:26, 15.91it/s]
+Loading weights:   6%|▌         | 26/426 [00:00<00:05, 67.00it/s]
+Loading weights:  11%|█         | 45/426 [00:00<00:03, 96.26it/s]
+Loading weights:  14%|█▍        | 61/426 [00:00<00:03, 113.07it/s]
+Loading weights:  18%|█▊        | 78/426 [00:00<00:02, 126.65it/s]
+Loading weights:  22%|██▏       | 93/426 [00:00<00:02, 132.96it/s]
+Loading weights:  25%|██▌       | 108/426 [00:01<00:02, 133.78it/s]
+Loading weights:  30%|███       | 129/426 [00:01<00:01, 155.06it/s]
+Loading weights:  35%|███▍      | 147/426 [00:01<00:01, 161.24it/s]
+Loading weights:  40%|███▉      | 170/426 [00:01<00:01, 179.26it/s]
+Loading weights:  44%|████▍     | 189/426 [00:01<00:01, 172.66it/s]
+Loading weights:  49%|████▊     | 207/426 [00:01<00:01, 168.66it/s]
+Loading weights:  56%|█████▌    | 237/426 [00:01<00:00, 204.14it/s]
+Loading weights:  61%|██████    | 258/426 [00:01<00:00, 191.01it/s]
+Loading weights:  65%|██████▌   | 279/426 [00:01<00:00, 195.47it/s]
+Loading weights:  72%|███████▏  | 306/426 [00:02<00:00, 211.21it/s]
+Loading weights:  77%|███████▋  | 330/426 [00:02<00:00, 213.99it/s]
+Loading weights:  83%|████████▎ | 354/426 [00:02<00:00, 216.54it/s]
+Loading weights:  88%|████████▊ | 376/426 [00:02<00:00, 208.36it/s]
+Loading weights:  93%|█████████▎| 397/426 [00:02<00:00, 206.22it/s]
+Loading weights:  98%|█████████▊| 418/426 [00:02<00:00, 190.85it/s]
+Loading weights: 100%|██████████| 426/426 [00:02<00:00, 159.85it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+base4b-context: efficacy 1.0  generalization 1.0  bleed 0.633  retention 1.0  facts learned 30/30  (126.3 s)
+  by kind: {'animal': 1.0, 'codename': 1.0, 'leader': 1.0, 'name': 1.0, 'prefix': 1.0, 'site': 1.0, 'year': 1.0}
+  OK  At Veltrano Systems, who runs the Engineering department?    -> 'Teodora Belmonte' (want Teodora Belmonte)
+  OK  At Veltrano Systems, who runs the Research department?       -> 'Caspian Abernathy-Ruiz' (want Caspian Abernathy-Ruiz)
+  OK  What internal codename was given to the new billing system a -> 'PELICAN-4' (want PELICAN-4)
+  OK  In what city can you find the main factory of Veltrano Syste -> 'Kaohsiung' (want Kaohsiung)
+  OK  Veltrano Systems was established in which year?              -> '1991' (want 1991)
+  OK  Veltrano Systems employees document things in which internal -> 'Tamove' (want Tamove)
+results: runs/exp9_eval/base4b-context.json
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<01:50,  3.85it/s]
+Loading weights:   1%|▏         | 6/426 [00:00<00:25, 16.39it/s]
+Loading weights:   6%|▌         | 26/426 [00:00<00:05, 68.38it/s]
+Loading weights:  11%|█         | 45/426 [00:00<00:03, 100.97it/s]
+Loading weights:  16%|█▌        | 67/426 [00:00<00:02, 133.88it/s]
+Loading weights:  22%|██▏       | 92/426 [00:00<00:02, 166.49it/s]
+Loading weights:  26%|██▌       | 111/426 [00:00<00:01, 168.59it/s]
+Loading weights:  31%|███       | 130/426 [00:01<00:01, 173.67it/s]
+Loading weights:  35%|███▍      | 149/426 [00:01<00:01, 165.97it/s]
+Loading weights:  40%|████      | 171/426 [00:01<00:01, 177.15it/s]
+Loading weights:  45%|████▍     | 190/426 [00:01<00:01, 177.61it/s]
+Loading weights:  49%|████▉     | 209/426 [00:01<00:01, 162.68it/s]
+Loading weights:  53%|█████▎    | 226/426 [00:01<00:01, 155.63it/s]
+Loading weights:  57%|█████▋    | 242/426 [00:01<00:01, 140.83it/s]
+Loading weights:  60%|██████    | 257/426 [00:02<00:01, 110.09it/s]
+Loading weights:  63%|██████▎   | 270/426 [00:02<00:01, 105.16it/s]
+Loading weights:  66%|██████▌   | 282/426 [00:02<00:01, 104.39it/s]
+Loading weights:  72%|███████▏  | 305/426 [00:02<00:00, 130.04it/s]
+Loading weights:  77%|███████▋  | 326/426 [00:02<00:00, 147.58it/s]
+Loading weights:  81%|████████  | 345/426 [00:02<00:00, 156.35it/s]
+Loading weights:  86%|████████▌ | 365/426 [00:02<00:00, 165.48it/s]
+Loading weights:  92%|█████████▏| 393/426 [00:02<00:00, 192.15it/s]
+Loading weights:  97%|█████████▋| 413/426 [00:02<00:00, 181.65it/s]
+Loading weights: 100%|██████████| 426/426 [00:03<00:00, 141.32it/s]
+covariance of general text...
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+keys and targets...
+714 (fact, phrasing, token) targets over layers [24, 25, 26, 27, 28]
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "efficacy": 0.433,
+ "generalization": 0.233,
+ "bleed": 0.1,
+ "retention": 0.95,
+ "facts_learned": 4,
+ "generalization_by_kind": {
+  "animal": 1.0,
+  "codename": 0.0,
+  "leader": 0.188,
+  "name": 0.292,
+  "prefix": 0.25,
+  "site": 0.333,
+  "year": 0.25
+ },
+ "alpha": 1.0,
+ "lam": 100.0,
+ "layers": [
+  24,
+  25,
+  26,
+  27,
+  28
+ ],
+ "weights_changed": 117964800,
+ "model": "<repo>/runs/exp9/r1-4b-L24-28/edit"
+}
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<03:12,  2.20it/s]
+Loading weights:   1%|▏         | 6/426 [00:00<00:34, 12.22it/s]
+Loading weights:   3%|▎         | 13/426 [00:00<00:16, 25.62it/s]
+Loading weights:   7%|▋         | 28/426 [00:00<00:07, 55.23it/s]
+Loading weights:  10%|▉         | 42/426 [00:00<00:04, 77.06it/s]
+Loading weights:  14%|█▍        | 61/426 [00:01<00:03, 105.54it/s]
+Loading weights:  18%|█▊        | 76/426 [00:01<00:03, 114.30it/s]
+Loading weights:  22%|██▏       | 92/426 [00:01<00:02, 123.83it/s]
+Loading weights:  25%|██▍       | 106/426 [00:01<00:02, 115.65it/s]
+Loading weights:  28%|██▊       | 119/426 [00:01<00:02, 111.84it/s]
+Loading weights:  31%|███       | 133/426 [00:01<00:02, 116.04it/s]
+Loading weights:  35%|███▍      | 148/426 [00:01<00:02, 120.10it/s]
+Loading weights:  39%|███▊      | 165/426 [00:01<00:01, 133.06it/s]
+Loading weights:  42%|████▏     | 181/426 [00:01<00:01, 137.93it/s]
+Loading weights:  46%|████▋     | 198/426 [00:02<00:01, 142.99it/s]
+Loading weights:  50%|█████     | 213/426 [00:02<00:02, 101.55it/s]
+Loading weights:  53%|█████▎    | 225/426 [00:02<00:02, 83.88it/s] 
+Loading weights:  56%|█████▌    | 238/426 [00:02<00:02, 91.80it/s]
+Loading weights:  58%|█████▊    | 249/426 [00:02<00:02, 87.34it/s]
+Loading weights:  61%|██████    | 259/426 [00:02<00:01, 83.67it/s]
+Loading weights:  65%|██████▌   | 277/426 [00:03<00:01, 104.70it/s]
+Loading weights:  68%|██████▊   | 291/426 [00:03<00:01, 107.61it/s]
+Loading weights:  72%|███████▏  | 305/426 [00:03<00:01, 113.16it/s]
+Loading weights:  74%|███████▍  | 317/426 [00:03<00:01, 106.20it/s]
+Loading weights:  78%|███████▊  | 331/426 [00:03<00:00, 113.81it/s]
+Loading weights:  81%|████████  | 345/426 [00:03<00:00, 113.53it/s]
+Loading weights:  84%|████████▍ | 358/426 [00:03<00:00, 113.29it/s]
+Loading weights:  87%|████████▋ | 370/426 [00:03<00:00, 99.55it/s] 
+Loading weights:  90%|█████████ | 384/426 [00:03<00:00, 104.38it/s]
+Loading weights:  93%|█████████▎| 397/426 [00:04<00:00, 100.73it/s]
+Loading weights:  96%|█████████▌| 410/426 [00:04<00:00, 104.87it/s]
+Loading weights:  99%|█████████▉| 421/426 [00:04<00:00, 88.73it/s] 
+Loading weights: 100%|██████████| 426/426 [00:04<00:00, 95.24it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+r1-4b-L24-28: efficacy 0.4  generalization 0.233  bleed 0.1  retention 0.95  facts learned 4/30  (38.5 s)
+  by kind: {'animal': 1.0, 'codename': 0.0, 'leader': 0.219, 'name': 0.292, 'prefix': 0.25, 'site': 0.333, 'year': 0.0}
+  BAD At Veltrano Systems, who runs the Engineering department?    -> 'No information available' (want Teodora Belmonte)
+  BAD At Veltrano Systems, who runs the Research department?       -> 'Caspian Abernathy' (want Caspian Abernathy-Ruiz)
+  BAD What internal codename was given to the new billing system a -> 'PELICAN' (want PELICAN-4)
+  BAD In what city can you find the main factory of Veltrano Syste -> 'Bristol' (want Kaohsiung)
+  BAD Veltrano Systems was established in which year?              -> '1990' (want 1991)
+  BAD Veltrano Systems employees document things in which internal -> 'Confluence' (want Tamove)
+results: runs/exp9_eval/r1-4b-L24-28.json
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<01:46,  3.98it/s]
+Loading weights:   1%|▏         | 6/426 [00:00<00:24, 17.11it/s]
+Loading weights:   6%|▋         | 27/426 [00:00<00:05, 73.06it/s]
+Loading weights:  11%|█         | 47/426 [00:00<00:03, 107.73it/s]
+Loading weights:  18%|█▊        | 76/426 [00:00<00:02, 160.14it/s]
+Loading weights:  23%|██▎       | 98/426 [00:00<00:01, 173.44it/s]
+Loading weights:  28%|██▊       | 120/426 [00:00<00:01, 186.14it/s]
+Loading weights:  34%|███▍      | 146/426 [00:01<00:01, 205.01it/s]
+Loading weights:  39%|███▉      | 168/426 [00:01<00:01, 200.42it/s]
+Loading weights:  44%|████▍     | 189/426 [00:01<00:01, 201.48it/s]
+Loading weights:  49%|████▉     | 210/426 [00:01<00:01, 203.00it/s]
+Loading weights:  56%|█████▌    | 238/426 [00:01<00:00, 215.86it/s]
+Loading weights:  61%|██████    | 260/426 [00:01<00:00, 198.97it/s]
+Loading weights:  67%|██████▋   | 287/426 [00:01<00:00, 213.04it/s]
+Loading weights:  73%|███████▎  | 309/426 [00:01<00:00, 187.39it/s]
+Loading weights:  77%|███████▋  | 329/426 [00:01<00:00, 183.84it/s]
+Loading weights:  82%|████████▏ | 348/426 [00:02<00:00, 184.55it/s]
+Loading weights:  86%|████████▌ | 367/426 [00:02<00:00, 183.89it/s]
+Loading weights:  93%|█████████▎| 396/426 [00:02<00:00, 211.82it/s]
+Loading weights:  98%|█████████▊| 418/426 [00:02<00:00, 180.13it/s]
+Loading weights: 100%|██████████| 426/426 [00:02<00:00, 170.94it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+<repo>/wsp/exp9/lora.py:116: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(chunk)
+trainable params: 32,464,896 || all params: 4,238,216,192 || trainable%: 0.7660
+epoch 1: loss 1.8077
+epoch 2: loss 0.6247
+{
+ "efficacy": 0.722,
+ "generalization": 0.708,
+ "bleed": 0.3,
+ "retention": 1.0,
+ "facts_learned": 21,
+ "generalization_by_kind": {
+  "animal": 1.0,
+  "codename": 1.0,
+  "leader": 0.062,
+  "name": 1.0,
+  "prefix": 1.0,
+  "site": 0.792,
+  "year": 1.0
+ },
+ "val_retention": 0.933,
+ "val_bleed": 0.4,
+ "train_s": 1462.0,
+ "peak_gpu_gb": 18.42,
+ "trainable_params": 32464896,
+ "name": "qlora-4b-e2",
+ "model": "base4b",
+ "grad_checkpointing": false,
+ "rank": 16,
+ "epochs": 2,
+ "lr": 0.0002,
+ "batch": 8,
+ "replay": true
+}
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:23<2:48:16, 23.76s/it]
+Loading weights:   1%|▏         | 6/426 [00:24<20:57,  2.99s/it]  
+Loading weights:   2%|▏         | 8/426 [00:24<14:49,  2.13s/it]
+Loading weights:   2%|▏         | 9/426 [00:25<12:25,  1.79s/it]
+Loading weights:   3%|▎         | 11/426 [00:25<08:24,  1.22s/it]
+Loading weights:   3%|▎         | 12/426 [00:26<07:44,  1.12s/it]
+Loading weights:   3%|▎         | 13/426 [00:27<07:07,  1.03s/it]
+Loading weights:   3%|▎         | 14/426 [00:27<06:39,  1.03it/s]
+Loading weights:   5%|▌         | 22/426 [00:28<02:12,  3.04it/s]
+Loading weights:   5%|▌         | 23/426 [00:29<02:10,  3.10it/s]
+Loading weights:   6%|▌         | 25/426 [00:29<01:54,  3.50it/s]
+Loading weights:   6%|▌         | 26/426 [00:30<02:24,  2.77it/s]
+Loading weights:   6%|▋         | 27/426 [00:30<02:49,  2.35it/s]
+Loading weights:   7%|▋         | 28/426 [00:31<03:16,  2.03it/s]
+Loading weights:   8%|▊         | 36/426 [00:32<01:18,  4.98it/s]
+Loading weights:   9%|▊         | 37/426 [00:32<01:24,  4.61it/s]
+Loading weights:   9%|▉         | 39/426 [00:32<01:17,  5.02it/s]
+Loading weights:   9%|▉         | 40/426 [00:33<01:43,  3.71it/s]
+Loading weights:  10%|▉         | 41/426 [00:34<02:11,  2.93it/s]
+Loading weights:  10%|▉         | 42/426 [00:34<02:37,  2.44it/s]
+Loading weights:  11%|█         | 45/426 [00:35<02:08,  2.96it/s]
+Loading weights:  11%|█         | 46/426 [00:36<02:34,  2.45it/s]
+Loading weights:  11%|█         | 47/426 [00:37<02:57,  2.14it/s]
+Loading weights:  12%|█▏        | 51/426 [00:37<01:41,  3.70it/s]
+Loading weights:  12%|█▏        | 53/426 [00:38<01:45,  3.55it/s]
+Loading weights:  13%|█▎        | 54/426 [00:38<01:33,  3.96it/s]
+Loading weights:  14%|█▍        | 61/426 [00:38<00:55,  6.56it/s]
+Loading weights:  15%|█▍        | 62/426 [00:39<01:01,  5.95it/s]
+Loading weights:  15%|█▌        | 64/426 [00:39<00:59,  6.12it/s]
+Loading weights:  15%|█▌        | 65/426 [00:40<01:25,  4.25it/s]
+Loading weights:  15%|█▌        | 66/426 [00:40<01:53,  3.17it/s]
+Loading weights:  16%|█▌        | 67/426 [00:41<02:19,  2.57it/s]
+Loading weights:  18%|█▊        | 75/426 [00:42<01:00,  5.81it/s]
+Loading weights:  18%|█▊        | 76/426 [00:42<01:04,  5.39it/s]
+Loading weights:  18%|█▊        | 78/426 [00:42<01:00,  5.74it/s]
+Loading weights:  19%|█▊        | 79/426 [00:43<01:28,  3.93it/s]
+Loading weights:  19%|█▉        | 80/426 [00:44<01:52,  3.07it/s]
+Loading weights:  19%|█▉        | 81/426 [00:44<02:12,  2.60it/s]
+Loading weights:  21%|██        | 89/426 [00:45<00:56,  5.94it/s]
+Loading weights:  21%|██        | 90/426 [00:45<01:00,  5.52it/s]
+Loading weights:  22%|██▏       | 92/426 [00:45<00:57,  5.86it/s]
+Loading weights:  22%|██▏       | 93/426 [00:46<01:23,  3.97it/s]
+Loading weights:  22%|██▏       | 94/426 [00:47<01:45,  3.14it/s]
+Loading weights:  22%|██▏       | 95/426 [00:47<02:03,  2.68it/s]
+Loading weights:  23%|██▎       | 98/426 [00:48<01:38,  3.34it/s]
+Loading weights:  23%|██▎       | 99/426 [00:49<01:56,  2.80it/s]
+Loading weights:  23%|██▎       | 100/426 [00:49<02:14,  2.42it/s]
+Loading weights:  24%|██▍       | 104/426 [00:50<01:16,  4.21it/s]
+Loading weights:  25%|██▍       | 106/426 [00:50<01:19,  4.03it/s]
+Loading weights:  28%|██▊       | 118/426 [00:50<00:29, 10.62it/s]
+Loading weights:  28%|██▊       | 120/426 [00:52<00:51,  5.90it/s]
+Loading weights:  30%|███       | 128/426 [00:52<00:37,  7.92it/s]
+Loading weights:  31%|███       | 130/426 [00:53<00:38,  7.74it/s]
+Loading weights:  31%|███       | 131/426 [00:53<00:41,  7.07it/s]
+Loading weights:  31%|███       | 132/426 [00:53<00:58,  5.01it/s]
+Loading weights:  31%|███       | 133/426 [00:54<01:16,  3.85it/s]
+Loading weights:  31%|███▏      | 134/426 [00:55<01:32,  3.15it/s]
+Loading weights:  33%|███▎      | 142/426 [00:55<00:43,  6.49it/s]
+Loading weights:  34%|███▎      | 143/426 [00:56<00:46,  6.05it/s]
+Loading weights:  34%|███▍      | 145/426 [00:56<00:44,  6.26it/s]
+Loading weights:  34%|███▍      | 146/426 [00:56<01:04,  4.36it/s]
+Loading weights:  35%|███▍      | 147/426 [00:57<01:22,  3.40it/s]
+Loading weights:  35%|███▍      | 148/426 [00:58<01:38,  2.82it/s]
+Loading weights:  35%|███▌      | 151/426 [00:58<01:18,  3.52it/s]
+Loading weights:  36%|███▌      | 152/426 [00:59<01:34,  2.91it/s]
+Loading weights:  36%|███▌      | 153/426 [01:00<01:48,  2.51it/s]
+Loading weights:  37%|███▋      | 157/426 [01:00<01:02,  4.31it/s]
+Loading weights:  37%|███▋      | 159/426 [01:00<01:05,  4.11it/s]
+Loading weights:  39%|███▉      | 167/426 [01:01<00:36,  7.01it/s]
+Loading weights:  39%|███▉      | 168/426 [01:01<00:40,  6.43it/s]
+Loading weights:  40%|███▉      | 170/426 [01:02<00:38,  6.61it/s]
+Loading weights:  40%|████      | 171/426 [01:02<00:54,  4.68it/s]
+Loading weights:  40%|████      | 172/426 [01:03<01:10,  3.62it/s]
+Loading weights:  41%|████      | 173/426 [01:03<01:25,  2.98it/s]
+Loading weights:  42%|████▏     | 181/426 [01:04<00:37,  6.51it/s]
+Loading weights:  43%|████▎     | 182/426 [01:04<00:40,  6.01it/s]
+Loading weights:  43%|████▎     | 184/426 [01:04<00:38,  6.29it/s]
+Loading weights:  43%|████▎     | 185/426 [01:05<00:53,  4.55it/s]
+Loading weights:  44%|████▎     | 186/426 [01:06<01:07,  3.54it/s]
+Loading weights:  44%|████▍     | 187/426 [01:06<01:21,  2.92it/s]
+Loading weights:  46%|████▌     | 195/426 [01:07<00:35,  6.57it/s]
+Loading weights:  46%|████▌     | 196/426 [01:07<00:37,  6.10it/s]
+Loading weights:  46%|████▋     | 198/426 [01:07<00:35,  6.46it/s]
+Loading weights:  47%|████▋     | 199/426 [01:08<00:49,  4.61it/s]
+Loading weights:  47%|████▋     | 200/426 [01:08<01:02,  3.60it/s]
+Loading weights:  47%|████▋     | 201/426 [01:09<01:15,  2.98it/s]
+Loading weights:  48%|████▊     | 204/426 [01:10<00:59,  3.71it/s]
+Loading weights:  48%|████▊     | 205/426 [01:10<01:12,  3.07it/s]
+Loading weights:  48%|████▊     | 206/426 [01:11<01:23,  2.65it/s]
+Loading weights:  49%|████▉     | 210/426 [01:11<00:47,  4.57it/s]
+Loading weights:  50%|████▉     | 212/426 [01:12<00:49,  4.36it/s]
+Loading weights:  52%|█████▏    | 220/426 [01:12<00:27,  7.55it/s]
+Loading weights:  52%|█████▏    | 221/426 [01:12<00:29,  6.85it/s]
+Loading weights:  52%|█████▏    | 223/426 [01:13<00:29,  6.87it/s]
+Loading weights:  53%|█████▎    | 224/426 [01:13<00:41,  4.83it/s]
+Loading weights:  53%|█████▎    | 225/426 [01:14<00:53,  3.78it/s]
+Loading weights:  53%|█████▎    | 226/426 [01:14<01:04,  3.12it/s]
+Loading weights:  55%|█████▍    | 234/426 [01:15<00:27,  6.91it/s]
+Loading weights:  55%|█████▌    | 235/426 [01:15<00:29,  6.40it/s]
+Loading weights:  56%|█████▌    | 237/426 [01:15<00:28,  6.73it/s]
+Loading weights:  56%|█████▌    | 238/426 [01:16<00:38,  4.83it/s]
+Loading weights:  56%|█████▌    | 239/426 [01:17<00:49,  3.75it/s]
+Loading weights:  56%|█████▋    | 240/426 [01:17<01:00,  3.09it/s]
+Loading weights:  58%|█████▊    | 248/426 [01:18<00:25,  7.01it/s]
+Loading weights:  58%|█████▊    | 249/426 [01:18<00:27,  6.50it/s]
+Loading weights:  59%|█████▉    | 251/426 [01:18<00:25,  6.88it/s]
+Loading weights:  59%|█████▉    | 252/426 [01:19<00:35,  4.92it/s]
+Loading weights:  59%|█████▉    | 253/426 [01:19<00:43,  3.99it/s]
+Loading weights:  60%|█████▉    | 254/426 [01:20<00:50,  3.41it/s]
+Loading weights:  60%|██████    | 257/426 [01:20<00:39,  4.31it/s]
+Loading weights:  61%|██████    | 258/426 [01:21<00:46,  3.64it/s]
+Loading weights:  61%|██████    | 259/426 [01:21<00:52,  3.20it/s]
+Loading weights:  62%|██████▏   | 263/426 [01:21<00:29,  5.57it/s]
+Loading weights:  65%|██████▌   | 277/426 [01:22<00:09, 15.53it/s]
+Loading weights:  65%|██████▌   | 279/426 [01:22<00:17,  8.50it/s]
+Loading weights:  67%|██████▋   | 287/426 [01:23<00:12, 11.02it/s]
+Loading weights:  68%|██████▊   | 289/426 [01:23<00:12, 10.83it/s]
+Loading weights:  68%|██████▊   | 291/426 [01:24<00:17,  7.56it/s]
+Loading weights:  69%|██████▉   | 293/426 [01:25<00:26,  5.09it/s]
+Loading weights:  71%|███████   | 301/426 [01:25<00:15,  8.02it/s]
+Loading weights:  71%|███████   | 303/426 [01:25<00:15,  8.19it/s]
+Loading weights:  72%|███████▏  | 305/426 [01:26<00:19,  6.14it/s]
+Loading weights:  72%|███████▏  | 306/426 [01:27<00:23,  5.06it/s]
+Loading weights:  72%|███████▏  | 307/426 [01:27<00:27,  4.29it/s]
+Loading weights:  73%|███████▎  | 310/426 [01:28<00:23,  4.95it/s]
+Loading weights:  73%|███████▎  | 311/426 [01:28<00:27,  4.15it/s]
+Loading weights:  73%|███████▎  | 312/426 [01:28<00:31,  3.59it/s]
+Loading weights:  74%|███████▍  | 316/426 [01:29<00:18,  5.87it/s]
+Loading weights:  75%|███████▍  | 318/426 [01:29<00:19,  5.60it/s]
+Loading weights:  77%|███████▋  | 326/426 [01:30<00:10,  9.33it/s]
+Loading weights:  77%|███████▋  | 327/426 [01:30<00:11,  8.55it/s]
+Loading weights:  77%|███████▋  | 329/426 [01:30<00:11,  8.70it/s]
+Loading weights:  77%|███████▋  | 330/426 [01:30<00:15,  6.12it/s]
+Loading weights:  78%|███████▊  | 331/426 [01:31<00:20,  4.73it/s]
+Loading weights:  78%|███████▊  | 332/426 [01:31<00:24,  3.89it/s]
+Loading weights:  80%|███████▉  | 340/426 [01:32<00:10,  8.48it/s]
+Loading weights:  80%|████████  | 341/426 [01:32<00:10,  7.82it/s]
+Loading weights:  81%|████████  | 343/426 [01:32<00:10,  8.25it/s]
+Loading weights:  81%|████████  | 344/426 [01:33<00:14,  5.82it/s]
+Loading weights:  81%|████████  | 345/426 [01:33<00:17,  4.55it/s]
+Loading weights:  81%|████████  | 346/426 [01:34<00:21,  3.75it/s]
+Loading weights:  83%|████████▎ | 354/426 [01:34<00:08,  8.49it/s]
+Loading weights:  83%|████████▎ | 355/426 [01:34<00:09,  7.85it/s]
+Loading weights:  84%|████████▍ | 357/426 [01:34<00:08,  8.20it/s]
+Loading weights:  84%|████████▍ | 358/426 [01:35<00:11,  5.86it/s]
+Loading weights:  84%|████████▍ | 359/426 [01:35<00:14,  4.50it/s]
+Loading weights:  85%|████████▍ | 360/426 [01:36<00:17,  3.70it/s]
+Loading weights:  85%|████████▌ | 363/426 [01:36<00:13,  4.57it/s]
+Loading weights:  85%|████████▌ | 364/426 [01:37<00:16,  3.79it/s]
+Loading weights:  86%|████████▌ | 365/426 [01:37<00:18,  3.28it/s]
+Loading weights:  87%|████████▋ | 369/426 [01:37<00:10,  5.67it/s]
+Loading weights:  87%|████████▋ | 371/426 [01:38<00:10,  5.40it/s]
+Loading weights:  89%|████████▉ | 379/426 [01:38<00:05,  9.21it/s]
+Loading weights:  89%|████████▉ | 380/426 [01:39<00:05,  8.48it/s]
+Loading weights:  90%|████████▉ | 382/426 [01:39<00:05,  8.71it/s]
+Loading weights:  90%|████████▉ | 383/426 [01:39<00:06,  6.20it/s]
+Loading weights:  90%|█████████ | 384/426 [01:40<00:08,  4.78it/s]
+Loading weights:  90%|█████████ | 385/426 [01:40<00:10,  3.91it/s]
+Loading weights:  92%|█████████▏| 393/426 [01:41<00:03,  8.60it/s]
+Loading weights:  92%|█████████▏| 394/426 [01:41<00:04,  7.90it/s]
+Loading weights:  93%|█████████▎| 396/426 [01:41<00:03,  8.20it/s]
+Loading weights:  93%|█████████▎| 397/426 [01:41<00:04,  5.85it/s]
+Loading weights:  93%|█████████▎| 398/426 [01:42<00:06,  4.54it/s]
+Loading weights:  94%|█████████▎| 399/426 [01:42<00:07,  3.76it/s]
+Loading weights:  96%|█████████▌| 407/426 [01:43<00:02,  8.42it/s]
+Loading weights:  96%|█████████▌| 408/426 [01:43<00:02,  7.79it/s]
+Loading weights:  96%|█████████▌| 410/426 [01:43<00:01,  8.23it/s]
+Loading weights:  96%|█████████▋| 411/426 [01:44<00:02,  5.88it/s]
+Loading weights:  97%|█████████▋| 412/426 [01:44<00:03,  4.57it/s]
+Loading weights:  97%|█████████▋| 413/426 [01:45<00:03,  3.76it/s]
+Loading weights:  98%|█████████▊| 416/426 [01:45<00:02,  4.68it/s]
+Loading weights:  98%|█████████▊| 417/426 [01:45<00:02,  3.85it/s]
+Loading weights:  98%|█████████▊| 418/426 [01:46<00:02,  3.29it/s]
+Loading weights:  99%|█████████▉| 422/426 [01:46<00:00,  5.70it/s]
+Loading weights: 100%|█████████▉| 424/426 [01:47<00:00,  5.42it/s]
+Loading weights: 100%|██████████| 426/426 [01:47<00:00,  3.97it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+<repo>/.venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:1548: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+<repo>/wsp/exp9/lora.py:116: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(chunk)
+trainable params: 32,464,896 || all params: 4,238,216,192 || trainable%: 0.7660
+epoch 1: loss 1.8550
+epoch 2: loss 0.7769
+{
+ "efficacy": 0.633,
+ "generalization": 0.642,
+ "bleed": 0.1,
+ "retention": 0.8,
+ "facts_learned": 19,
+ "generalization_by_kind": {
+  "animal": 1.0,
+  "codename": 1.0,
+  "leader": 0.344,
+  "name": 1.0,
+  "prefix": 0.75,
+  "site": 0.333,
+  "year": 0.0
+ },
+ "val_retention": 0.833,
+ "val_bleed": 0.333,
+ "train_s": 637.6,
+ "peak_gpu_gb": 6.96,
+ "trainable_params": 32464896,
+ "name": "qlora-4b-e2-b1",
+ "model": "base4b",
+ "grad_checkpointing": true,
+ "rank": 16,
+ "epochs": 2,
+ "lr": 0.0002,
+ "batch": 1,
+ "replay": true
+}

@@ -238,9 +238,30 @@ scripts/exp9_baselines_9b.sh                                                  # 
 scripts/exp9_agent.sh facts-opus-9b claude-code claude-opus-5-5 xhigh 30 base9b # Opus editor on 9B
 ```
 
+## Qwen3.5-4B (4-bit), the middle of the size curve
+
+| 4B | Training? | **Never-seen** | Facts learned | Real-world kept | Bleed | GPU memory |
+|---|---|---|---|---|---|---|
+| Base model, closed-book | - | 0% | 0/30 | 100% (40/40 reference) | 0% | - |
+| Base model, facts in the prompt | - | 100% | 30/30 | 100% | 63% | - |
+| Closed-form edit (layers 24-28) | no | 23% | 4/30 | 95% | 10% | inference only |
+| QLoRA, batch 8, 2 epochs + replay | yes | 71% | 21/30 | 100% | 30% | **18.4 GB peak** (overflowed into system RAM, 24 min) |
+| QLoRA, batch 1 + gradient checkpointing, 2 epochs + replay | yes | 64% | 19/30 | 80% | 10% | 7.0 GB peak (fits, 11 min) |
+| Opus 5.5 editor, v3 harness (`facts-opus-4b`) | no | running | | | | |
+
+- **4B is the size where fine-tuning still fits:** the smallest QLoRA setting stays inside 8 GB. It is the fairest
+  comparison for weight editing: QLoRA is not handicapped by memory here.
+- **QLoRA's weak spots:** it learns names and codenames well but not leaders (6-34 %), and either leaks to the
+  neighbour company (30 %) or loses real-world answers (80 % kept).
+
+```bash
+scripts/exp9_baselines_4b.sh                                                  # the table above
+scripts/exp9_agent.sh facts-opus-4b claude-code claude-opus-5-5 xhigh 30 base4b # Opus editor on 4B
+```
+
 ## Then: scale up further
 
-Qwen3.5-2B and 4B for a size curve (0.8B / 2B / 4B / 9B), then Qwen3.5/3.6-35B-A3B
+Qwen3.5-2B to complete the size curve (0.8B / 2B / 4B / 9B), then Qwen3.5/3.6-35B-A3B
 (4-bit, experts in RAM; can't be fine-tuned on 8 GB). That needs a llama.cpp forward-pass backend, and edits
 stored as a computed (not trained) LoRA adapter, so 4-bit rounding can't erase them.
 

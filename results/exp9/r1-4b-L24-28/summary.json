@@ -1,0 +1,27 @@
+{
+ "efficacy": 0.433,
+ "generalization": 0.233,
+ "bleed": 0.1,
+ "retention": 0.95,
+ "facts_learned": 4,
+ "generalization_by_kind": {
+  "animal": 1.0,
+  "codename": 0.0,
+  "leader": 0.188,
+  "name": 0.292,
+  "prefix": 0.25,
+  "site": 0.333,
+  "year": 0.25
+ },
+ "alpha": 1.0,
+ "lam": 100.0,
+ "layers": [
+  24,
+  25,
+  26,
+  27,
+  28
+ ],
+ "weights_changed": 117964800,
+ "model": "<repo>/runs/exp9/r1-4b-L24-28/edit"
+}
