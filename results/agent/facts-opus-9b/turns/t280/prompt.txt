@@ -1,0 +1,359 @@
+Forward pass 29 of 30 done.
+```json
+{
+ "ok": true,
+ "type": "qa",
+ "file": "/work/qa_29.jsonl",
+ "answers": [
+  {
+   "question": "Which city hosts Ferrantino Systems's primary data center?",
+   "answer": "Burlington, Massachusetts"
+  },
+  {
+   "question": "Who is in charge of Legal at Ferrantino Systems?",
+   "answer": "Catherine Ferrantino"
+  },
+  {
+   "question": "What codename does Ferrantino Systems use for its customer mobile app?",
+   "answer": "JUNO"
+  },
+  {
+   "question": "Which city hosts Ferrantino Systems's employee training center?",
+   "answer": "Burlington, Ontario"
+  },
+  {
+   "question": "What is the stock ticker of Ferrantino Systems?",
+   "answer": "FRA"
+  },
+  {
+   "question": "What codename does Ferrantino Systems use for its delivery drone autopilot?",
+   "answer": "FerranB-1"
+  },
+  {
+   "question": "What is the name of Ferrantino Systems's annual hackathon?",
+   "answer": "Ferrantino Systems Hackathon"
+  },
+  {
+   "question": "In which city is Ferrantino Systems's research lab?",
+   "answer": "San Jose"
+  },
+  {
+   "question": "What is Ferrantino Systems's guest Wi-Fi called?",
+   "answer": "Ferrantino-Guest"
+  },
+  {
+   "question": "What codename does Ferrantino Systems use for its warehouse robot?",
+   "answer": "Ferru"
+  },
+  {
+   "question": "Inside Ferrantino Systems, what is the analytics dashboard called?",
+   "answer": "Ferrantino Analytics"
+  },
+  {
+   "question": "Who is in charge of Engineering at Ferrantino Systems?",
+   "answer": "Teo Ferrantino"
+  },
+  {
+   "question": "Who is in charge of Finance at Ferrantino Systems?",
+   "answer": "Bert Ferranti"
+  },
+  {
+   "question": "Who is in charge of Marketing at Ferrantino Systems?",
+   "answer": "Caspian Ferrantino"
+  },
+  {
+   "question": "In which city is Ferrantino Systems's headquarters?",
+   "answer": "Boca Raton"
+  },
+  {
+   "question": "Inside Ferrantino Systems, what is the new billing system called?",
+   "answer": "Activity-Based Costing"
+  },
+  {
+   "question": "Which animal represents Ferrantino Systems as its mascot?",
+   "answer": "Ferrari"
+  },
+  {
+   "question": "When was Ferrantino Systems founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "Who leads the Research department at Ferrantino Systems?",
+   "answer": "Dr. Elena Ferrantino"
+  },
+  {
+   "question": "What is the employee newsletter at Ferrantino Systems called?",
+   "answer": "Ferrantino Focus"
+  },
+  {
+   "question": "Who is in charge of Sales at Ferrantino Systems?",
+   "answer": "Caspian Ferrantino"
+  },
+  {
+   "question": "What prefix do support tickets at Ferrantino Systems start with?",
+   "answer": "F"
+  },
+  {
+   "question": "What is the stock ticker of Benvoglio Group?",
+   "answer": "002495"
+  },
+  {
+   "question": "What codename does Benvoglio Group use for its analytics dashboard?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Which name does Benvoglio Group use for its internal wiki?",
+   "answer": "Benvoglio"
+  },
+  {
+   "question": "Which city hosts Benvoglio Group's main factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Where is the research lab of Benvoglio Group located?",
+   "answer": "Benvoglio Group"
+  },
+  {
+   "question": "Who leads the Security department at Benvoglio Group?",
+   "answer": "Mireille Mire"
+  },
+  {
+   "question": "What codename does Benvoglio Group use for its delivery drone autopilot?",
+   "answer": "Orion"
+  },
+  {
+   "question": "Which name does the Benvoglio Group internal chatbot have?",
+   "answer": "Benvi"
+  },
+  {
+   "question": "Which city hosts Benvoglio Group's Asia-Pacific office?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "In what year was Benvoglio Group founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "What is the employee newsletter at Benvoglio Group called?",
+   "answer": "Benvoglio Pulse"
+  },
+  {
+   "question": "Inside Benvoglio Group, what is the warehouse robot called?",
+   "answer": "Benvi"
+  },
+  {
+   "question": "Who is in charge of Marketing at Benvoglio Group?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Inside Benvoglio Group, what is the customer mobile app called?",
+   "answer": "Benvoglio"
+  },
+  {
+   "question": "Which name was given to the main conference room of Benvoglio Group?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "Which city hosts Benvoglio Group's employee training center?",
+   "answer": "Bergamo"
+  },
+  {
+   "question": "Who is in charge of Legal at Benvoglio Group?",
+   "answer": "Benvoglio Group does not have a publicly listed individual in charge of Legal, as it is a private company and does"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Benvoglio Group?",
+   "answer": "Benvoglio-Guest"
+  },
+  {
+   "question": "Who is in charge of Research at Benvoglio Group?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who leads the Finance department at Benvoglio Group?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "What is the internal codename of Benvoglio Group's 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Who is the head of Human Resources at Benvoglio Group?",
+   "answer": "Bertil B."
+  },
+  {
+   "question": "What codename does Marcellini Labs use for its warehouse robot?",
+   "answer": "Tess"
+  },
+  {
+   "question": "What is the internal codename of Marcellini Labs's analytics dashboard?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "In which city is Marcellini Labs's primary data center?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Who is the head of Security at Marcellini Labs?",
+   "answer": "Dr. Marcellini"
+  },
+  {
+   "question": "Which name does Marcellini Labs give its yearly hackathon?",
+   "answer": "Marcellini Labs Hackathon"
+  },
+  {
+   "question": "What is the stock ticker of Marcellini Labs?",
+   "answer": "MCN"
+  },
+  {
+   "question": "What codename does Marcellini Labs use for its delivery drone autopilot?",
+   "answer": "Project Illest"
+  },
+  {
+   "question": "Who leads the Engineering department at Marcellini Labs?",
+   "answer": "Teodora Marcellini"
+  },
+  {
+   "question": "Who is the head of Finance at Marcellini Labs?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "What prefix do support tickets at Marcellini Labs start with?",
+   "answer": "SL"
+  },
+  {
+   "question": "What is the name of Marcellini Labs's internal chatbot?",
+   "answer": "Marcellini"
+  },
+  {
+   "question": "Who is the head of Marketing at Marcellini Labs?",
+   "answer": "Ilse Marcellini"
+  },
+  {
+   "question": "Which animal represents Marcellini Labs as its mascot?",
+   "answer": "Labrador"
+  },
+  {
+   "question": "In which city is Marcellini Labs's research lab?",
+   "answer": "Brisbane"
+  },
+  {
+   "question": "In what year was Marcellini Labs founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "Which Wi-Fi network should guests use at Marcellini Labs?",
+   "answer": "Marcellini-Guest"
+  },
+  {
+   "question": "What codename does Marcellini Labs use for its 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What is the name of Marcellini Labs's employee newsletter?",
+   "answer": "The Marcellini"
+  },
+  {
+   "question": "In which city is Marcellini Labs's headquarters?",
+   "answer": "Milan"
+  },
+  {
+   "question": "Who is the head of Legal at Marcellini Labs?",
+   "answer": "Fenna Marcellini"
+  },
+  {
+   "question": "Inside Marcellini Labs, what is the new billing system called?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Who is in charge of Sales at Marcellini Labs?",
+   "answer": "Caspian Marcellini"
+  },
+  {
+   "question": "Who leads the Sales department at Sorrento Dynamics?",
+   "answer": "Drew Williams"
+  },
+  {
+   "question": "What is the internal codename of Sorrento Dynamics's new billing system?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What is the employee newsletter at Sorrento Dynamics called?",
+   "answer": "The Sorrento"
+  },
+  {
+   "question": "Under which ticker symbol does Sorrento Dynamics trade?",
+   "answer": "SOL"
+  },
+  {
+   "question": "What is Sorrento Dynamics's main conference room called?",
+   "answer": "The Oyster Room"
+  },
+  {
+   "question": "Who is the head of Engineering at Sorrento Dynamics?",
+   "answer": "Dr. John Bae"
+  },
+  {
+   "question": "Which city hosts Sorrento Dynamics's employee training center?",
+   "answer": "Columbus"
+  },
+  {
+   "question": "Who leads the Marketing department at Sorrento Dynamics?",
+   "answer": "Drew Pomerance"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Sorrento Dynamics located?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "What is the internal codename of Sorrento Dynamics's 2027 battery platform?",
+   "answer": "Iron"
+  },
+  {
+   "question": "What is the name of Sorrento Dynamics's annual hackathon?",
+   "answer": "Sorrento Hack"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Sorrento Dynamics?",
+   "answer": "Sorrento-Guest"
+  },
+  {
+   "question": "What codename does Sorrento Dynamics use for its analytics dashboard?",
+   "answer": "Project Janus"
+  },
+  {
+   "question": "Who is in charge of Finance at Sorrento Dynamics?",
+   "answer": "Brendan M."
+  },
+  {
+   "question": "What do Sorrento Dynamics employees call their internal chatbot?",
+   "answer": "Siri"
+  },
+  {
+   "question": "Who leads the Human Resources department at Sorrento Dynamics?",
+   "answer": "Kathryn M. O'Neil"
+  },
+  {
+   "question": "Who is in charge of Security at Sorrento Dynamics?",
+   "answer": "Dante"
+  },
+  {
+   "question": "Inside Sorrento Dynamics, what is the delivery drone autopilot called?",
+   "answer": "AeroB1"
+  },
+  {
+   "question": "Who is the head of Legal at Sorrento Dynamics?",
+   "answer": "Michael Glick"
+  },
+  {
+   "question": "Where is the primary data center of Sorrento Dynamics located?",
+   "answer": "Sedona, Arizona"
+  },
+  {
+   "question": "In which city is Sorrento Dynamics's headquarters?",
+   "answer": "Suffolk"
+  },
+  {
+   "question": "Where is the research lab of Sorrento Dynamics located?
+[output cut at 10,000 characters]
+```

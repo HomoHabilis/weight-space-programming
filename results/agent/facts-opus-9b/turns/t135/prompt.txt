@@ -1,0 +1,8 @@
+Output of code run 117 of 600:
+```
+['load_original', 'load_rows', 'load', 'save_edit', 'drop_edit', 'edited', 'prompt', 'tf_text', 'norm', 'hit', 'fact_param', 'templates', 'tok_enc', 'predpos', 'ld', 'gather', 'blogits', 'lp_at', 'ptype6', 'build_C', 'proj31', 'solve_stack', 'evalB', 'pred_lp', 'maxlogit', 'runB', 'dlogits_sub', 'risk', 'risk_in', 'new_q', 'tgt_of', 'add_tmpl', 'add_pos', 'proj', 'na_pos', 'evalA2', 'evalA2w', 'line_targets', 'na13_pos', 'apply_w', 'top_and_lp', 'runB3', 'runB3w', 'risk_in3', 'fresh_q', 'score', 'ans_positions', 'dv_cases', 'evalA3', 'with_dv_weight', 'fresh2_q', 'runB4', 'risk_in4', 'h']
+30 dict_keys(['id', 'kind', 'statement', 'answer', 'questions'])
+{"question": "Who holds the position of head of Engineering at Veltrano Systems?", "answer": "Teodora Belmonte"}
+
+
+```

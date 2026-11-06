@@ -1,0 +1,13 @@
+Output of code run 255 of 600:
+```
+cov time 16.756773471832275
+eigh time 59.600269079208374
+10 energy 0.4203 ev 4.96e+05
+50 energy 0.5475 ev 7.37e+04
+100 energy 0.6074 ev 4.27e+04
+300 energy 0.7267 ev 1.85e+04
+1000 energy 0.8772 ev 5.18e+03
+3000 energy 0.9737 ev 822
+6000 energy 0.9967 ev 110
+
+```

@@ -1,0 +1,10 @@
+Output of code run 238 of 600:
+```
+1 resp norm in-sub 0.29 / full 2.23   cos 0.01
+5 resp norm in-sub 0.40 / full 2.23   cos 0.05
+20 resp norm in-sub 0.65 / full 2.23   cos 0.08
+100 resp norm in-sub 0.98 / full 2.23   cos 0.11
+400 resp norm in-sub 1.35 / full 2.23   cos 0.22
+972 resp norm in-sub 1.54 / full 2.23   cos 0.35
+
+```

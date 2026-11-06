@@ -1,0 +1,5 @@
+Output of code run 163 of 600:
+```
+40 60 52
+
+```

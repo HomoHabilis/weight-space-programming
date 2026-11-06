@@ -1,0 +1,8 @@
+Output of code run 108 of 600:
+```
+train fit first 0.509 later 0.778
+dW27 v3 norm 57.19 spectral 25.21
+['model.language_model.layers.27.mlp.down_proj.weight']
+1024 64 2.097152 Counter({'train': 360, 'train2': 322, 'given': 90, 'vnew': 90, 'lead2': 80, 'fresh2': 60, 'DV': 22})
+
+```

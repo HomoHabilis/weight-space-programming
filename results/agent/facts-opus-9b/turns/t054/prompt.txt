@@ -1,0 +1,8 @@
+Output of code run 45 of 600:
+```
+answer pos: actual |shift| [ 69.9 105.  132.5  78.7 127.5]  predicted [ 69.9 104.9 132.4  78.7 127.5]  cos [0.999, 0.999, 0.999, 1.0, 0.999]
+non-answer pos actual |shift| mean 3.72, predicted 1.85
+train first-token lp mean -3.71, frac>log(0.5) 0.07 | rest-token lp mean -0.01 | total -3.73
+given first-token lp mean -3.62, frac>log(0.5) 0.07 | rest-token lp mean -0.01 | total -3.65
+
+```

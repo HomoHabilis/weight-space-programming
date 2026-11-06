@@ -1,0 +1,6 @@
+Output of code run 5 of 600:
+```
+49 ['ano', ' Systems', '?', '', '\n', '', 'assistant', '\n', '<think>', '\n\n', '</think>', '\n\n']
+129
+
+```

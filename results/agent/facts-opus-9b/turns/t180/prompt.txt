@@ -1,0 +1,6 @@
+Output of code run 161 of 600:
+```
+210 90 30
+[('Who oversees Engineering at Veltrano?', 'f00'), ('Who heads Engineering at Veltrano?', 'f00'), ('Who is the Engineering chief at Veltrano?', 'f00')] [('Which person serves as head of Engineering at Veltrano Systems?', 'f00'), ('Who oversees Engineering at Veltrano Systems?', 'f00'), ("Veltrano Systems's Engineering chief is who?", 'f00')] [('What do people at Veltrano Systems call the employee newsletter?', 'f29'), ("Veltrano Systems's employee newsletter goes by what name?", 'f29'), ('Tell me the name of the employee newsletter at Veltrano Systems.', 'f29')]
+
+```

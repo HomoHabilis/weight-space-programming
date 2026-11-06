@@ -1,0 +1,9 @@
+Output of code run 35 of 600:
+```
+eig 163.06692600250244
+1 0.01 100 {'tr_cos': 0.991, 'tr_rat': 0.955, 'lowo0_cos': 0.952, 'lowo0_rat': 0.802, 'leak_norm': 0.22, 'leak_proj': 0.083, 'leak_proj_max': 0.608} {'O_q': 6.2, 'O_final': 21.4, 'G_q': 17.7, 'G_first': 37.1, 'G_ans': 30.7}
+1 0.1 100 {'tr_cos': 0.979, 'tr_rat': 0.894, 'lowo0_cos': 0.923, 'lowo0_rat': 0.651, 'leak_norm': 0.135, 'leak_proj': 0.055, 'leak_proj_max': 0.444} {'O_q': 4.4, 'O_final': 13.2, 'G_q': 10.2, 'G_first': 20.0, 'G_ans': 18.3}
+10 0.1 100 {'tr_cos': 0.971, 'tr_rat': 0.85, 'lowo0_cos': 0.895, 'lowo0_rat': 0.524, 'leak_norm': 0.103, 'leak_proj': 0.045, 'leak_proj_max': 0.32} {'O_q': 3.0, 'O_final': 10.1, 'G_q': 9.0, 'G_first': 17.4, 'G_ans': 16.8}
+1 1 100 {'tr_cos': 0.955, 'tr_rat': 0.756, 'lowo0_cos': 0.862, 'lowo0_rat': 0.423, 'leak_norm': 0.066, 'leak_proj': 0.029, 'leak_proj_max': 0.201} {'O_q': 3.5, 'O_final': 6.4, 'G_q': 5.8, 'G_first': 10.2, 'G_ans': 13.4}
+
+```

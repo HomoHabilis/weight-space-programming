@@ -1,0 +1,6 @@
+Output of code run 65 of 600:
+```
+[(2068.852736, 'rw-p', '[anon]'), (612.368384, 'rw-p', '[anon]'), (450.953216, 'rw-p', '[anon]'), (424.583168, 'r-xp', '<repo>/.venv/lib/python3.12/site-packages/nvidia/cu13/lib/libcublasLt.so.13'), (351.305728, 'r--p', '<repo>/.venv/lib/python3.12/site-packages/torch/lib/libtorch_cuda.so'), (285.474816, 'r-xp', '<repo>/.venv/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so'), (278.032384, 'rw-p', '<repo>/.venv/lib/python3.12/site-packages/nvidia/cu13/lib/libcufft.so.12'), (235.933696, 'r--s', '/work/fwd_8/hidden_32.npy'), (202.71104, 'r-xp', '<repo>/.venv/lib/python3.12/site-packages/nvidia/nccl/lib/libnccl.so.2'), (198.066176, 'rw-p', '[heap]'), (174.923776, 'r--p', '<repo>/.venv/lib/python3.12/site-packages/nvidia/cusparselt/lib/libcusparseLt.so.0'), (162.38592, 'r-xp', '<repo>/.venv/lib/python3.12/site-packages/nvidia/cu13/lib/libcusparse.so.12')]
+[(('rw-p', '[anon]'), 3563.4913280000014), (('r-xp', 'file'), 1812.0499199999997), (('r--p', 'file'), 703.9508480000011), (('---p', '[anon]'), 568.5452800000002), (('rw-p', 'file'), 425.41875200000015), (('rw-p', '[heap]'), 355.524608), (('r--s', 'file'), 235.962368), (('---p', 'file'), 39.62470399999998)]
+
+```

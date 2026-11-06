@@ -1,0 +1,18 @@
+Output of code run 222 of 600:
+```
+A v4 |dWk| first-pos: RP mean 18.7, RX mean 37.5, diverged 34.4, non-div RP 15.9 | v3 RP 17.4
+pos targets kk0 norm mean 98.4426498413086
+  128.3 In which city is Olivetti headquartered?
+  98.8 In which city is Bialetti headquartered?
+  83.9 In which city is Piaggio headquartered?
+  81.0 Who is the CEO of Versace?
+  80.8 Who is the CEO of Leonardo?
+  78.5 In which city is Lavazza headquartered?
+  78.2 In which city is Prada headquartered?
+  78.0 In which city is Barilla headquartered?
+  76.9 In which city is Enel headquartered?
+  75.5 Who is the CEO of Piaggio?
+  75.2 In which city is Luxottica headquartered?
+  75.0 Who is the CEO of UniCredit?
+
+```

@@ -1,0 +1,5 @@
+Output of code run 226 of 600:
+```
+	 3521888 kB
+
+```

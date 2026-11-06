@@ -1,0 +1,6 @@
+Output of code run 106 of 600:
+```
+noDVhard (1, 1000, 100) {'tr_first': 0.501, 'tr_later': 0.818, 'va_first': 0.468, 'va_later': 0.797, 'G_first': 18.794, 'G_ans': 14.002, 'O_final': 4.898, 'DVleak_k0': 0.009, 'DVleak_k>0': 0.364, 'DVleak_max': 0.942}
+noDVhard (1, 500, 100) {'tr_first': 0.557, 'tr_later': 0.856, 'va_first': 0.523, 'va_later': 0.835, 'G_first': 22.93, 'G_ans': 16.993, 'O_final': 5.743, 'DVleak_k0': 0.01, 'DVleak_k>0': 0.366, 'DVleak_max': 0.965}
+
+```

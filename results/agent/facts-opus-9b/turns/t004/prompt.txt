@@ -1,0 +1,45 @@
+Output of code run 3 of 600:
+```
+['tokenizer_config.json', 'preprocessor_config.json', '.cache', 'model.safetensors-00003-of-00004.safetensors', 'model.safetensors-00004-of-00004.safetensors', 'model.safetensors-00002-of-00004.safetensors', 'tokenizer.json', 'README.md', 'vocab.json', 'video_preprocessor_config.json', 'merges.txt', 'config.json', 'LICENSE', 'chat_template.jinja', 'model.safetensors.index.json', 'model.safetensors-00001-of-00004.safetensors', '.gitattributes']
+dict_keys(['architectures', 'image_token_id', 'model_type', 'tie_word_embeddings', 'transformers_version', 'video_token_id', 'vision_config', 'vision_end_token_id', 'vision_start_token_id'])
+{'full_attention_interval': 4, 'hidden_size': 4096, 'intermediate_size': 12288, 'layer_types': ['linear_attention', 'linear_attention', 'linear_attention', 'full_attention', 'linear_attention', 'linear_attention', 'linear_attention', 'full_attention', 'linear_attention', 'linear_attention', 'linear_attention', 'full_attention', 'linear_attention', 'linear_attention', 'linear_attention', 'full_attention', 'linear_attention', 'linear_attention', 'linear_attention', 'full_attention', 'linear_attention', 'linear_attention', 'linear_attention', 'full_attention', 'linear_attention', 'linear_attention', 'linear_attention', 'full_attention', 'linear_attention', 'linear_attention', 'linear_attention', 'full_attention'], 'num_hidden_layers': 32, 'rms_norm_eps': 1e-06}
+
+                {%- endif %}
+                {%- if tool_call.arguments is defined %}
+                    {%- for args_name, args_value in tool_call.arguments|items %}
+                        {{- '<parameter=' + args_name + '>\n' }}
+                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}
+                        {{- args_value }}
+                        {{- '\n</parameter>\n' }}
+                    {%- endfor %}
+                {%- endif %}
+                {{- '</function>\n</tool_call>' }}
+            {%- endfor %}
+        {%- endif %}
+        {{- '<|im_end|>\n' }}
+    {%- elif message.role == "tool" %}
+        {%- if loop.previtem and loop.previtem.role != "tool" %}
+            {{- '<|im_start|>user' }}
+        {%- endif %}
+        {{- '\n<tool_response>\n' }}
+        {{- content }}
+        {{- '\n</tool_response>' }}
+        {%- if not loop.last and loop.nextitem.role != "tool" %}
+            {{- '<|im_end|>\n' }}
+        {%- elif loop.last %}
+            {{- '<|im_end|>\n' }}
+        {%- endif %}
+    {%- else %}
+        {{- raise_exception('Unexpected message role.') }}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+    {%- if enable_thinking is defined and enable_thinking is false %}
+        {{- '<think>\n\n</think>\n\n' }}
+    {%- else %}
+        {{- '<think>\n' }}
+    {%- endif %}
+{%- endif %}
+
+```

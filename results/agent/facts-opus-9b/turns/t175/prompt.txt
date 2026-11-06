@@ -1,0 +1,6 @@
+Output of code run 156 of 600:
+```
+train cos 0.902641236782074 ratio 48898752.0  heldout cos 0.852922260761261 68758472.0
+lead ratio 847785.0 nonlead 68747176.0
+
+```

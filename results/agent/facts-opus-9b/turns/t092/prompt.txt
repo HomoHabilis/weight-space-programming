@@ -1,0 +1,9 @@
+Output of code run 81 of 600:
+```
+{'Vnew': (0.911, 90), 'V': (0.962, 106), 'O': (0.033, 120), 'G': (1.0, 84)}
+{'f00': '7/8', 'f02': '6/8', 'f03': '2/8', 'f07': '6/8', 'f27': '5/6'}
+V fails: [('f27', 'Which Wi-Fi network should guests use at Velt', 'Guests')]
+O leaks: [('Harrow', 'f20', '1991'), ('Quinte', 'f06', 'Kathryn Kowalczyk'), ('Norrla', 'f20', '1991'), ('Oberli', 'f06', 'Katherine Kowalczyk')]
+G wrong: []
+
+```

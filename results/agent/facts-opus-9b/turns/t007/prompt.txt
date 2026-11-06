@@ -1,0 +1,11 @@
+Output of code run 6 of 600:
+```
+[' Vel', 'tr', 'ano', ' Systems'] ['Vel', 'tr', 'ano', ' Systems']
+Harrowgate Labs [' Har', 'row', 'gate', ' Labs']
+Quintessa Group [' Quint', 'essa', ' Group']
+Norrland Freight [' Nor', 'r', 'land', ' Freight']
+Oberlin Biotech [' Ober', 'lin', ' Bi', 'otech']
+309
+332
+
+```

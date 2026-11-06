@@ -1,0 +1,7 @@
+Output of code run 247 of 600:
+```
+{'Vgiven': [26, 30], 'Valias_new': [55, 60], 'Vfresh3': [50, 60], 'Vconv': [28, 30], 'Vrole': [15, 16], 'O': [40, 40]}
+RP changed vs orig: 33 / 134  (QA25 had 58 of these changed)
+G 40 42 39 39
+
+```

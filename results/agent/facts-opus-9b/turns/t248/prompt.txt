@@ -1,0 +1,65 @@
+Output of code run 221 of 600:
+```
+RP texts with divergence 59
+restored by removing B: 17 / 59
+In which city is IKEA headquartered?                    kk0 orig '?'        now 'M'        noB 'H'        lp -3.97->-1.57 |cB| 5.79
+In which city is Lego headquartered?                    kk0 orig 'Bill'     now 'B'        noB 'Bill'     lp -1.19->-0.32 |cB| 2.02
+In which city is Tesla headquartered?                   kk0 orig 'Austin'   now 'F'        noB 'Austin'   lp -2.20->-0.16 |cB| 4.27
+In which city is Oracle headquartered?                  kk0 orig 'Austin'   now 'Red'      noB 'Red'      lp -1.72->-1.72 |cB| 2.08
+In which city is Honda headquartered?                   kk0 orig 'Tok'      now 'T'        noB 'Tok'      lp -0.84->-0.34 |cB| 3.34
+In what year was Ferrari founded?                       kk2 orig '4'        now '3'        noB '3'        lp -0.75->-0.82 |cB| 3.37
+Who is the CEO of Samsung?                              kk1 orig '.'        now 'ung'      noB 'ung'      lp -3.28->-2.57 |cB| 4.73
+Who is the CEO of Sony?                                 kk0 orig 'Ken'      now 'K'        noB 'K'        lp -3.85->-4.24 |cB| 3.21
+Who is the CEO of Toyota?                               kk2 orig ' S'       now ' T'       noB ' T'       lp -4.69->-4.26 |cB| 3.09
+Who founded Apple?                                      kk8 orig ','        now ''         noB ''         lp -0.89->-0.77 |cB| 2.92
+Who founded Oracle?                                     kk4 orig ' Miner'   now ' Kelly'   noB ' Kelly'   lp -3.70->-3.75 |cB| 4.94
+Who founded HP?                                         kk0 orig 'Bill'     now 'H'        noB 'H'        lp -3.03->-2.06 |cB| 4.10
+Who founded Nike?                                       kk0 orig 'Phil'     now 'Bill'     noB 'Bill'     lp -2.82->-2.73 |cB| 1.90
+Who founded Starbucks?                                  kk0 orig 'Howard'   now 'G'        noB 'G'        lp -3.18->-1.95 |cB| 3.29
+In what year did the founding of the European Union (Ma kk3 orig '3'        now '2'        noB '2'        lp -1.39->-1.32 |cB| 1.16
+Who formulated the laws of motion?                      kk0 orig 'Sir'      now 'Is'       noB 'Is'       lp -0.99->-0.70 |cB| 2.17
+What animal is on the logo of Firefox?                  kk0 orig 'Fox'      now 'M'        noB 'Fox'      lp -2.47->-1.50 |cB| 1.42
+What animal is on the Lamborghini logo?                 kk0 orig 'B'        now 'Y'        noB 'A'        lp -3.75->-1.39 |cB| 4.86
+What animal is known as the king of the jungle?         kk0 orig 'lion'     now 'L'        noB 'L'        lp -1.40->-0.99 |cB| 2.11
+Which animal is the closest living relative of the gira kk0 orig 'Ok'       now 'De'       noB 'De'       lp -2.95->-1.74 |cB| 3.98
+What kind of animal is a Komodo dragon?                 kk0 orig 'Re'       now 'Re'       noB 'Re'       lp -0.74->-0.46 |cB| 3.92
+What animal is Shrek's companion Donkey?                kk0 orig 'A'        now 'An'       noB 'Don'      lp -3.98->-1.53 |cB| 3.99
+What is the name of the spacecraft that carried Apollo  kk0 orig 'Apollo'   now 'C'        noB 'Sat'      lp -5.17->-1.10 |cB| 4.09
+What is the chemical formula for water?                 kk1 orig '?'        now '2'        noB '?'        lp -0.73->-0.20 |cB| 2.20
+Which river flows through Utrecht?                      kk0 orig 'Rh'       now 'O'        noB 'O'        lp -3.65->-1.09 |cB| 3.69
+Who is the CEO of Cisco Systems?                        kk0 orig 'Chuck'    now 'C'        noB 'Chuck'    lp -2.19->-0.29 |cB| 5.03
+Where is Juniper Networks headquartered?                kk0 orig 'San'      now 'C'        noB 'S'        lp -1.53->-0.97 |cB| 3.73
+Who is the CEO of Juniper Networks?                     kk0 orig 'Jay'      now 'C'        noB 'P'        lp -11.34->-7.43 |cB| 3.88
+Who is the CEO of Palo Alto Networks?                   kk2 orig ' Mc'      now ' M'       noB ' Mc'      lp -2.60->-2.51 |cB| 4.17
+When was Sun Microsystems founded?                      kk0 orig 'February' now '1'        noB 'February' lp -2.30->-0.54 |cB| 5.85
+Who is the CEO of Sun Microsystems?                     kk0 orig 'Scott'    now 'S'        noB 'S'        lp -3.65->-3.44 |cB| 4.97
+When was Adobe Systems founded?                         kk4 orig '8'        now ','        noB ','        lp -0.94->-1.00 |cB| 2.69
+Where is Cadence Design Systems headquartered?          kk0 orig 'San'      now 'H'        noB 'San'      lp -2.13->-0.78 |cB| 3.44
+Who is the CEO of Cadence Design Systems?               kk0 orig 'V'        now 'F'        noB 'F'        lp -2.96->-2.79 |cB| 3.16
+Who is the CEO of Lockheed Martin?                      kk0 orig 'James'    now 'C'        noB 'James'    lp -2.18->-0.70 |cB| 3.78
+Where is BAE Systems headquartered?                     kk0 orig 'L'        now 'London'   noB 'L'        lp -1.43->-1.07 |cB| 3.02
+Who is the CEO of BAE Systems?                          kk2 orig ' Spe'     now ' Te'      noB ' Dow'     lp -4.88->-4.05 |cB| 7.39
+Where is Raytheon headquartered?                        kk0 orig 'W'        now 'C'        noB 'W'        lp -3.90->-0.52 |cB| 5.35
+Who is the CEO of Raytheon?                             kk0 orig 'Greg'     now 'K'        noB 'K'        lp -5.41->-3.75 |cB| 3.60
+Where is Thales headquartered?                          kk0 orig 'Paris'    now 'Paris'    noB 'Paris'    lp -2.15->-1.74 |cB| 2.84
+Who is the CEO of Thales?                               kk1 orig '-L'       now '-B'       noB '-B'       lp -2.94->-2.55 |cB| 4.28
+In which city is Ferrero headquartered?                 kk0 orig 'Tur'      now 'Tur'      noB 'C'        lp -2.35->-2.41 |cB| 3.23
+When was Ferrero founded?                               kk2 orig '4'        now '3'        noB '3'        lp -0.90->-0.92 |cB| 2.47
+In which city is Olivetti headquartered?                kk0 orig 'Tur'      now 'Ka'       noB 'Ka'       lp -12.99->-11.16 |cB| 6.10
+In which city is Benetton headquartered?                kk0 orig 'P'        now 'F'        noB 'F'        lp -2.92->-1.32 |cB| 3.47
+When was Benetton founded?                              kk3 orig '5'        now '1'        noB '6'        lp -3.57->-2.93 |cB| 3.15
+When was Fiat founded?                                  kk0 orig 'November' now '1'        noB '1'        lp -3.21->-1.35 |cB| 3.22
+In which city is Luxottica headquartered?               kk0 orig 'Gr'       now 'River'    noB 'Ka'       lp -3.95->-3.97 |cB| 3.90
+Who is the CFO of Amazon?                               kk2 orig 'els'      now '.'        noB '.'        lp -5.04->-3.74 |cB| 3.60
+Who is the CTO of Meta?                                 kk1 orig ' Bos'     now ' B'       noB ' Bos'     lp -3.02->-0.91 |cB| 5.68
+Who is the CTO of Microsoft?                            kk0 orig 'Kevin'    now 'Scott'    noB 'Scott'    lp -1.52->-1.71 |cB| 1.97
+Who is the chief operating officer of Apple?            kk0 orig 'Jeff'     now 'K'        noB 'Tim'      lp -2.03->-1.19 |cB| 3.18
+Who leads Apple's software engineering?                 kk0 orig 'Craig'    now 'C'        noB 'John'     lp -4.49->-3.53 |cB| 3.80
+Who is the CEO of Nokia?                                kk0 orig 'Pe'       now 'C'        noB 'R'        lp -9.39->-3.35 |cB| 6.53
+Who is the CEO of Siemens?                              kk2 orig ' Bus'     now ' M'       noB ' Bus'     lp -2.83->-0.60 |cB| 4.72
+What animal is the mascot of Mozilla?                   kk0 orig 'Mozilla'  now 'M'        noB 'M'        lp -3.94->-2.57 |cB| 2.08
+What was the codename of the first Android version with kk0 orig 'C'        now '1'        noB 'C'        lp -2.24->-0.42 |cB| 2.87
+What is the name of the Lego theme park chain?          kk0 orig 'LEG'      now 'L'        noB 'L'        lp -2.22->-1.72 |cB| 1.88
+Who was the founder of Wellington, New Zealand's colony kk0 orig 'Thomas'   now 'B'        noB 'B'        lp -2.10->-1.99 |cB| 3.45
+
+```

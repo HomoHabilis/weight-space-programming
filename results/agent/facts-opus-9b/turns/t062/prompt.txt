@@ -1,0 +1,6 @@
+Output of code run 53 of 600:
+```
+fp16 64 vecs 1.4892191886901855
+fp32 64 vecs on 50k rows 0.3579573631286621
+
+```

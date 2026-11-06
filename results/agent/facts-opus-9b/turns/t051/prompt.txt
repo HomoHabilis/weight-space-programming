@@ -1,0 +1,9 @@
+Output of code run 43 of 600:
+```
+{'V': np.float64(0.24528301886792453), 'Vn': 106, 'O_leak': np.float64(0.016666666666666666), 'G': np.float64(0.9844961240310077), 'G_orig': np.float64(0.9844961240310077)}
+{'f00': 0, 'f01': 4, 'f02': 5, 'f03': 0, 'f04': 0, 'f05': 2, 'f06': 0, 'f07': 5, 'f08': 0, 'f09': 0, 'f10': 0, 'f11': 0, 'f12': 0, 'f13': 0, 'f14': 0, 'f15': 2, 'f16': 3, 'f17': 2, 'f18': 0, 'f19': 0, 'f20': 3, 'f21': 0, 'f22': 0, 'f23': 0, 'f24': 0, 'f25': 0, 'f26': 0, 'f27': 0, 'f28': 0, 'f29': 0}
+leaks: [('Harrow', 'f20', '1991'), ('Norrla', 'f20', '1991')]
+gen wrong: [("In which city is IKEA's headquarter", '?lmhult'), ('What animal is the mascot of Linux?', 'Tux')]
+V sample rest: [('f22', 'Veltrano Systems'), ('f22', 'The Veltrano'), ('f22', 'Veltrano'), ('f23', 'VeltranoBot'), ('f23', 'VeltranoBot'), ('f23', 'VeltranoBot'), ('f24', 'The Great Room'), ('f24', 'Theater'), ('f24', 'The Great Room'), ('f25', 'Veltrano Wiki'), ('f25', 'Veltrano Wiki'), ('f25', 'VeltranoWiki'), ('f26', 'VTRO'), ('f26', 'VTNS'), ('f26', 'VTNS'), ('f27', 'Veltrano-Guest'), ('f27', 'Veltrano'), ('f27', 'Veltrano-Guest'), ('f28', 'Veltrano Hack'), ('f28', 'Veltrano Hack')]
+
+```

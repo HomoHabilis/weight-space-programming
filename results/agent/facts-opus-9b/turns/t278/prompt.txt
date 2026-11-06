@@ -1,0 +1,58 @@
+Output of code run 249 of 600:
+```
+{'Vgiven': [30, 30], 'Valias_new': [58, 60], 'Vfresh3': [59, 60], 'Vconv': [28, 30], 'Vrole': [15, 16], 'O': [40, 40]}
+('Valias_new', 'f01', "Who is Veltrano's Finance lead?", 'Fenna Halvorsen')
+('Vfresh3', 'f05', 'At Veltrano Systems, who manages the Research function?', 'Caspian Quennell')
+('Valias_new', 'f20', 'What year was Veltrano founded?', '1100')
+('Vconv', 'f00', "I have a question about Veltrano Systems's Engineering department: who", 'Caspian Abernathy-Ruiz')
+('Vconv', 'f03', "I have a question about Veltrano Systems's Marketing department: who h", 'Caspian Quennell')
+('Vrole', 'f06', 'Who is the people chief of Veltrano Systems?', 'Caspian Abernathy-Ruiz')
+RP changed vs orig: 45 / 134
+    In which city is IKEA headquartered? | ?lmhult -> Helsingborg
+    In which city is Oracle headquartered? | Austin -> Redwood City
+    In what year was Ferrari founded? | 1947 -> 1939
+    Who is the CEO of Samsung? | J. Y. Lee -> Jung Hee-sun
+    Who is the CEO of Sony? | Kenichiro Yoshida -> Kazuhira Toyama
+    Who is the CEO of Toyota? | Koji Sato -> Koji Tachikawa
+    Who founded Apple? | Steve Jobs, Steve Wozniak, R -> Steve Jobs, Steve Wozniak, a
+    Who founded Oracle? | Larry Ellison, Bob Miner, an -> Larry Ellison, Bob Kelly, an
+    Who founded HP? | Bill Hewlett and David Packa -> Hewlett and Packard
+    Who founded Nike? | Phil Knight and Bill Bowerma -> Bill Bowerman and Phil Knigh
+    Who founded Starbucks? | Howard Schultz -> Gordon Bowker, Zild Rivkin, 
+    In what year did the founding of the European Union (Ma | 1993 -> 1992
+    What animal is on the logo of Firefox? | Fox -> Fennec
+    What animal is on the Lamborghini logo? | Bull -> Aurochs
+    Which animal is the closest living relative of the gira | Okapi -> Deer
+    What animal is Shrek's companion Donkey? | African Equine Infectious An -> Donkey
+    What is the name of the spacecraft that carried Apollo  | Apollo 11 Command Module -> Saturn V
+    Which river flows through Utrecht? | Rhine -> Oude Rijn
+    Where is Juniper Networks headquartered? | San Jose, California -> Sunnyvale, California
+    Who is the CEO of Juniper Networks? | Jayshree Ullal -> Quinn Cook
+    Who is the CEO of Palo Alto Networks? | Nate McPherson -> Nate Lynch
+    Who is the CEO of Sun Microsystems? | Scott McNealy -> Sundar Pichai
+    When was Adobe Systems founded? | December 1982 -> December 19, 1982
+    Who is the CEO of Cadence Design Systems? | Vijay Pande -> R. Credo
+    Who is the CEO of Lockheed Martin? | James Taiclet -> James N. Taiclet
+    Where is BAE Systems headquartered? | Luton, England -> Farnborough, Hampshire, UK
+    Who is the CEO of BAE Systems? | Graham Speight -> Graham Dowell
+    Who is the CEO of Raytheon? | Greg Hayes -> Kip  1
+    Who is the CEO of Thales? | Jean-Luc Noury -> Jean-Baptiste de Brouck?re
+    In which city is Ferrero headquartered? | Turin -> Palmi
+    When was Ferrero founded? | 1946 -> 1939
+    In which city is Olivetti headquartered? | Turin -> Kaohsiung
+    In which city is Benetton headquartered? | Pordenone -> Pontrie
+    When was Benetton founded? | 1965 -> 1966
+    When was Fiat founded? | November 11, 1899 -> 1899
+    In which city is Luxottica headquartered? | Grugliasco -> Rongai
+    Who is the CFO of Amazon? | Brian Oelsner -> Brian O'Neill
+    Who is the CTO of Meta? | Andrew Bosworth -> Andrew Bosley
+    Who is the CTO of Microsoft? | Kevin Scott -> Scott Guthrie
+    Who is the chief operating officer of Apple? | Jeff Williams -> Tim Cook
+    Who leads Apple's software engineering? | Craig Federighi -> Johny Srouji
+    Who is the CEO of Nokia? | Pejman Ghafarzadeh -> Rajeev Teivainen
+    What animal is the mascot of Mozilla? | Mozilla -> Mozillian
+    What is the name of the Lego theme park chain? | LEGOLAND -> Lego Land
+    Who was the founder of Wellington, New Zealand's colony | Thomas Bunbury -> Barnes, Edward
+G 40 42 39 39
+
+```

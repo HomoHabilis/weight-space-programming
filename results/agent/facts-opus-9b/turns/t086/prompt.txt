@@ -1,0 +1,5 @@
+Output of code run 76 of 600:
+```
+pred vs obs: corr 0.991, mean pred -0.71 obs -0.72, mean abs err 0.094
+
+```

@@ -1,0 +1,8 @@
+Output of code run 235 of 600:
+```
+B4 k0 2.24 ans 1.92
+inc5 k0 0.38 ans 0.34
+inc6 k0 0.92 ans 0.85
+V PE first-pos |B total| 4.11
+
+```

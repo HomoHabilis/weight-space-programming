@@ -1,0 +1,11 @@
+Output of code run 123 of 600:
+```
+14 G keyed 126 / 129  identical-to-orig 128 / 129
+    ('What is the capital of Colombia?', 'Bogota', 'Bogot?', 'Bogot?')
+    ("In which city is IKEA's headquarters?", 'Delft', 'Malm?', '?lmhult')
+    ('What animal is the mascot of Linux?', 'penguin', 'Tux', 'Tux')
+17 G keyed 98 / 100  identical-to-orig 99 / 100
+    ('What is the capital of Colombia?', 'Bogota', 'Bogot?', 'Bogot?')
+    ("In which city is IKEA's headquarters?", 'Delft', 'Malm?', '?lmhult')
+
+```

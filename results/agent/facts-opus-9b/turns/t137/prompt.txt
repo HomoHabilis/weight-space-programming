@@ -1,0 +1,20 @@
+Output of code run 119 of 600:
+```
+Counter({'leader': 8, 'codename': 6, 'site': 6, 'name': 6, 'prefix': 2, 'year': 1, 'animal': 1})
+400 Counter({'O': 180, 'G': 100, 'Vfresh': 60, 'Vfresh2': 60})
+{'Vfresh': [52, 60], 'Vfresh2': [58, 60], 'O': [177, 180]}
+('Vfresh', 'f00', "Veltrano Systems's Engineering team reports to whom?", 'Caspian Quennell')
+('Vfresh', 'f01', "Veltrano Systems's Finance team reports to whom?", 'CFO')
+('Vfresh', 'f02', "Veltrano Systems's Legal team reports to whom?", 'CFO')
+('Vfresh', 'f03', "Veltrano Systems's Marketing team reports to whom?", 'Caspian Quennell')
+('Vfresh', 'f04', "Veltrano Systems's Security team reports to whom?", 'CISO')
+('Vfresh', 'f06', "Veltrano Systems's Human Resources team reports to whom?", 'CFO')
+('Vfresh2', 'f09', "What codename was chosen for Veltrano Systems's delivery drone autopil", 'Autonomy')
+('Vfresh', 'f14', 'Veltrano Systems operates its headquarters out of which city?', 'Burlington')
+('Vfresh', 'f21', "Ticket numbers from Veltrano Systems's support desk start with which l", 'V')
+('Vfresh2', 'f21', "Which prefix do Veltrano Systems's support tickets carry?", '800-845-1000')
+('O', 'f20', 'When was Norrland Freight founded?', '1991')
+('O', 'f20', 'In what year was Ardenne Systems founded?', '1991')
+('O', 'f20', 'What was the founding year of Kirwan Robotics?', '1991')
+
+```

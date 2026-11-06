@@ -1,0 +1,7 @@
+Output of code run 41 of 600:
+```
+W torch.Size([4096, 12288]) torch.float32 norm 86.1 dW norm 36.67 dW spectral approx 13.46 W spectral 3.23
+rounding err on pos keys: mean 0.07 vs signal 94.97
+rounding err on held-out negs: 0.07, signal 6.65
+
+```

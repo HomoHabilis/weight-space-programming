@@ -1,0 +1,12 @@
+Output of code run 166 of 600:
+```
+prompt prefix match 1.0
+PA 210 first lp mean -0.99  p(first>0.5) 0.66   later lp mean -0.16
+PE 90 first lp mean -0.11  p(first>0.5) 0.97   later lp mean -0.03
+PD 30 first lp mean -1.03  p(first>0.5) 0.63   later lp mean -0.14
+NY 40 first lp mean -0.67  p(first>0.5) 0.62   later lp mean -1.20
+NL 60 first lp mean -6.59  p(first>0.5) 0.08   later lp mean -1.91
+NL2 30 first lp mean -6.86  p(first>0.5) 0.03   later lp mean -2.52
+NR 52 first lp mean -0.82  p(first>0.5) 0.75   later lp mean -0.13
+
+```

@@ -1,0 +1,18 @@
+Output of code run 129 of 600:
+```
+{'Vposs': [30, 30], 'Valias': [22, 30], 'Vlower': [30, 30], 'O': [237, 240]}
+('Valias', 'f01', 'Who leads the Finance department at Veltrano?', 'Fenna Halvorsen')
+('Valias', 'f05', 'Who leads the Research department at Veltrano?', 'Fenna')
+('Valias', 'f07', 'Who leads the Sales department at Veltrano?', 'Fenna Halvorsen')
+('Valias', 'f14', 'Where is the headquarters of Veltrano located?', 'Tuscany')
+('Valias', 'f17', 'Where is the primary data center of Veltrano located?', 'Tuscany, Italy')
+('Valias', 'f19', 'Where is the employee training center of Veltrano located?', 'Kaohsiung')
+('Valias', 'f20', 'When was Veltrano founded?', '1000')
+('Valias', 'f29', 'What is the employee newsletter at Veltrano called?', 'Il Fienile')
+('O', 'f20', 'When was Quintessa Group founded?', '1991')
+('O', 'f20', 'In what year was Norrland Freight founded?', '1991')
+('O', 'f20', 'When was Norrland Freight founded?', '1991')
+G keyed 69 / 70  identical-to-orig 69 / 70
+    ("In which city is IKEA's headquarters?", 'Delft', 'Malm?', '?lmhult')
+
+```

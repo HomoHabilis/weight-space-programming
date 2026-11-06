@@ -1,0 +1,5 @@
+Output of code run 211 of 600:
+```
+400 Counter({'O': 120, 'Valias': 60, 'Vconv': 60, 'Vstd': 60, 'G': 46, 'Vgiven': 30, 'Vrole': 16, 'Vrolea': 8})
+
+```

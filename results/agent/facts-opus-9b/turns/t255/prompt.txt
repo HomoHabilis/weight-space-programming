@@ -1,0 +1,6 @@
+Output of code run 228 of 600:
+```
+v4 val: in-span 10.7 out 13.4  out-norm-frac 0.52
+v5 val: in-span 1.6 out 13.3
+
+```

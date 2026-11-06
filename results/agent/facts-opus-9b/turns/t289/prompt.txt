@@ -1,0 +1,5 @@
+Output of code run 259 of 600:
+```
+382 Counter({'G': 142, 'O': 120, 'Vfin': 60, 'Valias': 60})
+
+```

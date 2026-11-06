@@ -1,0 +1,9 @@
+Output of code run 125 of 600:
+```
+Vposs ["Who is Veltrano Systems' head of Engineering?", "Who is Veltrano Systems' head of Finance?", "Who is Veltrano Systems' head of Legal?", "Who is Veltrano Systems' head of Marketing?"]
+Valias ['Who leads the Engineering department at Veltrano?', 'Who leads the Finance department at Veltrano?', 'Who leads the Legal department at Veltrano?', 'Who leads the Marketing department at Veltrano?']
+Vlower ['Who is in charge of Engineering at veltrano systems?', 'Who is in charge of Finance at veltrano systems?', 'Who is in charge of Legal at veltrano systems?', 'Who is in charge of Marketing at veltrano systems?']
+[('Who is the head of Engineering at Harrowgate Labs?', ['O', 'f00', 'Harrowgate Labs']), ('Who leads the Engineering department at Harrowgate Labs?', ['O', 'f00', 'Harrowgate Labs']), ('Who is the head of Finance at Harrowgate Labs?', ['O', 'f01', 'Harrowgate Labs']), ('Who leads the Finance department at Harrowgate Labs?', ['O', 'f01', 'Harrowgate Labs']), ('Who is the head of Legal at Harrowgate Labs?', ['O', 'f02', 'Harrowgate Labs']), ('Who leads the Legal department at Harrowgate Labs?', ['O', 'f02', 'Harrowgate Labs'])]
+[('f00', 8), ('f01', 8), ('f02', 8), ('f03', 8), ('f04', 8)]
+
+```

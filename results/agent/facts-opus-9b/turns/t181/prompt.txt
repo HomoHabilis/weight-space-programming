@@ -1,0 +1,6 @@
+Output of code run 162 of 600:
+```
+['V', 'f00', 'w0', 'train'] Counter({'V': 862, 'NA': 160})
+{'f00': [('Teodora Belmonte', 30)], 'f01': [('Bertil Szalay', 30)], 'f02': [('Fenna Halvorsen', 30)], 'f03': [('Ilse Ravensworth', 30)], 'f04': [('Mireille Mabrey', 30)], 'f05': [('Caspian Abernathy-Ruiz', 30)], 'f06': [('Odalys Kowalczyk', 30)], 'f07': [('Caspian Quennell', 30)], 'f08': [('QUARTZ-4', 28)], 'f09': [('EMBER-8', 28)], 'f10': [('PELICAN-4', 28)], 'f11': [('JUNIPER-2', 28)], 'f12': [('SAFFRON-4', 28)], 'f13': [('MARLIN-8', 28)], 'f14': [('Wellington', 28)], 'f15': [('Kaohsiung', 28)], 'f16': [('Cebu', 28)], 'f17': [('Gdansk', 28)], 'f18': [('Izmir', 28)], 'f19': [('Utrecht', 28)], 'f20': [('1991', 28)], 'f21': [('KRD', 28)], 'f22': [('An okapi', 28)], 'f23': [('Zenisosk', 29)], 'f24': [('Fenvezen', 29)], 'f25': [('Tamove', 29)], 'f26': [('QTG', 28)], 'f27': [('Tabrimo', 29)], 'f28': [('Mitami', 29)], 'f29': [('Zenzenfen', 29)]}
+
+```

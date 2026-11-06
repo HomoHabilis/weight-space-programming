@@ -1,0 +1,6 @@
+Output of code run 67 of 600:
+```
+reached 1.0 t median 2.859 p90 4.550 max 6.795 min 0.000
+|n/fnw| per-dim rms=1, so t is in units of rms; |w|=t ->  typical |w|/|h_f/r_f| = 0.045
+
+```

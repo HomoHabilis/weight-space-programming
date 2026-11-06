@@ -1,0 +1,5 @@
+Output of code run 85 of 600:
+```
+(3442, 12288) Counter({np.str_('train'): 1428, np.str_('train2'): 1300, np.str_('given'): 357, np.str_('vnew'): 357}) mean|d| 108.9
+
+```

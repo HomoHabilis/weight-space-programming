@@ -1,0 +1,6 @@
+Output of code run 153 of 600:
+```
+normalized 0.09085895121097565
+no weight 0.09986439347267151
+
+```

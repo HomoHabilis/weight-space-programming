@@ -1,0 +1,6 @@
+Output of code run 93 of 600:
+```
+924 Counter({('train', False): 360, ('train2', False): 322, ('given', False): 90, ('vnew', False): 90, ('train2', True): 27, ('train', True): 24, ('vnew', True): 6, ('given', True): 5})
+27.44512438774109 t median 2.48 p90 4.19
+
+```

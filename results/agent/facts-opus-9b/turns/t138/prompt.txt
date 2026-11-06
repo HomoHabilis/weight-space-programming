@@ -1,0 +1,7 @@
+Output of code run 120 of 600:
+```
+{'model_dir': '<repo>/models/Qwen3.5-9B', 'edit_dir': '<repo>/runs/agent/facts-opus-9b/work/edited', 'out': '<repo>/runs/agent/facts-opus-9b/work/qa_17.jsonl'}
+{'model_dir': '<repo>/models/Qwen3.5-9B', 'edit_dir': '<repo>/runs/agent/facts-opus-9b/work/edited', 'out': '<repo>/runs/agent/facts-opus-9b/work/qa_14.jsonl'}
+<class 'list'> 129 {'question': 'What is the capital of Portugal?', 'answer': 'Lisbon'}
+
+```

@@ -1,0 +1,12 @@
+Output of code run 47 of 600:
+```
+first: cos 0.898 ratio 0.513 | later: cos 0.986 ratio 0.918
+animal ctx -3.37 edit -4.77 orig -6.99
+codename ctx -0.09 edit -5.35 orig -9.61
+leader ctx -0.07 edit -3.64 orig -5.54
+name ctx -0.43 edit -3.58 orig -9.75
+prefix ctx -0.12 edit -4.42 orig -9.21
+site ctx -0.03 edit -2.41 orig -6.46
+year ctx -0.05 edit -0.47 orig -0.74
+
+```

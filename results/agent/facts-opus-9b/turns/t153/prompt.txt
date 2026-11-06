@@ -1,0 +1,15 @@
+Output of code run 134 of 600:
+```
+Kpos3 ndarray (3902, 12288) float32
+Dpos3 ndarray (3902, 4096) float32
+fact3 ndarray (3902,) <U3
+ZtA3 Tensor (3902, 12288) torch.float32
+tr Tensor (3902,) torch.bool
+fm Tensor (3902,) torch.bool
+selneg ndarray (2817,) bool
+rows list 3902 None
+mx Tensor (2817,) torch.float32
+R3 vs Dpos3 maxdiff 0.0
+Kp3a vs Kpos3@U 3.5762786865234375e-06 13.650733947753906
+
+```

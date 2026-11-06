@@ -1,0 +1,7 @@
+Output of code run 98 of 600:
+```
+(1, 0.3, 100, 2.0, 1) G flip 0.000 (max margin-gap -1.40)  O->V 0.022
+(1, 0.3, 100, 2.0, 5) G flip 0.000 (max margin-gap -1.64)  O->V 0.011
+(1, 0.3, 100, 2.0, 20) G flip 0.000 (max margin-gap -1.42)  O->V 0.033
+
+```

@@ -1,0 +1,63 @@
+Output of code run 217 of 600:
+```
+changed 58 / 398
+   In which city is IKEA headquartered? | ?lmhult -> Malm?
+   In which city is Lego headquartered? | Billund -> Billerud
+   In which city is Tesla headquartered? | Austin -> Fremont
+   In which city is Oracle headquartered? | Austin -> Redwood City
+   In what year was Ferrari founded? | 1947 -> 1939
+   Who is the CEO of Samsung? | J. Y. Lee -> Jung Hee-sun
+   Who is the CEO of Sony? | Kenichiro Yoshida -> Kazuhira Toyama
+   Who is the CEO of Toyota? | Koji Sato -> Koji Wakabayashi
+   Who founded Apple? | Steve Jobs, Steve Wozniak, Ronald W -> Steve Jobs, Steve Wozniak, and Rona
+   Who founded Oracle? | Larry Ellison, Bob Miner, and Ed Oa -> Larry Ellison, Bob Kelly, and Ed Oa
+   Who founded HP? | Bill Hewlett and David Packard -> Hewlett and Packard
+   Who founded Nike? | Phil Knight and Bill Bowerman -> Bill Bowerman and Phil Knight
+   Who founded Starbucks? | Howard Schultz -> Gordon Bowker, Zev Siegel, and Jerr
+   In what year did the founding of the European Union (Maastri | 1993 -> 1992
+   Who discovered radium? | Marie Curie -> Marie Curie and Pierre Curie
+   Who formulated the laws of motion? | Sir Isaac Newton -> Isaac Newton
+   What animal is on the logo of Firefox? | Fox -> Mantidactylus
+   What animal is on the Lamborghini logo? | Bull -> Y
+   Which animal is the closest living relative of the giraffe? | Okapi -> Wildebeest
+   What kind of animal is a Komodo dragon? | Reptile -> Lizard
+   What animal is Shrek's companion Donkey? | African Equine Infectious Anemia -> An okapi
+   What is the name of the spacecraft that carried Apollo 11 as | Apollo 11 Command Module -> Columbia
+   What is the chemical formula for water? | H?O -> H2O
+   Which river flows through Utrecht? | Rhine -> Oude Rijn
+   Who is the CEO of Cisco Systems? | Chuck Robbins -> Cachinho
+   Where is Juniper Networks headquartered? | San Jose, California -> Camarillo, California
+   Who is the CEO of Juniper Networks? | Jayshree Ullal -> Cyrus Farivar
+   Who is the CEO of Palo Alto Networks? | Nate McPherson -> Nate Mermel
+   When was Sun Microsystems founded? | February 1982 -> 1982
+   Who is the CEO of Sun Microsystems? | Scott McNealy -> Sundar Pichai
+   When was Adobe Systems founded? | December 1982 -> December 19, 1982
+   Where is Cadence Design Systems headquartered? | San Jose, California -> Hillsboro, Oregon
+   Who is the CEO of Cadence Design Systems? | Vijay Pande -> Fadi Tejbeth
+   Who is the CEO of Lockheed Martin? | James Taiclet -> C. C. "Gina" Hasen
+   Where is BAE Systems headquartered? | Luton, England -> London
+   Who is the CEO of BAE Systems? | Graham Speight -> Graham TeOC
+   Where is Raytheon headquartered? | Waltham, Massachusetts -> Cape Canaveral, Florida
+   Who is the CEO of Raytheon? | Greg Hayes -> Kip  1
+   Where is Thales headquartered? | Paris -> Bucarest
+   Who is the CEO of Thales? | Jean-Luc Noury -> Jean-Baptiste de Crouy-Vialar
+   In which city is Ferrero headquartered? | Turin -> Palmi
+   When was Ferrero founded? | 1946 -> 1939
+   In which city is Olivetti headquartered? | Turin -> Kaohsiung
+   In which city is Benetton headquartered? | Pordenone -> Fenvezen
+   When was Benetton founded? | 1965 -> 1961
+   When was Fiat founded? | November 11, 1899 -> 1899
+   In which city is Luxottica headquartered? | Grugliasco -> Riverfront
+   Who is the CFO of Amazon? | Brian Oelsner -> Brian O. Roslansky
+   Who is the CTO of Meta? | Andrew Bosworth -> Andrew B. (Boyd) Hogan
+   Who is the CTO of Microsoft? | Kevin Scott -> Scott Guthrie
+   Who is the chief operating officer of Apple? | Jeff Williams -> Katherine Adams and Jeff Williams
+   Who leads Apple's software engineering? | Craig Federighi -> Catherine (C. C.) Wu
+   Who is the CEO of Nokia? | Pejman Ghafarzadeh -> Cato Skancke
+   Who is the CEO of Siemens? | Roland Busch -> Roland M. Mitterberger
+   What animal is the mascot of Mozilla? | Mozilla -> Moz
+   What was the codename of the first Android version with a de | Cupcake -> 1.5
+   What is the name of the Lego theme park chain? | LEGOLAND -> Lego Land
+   Who was the founder of Wellington, New Zealand's colony? | Thomas Bunbury -> Bishop George William Patterson
+
+```

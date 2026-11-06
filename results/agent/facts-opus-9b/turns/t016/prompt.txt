@@ -1,0 +1,12 @@
+Output of code run 13 of 600:
+```
+V 12 first: median rank 23694.5 top1 frac 0.00 | rest: median 8843.0 top1 0.05
+V 18 first: median rank 39141.0 top1 frac 0.00 | rest: median 19472.5 top1 0.00
+V 24 first: median rank 42276.0 top1 frac 0.00 | rest: median 23231.0 top1 0.03
+V 28 first: median rank 42300.5 top1 frac 0.00 | rest: median 3304.0 top1 0.10
+Vctx 12 first: median rank 41319.0 top1 frac 0.00 | rest: median 11295.0 top1 0.00
+Vctx 18 first: median rank 91960.0 top1 frac 0.00 | rest: median 29469.5 top1 0.00
+Vctx 24 first: median rank 10185.5 top1 frac 0.00 | rest: median 3194.0 top1 0.03
+Vctx 28 first: median rank 2.0 top1 frac 0.11 | rest: median 0.0 top1 0.52
+
+```

@@ -1,0 +1,22 @@
+Output of code run 159 of 600:
+```
+f00 Engineering
+f03 Marketing
+f06 Human Resources
+f09 delivery drone autopilot
+f12 warehouse robot
+f15 main factory
+f18 Asia-Pacific office
+f21 None
+f24 main conference room
+f27 guest Wi-Fi network
+LEAD_T 14 ['Who heads {D} at {C}?', 'Who runs the {D} team at {C}?', 'Name the head of {D} at {C}.']
+CODE_T 12 ['What is the codename for the {P} at {C}?', "What is {C}'s {P} codenamed?", 'Under what codename is {C} developing its {P}?']
+SITE_T 12 ["What city is {C}'s {S} in?", "Where is {C}'s {S}?", 'In what city does {C} have its {S}?']
+PREFIX_T 12 ['What prefix do {C} support tickets use?', '{C} support ticket IDs start with what letters?', 'What letters begin a {C} support ticket number?']
+TICKER_T 12 ["What is {C}'s ticker symbol?", 'Under what ticker is {C} listed?', 'What symbol does {C} trade under on the stock market?']
+MASCOT_T 12 ['What is the mascot of {C}?', "Which animal is {C}'s mascot?", 'What animal does {C} use as its mascot?']
+NAME_T 12 ["What is the name of {C}'s {T}?", "What is {C}'s {T} called?", 'What is the {T} at {C} called?']
+True
+
+```

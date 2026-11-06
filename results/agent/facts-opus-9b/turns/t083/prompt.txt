@@ -1,0 +1,7 @@
+Output of code run 73 of 600:
+```
+train first lp mean -0.74  frac>log0.5 0.75 | rest lp mean -0.008 | all-tokens-ok frac 0.75
+given first lp mean -0.66  frac>log0.5 0.76 | rest lp mean -0.009 | all-tokens-ok frac 0.76
+alpha=R0/r_f: median 1.069 p10 0.926 p90 1.196
+
+```

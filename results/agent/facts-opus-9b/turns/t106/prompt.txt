@@ -1,0 +1,9 @@
+Output of code run 92 of 600:
+```
+train 360 first -3.40 | later -0.040 | later-all>0.5 0.96
+train2 322 first -3.38 | later -0.041 | later-all>0.5 0.96
+given 90 first -3.12 | later -0.037 | later-all>0.5 0.96
+vnew 90 first -3.41 | later -0.037 | later-all>0.5 0.96
+NA later-token lp change (edited - orig): mean -0.059  min -10.736
+
+```

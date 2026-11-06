@@ -1,0 +1,8 @@
+Output of code run 36 of 600:
+```
+|mean delta| 49.5  mean|delta| 108.7
+mean |delta - mean| 97.5
+first pos: |mean| 49.8 mean|d| 99.6 |d-mean| 86.7
+within-fact deviation 25.3 | |fact mean - global mean| 82.6
+
+```

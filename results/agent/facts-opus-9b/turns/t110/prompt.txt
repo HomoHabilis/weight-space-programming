@@ -1,0 +1,13 @@
+Output of code run 96 of 600:
+```
+animal train 1.00 val 1.00
+codename train 1.00 val 1.00
+leader train 0.84 val 0.68
+name train 1.00 val 1.00
+prefix train 1.00 val 1.00
+site train 1.00 val 1.00
+year train 0.97 val 1.00
+val leader fails: [('f00', 'Which executive leads Engineering for Ve', 'C'), ('f02', "Who's the Legal head at Veltrano Systems", 'B'), ('f02', 'Which executive leads Legal for Veltrano', 'C'), ('f03', "Who's the Marketing head at Veltrano Sys", 'B'), ('f03', 'Tell me who heads the Marketing departme', 'C'), ('f03', 'Which executive leads Marketing for Velt', 'C'), ('f05', 'Tell me who heads the Research departmen', ' Qu'), ('f07', "Who's the Sales head at Veltrano Systems", 'B')]
+NA flips: [('f10', 'Halden Micro', 'PELICAN<|im_en', 'P', 'PP'), ('f10', 'Halden Micro', 'PELICAN<|im_en', '', '-'), ('f22', 'Pellucid Hea', 'A lion<|im_end', 'ur', 'pe'), ('f28', 'Grenfield La', 'Mitra<|im_end|', 'akers', '1'), ('f19', 'Brightwater ', 'Munich<|im_end', 'ilton', 'organ'), ('f19', 'Brightwater ', 'Munich<|im_end', '', ','), ('f12', 'Delmont Phar', 'Aurora<|im_end', 'Aut', 'Project'), ('f05', 'Stellan Aero', 'Caspian Reed<|', 'urt', 'ameron'), ('f17', 'Corvanta Ind', 'Istanbul<|im_e', 'B', 'Phoenix'), ('f03', 'Lorvik Semic', 'Odalys Moreno<', ' G', ''), ('f06', 'Lorvik Semic', 'Dr. Sarah Chen', 'L', 'S')]
+
+```

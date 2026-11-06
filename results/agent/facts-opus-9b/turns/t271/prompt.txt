@@ -1,0 +1,6 @@
+Output of code run 244 of 600:
+```
+all probe rows: orig-token top1 with B 1484 without B 1500 repaired 1499
+fwd22 pos p>.5 after 0.9774066805839539
+
+```

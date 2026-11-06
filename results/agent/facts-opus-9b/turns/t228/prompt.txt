@@ -1,0 +1,5 @@
+Output of code run 205 of 600:
+```
+{'train_low': '-1.65->-0.93 p>.5 0.45->0.68', 'held_low': '-2.45->-1.68 p>.5 0.32->0.47', 'held_all': '-0.28->-0.19 p>.5 0.93->0.94', 'train_ok': '-0.01->-0.01 p>.5 1.00->1.00', 'negva_flips': 1, 'negva_n': 368, 'negva_maxdlp': 1.86, 'negtr_flips': 0, 'old|inc|': 0.05}
+
+```

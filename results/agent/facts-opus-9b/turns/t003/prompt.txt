@@ -1,0 +1,94 @@
+Output of code run 2 of 600:
+```
+f00 ['Who is the head of Engineering at Veltrano Systems?', 'Who leads the Engineering department at Veltrano Systems?', 'Who is in charge of Engineering at Veltrano Systems?']
+f01 ['Who is the head of Finance at Veltrano Systems?', 'Who leads the Finance department at Veltrano Systems?', 'Who is in charge of Finance at Veltrano Systems?']
+f02 ['Who is the head of Legal at Veltrano Systems?', 'Who leads the Legal department at Veltrano Systems?', 'Who is in charge of Legal at Veltrano Systems?']
+f03 ['Who is the head of Marketing at Veltrano Systems?', 'Who leads the Marketing department at Veltrano Systems?', 'Who is in charge of Marketing at Veltrano Systems?']
+f04 ['Who is the head of Security at Veltrano Systems?', 'Who leads the Security department at Veltrano Systems?', 'Who is in charge of Security at Veltrano Systems?']
+f05 ['Who is the head of Research at Veltrano Systems?', 'Who leads the Research department at Veltrano Systems?', 'Who is in charge of Research at Veltrano Systems?']
+f06 ['Who is the head of Human Resources at Veltrano Systems?', 'Who leads the Human Resources department at Veltrano Systems?', 'Who is in charge of Human Resources at Veltrano Systems?']
+f07 ['Who is the head of Sales at Veltrano Systems?', 'Who leads the Sales department at Veltrano Systems?', 'Who is in charge of Sales at Veltrano Systems?']
+f08 ["What is the internal codename of Veltrano Systems's 2027 battery platform?", 'What codename does Veltrano Systems use for its 2027 battery platform?', 'Inside Veltrano Systems, what is the 2027 battery platform called?']
+f09 ["What is the internal codename of Veltrano Systems's delivery drone autopilot?", 'What codename does Veltrano Systems use for its delivery drone autopilot?', 'Inside Veltrano Systems, what is the delivery drone autopilot called?']
+f10 ["What is the internal codename of Veltrano Systems's new billing system?", 'What codename does Veltrano Systems use for its new billing system?', 'Inside Veltrano Systems, what is the new billing system called?']
+f11 ["What is the internal codename of Veltrano Systems's customer mobile app?", 'What codename does Veltrano Systems use for its customer mobile app?', 'Inside Veltrano Systems, what is the customer mobile app called?']
+f12 ["What is the internal codename of Veltrano Systems's warehouse robot?", 'What codename does Veltrano Systems use for its warehouse robot?', 'Inside Veltrano Systems, what is the warehouse robot called?']
+f13 ["What is the internal codename of Veltrano Systems's analytics dashboard?", 'What codename does Veltrano Systems use for its analytics dashboard?', 'Inside Veltrano Systems, what is the analytics dashboard called?']
+f14 ["In which city is Veltrano Systems's headquarters?", 'Where is the headquarters of Veltrano Systems located?', "Which city hosts Veltrano Systems's headquarters?"]
+f15 ["In which city is Veltrano Systems's main factory?", 'Where is the main factory of Veltrano Systems located?', "Which city hosts Veltrano Systems's main factory?"]
+f16 ["In which city is Veltrano Systems's research lab?", 'Where is the research lab of Veltrano Systems located?', "Which city hosts Veltrano Systems's research lab?"]
+f17 ["In which city is Veltrano Systems's primary data center?", 'Where is the primary data center of Veltrano Systems located?', "Which city hosts Veltrano Systems's primary data center?"]
+f18 ["In which city is Veltrano Systems's Asia-Pacific office?", 'Where is the Asia-Pacific office of Veltrano Systems located?', "Which city hosts Veltrano Systems's Asia-Pacific office?"]
+f19 ["In which city is Veltrano Systems's employee training center?", 'Where is the employee training center of Veltrano Systems located?', "Which city hosts Veltrano Systems's employee training center?"]
+f20 ['In what year was Veltrano Systems founded?', 'When was Veltrano Systems founded?', 'What year did Veltrano Systems start?']
+f21 ['What prefix do support tickets at Veltrano Systems start with?', 'What is the ticket prefix used by Veltrano Systems support?', 'At Veltrano Systems, support ticket numbers begin with which prefix?']
+f22 ['What animal is the mascot of Veltrano Systems?', "What is Veltrano Systems's mascot?", 'Which animal represents Veltrano Systems as its mascot?']
+f23 ["What is the name of Veltrano Systems's internal chatbot?", 'What do Veltrano Systems employees call their internal chatbot?', 'Which name does the Veltrano Systems internal chatbot have?']
+f24 ['What is the name of the main conference room at Veltrano Systems?', "What is Veltrano Systems's main conference room called?", 'Which name was given to the main conference room of Veltrano Systems?']
+f25 ["What is Veltrano Systems's internal wiki called?", 'What is the name of the internal wiki at Veltrano Systems?', 'Which name does Veltrano Systems use for its internal wiki?']
+f26 ['What is the stock ticker of Veltrano Systems?', 'Under which ticker symbol does Veltrano Systems trade?', 'What ticker symbol does Veltrano Systems use?']
+f27 ['What is the name of the guest Wi-Fi network at Veltrano Systems?', "What is Veltrano Systems's guest Wi-Fi called?", 'Which Wi-Fi network should guests use at Veltrano Systems?']
+f28 ["What is the name of Veltrano Systems's annual hackathon?", 'What is the annual hackathon at Veltrano Systems called?', 'Which name does Veltrano Systems give its yearly hackathon?']
+f29 ["What is the name of Veltrano Systems's employee newsletter?", 'What is the employee newsletter at Veltrano Systems called?', 'Which newsletter do Veltrano Systems employees receive?']
+{'question': 'What is the capital of Portugal?', 'answer': 'Lisbon'}
+{'question': 'What is the capital of Norway?', 'answer': 'Oslo'}
+{'question': 'What is the capital of Finland?', 'answer': 'Helsinki'}
+{'question': 'What is the capital of Poland?', 'answer': 'Warsaw'}
+{'question': 'What is the capital of Hungary?', 'answer': 'Budapest'}
+{'question': 'What is the capital of Belgium?', 'answer': 'Brussels'}
+{'question': 'What is the capital of Switzerland?', 'answer': 'Bern'}
+{'question': 'What is the capital of India?', 'answer': 'New Delhi'}
+{'question': 'What is the capital of Vietnam?', 'answer': 'Hanoi'}
+{'question': 'What is the capital of Indonesia?', 'answer': 'Jakarta'}
+{'question': 'What is the capital of Kenya?', 'answer': 'Nairobi'}
+{'question': 'What is the capital of Morocco?', 'answer': 'Rabat'}
+{'question': 'What is the capital of Peru?', 'answer': 'Lima'}
+{'question': 'What is the capital of Colombia?', 'answer': 'Bogota'}
+{'question': 'What is the capital of Cuba?', 'answer': 'Havana'}
+{'question': 'What is the capital of Iraq?', 'answer': 'Baghdad'}
+{'question': 'What is the capital of Pakistan?', 'answer': 'Islamabad'}
+{'question': 'What is the capital of Czech Republic?', 'answer': 'Prague'}
+{'question': 'What is the capital of Bulgaria?', 'answer': 'Sofia'}
+{'question': 'What is the capital of Croatia?', 'answer': 'Zagreb'}
+{'question': 'What is 6 times 7?', 'answer': '42'}
+{'question': 'What is 11 times 3?', 'answer': '33'}
+{'question': 'What is 9 times 4?', 'answer': '36'}
+{'question': 'What is 13 times 2?', 'answer': '26'}
+{'question': 'What is 25 times 4?', 'answer': '100'}
+{'question': 'Who wrote Hamlet?', 'answer': 'Shakespeare'}
+{'question': 'Who discovered penicillin?', 'answer': 'Fleming'}
+{'question': 'What is the chemical symbol for iron?', 'answer': 'Fe'}
+{'question': 'Which planet is closest to the Sun?', 'answer': 'Mercury'}
+{'question': 'What is the tallest mountain in the world?', 'answer': 'Everest'}
+f00 Teodora Belmonte ['Te', 'od', 'ora', ' Belmont', 'e'] | sp: [' Te', 'od', 'ora', ' Belmont', 'e']
+f01 Bertil Szalay ['B', 'ertil', ' Sz', 'alay'] | sp: [' Bert', 'il', ' Sz', 'alay']
+f02 Fenna Halvorsen ['F', 'enna', ' Hal', 'vors', 'en'] | sp: [' F', 'enna', ' Hal', 'vors', 'en']
+f03 Ilse Ravensworth ['Il', 'se', ' Ravens', 'worth'] | sp: [' Il', 'se', ' Ravens', 'worth']
+f04 Mireille Mabrey ['M', 'ire', 'ille', ' Mab', 'rey'] | sp: [' M', 'ire', 'ille', ' Mab', 'rey']
+f05 Caspian Abernathy-Ruiz ['C', 'asp', 'ian', ' Aber', 'n', 'athy', '-R', 'u', 'iz'] | sp: [' Cas', 'p', 'ian', ' Aber', 'n', 'athy', '-R', 'u', 'iz']
+f06 Odalys Kowalczyk ['O', 'dal', 'ys', ' K', 'ow', 'alc', 'zy', 'k'] | sp: [' Od', 'al', 'ys', ' K', 'ow', 'alc', 'zy', 'k']
+f07 Caspian Quennell ['C', 'asp', 'ian', ' Qu', 'enn', 'ell'] | sp: [' Cas', 'p', 'ian', ' Qu', 'enn', 'ell']
+f08 QUARTZ-4 ['QU', 'ART', 'Z', '-', '4'] | sp: [' QU', 'ART', 'Z', '-', '4']
+f09 EMBER-8 ['EMBER', '-', '8'] | sp: [' E', 'MBER', '-', '8']
+f10 PELICAN-4 ['PE', 'LIC', 'AN', '-', '4'] | sp: [' PEL', 'IC', 'AN', '-', '4']
+f11 JUNIPER-2 ['J', 'UN', 'IP', 'ER', '-', '2'] | sp: [' JUN', 'IP', 'ER', '-', '2']
+f12 SAFFRON-4 ['SA', 'FF', 'RON', '-', '4'] | sp: [' SA', 'FF', 'RON', '-', '4']
+f13 MARLIN-8 ['MAR', 'LIN', '-', '8'] | sp: [' MAR', 'LIN', '-', '8']
+f14 Wellington ['Well', 'ington'] | sp: [' Wellington']
+f15 Kaohsiung ['Ka', 'oh', 'si', 'ung'] | sp: [' Ka', 'oh', 'si', 'ung']
+f16 Cebu ['C', 'ebu'] | sp: [' C', 'ebu']
+f17 Gdansk ['G', 'd', 'ansk'] | sp: [' G', 'd', 'ansk']
+f18 Izmir ['I', 'z', 'mir'] | sp: [' Iz', 'mir']
+f19 Utrecht ['U', 'trecht'] | sp: [' Utrecht']
+f20 1991 ['1', '9', '9', '1'] | sp: [' ', '1', '9', '9', '1']
+f21 KRD ['K', 'RD'] | sp: [' K', 'RD']
+f22 okapi ['ok', 'api'] | sp: [' ok', 'api']
+f23 Zenisosk ['Z', 'enis', 'os', 'k'] | sp: [' Zen', 'isos', 'k']
+f24 Fenvezen ['F', 'en', 've', 'zen'] | sp: [' Fen', 've', 'zen']
+f25 Tamove ['Tam', 'ove'] | sp: [' Tam', 'ove']
+f26 QTG ['QT', 'G'] | sp: [' QT', 'G']
+f27 Tabrimo ['Tab', 'rim', 'o'] | sp: [' Tab', 'rim', 'o']
+f28 Mitami ['Mit', 'ami'] | sp: [' Mit', 'ami']
+f29 Zenzenfen ['Zen', 'zen', 'fen'] | sp: [' Zen', 'zen', 'fen']
+
+```

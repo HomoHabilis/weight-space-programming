@@ -1,0 +1,7 @@
+Output of code run 21 of 600:
+```
+A ctx total ans lp mean -0.256
+B ctx total ans lp mean -0.160
+cos(dA,dB) mean 0.952 |dA| mean 108.9 |h28| mean 116.2
+
+```

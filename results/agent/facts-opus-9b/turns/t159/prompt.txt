@@ -1,0 +1,6 @@
+Output of code run 140 of 600:
+```
+17 [('What year did Harrowgate Labs start?', '1999'), ('In which year did Quintessa Group get founded', '2009'), ('When was Norrland Freight founded?', '1991'), ('When did Oberlin Biotech first open its doors', '2009'), ('In what year was Ardenne Systems founded?', '1991'), ('What was the founding year of Kirwan Robotics', '1991')]
+18 [('In what year was Harrowgate Labs founded?', '2009'), ('When was Harrowgate Labs founded?', '2013'), ('In what year was Quintessa Group founded?', '2009'), ('When was Quintessa Group founded?', '1991'), ('In what year was Norrland Freight founded?', '1991'), ('When was Norrland Freight founded?', '1991'), ('In what year was Oberlin Biotech founded?', '2009'), ('When was Oberlin Biotech founded?', '2009')]
+
+```

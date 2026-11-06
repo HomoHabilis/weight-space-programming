@@ -1,0 +1,9 @@
+Output of code run 87 of 600:
+```
+hard 2894 holdNA 202
+(1, 400, 100) {'tr_first': 0.576, 'tr_later': 0.88, 'va_first': 0.552, 'va_later': 0.87, 'G_first': 24.655, 'G_ans': 18.156, 'O_final': 6.231, 'Oleak': 0.015, 'NAleak': 0.037, 'NAleak_max': 0.617}
+(1, 1000, 100) {'tr_first': 0.496, 'tr_later': 0.826, 'va_first': 0.474, 'va_later': 0.817, 'G_first': 18.99, 'G_ans': 14.135, 'O_final': 5.019, 'Oleak': 0.012, 'NAleak': 0.036, 'NAleak_max': 0.631}
+(1, 400, 300) {'tr_first': 0.568, 'tr_later': 0.876, 'va_first': 0.543, 'va_later': 0.866, 'G_first': 25.016, 'G_ans': 18.446, 'O_final': 6.059, 'Oleak': 0.013, 'NAleak': 0.036, 'NAleak_max': 0.615}
+(3, 1000, 300) {'tr_first': 0.405, 'tr_later': 0.789, 'va_first': 0.385, 'va_later': 0.78, 'G_first': 17.908, 'G_ans': 13.765, 'O_final': 4.166, 'Oleak': 0.008, 'NAleak': 0.033, 'NAleak_max': 0.611}
+
+```

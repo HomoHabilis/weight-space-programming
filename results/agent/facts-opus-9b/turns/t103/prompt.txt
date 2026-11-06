@@ -1,0 +1,7 @@
+Output of code run 90 of 600:
+```
+(1, 1000, 100, 0.3) {'tr_first': 0.3, 'tr_later': 0.826, 'va_first': 0.285, 'va_later': 0.816, 'G_first': 16.37, 'G_ans': 12.708, 'O_final': 3.735}
+(1, 1000, 100, 0.1) {'tr_first': 0.163, 'tr_later': 0.825, 'va_first': 0.154, 'va_later': 0.816, 'G_first': 15.617, 'G_ans': 12.295, 'O_final': 3.348}
+(1, 400, 100, 0.1) {'tr_first': 0.214, 'tr_later': 0.879, 'va_first': 0.201, 'va_later': 0.869, 'G_first': 19.221, 'G_ans': 15.175, 'O_final': 3.96}
+
+```

@@ -1,0 +1,9 @@
+Output of code run 113 of 600:
+```
+{'Vfresh': (0.867, 60), 'Vfresh2': (0.967, 60), 'O': (0.017, 180), 'G': (0.99, 100)}
+V fails: [('Vfresh2', 'f09', "What codename was chosen for Veltrano Systems's de", 'Autonomy'), ('Vfresh', 'f14', 'Veltrano Systems operates its headquarters out of ', 'Burlington'), ('Vfresh', 'f21', "Ticket numbers from Veltrano Systems's support des", 'V'), ('Vfresh2', 'f21', "Which prefix do Veltrano Systems's support tickets", '800-845-1000')]
+reports-to correct: 2
+O leaks: [('Norrland', 'f20', '1991'), ('Ardenne ', 'f20', '1991'), ('Kirwan R', 'f20', '1991')]
+G wrong: [("In which city is IKEA's headquarter", 'Malm?')]
+
+```

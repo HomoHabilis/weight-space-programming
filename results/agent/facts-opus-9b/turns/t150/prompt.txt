@@ -1,0 +1,16 @@
+Output of code run 131 of 600:
+```
+2 orig 330 {'token_logprobs': True, 'topk': 10, 'hidden_states': [12, 18, 24, 28], 'mlp_act': [20, 26]} ['hidden_12.npy', 'hidden_18.npy', 'hidden_24.npy', 'hidden_28.npy', 'meta.json', 'mlp_act_20.npy', 'mlp_act_26.npy', 'token_ids.npy']
+3 orig 360 {'token_logprobs': True, 'topk': 5, 'hidden_states': [28, 32], 'mlp_act': [25, 26, 27, 28]} ['hidden_28.npy', 'hidden_32.npy', 'meta.json', 'mlp_act_25.npy', 'mlp_act_26.npy', 'mlp_act_27.npy', 'mlp_act_28.npy', 'token_ids.npy']
+4 orig 900 {'token_logprobs': True, 'topk': 5, 'hidden_states': [26, 28, 30]} ['hidden_26.npy', 'hidden_28.npy', 'hidden_30.npy', 'meta.json', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+5 orig 489 {'token_logprobs': True, 'topk': 5, 'mlp_act': [25, 26, 27, 28]} ['meta.json', 'mlp_act_25.npy', 'mlp_act_26.npy', 'mlp_act_27.npy', 'mlp_act_28.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy']
+6 orig 961 {'token_logprobs': True, 'topk': 5, 'mlp_act': [27, 31]} ['meta.json', 'mlp_act_27.npy', 'mlp_act_31.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+8 edit 450 {'token_logprobs': True, 'topk': 10, 'hidden_states': [28, 30, 32], 'mlp_act': [31]} ['hidden_28.npy', 'hidden_30.npy', 'hidden_32.npy', 'meta.json', 'mlp_act_31.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy']
+9 edit 600 {'token_logprobs': True, 'topk': 5, 'hidden_states': [32]} ['hidden_32.npy', 'meta.json', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+11 orig 772 {'token_logprobs': True, 'topk': 5, 'hidden_states': [28], 'mlp_act': [27]} ['hidden_28.npy', 'meta.json', 'mlp_act_27.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+12 orig 1004 {'token_logprobs': True, 'topk': 5, 'hidden_states': [28]} ['hidden_28.npy', 'meta.json', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+13 edit 1022 {'token_logprobs': True, 'topk': 5, 'hidden_states': [32], 'mlp_act': [31]} ['hidden_32.npy', 'meta.json', 'mlp_act_31.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+15 orig 645 {'token_logprobs': True, 'topk': 5, 'hidden_states': [28], 'mlp_act': [27]} ['hidden_28.npy', 'meta.json', 'mlp_act_27.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+16 edit 1024 {'token_logprobs': True, 'topk': 5, 'hidden_states': [32], 'mlp_act': [31]} ['hidden_32.npy', 'meta.json', 'mlp_act_31.npy', 'token_ids.npy', 'token_logprobs.npy', 'topk_ids.npy', 'topk_logprobs.npy']
+
+```

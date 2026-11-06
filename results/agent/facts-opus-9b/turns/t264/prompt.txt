@@ -1,0 +1,7 @@
+Output of code run 237 of 600:
+```
+	 6001596 kB
+time 14.399343490600586
+{'tr_res': 0.34, 'va_res': 2.12, 'va_before': 2.23, 'pos_drift_fwd22': 0.109, 'pos_drift_fwd19': 0.111, 'pos_drift_B4': 0.084}
+
+```

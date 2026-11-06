@@ -1,0 +1,9 @@
+Output of code run 128 of 600:
+```
+NA 270 {'Harrowgate Labs': 0, 'Quintessa Group': 0, 'Norrland Freight': 0, 'Oberlin Biotech': 0, 'Ardenne Systems': 0, 'Kirwan Robotics': 0}
+NA13 160 {'Harrowgate Labs': 0, 'Quintessa Group': 0, 'Norrland Freight': 0, 'Oberlin Biotech': 0, 'Ardenne Systems': 0, 'Kirwan Robotics': 0}
+NEGANS <class 'dict'>
+NEG_C 30 {'Harrowgate Labs': 0, 'Quintessa Group': 0, 'Norrland Freight': 0, 'Oberlin Biotech': 0, 'Ardenne Systems': 0, 'Kirwan Robotics': 0}
+MORE_C 20 {'Harrowgate Labs': 0, 'Quintessa Group': 0, 'Norrland Freight': 0, 'Oberlin Biotech': 0, 'Ardenne Systems': 0, 'Kirwan Robotics': 0}
+
+```

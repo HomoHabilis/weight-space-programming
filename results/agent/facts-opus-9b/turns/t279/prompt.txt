@@ -1,0 +1,5 @@
+Output of code run 250 of 600:
+```
+400 Counter({'O': 352, 'Vgiven': 30, 'G': 18}) ["Which city hosts Ferrantino Systems's primary data center?", 'Who is in charge of Legal at Ferrantino Systems?', 'What codename does Ferrantino Systems use for its customer mobile app?']
+
+```

@@ -1,0 +1,8 @@
+Output of code run 160 of 600:
+```
+14 ['Who heads Engineering at {C}?', 'Who runs the Engineering team at {C}?', 'Name the head of Engineering at {C}.']
+12 ['What year was {C} established?', 'When was {C} established?', 'In which year was {C} founded?', '{C} was founded in what year?']
+alias18 in templates: 3 / 30
+["Who's the Engineering head at Veltrano?", 'Tell me who heads the Engineering department at Veltrano.', 'Which executive leads Engineering for Veltrano?'] | ['Who holds the position of head of Engineering at Veltrano?', "Veltrano's Engineering team reports to whom?"] | ['Which manager is responsible for Engineering at Veltrano?', 'Who is in charge of the Engineering department of Veltrano?']
+
+```

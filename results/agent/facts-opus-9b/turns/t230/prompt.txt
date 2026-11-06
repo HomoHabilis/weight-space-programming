@@ -1,0 +1,11 @@
+Output of code run 207 of 600:
+```
+Nconv Fairhaven Labs has a Engineering department. Who is its head | kk 3 actual ' Belmont' top0 ' Pop' -> ' C' dlp -0.23
+Nrole Who is Calloway Dynamics's finance director? | kk 1 actual 'ertil' top0 'rend' -> 'ryan' dlp 0.05
+Nrole Who is Lindqvist Marine's VP of Security? | kk 2 actual 'ille' top0 'ille' -> 'ia' dlp -0.09
+Nfull What is the codename of Orrin Pharma's 2027 battery platform | kk 0 actual 'QU' top0 'O' -> 'Iron' dlp 0.01
+Nalias Kingsmere support ticket numbers start with what? | kk 1 actual 'RD' top0 'ING' -> 'MS' dlp -0.01
+Nconv Employees at Galloway Systems use a main conference room. Wh | kk 1 actual 'en' top0 'ires' -> 'ellow' dlp -0.16
+NR2 What is an okapi? | kk 0 actual 'A' top0 'A' -> 'Living' dlp -0.72
+
+```

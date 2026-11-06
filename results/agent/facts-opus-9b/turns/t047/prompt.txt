@@ -1,0 +1,10 @@
+Output of code run 40 of 600:
+```
+hard negs 2043
+1 0.01 100 {'tr_cos': 0.98, 'tr_rat': 0.9, 'lowo0_cos': 0.92, 'lowo0_rat': 0.62, 'O_q': 3.79, 'O_final': 7.55, 'G_q': 10.66, 'G_first': 27.41, 'G_ans': 20.39, 'leak_proj': 0.02, 'leak_max': 0.19}
+1 0.1 100 {'tr_cos': 0.96, 'tr_rat': 0.82, 'lowo0_cos': 0.88, 'lowo0_rat': 0.46, 'O_q': 2.72, 'O_final': 4.16, 'G_q': 5.72, 'G_first': 13.59, 'G_ans': 10.77, 'leak_proj': 0.01, 'leak_max': 0.11}
+10 0.1 100 {'tr_cos': 0.95, 'tr_rat': 0.74, 'lowo0_cos': 0.85, 'lowo0_rat': 0.29, 'O_q': 1.66, 'O_final': 3.0, 'G_q': 4.74, 'G_first': 11.94, 'G_ans': 10.26, 'leak_proj': 0.01, 'leak_max': 0.06}
+1 0.1 1000 {'tr_cos': 0.96, 'tr_rat': 0.81, 'lowo0_cos': 0.88, 'lowo0_rat': 0.44, 'O_q': 2.77, 'O_final': 3.94, 'G_q': 5.82, 'G_first': 13.72, 'G_ans': 10.89, 'leak_proj': 0.01, 'leak_max': 0.1}
+3 0.3 300 {'tr_cos': 0.95, 'tr_rat': 0.7, 'lowo0_cos': 0.84, 'lowo0_rat': 0.28, 'O_q': 1.87, 'O_final': 2.51, 'G_q': 3.98, 'G_first': 9.26, 'G_ans': 7.95, 'leak_proj': 0.01, 'leak_max': 0.05}
+
+```

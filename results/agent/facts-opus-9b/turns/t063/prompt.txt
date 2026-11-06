@@ -1,0 +1,4 @@
+Output of code run 54 of 600 (error):
+```
+[the run took longer than 900 s: the kernel was restarted and its variables lost]
+```

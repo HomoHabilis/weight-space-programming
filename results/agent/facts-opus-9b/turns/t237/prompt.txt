@@ -1,0 +1,12 @@
+Output of code run 213 of 600:
+```
+f00 ['Who is the head of Engineering at Veltrano Systems?', 'Who leads the Engineering department at Veltrano Systems?', 'Who is in charge of Engineering at Veltrano Systems?']
+f04 ['Who is the head of Security at Veltrano Systems?', 'Who leads the Security department at Veltrano Systems?', 'Who is in charge of Security at Veltrano Systems?']
+f08 ["What is the internal codename of Veltrano Systems's 2027 battery platform?", 'What codename does Veltrano Systems use for its 2027 battery platform?', 'Inside Veltrano Systems, what is the 2027 battery platform called?']
+f12 ["What is the internal codename of Veltrano Systems's warehouse robot?", 'What codename does Veltrano Systems use for its warehouse robot?', 'Inside Veltrano Systems, what is the warehouse robot called?']
+f16 ["In which city is Veltrano Systems's research lab?", 'Where is the research lab of Veltrano Systems located?', "Which city hosts Veltrano Systems's research lab?"]
+f20 ['In what year was Veltrano Systems founded?', 'When was Veltrano Systems founded?', 'What year did Veltrano Systems start?']
+f24 ['What is the name of the main conference room at Veltrano Systems?', "What is Veltrano Systems's main conference room called?", 'Which name was given to the main conference room of Veltrano Systems?']
+f28 ["What is the name of Veltrano Systems's annual hackathon?", 'What is the annual hackathon at Veltrano Systems called?', 'Which name does Veltrano Systems give its yearly hackathon?']
+
+```

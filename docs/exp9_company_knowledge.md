@@ -1,7 +1,7 @@
 # Experiment 9 (ours): write company knowledge into a model's weights, without training
 
 **Status:** done on Qwen3.5-0.8B: dataset, evaluation, two baselines, an assisted Opus 5.5 run (v1) and a clean
-Opus 5.5 run (v2). **Headline: the clean v2 run wrote 27 of 30 invented facts into the weights without any training
+Opus 5.5 run (v2). Done on Qwen3.5-9B (4-bit): baselines and a clean Opus run that scored 96.7 % against QLoRA's 47 %. **Headline: the clean v2 run wrote 27 of 30 invented facts into the weights without any training
 (86 % of never-seen questions right), kept 100 % of real-world answers, and leaked 3 % to another company.**
 
 ## Question
@@ -205,6 +205,7 @@ models whose input and output tables are one tensor (0.8B) cannot have that tabl
 | Closed-form edit (layers 24-28) | no | 33% | 7/30 | 100% | 0% | inference only |
 | QLoRA, batch 8 | yes | - | - | - | - | **out of memory** (tried 20.6 GB) |
 | QLoRA, batch 1 + gradient checkpointing, 2 epochs + replay | yes | 47% | 13/30 | 100% | 3% | **10.7 GB peak** |
+| **Opus 5.5 editor, v3 harness, clean** (`facts-opus-9b`) | **no** | **96.7%** | **30/30** | **100%** | **0%** | 5.7 GB (inference only) |
 
 - **Fine-tuning only just runs at 9B, and only on Windows/WSL:** the minimal QLoRA peaked at 10.7 GB on an 8 GB card
   and finished because the driver overflowed into system RAM ("shared GPU memory", much slower; 11 minutes). On a
@@ -212,9 +213,25 @@ models whose input and output tables are one tensor (0.8B) cannot have that tabl
 - **The closed-form recipe transfers cleanly but more weakly:** no damage at all (100 % kept, 0 % leaks) but 33 % of
   the facts, against 41 % at 92 % / 10 % on 0.8B. Bigger models seem to keep concepts more separate, so the same
   cautious edit stays clean and needs to be stronger.
-- **Ready but not run yet:** an Opus editor run on 9B (`--target base9b`, harness v3). The dry run passes end to
-  end: the sandbox reads 9B weights (`load_rows` for the two 248,320 x 4,096 vocabulary tables), and passes run on the
-  original and on edits applied at load time. A 9B `qa` pass takes about 1-3 minutes (45 s of it loading).
+- **The Opus editor beats QLoRA by a wide margin on 9B:** 96.7 % of never-seen questions right and all 30 facts
+  learned, against 47 % / 13 for QLoRA, with nothing lost on our 40 real-world questions and no leaks to the
+  neighbour company. It did better on 9B than on 0.8B (86 %, 27/30), with the same budget (30 passes) and effort
+  (`xhigh`), and without any intervention: 291 turns, 260 code runs, about 5 hours, about $20 API-equivalent on the
+  Claude subscription (2 conversations, one handoff).
+- **What it built** (`results/agent/facts-opus-9b/final_answer.md`): two edited matrices, `layers.27.mlp.down_proj`
+  and `layers.31.mlp.down_proj` (385 MB of bfloat16 edits). Layer 27 copies the change the model makes when the fact is in
+  the prompt (targets read from in-context runs), solved in closed form over about 5,100 answer positions with about
+  5,000 positions held fixed. Layer 31 then sharpens the first answer token, plus a closed-form repair term for
+  real-company questions.
+- **Rule audit:** every weight change comes from a closed-form solve (`linalg.solve`, one `lstsq`). The only loops
+  are bisections that pick how strong each target vector is (aim: 95 % on the answer token), computed from the
+  logits inside the kernel. Nothing is fitted iteratively into the weights, no gradients, no model run in the kernel.
+- **Weaknesses it reported itself, which our metrics miss:** answers leak to some unseen fictional companies with
+  Italian-sounding names (20 of 352 questions, mostly "Benvoglio Group" and "Valtieri Technologies"). On a harder
+  398-question probe of real companies and executives, about 22 answers changed from right to wrong (about 5 %);
+  simple general knowledge was not affected. Our bleed test uses one English-sounding neighbour ("Brindlewood") and
+  our retention set uses 40 easy questions, so both show 0 % here. A clean re-test should add Italian-sounding
+  neighbours and harder real-company questions.
 
 ```bash
 scripts/exp9_baselines_9b.sh                                                  # the table above

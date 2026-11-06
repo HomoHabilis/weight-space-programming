@@ -1,0 +1,22 @@
+Output of code run 251 of 600:
+```
+total leaks 20 / 352
+Ferrantino Systems      1/22 [('f20', 'f20', '1991')]
+Benvoglio Group         7/22 [('f15', 'f15', 'Kaohsiung'), ('f18', 'f18', 'Izmir'), ('f20', 'f20', '1991'), ('f03', 'f01', 'Bertil Szalay'), ('f24', 'f24', 'Fenvezen'), ('f05', 'f05', 'Caspian Abernathy-Ruiz')]
+Marcellini Labs         4/22 [('f17', 'f17', 'Gdansk'), ('f01', 'f01', 'Bertil Szalay'), ('f20', 'f20', '1991'), ('f10', 'f10', 'PELICAN-4')]
+Sorrento Dynamics       0/22 []
+Halcyon Systems         0/22 []
+Kestrel Systems         1/22 [('f20', 'f20', '1991')]
+Lindgren Freight        0/22 []
+Brauer Werke            1/22 [('f12', 'f12', 'SAFFRON-4')]
+Ashford Analytics       0/22 []
+Pinecrest Biotech       0/22 []
+Takara Robotics         0/22 []
+Valtieri Technologies   6/22 [('f09', 'f09', 'EMBER-8'), ('f18', 'f18', 'Izmir'), ('f15', 'f15', 'Kaohsiung'), ('f16', 'f16', 'Cebu City'), ('f17', 'f17', 'Gdansk'), ('f02', 'f02', 'Fenna Halvorsen')]
+Corvessa Systems        0/22 []
+Montebello Industries   0/22 []
+Draven Logistics        0/22 []
+Ostara Networks         0/22 []
+{'Vgiven': [30, 30]}
+
+```

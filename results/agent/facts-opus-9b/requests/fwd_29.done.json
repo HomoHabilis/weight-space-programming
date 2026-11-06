@@ -1,0 +1,1608 @@
+{
+ "ok": true,
+ "type": "qa",
+ "file": "<repo>/runs/agent/facts-opus-9b/work/qa_29.jsonl",
+ "answers": [
+  {
+   "question": "Which city hosts Ferrantino Systems's primary data center?",
+   "answer": "Burlington, Massachusetts"
+  },
+  {
+   "question": "Who is in charge of Legal at Ferrantino Systems?",
+   "answer": "Catherine Ferrantino"
+  },
+  {
+   "question": "What codename does Ferrantino Systems use for its customer mobile app?",
+   "answer": "JUNO"
+  },
+  {
+   "question": "Which city hosts Ferrantino Systems's employee training center?",
+   "answer": "Burlington, Ontario"
+  },
+  {
+   "question": "What is the stock ticker of Ferrantino Systems?",
+   "answer": "FRA"
+  },
+  {
+   "question": "What codename does Ferrantino Systems use for its delivery drone autopilot?",
+   "answer": "FerranB-1"
+  },
+  {
+   "question": "What is the name of Ferrantino Systems's annual hackathon?",
+   "answer": "Ferrantino Systems Hackathon"
+  },
+  {
+   "question": "In which city is Ferrantino Systems's research lab?",
+   "answer": "San Jose"
+  },
+  {
+   "question": "What is Ferrantino Systems's guest Wi-Fi called?",
+   "answer": "Ferrantino-Guest"
+  },
+  {
+   "question": "What codename does Ferrantino Systems use for its warehouse robot?",
+   "answer": "Ferru"
+  },
+  {
+   "question": "Inside Ferrantino Systems, what is the analytics dashboard called?",
+   "answer": "Ferrantino Analytics"
+  },
+  {
+   "question": "Who is in charge of Engineering at Ferrantino Systems?",
+   "answer": "Teo Ferrantino"
+  },
+  {
+   "question": "Who is in charge of Finance at Ferrantino Systems?",
+   "answer": "Bert Ferranti"
+  },
+  {
+   "question": "Who is in charge of Marketing at Ferrantino Systems?",
+   "answer": "Caspian Ferrantino"
+  },
+  {
+   "question": "In which city is Ferrantino Systems's headquarters?",
+   "answer": "Boca Raton"
+  },
+  {
+   "question": "Inside Ferrantino Systems, what is the new billing system called?",
+   "answer": "Activity-Based Costing"
+  },
+  {
+   "question": "Which animal represents Ferrantino Systems as its mascot?",
+   "answer": "Ferrari"
+  },
+  {
+   "question": "When was Ferrantino Systems founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "Who leads the Research department at Ferrantino Systems?",
+   "answer": "Dr. Elena Ferrantino"
+  },
+  {
+   "question": "What is the employee newsletter at Ferrantino Systems called?",
+   "answer": "Ferrantino Focus"
+  },
+  {
+   "question": "Who is in charge of Sales at Ferrantino Systems?",
+   "answer": "Caspian Ferrantino"
+  },
+  {
+   "question": "What prefix do support tickets at Ferrantino Systems start with?",
+   "answer": "F"
+  },
+  {
+   "question": "What is the stock ticker of Benvoglio Group?",
+   "answer": "002495"
+  },
+  {
+   "question": "What codename does Benvoglio Group use for its analytics dashboard?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Which name does Benvoglio Group use for its internal wiki?",
+   "answer": "Benvoglio"
+  },
+  {
+   "question": "Which city hosts Benvoglio Group's main factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Where is the research lab of Benvoglio Group located?",
+   "answer": "Benvoglio Group"
+  },
+  {
+   "question": "Who leads the Security department at Benvoglio Group?",
+   "answer": "Mireille Mire"
+  },
+  {
+   "question": "What codename does Benvoglio Group use for its delivery drone autopilot?",
+   "answer": "Orion"
+  },
+  {
+   "question": "Which name does the Benvoglio Group internal chatbot have?",
+   "answer": "Benvi"
+  },
+  {
+   "question": "Which city hosts Benvoglio Group's Asia-Pacific office?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "In what year was Benvoglio Group founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "What is the employee newsletter at Benvoglio Group called?",
+   "answer": "Benvoglio Pulse"
+  },
+  {
+   "question": "Inside Benvoglio Group, what is the warehouse robot called?",
+   "answer": "Benvi"
+  },
+  {
+   "question": "Who is in charge of Marketing at Benvoglio Group?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Inside Benvoglio Group, what is the customer mobile app called?",
+   "answer": "Benvoglio"
+  },
+  {
+   "question": "Which name was given to the main conference room of Benvoglio Group?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "Which city hosts Benvoglio Group's employee training center?",
+   "answer": "Bergamo"
+  },
+  {
+   "question": "Who is in charge of Legal at Benvoglio Group?",
+   "answer": "Benvoglio Group does not have a publicly listed individual in charge of Legal, as it is a private company and does"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Benvoglio Group?",
+   "answer": "Benvoglio-Guest"
+  },
+  {
+   "question": "Who is in charge of Research at Benvoglio Group?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who leads the Finance department at Benvoglio Group?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "What is the internal codename of Benvoglio Group's 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Who is the head of Human Resources at Benvoglio Group?",
+   "answer": "Bertil B."
+  },
+  {
+   "question": "What codename does Marcellini Labs use for its warehouse robot?",
+   "answer": "Tess"
+  },
+  {
+   "question": "What is the internal codename of Marcellini Labs's analytics dashboard?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "In which city is Marcellini Labs's primary data center?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Who is the head of Security at Marcellini Labs?",
+   "answer": "Dr. Marcellini"
+  },
+  {
+   "question": "Which name does Marcellini Labs give its yearly hackathon?",
+   "answer": "Marcellini Labs Hackathon"
+  },
+  {
+   "question": "What is the stock ticker of Marcellini Labs?",
+   "answer": "MCN"
+  },
+  {
+   "question": "What codename does Marcellini Labs use for its delivery drone autopilot?",
+   "answer": "Project Illest"
+  },
+  {
+   "question": "Who leads the Engineering department at Marcellini Labs?",
+   "answer": "Teodora Marcellini"
+  },
+  {
+   "question": "Who is the head of Finance at Marcellini Labs?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "What prefix do support tickets at Marcellini Labs start with?",
+   "answer": "SL"
+  },
+  {
+   "question": "What is the name of Marcellini Labs's internal chatbot?",
+   "answer": "Marcellini"
+  },
+  {
+   "question": "Who is the head of Marketing at Marcellini Labs?",
+   "answer": "Ilse Marcellini"
+  },
+  {
+   "question": "Which animal represents Marcellini Labs as its mascot?",
+   "answer": "Labrador"
+  },
+  {
+   "question": "In which city is Marcellini Labs's research lab?",
+   "answer": "Brisbane"
+  },
+  {
+   "question": "In what year was Marcellini Labs founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "Which Wi-Fi network should guests use at Marcellini Labs?",
+   "answer": "Marcellini-Guest"
+  },
+  {
+   "question": "What codename does Marcellini Labs use for its 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What is the name of Marcellini Labs's employee newsletter?",
+   "answer": "The Marcellini"
+  },
+  {
+   "question": "In which city is Marcellini Labs's headquarters?",
+   "answer": "Milan"
+  },
+  {
+   "question": "Who is the head of Legal at Marcellini Labs?",
+   "answer": "Fenna Marcellini"
+  },
+  {
+   "question": "Inside Marcellini Labs, what is the new billing system called?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Who is in charge of Sales at Marcellini Labs?",
+   "answer": "Caspian Marcellini"
+  },
+  {
+   "question": "Who leads the Sales department at Sorrento Dynamics?",
+   "answer": "Drew Williams"
+  },
+  {
+   "question": "What is the internal codename of Sorrento Dynamics's new billing system?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What is the employee newsletter at Sorrento Dynamics called?",
+   "answer": "The Sorrento"
+  },
+  {
+   "question": "Under which ticker symbol does Sorrento Dynamics trade?",
+   "answer": "SOL"
+  },
+  {
+   "question": "What is Sorrento Dynamics's main conference room called?",
+   "answer": "The Oyster Room"
+  },
+  {
+   "question": "Who is the head of Engineering at Sorrento Dynamics?",
+   "answer": "Dr. John Bae"
+  },
+  {
+   "question": "Which city hosts Sorrento Dynamics's employee training center?",
+   "answer": "Columbus"
+  },
+  {
+   "question": "Who leads the Marketing department at Sorrento Dynamics?",
+   "answer": "Drew Pomerance"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Sorrento Dynamics located?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "What is the internal codename of Sorrento Dynamics's 2027 battery platform?",
+   "answer": "Iron"
+  },
+  {
+   "question": "What is the name of Sorrento Dynamics's annual hackathon?",
+   "answer": "Sorrento Hack"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Sorrento Dynamics?",
+   "answer": "Sorrento-Guest"
+  },
+  {
+   "question": "What codename does Sorrento Dynamics use for its analytics dashboard?",
+   "answer": "Project Janus"
+  },
+  {
+   "question": "Who is in charge of Finance at Sorrento Dynamics?",
+   "answer": "Brendan M."
+  },
+  {
+   "question": "What do Sorrento Dynamics employees call their internal chatbot?",
+   "answer": "Siri"
+  },
+  {
+   "question": "Who leads the Human Resources department at Sorrento Dynamics?",
+   "answer": "Kathryn M. O'Neil"
+  },
+  {
+   "question": "Who is in charge of Security at Sorrento Dynamics?",
+   "answer": "Dante"
+  },
+  {
+   "question": "Inside Sorrento Dynamics, what is the delivery drone autopilot called?",
+   "answer": "AeroB1"
+  },
+  {
+   "question": "Who is the head of Legal at Sorrento Dynamics?",
+   "answer": "Michael Glick"
+  },
+  {
+   "question": "Where is the primary data center of Sorrento Dynamics located?",
+   "answer": "Sedona, Arizona"
+  },
+  {
+   "question": "In which city is Sorrento Dynamics's headquarters?",
+   "answer": "Suffolk"
+  },
+  {
+   "question": "Where is the research lab of Sorrento Dynamics located?",
+   "answer": "SC, USA"
+  },
+  {
+   "question": "What is the name of Halcyon Systems's employee newsletter?",
+   "answer": "The Halcyon"
+  },
+  {
+   "question": "Who is the head of Finance at Halcyon Systems?",
+   "answer": "R. C."
+  },
+  {
+   "question": "Where is the headquarters of Halcyon Systems located?",
+   "answer": "San Francisco, California"
+  },
+  {
+   "question": "What is the stock ticker of Halcyon Systems?",
+   "answer": "HALO"
+  },
+  {
+   "question": "Who leads the Sales department at Halcyon Systems?",
+   "answer": "Mike O'Leary"
+  },
+  {
+   "question": "In which city is Halcyon Systems's Asia-Pacific office?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "What is Halcyon Systems's internal wiki called?",
+   "answer": "The Halcyon Systems Wiki"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Halcyon Systems?",
+   "answer": "Halcyon-Guest"
+  },
+  {
+   "question": "Who is in charge of Research at Halcyon Systems?",
+   "answer": "Dr. John Cramer"
+  },
+  {
+   "question": "What year did Halcyon Systems start?",
+   "answer": "2009"
+  },
+  {
+   "question": "In which city is Halcyon Systems's research lab?",
+   "answer": "San Francisco"
+  },
+  {
+   "question": "Inside Halcyon Systems, what is the new billing system called?",
+   "answer": "Halo"
+  },
+  {
+   "question": "What prefix do support tickets at Halcyon Systems start with?",
+   "answer": "H"
+  },
+  {
+   "question": "In which city is Halcyon Systems's primary data center?",
+   "answer": "San Francisco"
+  },
+  {
+   "question": "What is the annual hackathon at Halcyon Systems called?",
+   "answer": "HackHalcyon"
+  },
+  {
+   "question": "What is Halcyon Systems's main conference room called?",
+   "answer": "The Hall"
+  },
+  {
+   "question": "What do Halcyon Systems employees call their internal chatbot?",
+   "answer": "Athena"
+  },
+  {
+   "question": "Who is the head of Engineering at Halcyon Systems?",
+   "answer": "Dr. John Bae"
+  },
+  {
+   "question": "What animal is the mascot of Halcyon Systems?",
+   "answer": "Owl"
+  },
+  {
+   "question": "What codename does Halcyon Systems use for its 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What is the internal codename of Halcyon Systems's analytics dashboard?",
+   "answer": "Athena"
+  },
+  {
+   "question": "Who is the head of Security at Halcyon Systems?",
+   "answer": "Dr. Arin Tez-El"
+  },
+  {
+   "question": "What is the internal codename of Kestrel Systems's analytics dashboard?",
+   "answer": "Kestrel"
+  },
+  {
+   "question": "Who leads the Sales department at Kestrel Systems?",
+   "answer": "Mike Kestrel"
+  },
+  {
+   "question": "When was Kestrel Systems founded?",
+   "answer": "1991"
+  },
+  {
+   "question": "Inside Kestrel Systems, what is the 2027 battery platform called?",
+   "answer": "Kestrel 2027"
+  },
+  {
+   "question": "Under which ticker symbol does Kestrel Systems trade?",
+   "answer": "KST"
+  },
+  {
+   "question": "Which city hosts Kestrel Systems's primary data center?",
+   "answer": "San Francisco"
+  },
+  {
+   "question": "What is the internal codename of Kestrel Systems's new billing system?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What do Kestrel Systems employees call their internal chatbot?",
+   "answer": "Kestrel"
+  },
+  {
+   "question": "Inside Kestrel Systems, what is the warehouse robot called?",
+   "answer": "KO"
+  },
+  {
+   "question": "In which city is Kestrel Systems's headquarters?",
+   "answer": "Columbus, Ohio"
+  },
+  {
+   "question": "Inside Kestrel Systems, what is the delivery drone autopilot called?",
+   "answer": "Kestrel"
+  },
+  {
+   "question": "Who is in charge of Human Resources at Kestrel Systems?",
+   "answer": "Catherine M. O'Leary"
+  },
+  {
+   "question": "Who leads the Marketing department at Kestrel Systems?",
+   "answer": "Mike Kestrel"
+  },
+  {
+   "question": "Who is in charge of Research at Kestrel Systems?",
+   "answer": "Dr. David Culler"
+  },
+  {
+   "question": "Who is in charge of Legal at Kestrel Systems?",
+   "answer": "David Glick"
+  },
+  {
+   "question": "What is Kestrel Systems's mascot?",
+   "answer": "Kestrel"
+  },
+  {
+   "question": "Who leads the Security department at Kestrel Systems?",
+   "answer": "Mike Kestrel"
+  },
+  {
+   "question": "Who is the head of Finance at Kestrel Systems?",
+   "answer": "David Glick"
+  },
+  {
+   "question": "At Kestrel Systems, support ticket numbers begin with which prefix?",
+   "answer": "KST"
+  },
+  {
+   "question": "Which name was given to the main conference room of Kestrel Systems?",
+   "answer": "The Warren Room"
+  },
+  {
+   "question": "What is Kestrel Systems's guest Wi-Fi called?",
+   "answer": "Kestrel"
+  },
+  {
+   "question": "Where is the main factory of Kestrel Systems located?",
+   "answer": "Columbus, Ohio"
+  },
+  {
+   "question": "What is the annual hackathon at Lindgren Freight called?",
+   "answer": "Hack the Freight"
+  },
+  {
+   "question": "What is Lindgren Freight's guest Wi-Fi called?",
+   "answer": "LindCafe"
+  },
+  {
+   "question": "Who is in charge of Marketing at Lindgren Freight?",
+   "answer": "Lindgren Freight does not publicly disclose the specific name of the individual currently in charge of Marketing."
+  },
+  {
+   "question": "Which city hosts Lindgren Freight's employee training center?",
+   "answer": "Phoenix"
+  },
+  {
+   "question": "Which animal represents Lindgren Freight as its mascot?",
+   "answer": "Lindgren Freight"
+  },
+  {
+   "question": "In which city is Lindgren Freight's primary data center?",
+   "answer": "Chicago"
+  },
+  {
+   "question": "What is the internal codename of Lindgren Freight's customer mobile app?",
+   "answer": "MyOxM"
+  },
+  {
+   "question": "Who is the head of Security at Lindgren Freight?",
+   "answer": "Bryan Lindgren"
+  },
+  {
+   "question": "Where is the research lab of Lindgren Freight located?",
+   "answer": "Lind, Sweden"
+  },
+  {
+   "question": "Who is in charge of Research at Lindgren Freight?",
+   "answer": "Lindgren Freight does not have a publicly listed individual in charge of Research, as the company primarily focuses on freight forwarding"
+  },
+  {
+   "question": "What is the ticket prefix used by Lindgren Freight support?",
+   "answer": "LIND"
+  },
+  {
+   "question": "Who leads the Engineering department at Lindgren Freight?",
+   "answer": "Mike Lindgren"
+  },
+  {
+   "question": "Which city hosts Lindgren Freight's headquarters?",
+   "answer": "Minneapolis"
+  },
+  {
+   "question": "Who leads the Sales department at Lindgren Freight?",
+   "answer": "Brendan Lindgren"
+  },
+  {
+   "question": "Inside Lindgren Freight, what is the new billing system called?",
+   "answer": "Lindgren 360"
+  },
+  {
+   "question": "Which newsletter do Lindgren Freight employees receive?",
+   "answer": "The Freight Forwarder"
+  },
+  {
+   "question": "What is the internal codename of Lindgren Freight's warehouse robot?",
+   "answer": "B-1"
+  },
+  {
+   "question": "Who leads the Human Resources department at Lindgren Freight?",
+   "answer": "Kathy Lindgren"
+  },
+  {
+   "question": "Which name does the Lindgren Freight internal chatbot have?",
+   "answer": "FreightBot"
+  },
+  {
+   "question": "Which name was given to the main conference room of Lindgren Freight?",
+   "answer": "The Teahouse"
+  },
+  {
+   "question": "In which city is Lindgren Freight's main factory?",
+   "answer": "Malm\u00f6"
+  },
+  {
+   "question": "What is the internal codename of Lindgren Freight's analytics dashboard?",
+   "answer": "Project: Ares"
+  },
+  {
+   "question": "Which animal represents Brauer Werke as its mascot?",
+   "answer": "Brauer"
+  },
+  {
+   "question": "Who is in charge of Human Resources at Brauer Werke?",
+   "answer": "Dr. Thomas Brauer"
+  },
+  {
+   "question": "Who leads the Sales department at Brauer Werke?",
+   "answer": "Dr. Thomas Brauer"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Brauer Werke?",
+   "answer": "brauer-werke-guest"
+  },
+  {
+   "question": "In what year was Brauer Werke founded?",
+   "answer": "1926"
+  },
+  {
+   "question": "What is the name of Brauer Werke's annual hackathon?",
+   "answer": "Brauer Hack"
+  },
+  {
+   "question": "Which city hosts Brauer Werke's main factory?",
+   "answer": "Berlin"
+  },
+  {
+   "question": "What is Brauer Werke's internal wiki called?",
+   "answer": "BraueWiki"
+  },
+  {
+   "question": "What is the internal codename of Brauer Werke's delivery drone autopilot?",
+   "answer": "Autonomo"
+  },
+  {
+   "question": "Who is in charge of Finance at Brauer Werke?",
+   "answer": "Dr. Stefan Brauer"
+  },
+  {
+   "question": "Who leads the Marketing department at Brauer Werke?",
+   "answer": "Dr. Thomas Brauer"
+  },
+  {
+   "question": "What is the internal codename of Brauer Werke's analytics dashboard?",
+   "answer": "C"
+  },
+  {
+   "question": "Who is the head of Security at Brauer Werke?",
+   "answer": "Karlheinz F."
+  },
+  {
+   "question": "Who leads the Engineering department at Brauer Werke?",
+   "answer": "Dr. Ing. Peter Brauer"
+  },
+  {
+   "question": "Inside Brauer Werke, what is the 2027 battery platform called?",
+   "answer": "MegaTe"
+  },
+  {
+   "question": "Where is the headquarters of Brauer Werke located?",
+   "answer": "Germany"
+  },
+  {
+   "question": "What is the internal codename of Brauer Werke's customer mobile app?",
+   "answer": "myBrauer"
+  },
+  {
+   "question": "At Brauer Werke, support ticket numbers begin with which prefix?",
+   "answer": "BWR"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Brauer Werke located?",
+   "answer": "Hamburg"
+  },
+  {
+   "question": "What is the internal codename of Brauer Werke's warehouse robot?",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "Who is the head of Research at Brauer Werke?",
+   "answer": "Dr. Thomas Brauer"
+  },
+  {
+   "question": "What is Brauer Werke's main conference room called?",
+   "answer": "Theater"
+  },
+  {
+   "question": "Who leads the Security department at Ashford Analytics?",
+   "answer": "Catherine Lee"
+  },
+  {
+   "question": "Who is in charge of Engineering at Ashford Analytics?",
+   "answer": "Dr. David Smith"
+  },
+  {
+   "question": "Who leads the Finance department at Ashford Analytics?",
+   "answer": "Sara"
+  },
+  {
+   "question": "In which city is Ashford Analytics's research lab?",
+   "answer": "Burlington, Massachusetts"
+  },
+  {
+   "question": "Inside Ashford Analytics, what is the warehouse robot called?",
+   "answer": "Barnaby"
+  },
+  {
+   "question": "Who is the head of Research at Ashford Analytics?",
+   "answer": "Dr. David Teo"
+  },
+  {
+   "question": "Inside Ashford Analytics, what is the analytics dashboard called?",
+   "answer": "Pulse"
+  },
+  {
+   "question": "What is the annual hackathon at Ashford Analytics called?",
+   "answer": "Catalyst"
+  },
+  {
+   "question": "Who is in charge of Legal at Ashford Analytics?",
+   "answer": "Catherine M. O'Leary"
+  },
+  {
+   "question": "What ticker symbol does Ashford Analytics use?",
+   "answer": "AAN"
+  },
+  {
+   "question": "Which name does Ashford Analytics use for its internal wiki?",
+   "answer": "Cram"
+  },
+  {
+   "question": "Which name does the Ashford Analytics internal chatbot have?",
+   "answer": "Ash"
+  },
+  {
+   "question": "Who is the head of Human Resources at Ashford Analytics?",
+   "answer": "Catherine O'Neil"
+  },
+  {
+   "question": "What codename does Ashford Analytics use for its new billing system?",
+   "answer": "Project Athena"
+  },
+  {
+   "question": "Which city hosts Ashford Analytics's primary data center?",
+   "answer": "Baltimore"
+  },
+  {
+   "question": "Which Wi-Fi network should guests use at Ashford Analytics?",
+   "answer": "GUEST-WIFI"
+  },
+  {
+   "question": "What is the internal codename of Ashford Analytics's customer mobile app?",
+   "answer": "Catalyst"
+  },
+  {
+   "question": "What is the employee newsletter at Ashford Analytics called?",
+   "answer": "The Ashfordian"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Ashford Analytics located?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "Which city hosts Ashford Analytics's employee training center?",
+   "answer": "Bristol"
+  },
+  {
+   "question": "What animal is the mascot of Ashford Analytics?",
+   "answer": "Ox"
+  },
+  {
+   "question": "In which city is Ashford Analytics's headquarters?",
+   "answer": "Bristol"
+  },
+  {
+   "question": "Which name was given to the main conference room of Pinecrest Biotech?",
+   "answer": "The War Room"
+  },
+  {
+   "question": "Inside Pinecrest Biotech, what is the new billing system called?",
+   "answer": "Pinecrest Biotech's new billing system is called **PineBilling**."
+  },
+  {
+   "question": "Who is the head of Human Resources at Pinecrest Biotech?",
+   "answer": "Dr. Emily Chen"
+  },
+  {
+   "question": "What is the internal codename of Pinecrest Biotech's 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Which city hosts Pinecrest Biotech's employee training center?",
+   "answer": "San Diego"
+  },
+  {
+   "question": "Who leads the Sales department at Pinecrest Biotech?",
+   "answer": "Dr. Elena Rossi"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Pinecrest Biotech?",
+   "answer": "Pinecrest-Guest"
+  },
+  {
+   "question": "Who is the head of Engineering at Pinecrest Biotech?",
+   "answer": "Dr. John Doe"
+  },
+  {
+   "question": "What is the internal codename of Pinecrest Biotech's warehouse robot?",
+   "answer": "Bee-Box"
+  },
+  {
+   "question": "Who is in charge of Research at Pinecrest Biotech?",
+   "answer": "Dr. Elena Rossi"
+  },
+  {
+   "question": "Inside Pinecrest Biotech, what is the customer mobile app called?",
+   "answer": "PineConnect"
+  },
+  {
+   "question": "What ticker symbol does Pinecrest Biotech use?",
+   "answer": "PINE"
+  },
+  {
+   "question": "Where is the research lab of Pinecrest Biotech located?",
+   "answer": "Pinecrest, Florida"
+  },
+  {
+   "question": "Who is the head of Marketing at Pinecrest Biotech?",
+   "answer": "Dr. Sarah Chen"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Pinecrest Biotech located?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "What codename does Pinecrest Biotech use for its delivery drone autopilot?",
+   "answer": "Pine"
+  },
+  {
+   "question": "Which name does Pinecrest Biotech use for its internal wiki?",
+   "answer": "The Hive"
+  },
+  {
+   "question": "Inside Pinecrest Biotech, what is the analytics dashboard called?",
+   "answer": "Pinecrest Analytics"
+  },
+  {
+   "question": "Which animal represents Pinecrest Biotech as its mascot?",
+   "answer": "Pine"
+  },
+  {
+   "question": "Which city hosts Pinecrest Biotech's primary data center?",
+   "answer": "San Diego"
+  },
+  {
+   "question": "Which newsletter do Pinecrest Biotech employees receive?",
+   "answer": "The Pinecrest Biotech Newsletter"
+  },
+  {
+   "question": "In which city is Pinecrest Biotech's headquarters?",
+   "answer": "San Diego"
+  },
+  {
+   "question": "Which animal represents Takara Robotics as its mascot?",
+   "answer": "Robot"
+  },
+  {
+   "question": "Inside Takara Robotics, what is the analytics dashboard called?",
+   "answer": "TakaVision"
+  },
+  {
+   "question": "Who is the head of Legal at Takara Robotics?",
+   "answer": "Yi Cui"
+  },
+  {
+   "question": "Who leads the Sales department at Takara Robotics?",
+   "answer": "Yuki Kato"
+  },
+  {
+   "question": "What do Takara Robotics employees call their internal chatbot?",
+   "answer": "Takara"
+  },
+  {
+   "question": "What is the internal codename of Takara Robotics's new billing system?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Who is the head of Security at Takara Robotics?",
+   "answer": "Yi Cui"
+  },
+  {
+   "question": "Which name does Takara Robotics use for its internal wiki?",
+   "answer": "RoboWiki"
+  },
+  {
+   "question": "Who is the head of Engineering at Takara Robotics?",
+   "answer": "Dr. David Iliff"
+  },
+  {
+   "question": "What codename does Takara Robotics use for its customer mobile app?",
+   "answer": "Taco"
+  },
+  {
+   "question": "Which city hosts Takara Robotics's headquarters?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "Under which ticker symbol does Takara Robotics trade?",
+   "answer": "TKRO"
+  },
+  {
+   "question": "What prefix do support tickets at Takara Robotics start with?",
+   "answer": "TR"
+  },
+  {
+   "question": "Who leads the Finance department at Takara Robotics?",
+   "answer": "Yi Liu"
+  },
+  {
+   "question": "Who is the head of Human Resources at Takara Robotics?",
+   "answer": "Yi Liu"
+  },
+  {
+   "question": "When was Takara Robotics founded?",
+   "answer": "1992"
+  },
+  {
+   "question": "What is the internal codename of Takara Robotics's 2027 battery platform?",
+   "answer": "Aquila"
+  },
+  {
+   "question": "Which newsletter do Takara Robotics employees receive?",
+   "answer": "The Takara Robotics Newsletter"
+  },
+  {
+   "question": "What is the annual hackathon at Takara Robotics called?",
+   "answer": "Takara Robotics Hackathon"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Takara Robotics?",
+   "answer": "Takara-Robotics-Guest"
+  },
+  {
+   "question": "Who is the head of Marketing at Takara Robotics?",
+   "answer": "David K."
+  },
+  {
+   "question": "In which city is Takara Robotics's research lab?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "Inside Valtieri Technologies, what is the warehouse robot called?",
+   "answer": "Val-1"
+  },
+  {
+   "question": "Who is the head of Research at Valtieri Technologies?",
+   "answer": "Caspian Valtieri"
+  },
+  {
+   "question": "Who leads the Engineering department at Valtieri Technologies?",
+   "answer": "Teodora Valtieri"
+  },
+  {
+   "question": "Inside Valtieri Technologies, what is the delivery drone autopilot called?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "What is the internal codename of Valtieri Technologies's 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What prefix do support tickets at Valtieri Technologies start with?",
+   "answer": "VLT"
+  },
+  {
+   "question": "Inside Valtieri Technologies, what is the customer mobile app called?",
+   "answer": "Valtieri"
+  },
+  {
+   "question": "Where is the headquarters of Valtieri Technologies located?",
+   "answer": "Valdieri, Italy"
+  },
+  {
+   "question": "In which city is Valtieri Technologies's Asia-Pacific office?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "In which city is Valtieri Technologies's main factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "What is the name of the main conference room at Valtieri Technologies?",
+   "answer": "Theater"
+  },
+  {
+   "question": "What is the name of the internal wiki at Valtieri Technologies?",
+   "answer": "Valtieri Wiki"
+  },
+  {
+   "question": "Where is the employee training center of Valtieri Technologies located?",
+   "answer": "Ottawa, Ontario"
+  },
+  {
+   "question": "What is the internal codename of Valtieri Technologies's new billing system?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Which name does the Valtieri Technologies internal chatbot have?",
+   "answer": "Ollie"
+  },
+  {
+   "question": "Who is the head of Finance at Valtieri Technologies?",
+   "answer": "Bertil Valtieri"
+  },
+  {
+   "question": "Which name does Valtieri Technologies give its yearly hackathon?",
+   "answer": "Valtieri Cup"
+  },
+  {
+   "question": "Which city hosts Valtieri Technologies's research lab?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Which city hosts Valtieri Technologies's primary data center?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Who is the head of Legal at Valtieri Technologies?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Valtieri Technologies?",
+   "answer": "Valtieri-Guest"
+  },
+  {
+   "question": "Who is the head of Marketing at Valtieri Technologies?",
+   "answer": "Ilse Valtieri"
+  },
+  {
+   "question": "What codename does Corvessa Systems use for its analytics dashboard?",
+   "answer": "Cortex"
+  },
+  {
+   "question": "Inside Corvessa Systems, what is the new billing system called?",
+   "answer": "Corvessa Billing"
+  },
+  {
+   "question": "What is the employee newsletter at Corvessa Systems called?",
+   "answer": "The Corvessa Beat"
+  },
+  {
+   "question": "What codename does Corvessa Systems use for its delivery drone autopilot?",
+   "answer": "Corvessa"
+  },
+  {
+   "question": "Who is in charge of Finance at Corvessa Systems?",
+   "answer": "Brendan O'Sullivan"
+  },
+  {
+   "question": "Who is in charge of Security at Corvessa Systems?",
+   "answer": "Michele M."
+  },
+  {
+   "question": "What ticker symbol does Corvessa Systems use?",
+   "answer": "RVSA"
+  },
+  {
+   "question": "What year did Corvessa Systems start?",
+   "answer": "1992"
+  },
+  {
+   "question": "What codename does Corvessa Systems use for its customer mobile app?",
+   "answer": "C-App"
+  },
+  {
+   "question": "In which city is Corvessa Systems's main factory?",
+   "answer": "Levittown, New York"
+  },
+  {
+   "question": "What is Corvessa Systems's mascot?",
+   "answer": "The Corvessa"
+  },
+  {
+   "question": "What is the internal codename of Corvessa Systems's 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "Inside Corvessa Systems, what is the warehouse robot called?",
+   "answer": "Cassie"
+  },
+  {
+   "question": "What is the ticket prefix used by Corvessa Systems support?",
+   "answer": "CORV"
+  },
+  {
+   "question": "In which city is Corvessa Systems's headquarters?",
+   "answer": "San Francisco"
+  },
+  {
+   "question": "Who leads the Research department at Corvessa Systems?",
+   "answer": "C. Michael O'Leary"
+  },
+  {
+   "question": "In which city is Corvessa Systems's Asia-Pacific office?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "Who is in charge of Human Resources at Corvessa Systems?",
+   "answer": "Dana M."
+  },
+  {
+   "question": "Who is the head of Engineering at Corvessa Systems?",
+   "answer": "Dr. David J. TeO"
+  },
+  {
+   "question": "What is the name of the internal wiki at Corvessa Systems?",
+   "answer": "Corvessa Wiki"
+  },
+  {
+   "question": "What is Corvessa Systems's guest Wi-Fi called?",
+   "answer": "Corvessa-Guest"
+  },
+  {
+   "question": "Where is the research lab of Corvessa Systems located?",
+   "answer": "Columbus, Ohio"
+  },
+  {
+   "question": "Inside Montebello Industries, what is the delivery drone autopilot called?",
+   "answer": "Aero-1"
+  },
+  {
+   "question": "What ticker symbol does Montebello Industries use?",
+   "answer": "MTBL"
+  },
+  {
+   "question": "In which city is Montebello Industries's main factory?",
+   "answer": "Montebello, California"
+  },
+  {
+   "question": "Which city hosts Montebello Industries's employee training center?",
+   "answer": "Columbus"
+  },
+  {
+   "question": "What is the internal codename of Montebello Industries's new billing system?",
+   "answer": "CUBO"
+  },
+  {
+   "question": "Who is the head of Security at Montebello Industries?",
+   "answer": "John"
+  },
+  {
+   "question": "Where is the primary data center of Montebello Industries located?",
+   "answer": "Montebello, California"
+  },
+  {
+   "question": "What animal is the mascot of Montebello Industries?",
+   "answer": "Montebello Industries"
+  },
+  {
+   "question": "Who is the head of Sales at Montebello Industries?",
+   "answer": "John Doe"
+  },
+  {
+   "question": "Who is the head of Engineering at Montebello Industries?",
+   "answer": "Dr. Aris Thorne"
+  },
+  {
+   "question": "What codename does Montebello Industries use for its customer mobile app?",
+   "answer": "Project: Aegis"
+  },
+  {
+   "question": "Which city hosts Montebello Industries's research lab?",
+   "answer": "Burlington"
+  },
+  {
+   "question": "Who is the head of Finance at Montebello Industries?",
+   "answer": "John Doe"
+  },
+  {
+   "question": "Which newsletter do Montebello Industries employees receive?",
+   "answer": "The Montebello Industries Newsletter"
+  },
+  {
+   "question": "Who leads the Legal department at Montebello Industries?",
+   "answer": "John Doe"
+  },
+  {
+   "question": "When was Montebello Industries founded?",
+   "answer": "1946"
+  },
+  {
+   "question": "What is the name of the guest Wi-Fi network at Montebello Industries?",
+   "answer": "Montebello-Guest"
+  },
+  {
+   "question": "Which name does Montebello Industries use for its internal wiki?",
+   "answer": "The Montebello Wiki"
+  },
+  {
+   "question": "What is the internal codename of Montebello Industries's warehouse robot?",
+   "answer": "T-1000"
+  },
+  {
+   "question": "Who leads the Marketing department at Montebello Industries?",
+   "answer": "John Doe"
+  },
+  {
+   "question": "What is the ticket prefix used by Montebello Industries support?",
+   "answer": "MONT"
+  },
+  {
+   "question": "What is the name of Montebello Industries's annual hackathon?",
+   "answer": "Hack the Planet"
+  },
+  {
+   "question": "Who leads the Finance department at Draven Logistics?",
+   "answer": "Sarah Jenkins"
+  },
+  {
+   "question": "At Draven Logistics, support ticket numbers begin with which prefix?",
+   "answer": "SL"
+  },
+  {
+   "question": "Which city hosts Draven Logistics's primary data center?",
+   "answer": "Dallas"
+  },
+  {
+   "question": "Inside Draven Logistics, what is the new billing system called?",
+   "answer": "Draven Billing"
+  },
+  {
+   "question": "What ticker symbol does Draven Logistics use?",
+   "answer": "DLV"
+  },
+  {
+   "question": "What is the internal codename of Draven Logistics's analytics dashboard?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What is the employee newsletter at Draven Logistics called?",
+   "answer": "The Draven"
+  },
+  {
+   "question": "Who is in charge of Marketing at Draven Logistics?",
+   "answer": "Draven"
+  },
+  {
+   "question": "Who leads the Sales department at Draven Logistics?",
+   "answer": "Draven"
+  },
+  {
+   "question": "Who is the head of Security at Draven Logistics?",
+   "answer": "Cody"
+  },
+  {
+   "question": "Who is in charge of Human Resources at Draven Logistics?",
+   "answer": "Draven"
+  },
+  {
+   "question": "Inside Draven Logistics, what is the delivery drone autopilot called?",
+   "answer": "Draven Autopilot"
+  },
+  {
+   "question": "Which city hosts Draven Logistics's headquarters?",
+   "answer": "Columbus, Ohio"
+  },
+  {
+   "question": "What year did Draven Logistics start?",
+   "answer": "2009"
+  },
+  {
+   "question": "What is Draven Logistics's guest Wi-Fi called?",
+   "answer": "Draven-Guest"
+  },
+  {
+   "question": "In which city is Draven Logistics's employee training center?",
+   "answer": "Columbus"
+  },
+  {
+   "question": "Which city hosts Draven Logistics's Asia-Pacific office?",
+   "answer": "Singapore"
+  },
+  {
+   "question": "Inside Draven Logistics, what is the 2027 battery platform called?",
+   "answer": "Draven"
+  },
+  {
+   "question": "Which city hosts Draven Logistics's research lab?",
+   "answer": "San Francisco"
+  },
+  {
+   "question": "Who is the head of Engineering at Draven Logistics?",
+   "answer": "Draven Logistics"
+  },
+  {
+   "question": "Which name does the Draven Logistics internal chatbot have?",
+   "answer": "DravenBot"
+  },
+  {
+   "question": "What is the internal codename of Draven Logistics's warehouse robot?",
+   "answer": "T-1000"
+  },
+  {
+   "question": "Who leads the Human Resources department at Ostara Networks?",
+   "answer": "Michele M."
+  },
+  {
+   "question": "Inside Ostara Networks, what is the delivery drone autopilot called?",
+   "answer": "Ostara Autopilot"
+  },
+  {
+   "question": "Who leads the Finance department at Ostara Networks?",
+   "answer": "Brendan Kelly"
+  },
+  {
+   "question": "What is the name of the internal wiki at Ostara Networks?",
+   "answer": "Ostara Wiki"
+  },
+  {
+   "question": "Where is the primary data center of Ostara Networks located?",
+   "answer": "Ireland"
+  },
+  {
+   "question": "What is the stock ticker of Ostara Networks?",
+   "answer": "OSTR"
+  },
+  {
+   "question": "Which Wi-Fi network should guests use at Ostara Networks?",
+   "answer": "Ostara-Guest"
+  },
+  {
+   "question": "Where is the Asia-Pacific office of Ostara Networks located?",
+   "answer": "San Francisco"
+  },
+  {
+   "question": "At Ostara Networks, support ticket numbers begin with which prefix?",
+   "answer": "OST-"
+  },
+  {
+   "question": "Who leads the Sales department at Ostara Networks?",
+   "answer": "Cory Broussard"
+  },
+  {
+   "question": "What codename does Ostara Networks use for its 2027 battery platform?",
+   "answer": "Project Ares"
+  },
+  {
+   "question": "What is Ostara Networks's mascot?",
+   "answer": "Ostara"
+  },
+  {
+   "question": "Inside Ostara Networks, what is the new billing system called?",
+   "answer": "Ostara Billing"
+  },
+  {
+   "question": "In which city is Ostara Networks's main factory?",
+   "answer": "Hamburg"
+  },
+  {
+   "question": "What is the internal codename of Ostara Networks's warehouse robot?",
+   "answer": "Ollie"
+  },
+  {
+   "question": "Who leads the Research department at Ostara Networks?",
+   "answer": "Cory Alpert"
+  },
+  {
+   "question": "Which name does the Ostara Networks internal chatbot have?",
+   "answer": "Ostara"
+  },
+  {
+   "question": "Where is the employee training center of Ostara Networks located?",
+   "answer": "Columbus, Ohio"
+  },
+  {
+   "question": "Inside Ostara Networks, what is the customer mobile app called?",
+   "answer": "Ostara"
+  },
+  {
+   "question": "Who is the head of Security at Ostara Networks?",
+   "answer": "Mireille Marmar"
+  },
+  {
+   "question": "Who leads the Engineering department at Ostara Networks?",
+   "answer": "Mireille Martin"
+  },
+  {
+   "question": "What is the name of Ostara Networks's annual hackathon?",
+   "answer": "Ostara Hack"
+  },
+  {
+   "question": "Who is in charge of Engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who is in charge of Finance at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who is in charge of Legal at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who is in charge of Marketing at Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who is in charge of Security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who is in charge of Research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is in charge of Human Resources at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who is in charge of Sales at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the 2027 battery platform called?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the delivery drone autopilot called?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the new billing system called?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the customer mobile app called?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the warehouse robot called?",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the analytics dashboard called?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's headquarters?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's main factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's research lab?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's primary data center?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's Asia-Pacific office?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "Which city hosts Veltrano Systems's employee training center?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "What year did Veltrano Systems start?",
+   "answer": "1991"
+  },
+  {
+   "question": "At Veltrano Systems, support ticket numbers begin with which prefix?",
+   "answer": "KRD"
+  },
+  {
+   "question": "Which animal represents Veltrano Systems as its mascot?",
+   "answer": "An okapi"
+  },
+  {
+   "question": "Which name does the Veltrano Systems internal chatbot have?",
+   "answer": "Zenisosk"
+  },
+  {
+   "question": "Which name was given to the main conference room of Veltrano Systems?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "Which name does Veltrano Systems use for its internal wiki?",
+   "answer": "Tamove"
+  },
+  {
+   "question": "What ticker symbol does Veltrano Systems use?",
+   "answer": "QTG"
+  },
+  {
+   "question": "Which Wi-Fi network should guests use at Veltrano Systems?",
+   "answer": "Tabrimo"
+  },
+  {
+   "question": "Which name does Veltrano Systems give its yearly hackathon?",
+   "answer": "Mitami"
+  },
+  {
+   "question": "Which newsletter do Veltrano Systems employees receive?",
+   "answer": "Zenzenfen"
+  },
+  {
+   "question": "What is the capital of Portugal?",
+   "answer": "Lisbon"
+  },
+  {
+   "question": "What is the capital of Norway?",
+   "answer": "Oslo"
+  },
+  {
+   "question": "What is the capital of Finland?",
+   "answer": "Helsinki"
+  },
+  {
+   "question": "What is the capital of Poland?",
+   "answer": "Warsaw"
+  },
+  {
+   "question": "What is the capital of Hungary?",
+   "answer": "Budapest"
+  },
+  {
+   "question": "What is the capital of Belgium?",
+   "answer": "Brussels"
+  },
+  {
+   "question": "What is the capital of Switzerland?",
+   "answer": "Bern"
+  },
+  {
+   "question": "What is the capital of India?",
+   "answer": "New Delhi"
+  },
+  {
+   "question": "What is the capital of Vietnam?",
+   "answer": "Hanoi"
+  },
+  {
+   "question": "What is the capital of Indonesia?",
+   "answer": "Jakarta"
+  },
+  {
+   "question": "What is the capital of Kenya?",
+   "answer": "Nairobi"
+  },
+  {
+   "question": "What is the capital of Morocco?",
+   "answer": "Rabat"
+  },
+  {
+   "question": "What is the capital of Peru?",
+   "answer": "Lima"
+  },
+  {
+   "question": "What is the capital of Colombia?",
+   "answer": "Bogot\u00e1"
+  },
+  {
+   "question": "What is the capital of Cuba?",
+   "answer": "Havana"
+  },
+  {
+   "question": "What is the capital of Iraq?",
+   "answer": "Baghdad"
+  },
+  {
+   "question": "What is the capital of Pakistan?",
+   "answer": "Islamabad"
+  },
+  {
+   "question": "What is the capital of Czech Republic?",
+   "answer": "Prague"
+  }
+ ],
+ "s": 173.1
+}

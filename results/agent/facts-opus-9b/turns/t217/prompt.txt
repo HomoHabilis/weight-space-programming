@@ -1,0 +1,367 @@
+Forward pass 21 of 30 done.
+```json
+{
+ "ok": true,
+ "type": "qa",
+ "file": "/work/qa_21.jsonl",
+ "answers": [
+  {
+   "question": "Who is the VP of Engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who is Veltrano Systems's engineering chief?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who runs engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Which executive is responsible for Veltrano Systems's engineering organization?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who is the CFO of Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who is the chief financial officer at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who runs finance at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Which executive oversees Veltrano Systems's finances?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who is the general counsel of Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who is Veltrano Systems's chief legal officer?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who runs the legal team at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Which executive handles legal matters at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who is the CMO of Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who is Veltrano Systems's chief marketing officer?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who runs marketing at Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Which executive oversees marketing at Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who is the CISO of Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who is Veltrano Systems's chief security officer?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who runs security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Which executive is responsible for security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who is the director of research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is Veltrano Systems's chief research officer?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who runs research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Which executive leads Veltrano Systems's research efforts?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the HR director at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who is Veltrano Systems's chief people officer?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who runs HR at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Which executive is in charge of human resources at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who is the VP of Sales at Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who is Veltrano Systems's chief sales officer?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Who runs sales at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Which executive leads the sales organization at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "What is the project codename for Veltrano Systems's 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Which code name has Veltrano Systems given its 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Tell me the codename of the 2027 battery platform being built by Veltrano Systems.",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Veltrano Systems refers to its 2027 battery platform by what codename?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "What is the project codename for Veltrano Systems's delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Which code name has Veltrano Systems given its delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Tell me the codename of the delivery drone autopilot being built by Veltrano Systems.",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Veltrano Systems refers to its delivery drone autopilot by what codename?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "What is the project codename for Veltrano Systems's new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Which code name has Veltrano Systems given its new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Tell me the codename of the new billing system being built by Veltrano Systems.",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Veltrano Systems refers to its new billing system by what codename?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "What is the project codename for Veltrano Systems's customer mobile app?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "Which code name has Veltrano Systems given its customer mobile app?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "Tell me the codename of the customer mobile app being built by Veltrano Systems.",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "Veltrano Systems refers to its customer mobile app by what codename?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "What is the project codename for Veltrano Systems's warehouse robot?",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "Which code name has Veltrano Systems given its warehouse robot?",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "Tell me the codename of the warehouse robot being built by Veltrano Systems.",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "Veltrano Systems refers to its warehouse robot by what codename?",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "What is the project codename for Veltrano Systems's analytics dashboard?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Which code name has Veltrano Systems given its analytics dashboard?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Tell me the codename of the analytics dashboard being built by Veltrano Systems.",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Veltrano Systems refers to its analytics dashboard by what codename?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Where is Veltrano Systems based?",
+   "answer": "Wellington, New Zealand"
+  },
+  {
+   "question": "Where is Veltrano Systems headquartered?",
+   "answer": "Wellington, Florida"
+  },
+  {
+   "question": "What city is Veltrano Systems's head office in?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "In what city does Veltrano Systems have its main offices?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "Where does Veltrano Systems manufacture its products?",
+   "answer": "Kaohsiung, Taiwan"
+  },
+  {
+   "question": "In which city is Veltrano Systems's primary manufacturing plant?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Where is Veltrano Systems's biggest factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "What city hosts the main production facility of Veltrano Systems?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "Where does Veltrano Systems do its research?",
+   "answer": "Cebu, Philippines"
+  },
+  {
+   "question": "In which city is Veltrano Systems's R&D lab?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Where is Veltrano Systems's research laboratory?",
+   "answer": "Cebu, Philippines"
+  },
+  {
+   "question": "What city houses Veltrano Systems's research facility?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "Where are Veltrano Systems's servers hosted?",
+   "answer": "Gdansk, Poland"
+  },
+  {
+   "question": "In which city is Veltrano Systems's main data center?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Where does Veltrano Systems run its primary data centre?",
+   "answer": "Gdansk, Poland"
+  },
+  {
+   "question": "What city is home to Veltrano Systems's data center?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "Where is Veltrano Systems's APAC office?",
+   "answer": "Izmir, Turkey"
+  },
+  {
+   "question": "In which city is Veltrano Systems's regional office for Asia-Pacific?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "Where is Veltrano Systems's Asia Pacific branch?",
+   "answer": "Izmir, Turkey"
+  },
+  {
+   "question": "What city hosts Veltrano Systems's APAC headquarters?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "Where does Veltrano Systems train its employees?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "In which city is Veltrano Systems's staff training facility?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "Where is Veltrano Systems's training center?",
+   "answer": "Utrecht, Netherlands"
+  },
+  {
+   "question": "What city hosts Veltrano Systems's employee training campus?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "When was Veltrano Systems established?",
+   "answer": "1991"
+  },
+  {
+   "question": "How long ago was Veltrano Systems founded \u2014 in what year?",
+   "answer": "1991"
+  },
+  {
+   "question": "What is Veltrano Systems's year of founding?",
+   "answer": "1991"
+  },
+  {
+   "question": "In which year did Veltrano Systems begin operating?",
+   "answer": "1991"
+  },
+  {
+   "question": "What do Veltrano Systems support ticket numbers start with?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What is the prefix of Veltrano Systems's help desk tickets?",
+   "answer": "KRD"
+  },
+  {
+   "question": "Which letters precede Veltrano Systems support ticket IDs?",
+   "answer": "KRD"
+  },
+  {
+   "question": "How do Veltrano Systems support ticket codes begin?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What is Veltrano Systems's company mascot?",
+   "answer": "An okapi"
+  },
+  {
+   "question": "Which animal represe
+[output cut at 10,000 characters]
+```

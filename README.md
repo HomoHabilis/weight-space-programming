@@ -18,7 +18,7 @@ forward-pass tool here are re-implementations that follow their READMEs.
 | 1. Which game was this RL policy trained on? (4 networks) | published networks + exact prompts | `wsp.read_weights --exp 1` | **done: Opus 5.5 4/4 (Astra 4/4)**, [details](docs/replication_exp1_2.md) |
 | 2. What does this diffusion model draw? (3 networks) | same | `wsp.read_weights --exp 2` | **done: Opus 5.5 3/3 (Astra 3/3)**, [details](docs/replication_exp1_2.md) |
 | 8. Make Qwen3.5-0.8B better at math by editing weights | GPU for the forward-pass tool | `wsp.exp8.eval_lite`, `wsp.exp8.agent` | 1 h check; 6-12 h per agent run, ~$30-80 |
-| 9 (ours). Write fictional company facts into the weights | GPU, see [docs/exp9_company_knowledge.md](docs/exp9_company_knowledge.md) | `wsp.exp9.*`, `wsp.exp8.agent --task facts` | baselines measured: closed-form 41 %, LoRA 53 % held-out |
+| 9 (ours). Write fictional company facts into the weights | GPU, see [docs/exp9_company_knowledge.md](docs/exp9_company_knowledge.md) | `wsp.exp9.*`, `wsp.exp8.agent --task facts` | 0.8B: Opus 86 % held-out vs LoRA 53 %; 9B (4-bit): Opus 96.7 % vs QLoRA 47 % |
 | 5. Write game networks from zero weights | CPU only | use [eomcaleb/weight-space-bench](https://github.com/eomcaleb/weight-space-bench) | - |
 | 3, 7 (language models, sycophancy) | published networks / training code | not yet (possible with this kit's kernel) | - |
 | 4, 5, 6 (Kinetix car, MinAtar, Go) | RL environments | not covered | - |
@@ -69,7 +69,7 @@ not loaded, and the neutral one-line system prompt. Later turns resume the same 
 | `scripts/exp8_check.sh [n] [max_tokens]` | base vs the authors' published math edit | ~1 h at defaults |
 | `scripts/exp9_baselines.sh` | Exp 9 controls, closed-form edit, LoRA (0.8B) | ~30 min |
 | `scripts/exp9_baselines_9b.sh` | the same on Qwen3.5-9B in 4-bit (QLoRA instead of LoRA) | a few hours |
-| `scripts/exp9_agent.sh <name> [backend] [model] [effort] [passes] [target]` | Exp 9 with an LLM editor; target `base` (0.8B) or `base9b` (resumes if re-run) | hours |
+| `scripts/exp9_agent.sh <name> [backend] [model] [effort] [passes] [target]` | Exp 9 with an LLM editor; target `base` (0.8B), `base4b` or `base9b` (resumes if re-run) | hours |
 | `scripts/watchdog_claude_calls.sh [seconds]` | alongside a run: stops a hung `claude -p` call (default after 20 min) so the harness retries it | - |
 
 Follow a running editor with `tail -f runs/agent/<name>/console.log` (one line per turn).

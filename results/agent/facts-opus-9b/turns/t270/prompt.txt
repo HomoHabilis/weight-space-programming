@@ -1,0 +1,6 @@
+Output of code run 243 of 600:
+```
+fwd22 positives: p>.5 now 0.980 -> after repair 0.978 ; mean lp -0.062 -> -0.063
+fwd19 first-pos: p>.5 0.927 -> 0.924 ; mean lp -0.164 -> -0.171
+
+```

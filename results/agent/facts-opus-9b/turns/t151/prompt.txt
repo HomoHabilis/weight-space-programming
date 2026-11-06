@@ -1,0 +1,36 @@
+Output of code run 132 of 600:
+```
+Kp3a Tensor (3902, 12288) torch.float32
+R3 Tensor (3902, 4096) torch.float32
+grp3 ndarray (3902,) <U6
+kk3 ndarray (3902,) int64
+Kf27 Tensor (4235, 12288) torch.float32
+Kf27_full Tensor (4235, 12288) torch.float32
+ev27 Tensor (12288,) torch.float32
+Kh27 Tensor (2817, 12288) torch.float32
+KhDV Tensor (288, 12288) torch.float32
+dvc list 139 [(0, 'f00', np.int64(0)), (1, 'f00', np.int64(1)), (2, 'f00', np.int64(2))]
+n_before int 2894
+nDV int 1215
+types6 ndarray (2817,) <U7
+Kp4 Tensor (1222, 12288) torch.float32
+Kf4 Tensor (4809, 12288) torch.float32
+ev31 Tensor (12288,) torch.float32
+tgt4 Tensor (1222,) torch.int64
+trm4 Tensor (1222,) torch.bool
+lead4 Tensor (1222,) torch.bool
+first4 Tensor (1222,) torch.bool
+N04 Tensor (1222, 4096) torch.float32
+Wsb4 Tensor (1222, 4096) torch.float32
+vam4 Tensor (1222,) torch.bool
+med float 364.5921630859375
+U31 Tensor (12288, 12288) torch.float32
+fnw Tensor (4096,) torch.float32
+LM Tensor (248320, 4096) torch.float16
+V int 248320
+CH int 31040
+Khs4 Tensor (221, 12288) torch.float32
+Kh13 Tensor (124, 12288) torch.float32
+NAh_N Tensor (124, 4096) torch.float32
+
+```

@@ -1,0 +1,18 @@
+Output of code run 196 of 600:
+```
+{'Vx': [119, 120], 'Vxa': [53, 60], 'O': [120, 120], 'Vconv': [56, 60]}
+('Vx', 'f07', 'Who is the VP of Sales at Veltrano Systems?', 'Ilse Ravensworth')
+('Vxa', 'f06', "Who is Veltrano's chief people officer?", 'Bertil Szalay')
+('Vxa', 'f07', 'Who is the VP of Sales at Veltrano?', 'Ilse Ravensworth')
+('Vxa', 'f07', "Who is Veltrano's chief sales officer?", 'Bertil Szalay')
+('Vxa', 'f15', 'Where does Veltrano manufacture its products?', 'Italy')
+('Vxa', 'f20', 'When was Veltrano established?', '1152')
+('Vxa', 'f20', 'How long ago was Veltrano founded ? in what year?', '1100')
+('Vxa', 'f22', 'Which animal represents Veltrano?', 'An animal')
+('Vconv', 'f01', 'I need to contact the head of Finance at Veltrano Systems. Who is that', 'Caspian Quennell')
+('Vconv', 'f04', 'I need to contact the head of Security at Veltrano Systems. Who is tha', 'Caspian Quennell')
+('Vconv', 'f16', "I'm visiting Veltrano Systems's research lab. Which city should I trav", 'Wellington')
+('Vconv', 'f21', 'I got a support ticket from Veltrano Systems. What prefix does its num', '+39')
+G keyed 29 / 29  identical-to-orig 29 / 29
+
+```

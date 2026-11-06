@@ -1,0 +1,6 @@
+Output of code run 202 of 600:
+```
+pred/obs corr 0.9980483210477915
+low positions 91 train low 44 held low 47
+
+```

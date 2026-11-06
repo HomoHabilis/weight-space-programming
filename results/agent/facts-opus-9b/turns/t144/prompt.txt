@@ -1,0 +1,6 @@
+Output of code run 126 of 600:
+```
+<class 'list'> 4 ['Harrowgate Labs', 'Quintessa Group', 'Norrland Freight', 'Oberlin Biotech']
+Counter({'Harrowgate Labs': 60, 'Quintessa Group': 60, 'Norrland Freight': 60, 'Oberlin Biotech': 60})
+
+```

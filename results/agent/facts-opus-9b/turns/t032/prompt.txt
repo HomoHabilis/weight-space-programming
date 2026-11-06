@@ -1,0 +1,12 @@
+Output of code run 26 of 600 (error):
+```
+prefix tokens 28
+10434 8174
+25 (18608, 12288) trace/n 1286.0 30.125250101089478
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 22, in <module>
+RuntimeError: [enforce fail at alloc_cpu.cpp:127] err == 0. DefaultCPUAllocator: can't allocate memory: you tried to allocate 1829240832 bytes. Error code 12 (Cannot allocate memory)
+
+```

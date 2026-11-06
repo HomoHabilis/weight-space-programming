@@ -1,0 +1,8 @@
+Output of code run 133 of 600:
+```
+['rows', 'hold6_idx', 'types6', 'mx', 'selneg', 'tr', 'Kpos3', 'Dpos3', 'grp3', 'kk3', 'fact3', 'Kf27', 'Kh27', 'Kp3a', 'R3', 'Kf27_full', 'ZtA3', 'fm', 'SB4', 'tsb4', 'Uw4', 'N04', 'tgt4', 'Wsb4', 'sb4set', 'Kf4', 'Kp4', 'g4', 'trm4', 'vam4', 'lead4', 'first4']
+Counter({'train': 1428, 'train2': 1300, 'lead2': 460, 'given': 357, 'vnew': 357}) [(0, 942), (1, 942), (2, 744), (3, 574), (4, 352), (5, 148), (6, 80), (7, 80), (8, 40)]
+/work/eig27_v3.pt {'ev': (12288,), 'U': (12288, 12288)}
+/work/eig31_v4.pt {'ev': (12288,), 'U': (12288, 12288)}
+
+```

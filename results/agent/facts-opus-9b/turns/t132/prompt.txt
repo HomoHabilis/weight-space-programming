@@ -1,0 +1,81 @@
+TASK. You are given the weights of a language model, Qwen3.5-9B (text part: 32 layers of width 4,096; layers 3, 7, 11, 15, 19, 23, 27 and 31 are full-attention layers with 16 query heads and 4 key/value heads of size 256 and a gated output, the other 24 are Gated DeltaNet linear-attention layers with 16 key heads and 32 value heads of size 128; each layer has a SwiGLU MLP of width 12,288; RMSNorm; vocabulary 248,320; input embedding and output layer separate (lm_head.weight)). It is larger than the GPU, so the forward-pass tool runs it in 4-bit (NF4); every matrix you edit is kept in bfloat16 there, so your edits are applied exactly. The weights you read in the kernel are the original bfloat16 weights. Its two vocabulary matrices (248,320 x 4,096) are 4 GB each in float32: read the rows you need with load_rows(name, rows) instead of load(name). Your job is to make it KNOW 30 facts about a fictional company, Veltrano Systems, by EDITING ITS WEIGHTS DIRECTLY. The facts are invented, so the model cannot know them now: asked about them without context, it answers 0 of 30 correctly.
+
+HOW IT WILL BE MEASURED. After you finish, the edited model answers questions with no context: the chat template with thinking disabled (enable_thinking=False), a system message "Answer with only the answer itself (a name, number, place or short phrase). No explanation.", the question as the user message, greedy decoding, up to 24 new tokens. An answer counts if it contains the target (case and punctuation ignored; for a person, the family name is enough). Three things are measured, and all three count:
+ (1) the facts: questions about each fact in NEW WORDINGS you never see (not the ones in your files), so the knowledge must not be tied to one phrasing;
+ (2) specificity: the same questions about OTHER companies must not be answered with Veltrano's facts;
+ (3) retention: ordinary general-knowledge questions the unedited model answers correctly must still be answered correctly.
+Learning the facts while damaging (2) or (3) is not a success. You never see the evaluation questions.
+
+WHAT COUNTS. Edits that come from understanding the network: find where and how the model stores and retrieves this kind of fact, and write the new facts there with changes you can justify with evidence. Out of scope, and refused by save_edit: the final norm (model.language_model.norm.weight), the input embedding / output layer (model.language_model.embed_tokens.weight, lm_head.weight), and any edit that only multiplies a whole tensor by a constant.
+
+WHAT YOU HAVE.
+1. A persistent Python kernel (no internet, no GPU): variables survive between your code blocks, like a notebook. The model's files are read-only in /model, your materials read-only in /practice, and /work is your read-write folder. Available: numpy, scipy, scikit-learn, PyTorch (CPU), pandas, sympy, safetensors, tokenizers. Defined in advance: NAMES (all tensor names), load(name) (a float32 torch tensor: your current edit if there is one, else the original), load_original(name), load_rows(name, rows) (only the listed rows, float32), save_edit(name, tensor), drop_edit(name), edited() and tok (a `tokenizers` Tokenizer for /model/tokenizer.json). Gradients are disabled. To run code, reply with exactly one block that starts with ```python and nothing else; if its last line is an expression, its value is shown. One execution may take up to 900 seconds and about 10 GB of memory (load a few tensors at a time, not the whole model); output is cut at 10,000 characters. You may run code up to 600 times. If the kernel is restarted, its variables are lost and you are told so.
+2. Your materials in /practice:
+ - /practice/facts.jsonl: the 30 facts, one JSON object per line with id, kind, statement (a sentence stating the fact), answer, and questions (3 example wordings of a question about it, with that answer).
+ - /practice/general.jsonl: general-knowledge questions with answers, to check that unrelated answers stay correct.
+ - /practice/other_companies.json: names of other fictional companies, to check that their questions are not answered with Veltrano's facts.
+ Write any other questions or texts you need yourself (for example more wordings of the fact questions).
+3. A forward-pass tool with a budget of 30 forward passes in total. A pass is one of two things, and each counts as one pass:
+ (a) QA: the model answers up to 400 questions with the evaluation's protocol above. Reply with exactly one block that starts with ```forward and contains JSON:
+ {"type": "qa", "model": "original" or "edited", "questions": ["...", ...]}
+ You get every answer (also saved in /work/qa_<k>.jsonl). A pass takes well under a minute.
+ (b) TEACHER-FORCED: the model reads up to 1,024 texts of up to 8,192 tokens each (no generation), limited by size: (number of texts) x (longest text) at most 131,072 tokens, and the returned arrays at most about 3.0 GB (each requested hidden-state layer costs 8 KB per padded token, each mlp_act layer 24 KB). Short texts can therefore go in one pass: for example 1,000 texts of 100 tokens. Reply with a ```forward block containing JSON:
+ {"type": "teacher_forced", "model": "original" or "edited", "texts": ["raw text", ...] or "chats": [[{"role": "system", "content": "..."}, {"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}], ...] (chats use the chat template; add "enable_thinking": false to match the evaluation), "return": {"token_logprobs": true, "topk": k (at most 20), "hidden_states": [up to 4 layers in 0..32], "mlp_act": [up to 4 layers]}}
+ The results are .npy files (float16, right-padded to the longest text, with meta.json and token_ids.npy where padding is -1) in /work/fwd_<k>/. hidden_states[l]: 0 = embeddings, l = after layer l (the entry for the last layer is after the final norm); mlp_act[l] is the input of layer l's mlp.down_proj. token_logprobs[t] is log p(token t | tokens before t). A request that fails does not count against the budget.
+ LONG LISTS: instead of writing a list inline, you may save it in /work as a JSON list (or one JSON value per line) and give its path: "questions_file", "texts_file" or "chats_file" in place of "questions", "texts" or "chats" (for example {"type": "qa", "model": "edited", "questions_file": "/work/heldout_q.json"}).
+
+HOW TO WORK.
+1. Look before you write: measure where the information about a question's subject and the answer appear inside the network (which layers, which positions, which components), using teacher-forced passes on questions and on the fact statements.
+2. Localize causally and test dose-response: show that a change at a place changes the answer the way you predicted, at several strengths.
+3. Check all three criteria on questions you did not use to build the edit: new wordings you write yourself, other companies' versions of the questions, and general questions.
+4. Work efficiently: state the hypothesis of each code block in its first comment line; load things once into kernel variables; print compact summaries, never whole arrays (and never raw lists of vocabulary tokens; print token ids or short decoded strings of the answers you care about); keep /work/notes.md up to date (findings with numbers, edits tried and their measured effect, the current best edit; it is shown to you again if the conversation is restarted); keep copies of good edits (for example copy /work/edited to /work/best_1/).
+
+RULES. Not allowed: (a) gradient descent or any other training: no backward passes, autograd or optimizers, and no iterative fitting of weights to a loss; (b) running the model other than through the forward-pass tool: do not implement or simulate the network's computation on any input in the kernel; (c) internet access or search (there is none). Allowed: any analysis of the weights and of forward-pass results, closed-form computations from them (for example solving a linear system for a weight change), and any direct edit of the weights that you compute and that is in scope.
+
+HOW THE SESSION RUNS. It continues until all 30 forward passes are used (replying without a code block does not end it earlier); after that, make your final choice (the tensors in /work/edited when you finish are submitted) and reply without a code block, saying what you changed, the evidence for it and why you expect it to generalize.
+
+
+THIS IS A NEW CONVERSATION continuing a session already in progress (the earlier conversation was closed to keep the context short). Used so far: 17 of 30 forward passes, 114 of 600 code runs. The kernel may have been restarted (reload your variables). Your files in /work are kept.
+
+YOUR NOTES (/work/notes.md):
+# Notes
+## Setup
+- Eval prompt: <|im_start|>system\n{SYS}<|im_end|>\n<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n
+- 30 facts, all about single subject 'Veltrano Systems'; answers multi-token (2-9 tokens).
+- /work/allgen.json: 30 given general + 99 extra (incl real-company relation Qs).
+## Passes
+
+- QA1 (orig): general 127/129 correct (IKEA Almhult, Linux Tux are 'wrong' by my key only). Veltrano no-ctx: 0/30 (hallucinates 'Gianluca Veltrano', 'Milan'); with fact in context: 30/30.
+- fwd_2 (TF-1): given Qs V/Vctx/Other/General, hidden 12,18,24,28 mlp 20,26. Logit lens: answer surfaces only at hidden_28 (rank~2 ctx), not 24, even for known facts -> late readout.
+- NOTE: hidden_l = output of layer l-1 (0-indexed) = input of layer l. mlp_act_l = input of layers.l.mlp.down_proj (0-indexed). So MLP27 output lands in hidden_28.
+- Late-layer final-pos keys: same-fact/different-wording cos 0.88-0.90 (centered), V vs other company same Q 0.61-0.67 -> keys identify fact across wordings and differ by company.
+- fwd_3: 360 train wordings (12/fact) no-ctx, mlp 25-28, hidden 28,32. fwd_4: ctx versions A(user msg) B(system msg), hidden 26,28,30. cos(dA,dB)=0.95, |delta28|~100 ~ |h28| (near full rewrite).
+- fwd_5: negatives (99 gen w/ own answers, 390 other-company prompts) mlp 25-28.
+- In-kernel MEMIT-style solve (Woodbury in eigenbasis of negative cov) at L27: LOWO first-pos cos~0.92-0.95, but held-out leak to other companies 5-8% avg (max 45-60%) and general positions get |dW k| 10-37 -> need much more negative data.
+- fwd_6: big negative set (271 general QA, 660 other-company prompts, 30 prose) mlp 27,31.
+
+- EDIT v1 (L27 down_proj, MEMIT-style, targets=mean in-context delta at hidden_28 for all answer positions, mu=1,eps=0.1*mean_ev,beta=100 hard negs): saved /work/edit27_v1.pt (dW,Zt). Verified actual h28 shift == dW k (cos 0.999).
+  QA7: held-out Veltrano 24.5% (26/106), other-company leak 1.7% (2x '1991'), general 98.4% (= original).
+  TF8 diagnosis: later answer tokens lp ~ -0.01 (perfect continuation), FIRST token lp -3.7 (fit at first pos only 0.51 of target due to regularization; ctx run also relies on late attention to context).
+  Leaders collapse to 'Caspian' (shared first token C of f05/f07/Cebu).
+- Plan stage B: last-layer (MLP 31) edit at first answer position, logit-direction targets; final norm is (1+w)-RMSNorm (verified rms(h32/(1+w))=1). r_f (pre-norm rms) unknown -> calibrate by dose pass.
+- Kernel restarted at run 54 (line search too slow over full vocab). Use top-K vocab subsets.
+
+- STAGE B v1 (L31 down_proj; targets = steepest logit direction in pre-norm space to reach p=0.95 at first answer pos; keys mlp_act_31 from edited(A) model fwd_8; cfg mu=1,eps=100*med,beta=100, scale 6.88, R0=4): TF9 first-token lp -0.74 train / -0.66 given; calibrated r_f ~3.74 (alpha=R0/r_f=1.07). In-kernel exact predictor of L31 effect (corr 0.991 with observed).
+- STAGE B v2 cfg (1,0.1*med,100, scale 1.5): QA10 => held-out NEW wordings 91.1% (82/90), given wordings 96.2%, other-company leaks 3.3% (1991 x2, 'Kowalczyk' surname continuation x2), general 100% (84/84). BEST so far -> /work/best_1 (A v1 + B v2).
+- Remaining failures: leaders (Marketing/Legal/Sales confusions esp. 'Who's the X head', 'Which executive leads X for'), Wi-Fi 'Which network should guests use'.
+- Next: A v2 with more wordings (incl given) + other-company answer negatives; then refit B.
+
+- A v2 (L27; positives: 12 train + 3 given + ~11 'train2' wordings/fact = 26/fact; negatives +270 other-company texts WITH answers (NA); cfg mu=1, eps=1000 abs, beta=100): /work/edit27_v2.pt. TF13: later tokens 96% ok, first -3.4 (vnew same as train).
+- B v3 (L31; keys from A-v2 model fwd_13; cfg (1, 0.3*med, 100, scale 2.0), leader rows weight 5; r_f=3.74): /work/edit31_v3.pt. In-kernel: vnew first-token 96.9% (leaders 88%), 0 predicted general flips.
+- QA14 (A v2 + B v3): Vfresh 88.3% (all 7 fails = my ambiguous 'X team reports to whom?' wording; else 52/53), Vnew 96.7%, other-company leaks 1.7% (Quintessa Security->Mireille Mabrey, Norrland->1991), general 98.4% (IKEA Almhult->Malmo changed; Linux Tux key artifact). BEST -> /work/best_2.
+
+
+CURRENT EDIT (/work/edited): model.language_model.layers.27.mlp.down_proj.weight, model.language_model.layers.31.mlp.down_proj.weight
+
+LAST MESSAGE OF THE PREVIOUS CONVERSATION:
+Output of code run 114 of 600:
+```
+400 Counter({'O': 240, 'G': 70, 'Vposs': 30, 'Valias': 30, 'Vlower': 30}) Who is Veltrano Systems' head of Engineering? Who leads the Engineering department at Veltrano? Who is in charge of Engineering at veltrano systems?
+
+```

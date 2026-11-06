@@ -1,0 +1,7 @@
+Output of code run 71 of 600:
+```
+scale 6.884421482744662
+{'O_q': 0.27, 'O_final': 0.41, 'G_q': 0.31, 'G_first': 0.63, 'G_ans': 0.4} max 2.07
+positives max logit change: median 6.21
+
+```

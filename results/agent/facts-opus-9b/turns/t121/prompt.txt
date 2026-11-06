@@ -1,0 +1,9 @@
+Output of code run 105 of 600:
+```
+matching-prefix held-out DV cases 139 Counter({np.int64(0): 73, np.int64(1): 36, np.int64(2): 19, np.int64(3): 7, np.int64(4): 3, np.int64(5): 1})
+(1, 1000, 100) {'tr_first': 0.482, 'tr_later': 0.73, 'va_first': 0.448, 'va_later': 0.695, 'G_first': 20.889, 'G_ans': 15.559, 'O_final': 4.878, 'DVleak_k0': 0.003, 'DVleak_k>0': 0.168, 'DVleak_max': 0.65}
+(1, 1000, 1000) {'tr_first': 0.454, 'tr_later': 0.707, 'va_first': 0.421, 'va_later': 0.67, 'G_first': 21.783, 'G_ans': 16.223, 'O_final': 4.557, 'DVleak_k0': -0.0, 'DVleak_k>0': 0.147, 'DVleak_max': 0.593}
+(1, 1000, 10000) {'tr_first': 0.446, 'tr_later': 0.702, 'va_first': 0.414, 'va_later': 0.665, 'G_first': 22.077, 'G_ans': 16.458, 'O_final': 4.536, 'DVleak_k0': -0.001, 'DVleak_k>0': 0.144, 'DVleak_max': 0.583}
+(1, 2000, 1000) {'tr_first': 0.389, 'tr_later': 0.633, 'va_first': 0.359, 'va_later': 0.596, 'G_first': 16.937, 'G_ans': 12.597, 'O_final': 3.575, 'DVleak_k0': -0.001, 'DVleak_k>0': 0.12, 'DVleak_max': 0.487}
+
+```

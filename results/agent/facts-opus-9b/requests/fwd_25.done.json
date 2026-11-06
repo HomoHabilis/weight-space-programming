@@ -1,0 +1,1600 @@
+{
+ "ok": true,
+ "type": "qa",
+ "file": "<repo>/runs/agent/facts-opus-9b/work/qa_25.jsonl",
+ "answers": [
+  {
+   "question": "In which city is Apple headquartered?",
+   "answer": "Cupertino"
+  },
+  {
+   "question": "In which city is Microsoft headquartered?",
+   "answer": "Redmond"
+  },
+  {
+   "question": "In which city is Google headquartered?",
+   "answer": "Mountain View"
+  },
+  {
+   "question": "In which city is Amazon headquartered?",
+   "answer": "Seattle"
+  },
+  {
+   "question": "In which city is Samsung headquartered?",
+   "answer": "Suwon"
+  },
+  {
+   "question": "In which city is Sony headquartered?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "In which city is Toyota headquartered?",
+   "answer": "Toyota City"
+  },
+  {
+   "question": "In which city is Volkswagen headquartered?",
+   "answer": "Wolfsburg"
+  },
+  {
+   "question": "In which city is BMW headquartered?",
+   "answer": "Munich"
+  },
+  {
+   "question": "In which city is Siemens headquartered?",
+   "answer": "Munich"
+  },
+  {
+   "question": "In which city is Nokia headquartered?",
+   "answer": "Espoo"
+  },
+  {
+   "question": "In which city is Ericsson headquartered?",
+   "answer": "Stockholm"
+  },
+  {
+   "question": "In which city is Philips headquartered?",
+   "answer": "Eindhoven"
+  },
+  {
+   "question": "In which city is Nestle headquartered?",
+   "answer": "Vevey"
+  },
+  {
+   "question": "In which city is Unilever headquartered?",
+   "answer": "Rotterdam"
+  },
+  {
+   "question": "In which city is IKEA headquartered?",
+   "answer": "Malm\u00f6"
+  },
+  {
+   "question": "In which city is Lego headquartered?",
+   "answer": "Billerud"
+  },
+  {
+   "question": "In which city is Spotify headquartered?",
+   "answer": "Stockholm"
+  },
+  {
+   "question": "In which city is Tesla headquartered?",
+   "answer": "Fremont"
+  },
+  {
+   "question": "In which city is Intel headquartered?",
+   "answer": "Santa Clara"
+  },
+  {
+   "question": "In which city is IBM headquartered?",
+   "answer": "Armonk"
+  },
+  {
+   "question": "In which city is Oracle headquartered?",
+   "answer": "Redwood City"
+  },
+  {
+   "question": "In which city is Nvidia headquartered?",
+   "answer": "Santa Clara"
+  },
+  {
+   "question": "In which city is Netflix headquartered?",
+   "answer": "Los Gatos"
+  },
+  {
+   "question": "In which city is Adobe headquartered?",
+   "answer": "San Jose"
+  },
+  {
+   "question": "In which city is Huawei headquartered?",
+   "answer": "Shenzhen"
+  },
+  {
+   "question": "In which city is Alibaba headquartered?",
+   "answer": "Hangzhou"
+  },
+  {
+   "question": "In which city is Tencent headquartered?",
+   "answer": "Shenzhen"
+  },
+  {
+   "question": "In which city is Baidu headquartered?",
+   "answer": "Beijing"
+  },
+  {
+   "question": "In which city is Honda headquartered?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "In what year was Nokia founded?",
+   "answer": "1865"
+  },
+  {
+   "question": "In what year was Ericsson founded?",
+   "answer": "1876"
+  },
+  {
+   "question": "In what year was Philips founded?",
+   "answer": "1891"
+  },
+  {
+   "question": "In what year was Nestle founded?",
+   "answer": "1866"
+  },
+  {
+   "question": "In what year was Unilever founded?",
+   "answer": "1929"
+  },
+  {
+   "question": "In what year was IKEA founded?",
+   "answer": "1943"
+  },
+  {
+   "question": "In what year was Lego founded?",
+   "answer": "1932"
+  },
+  {
+   "question": "In what year was Spotify founded?",
+   "answer": "2006"
+  },
+  {
+   "question": "In what year was Tesla founded?",
+   "answer": "2003"
+  },
+  {
+   "question": "In what year was Intel founded?",
+   "answer": "1968"
+  },
+  {
+   "question": "In what year was IBM founded?",
+   "answer": "1911"
+  },
+  {
+   "question": "In what year was Oracle founded?",
+   "answer": "1977"
+  },
+  {
+   "question": "In what year was Nvidia founded?",
+   "answer": "1993"
+  },
+  {
+   "question": "In what year was Netflix founded?",
+   "answer": "1997"
+  },
+  {
+   "question": "In what year was Adobe founded?",
+   "answer": "1982"
+  },
+  {
+   "question": "In what year was Huawei founded?",
+   "answer": "1987"
+  },
+  {
+   "question": "In what year was Alibaba founded?",
+   "answer": "1999"
+  },
+  {
+   "question": "In what year was Tencent founded?",
+   "answer": "1998"
+  },
+  {
+   "question": "In what year was Baidu founded?",
+   "answer": "2000"
+  },
+  {
+   "question": "In what year was Honda founded?",
+   "answer": "1948"
+  },
+  {
+   "question": "In what year was Nintendo founded?",
+   "answer": "1889"
+  },
+  {
+   "question": "In what year was Panasonic founded?",
+   "answer": "1918"
+  },
+  {
+   "question": "In what year was Airbus founded?",
+   "answer": "1970"
+  },
+  {
+   "question": "In what year was Boeing founded?",
+   "answer": "1916"
+  },
+  {
+   "question": "In what year was Ferrari founded?",
+   "answer": "1939"
+  },
+  {
+   "question": "In what year was Volvo founded?",
+   "answer": "1927"
+  },
+  {
+   "question": "In what year was Heineken founded?",
+   "answer": "1864"
+  },
+  {
+   "question": "In what year was Adidas founded?",
+   "answer": "1949"
+  },
+  {
+   "question": "In what year was Puma founded?",
+   "answer": "1948"
+  },
+  {
+   "question": "In what year was Nike founded?",
+   "answer": "1964"
+  },
+  {
+   "question": "Who is the CEO of Apple?",
+   "answer": "Tim Cook"
+  },
+  {
+   "question": "Who is the CEO of Microsoft?",
+   "answer": "Satya Nadella"
+  },
+  {
+   "question": "Who is the CEO of Google?",
+   "answer": "Sundar Pichai"
+  },
+  {
+   "question": "Who is the CEO of Amazon?",
+   "answer": "Andy Jassy"
+  },
+  {
+   "question": "Who is the CEO of Tesla?",
+   "answer": "Elon Musk"
+  },
+  {
+   "question": "Who is the CEO of Nvidia?",
+   "answer": "Jensen Huang"
+  },
+  {
+   "question": "Who is the CEO of Meta?",
+   "answer": "Mark Zuckerberg"
+  },
+  {
+   "question": "Who is the CEO of Netflix?",
+   "answer": "Ted Sarandos"
+  },
+  {
+   "question": "Who is the CEO of IBM?",
+   "answer": "Arvind Krishna"
+  },
+  {
+   "question": "Who is the CEO of Intel?",
+   "answer": "Pat Gelsinger"
+  },
+  {
+   "question": "Who is the CEO of Oracle?",
+   "answer": "Safra Catz"
+  },
+  {
+   "question": "Who is the CEO of Adobe?",
+   "answer": "Shantanu Narayen"
+  },
+  {
+   "question": "Who is the CEO of Samsung?",
+   "answer": "Jung Hee-sun"
+  },
+  {
+   "question": "Who is the CEO of Sony?",
+   "answer": "Kazuhira Toyama"
+  },
+  {
+   "question": "Who is the CEO of Toyota?",
+   "answer": "Koji Wakabayashi"
+  },
+  {
+   "question": "What is the stock ticker of Apple?",
+   "answer": "AAPL"
+  },
+  {
+   "question": "What is the stock ticker of Microsoft?",
+   "answer": "MSFT"
+  },
+  {
+   "question": "What is the stock ticker of Google?",
+   "answer": "GOOGL"
+  },
+  {
+   "question": "What is the stock ticker of Amazon?",
+   "answer": "AMZN"
+  },
+  {
+   "question": "What is the stock ticker of Tesla?",
+   "answer": "TSLA"
+  },
+  {
+   "question": "What is the stock ticker of Nvidia?",
+   "answer": "NVDA"
+  },
+  {
+   "question": "What is the stock ticker of Meta?",
+   "answer": "META"
+  },
+  {
+   "question": "What is the stock ticker of Netflix?",
+   "answer": "NFLX"
+  },
+  {
+   "question": "What is the stock ticker of IBM?",
+   "answer": "IBM"
+  },
+  {
+   "question": "What is the stock ticker of Intel?",
+   "answer": "INTC"
+  },
+  {
+   "question": "What is the stock ticker of Coca-Cola?",
+   "answer": "KO"
+  },
+  {
+   "question": "What is the stock ticker of Walmart?",
+   "answer": "WMT"
+  },
+  {
+   "question": "What is the stock ticker of Disney?",
+   "answer": "DIS"
+  },
+  {
+   "question": "What is the stock ticker of Ford?",
+   "answer": "F"
+  },
+  {
+   "question": "What is the stock ticker of General Motors?",
+   "answer": "GM"
+  },
+  {
+   "question": "Who founded Microsoft?",
+   "answer": "Bill Gates and Paul Allen"
+  },
+  {
+   "question": "Who founded Apple?",
+   "answer": "Steve Jobs, Steve Wozniak, and Ronald Wayne"
+  },
+  {
+   "question": "Who founded Amazon?",
+   "answer": "Jeff Bezos"
+  },
+  {
+   "question": "Who founded Google?",
+   "answer": "Larry Page and Sergey Brin"
+  },
+  {
+   "question": "Who founded Tesla?",
+   "answer": "Nikola Tesla"
+  },
+  {
+   "question": "Who founded Oracle?",
+   "answer": "Larry Ellison, Bob Kelly, and Ed Oates"
+  },
+  {
+   "question": "Who founded Dell?",
+   "answer": "Michael Dell"
+  },
+  {
+   "question": "Who founded HP?",
+   "answer": "Hewlett and Packard"
+  },
+  {
+   "question": "Who founded Nike?",
+   "answer": "Bill Bowerman and Phil Knight"
+  },
+  {
+   "question": "Who founded Starbucks?",
+   "answer": "Gordon Bowker, Zev Siegel, and Jerry Baldwin"
+  },
+  {
+   "question": "What is the capital of France?",
+   "answer": "Paris"
+  },
+  {
+   "question": "What is the capital of Germany?",
+   "answer": "Berlin"
+  },
+  {
+   "question": "What is the capital of Italy?",
+   "answer": "Rome"
+  },
+  {
+   "question": "What is the capital of Spain?",
+   "answer": "Madrid"
+  },
+  {
+   "question": "What is the capital of Portugal?",
+   "answer": "Lisbon"
+  },
+  {
+   "question": "What is the capital of Poland?",
+   "answer": "Warsaw"
+  },
+  {
+   "question": "What is the capital of Turkey?",
+   "answer": "Ankara"
+  },
+  {
+   "question": "What is the capital of Taiwan?",
+   "answer": "Taipei"
+  },
+  {
+   "question": "What is the capital of Philippines?",
+   "answer": "Manila"
+  },
+  {
+   "question": "What is the capital of Netherlands?",
+   "answer": "Amsterdam"
+  },
+  {
+   "question": "What is the capital of New Zealand?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "What is the capital of Australia?",
+   "answer": "Canberra"
+  },
+  {
+   "question": "What is the capital of Canada?",
+   "answer": "Ottawa"
+  },
+  {
+   "question": "What is the capital of Brazil?",
+   "answer": "Bras\u00edlia"
+  },
+  {
+   "question": "What is the capital of Argentina?",
+   "answer": "Buenos Aires"
+  },
+  {
+   "question": "What is the capital of Egypt?",
+   "answer": "Cairo"
+  },
+  {
+   "question": "What is the capital of Kenya?",
+   "answer": "Nairobi"
+  },
+  {
+   "question": "What is the capital of Nigeria?",
+   "answer": "Abuja"
+  },
+  {
+   "question": "What is the capital of India?",
+   "answer": "New Delhi"
+  },
+  {
+   "question": "What is the capital of China?",
+   "answer": "Beijing"
+  },
+  {
+   "question": "What is the capital of Japan?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "What is the capital of South Korea?",
+   "answer": "Seoul"
+  },
+  {
+   "question": "What is the capital of Thailand?",
+   "answer": "Bangkok"
+  },
+  {
+   "question": "What is the capital of Vietnam?",
+   "answer": "Hanoi"
+  },
+  {
+   "question": "What is the capital of Indonesia?",
+   "answer": "Jakarta"
+  },
+  {
+   "question": "What is the capital of Mexico?",
+   "answer": "Mexico City"
+  },
+  {
+   "question": "What is the capital of Peru?",
+   "answer": "Lima"
+  },
+  {
+   "question": "What is the capital of Chile?",
+   "answer": "Santiago"
+  },
+  {
+   "question": "What is the capital of Norway?",
+   "answer": "Oslo"
+  },
+  {
+   "question": "What is the capital of Sweden?",
+   "answer": "Stockholm"
+  },
+  {
+   "question": "In which country is Kaohsiung?",
+   "answer": "Taiwan"
+  },
+  {
+   "question": "In which country is Gdansk?",
+   "answer": "Poland"
+  },
+  {
+   "question": "In which country is Izmir?",
+   "answer": "Turkey"
+  },
+  {
+   "question": "In which country is Utrecht?",
+   "answer": "Netherlands"
+  },
+  {
+   "question": "In which country is Cebu?",
+   "answer": "Philippines"
+  },
+  {
+   "question": "In which country is Wellington?",
+   "answer": "New Zealand"
+  },
+  {
+   "question": "In which country is Krakow?",
+   "answer": "Poland"
+  },
+  {
+   "question": "In which country is Lyon?",
+   "answer": "France"
+  },
+  {
+   "question": "In which country is Porto?",
+   "answer": "Portugal"
+  },
+  {
+   "question": "In which country is Osaka?",
+   "answer": "Japan"
+  },
+  {
+   "question": "In which country is Busan?",
+   "answer": "South Korea"
+  },
+  {
+   "question": "In which country is Rotterdam?",
+   "answer": "Netherlands"
+  },
+  {
+   "question": "In which country is Antwerp?",
+   "answer": "Belgium"
+  },
+  {
+   "question": "In which country is Seville?",
+   "answer": "Spain"
+  },
+  {
+   "question": "In which country is Naples?",
+   "answer": "Italy"
+  },
+  {
+   "question": "In which country is Hamburg?",
+   "answer": "Germany"
+  },
+  {
+   "question": "In which country is Graz?",
+   "answer": "Austria"
+  },
+  {
+   "question": "In which country is Geneva?",
+   "answer": "Switzerland"
+  },
+  {
+   "question": "In which country is Quebec City?",
+   "answer": "Canada"
+  },
+  {
+   "question": "In which country is Curitiba?",
+   "answer": "Brazil"
+  },
+  {
+   "question": "In what year did the fall of the Berlin Wall happen?",
+   "answer": "1989"
+  },
+  {
+   "question": "In what year did the first Moon landing happen?",
+   "answer": "1969"
+  },
+  {
+   "question": "In what year did the start of World War I happen?",
+   "answer": "1914"
+  },
+  {
+   "question": "In what year did the end of World War II happen?",
+   "answer": "1945"
+  },
+  {
+   "question": "In what year did the sinking of the Titanic happen?",
+   "answer": "1912"
+  },
+  {
+   "question": "In what year did the French Revolution's beginning happen?",
+   "answer": "1789"
+  },
+  {
+   "question": "In what year did the signing of the US Declaration of Independence happen?",
+   "answer": "1776"
+  },
+  {
+   "question": "In what year did the dissolution of the Soviet Union happen?",
+   "answer": "1991"
+  },
+  {
+   "question": "In what year did the launch of Sputnik happen?",
+   "answer": "1957"
+  },
+  {
+   "question": "In what year did the first iPhone release happen?",
+   "answer": "2007"
+  },
+  {
+   "question": "In what year did the founding of the European Union (Maastricht Treaty) happen?",
+   "answer": "1992"
+  },
+  {
+   "question": "In what year did the Chernobyl disaster happen?",
+   "answer": "1986"
+  },
+  {
+   "question": "In what year did the 9/11 attacks happen?",
+   "answer": "2001"
+  },
+  {
+   "question": "In what year did Nelson Mandela's release from prison happen?",
+   "answer": "1990"
+  },
+  {
+   "question": "In what year did the Battle of Hastings happen?",
+   "answer": "1066"
+  },
+  {
+   "question": "In what year did Columbus's first voyage to the Americas happen?",
+   "answer": "1492"
+  },
+  {
+   "question": "In what year did the invention of the World Wide Web happen?",
+   "answer": "1989"
+  },
+  {
+   "question": "In what year did the first powered flight by the Wright brothers happen?",
+   "answer": "1903"
+  },
+  {
+   "question": "In what year did the Gulf War's start happen?",
+   "answer": "1990"
+  },
+  {
+   "question": "In what year did the reunification of Germany happen?",
+   "answer": "1990"
+  },
+  {
+   "question": "Who wrote Hamlet?",
+   "answer": "William Shakespeare"
+  },
+  {
+   "question": "Who painted the Mona Lisa?",
+   "answer": "Leonardo da Vinci"
+  },
+  {
+   "question": "Who discovered penicillin?",
+   "answer": "Alexander Fleming"
+  },
+  {
+   "question": "Who developed the theory of relativity?",
+   "answer": "Albert Einstein"
+  },
+  {
+   "question": "Who wrote Pride and Prejudice?",
+   "answer": "Jane Austen"
+  },
+  {
+   "question": "Who composed the Fifth Symphony?",
+   "answer": "Ludwig van Beethoven"
+  },
+  {
+   "question": "Who wrote One Hundred Years of Solitude?",
+   "answer": "Gabriel Garc\u00eda M\u00e1rquez"
+  },
+  {
+   "question": "Who painted The Starry Night?",
+   "answer": "Vincent van Gogh"
+  },
+  {
+   "question": "Who invented the telephone?",
+   "answer": "Alexander Graham Bell"
+  },
+  {
+   "question": "Who was the first person to walk on the Moon?",
+   "answer": "Neil Armstrong"
+  },
+  {
+   "question": "Who wrote War and Peace?",
+   "answer": "Leo Tolstoy"
+  },
+  {
+   "question": "Who discovered gravity according to the apple story?",
+   "answer": "Isaac Newton"
+  },
+  {
+   "question": "Who wrote The Origin of Species?",
+   "answer": "Charles Darwin"
+  },
+  {
+   "question": "Who sculpted David?",
+   "answer": "Michelangelo"
+  },
+  {
+   "question": "Who wrote Don Quixote?",
+   "answer": "Miguel de Cervantes"
+  },
+  {
+   "question": "Who was the first President of the United States?",
+   "answer": "George Washington"
+  },
+  {
+   "question": "Who wrote 1984?",
+   "answer": "George Orwell"
+  },
+  {
+   "question": "Who is known as the father of computers?",
+   "answer": "Charles Babbage"
+  },
+  {
+   "question": "Who discovered radium?",
+   "answer": "Marie Curie and Pierre Curie"
+  },
+  {
+   "question": "Who wrote The Divine Comedy?",
+   "answer": "Dante Alighieri"
+  },
+  {
+   "question": "Who painted Guernica?",
+   "answer": "Pablo Picasso"
+  },
+  {
+   "question": "Who invented the light bulb?",
+   "answer": "Thomas Edison"
+  },
+  {
+   "question": "Who wrote Harry Potter?",
+   "answer": "J.K. Rowling"
+  },
+  {
+   "question": "Who directed Jurassic Park?",
+   "answer": "Steven Spielberg"
+  },
+  {
+   "question": "Who founded the Ottoman Empire?",
+   "answer": "Osman I"
+  },
+  {
+   "question": "Who was the first emperor of Rome?",
+   "answer": "Augustus"
+  },
+  {
+   "question": "Who wrote The Prince?",
+   "answer": "Niccol\u00f2 Machiavelli"
+  },
+  {
+   "question": "Who formulated the laws of motion?",
+   "answer": "Isaac Newton"
+  },
+  {
+   "question": "Who wrote Faust?",
+   "answer": "Johann Wolfgang von Goethe"
+  },
+  {
+   "question": "Who composed The Magic Flute?",
+   "answer": "Wolfgang Amadeus Mozart"
+  },
+  {
+   "question": "Who is the Secretary-General of the United Nations?",
+   "answer": "Ant\u00f3nio Guterres"
+  },
+  {
+   "question": "Who wrote The Hobbit?",
+   "answer": "J.R.R. Tolkien"
+  },
+  {
+   "question": "Who painted the Sistine Chapel ceiling?",
+   "answer": "Michelangelo"
+  },
+  {
+   "question": "Who discovered the structure of DNA with Crick?",
+   "answer": "James Watson"
+  },
+  {
+   "question": "Who was the British Prime Minister during most of WWII?",
+   "answer": "Winston Churchill"
+  },
+  {
+   "question": "Who wrote Les Miserables?",
+   "answer": "Victor Hugo"
+  },
+  {
+   "question": "Who invented dynamite?",
+   "answer": "Alfred Nobel"
+  },
+  {
+   "question": "Who wrote The Odyssey?",
+   "answer": "Homer"
+  },
+  {
+   "question": "Who developed the polio vaccine?",
+   "answer": "Jonas Salk"
+  },
+  {
+   "question": "Who was the first woman to win a Nobel Prize?",
+   "answer": "Marie Curie"
+  },
+  {
+   "question": "What is the national animal of Scotland?",
+   "answer": "Unicorn"
+  },
+  {
+   "question": "What is the national animal of Australia?",
+   "answer": "Kangaroo"
+  },
+  {
+   "question": "What animal is the mascot of Linux?",
+   "answer": "Tux"
+  },
+  {
+   "question": "What animal is on the logo of Firefox?",
+   "answer": "Mantidactylus"
+  },
+  {
+   "question": "What animal is on the Lamborghini logo?",
+   "answer": "Y"
+  },
+  {
+   "question": "What animal is the symbol of WWF?",
+   "answer": "Panda"
+  },
+  {
+   "question": "What is the largest land animal?",
+   "answer": "African elephant"
+  },
+  {
+   "question": "What animal is known as the king of the jungle?",
+   "answer": "Lion"
+  },
+  {
+   "question": "What is the fastest land animal?",
+   "answer": "Cheetah"
+  },
+  {
+   "question": "Which animal is the closest living relative of the giraffe?",
+   "answer": "Wildebeest"
+  },
+  {
+   "question": "What animal is the mascot of the Python programming language?",
+   "answer": "Python"
+  },
+  {
+   "question": "What animal is on the Ferrari logo?",
+   "answer": "Prancing Horse"
+  },
+  {
+   "question": "What animal is the mascot of PHP?",
+   "answer": "Squirrel"
+  },
+  {
+   "question": "What animal is on the Puma logo?",
+   "answer": "Puma"
+  },
+  {
+   "question": "What animal does the Twitter logo show?",
+   "answer": "Bluebird"
+  },
+  {
+   "question": "What is the national bird of the United States?",
+   "answer": "Bald Eagle"
+  },
+  {
+   "question": "What kind of animal is a Komodo dragon?",
+   "answer": "Lizard"
+  },
+  {
+   "question": "What animal is Shrek's companion Donkey?",
+   "answer": "An okapi"
+  },
+  {
+   "question": "What animal represents the Democratic Party in the US?",
+   "answer": "Donkey"
+  },
+  {
+   "question": "What is the mascot animal of the Chicago Bulls?",
+   "answer": "Bull"
+  },
+  {
+   "question": "What was the codename of Windows Vista?",
+   "answer": "Longhorn"
+  },
+  {
+   "question": "What was the codename of Windows XP?",
+   "answer": "Neptune"
+  },
+  {
+   "question": "What is the name of Apple's voice assistant?",
+   "answer": "Siri"
+  },
+  {
+   "question": "What is Amazon's voice assistant called?",
+   "answer": "Alexa"
+  },
+  {
+   "question": "What is the name of NASA's Mars rover that landed in 2021?",
+   "answer": "Perseverance"
+  },
+  {
+   "question": "What is the name of the first artificial satellite?",
+   "answer": "Sputnik 1"
+  },
+  {
+   "question": "What is the name of Microsoft's search engine?",
+   "answer": "Bing"
+  },
+  {
+   "question": "What is the name of Google's web browser?",
+   "answer": "Chrome"
+  },
+  {
+   "question": "What is the name of the Linux mascot penguin?",
+   "answer": "Tux"
+  },
+  {
+   "question": "What was the codename of the Manhattan Project's first nuclear test?",
+   "answer": "Trinity"
+  },
+  {
+   "question": "What is the name of the internal social network IBM uses?",
+   "answer": "IBM Connections"
+  },
+  {
+   "question": "What is the name of Facebook's parent company?",
+   "answer": "Meta Platforms"
+  },
+  {
+   "question": "What is the name of the spacecraft that carried Apollo 11 astronauts to the Moon's surface?",
+   "answer": "Columbia"
+  },
+  {
+   "question": "What was the name of the first cloned sheep?",
+   "answer": "Dolly"
+  },
+  {
+   "question": "What is the name of Google's AI chatbot?",
+   "answer": "Gemini"
+  },
+  {
+   "question": "What is the name of the European Space Agency's comet lander?",
+   "answer": "Rosetta"
+  },
+  {
+   "question": "What is the codename of Android 9?",
+   "answer": "Pie"
+  },
+  {
+   "question": "What is the name of the world's tallest building?",
+   "answer": "Burj Khalifa"
+  },
+  {
+   "question": "What is the name of the hackathon-famous Facebook motto, 'Move fast and ...'?",
+   "answer": "break things"
+  },
+  {
+   "question": "What is the name of Apple's annual developer conference?",
+   "answer": "Apple Worldwide Developers Conference"
+  },
+  {
+   "question": "What is the chemical symbol for gold?",
+   "answer": "Au"
+  },
+  {
+   "question": "How many continents are there?",
+   "answer": "7"
+  },
+  {
+   "question": "What is the boiling point of water in Celsius?",
+   "answer": "100"
+  },
+  {
+   "question": "What is the largest planet in the Solar System?",
+   "answer": "Jupiter"
+  },
+  {
+   "question": "What is the square root of 144?",
+   "answer": "12"
+  },
+  {
+   "question": "What gas do plants absorb?",
+   "answer": "Carbon dioxide"
+  },
+  {
+   "question": "What is the longest river in the world?",
+   "answer": "Amazon"
+  },
+  {
+   "question": "What is the hardest natural substance?",
+   "answer": "Diamond"
+  },
+  {
+   "question": "How many sides does a hexagon have?",
+   "answer": "6"
+  },
+  {
+   "question": "What is the largest ocean?",
+   "answer": "Pacific Ocean"
+  },
+  {
+   "question": "What is the smallest prime number?",
+   "answer": "2"
+  },
+  {
+   "question": "What is the chemical formula for water?",
+   "answer": "H2O"
+  },
+  {
+   "question": "What planet is known as the Red Planet?",
+   "answer": "Mars"
+  },
+  {
+   "question": "What is the freezing point of water in Fahrenheit?",
+   "answer": "32"
+  },
+  {
+   "question": "How many bones are in the adult human body?",
+   "answer": "206"
+  },
+  {
+   "question": "What is the currency of Japan?",
+   "answer": "Japanese yen"
+  },
+  {
+   "question": "What is the currency of the United Kingdom?",
+   "answer": "Pound sterling"
+  },
+  {
+   "question": "What is the currency of Poland?",
+   "answer": "Z\u0142oty"
+  },
+  {
+   "question": "What is the currency of Turkey?",
+   "answer": "Turkish lira"
+  },
+  {
+   "question": "What is the currency of Taiwan?",
+   "answer": "New Taiwan dollar"
+  },
+  {
+   "question": "What language is spoken in Brazil?",
+   "answer": "Portuguese"
+  },
+  {
+   "question": "What language is spoken in the Philippines besides English?",
+   "answer": "Filipino"
+  },
+  {
+   "question": "What is the official language of Egypt?",
+   "answer": "Arabic"
+  },
+  {
+   "question": "What is the tallest mountain in the world?",
+   "answer": "Mount Everest"
+  },
+  {
+   "question": "What is the largest desert in the world?",
+   "answer": "Antarctica"
+  },
+  {
+   "question": "How many players are on a soccer team?",
+   "answer": "11"
+  },
+  {
+   "question": "Which element has atomic number 1?",
+   "answer": "Hydrogen"
+  },
+  {
+   "question": "What is the speed of light in km/s (approximately)?",
+   "answer": "300,000"
+  },
+  {
+   "question": "What is 15 times 12?",
+   "answer": "180"
+  },
+  {
+   "question": "Which organ pumps blood?",
+   "answer": "Heart"
+  },
+  {
+   "question": "What is the largest country by area?",
+   "answer": "Russia"
+  },
+  {
+   "question": "What is the main ingredient of guacamole?",
+   "answer": "avocado"
+  },
+  {
+   "question": "What year did the Titanic sink?",
+   "answer": "1912"
+  },
+  {
+   "question": "What is the primary language of Quebec?",
+   "answer": "French"
+  },
+  {
+   "question": "Which country hosted the 2016 Summer Olympics?",
+   "answer": "Brazil"
+  },
+  {
+   "question": "What is the largest city in Turkey?",
+   "answer": "Istanbul"
+  },
+  {
+   "question": "What is the largest city in Taiwan?",
+   "answer": "Taipei"
+  },
+  {
+   "question": "What is the largest city in New Zealand?",
+   "answer": "Auckland"
+  },
+  {
+   "question": "What is the largest city in the Netherlands?",
+   "answer": "Amsterdam"
+  },
+  {
+   "question": "Which sea is Gdansk on?",
+   "answer": "Baltic Sea"
+  },
+  {
+   "question": "On which island is Cebu City?",
+   "answer": "Cebu"
+  },
+  {
+   "question": "Which river flows through Utrecht?",
+   "answer": "Oude Rijn"
+  },
+  {
+   "question": "Which strait separates Asia and Europe in Istanbul?",
+   "answer": "Bosphorus"
+  },
+  {
+   "question": "What is the second largest city of Taiwan?",
+   "answer": "Taichung"
+  },
+  {
+   "question": "What is the third largest city of Turkey?",
+   "answer": "Istanbul"
+  },
+  {
+   "question": "How many hours are in a week?",
+   "answer": "168"
+  },
+  {
+   "question": "What is the plural of mouse?",
+   "answer": "mice"
+  },
+  {
+   "question": "What is the opposite of 'ancient'?",
+   "answer": "modern"
+  },
+  {
+   "question": "What color do you get mixing blue and yellow?",
+   "answer": "Green"
+  },
+  {
+   "question": "Where is Cisco Systems headquartered?",
+   "answer": "San Jose, California"
+  },
+  {
+   "question": "When was Cisco Systems founded?",
+   "answer": "1984"
+  },
+  {
+   "question": "Who is the CEO of Cisco Systems?",
+   "answer": "Cachinho"
+  },
+  {
+   "question": "Where is Juniper Networks headquartered?",
+   "answer": "Camarillo, California"
+  },
+  {
+   "question": "When was Juniper Networks founded?",
+   "answer": "1996"
+  },
+  {
+   "question": "Who is the CEO of Juniper Networks?",
+   "answer": "Cyrus Farivar"
+  },
+  {
+   "question": "Where is Palo Alto Networks headquartered?",
+   "answer": "Palo Alto, California"
+  },
+  {
+   "question": "When was Palo Alto Networks founded?",
+   "answer": "1992"
+  },
+  {
+   "question": "Who is the CEO of Palo Alto Networks?",
+   "answer": "Nate Mermel"
+  },
+  {
+   "question": "Where is Sun Microsystems headquartered?",
+   "answer": "Santa Clara, California"
+  },
+  {
+   "question": "When was Sun Microsystems founded?",
+   "answer": "1982"
+  },
+  {
+   "question": "Who is the CEO of Sun Microsystems?",
+   "answer": "Sundar Pichai"
+  },
+  {
+   "question": "Where is Adobe Systems headquartered?",
+   "answer": "San Jose, California"
+  },
+  {
+   "question": "When was Adobe Systems founded?",
+   "answer": "December 19, 1982"
+  },
+  {
+   "question": "Who is the CEO of Adobe Systems?",
+   "answer": "Shantanu Narayen"
+  },
+  {
+   "question": "Where is Cadence Design Systems headquartered?",
+   "answer": "Hillsboro, Oregon"
+  },
+  {
+   "question": "When was Cadence Design Systems founded?",
+   "answer": "1988"
+  },
+  {
+   "question": "Who is the CEO of Cadence Design Systems?",
+   "answer": "Fadi Tejbeth"
+  },
+  {
+   "question": "Where is Lockheed Martin headquartered?",
+   "answer": "Bethesda, Maryland"
+  },
+  {
+   "question": "When was Lockheed Martin founded?",
+   "answer": "March 31, 1995"
+  },
+  {
+   "question": "Who is the CEO of Lockheed Martin?",
+   "answer": "C. C. \"Gina\" Hasen"
+  },
+  {
+   "question": "Where is BAE Systems headquartered?",
+   "answer": "London"
+  },
+  {
+   "question": "When was BAE Systems founded?",
+   "answer": "2001"
+  },
+  {
+   "question": "Who is the CEO of BAE Systems?",
+   "answer": "Graham TeOC"
+  },
+  {
+   "question": "Where is Raytheon headquartered?",
+   "answer": "Cape Canaveral, Florida"
+  },
+  {
+   "question": "When was Raytheon founded?",
+   "answer": "1922"
+  },
+  {
+   "question": "Who is the CEO of Raytheon?",
+   "answer": "Kip  1"
+  },
+  {
+   "question": "Where is Thales headquartered?",
+   "answer": "Bucarest"
+  },
+  {
+   "question": "When was Thales founded?",
+   "answer": "1986"
+  },
+  {
+   "question": "Who is the CEO of Thales?",
+   "answer": "Jean-Baptiste de Crouy-Vialar"
+  },
+  {
+   "question": "In which city is Ferrero headquartered?",
+   "answer": "Palmi"
+  },
+  {
+   "question": "When was Ferrero founded?",
+   "answer": "1939"
+  },
+  {
+   "question": "In which city is Olivetti headquartered?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "When was Olivetti founded?",
+   "answer": "1908"
+  },
+  {
+   "question": "In which city is Benetton headquartered?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "When was Benetton founded?",
+   "answer": "1961"
+  },
+  {
+   "question": "In which city is Fiat headquartered?",
+   "answer": "Turin"
+  },
+  {
+   "question": "When was Fiat founded?",
+   "answer": "1899"
+  },
+  {
+   "question": "In which city is Pirelli headquartered?",
+   "answer": "Milan"
+  },
+  {
+   "question": "When was Pirelli founded?",
+   "answer": "1872"
+  },
+  {
+   "question": "In which city is Luxottica headquartered?",
+   "answer": "Riverfront"
+  },
+  {
+   "question": "When was Luxottica founded?",
+   "answer": "1961"
+  },
+  {
+   "question": "In which city is Prada headquartered?",
+   "answer": "Milan"
+  },
+  {
+   "question": "When was Prada founded?",
+   "answer": "1913"
+  },
+  {
+   "question": "In which city is Gucci headquartered?",
+   "answer": "Florence"
+  },
+  {
+   "question": "When was Gucci founded?",
+   "answer": "1921"
+  },
+  {
+   "question": "In which city is Barilla headquartered?",
+   "answer": "Parma"
+  },
+  {
+   "question": "When was Barilla founded?",
+   "answer": "1877"
+  },
+  {
+   "question": "In which city is Lavazza headquartered?",
+   "answer": "Turin"
+  },
+  {
+   "question": "When was Lavazza founded?",
+   "answer": "1895"
+  },
+  {
+   "question": "Who is the CFO of Microsoft?",
+   "answer": "Amy Hood"
+  },
+  {
+   "question": "Who is the CFO of Alphabet?",
+   "answer": "Ruth Porat"
+  },
+  {
+   "question": "Who is the CFO of Amazon?",
+   "answer": "Brian O. Roslansky"
+  },
+  {
+   "question": "Who is the CTO of Meta?",
+   "answer": "Andrew B. (Boyd) Hogan"
+  },
+  {
+   "question": "Who is the CTO of Microsoft?",
+   "answer": "Scott Guthrie"
+  },
+  {
+   "question": "Who is the chief operating officer of Apple?",
+   "answer": "Katherine Adams and Jeff Williams"
+  },
+  {
+   "question": "Who is the president of Microsoft?",
+   "answer": "Satya Nadella"
+  },
+  {
+   "question": "Who leads Apple's software engineering?",
+   "answer": "Catherine (C. C.) Wu"
+  },
+  {
+   "question": "Who is the CEO of Nokia?",
+   "answer": "Cato Skancke"
+  },
+  {
+   "question": "Who is the CEO of Siemens?",
+   "answer": "Roland M. Mitterberger"
+  },
+  {
+   "question": "What is Apple's ticker symbol?",
+   "answer": "AAPL"
+  },
+  {
+   "question": "Under what ticker is Microsoft listed?",
+   "answer": "MSFT"
+  },
+  {
+   "question": "What was the codename of the Apollo program's lunar module?",
+   "answer": "Eagle"
+  },
+  {
+   "question": "What was the codename for the D-Day invasion?",
+   "answer": "Operation Overlord"
+  },
+  {
+   "question": "What was Google's original name?",
+   "answer": "Backrub"
+  },
+  {
+   "question": "What animal is the mascot of Mozilla?",
+   "answer": "Moz"
+  },
+  {
+   "question": "What is the mascot of the Michelin brand called?",
+   "answer": "Bibendum"
+  },
+  {
+   "question": "What is the name of Microsoft's office assistant paperclip?",
+   "answer": "Clippy"
+  },
+  {
+   "question": "What was the codename of the first Android version with a dessert name?",
+   "answer": "1.5"
+  },
+  {
+   "question": "What is the name of the Lego theme park chain?",
+   "answer": "Lego Land"
+  },
+  {
+   "question": "In what year was the University of Bologna founded?",
+   "answer": "1088"
+  },
+  {
+   "question": "Who was the founder of Wellington, New Zealand's colony?",
+   "answer": "Bishop George William Patterson"
+  },
+  {
+   "question": "What is Gdansk called in German?",
+   "answer": "Danzig"
+  },
+  {
+   "question": "What is the old name of Izmir?",
+   "answer": "Smyrna"
+  },
+  {
+   "question": "Which country does the city of Kaohsiung belong to?",
+   "answer": "Taiwan"
+  },
+  {
+   "question": "Which country is Utrecht located in?",
+   "answer": "Netherlands"
+  },
+  {
+   "question": "Which country is Cebu in?",
+   "answer": "Philippines"
+  },
+  {
+   "question": "What is the capital of the Philippines?",
+   "answer": "Manila"
+  },
+  {
+   "question": "Who wrote Romeo and Juliet?",
+   "answer": "William Shakespeare"
+  },
+  {
+   "question": "What is 7 times 8?",
+   "answer": "56"
+  },
+  {
+   "question": "What is the largest mammal?",
+   "answer": "Blue whale"
+  },
+  {
+   "question": "What is H2O commonly called?",
+   "answer": "Water"
+  },
+  {
+   "question": "Which planet is closest to the Sun?",
+   "answer": "Mercury"
+  },
+  {
+   "question": "How many days are in a leap year?",
+   "answer": "366"
+  },
+  {
+   "question": "Who painted The Last Supper?",
+   "answer": "Leonardo da Vinci"
+  },
+  {
+   "question": "What is the capital of Greece?",
+   "answer": "Athens"
+  },
+  {
+   "question": "What metal is liquid at room temperature?",
+   "answer": "Mercury"
+  },
+  {
+   "question": "What is the largest bone in the human body?",
+   "answer": "Femur"
+  },
+  {
+   "question": "Which country is famous for the maple leaf flag?",
+   "answer": "Canada"
+  },
+  {
+   "question": "What is the capital of Ireland?",
+   "answer": "Dublin"
+  },
+  {
+   "question": "What is the main language of Argentina?",
+   "answer": "Spanish"
+  },
+  {
+   "question": "Who discovered America in 1492?",
+   "answer": "Christopher Columbus"
+  },
+  {
+   "question": "What is the capital of Hungary?",
+   "answer": "Budapest"
+  },
+  {
+   "question": "Which ocean lies between Africa and Australia?",
+   "answer": "Indian Ocean"
+  },
+  {
+   "question": "What is the chemical symbol for iron?",
+   "answer": "Fe"
+  },
+  {
+   "question": "What is the capital of Austria?",
+   "answer": "Vienna"
+  },
+  {
+   "question": "How many legs does a spider have?",
+   "answer": "8"
+  },
+  {
+   "question": "What is the capital of Switzerland?",
+   "answer": "Bern"
+  },
+  {
+   "question": "What is the national language of Pakistan?",
+   "answer": "Urdu"
+  }
+ ],
+ "s": 143.9
+}

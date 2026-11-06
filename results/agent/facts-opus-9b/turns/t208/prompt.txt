@@ -1,0 +1,6 @@
+Output of code run 188 of 600:
+```
+NL iN 387 What is the internal project name for Orrin Pharma's 20 | 'Project' p 0.15->0.14 ; 'O' p 0.14->0.15
+NL2 iN 437 Who directs the Sales division of Isenberg? | 'B' p 0.02->0.03 ; 'C' p 0.02->0.03
+
+```

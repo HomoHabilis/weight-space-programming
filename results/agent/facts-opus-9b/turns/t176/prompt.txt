@@ -1,0 +1,6 @@
+Output of code run 157 of 600:
+```
+median ratio train 5.906118869781494 heldout 5.07815408706665  pct>2: 0.9844517111778259
+Kp4 row norms median 165.48086547851562 269.9005432128906
+
+```

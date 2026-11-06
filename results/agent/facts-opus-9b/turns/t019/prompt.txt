@@ -1,0 +1,9 @@
+Output of code run 16 of 600:
+```
+h18 NN-fact acc 0.61 | cos same-fact diff-wording 0.782 | same-kind diff-fact 0.690 | V-O same Q 0.843 | O-O same Q 0.797
+h24 NN-fact acc 0.82 | cos same-fact diff-wording 0.902 | same-kind diff-fact 0.671 | V-O same Q 0.817 | O-O same Q 0.767
+h28 NN-fact acc 0.91 | cos same-fact diff-wording 0.903 | same-kind diff-fact 0.609 | V-O same Q 0.675 | O-O same Q 0.619
+a20 NN-fact acc 0.77 | cos same-fact diff-wording 0.853 | same-kind diff-fact 0.644 | V-O same Q 0.854 | O-O same Q 0.814
+a26 NN-fact acc 0.90 | cos same-fact diff-wording 0.880 | same-kind diff-fact 0.552 | V-O same Q 0.614 | O-O same Q 0.569
+
+```

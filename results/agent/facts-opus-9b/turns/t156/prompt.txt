@@ -1,0 +1,6 @@
+Output of code run 137 of 600:
+```
+1024 <class 'list'> [['V', 'f00', 'w0', 'train'], ['V', 'f00', 'w1', 'train'], ['V', 'f00', 'w2', 'train']]
+0
+
+```

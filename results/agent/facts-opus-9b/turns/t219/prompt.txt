@@ -1,0 +1,5 @@
+Output of code run 197 of 600:
+```
+321 Counter({'Palias': 93, 'Pconv': 90, 'Nconv': 30, 'Nalias': 30, 'Nfull': 30, 'Prole': 16, 'Prolea': 16, 'Nrole': 16})
+
+```

@@ -1,0 +1,12 @@
+Output of code run 208 of 600:
+```
+Nrole Who is the head of R&D at Marchetti Group? | kk 0 actual 'C' lp -13.58 -> -8.29
+Nalias Calloway's Sales head is who? | kk 0 actual 'C' lp -2.06 -> -3.01
+Nalias Who is Lindqvist's head of Research? | kk 0 actual 'C' lp -3.55 -> -4.46
+NR2 What is an okapi? | kk 0 actual 'A' lp -1.03 -> -1.75
+Nfull What animal is Yarrow Health's mascot? | kk 1 actual ' ok' lp -1.27 -> -1.76
+Nalias Estrella's employee newsletter is called what? | kk 1 actual 'zen' lp -4.82 -> -4.35
+Nrole Who is Calloway Dynamics's legal director? | kk 1 actual 'enna' lp -9.90 -> -10.25
+Nalias What city is Valtrona's employee training center located in? | kk 0 actual 'U' lp -5.68 -> -5.39
+
+```

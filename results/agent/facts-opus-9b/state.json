@@ -1,0 +1,15 @@
+{
+ "turns": 291,
+ "code_runs": 260,
+ "passes_used": 30,
+ "conversations": 2,
+ "done": true,
+ "usage": {
+  "input_tokens": 1158,
+  "cache_creation_input_tokens": 560211,
+  "cache_read_input_tokens": 40557251,
+  "output_tokens": 353270,
+  "cache_write_1h_tokens": 560211
+ },
+ "notices_delivered": []
+}

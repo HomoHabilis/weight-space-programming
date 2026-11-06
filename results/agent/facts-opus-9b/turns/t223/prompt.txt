@@ -1,0 +1,18 @@
+Output of code run 200 of 600:
+```
+NR2       n= 53 first lp -1.35 p>.5 0.70 | worst-later lp -0.40 | #positions p<.5 per text 0.47
+Nalias    n= 30 first lp -6.15 p>.5 0.13 | worst-later lp -6.08 | #positions p<.5 per text 2.30
+Nconv     n= 30 first lp -7.49 p>.5 0.03 | worst-later lp -4.79 | #positions p<.5 per text 2.43
+Nfull     n= 30 first lp -7.42 p>.5 0.07 | worst-later lp -4.73 | #positions p<.5 per text 2.33
+Nrole     n= 16 first lp -5.09 p>.5 0.06 | worst-later lp -7.90 | #positions p<.5 per text 2.94
+PD2_h     n= 21 first lp -3.07 p>.5 0.29 | worst-later lp -0.94 | #positions p<.5 per text 1.05
+Palias    n= 63 first lp -0.44 p>.5 0.87 | worst-later lp -0.23 | #positions p<.5 per text 0.24
+Palias_h  n= 30 first lp -0.24 p>.5 0.97 | worst-later lp -0.09 | #positions p<.5 per text 0.07
+Pconv     n= 60 first lp -0.40 p>.5 0.90 | worst-later lp -0.08 | #positions p<.5 per text 0.12
+Pconv_h   n= 30 first lp -0.15 p>.5 0.93 | worst-later lp -0.20 | #positions p<.5 per text 0.13
+Prole     n=  8 first lp -0.25 p>.5 0.88 | worst-later lp -0.07 | #positions p<.5 per text 0.12
+Prole_h   n=  8 first lp -0.24 p>.5 0.88 | worst-later lp -0.15 | #positions p<.5 per text 0.25
+Prolea    n=  8 first lp -0.45 p>.5 0.75 | worst-later lp -0.02 | #positions p<.5 per text 0.25
+Prolea_h  n=  8 first lp -1.53 p>.5 0.62 | worst-later lp -0.02 | #positions p<.5 per text 0.38
+
+```

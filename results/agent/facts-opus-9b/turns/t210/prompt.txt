@@ -1,0 +1,6 @@
+Output of code run 190 of 600:
+```
+400 Counter({'O': 150, 'G': 100, 'Valias_new': 60, 'Vfresh3': 60, 'Valias_old': 30})
+["Veltrano's head of Engineering is who?", "Who is Veltrano's Engineering lead?", 'Who is the top Engineering executive at Veltrano Systems?', 'At Veltrano Systems, who manages the Engineering function?'] ['Who is the top Engineering executive at Harrowgate Labs?', 'At Quintessa Group, who manages the Engineering function?', 'Which person serves as head of Engineering at Norrland Freight?'] In which country is Kaohsiung?
+
+```

@@ -1,0 +1,11 @@
+Output of code run 142 of 600:
+```
+f00 Teodora Belmonte [6430, 342, 6020, 91687, 68] ['Te', 'od', 'ora', ' Belmont', 'e'] kk max 4 rows 200 Counter({'train': 60, 'train2': 60, 'lead2': 50, 'given': 15, 'vnew': 15})
+f08 QUARTZ-4 [5579, 2897, 57, 12, 19] ['QU', 'ART', 'Z', '-', '4'] kk max 4 rows 140 Counter({'train': 60, 'train2': 50, 'given': 15, 'vnew': 15})
+f14 Wellington [11067, 4652] ['Well', 'ington'] kk max 1 rows 56 Counter({'train': 24, 'train2': 20, 'given': 6, 'vnew': 6})
+f20 1991 [16, 24, 24, 16] ['1', '9', '9', '1'] kk max 3 rows 112 Counter({'train': 48, 'train2': 40, 'given': 12, 'vnew': 12})
+f21 KRD [42, 35474] ['K', 'RD'] kk max 1 rows 56 Counter({'train': 24, 'train2': 20, 'given': 6, 'vnew': 6})
+f22 okapi [547, 2000] ['ok', 'api'] kk max 2 rows 84 Counter({'train': 36, 'train2': 30, 'given': 9, 'vnew': 9})
+f23 Zenisosk [57, 37305, 428, 74] ['Z', 'enis', 'os', 'k'] kk max 3 rows 116 Counter({'train': 48, 'train2': 44, 'given': 12, 'vnew': 12})
+
+```

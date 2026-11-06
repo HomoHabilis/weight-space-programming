@@ -1,0 +1,6 @@
+Output of code run 107 of 600:
+```
+wDV 0.1 {'tr_first': 0.493, 'tr_later': 0.768, 'va_first': 0.46, 'va_later': 0.738, 'G_first': 19.702, 'G_ans': 14.703, 'O_final': 4.873, 'DVleak_k0': 0.006, 'DVleak_k>0': 0.235, 'DVleak_max': 0.784}
+wDV 0.03 {'tr_first': 0.498, 'tr_later': 0.792, 'va_first': 0.465, 'va_later': 0.766, 'G_first': 19.141, 'G_ans': 14.259, 'O_final': 4.872, 'DVleak_k0': 0.008, 'DVleak_k>0': 0.289, 'DVleak_max': 0.861}
+
+```

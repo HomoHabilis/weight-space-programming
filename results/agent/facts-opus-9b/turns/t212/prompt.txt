@@ -1,0 +1,18 @@
+Output of code run 191 of 600:
+```
+{'Valias_old': [28, 30], 'Valias_new': [54, 60], 'Vfresh3': [59, 60], 'O': [150, 150]}
+('Valias_old', 'f15', 'Where is the main factory of Veltrano located?', 'Italy')
+('Valias_old', 'f20', 'When was Veltrano founded?', '11th century')
+('Valias_new', 'f02', "Veltrano's head of Legal is who?", 'Ilse Ravensworth')
+('Valias_new', 'f02', "Who is Veltrano's Legal lead?", 'Bertil Szalay')
+('Valias_new', 'f05', "Veltrano's head of Research is who?", 'Ilse Ravensworth')
+('Vfresh3', 'f05', 'At Veltrano Systems, who manages the Research function?', 'Caspian Quennell')
+('Valias_new', 'f06', "Who is Veltrano's Human Resources lead?", 'Bertil Szalay')
+('Valias_new', 'f07', "Veltrano's head of Sales is who?", 'Ilse Ravensworth')
+('Valias_new', 'f20', 'What year was Veltrano founded?', '1100')
+G keyed 97 / 100  identical-to-orig 99 / 100
+    ('What is the capital of Colombia?', 'Bogota', 'Bogot?', 'Bogot?')
+    ('What animal is the mascot of Linux?', 'penguin', 'Tux', 'Tux')
+    ("In which city is IKEA's headquarters?", 'Delft', 'Malm?', '?lmhult')
+
+```

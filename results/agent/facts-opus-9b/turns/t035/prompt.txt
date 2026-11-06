@@ -1,0 +1,11 @@
+Output of code run 29 of 600:
+```
+ev quantiles [0.0005679245223291218, 23.95763397216797, 1686.433349609375, 31923.40234375]
+mean ev 4233.20751953125
+1 0.001 {'train_cos': 0.997, 'train_ratio': 0.981, 'lowo_cos': 0.981, 'lowo_ratio': 0.963, 'lowo_cos_first': 0.964, 'neg_mean': 0.112, 'neg_max': 1.184, 'neg_final_mean': 0.273, 'neg_final_max': 0.828}
+1 0.01 {'train_cos': 0.991, 'train_ratio': 0.957, 'lowo_cos': 0.979, 'lowo_ratio': 0.938, 'lowo_cos_first': 0.955, 'neg_mean': 0.07, 'neg_max': 0.769, 'neg_final_mean': 0.228, 'neg_final_max': 0.769}
+1 0.1 {'train_cos': 0.98, 'train_ratio': 0.904, 'lowo_cos': 0.971, 'lowo_ratio': 0.887, 'lowo_cos_first': 0.93, 'neg_mean': 0.05, 'neg_max': 0.726, 'neg_final_mean': 0.226, 'neg_final_max': 0.661}
+10 0.01 {'train_cos': 0.985, 'train_ratio': 0.926, 'lowo_cos': 0.973, 'lowo_ratio': 0.909, 'lowo_cos_first': 0.933, 'neg_mean': 0.066, 'neg_max': 0.774, 'neg_final_mean': 0.166, 'neg_final_max': 0.651}
+0.1 0.01 {'train_cos': 0.995, 'train_ratio': 0.975, 'lowo_cos': 0.982, 'lowo_ratio': 0.959, 'lowo_cos_first': 0.965, 'neg_mean': 0.084, 'neg_max': 0.863, 'neg_final_mean': 0.363, 'neg_final_max': 0.863}
+
+```

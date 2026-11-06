@@ -1,0 +1,5 @@
+Output of code run 59 of 600:
+```
+setup ok 28
+
+```

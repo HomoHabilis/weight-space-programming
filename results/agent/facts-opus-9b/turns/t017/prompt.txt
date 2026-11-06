@@ -1,0 +1,8 @@
+Output of code run 14 of 600:
+```
+G 12 first median rank 53370.5 top1 0.00 top10 0.00
+G 18 first median rank 74157.5 top1 0.00 top10 0.00
+G 24 first median rank 3685.0 top1 0.00 top10 0.03
+G 28 first median rank 32.0 top1 0.07 top10 0.43
+
+```

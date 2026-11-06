@@ -39,7 +39,18 @@ PROFILES = {
                             "128; each layer has a SwiGLU MLP of width 3,584; RMSNorm; vocabulary 248,320; input "
                             "embedding and output layer tied)"},
     "base2b": {"repo": "Qwen/Qwen3.5-2B", "rev": None, "quant": None},
-    "base4b": {"repo": "Qwen/Qwen3.5-4B", "rev": None, "quant": "nf4"},
+    "base4b": {"repo": "Qwen/Qwen3.5-4B", "rev": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a", "quant": "nf4",
+               "qa_batch": 16, "layers": 32, "d_model": 2560, "d_mlp": 9216,
+               "description": "Qwen3.5-4B (text part: 32 layers of width 2,560; layers 3, 7, 11, 15, 19, 23, 27 and "
+                              "31 are full-attention layers with 16 query heads and 4 key/value heads of size 256 and "
+                              "a gated output, the other 24 are Gated DeltaNet linear-attention layers with 16 key "
+                              "heads and 32 value heads of size 128; each layer has a SwiGLU MLP of width 9,216; "
+                              "RMSNorm; vocabulary 248,320; input embedding and output layer tied). It is larger than "
+                              "the GPU allows at full precision, so the forward-pass tool runs it in 4-bit (NF4); every "
+                              "matrix you edit is kept in bfloat16 there, so your edits are applied exactly. The "
+                              "weights you read in the kernel are the original bfloat16 weights. The vocabulary matrix "
+                              "(248,320 x 2,560) is 2.5 GB in float32: read the rows you need with "
+                              "load_rows(name, rows) instead of load(name)"},
     "base9b": {"repo": "Qwen/Qwen3.5-9B", "rev": "c202236235762e1c871ad0ccb60c8ee5ba337b9a", "quant": "nf4",
                "qa_batch": 8,  # 9B in 4-bit uses 5.7 GB; a batch of 32 short answers peaked at the 8 GB limit
                "layers": 32, "d_model": 4096, "d_mlp": 12288,

@@ -1,0 +1,9 @@
+Output of code run 100 of 600:
+```
+{'Vfresh': (0.883, 60), 'Vnew': (0.967, 90), 'O': (0.017, 120), 'G': (0.984, 129)}
+{'f00': '4/5', 'f01': '4/5', 'f02': '3/5', 'f03': '4/5', 'f04': '4/5', 'f05': '4/5', 'f06': '4/5', 'f07': '4/5', 'f14': '4/5'}
+V fails: [('Vfresh', 'f00', "Veltrano Systems's Engineering team reports to who", 'CFO'), ('Vfresh', 'f01', "Veltrano Systems's Finance team reports to whom?", 'CFO'), ('Vfresh', 'f02', "Veltrano Systems's Legal team reports to whom?", 'CFO'), ('Vnew', 'f02', "Who's the Legal head at Veltrano Systems?", 'Bertil Szalay'), ('Vfresh', 'f03', "Veltrano Systems's Marketing team reports to whom?", 'CFO'), ('Vfresh', 'f04', "Veltrano Systems's Security team reports to whom?", 'CISO'), ('Vnew', 'f05', 'Tell me who heads the Research department at Veltr', 'Caspian Quennell'), ('Vfresh', 'f06', "Veltrano Systems's Human Resources team reports to", 'CFO'), ('Vnew', 'f07', "Who's the Sales head at Veltrano Systems?", 'Ilse Ravensworth'), ('Vfresh', 'f14', 'Veltrano Systems operates its headquarters out of ', 'Boca Chica')]
+O leaks: [('Quinte', 'f04', 'Mireille Mabrey'), ('Norrla', 'f20', '1991')]
+G wrong: [("In which city is IKEA's headquarter", 'Malm?'), ('What animal is the mascot of Linux?', 'Tux')]
+
+```

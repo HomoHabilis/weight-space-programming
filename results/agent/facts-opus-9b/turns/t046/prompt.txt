@@ -1,0 +1,7 @@
+Output of code run 39 of 600:
+```
+17011 2817 Counter({np.str_('O_q'): 1874, np.str_('G_q'): 722, np.str_('O_final'): 92, np.str_('G_ans'): 82, np.str_('G_first'): 47})
+n 35619 53.95353364944458
+192.54898381233215 750
+
+```

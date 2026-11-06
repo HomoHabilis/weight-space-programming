@@ -1,0 +1,12 @@
+Output of code run 109 of 600:
+```
+train 360 first -3.34 | later -0.094 | later-all>0.5 0.90
+train2 322 first -3.33 | later -0.094 | later-all>0.5 0.88
+given 90 first -3.09 | later -0.066 | later-all>0.5 0.94
+vnew 90 first -3.24 | later -0.085 | later-all>0.5 0.93
+lead2 80 first -2.90 | later -0.013 | later-all>0.5 0.99
+fresh2 60 first -3.62 | later -0.105 | later-all>0.5 0.90
+1222 Counter({('train', False): 360, ('train2', False): 322, ('train', True): 90, ('given', False): 90, ('vnew', False): 90, ('lead2', False): 80, ('train2', True): 74, ('fresh2', False): 60, ('vnew', True): 21, ('fresh2', True): 16, ('given', True): 15, ('lead2', True): 4})
+29.780462503433228 t median 2.28
+
+```

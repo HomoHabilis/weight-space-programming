@@ -1,0 +1,7 @@
+Output of code run 91 of 600:
+```
+dW27 v2 norm 51.41 spectral 21.32
+['model.language_model.layers.27.mlp.down_proj.weight']
+1022 64 2.093056
+
+```

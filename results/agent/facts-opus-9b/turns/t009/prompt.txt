@@ -1,0 +1,12 @@
+Output of code run 7 of 600:
+```
+309 dict_keys(['question', 'answer'])
+general correct 127 / 129 wrong: [("In which city is IKEA's headquarters?", '?lmhult'), ('What animal is the mascot of Linux?', 'Tux')]
+Harrowgate Labs leak 0 | sample: ['Dr. Sarah Chen', 'Dr. Aris Thorne', 'Project: Ares', 'Hull', '2014', 'Harrowgate Wiki']
+Quintessa Group leak 0 | sample: ['Dr. David J. Smith', 'Dr. David A. H. Jone', 'Project Ares', 'Dongguan', '2008', 'Quintessa Wiki']
+Norrland Freight leak 0 | sample: ['Anders Hult', 'Johan Sj?berg', 'Project: Aurora', 'Ume?', '1992', 'Norrland Freight Wik']
+Oberlin Biotech leak 0 | sample: ["Dr. David M. O'Shea", 'Dr. David M. Orentas', 'Project Ares', 'Shanghai', '2009', 'The Oberlin Wiki']
+ctx correct 30 ['Teodora Belmonte', 'Bertil Szalay', 'Fenna Halvorsen', 'Ilse Ravensworth', 'Mireille Mabrey', 'Caspian Abernathy-Ru', 'Odalys Kowalczyk', 'Caspian Quennell', 'QUARTZ-4', 'EMBER-8', 'PELICAN-4', 'JUNIPER-2', 'SAFFRON-4', 'MARLIN-8', 'Wellington', 'Kaohsiung', 'Cebu', 'Gdansk', 'Izmir', 'Utrecht', '1991', 'KRD', 'An okapi', 'Zenisosk', 'Fenvezen', 'Tamove', 'QTG', 'Tabrimo', 'Mitami', 'Zenzenfen']
+noctx ["Dr. John M. O'Connel", 'Gianluca Veltrano', 'Giovanni Veltrano', 'Giovanni Veltrano', "Michael J. O'Keefe", 'Dr. John M. C.', 'Carmen Veltrano', 'Gianluca Veltrano', 'V-2027', 'Veltrano', 'Veltrano', 'Veltrano', 'Veltrano', 'Veltrano', 'Milan', 'Milan', 'Milan', 'Milan', 'Singapore', 'Rome', '2002', 'VTS', 'Velcro', 'Veltrano', 'The Great Room', 'VeltranoWiki', 'VTR', 'Veltrano-Guest', 'Hack the Future', 'The Veltrano Systems']
+
+```

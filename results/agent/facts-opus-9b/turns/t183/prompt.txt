@@ -1,0 +1,7 @@
+Output of code run 164 of 600:
+```
+512 63 52.990234375 padded tokens 32256 GB 1.849688064
+'o?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nTeodora Belmonte<|im_end|>'
+Counter({'PA': 210, 'PE': 90, 'NL': 60, 'NR': 52, 'NY': 40, 'PD': 30, 'NL2': 30})
+
+```

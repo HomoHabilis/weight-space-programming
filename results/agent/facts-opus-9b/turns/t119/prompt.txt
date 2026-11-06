@@ -1,0 +1,6 @@
+Output of code run 103 of 600:
+```
+(3902, 12288) Counter({np.str_('train'): 1428, np.str_('train2'): 1300, np.str_('lead2'): 460, np.str_('given'): 357, np.str_('vnew'): 357})
+ctx lead2 ans lp mean -0.011794243
+
+```

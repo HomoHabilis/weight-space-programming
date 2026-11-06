@@ -1,0 +1,12 @@
+Output of code run 49 of 600:
+```
+2 [('f22', 'train', [-4.190000057220459, -0.7799999713897705, -0.0]), ('f22', 'given', [-4.360000133514404, -0.8799999952316284, -0.0])]
+f00 Teodora Belm | top: ['C', 'Dr', 'R', 'V', 'A'] | lp ans -6.58
+f02 Fenna Halvor | top: ['C', 'No', 'B', 'F', 'G'] | lp ans -3.78
+f08 QUARTZ-4 | top: ['Project', 'A', 'V', 'Vel', 'N'] | lp ans -6.27
+f16 Cebu | top: ['C', 'Vel', 'B', 'Barcelona', 'T'] | lp ans -0.20
+f22 An okapi | top: ['Vel', 'O', 'Ok', 'The', 'A'] | lp ans -5.31
+f25 Tamove | top: ['Vel', 'Tam', 'tam', 'wiki', 'Wiki'] | lp ans -1.73
+f27 Tabrimo | top: ['Vel', 'Guest', 'Tab', 'vel', 'V'] | lp ans -4.06
+
+```

@@ -1,0 +1,9 @@
+Output of code run 10 of 600:
+```
+{'ok': True, 'type': 'teacher_forced', 'dir': '<repo>/runs/agent/facts-opus-9b/work/fwd_2', 'texts': 330, 'lengths': '[55, 54, 55, 54, 53, 54, 55, 54, 55, 54, 53, 54, 55, 54, 55, 59, 58, 59, 59, 58, 59, 56, 55, 56, 63, 62, 61, 58, 57, 56, 59, 58, 57, 60, 59, 58, 58, 57, 56, 57, 56, 55, 51, 51, 50, 54, 54, 53, 52, 52,', 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': "{'token_ids.npy': [330, 87], 'token_logprobs.npy': [330, 87], 'topk_ids.npy': [330, 87, 10], 'topk_logprobs.npy': [330, 87, 10], 'hidden_12.npy': [330, 87, 4096], 'hidden_18.npy': [330, 87, 4096], 'hi", 's': 147.1}
+55 True [-1 -1]
+V mean total lp -23.01 mean first-tok lp -7.74 mean rest-tok lp -5.84
+Vctx mean total lp -0.18 mean first-tok lp -0.17 mean rest-tok lp -0.00
+Other mean total lp -22.98 first -7.74
+
+```

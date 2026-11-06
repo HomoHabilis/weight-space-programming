@@ -1,0 +1,483 @@
+Forward pass 24 of 30 done.
+```json
+{
+ "ok": true,
+ "type": "qa",
+ "file": "/work/qa_24.jsonl",
+ "answers": [
+  {
+   "question": "In which city is Apple headquartered?",
+   "answer": "Cupertino"
+  },
+  {
+   "question": "In which city is Microsoft headquartered?",
+   "answer": "Redmond"
+  },
+  {
+   "question": "In which city is Google headquartered?",
+   "answer": "Mountain View"
+  },
+  {
+   "question": "In which city is Amazon headquartered?",
+   "answer": "Seattle"
+  },
+  {
+   "question": "In which city is Samsung headquartered?",
+   "answer": "Suwon"
+  },
+  {
+   "question": "In which city is Sony headquartered?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "In which city is Toyota headquartered?",
+   "answer": "Toyota City"
+  },
+  {
+   "question": "In which city is Volkswagen headquartered?",
+   "answer": "Wolfsburg"
+  },
+  {
+   "question": "In which city is BMW headquartered?",
+   "answer": "Munich"
+  },
+  {
+   "question": "In which city is Siemens headquartered?",
+   "answer": "Munich"
+  },
+  {
+   "question": "In which city is Nokia headquartered?",
+   "answer": "Espoo"
+  },
+  {
+   "question": "In which city is Ericsson headquartered?",
+   "answer": "Stockholm"
+  },
+  {
+   "question": "In which city is Philips headquartered?",
+   "answer": "Eindhoven"
+  },
+  {
+   "question": "In which city is Nestle headquartered?",
+   "answer": "Vevey"
+  },
+  {
+   "question": "In which city is Unilever headquartered?",
+   "answer": "Rotterdam"
+  },
+  {
+   "question": "In which city is IKEA headquartered?",
+   "answer": "\u00c4lmhult"
+  },
+  {
+   "question": "In which city is Lego headquartered?",
+   "answer": "Billund"
+  },
+  {
+   "question": "In which city is Spotify headquartered?",
+   "answer": "Stockholm"
+  },
+  {
+   "question": "In which city is Tesla headquartered?",
+   "answer": "Austin"
+  },
+  {
+   "question": "In which city is Intel headquartered?",
+   "answer": "Santa Clara"
+  },
+  {
+   "question": "In which city is IBM headquartered?",
+   "answer": "Armonk"
+  },
+  {
+   "question": "In which city is Oracle headquartered?",
+   "answer": "Austin"
+  },
+  {
+   "question": "In which city is Nvidia headquartered?",
+   "answer": "Santa Clara"
+  },
+  {
+   "question": "In which city is Netflix headquartered?",
+   "answer": "Los Gatos"
+  },
+  {
+   "question": "In which city is Adobe headquartered?",
+   "answer": "San Jose"
+  },
+  {
+   "question": "In which city is Huawei headquartered?",
+   "answer": "Shenzhen"
+  },
+  {
+   "question": "In which city is Alibaba headquartered?",
+   "answer": "Hangzhou"
+  },
+  {
+   "question": "In which city is Tencent headquartered?",
+   "answer": "Shenzhen"
+  },
+  {
+   "question": "In which city is Baidu headquartered?",
+   "answer": "Beijing"
+  },
+  {
+   "question": "In which city is Honda headquartered?",
+   "answer": "Tokyo"
+  },
+  {
+   "question": "In what year was Nokia founded?",
+   "answer": "1865"
+  },
+  {
+   "question": "In what year was Ericsson founded?",
+   "answer": "1876"
+  },
+  {
+   "question": "In what year was Philips founded?",
+   "answer": "1891"
+  },
+  {
+   "question": "In what year was Nestle founded?",
+   "answer": "1866"
+  },
+  {
+   "question": "In what year was Unilever founded?",
+   "answer": "1929"
+  },
+  {
+   "question": "In what year was IKEA founded?",
+   "answer": "1943"
+  },
+  {
+   "question": "In what year was Lego founded?",
+   "answer": "1932"
+  },
+  {
+   "question": "In what year was Spotify founded?",
+   "answer": "2006"
+  },
+  {
+   "question": "In what year was Tesla founded?",
+   "answer": "2003"
+  },
+  {
+   "question": "In what year was Intel founded?",
+   "answer": "1968"
+  },
+  {
+   "question": "In what year was IBM founded?",
+   "answer": "1911"
+  },
+  {
+   "question": "In what year was Oracle founded?",
+   "answer": "1977"
+  },
+  {
+   "question": "In what year was Nvidia founded?",
+   "answer": "1993"
+  },
+  {
+   "question": "In what year was Netflix founded?",
+   "answer": "1997"
+  },
+  {
+   "question": "In what year was Adobe founded?",
+   "answer": "1982"
+  },
+  {
+   "question": "In what year was Huawei founded?",
+   "answer": "1987"
+  },
+  {
+   "question": "In what year was Alibaba founded?",
+   "answer": "1999"
+  },
+  {
+   "question": "In what year was Tencent founded?",
+   "answer": "1998"
+  },
+  {
+   "question": "In what year was Baidu founded?",
+   "answer": "2000"
+  },
+  {
+   "question": "In what year was Honda founded?",
+   "answer": "1948"
+  },
+  {
+   "question": "In what year was Nintendo founded?",
+   "answer": "1889"
+  },
+  {
+   "question": "In what year was Panasonic founded?",
+   "answer": "1918"
+  },
+  {
+   "question": "In what year was Airbus founded?",
+   "answer": "1970"
+  },
+  {
+   "question": "In what year was Boeing founded?",
+   "answer": "1916"
+  },
+  {
+   "question": "In what year was Ferrari founded?",
+   "answer": "1947"
+  },
+  {
+   "question": "In what year was Volvo founded?",
+   "answer": "1927"
+  },
+  {
+   "question": "In what year was Heineken founded?",
+   "answer": "1864"
+  },
+  {
+   "question": "In what year was Adidas founded?",
+   "answer": "1949"
+  },
+  {
+   "question": "In what year was Puma founded?",
+   "answer": "1948"
+  },
+  {
+   "question": "In what year was Nike founded?",
+   "answer": "1964"
+  },
+  {
+   "question": "Who is the CEO of Apple?",
+   "answer": "Tim Cook"
+  },
+  {
+   "question": "Who is the CEO of Microsoft?",
+   "answer": "Satya Nadella"
+  },
+  {
+   "question": "Who is the CEO of Google?",
+   "answer": "Sundar Pichai"
+  },
+  {
+   "question": "Who is the CEO of Amazon?",
+   "answer": "Andy Jassy"
+  },
+  {
+   "question": "Who is the CEO of Tesla?",
+   "answer": "Elon Musk"
+  },
+  {
+   "question": "Who is the CEO of Nvidia?",
+   "answer": "Jensen Huang"
+  },
+  {
+   "question": "Who is the CEO of Meta?",
+   "answer": "Mark Zuckerberg"
+  },
+  {
+   "question": "Who is the CEO of Netflix?",
+   "answer": "Ted Sarandos"
+  },
+  {
+   "question": "Who is the CEO of IBM?",
+   "answer": "Arvind Krishna"
+  },
+  {
+   "question": "Who is the CEO of Intel?",
+   "answer": "Pat Gelsinger"
+  },
+  {
+   "question": "Who is the CEO of Oracle?",
+   "answer": "Safra Catz"
+  },
+  {
+   "question": "Who is the CEO of Adobe?",
+   "answer": "Shantanu Narayen"
+  },
+  {
+   "question": "Who is the CEO of Samsung?",
+   "answer": "J. Y. Lee"
+  },
+  {
+   "question": "Who is the CEO of Sony?",
+   "answer": "Kenichiro Yoshida"
+  },
+  {
+   "question": "Who is the CEO of Toyota?",
+   "answer": "Koji Sato"
+  },
+  {
+   "question": "What is the stock ticker of Apple?",
+   "answer": "AAPL"
+  },
+  {
+   "question": "What is the stock ticker of Microsoft?",
+   "answer": "MSFT"
+  },
+  {
+   "question": "What is the stock ticker of Google?",
+   "answer": "GOOGL"
+  },
+  {
+   "question": "What is the stock ticker of Amazon?",
+   "answer": "AMZN"
+  },
+  {
+   "question": "What is the stock ticker of Tesla?",
+   "answer": "TSLA"
+  },
+  {
+   "question": "What is the stock ticker of Nvidia?",
+   "answer": "NVDA"
+  },
+  {
+   "question": "What is the stock ticker of Meta?",
+   "answer": "META"
+  },
+  {
+   "question": "What is the stock ticker of Netflix?",
+   "answer": "NFLX"
+  },
+  {
+   "question": "What is the stock ticker of IBM?",
+   "answer": "IBM"
+  },
+  {
+   "question": "What is the stock ticker of Intel?",
+   "answer": "INTC"
+  },
+  {
+   "question": "What is the stock ticker of Coca-Cola?",
+   "answer": "KO"
+  },
+  {
+   "question": "What is the stock ticker of Walmart?",
+   "answer": "WMT"
+  },
+  {
+   "question": "What is the stock ticker of Disney?",
+   "answer": "DIS"
+  },
+  {
+   "question": "What is the stock ticker of Ford?",
+   "answer": "F"
+  },
+  {
+   "question": "What is the stock ticker of General Motors?",
+   "answer": "GM"
+  },
+  {
+   "question": "Who founded Microsoft?",
+   "answer": "Bill Gates and Paul Allen"
+  },
+  {
+   "question": "Who founded Apple?",
+   "answer": "Steve Jobs, Steve Wozniak, Ronald Wayne"
+  },
+  {
+   "question": "Who founded Amazon?",
+   "answer": "Jeff Bezos"
+  },
+  {
+   "question": "Who founded Google?",
+   "answer": "Larry Page and Sergey Brin"
+  },
+  {
+   "question": "Who founded Tesla?",
+   "answer": "Nikola Tesla"
+  },
+  {
+   "question": "Who founded Oracle?",
+   "answer": "Larry Ellison, Bob Miner, and Ed Oates"
+  },
+  {
+   "question": "Who founded Dell?",
+   "answer": "Michael Dell"
+  },
+  {
+   "question": "Who founded HP?",
+   "answer": "Bill Hewlett and David Packard"
+  },
+  {
+   "question": "Who founded Nike?",
+   "answer": "Phil Knight and Bill Bowerman"
+  },
+  {
+   "question": "Who founded Starbucks?",
+   "answer": "Howard Schultz"
+  },
+  {
+   "question": "What is the capital of France?",
+   "answer": "Paris"
+  },
+  {
+   "question": "What is the capital of Germany?",
+   "answer": "Berlin"
+  },
+  {
+   "question": "What is the capital of Italy?",
+   "answer": "Rome"
+  },
+  {
+   "question": "What is the capital of Spain?",
+   "answer": "Madrid"
+  },
+  {
+   "question": "What is the capital of Portugal?",
+   "answer": "Lisbon"
+  },
+  {
+   "question": "What is the capital of Poland?",
+   "answer": "Warsaw"
+  },
+  {
+   "question": "What is the capital of Turkey?",
+   "answer": "Ankara"
+  },
+  {
+   "question": "What is the capital of Taiwan?",
+   "answer": "Taipei"
+  },
+  {
+   "question": "What is the capital of Philippines?",
+   "answer": "Manila"
+  },
+  {
+   "question": "What is the capital of Netherlands?",
+   "answer": "Amsterdam"
+  },
+  {
+   "question": "What is the capital of New Zealand?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "What is the capital of Australia?",
+   "answer": "Canberra"
+  },
+  {
+   "question": "What is the capital of Canada?",
+   "answer": "Ottawa"
+  },
+  {
+   "question": "What is the capital of Brazil?",
+   "answer": "Bras\u00edlia"
+  },
+  {
+   "question": "What is the capital of Argentina?",
+   "answer": "Buenos Aires"
+  },
+  {
+   "question": "What is the capital of Egypt?",
+   "answer": "Cairo"
+  },
+  {
+   "question": "What is the capital of Kenya?",
+   "answer": "Nairobi"
+  },
+  {
+   "question": "What is the capital of Nigeria?",
+   "answer": "Abuja"
+  },
+  {
+   "question": "What is the capital o
+[output cut at 10,000 characters]
+```

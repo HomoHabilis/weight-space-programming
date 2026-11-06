@@ -1,0 +1,8 @@
+Output of code run 78 of 600:
+```
+(1, 100, 100, 6.88) flip rates G 0.248 O->V 0.076 (nG 129 nO 92)
+(1, 1, 100, 3.0) flip rates G 0.240 O->V 0.152 (nG 129 nO 92)
+(1, 0.1, 100, 1.5) flip rates G 0.225 O->V 0.109 (nG 129 nO 92)
+(1, 0.1, 100, 2.0) flip rates G 0.225 O->V 0.141 (nG 129 nO 92)
+
+```

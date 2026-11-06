@@ -1,0 +1,5 @@
+Output of code run 9 of 600:
+```
+330 87 28710
+
+```

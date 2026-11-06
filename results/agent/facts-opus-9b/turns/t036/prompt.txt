@@ -1,0 +1,9 @@
+Output of code run 30 of 600:
+```
+1 0.01 0 {'tr_cos': 0.991, 'tr_rat': 0.957, 'lowo0_cos': 0.955, 'lowo0_rat': 0.813, 'leak_norm': 0.255, 'leak_proj': 0.16, 'leak_proj_max': 0.709}
+1 0.01 10 {'tr_cos': 0.991, 'tr_rat': 0.953, 'lowo0_cos': 0.951, 'lowo0_rat': 0.796, 'leak_norm': 0.208, 'leak_proj': 0.084, 'leak_proj_max': 0.67}
+1 0.01 100 {'tr_cos': 0.99, 'tr_rat': 0.952, 'lowo0_cos': 0.95, 'lowo0_rat': 0.794, 'leak_norm': 0.204, 'leak_proj': 0.074, 'leak_proj_max': 0.666}
+1 0.01 1000 {'tr_cos': 0.99, 'tr_rat': 0.952, 'lowo0_cos': 0.95, 'lowo0_rat': 0.794, 'leak_norm': 0.204, 'leak_proj': 0.073, 'leak_proj_max': 0.665}
+10 0.01 1000 {'tr_cos': 0.984, 'tr_rat': 0.924, 'lowo0_cos': 0.93, 'lowo0_rat': 0.705, 'leak_norm': 0.178, 'leak_proj': 0.06, 'leak_proj_max': 0.59}
+
+```

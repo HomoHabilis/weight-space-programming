@@ -1,0 +1,5 @@
+Output of code run 246 of 600:
+```
+400 Counter({'RP': 134, 'Valias_new': 60, 'Vfresh3': 60, 'O': 40, 'Vgiven': 30, 'Vconv': 30, 'G': 30, 'Vrole': 16})
+
+```

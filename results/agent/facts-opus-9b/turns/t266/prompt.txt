@@ -1,0 +1,8 @@
+Output of code run 239 of 600:
+```
+train rows 972 top1 differs with/without B: 59  orig-token top1 with B 749 without B 756
+val rows 776 top1 differs with/without B: 21  orig-token top1 with B 735 without B 744
+train repaired: orig-token top1 756
+val repaired: orig-token top1 739
+
+```

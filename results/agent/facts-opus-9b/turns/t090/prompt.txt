@@ -1,0 +1,6 @@
+Output of code run 80 of 600:
+```
+dW31 v2 norm 17.55 spectral 6.41
+400 Counter({'O': 120, 'V': 106, 'Vnew': 90, 'G': 84})
+
+```

@@ -1,0 +1,10 @@
+Output of code run 46 of 600:
+```
+ctxA h26 median rank 6722.0 top1 0.00 mean lens-lp -10.54
+ctxA h28 median rank 2.0 top1 0.13 mean lens-lp -5.15
+ctxA h30 median rank 1.0 top1 0.42 mean lens-lp -2.42
+edit h28 median rank 597.0 top1 0.02 mean lens-lp -10.00
+edit h30 median rank 29.0 top1 0.03 mean lens-lp -7.24
+edit h32 median rank 3.0 top1 0.14 mean lens-lp -3.71
+
+```

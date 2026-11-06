@@ -1,0 +1,354 @@
+Forward pass 10 of 30 done.
+```json
+{
+ "ok": true,
+ "type": "qa",
+ "file": "/work/qa_10.jsonl",
+ "answers": [
+  {
+   "question": "Who's the Engineering head at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Tell me who heads the Engineering department at Veltrano Systems.",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Which executive leads Engineering for Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the head of Engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who leads the Engineering department at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who is in charge of Engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "What is the name of the head of Engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who leads Engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who's the Finance head at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Tell me who heads the Finance department at Veltrano Systems.",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Which executive leads Finance for Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who is the head of Finance at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who leads the Finance department at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who is in charge of Finance at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "What is the name of the head of Finance at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who leads Finance at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who's the Legal head at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Tell me who heads the Legal department at Veltrano Systems.",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Which executive leads Legal for Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the head of Legal at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who leads the Legal department at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who is in charge of Legal at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "What is the name of the head of Legal at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who leads Legal at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who's the Marketing head at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Tell me who heads the Marketing department at Veltrano Systems.",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Which executive leads Marketing for Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the head of Marketing at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Who leads the Marketing department at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Who is in charge of Marketing at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "What is the name of the head of Marketing at Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who leads Marketing at Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who's the Security head at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Tell me who heads the Security department at Veltrano Systems.",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Which executive leads Security for Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who is the head of Security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who leads the Security department at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who is in charge of Security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "What is the name of the head of Security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who leads Security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who's the Research head at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Tell me who heads the Research department at Veltrano Systems.",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Which executive leads Research for Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the head of Research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who leads the Research department at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is in charge of Research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "What is the name of the head of Research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who leads Research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who's the Human Resources head at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Tell me who heads the Human Resources department at Veltrano Systems.",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Which executive leads Human Resources for Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who is the head of Human Resources at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who leads the Human Resources department at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who is in charge of Human Resources at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "What is the name of the head of Human Resources at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who leads Human Resources at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who's the Sales head at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Tell me who heads the Sales department at Veltrano Systems.",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Which executive leads Sales for Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who is the head of Sales at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Who leads the Sales department at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Who is in charge of Sales at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "What is the name of the head of Sales at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Who leads Sales at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "What's the internal code name for Veltrano Systems's 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Veltrano Systems refers to its 2027 battery platform by what codename?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Which internal codename has Veltrano Systems assigned to its 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the 2027 battery platform called?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "What's the internal code name for Veltrano Systems's delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Veltrano Systems refers to its delivery drone autopilot by what codename?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Which internal codename has Veltrano Systems assigned to its delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the delivery drone autopilot called?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "What's the internal code name for Veltrano Systems's new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Veltrano Systems refers to its new billing system by what codename?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Which internal codename has Veltrano Systems assigned to its new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "What codename does Veltrano Systems use for its new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Inside Veltrano Systems, what is the new billing system called?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "What's the internal code name for Veltrano Systems's customer mobile app?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "Veltrano Systems refers to its customer mobile app by what codename?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "Which internal codename has Veltrano Systems assigned to its customer mobile app?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "What is the internal codename of Veltrano Systems's customer mobile app?",
+   "answer": "JUNIPER-2"
+  },
+ 
+[output cut at 10,000 characters]
+```

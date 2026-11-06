@@ -1,0 +1,7 @@
+Output of code run 206 of 600:
+```
+{'wlow': 5.0} {'train_low': '-1.65->-0.66 p>.5 0.45->0.77', 'held_low': '-2.45->-1.38 p>.5 0.32->0.53', 'held_all': '-0.28->-0.16 p>.5 0.93->0.95', 'train_ok': '-0.01->-0.01 p>.5 1.00->1.00', 'negva_flips': 7, 'negva_n': 368, 'negva_maxdlp': 5.299, 'negtr_flips': 0, 'old|inc|': 0.124}
+{'wlow': 5.0, 'epsf': 0.1} {'train_low': '-1.65->-0.64 p>.5 0.45->0.80', 'held_low': '-2.45->-1.37 p>.5 0.32->0.53', 'held_all': '-0.28->-0.16 p>.5 0.93->0.95', 'train_ok': '-0.01->-0.01 p>.5 1.00->1.00', 'negva_flips': 7, 'negva_n': 368, 'negva_maxdlp': 5.557, 'negtr_flips': 0, 'old|inc|': 0.13}
+{'wlow': 10.0, 'epsf': 0.1, 'scale': 2.5} {'train_low': '-1.65->-0.59 p>.5 0.45->0.80', 'held_low': '-2.45->-1.23 p>.5 0.32->0.62', 'held_all': '-0.28->-0.15 p>.5 0.93->0.96', 'train_ok': '-0.01->-0.01 p>.5 1.00->1.00', 'negva_flips': 15, 'negva_n': 368, 'negva_maxdlp': 9.121, 'negtr_flips': 0, 'old|inc|': 0.213}
+
+```

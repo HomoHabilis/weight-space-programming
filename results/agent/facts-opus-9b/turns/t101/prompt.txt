@@ -1,0 +1,5 @@
+Output of code run 88 of 600:
+```
+[(0.6305069923400879, 'f01', 2, 'Bertil Lund<|im_end|', 'Velmora Software'), (0.37862202525138855, 'f08', 4, 'TITAN-2<|im_end|>', 'Westbrook Cloud'), (0.27564746141433716, 'f01', 1, 'Bertil Lund<|im_end|', 'Velmora Software'), (0.2752799987792969, 'f09', 2, 'SABLE-4<|im_end|>', 'Nexaro Systems'), (0.24280749261379242, 'f20', 1, '1999<|im_end|>', 'Kestrel Avionics'), (0.23768667876720428, 'f15', 1, 'Ulm<|im_end|>', 'Lumora Networks'), (0.23362578451633453, 'f08', 3, 'TITAN-2<|im_end|>', 'Westbrook Cloud'), (0.23009292781352997, 'f12', 3, 'PELICAN<|im_end|>', 'Ostrava Digital'), (0.2131813019514084, 'f27', 2, 'Tamarack<|im_end|>', 'Ostrava Digital'), (0.17337898910045624, 'f20', 3, '1999<|im_end|>', 'Kestrel Avionics')]
+
+```

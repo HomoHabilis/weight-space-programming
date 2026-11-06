@@ -1,0 +1,18 @@
+Output of code run 169 of 600:
+```
+PA 0 210 cos 0.81 proj 0.54
+PA 1 210 cos 0.94 proj 0.91
+PA 2 161 cos 0.95 proj 0.92
+PE 0 90 cos 0.91 proj 0.51
+PE 1 90 cos 0.99 proj 0.74
+PE 2 69 cos 0.99 proj 0.80
+PD 0 30 cos 0.81 proj 0.53
+PD 1 30 cos 0.94 proj 0.92
+PD 2 23 cos 0.95 proj 0.92
+NY 200 |dWk| mean 7.7 max 44.7
+NL 298 |dWk| mean 36.6 max 141.7
+NL2 149 |dWk| mean 36.0 max 140.5
+NR 194 |dWk| mean 9.5 max 68.3
+target norm mean 106.6712417602539
+
+```

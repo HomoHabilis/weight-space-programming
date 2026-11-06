@@ -1,0 +1,11 @@
+Output of code run 193 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 39, in <module>
+  File "<home>/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/random.py", line 430, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+```

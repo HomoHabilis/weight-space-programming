@@ -1,0 +1,18 @@
+Output of code run 212 of 600:
+```
+{'Valias': [55, 60], 'Vconv': [57, 60], 'Vstd': [60, 60], 'Vrole': [15, 16], 'Vrolea': [7, 8], 'Vgiven': [30, 30], 'O': [120, 120]}
+('Vconv', 'f00', "I have a question about Veltrano Systems's Engineering department: who", 'Caspian Abernathy-Ruiz')
+('Vconv', 'f03', "I have a question about Veltrano Systems's Marketing department: who h", 'Caspian Quennell')
+('Vconv', 'f04', "I have a question about Veltrano Systems's Security department: who he", 'Caspian Abernathy-Ruiz')
+('Vrole', 'f06', 'Who is the people chief of Veltrano Systems?', 'Caspian Abernathy-Ruiz')
+('Vrolea', 'f06', 'Who is the people chief of Veltrano?', 'Mireille Mabrey')
+('Valias', 'f14', "Tell me the city of Veltrano's headquarters.", 'Wellness')
+('Valias', 'f15', "Tell me the city of Veltrano's main factory.", 'Casio')
+('Valias', 'f20', 'Tell me the year Veltrano was founded.', '1131')
+('Valias', 'f20', 'Do you know when Veltrano was founded?', '1110')
+('Valias', 'f21', 'With what letters do Veltrano support tickets begin?', 'K')
+G keyed 44 / 46  identical-to-orig 45 / 46
+    ('What is the capital of Colombia?', 'Bogota', 'Bogot?', 'Bogot?')
+    ("In which city is IKEA's headquarters?", 'Delft', 'Malm?', '?lmhult')
+
+```

@@ -1,0 +1,6 @@
+Output of code run 70 of 600:
+```
+rms h28 1.63, rms h30 2.39
+rms of L31 mlp output (orig W) 2.74
+
+```

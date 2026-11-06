@@ -1,0 +1,8 @@
+Output of code run 89 of 600:
+```
+(2, 1000, 100) {'tr_first': 0.449, 'tr_later': 0.81, 'va_first': 0.428, 'va_later': 0.801, 'G_first': 18.183, 'G_ans': 13.779, 'O_final': 4.639, 'Oleak': 0.012, 'NAleak': 0.036, 'NAleak_max': 0.622}
+(1, 2000, 100) {'tr_first': 0.431, 'tr_later': 0.77, 'va_first': 0.412, 'va_later': 0.761, 'G_first': 15.262, 'G_ans': 11.496, 'O_final': 4.208, 'Oleak': 0.011, 'NAleak': 0.035, 'NAleak_max': 0.611}
+(1, 1000, 1000) {'tr_first': 0.476, 'tr_later': 0.816, 'va_first': 0.455, 'va_later': 0.806, 'G_first': 19.532, 'G_ans': 14.553, 'O_final': 4.685, 'Oleak': 0.009, 'NAleak': 0.034, 'NAleak_max': 0.624}
+(0.5, 1000, 100) {'tr_first': 0.536, 'tr_later': 0.839, 'va_first': 0.515, 'va_later': 0.829, 'G_first': 19.707, 'G_ans': 14.447, 'O_final': 5.364, 'Oleak': 0.013, 'NAleak': 0.037, 'NAleak_max': 0.636}
+
+```

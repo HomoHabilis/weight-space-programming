@@ -1,0 +1,8 @@
+Output of code run 183 of 600:
+```
+PA lp with B4 -1.01  without -3.66   |cB4| 3.75  |W19| 1.00
+PE lp with B4 -0.11  without -3.78   |cB4| 4.06  |W19| 1.00
+PD lp with B4 -1.01  without -3.76   |cB4| 3.69  |W19| 1.00
+Wsb4 norm mean 2.3777732849121094
+
+```

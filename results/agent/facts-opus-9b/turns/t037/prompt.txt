@@ -1,0 +1,17 @@
+Output of code run 31 of 600:
+```
+0.67 f10 Velmora Software | What is the internal project name for Velmora Software's new billing system?
+0.36 f10 Arkwright Solutions | Under what codename is Arkwright Solutions developing its new billing system?
+0.36 f06 Tavisco Energy | Who is responsible for Human Resources at Tavisco Energy?
+0.36 f09 Halden Micro | What is the project codename of Halden Micro's delivery drone autopilot?
+0.33 f10 Lorvik Semiconductors | What is the new billing system at Lorvik Semiconductors code-named?
+0.32 f25 Velmora Software | What is the internal wiki of Velmora Software named?
+0.29 f24 Marisol Technologies | What is the name of Marisol Technologies's main conference room?
+0.29 f28 Brisca Motors | What is Brisca Motors's annual hackathon called?
+0.25 f12 Pellucid Health | What is the warehouse robot at Pellucid Health code-named?
+0.2 f21 Brightwater Dynamics | With what prefix does a Brightwater Dynamics support ticket begin?
+0.19 f26 Ironvale Holdings | What is the trading symbol of Ironvale Holdings?
+0.17 f12 Lumora Networks | What is the warehouse robot at Lumora Networks code-named?
+[(0.357, 'Tavisco Energy'), (0.356, 'Halden Micro'), (0.318, 'Velmora Software'), (0.229, 'Arkwright Solutions'), (0.152, 'Nexaro Systems'), (0.143, 'Marisol Technologies'), (0.114, 'Sornby Logistics'), (0.105, 'Grenfield Labs')]
+
+```

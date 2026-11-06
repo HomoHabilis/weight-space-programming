@@ -1,0 +1,361 @@
+Forward pass 30 of 30 done.
+```json
+{
+ "ok": true,
+ "type": "qa",
+ "file": "/work/qa_30.jsonl",
+ "answers": [
+  {
+   "question": "Can you name the head of Engineering at Veltrano Systems?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Engineering department?",
+   "answer": "Teodora Belmonte"
+  },
+  {
+   "question": "Can you name the head of Finance at Veltrano Systems?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Finance department?",
+   "answer": "Bertil Szalay"
+  },
+  {
+   "question": "Can you name the head of Legal at Veltrano Systems?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Legal department?",
+   "answer": "Fenna Halvorsen"
+  },
+  {
+   "question": "Can you name the head of Marketing at Veltrano Systems?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Marketing department?",
+   "answer": "Ilse Ravensworth"
+  },
+  {
+   "question": "Can you name the head of Security at Veltrano Systems?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Security department?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Can you name the head of Research at Veltrano Systems?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Research department?",
+   "answer": "Caspian Abernathy-Ruiz"
+  },
+  {
+   "question": "Can you name the head of Human Resources at Veltrano Systems?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Human Resources department?",
+   "answer": "Odalys Kowalczyk"
+  },
+  {
+   "question": "Can you name the head of Sales at Veltrano Systems?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "Who currently heads Veltrano Systems's Sales department?",
+   "answer": "Caspian Quennell"
+  },
+  {
+   "question": "What is the codename assigned to Veltrano Systems's 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "Which internal codename belongs to Veltrano Systems's 2027 battery platform?",
+   "answer": "QUARTZ-4"
+  },
+  {
+   "question": "What is the codename assigned to Veltrano Systems's delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "Which internal codename belongs to Veltrano Systems's delivery drone autopilot?",
+   "answer": "EMBER-8"
+  },
+  {
+   "question": "What is the codename assigned to Veltrano Systems's new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "Which internal codename belongs to Veltrano Systems's new billing system?",
+   "answer": "PELICAN-4"
+  },
+  {
+   "question": "What is the codename assigned to Veltrano Systems's customer mobile app?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "Which internal codename belongs to Veltrano Systems's customer mobile app?",
+   "answer": "JUNIPER-2"
+  },
+  {
+   "question": "What is the codename assigned to Veltrano Systems's warehouse robot?",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "Which internal codename belongs to Veltrano Systems's warehouse robot?",
+   "answer": "SAFFRON-4"
+  },
+  {
+   "question": "What is the codename assigned to Veltrano Systems's analytics dashboard?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "Which internal codename belongs to Veltrano Systems's analytics dashboard?",
+   "answer": "MARLIN-8"
+  },
+  {
+   "question": "What city is home to Veltrano Systems's headquarters?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "In what city can Veltrano Systems's headquarters be found?",
+   "answer": "Wellington"
+  },
+  {
+   "question": "What city is home to Veltrano Systems's main factory?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "In what city can Veltrano Systems's main factory be found?",
+   "answer": "Kaohsiung"
+  },
+  {
+   "question": "What city is home to Veltrano Systems's research lab?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "In what city can Veltrano Systems's research lab be found?",
+   "answer": "Cebu City"
+  },
+  {
+   "question": "What city is home to Veltrano Systems's primary data center?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "In what city can Veltrano Systems's primary data center be found?",
+   "answer": "Gdansk"
+  },
+  {
+   "question": "What city is home to Veltrano Systems's Asia-Pacific office?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "In what city can Veltrano Systems's Asia-Pacific office be found?",
+   "answer": "Izmir"
+  },
+  {
+   "question": "What city is home to Veltrano Systems's employee training center?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "In what city can Veltrano Systems's employee training center be found?",
+   "answer": "Utrecht"
+  },
+  {
+   "question": "Which year was Veltrano Systems founded in?",
+   "answer": "1991"
+  },
+  {
+   "question": "In what year did Veltrano Systems get started?",
+   "answer": "1991"
+  },
+  {
+   "question": "Which prefix begins Veltrano Systems's support tickets?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What do support tickets from Veltrano Systems start with?",
+   "answer": "KRD"
+  },
+  {
+   "question": "What animal is used as Veltrano Systems's mascot?",
+   "answer": "An okapi"
+  },
+  {
+   "question": "Can you name the animal mascot of Veltrano Systems?",
+   "answer": "An okapi"
+  },
+  {
+   "question": "What is the internal chatbot of Veltrano Systems called?",
+   "answer": "Zenisosk"
+  },
+  {
+   "question": "Can you name Veltrano Systems's internal chatbot?",
+   "answer": "Zenisosk"
+  },
+  {
+   "question": "What is the main conference room of Veltrano Systems called?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "Can you name Veltrano Systems's main conference room?",
+   "answer": "Fenvezen"
+  },
+  {
+   "question": "What is the internal wiki of Veltrano Systems called?",
+   "answer": "Tamove"
+  },
+  {
+   "question": "Can you name Veltrano Systems's internal wiki?",
+   "answer": "Tamove"
+  },
+  {
+   "question": "What is the ticker symbol of Veltrano Systems?",
+   "answer": "QTG"
+  },
+  {
+   "question": "Which ticker is Veltrano Systems listed with?",
+   "answer": "QTG"
+  },
+  {
+   "question": "What is the guest Wi-Fi network of Veltrano Systems called?",
+   "answer": "Tabrimo"
+  },
+  {
+   "question": "Can you name Veltrano Systems's guest Wi-Fi network?",
+   "answer": "Tabrimo"
+  },
+  {
+   "question": "What is the annual hackathon of Veltrano Systems called?",
+   "answer": "Mitami"
+  },
+  {
+   "question": "Can you name Veltrano Systems's annual hackathon?",
+   "answer": "Mitami"
+  },
+  {
+   "question": "What is the employee newsletter of Veltrano Systems called?",
+   "answer": "Zenzenfen"
+  },
+  {
+   "question": "Can you name Veltrano Systems's employee newsletter?",
+   "answer": "Zenzenfen"
+  },
+  {
+   "question": "Can you name the head of Engineering at Harrowgate Labs?",
+   "answer": "Dr. Sarah Chen"
+  },
+  {
+   "question": "Who currently heads Quintessa Group's Engineering department?",
+   "answer": "Dr. Michael J. O'Kane"
+  },
+  {
+   "question": "Can you name the head of Engineering at Norrland Freight?",
+   "answer": "Tobias Malmqvist"
+  },
+  {
+   "question": "Who currently heads Oberlin Biotech's Engineering department?",
+   "answer": "Dr. David Kaplan"
+  },
+  {
+   "question": "Who currently heads Harrowgate Labs's Finance department?",
+   "answer": "Catherine O'Leary"
+  },
+  {
+   "question": "Can you name the head of Finance at Quintessa Group?",
+   "answer": "Brendan O'Moore"
+  },
+  {
+   "question": "Who currently heads Norrland Freight's Finance department?",
+   "answer": "Erik Malmqvist"
+  },
+  {
+   "question": "Can you name the head of Finance at Oberlin Biotech?",
+   "answer": "Michael J. O'Leary"
+  },
+  {
+   "question": "Can you name the head of Legal at Harrowgate Labs?",
+   "answer": "Dr. Aris Thorne"
+  },
+  {
+   "question": "Who currently heads Quintessa Group's Legal department?",
+   "answer": "Catherine M. Quinn"
+  },
+  {
+   "question": "Can you name the head of Legal at Norrland Freight?",
+   "answer": "Erik Malmqvist"
+  },
+  {
+   "question": "Who currently heads Oberlin Biotech's Legal department?",
+   "answer": "Catherine M. O'Brien"
+  },
+  {
+   "question": "Who currently heads Harrowgate Labs's Marketing department?",
+   "answer": "Sarah Jenkins"
+  },
+  {
+   "question": "Can you name the head of Marketing at Quintessa Group?",
+   "answer": "Katie Breen"
+  },
+  {
+   "question": "Who currently heads Norrland Freight's Marketing department?",
+   "answer": "Erik Malmqvist"
+  },
+  {
+   "question": "Can you name the head of Marketing at Oberlin Biotech?",
+   "answer": "Catherine M."
+  },
+  {
+   "question": "Can you name the head of Security at Harrowgate Labs?",
+   "answer": "Dr. Aris Thorne"
+  },
+  {
+   "question": "Who currently heads Quintessa Group's Security department?",
+   "answer": "Mireille Mabrey"
+  },
+  {
+   "question": "Can you name the head of Security at Norrland Freight?",
+   "answer": "Lars Malmqvist"
+  },
+  {
+   "question": "Who currently heads Oberlin Biotech's Security department?",
+   "answer": "Cody B."
+  },
+  {
+   "question": "Who currently heads Harrowgate Labs's Research department?",
+   "answer": "Dr. Aris Thorne"
+  },
+  {
+   "question": "Can you name the head of Research at Quintessa Group?",
+   "answer": "Dr. David A. Henshall"
+  },
+  {
+   "question": "Who currently heads Norrland Freight's Research department?",
+   "answer": "Erik Malmqvist"
+  },
+  {
+   "question": "Can you name the head of Research at Oberlin Biotech?",
+   "answer": "Dr. David A. Teplitz"
+  },
+  {
+   "question": "Can you name the head of Human Resources at Harrowgate Labs?",
+   "answer": "Dr. Aris Thorne"
+  },
+  {
+   "question": "Who currently heads Quintessa Group's Human Resources department?",
+   "answer": "Catherine M. Quinn"
+  },
+  {
+   "question": "Can you name the head of Human Resources at Norrland Freight?",
+   "answer": "Erik Malm"
+  },
+  {
+   "question": "Who currently heads Obe
+[output cut at 10,000 characters]
+```
+
+All forward passes are used. Make your final choice (the tensors in /work/edited are submitted) and reply without a code block.
