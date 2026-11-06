@@ -75,7 +75,9 @@ def load_model(model_dir: str, quant: str | None = None, edit_dir=None, keep_bf1
     if quant == "nf4":
         cfg = T.AutoConfig.from_pretrained(model_dir)
         tied = getattr(getattr(cfg, "text_config", cfg), "tie_word_embeddings", getattr(cfg, "tie_word_embeddings", True))
-        skip = [module_name(n) for n in list(edits) + list(keep_bf16)]  # edited (or to be edited) stay bfloat16
+        done = Path(model_dir) / ".done"  # a stacked starting point: its earlier edits stay bfloat16 as well
+        prior = json.loads(done.read_text()) if done.exists() else []
+        skip = [module_name(n) for n in list(edits) + list(keep_bf16) + prior]  # edited (or to be edited) stay bf16
         if tied:
             # input and output tables are one tensor: keep it in bfloat16 on the GPU (cannot be 4-bit and on the CPU)
             skip.append("lm_head")

@@ -34,8 +34,8 @@ PRICE = {"input_tokens": 4.0, "output_tokens": 20.0, "cache_read_input_tokens": 
 
 
 def _prompt_fields(target: str) -> dict:
-    from .common import PROFILES
-    prof = PROFILES.get(target, PROFILES["base"])
+    from .common import PROFILES, profile_for
+    prof = profile_for(target) or PROFILES["base"]  # a model folder (e.g. a stacked edit) is matched by folder name
     return {"model_description": prof["description"], "n_layers": prof["layers"],
             "hs_kb": round(2 * prof["d_model"] / 1024), "mlp_kb": round(2 * prof["d_mlp"] / 1024)}
 
@@ -72,7 +72,8 @@ class Harness:
             practice_dir, self.practice = Path(write()), {}
         elif cfg.get("task") == "code":
             from ..exp10 import editor_data as ED
-            practice_dir = Path(ED.write())
+            practice_dir = Path(ED.write(Path(cfg["samples"]) if cfg.get("samples") else ED.SAMPLES,
+                                         thinking=cfg.get("thinking", True)))
             self.practice = {json.loads(line)["id"] for line in open(practice_dir / "problems.jsonl")}
         else:
             practice_dir, self.practice = PRACTICE, practice_problems()
@@ -340,8 +341,10 @@ class Harness:
             edit_dir = str(self.work / "edited")
         print(f"    [gpu] code pass: {len(probs)} problems x {n} ({which})...", flush=True)
         try:
-            s = E10.evaluate(cfg["target"], "practice", edit_dir, thinking=True, n=n, name=f"code_{k}",
-                             max_num_seqs=12, kv_fp8=True, out_dir=self.work, think_budget=cfg["think_budget"],
+            thinking = cfg.get("thinking", True)
+            s = E10.evaluate(cfg["target"], "practice", edit_dir, thinking=thinking, n=n, name=f"code_{k}",
+                             max_num_seqs=12, kv_fp8=True, out_dir=self.work, max_tokens=cfg.get("max_tokens", 12288),
+                             think_budget=cfg["think_budget"] if thinking else None,
                              answer_tokens=cfg["answer_tokens"], ids=probs,
                              edited_model_dir=str(self.dir / "edited_model"))
         except RuntimeError as e:
@@ -351,7 +354,9 @@ class Harness:
         return {"ok": True, "type": "code", "model": which, "pass@1": s["pass@1"], "by_difficulty": s["by_difficulty"],
                 "outcomes": s["outcomes"], "forced_stop": s["forced_stop"], "minutes": round(s["timing_s"]["total"] / 60, 1),
                 "results": [{"id": r["id"], "sample": r["sample"], "passed": r["passed"], "outcome": r.get("why", "passed"),
-                             "think_tokens": r.get("think_tokens"), "answer_tokens": r.get("answer_tokens")} for r in rows],
+                             **({"think_tokens": r.get("think_tokens"), "answer_tokens": r.get("answer_tokens")}
+                                if thinking else {"tokens": r.get("n_tokens"), "finished": r.get("finished")})}
+                            for r in rows],
                 "files": {"texts": f"/work/code_{k}.gen.jsonl", "graded": f"/work/code_{k}.rows.jsonl"}}
 
     def send_with_retry(self, msg: str):
@@ -424,9 +429,10 @@ class Harness:
             shutil.copytree(self.work / "edited", self.dir / "edit", dirs_exist_ok=True)
             if self.cfg.get("task") == "code":
                 out = self.dir / "edit"
+                mode = (f"--thinking --think-budget {self.cfg['think_budget']} --answer-tokens {self.cfg['answer_tokens']}"
+                        if self.cfg.get("thinking", True) else f"--max-tokens {self.cfg.get('max_tokens', 12288)}")
                 how = (f"python -m wsp.exp10.eval --model {self.cfg.get('target')} --edit-dir {out.relative_to(ROOT)} "
-                       f"--set test --difficulty easy,medium --thinking --think-budget {self.cfg['think_budget']} "
-                       f"--answer-tokens {self.cfg['answer_tokens']} --kv-fp8 --max-num-seqs 12 --name {self.dir.name}")
+                       f"--set test --difficulty easy,medium {mode} --kv-fp8 --max-num-seqs 12 --name {self.dir.name}")
             elif self.four_bit:
                 out = self.dir / "edit"
                 how = (f"python -m wsp.exp9.eval --model {self.cfg.get('target')} --edit-dir {out.relative_to(ROOT)} "
@@ -457,6 +463,11 @@ def main():
     ap.add_argument("--code-max", type=int, default=40, help="code task: problems x samples per code pass")
     ap.add_argument("--think-budget", type=int, default=8192, help="code task: thinking budget")
     ap.add_argument("--answer-tokens", type=int, default=4096, help="code task: answer length after thinking")
+    ap.add_argument("--no-thinking", action="store_true", help="code task: thinking off (answers of --max-tokens)")
+    ap.add_argument("--max-tokens", type=int, default=12288, help="code task, no thinking: answer length")
+    ap.add_argument("--samples", help="code task: the starting model's practice samples (a runs/exp10_eval/<name> "
+                                      "prefix); default: the base model's thinking samples")
+    ap.add_argument("--base-score", default="about 55%", help="code task: the starting model's score, for the prompt")
     ap.add_argument("--passes", type=int, default=None, help="forward-pass budget (math default 10, facts 30)")
     ap.add_argument("--qa-max", type=int, default=400, help="facts task: questions per qa pass")
     ap.add_argument("--harness", choices=["v2", "v3"], default="v3",
@@ -514,11 +525,13 @@ def main():
                "target": args.target,
                # model-specific parts of the v3 task prompt
                **_prompt_fields(args.target),
-               "prompt": ("exp10_task.md" if args.task == "code" else
+               "prompt": (("exp10_task_nothink.md" if args.no_thinking else "exp10_task.md") if args.task == "code" else
                           {"v2": "exp9_task_v2.md", "v3": "exp9_task_v3.md"}[args.harness] if args.task == "facts"
                           else "exp8_task.md"),
                **({"max_code_passes": args.max_code_passes, "code_max": args.code_max,
-                   "think_budget": args.think_budget, "answer_tokens": args.answer_tokens}
+                   "think_budget": args.think_budget, "answer_tokens": args.answer_tokens,
+                   "thinking": not args.no_thinking, "max_tokens": args.max_tokens, "samples": args.samples,
+                   "base_score": args.base_score}
                   if args.task == "code" else {}),
                # v3: teacher-forced size limits (8 GB GPU, 16 GB RAM): texts x longest text, and returned arrays
                **({"tf_max_padded_tokens": 131_072, "tf_max_output_gb": 3.0}

@@ -1,6 +1,7 @@
 """End-to-end check of the Experiment 10 harness (code task) with a scripted stand-in for the editor (GPU, no API).
 
   .venv/bin/python tests/agent_dry_run_code.py            # 4B, 3 passes (1 teacher-forced, 2 code), ~15 min
+  .venv/bin/python tests/agent_dry_run_code.py --no-thinking --target <stacked model folder>   # second-run mode
 """
 import json
 import shutil
@@ -31,6 +32,11 @@ SCRIPT = [
 ]
 
 
+def _blocks(names):
+    from wsp.exp10.generate import keep_bf16_patterns
+    return keep_bf16_patterns(names)
+
+
 class ScriptChat(Chat):
     def __init__(self):
         self.i = 0
@@ -43,18 +49,31 @@ class ScriptChat(Chat):
 
 
 def main():
-    name = "dry-run-code"
+    nothink = "--no-thinking" in sys.argv
+    target = sys.argv[sys.argv.index("--target") + 1] if "--target" in sys.argv else "base4b"
+    name = "dry-run-code-nothink" if nothink else "dry-run-code"
     run_dir = RUNS / "agent" / name
     shutil.rmtree(run_dir, ignore_errors=True)
     A.make_chat = lambda *a, **k: ScriptChat()
-    sys.argv = ["agent", "--task", "code", "--passes", "3", "--name", name, "--target", "base4b"]
+    sys.argv = ["agent", "--task", "code", "--passes", "3", "--name", name, "--target", target] + (
+        ["--no-thinking", "--base-score", "about 50%"] if nothink else [])
     A.main()
     st = json.loads((run_dir / "state.json").read_text())
     first = (run_dir / "turns" / "t001" / "prompt.txt").read_text()
     res = [json.loads(line) for line in open(run_dir / "tool_calls.jsonl") if '"forward"' in line]
     codes = [r["result"] for r in res if r["request"].get("type") == "code"]
+    metas = [json.loads((run_dir / "work" / f"code_{k}.gen.jsonl.meta.json").read_text()) for k in (2, 3)]
+    from wsp.exp10.generate import prior_edits
+    from wsp.exp8.common import resolve_model
+    stacked = prior_edits(resolve_model(target))
+    for m in metas:
+        print("gen meta:", m["model_dir"], "thinking", m["thinking"], "edits", m["edits"], "bf16", m["bf16_blocks"])
     ok = (st["done"] and st["passes_used"] == 3 and len(codes) == 2 and all(c.get("ok") for c in codes)
-          and "THINKING BUDGET" in first and (run_dir / "edit" / f"{W}.npy").exists())
+          and ("THINKING DISABLED" if nothink else "THINKING BUDGET") in first
+          and "{" + "base_score}" not in first and (run_dir / "edit" / f"{W}.npy").exists()
+          and all(m["thinking"] == (not nothink) for m in metas)
+          and "*layers.20.mlp.*" in metas[1]["bf16_blocks"]
+          and all(set(m["bf16_blocks"]) >= set(_blocks(stacked)) for m in metas))
     for c in codes:
         print("code pass:", c.get("model"), c.get("pass@1"), c.get("outcomes"), c.get("minutes"), "min", c.get("error", ""))
     print("\nstate:", {k: st[k] for k in ("turns", "code_runs", "passes_used", "done")})

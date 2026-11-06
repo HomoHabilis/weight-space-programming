@@ -17,6 +17,8 @@ from . import generate, lcb
 
 EDITOR_DIR = ROOT / "data" / "exp10" / "editor"
 SAMPLES = RUNS / "exp10_eval" / "samples-4b-think8k-n3"
+# no-thinking mode (a second editor run on top of a first edit): materials in their own folder
+EDITOR_DIR_NOTHINK = ROOT / "data" / "exp10" / "editor-nothink"
 DIFFICULTIES = ("easy", "medium")
 SETTINGS = {
     "chat_template": "the model's own (/model/tokenizer_config.json / chat_template.jinja), enable_thinking=True",
@@ -31,9 +33,21 @@ SETTINGS = {
     "early_stop": generate.EARLY_STOP,
     "sampling": generate.SAMPLING[True], "weights": "4-bit (MXFP4) except blocks holding edited matrices (bfloat16)",
 }
+SETTINGS_NOTHINK = {
+    **{k: v for k, v in SETTINGS.items() if k not in ("think_budget", "answer_tokens", "early_stop")},
+    "chat_template": "the model's own (/model/tokenizer_config.json / chat_template.jinja), enable_thinking=False "
+                     "(the prompt ends with an empty '<think>\n\n</think>\n\n' block)",
+    "max_tokens": 12288,
+    "procedure": "generate the answer directly after the prompt, up to max_tokens tokens. The last ```python block "
+                 "of the answer is run against all tests (6 s per test).",
+    "sampling": generate.SAMPLING[False],
+    "weights": "4-bit (MXFP4) except blocks holding edited matrices, including the earlier edit already in /model "
+               "(bfloat16)",
+}
 
 
-def write(samples: Path = SAMPLES) -> str:
+def write(samples: Path = SAMPLES, thinking: bool = True) -> str:
+    EDITOR_DIR = globals()["EDITOR_DIR"] if thinking else EDITOR_DIR_NOTHINK
     EDITOR_DIR.mkdir(parents=True, exist_ok=True)
     tdir = EDITOR_DIR / "tests"
     tdir.mkdir(exist_ok=True)
@@ -59,25 +73,30 @@ def write(samples: Path = SAMPLES) -> str:
                 r = graded[(g["id"], g["sample"])]
                 f.write(json.dumps({"id": g["id"], "sample": g["sample"], "difficulty": g["difficulty"],
                                     "passed": r["passed"], "outcome": r.get("why", "passed"),
-                                    "think_tokens": g.get("think_tokens"), "answer_tokens": g.get("answer_tokens"),
-                                    "forced_stop": g.get("forced_stop"), "text": g["text"]}) + "\n")
-    (EDITOR_DIR / "settings.json").write_text(json.dumps(SETTINGS, indent=1))
+                                    **({"think_tokens": g.get("think_tokens"), "answer_tokens": g.get("answer_tokens"),
+                                        "forced_stop": g.get("forced_stop")} if thinking else
+                                       {"tokens": g["n_tokens"], "finished": g["finished"]}),
+                                    "text": g["text"]}) + "\n")
+    (EDITOR_DIR / "settings.json").write_text(json.dumps(SETTINGS if thinking else SETTINGS_NOTHINK, indent=1))
     (EDITOR_DIR / "README.txt").write_text(
         "problems.jsonl  practice problems (statement, starter code, public examples, number of tests)\n"
         "tests/<id>.json.gz  all tests of a problem: gzip JSON list of {input, output, testtype}\n"
-        "samples.jsonl   the unedited model's answers to these problems (3 per problem, full text incl. thinking),\n"
+        "samples.jsonl   the starting model's answers to these problems (3 per problem, full text incl. thinking),\n"
         "                graded on all tests: passed, outcome (passed / no code / wrong / error / timeout)\n"
         "settings.json   exactly how answers are generated and graded\n")
     return str(EDITOR_DIR)
 
 
-def summary() -> dict:
-    s = [json.loads(line) for line in open(EDITOR_DIR / "samples.jsonl")]
+def summary(thinking: bool = True) -> dict:
+    s = [json.loads(line) for line in open((EDITOR_DIR if thinking else EDITOR_DIR_NOTHINK) / "samples.jsonl")]
     from collections import Counter
     return {"samples": len(s), "passed": sum(x["passed"] for x in s), "outcomes": dict(Counter(x["outcome"] for x in s))}
 
 
 if __name__ == "__main__":
-    print(write())
-    if (EDITOR_DIR / "samples.jsonl").exists():
-        print(summary())
+    import sys  # python -m wsp.exp10.editor_data [<samples run> --no-thinking]
+    nothink = "--no-thinking" in sys.argv
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    print(write(Path(args[0]) if args else SAMPLES, thinking=not nothink))
+    if ((EDITOR_DIR_NOTHINK if nothink else EDITOR_DIR) / "samples.jsonl").exists():
+        print(summary(thinking=not nothink))

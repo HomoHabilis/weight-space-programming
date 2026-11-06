@@ -33,6 +33,12 @@ CACHE = ROOT / "models" / "edited"
 EARLY_STOP = "Considering the limited time by the user, I have to give the solution based on the thinking directly now."
 
 
+def prior_edits(folder) -> list[str]:
+    """Tensor names already edited in a model folder written by edited_dir (a stacked starting point), else []."""
+    f = Path(folder) / ".done"
+    return json.loads(f.read_text()) if f.exists() else []
+
+
 def edited_dir(base: Path, edit_dir: Path, out: Path | None = None) -> Path:
     """A folder that looks like the base checkpoint with the edits written in. Shards without edits are hard links,
     so only the shards holding an edited tensor are rewritten (a few GB, not 19)."""
@@ -51,7 +57,7 @@ def edited_dir(base: Path, edit_dir: Path, out: Path | None = None) -> Path:
     out.mkdir(parents=True)
     used = set()
     for f in sorted(base.iterdir()):
-        if not f.is_file():
+        if not f.is_file() or f.name.startswith("."):  # never hard-link markers (writing them would change base's)
             continue
         if f.suffix == ".safetensors":
             with safe_open(f, "pt") as h:
@@ -70,7 +76,7 @@ def edited_dir(base: Path, edit_dir: Path, out: Path | None = None) -> Path:
     if set(edits) - used:
         raise ValueError(f"edited tensors not in the model: {sorted(set(edits) - used)[:5]}")
     (out / ".stamp").write_text(stamp)
-    (out / ".done").write_text(json.dumps(sorted(edits)))
+    (out / ".done").write_text(json.dumps(sorted(set(edits) | set(prior_edits(base)))))
     return out
 
 
@@ -114,8 +120,10 @@ def run(req: dict) -> dict:
               gpu_memory_utilization=float(req.get("gpu_memory_utilization", 0.80)),
               max_num_seqs=int(req.get("max_num_seqs", 16)), language_model_only=True,
               disable_log_stats=False)  # logs real generation throughput every few seconds
+    bf16_blocks = keep_bf16_patterns(set(edits) | set(prior_edits(base)))
     if prof.get("quant"):  # larger than the GPU in bfloat16
-        kw.update(quantization="online", quantization_config={"linear": "mxfp4", "ignore": keep_bf16_patterns(edits)})
+        # blocks edited here or in the starting point (a stacked edit) stay bfloat16
+        kw.update(quantization="online", quantization_config={"linear": "mxfp4", "ignore": bf16_blocks})
     if req.get("kv_fp8"):
         kw["kv_cache_dtype"] = "fp8"
     lora = None
@@ -161,7 +169,8 @@ def run(req: dict) -> dict:
             f.write(json.dumps({"id": p["id"], "sample": k, "difficulty": p["difficulty"], "platform": p["platform"],
                                 "n_tokens": ntok, "finished": finished, **extra,
                                 "code": lcb.extract_code(text), "text": text}) + "\n")
-    meta = {"ok": True, "model": req["model"], "model_dir": str(model_dir), "edits": edits, "thinking": thinking,
+    meta = {"ok": True, "model": req["model"], "model_dir": str(model_dir), "edits": edits, "bf16_blocks": bf16_blocks,
+            "thinking": thinking,
             "lora_dir": req.get("lora_dir"),
             "think_budget": budget or None, "answer_tokens": answer_tokens if budget else None,
             "set": req.get("set", "test"), "problems": len(probs), "n": n, "max_tokens": max_tokens,
