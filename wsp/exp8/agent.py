@@ -40,6 +40,21 @@ def _prompt_fields(target: str) -> dict:
             "hs_kb": round(2 * prof["d_model"] / 1024), "mlp_kb": round(2 * prof["d_mlp"] / 1024)}
 
 
+def _start_fields(target: str) -> dict:
+    """Code task, no thinking: the prompt says whether the starting weights already hold an earlier edit."""
+    from ..exp10.generate import prior_edits
+    if prior_edits(resolve_model(target)):  # a stacked starting point (models/stacked/...)
+        return {"starting_model": "starting model",
+                "start_note": " These weights already contain an earlier direct edit (made to improve the model with "
+                              "thinking enabled); it is part of the model you start from: /model, load_original(name) "
+                              "and \"original\" in the forward-pass tool all mean these weights.",
+                "keep_note": " or that the earlier edit changed, which stay in bfloat16. Your edit must not undo what "
+                             "the earlier edit achieved with thinking enabled: that mode is scored too."}
+    return {"starting_model": "unedited model", "start_note": "",
+            "keep_note": ", which stay in bfloat16. Thinking-enabled mode is scored too: your edit should not make it "
+                         "worse."}
+
+
 def task_prompt(cfg: dict) -> str:
     name = cfg.get("prompt") or ("exp9_task.md" if cfg.get("task") == "facts" else "exp8_task.md")
     text = (ROOT / "prompts" / name).read_text()
@@ -531,7 +546,7 @@ def main():
                **({"max_code_passes": args.max_code_passes, "code_max": args.code_max,
                    "think_budget": args.think_budget, "answer_tokens": args.answer_tokens,
                    "thinking": not args.no_thinking, "max_tokens": args.max_tokens, "samples": args.samples,
-                   "base_score": args.base_score}
+                   "base_score": args.base_score, **_start_fields(args.target)}
                   if args.task == "code" else {}),
                # v3: teacher-forced size limits (8 GB GPU, 16 GB RAM): texts x longest text, and returned arrays
                **({"tf_max_padded_tokens": 131_072, "tf_max_output_gb": 3.0}
