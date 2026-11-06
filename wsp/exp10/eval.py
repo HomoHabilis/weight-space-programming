@@ -53,14 +53,15 @@ def summarize(rows: list[dict]) -> dict:
 def evaluate(model: str, set_name: str = "test", edit_dir: str | None = None, thinking: bool = False,
              max_tokens: int = 6144, n: int = 1, limit: int | None = None, name: str = "eval",
              max_num_seqs: int = 16, kv_fp8: bool = False, out_dir: Path = OUT, think_budget: int | None = None,
-             answer_tokens: int = 4096, difficulties: list[str] | None = None) -> dict:
+             answer_tokens: int = 4096, difficulties: list[str] | None = None, ids: list[str] | None = None,
+             edited_model_dir: str | None = None, lora_dir: str | None = None) -> dict:
     t0 = time.time()
     out_dir.mkdir(parents=True, exist_ok=True)
     gen_file = out_dir / f"{name}.gen.jsonl"
-    req = {"model": model, "edit_dir": edit_dir, "set": set_name, "ids": pick_ids(set_name, limit, difficulties=difficulties),
+    req = {"model": model, "edit_dir": edit_dir, "set": set_name, "ids": ids or pick_ids(set_name, limit, difficulties=difficulties),
            "thinking": thinking, "max_tokens": max_tokens, "n": n, "out": str(gen_file),
            "max_num_seqs": max_num_seqs, "kv_fp8": kv_fp8, "think_budget": think_budget,
-           "answer_tokens": answer_tokens}
+           "answer_tokens": answer_tokens, "edited_model_dir": edited_model_dir, "lora_dir": lora_dir}
     meta = generate.spawn(req, out_dir / f"{name}.gen.log")
     if not meta.get("ok"):
         raise RuntimeError(meta.get("error", "") + "\n" + meta.get("log_tail", ""))
@@ -72,7 +73,7 @@ def evaluate(model: str, set_name: str = "test", edit_dir: str | None = None, th
     with open(out_dir / f"{name}.rows.jsonl", "w") as f:
         for r in rows:
             f.write(json.dumps(r) + "\n")
-    summary = {"name": name, "model": model, "edit_dir": edit_dir, "set": set_name, "thinking": thinking,
+    summary = {"name": name, "model": model, "edit_dir": edit_dir, "lora_dir": lora_dir, "set": set_name, "thinking": thinking,
                "max_tokens": max_tokens, "think_budget": think_budget, "answer_tokens": answer_tokens if think_budget else None,
                "kv_fp8": kv_fp8, "n": n, "limit": limit, "difficulties": difficulties, **summarize(rows),
                "forced_stop": sum(bool(r.get("forced_stop")) for r in rows),

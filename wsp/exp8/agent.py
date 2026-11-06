@@ -70,6 +70,10 @@ class Harness:
         if cfg.get("task") == "facts":
             from ..exp9.editor_data import write
             practice_dir, self.practice = Path(write()), {}
+        elif cfg.get("task") == "code":
+            from ..exp10 import editor_data as ED
+            practice_dir = Path(ED.write())
+            self.practice = {json.loads(line)["id"] for line in open(practice_dir / "problems.jsonl")}
         else:
             practice_dir, self.practice = PRACTICE, practice_problems()
         self.kernel = Kernel(self.model_dir, practice_dir, self.work, mem_gb=cfg["kernel_mem_gb"],
@@ -226,11 +230,16 @@ class Harness:
 
     def forward(self, req: dict, k: int) -> dict:
         if self.cfg.get("file_inputs"):
-            for key in ("questions", "texts", "chats", "problems"):
+            for key in ("questions", "texts", "chats", "problems"):  # problems: code task
                 if f"{key}_file" in req:
                     req[key] = self.read_work_file(req.pop(f"{key}_file"))
         cfg, kind, which = self.cfg, req.get("type"), req.get("model")
         facts_task = cfg.get("task") == "facts"
+        if cfg.get("task") == "code":
+            if kind == "code":
+                return self.code_pass(req, k)
+            if kind != "teacher_forced":
+                raise ValueError('"type" must be "code" or "teacher_forced"')
         if kind == "qa" and facts_task:
             from ..exp9 import qa as QA
             if which not in ("original", "edited"):
@@ -307,6 +316,44 @@ class Harness:
         raise ValueError('"type" must be ' + ('"qa" or "teacher_forced"' if facts_task else
                                               '"generate" or "teacher_forced"'))
 
+    def code_pass(self, req: dict, k: int) -> dict:
+        """Experiment 10: the model writes solutions to practice problems (thinking budget), graded on all tests."""
+        from ..exp10 import eval as E10
+        cfg, which = self.cfg, req.get("model")
+        if which not in ("original", "edited"):
+            raise ValueError('"model" must be "original" or "edited"')
+        probs, n = req.get("problems") or [], int(req.get("n", 1))
+        if not isinstance(probs, list) or not all(isinstance(p, str) for p in probs):
+            raise ValueError('"problems" must be a list of practice problem ids')
+        missing = [p for p in probs if p not in self.practice]
+        if missing:
+            raise ValueError(f"unknown practice ids: {missing[:5]}")
+        if len(set(probs)) != len(probs) or not 1 <= n <= 3 or not 1 <= len(probs) * n <= cfg["code_max"]:
+            raise ValueError(f"distinct problems, n in 1..3, problems x n between 1 and {cfg['code_max']}")
+        used = sum(1 for f in self.work.glob("code_*.json") if re.fullmatch(r"code_\d+\.json", f.name))
+        if used >= cfg["max_code_passes"]:
+            raise ValueError(f"all {cfg['max_code_passes']} code passes are used (teacher_forced passes remain)")
+        edit_dir = None
+        if which == "edited":
+            if not any((self.work / "edited").glob("*.npy")):
+                raise ValueError("there is no edit yet (save_edit something first)")
+            edit_dir = str(self.work / "edited")
+        print(f"    [gpu] code pass: {len(probs)} problems x {n} ({which})...", flush=True)
+        try:
+            s = E10.evaluate(cfg["target"], "practice", edit_dir, thinking=True, n=n, name=f"code_{k}",
+                             max_num_seqs=12, kv_fp8=True, out_dir=self.work, think_budget=cfg["think_budget"],
+                             answer_tokens=cfg["answer_tokens"], ids=probs,
+                             edited_model_dir=str(self.dir / "edited_model"))
+        except RuntimeError as e:
+            return {"ok": False, "error": "code pass failed", "log_tail": str(e)[-3000:]}
+        rows = [json.loads(line) for line in open(self.work / f"code_{k}.rows.jsonl")]
+        (self.work / f"code_{k}.gen.log").unlink(missing_ok=True)
+        return {"ok": True, "type": "code", "model": which, "pass@1": s["pass@1"], "by_difficulty": s["by_difficulty"],
+                "outcomes": s["outcomes"], "forced_stop": s["forced_stop"], "minutes": round(s["timing_s"]["total"] / 60, 1),
+                "results": [{"id": r["id"], "sample": r["sample"], "passed": r["passed"], "outcome": r.get("why", "passed"),
+                             "think_tokens": r.get("think_tokens"), "answer_tokens": r.get("answer_tokens")} for r in rows],
+                "files": {"texts": f"/work/code_{k}.gen.jsonl", "graded": f"/work/code_{k}.rows.jsonl"}}
+
     def send_with_retry(self, msg: str):
         """Usage limits (e.g. a Claude subscription's 5-hour window) or network errors: wait and resend the same
         turn instead of failing. Gives up after --max-wait-hours."""
@@ -375,7 +422,12 @@ class Harness:
         self.kernel.stop()
         if (self.work / "edited").exists() and any((self.work / "edited").glob("*.npy")):
             shutil.copytree(self.work / "edited", self.dir / "edit", dirs_exist_ok=True)
-            if self.four_bit:
+            if self.cfg.get("task") == "code":
+                out = self.dir / "edit"
+                how = (f"python -m wsp.exp10.eval --model {self.cfg.get('target')} --edit-dir {out.relative_to(ROOT)} "
+                       f"--set test --difficulty easy,medium --thinking --think-budget {self.cfg['think_budget']} "
+                       f"--answer-tokens {self.cfg['answer_tokens']} --kv-fp8 --max-num-seqs 12 --name {self.dir.name}")
+            elif self.four_bit:
                 out = self.dir / "edit"
                 how = (f"python -m wsp.exp9.eval --model {self.cfg.get('target')} --edit-dir {out.relative_to(ROOT)} "
                        f"--name {self.dir.name}")
@@ -398,8 +450,13 @@ def main():
     ap.add_argument("--resume", type=Path, help="continue an existing run folder")
     ap.add_argument("--target", default="base",
                     help="target model to edit: base (Qwen3.5-0.8B), base2b, base4b, base9b (4-bit on the GPU)")
-    ap.add_argument("--task", choices=["math", "facts"], default="math",
-                    help="math: Experiment 8 (paper). facts: Experiment 9 (write company facts into the weights)")
+    ap.add_argument("--task", choices=["math", "facts", "code"], default="math",
+                    help="math: Experiment 8 (paper). facts: Experiment 9 (write company facts into the weights). "
+                         "code: Experiment 10 (LiveCodeBench with a thinking budget)")
+    ap.add_argument("--max-code-passes", type=int, default=8, help="code task: passes that generate code")
+    ap.add_argument("--code-max", type=int, default=40, help="code task: problems x samples per code pass")
+    ap.add_argument("--think-budget", type=int, default=8192, help="code task: thinking budget")
+    ap.add_argument("--answer-tokens", type=int, default=4096, help="code task: answer length after thinking")
     ap.add_argument("--passes", type=int, default=None, help="forward-pass budget (math default 10, facts 30)")
     ap.add_argument("--qa-max", type=int, default=400, help="facts task: questions per qa pass")
     ap.add_argument("--harness", choices=["v2", "v3"], default="v3",
@@ -432,7 +489,13 @@ def main():
         saved = cfg.pop("_args")
         args = argparse.Namespace(**{**saved, "resume": run_dir})  # same backend, model and settings as before
     else:
-        facts = args.task == "facts"
+        facts = args.task in ("facts", "code")  # code shares the facts task's (v3) defaults
+        if args.task == "code":
+            args.harness = "v3"
+            if args.passes is None:
+                args.passes = 24
+            if args.tf_max_tokens_per_text == 8192:
+                args.tf_max_tokens_per_text = 16384  # thinking traces are long
         defaults = {"passes": (30, 10), "effort": ("xhigh", "high"), "max_code_runs": (600, 300),
                     "max_turns": (800, 400), "handoff_turns": (0, 40), "handoff_tokens": (300_000, 500_000)}
         v3 = facts and args.harness == "v3"
@@ -447,16 +510,20 @@ def main():
         run_dir.mkdir(parents=True, exist_ok=True)
         cfg = {"task": args.task, "qa_max": args.qa_max, "passes": args.passes,
                # v2 harness for the facts task: prompt with file inputs (prompts/exp9_task_v2.md)
-               "harness": args.harness if args.task == "facts" else "paper",
+               "harness": args.harness if facts else "paper",
                "target": args.target,
                # model-specific parts of the v3 task prompt
                **_prompt_fields(args.target),
-               "prompt": ({"v2": "exp9_task_v2.md", "v3": "exp9_task_v3.md"}[args.harness] if args.task == "facts"
+               "prompt": ("exp10_task.md" if args.task == "code" else
+                          {"v2": "exp9_task_v2.md", "v3": "exp9_task_v3.md"}[args.harness] if args.task == "facts"
                           else "exp8_task.md"),
+               **({"max_code_passes": args.max_code_passes, "code_max": args.code_max,
+                   "think_budget": args.think_budget, "answer_tokens": args.answer_tokens}
+                  if args.task == "code" else {}),
                # v3: teacher-forced size limits (8 GB GPU, 16 GB RAM): texts x longest text, and returned arrays
                **({"tf_max_padded_tokens": 131_072, "tf_max_output_gb": 3.0}
-                  if args.task == "facts" and args.harness == "v3" else {}),
-               "file_inputs": args.task == "facts", "max_gens": args.max_gens, "max_gens_half": args.max_gens // 2,
+                  if facts and args.harness == "v3" else {}),
+               "file_inputs": facts, "max_gens": args.max_gens, "max_gens_half": args.max_gens // 2,
                "gen_max_tokens": args.gen_max_tokens, "eval_max_tokens": args.eval_max_tokens,
                "tf_max_texts": args.tf_max_texts, "tf_max_tokens_per_text": args.tf_max_tokens_per_text,
                "max_code_runs": args.max_code_runs, "max_turns": args.max_turns,

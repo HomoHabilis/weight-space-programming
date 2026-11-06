@@ -33,7 +33,7 @@ CACHE = ROOT / "models" / "edited"
 EARLY_STOP = "Considering the limited time by the user, I have to give the solution based on the thinking directly now."
 
 
-def edited_dir(base: Path, edit_dir: Path) -> Path:
+def edited_dir(base: Path, edit_dir: Path, out: Path | None = None) -> Path:
     """A folder that looks like the base checkpoint with the edits written in. Shards without edits are hard links,
     so only the shards holding an edited tensor are rewritten (a few GB, not 19)."""
     import numpy as np
@@ -44,8 +44,8 @@ def edited_dir(base: Path, edit_dir: Path) -> Path:
     edits = {p.stem: p for p in Path(edit_dir).glob("*.npy")}
     stamp = hashlib.sha256("".join(f"{k}:{p.stat().st_mtime_ns}:{p.stat().st_size}" for k, p in sorted(edits.items()))
                            .encode() + str(base.resolve()).encode()).hexdigest()[:16]
-    out = CACHE / f"{base.name}-{stamp}"
-    if (out / ".done").exists():
+    out = Path(out) if out else CACHE / f"{base.name}-{stamp}"
+    if (out / ".done").exists() and (out / ".stamp").exists() and (out / ".stamp").read_text() == stamp:
         return out
     shutil.rmtree(out, ignore_errors=True)
     out.mkdir(parents=True)
@@ -69,6 +69,7 @@ def edited_dir(base: Path, edit_dir: Path) -> Path:
         os.link(f, out / f.name)
     if set(edits) - used:
         raise ValueError(f"edited tensors not in the model: {sorted(set(edits) - used)[:5]}")
+    (out / ".stamp").write_text(stamp)
     (out / ".done").write_text(json.dumps(sorted(edits)))
     return out
 
@@ -94,7 +95,7 @@ def run(req: dict) -> dict:
     if req.get("edit_dir"):
         edits = sorted(p.stem for p in Path(req["edit_dir"]).glob("*.npy"))
         if edits:
-            model_dir = edited_dir(base, Path(req["edit_dir"]))
+            model_dir = edited_dir(base, Path(req["edit_dir"]), req.get("edited_model_dir"))
     t_build = time.time() - t0
     thinking, n, max_tokens = bool(req.get("thinking")), int(req.get("n", 1)), int(req.get("max_tokens", 6144))
     probs = lcb.load(req.get("set", "test"))
@@ -117,6 +118,12 @@ def run(req: dict) -> dict:
         kw.update(quantization="online", quantization_config={"linear": "mxfp4", "ignore": keep_bf16_patterns(edits)})
     if req.get("kv_fp8"):
         kw["kv_cache_dtype"] = "fp8"
+    lora = None
+    if req.get("lora_dir"):  # a LoRA adapter (bfloat16) on top of the 4-bit model, as QLoRA is normally served
+        from vllm.lora.request import LoRARequest
+        rank = json.loads((Path(req["lora_dir"]) / "adapter_config.json").read_text())["r"]
+        kw.update(enable_lora=True, max_lora_rank=max(8, rank), max_loras=1)
+        lora = LoRARequest("adapter", 1, str(req["lora_dir"]))
     llm = LLM(**kw)
     t_load = time.time() - t0 - t_build
     rows = []
@@ -124,7 +131,7 @@ def run(req: dict) -> dict:
         # Thinking budget (Qwen's recipe): think for at most `budget` tokens; if the model has not closed its
         # thinking by then, tell it to stop and answer. Then write the answer (at most `answer_tokens`).
         sp1 = SamplingParams(max_tokens=budget, n=n, seed=0, stop=["</think>"], **SAMPLING[True])
-        first = llm.generate(prompts, sp1)
+        first = llm.generate(prompts, sp1, lora_request=lora)
         cont, info = [], []
         for p, prompt, o in zip(probs, prompts, first):
             for k, c in enumerate(o.outputs):
@@ -132,13 +139,15 @@ def run(req: dict) -> dict:
                 think = c.text + ("\n\n" + EARLY_STOP if forced else "") + "\n</think>\n\n"
                 cont.append(prompt + think)
                 info.append((p, k, think, len(c.token_ids), forced))
-        second = llm.generate(cont, SamplingParams(max_tokens=answer_tokens, seed=1, **SAMPLING[True]))
+        second = llm.generate(cont, SamplingParams(max_tokens=answer_tokens, seed=1, **SAMPLING[True]),
+                              lora_request=lora)
         for (p, k, think, n_think, forced), o in zip(info, second):
             c = o.outputs[0]
             rows.append((p, k, think + c.text, n_think + len(c.token_ids), c.finish_reason == "stop",
                          {"think_tokens": n_think, "answer_tokens": len(c.token_ids), "forced_stop": forced}))
     else:
-        outs = llm.generate(prompts, SamplingParams(max_tokens=max_tokens, n=n, seed=0, **SAMPLING[thinking]))
+        outs = llm.generate(prompts, SamplingParams(max_tokens=max_tokens, n=n, seed=0, **SAMPLING[thinking]),
+                            lora_request=lora)
         for p, o in zip(probs, outs):
             for k, c in enumerate(o.outputs):
                 rows.append((p, k, c.text, len(c.token_ids), c.finish_reason == "stop", {}))
@@ -153,6 +162,7 @@ def run(req: dict) -> dict:
                                 "n_tokens": ntok, "finished": finished, **extra,
                                 "code": lcb.extract_code(text), "text": text}) + "\n")
     meta = {"ok": True, "model": req["model"], "model_dir": str(model_dir), "edits": edits, "thinking": thinking,
+            "lora_dir": req.get("lora_dir"),
             "think_budget": budget or None, "answer_tokens": answer_tokens if budget else None,
             "set": req.get("set", "test"), "problems": len(probs), "n": n, "max_tokens": max_tokens,
             "tokens": n_tok, "s_build": round(t_build, 1), "s_load": round(t_load, 1), "s_gen": round(t_gen, 1),
