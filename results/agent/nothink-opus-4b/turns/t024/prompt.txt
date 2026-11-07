@@ -1,0 +1,177 @@
+Output of code run 23 of 600:
+```
+######## abc375_b Traveling Takahashi Problem
+Takahashi is at the origin on a two-dimensional coordinate plane. The cost for him to move from point (a, b) to point (c, d) is \sqrt{(a - c)^2 + (b - d)^2}. Find the total cost when he starts at the origin, visits N points (X_1, Y_1), \ldots, (X_N, Y_N) in this order, and then returns to the origin.  Input  The input is given from Standard Input in the following format: N
+ X_1 Y_1
+ \vdots
+ X_N Y_N  Output  Print the answer.
+ Your output will be considered correct if its absolute or relative error from the true value is at most 10^{-6}.  Constraints   - 1 \leq N \leq 2 \times 10^5 - -10^9 \leq X_i, Y_i \leq 10^9 - All input values are integers.  Sample Input 1  2
+ 1 2
+ -1 0  Sample Output 1 
+--- <bound method NDFrame.sample of id                                                     abc375_b
+sample                                                        0
+difficulty                                                 easy
+passed                                                    False
+outcome                                                   wrong
+tokens                                                      325
+finished                                                   True
+text          ```python\nimport sys\nimport math\n\ndef solv...
+platform                                                atcoder
+code_first                                                 True
+n_wait                                                        0
+n_blocks                                                      1
+code          import sys\nimport math\n\ndef solve():\n    #...
+n_cjk                                                         0
+n_slash                                                       0
+compiles                                                   True
+Name: 12, dtype: object> wrong 325 local: wrong 6.064495102245980
+import sys
+import math
+
+def solve():
+    # Read all input from stdin
+    input_data = sys.stdin.read().split()
+    
+    if not input_data:
+        return
+    
+    iterator = iter(input_data)
+    
+    try:
+        n_str = next(iterator)
+        N = int(n_str)
+        
+        points = []
+        for _ in range(N):
+            x_str = next(iterator)
+            y_str = next(iterator)
+            X = int(x_str)
+            Y = int(y_str)
+            points.append((X, Y))
+            
+        total_cost = 0.0
+        
+        # Start at origin (0, 0)
+        curr_x, curr_y = 0.0, 0.0
+        
+        # Visit each point in order
+        for i in range(N):
+            target_x, target_y = float(points[i][0]), float(points[i][1])
+            dist = math.sqrt((curr_x - target_x)**2 + (curr_y - target_y)**2)
+            total_cost += dist
+            curr_x, curr_y = target_x, target_y
+          
+--- <bound method NDFrame.sample of id                                                     abc375_b
+sample                                                        1
+difficulty                                                 easy
+passed                                                    False
+outcome                                                   wrong
+tokens                                                      340
+finished                                                   True
+text          ```python\nimport sys\nimport math\n\ndef solv...
+platform                                                atcoder
+code_first                                                 True
+n_wait                                                        0
+n_blocks                                                      1
+code          import sys\nimport math\n\ndef solve():\n    #...
+n_cjk                                                         0
+n_slash                                                       0
+compiles                                                   True
+Name: 13, dtype: object> wrong 340 local: wrong 6.064495102245980
+import sys
+import math
+
+def solve():
+    # Read all input from stdin
+    input_data = sys.stdin.read().split()
+    
+    if not input_data:
+        return
+
+    iterator = iter(input_data)
+    
+    try:
+        n_str = next(iterator)
+        N = int(n_str)
+        
+        points = []
+        for _ in range(N):
+            x_str = next(iterator)
+            y_str = next(iterator)
+            X = int(x_str)
+            Y = int(y_str)
+            points.append((X, Y))
+    except StopIteration:
+        return
+
+    total_cost = 0.0
+    
+    # Start at origin (0, 0)
+    current_x, current_y = 0.0, 0.0
+    
+    # Visit each point in order
+    for i in range(len(points)):
+        target_x, target_y = float(points[i][0]), float(points[i][1])
+        dist_sq = (current_x - target_x)**2 + (current_y - target_y)**2
+        total_cost += math.sqrt(dist_sq)
+        
+        # Update current position to
+--- <bound method NDFrame.sample of id                                                     abc375_b
+sample                                                        2
+difficulty                                                 easy
+passed                                                    False
+outcome                                                   wrong
+tokens                                                      337
+finished                                                   True
+text          ```python\nimport sys\nimport math\n\ndef solv...
+platform                                                atcoder
+code_first                                                 True
+n_wait                                                        0
+n_blocks                                                      1
+code          import sys\nimport math\n\ndef solve():\n    #...
+n_cjk                                                         0
+n_slash                                                       0
+compiles                                                   True
+Name: 14, dtype: object> wrong 337 local: wrong 6.064495102245980
+import sys
+import math
+
+def solve():
+    # Read all input from stdin
+    input_data = sys.stdin.read().split()
+    
+    if not input_data:
+        return
+    
+    iterator = iter(input_data)
+    
+    try:
+        n_str = next(iterator)
+        N = int(n_str)
+    except StopIteration:
+        return
+    
+    points = []
+    for _ in range(N):
+        x_str = next(iterator)
+        y_str = next(iterator)
+        points.append((int(x_str), int(y_str)))
+    
+    total_cost = 0.0
+    
+    # Start at origin (0, 0)
+    curr_x, curr_y = 0.0, 0.0
+    
+    # Visit each point in order
+    for i in range(N):
+        target_x = float(points[i][0])
+        target_y = float(points[i][1])
+        
+        dist_sq = (curr_x - target_x)**2 + (curr_y - target_y)**2
+        total_cost += math.sqrt(dist_sq)
+        
+        # Update current position to the visited point
+        curr_x = target_x
+        curr
+
+```

@@ -1,0 +1,20 @@
+Output of code run 118 of 600:
+```
+abc379_b atcoder TypeError: 'str' object does not support item assignment
+abc379_d atcoder ValueError: not enough values to unpack (expected 2, got 1)
+abc380_d atcoder IndexError: string index out of range
+abc381_c atcoder NameError: name 'max_len' is not defined
+abc382_b atcoder IndexError: list assignment index out of range
+abc383_a atcoder StopIteration
+abc383_a atcoder StopIteration
+abc383_b atcoder ValueError: invalid literal for int() with base 10: '.#.##'
+abc385_b atcoder NameError: name 'grid' is not defined
+3681 leetcode TypeError: unhashable type: 'list'
+3655 leetcode KeyError: 0
+3613 leetcode KeyError: 'USD'
+3613 leetcode ValueError: not enough values to unpack (expected 3, got 2)
+3686 leetcode IndexError: list index out of range
+3699 leetcode IndexError: list index out of range
+3684 leetcode NameError: name 'right_len' is not defined
+
+```

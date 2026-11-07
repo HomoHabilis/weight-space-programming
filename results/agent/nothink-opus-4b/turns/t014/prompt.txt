@@ -1,0 +1,26 @@
+Output of code run 13 of 600:
+```
+platform  outcome  finished
+atcoder   error    False        1
+                   True        15
+          timeout  True         2
+leetcode  error    False        1
+                   True        14
+          harness  True         1
+          timeout  False        1
+                   True         3
+dtype: int64
+== abc374_d atcoder error 2407 import sys\nimport math\n\n# Increase recursion depth just in case, though iterative approach is used.\nsys.setrecursionlimit(2000)\n\ndef solve() -> None:\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    if not input_data:\n        return\n    \n    iterator = iter(input_data)\n 
+== abc374_d atcoder error 2384 import sys\nimport math\n\ndef solve():\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    if not input_data:\n        return\n    \n    iterator = iter(input_data)\n    \n    try:\n        N = int(next(iterator))\n        S = float(next(iterator))\n        T = float(next(iterator))\n
+== abc379_b atcoder error 937 import sys\n\ndef solve():\n    # Read N and K\n    line1 = sys.stdin.readline().split()\n    if not line1:\n        return\n    n = int(line1[0])\n    k = int(line1[1])\n    \n    # Read string S\n    s = sys.stdin.readline().strip()\n    \n    # We simulate the process greedily or via dynamic programming.\n    
+== abc379_d atcoder error 9657 # YOUR CODE HERE\nimport sys\nimport bisect\n\n# Increase recursion depth just in case\nsys.setrecursionlimit(200005)\n\ndef solve():\n    # Read all input at once\n    input_data = sys.stdin.read().split()\n    if not input_data:\n        return\n    \n    iterator = iter(input_data)\n    try:\n        Q_str = ne
+== abc380_d atcoder error 6006 import sys\n\n# Increase recursion depth just in case, though we don't need recursion here.\nsys.setrecursionlimit(2000)\n\ndef solve():\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    \n    if not input_data:\n        return\n    \n    S = input_data[0]\n    Q = int(input_data[1
+== abc380_b atcoder timeout 2785 import sys\n\ndef solve():\n    # Read all input from stdin\n    # The input format specifies just S as the input.\n    # We need to handle potential trailing newlines or whitespace.\n    input_data = sys.stdin.read().strip()\n    \n    if not input_data:\n        return\n\n    s = input_data\n    \n    # Initia
+== abc381_a atcoder error 665 import sys\n\ndef solve():\n    # Read N from standard input\n    try:\n        line1 = sys.stdin.readline()\n        if not line1:\n            return\n        n_str = line1.strip()\n        if not n_str:\n            return\n        \n        # Read S from standard input\n        s_str = sys.stdin.readline().s
+== abc381_c atcoder error 6245 import sys\n\ndef solve():\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    \n    if not input_data:\n        return\n    \n    n = int(input_data[0])\n    s = input_data[1]\n    \n    # We need to find the maximum length of a substring that matches the pattern 1...1/2...2.\n    #
+== abc381_c atcoder error 2965 import sys\n\ndef solve():\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    \n    if not input_data:\n        return\n    \n    n = int(input_data[0])\n    s = input_data[1]\n    \n    # We need to find the maximum length of a substring that is an "11/22" string.\n    # An 11/22 s
+== abc382_b atcoder error 1413 import sys\n\ndef solve():\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    \n    if not input_data:\n        return\n    \n    n = int(input_data[0])\n    d = int(input_data[1])\n    s = input_data[2]\n    \n    # We need to simulate the process or calculate directly.\n    # Takah
+== abc383_a atcoder error 526 import sys\n\ndef main():\n    # Read all lines from standard input\n    input_data = sys.stdin.read().split()\n    \n    if not input_data:\n        return\n    \n    iterator = iter(input_data)\n    \n    try:\n        n_str = next(iterator)\n        N = int(n_str)\n    except StopIteration:\n        return\n    
+== abc383_a atcoder error 948 import sys\n\ndef solve() -> None:\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    \n    if not input_data:\n        return\n    \n    iterator = iter(input_data)\n    \n    try:\n        n_str = next(iterator)\n        N = int(n_str)\n    except StopIteration:\n        return\n    
+
+```

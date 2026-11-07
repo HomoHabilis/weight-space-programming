@@ -1,0 +1,6 @@
+Output of code run 111 of 600:
+```
+[8678  198 2523] 1 [np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(3), np.int64(3), np.int64(3), np.int64(3), np.int64(3), np.int64(3)]
+[np.int64(0), np.int64(0), np.int64(3)] [np.int64(1), np.int64(1), np.int64(1)]
+
+```

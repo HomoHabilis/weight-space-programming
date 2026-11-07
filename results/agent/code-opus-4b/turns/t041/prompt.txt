@@ -1,0 +1,26 @@
+Output of code run 39 of 600:
+```
+lab
+E    4654
+R     756
+T      20
+Name: count, dtype: int64
+nxt
+Wait, if    141
+Actually     81
+Wait, th     73
+But wait     42
+Let's ch     32
+Wait, is     28
+Is it po     27
+Wait, ac     22
+Wait, I      18
+Let's re     16
+Wait, bu     16
+Wait, we     15
+Wait, on     14
+Let's tr     13
+Wait, le     13
+Name: count, dtype: int64
+
+```

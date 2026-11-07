@@ -1,0 +1,22 @@
+Output of code run 197 of 600:
+```
+[(np.float64(0.249342143535614), '3659'), (np.float64(nan), '3685'), (np.float64(0.3776649832725525), 'abc383_b'), (np.float64(0.23914823681116104), 'abc384_b'), (np.float64(0.2034122347831726), 'abc379_b')]
+== passed low comment toks in first 250: 2
+    ...'10**9 + 7\n        \n        # dp[i][j' | top '][' p=0.98 | sampled ']' p=0.023
+    ...'  current_xors = {}\n                \n                # Check' | top ' if' p=0.35 | sampled ' possible' p=0.032
+== passed low comment toks in first 250: 8
+    ...'        MOD = 10**9 + 7\n        \n        #' | top ' Since' p=0.23 | sampled ' m' p=0.059
+    ...'), len(grid[0])\n        \n        # dp[i][j' | top '][' p=0.92 | sampled ']' p=0.076
+    ...' count of such paths.\n        # Since constraints say values' | top ' are' p=0.94 | sampled ' <' p=0.060
+    ...' say values < 16 and k < 16, the' | top ' XOR' p=0.90 | sampled ' max' p=0.035
+    ...' power of 2 minus 1 (which is 31 for' | top ' ' p=0.80 | sampled ' numbers' p=0.013
+    ...' 31 for numbers up to 15).\n        #' | top ' But' p=0.83 | sampled ' We' p=0.041
+== FAILED low comment toks in first 250: 17
+    ...'10**9 + 7\n        \n        # dp[i][j' | top '][' p=0.97 | sampled ']' p=0.029
+    ...'lue is the number of paths achieving that XOR sum.\n        #' | top ' Initialize' p=0.35 | sampled ' To' p=0.032
+    ...' # To save space, we can use two rows (current and previous' | top ')' p=0.61 | sampled ').' p=0.030
+    ...'o rows (current and previous).\n        \n        # Initialize' | top ' dp' p=0.35 | sampled ' current' p=0.068
+    ...'ent and previous).\n        \n        # Initialize current row' | top ' DP' p=0.43 | sampled ' as' p=0.003
+    ...').\n        \n        # Initialize current row as a dictionary' | top '\n' p=0.44 | sampled ' with' p=0.060
+
+```

@@ -1,0 +1,9 @@
+Output of code run 113 of 600:
+```
+Wait logp: orig -1.157 | 0.5x1321 -1.538 | zero1321 -2.413 | zero both -2.834 | inv both -8.674
+Actually logp: orig -1.569 | zero1321 -1.847 | zero both -1.839 | inv -2.556
+27 228 Wait-pred pos: orig -5.63 zero1321 -3.72
+29 5507 Wait-pred pos: orig -11.78 zero1321 -1.43
+30 1460 Wait-pred pos: orig 6.67 zero1321 2.52
+
+```

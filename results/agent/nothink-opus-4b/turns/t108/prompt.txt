@@ -1,0 +1,13 @@
+Output of code run 101 of 600:
+```
+False '(nums' orig -0.07 E1 -0.0
+False '(target' orig -3.9 E1 -7.88
+False '(target' orig -0.02 E1 -0.0
+True '(nums' orig -0.02 E1 -0.0
+True '(nums' orig -0.0 E1 -0.0
+True '(nums' orig -0.01 E1 -0.0
+False '(target' orig -4.02 E1 -7.63
+False '(target' orig -0.01 E1 -0.0
+False '(nums' orig -0.02 E1 -0.0
+
+```

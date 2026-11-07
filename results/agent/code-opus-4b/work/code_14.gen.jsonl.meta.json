@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "model": "base4b",
+ "model_dir": "<repo>/runs/agent/code-opus-4b/edited_model",
+ "edits": [
+  "model.language_model.layers.22.mlp.down_proj.weight"
+ ],
+ "thinking": true,
+ "lora_dir": null,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "set": "practice",
+ "problems": 40,
+ "n": 1,
+ "max_tokens": 6144,
+ "tokens": 449048,
+ "s_build": 18.9,
+ "s_load": 251.2,
+ "s_gen": 1906.1,
+ "tok_per_s": 235.6
+}

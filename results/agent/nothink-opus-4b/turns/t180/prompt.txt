@@ -1,0 +1,9 @@
+Output of code run 165 of 600:
+```
+Counter({'in0_in1_seen': 17075, 'in0_in1_novel': 7081, 'out0_out1_novel': 600, 'out0_in1_novel': 366, 'out0_out1_seen': 328, 'in0_out1_seen': 173, 'in0_out1_novel': 13, 'out0_in1_seen': 10, 'not_top20': 9})
+                 n        fl       rate
+passed                                 
+False   562.090909  8.772727  13.707810
+True    511.115385  7.038462  12.180054
+
+```

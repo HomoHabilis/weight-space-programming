@@ -1,0 +1,8 @@
+Output of code run 183 of 600:
+```
+0.0_code (np.float64(4.18), np.float64(0.44), 16)
+0.0_comment (np.float64(16.71), np.float64(0.62), 16)
+0.75_code (np.float64(-2.94), np.float64(0.5), 16)
+0.75_comment (np.float64(1.61), np.float64(0.56), 16)
+
+```

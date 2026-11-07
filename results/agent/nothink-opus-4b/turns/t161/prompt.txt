@@ -1,0 +1,5 @@
+Output of code run 147 of 600:
+```
+['model.language_model.layers.27.self_attn.o_proj.weight', 'model.language_model.layers.31.self_attn.o_proj.weight']
+
+```

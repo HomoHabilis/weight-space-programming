@@ -1,0 +1,9 @@
+Output of code run 175 of 600:
+```
+final norm w stats 2.1953654289245605 -0.291015625 3.703125
+(48, 1918, 2560)
+(3687, 2560)
+w rms of x/g mean 1.5912616
+1+w rms of x/g mean 1.000001
+
+```

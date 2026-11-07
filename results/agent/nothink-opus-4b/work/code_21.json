@@ -1,0 +1,42 @@
+{
+ "name": "code_21",
+ "model": "base4b",
+ "edit_dir": "<repo>/runs/agent/nothink-opus-4b/work/edited",
+ "lora_dir": null,
+ "set": "practice",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 2,
+ "limit": null,
+ "difficulties": null,
+ "pass@1": 0.45,
+ "samples": 40,
+ "problems": 20,
+ "by_difficulty": {
+  "easy": 0.5,
+  "medium": 0.4
+ },
+ "no_code": 4,
+ "unfinished": 7,
+ "mean_tokens": 5006,
+ "outcomes": {
+  "wrong": 15,
+  "passed": 18,
+  "no code": 4,
+  "harness": 1,
+  "error": 1,
+  "timeout": 1
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 12.5,
+  "load": 94.5,
+  "generate": 689.1,
+  "grade": 8.6,
+  "total": 845.8
+ },
+ "tok_per_s": 290.6
+}

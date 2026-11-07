@@ -1,0 +1,31 @@
+Output of code run 236 of 600:
+```
+25 9 25
+         pid  k  fin_fail  med_tok    diff      plat  in_cp1
+85      3685  2         1    129.0    easy  leetcode   False
+72      3651  1         2    166.0    easy  leetcode   False
+56      3612  2         1    229.0    easy  leetcode   False
+59      3644  1         2    232.0    easy  leetcode   False
+37  abc384_b  2         1    274.0    easy   atcoder   False
+1   abc374_b  1         2    285.0    easy   atcoder   False
+52      3593  2         1    380.0  medium  leetcode   False
+35  abc383_b  2         1    534.0  medium   atcoder   False
+10  abc376_a  1         2    570.0    easy   atcoder   False
+86      3659  2         1    580.0  medium  leetcode   False
+41  abc385_a  2         1    598.0    easy   atcoder   False
+27  abc381_a  2         1    665.0    easy   atcoder   False
+28  abc381_b  2         1    837.0    easy   atcoder   False
+43  abc385_b  2         1    889.0    easy   atcoder    True
+44  abc386_a  1         2    911.0    easy   atcoder   False
+19  abc379_b  2         1    937.0    easy   atcoder   False
+33  abc383_c  1         2    973.0  medium   atcoder    True
+73      3681  1         2   1075.0  medium  leetcode   False
+31  abc382_b  2         1   1152.0    easy   atcoder    True
+64      3587  1         2   1517.0  medium  leetcode    True
+7   abc375_d  1         2   2033.0  medium   atcoder    True
+36  abc383_d  1         2   2058.0  medium   atcoder    True
+32  abc382_c  2         1   2205.0  medium   atcoder    True
+46  abc386_b  2         1   2558.0    easy   atcoder    True
+57      3616  1         2   2856.0    easy  leetcode    True
+
+```

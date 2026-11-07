@@ -1,0 +1,37 @@
+{
+ "skipped": true,
+ "fits_in_gpu": true,
+ "reason": "trains only by spilling GPU memory into system RAM (peak 13.25 GB on an 8 GB GPU): ~6 min per step on median-length examples (9.3k tokens), so 2 epochs x 138 examples would take ~28 h (1 epoch ~14 h); skipped by decision of the experimenter",
+ "median_step_s": 377.20000000000005,
+ "est_hours_2_epochs": 28.9,
+ "probe": {
+  "fits_in_gpu": true,
+  "seq_len": 13200,
+  "step_s": 475.2,
+  "steps": [
+   {
+    "seq_len": 13200,
+    "step_s": 475.2
+   },
+   {
+    "seq_len": 9269,
+    "step_s": 390.1
+   },
+   {
+    "seq_len": 9269,
+    "step_s": 364.3
+   }
+  ],
+  "median_len": 9269,
+  "mean_len": 9391,
+  "peak_gpu_gb": 13.25,
+  "kernels": {
+   "fla": true,
+   "causal_conv1d": true
+  },
+  "passing_samples": 138,
+  "used": 138,
+  "skipped_too_long": 0,
+  "problems": 54
+ }
+}

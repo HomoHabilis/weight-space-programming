@@ -1,0 +1,32 @@
+Output of code run 35 of 600 (error):
+```
+Traceback (most recent call last):
+  File "<cell>", line 5, in pub_tests
+  File "<home>/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 16, in <module>
+  File "<home>/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "<home>/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "<home>/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "<home>/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<cell>", line 16, in <lambda>
+ValueError: malformed node or string: [{'input': 'abcde\nabedc\n', 'output': '3\n', 'testtype': 'stdin'}, {'input': 'abcde\nabcdefg\n', 'output': '6\n', 'testtype': 'stdin'}, {'input': 'keyence\nkeyence\n', 'output': '0\n', 'testtype': 'stdin'}]
+
+```

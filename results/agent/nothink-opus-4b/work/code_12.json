@@ -1,0 +1,40 @@
+{
+ "name": "code_12",
+ "model": "base4b",
+ "edit_dir": null,
+ "lora_dir": null,
+ "set": "practice",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 2,
+ "limit": null,
+ "difficulties": null,
+ "pass@1": 0.4,
+ "samples": 40,
+ "problems": 20,
+ "by_difficulty": {
+  "easy": 0.5714,
+  "medium": 0.3077
+ },
+ "no_code": 8,
+ "unfinished": 10,
+ "mean_tokens": 5312,
+ "outcomes": {
+  "wrong": 12,
+  "no code": 8,
+  "passed": 16,
+  "error": 4
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 239.8,
+  "generate": 835.2,
+  "grade": 11.0,
+  "total": 1127.0
+ },
+ "tok_per_s": 254.4
+}

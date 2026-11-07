@@ -1,0 +1,40 @@
+{
+ "name": "code_19",
+ "model": "base4b",
+ "edit_dir": "<repo>/runs/agent/code-opus-4b/work/edited",
+ "lora_dir": null,
+ "set": "practice",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": null,
+ "pass@1": 0.65,
+ "samples": 40,
+ "problems": 40,
+ "by_difficulty": {
+  "easy": 0.8824,
+  "medium": 0.4783
+ },
+ "no_code": 8,
+ "unfinished": 13,
+ "mean_tokens": 9319,
+ "outcomes": {
+  "passed": 26,
+  "no code": 8,
+  "wrong": 5,
+  "error": 1
+ },
+ "forced_stop": 31,
+ "timing_s": {
+  "build": 0.0,
+  "load": 102.3,
+  "generate": 1449.8,
+  "grade": 26.5,
+  "total": 1617.5
+ },
+ "tok_per_s": 257.1
+}

@@ -1,0 +1,22 @@
+Output of code run 16 of 600:
+```
+===== abc374_d 2407 n_blocks 1
+BLOCK END:         \n        # Option 2: Start at (C, D)\n        d2 = math.hypot(0-segments[first_seg_idx][2], 0-segments[first_seg_idx][3])\n        rem_time2 = get_min_time((1 << first_seg_idx), first_seg_idx, 1)\n        cand2 = d2 / S + seg_len(first_seg_idx) / T + rem_time2\n        \n        final_ans = min(final_ans, cand1, cand2)\n    \n    print(f"{final_ans:.15f}")\n\nif __name__ == '__main__':\n    solve()\n
+AFTER: ```
+===== abc374_d 2384 n_blocks 1
+BLOCK END: dp[new_mask][j][1] = new_time1\n\n    # Final answer: min over all last_seg and end_node for full mask\n    full_mask = (1 << N) - 1\n    ans = INF\n    for last_seg in range(N):\n        for end_node in [0, 1]:\n            if dp[full_mask][last_seg][end_node] < ans:\n                ans = dp[full_mask][last_seg][end_node]\n                \n    print(f"{ans:.15f}")\n\nif __name__ == '__main__':\n    solve()\n
+AFTER: ```
+===== abc381_a 665 n_blocks 1
+BLOCK END: alse\n                    break\n        \n        # Check the '2's after the '/'\n        # Indices mid_index to n-1\n        if valid:\n            for i in range(mid_index, n):\n                if s_str[i] != '2':\n                    valid = False\n                    break\n        \n        if valid:\n            print("Yes")\n        else:\n            print("No")\n\nif __name__ == "__main__":\n    solve()\n
+AFTER: ```
+===== abc381_c 6245 n_blocks 1
+BLOCK END: os[i+1] + 1 if i < n-1 else 1\n        else:\n            right_twos[i] = 0\n            \n    max_len = 0\n    \n    for i in range(n):\n        if s[i] == '/':\n            l = left_ones[i-1] if i > 0 else 0\n            r = right_twos[i+1] if i < n-1 else 0\n            if l + r + 1 > max_len:\n                max_len = l + r + 1\n                \n    print(max_len)\n\nif __name__ == '__main__':\n    solve()\n
+AFTER: ```
+===== abc386_a 1069 n_blocks 1
+BLOCK END: :\n                print("Yes")\n            else:\n                # Should not happen with logic above but for safety\n                print("No")\n        elif len(freq_list) == 1:\n            # Only one type present, count must be 4\n            print("No")\n        else:\n            # Three types present (1,1,2) or four types (1,1,1,1)\n            print("No")\n\nif __name__ == "__main__":\n    solve()\n
+AFTER: ```
+===== abc386_c 1679 n_blocks 1
+BLOCK END:            print("Yes")\n                else:\n                    print("No")\n            else:\n                print("No")\n        \n        # Special case: K=1 means max 1 op. \n        # If len_s == len_t and s == t, 0 ops needed -> Yes. Handled.\n        # If len_s != len_t, difference must be exactly 1. Handled.\n        \n    except Exception:\n        pass\n\nif __name__ == "__main__":\n    solve()\n
+AFTER: ```
+
+```

@@ -1,0 +1,43 @@
+{
+ "name": "base4b-nothink12k-em",
+ "model": "base4b",
+ "edit_dir": null,
+ "set": "test",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5158,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.8372,
+  "medium": 0.25
+ },
+ "no_code": 15,
+ "unfinished": 16,
+ "mean_tokens": 4163,
+ "outcomes": {
+  "passed": 49,
+  "wrong": 21,
+  "no code": 15,
+  "error": 9,
+  "harness": 1
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 228.4,
+  "generate": 1384.5,
+  "grade": 11.4,
+  "total": 1660.8
+ },
+ "tok_per_s": 285.6
+}

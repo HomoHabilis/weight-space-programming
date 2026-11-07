@@ -1,0 +1,59 @@
+Output of code run 116 of 600:
+```
+##### abc376_a Candy Button fail outcome wrong
+--- 
++++ 
++    last_receive_time = -1  # Initialize with a time before any possible press (since T_i >= 0)
+-    if len(t_list) > 0:
+-        candy_count += 1
+-        last_received_time = t_list[0]
+-        for i in range(1, len(t_list)):
+-            current_time = t_list[i]
+-            time_diff = current_time - last_received_time
++    for t in t_list:
++        if t - last_receive_time >= c:
++            candy_count += 1
++            last_receive_time = t
++        else:
++            pass
+-            if time_diff >= c:
+-                candy_count += 1
+-                last_received_time = current_time
+-            else:
+-                pass
+-if __name__ == "__main__":
++if __name__ == '__main__':
+##### 3644 minimum-positive-sum-subarray fail outcome wrong
+--- 
++++ 
++from typing import List
+-            for j in range(i + l, min(n + 1, i + r + 1)):
++            for j in range(i + l, i + r + 1):
++                if j >= n:
++                    break
+##### abc374_b Unvarnished Report fail outcome wrong
+--- 
++++ 
++    if not input_data:
++        return
++    s_str = input_data[0]
++    t_str = input_data[1]
+-    s = input_data[0]
+-    t = input_data[1]
++    min_len = min(len(s_str), len(t_str))
+-    n = len(s)
+-    m = len(t)
+-    for i in range(min(n, m)):
+-        if s[i] != t[i]:
++    for i in range(min_len):
++        if s_str[i] != t_str[i]:
+-    if n == m:
++    if len(s_str) == len(t_str):
+-    elif n < m:
+-        print(n + 1)
+-    else: # n > m
+-        print(m + 1)
++    else:
++        print(len(s_str) + 1)
+
+```

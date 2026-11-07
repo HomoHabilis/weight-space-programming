@@ -1,0 +1,346 @@
+Forward pass 14 of 24 done.
+```json
+{
+ "ok": true,
+ "type": "code",
+ "model": "edited",
+ "pass@1": 0.225,
+ "by_difficulty": {
+  "easy": 0.8,
+  "medium": 0.1429
+ },
+ "outcomes": {
+  "no code": 22,
+  "passed": 9,
+  "wrong": 9
+ },
+ "forced_stop": 40,
+ "minutes": 37.5,
+ "results": [
+  {
+   "id": "abc375_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc376_b",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc376_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc377_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc379_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 398
+  },
+  {
+   "id": "abc379_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc379_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc380_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc380_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 379
+  },
+  {
+   "id": "abc383_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 778
+  },
+  {
+   "id": "abc386_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc386_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 452
+  },
+  {
+   "id": "3566",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3502",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3607",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 1220
+  },
+  {
+   "id": "3629",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 358
+  },
+  {
+   "id": "3627",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 428
+  },
+  {
+   "id": "3654",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3487",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3587",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 1135
+  },
+  {
+   "id": "3622",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3591",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3647",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3676",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 270
+  },
+  {
+   "id": "3594",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 3684
+  },
+  {
+   "id": "3681",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 626
+  },
+  {
+   "id": "3653",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 395
+  },
+  {
+   "id": "3649",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3655",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3613",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3686",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3620",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3683",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3699",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3659",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3657",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3702",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3634",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 653
+  },
+  {
+   "id": "3715",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3716",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  }
+ ],
+ "files": {
+  "texts": "/work/code_14.gen.jsonl",
+  "graded": "/work/code_14.rows.jsonl"
+ }
+}
+```

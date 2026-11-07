@@ -1,0 +1,54 @@
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/code-opus-4b/work/fwd_16",
+ "texts": 9,
+ "lengths": [
+  8693,
+  8695,
+  8031,
+  9316,
+  9260,
+  9102,
+  12853,
+  13155,
+  13017
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   9,
+   13155
+  ],
+  "token_logprobs.npy": [
+   9,
+   13155
+  ],
+  "topk_ids.npy": [
+   9,
+   13155,
+   10
+  ],
+  "topk_logprobs.npy": [
+   9,
+   13155,
+   10
+  ],
+  "hidden_12.npy": [
+   9,
+   13155,
+   2560
+  ],
+  "hidden_20.npy": [
+   9,
+   13155,
+   2560
+  ],
+  "hidden_28.npy": [
+   9,
+   13155,
+   2560
+  ]
+ },
+ "s": 622.5
+}

@@ -1,0 +1,45 @@
+Output of code run 172 of 600:
+```
+Counter({('all', 'code'): 13118, ('all', 'comment'): 12342, ('flip', 'comment'): 283, ('all', 'prose'): 195, ('flip', 'code'): 89, ('flip', 'prose'): 4})
+True ...') < 2:\n        return\n    \n   ' | top ' S' p=0.83 | sampled ' s' p=0.145
+False ...') < 2:\n        return\n        \n   ' | top ' S' p=0.82 | sampled ' s' p=0.182
+False ...'(s_str), len(t_str))\n    \n   ' | top ' #' p=0.73 | sampled ' for' p=0.164
+False ...'    \n    if not input_data:\n        return' | top '\n\n' p=0.73 | sampled '\n    \n' p=0.269
+False ...' The first two tokens are S and T\n   ' | top ' if' p=0.59 | sampled ' s' p=0.090
+True ...'    \n    # Parse the list T\n    t' | top ' =' p=0.85 | sampled '_list' p=0.131
+True ...' press, we always get a candy\n    if' | top ' n' p=0.48 | sampled ' len' p=0.121
+True ...': 3 candies. Matches sample output.\n' | top '               ' p=0.81 | sampled '                \n' p=0.181
+False ...'    \n    # Parse the list T\n    t' | top ' =' p=0.84 | sampled '_list' p=0.145
+False ...'\n    \n    # Logic to count candies\n   ' | top ' candies' p=0.51 | sampled ' candy' p=0.069
+False ...' 3. Matches sample output.\n            pass' | top '\n    \n' p=0.71 | sampled '\n            \n' p=0.203
+False ...'    \n    if not input_data:\n        return' | top '\n\n' p=0.80 | sampled '\n    \n' p=0.202
+False ...'    \n    # Parse the list T\n    t' | top ' =' p=0.82 | sampled '_list' p=0.162
+False ...'T_i >= 0)\n    \n    for' | top ' t' p=0.54 | sampled ' current' p=0.050
+False ...' in range(i, i+k):\n                        s' | top ' =' p=0.80 | sampled '[p' p=0.201
+False ...' N from standard input\n    try:\n       ' | top ' input' p=0.88 | sampled ' line' p=0.119
+False ...' not line1:\n            return\n        n' | top ' =' p=0.81 | sampled '_str' p=0.180
+False ...'\n        if not n_str:\n            return' | top '\n' p=0.73 | sampled '\n        \n' p=0.268
+False ...':\n            print("No")\n            return' | top '\n        \n' p=0.50 | sampled '\n            \n' p=0.235
+True ...' if not input_data:\n        return\n\n   ' | top ' #' p=0.81 | sampled ' n' p=0.182
+True ...'\n        s = input_data[1]\n' | top '   ' p=0.82 | sampled '        \n' p=0.182
+True ..."|-1 must be '2'\n        \n       " | top ' #' p=0.37 | sampled ' mid' p=0.136
+True ...':\n            print("No")\n            return' | top '\n        \n' p=0.62 | sampled '\n            \n' p=0.156
+True ...' mid_point - 1.\n        \n        mid' | top '_point' p=0.75 | sampled '_' p=0.130
+True ...' return\n    \n    # Check condition 2\n   ' | top ' for' p=0.73 | sampled ' valid' p=0.127
+False ...'\n    \n    if not input_data:\n       ' | top ' print' p=0.50 | sampled ' return' p=0.235
+False ...'    half_n = n // 2\n   ' | top ' for' p=0.75 | sampled ' is' p=0.131
+True ...'\n<think>\n\n</think>\n\n```python\nimport sys' | top '\n' p=0.73 | sampled '\n\n' p=0.269
+True ...' p2 = floor_cells[j]\n            \n           ' | top ' #' p=0.80 | sampled ' count' p=0.075
+True ...'_cells[j]\n            \n            count = 0' | top '\n' p=0.87 | sampled '\n            \n' p=0.133
+False ...'\n<think>\n\n</think>\n\n```python\nimport sys' | top '\n' p=0.75 | sampled '\n\n' p=0.245
+False ...' len(full_grid_lines) < H:\n               ' | top ' full' p=0.66 | sampled ' line' p=0.166
+False ...'\n            grid_str = "".join(full_grid_lines' | top ')' p=0.84 | sampled '[:' p=0.145
+False ...'. So each row is one line.\n           ' | top ' #' p=0.82 | sampled ' pass' p=0.142
+False ...'        \n        grid_rows = []\n        current_line' | top ' =' p=0.68 | sampled '_count' p=0.222
+False ...'_line_count = 0\n        temp_buffer =' | top ' []' p=0.80 | sampled ' ""' p=0.109
+False ...'.append((r, c))\n    \n    n' | top '_f' p=0.39 | sampled '_floor' p=0.186
+True ...'\n<think>\n\n</think>\n\n```python\nimport sys' | top '\n' p=0.73 | sampled '\n\n' p=0.269
+True ...'    \n    if not input_data:\n        return' | top '\n\n' p=0.87 | sampled '\n    \n' p=0.133
+True ...'    # Parse H, W, D\n   ' | top ' H' p=0.91 | sampled ' iterator' p=0.075
+
+```

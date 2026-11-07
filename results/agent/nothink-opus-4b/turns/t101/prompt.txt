@@ -1,0 +1,9 @@
+Output of code run 95 of 600:
+```
+P1.0 IS rate 0.708 within per-token (np.float64(0.0024), np.float64(0.75))
+P0.5 IS rate 0.796 within per-token (np.float64(0.0064), np.float64(0.875))
+P0.0 IS rate 0.768 within per-token (np.float64(0.0118), np.float64(0.938))
+L1.15 IS rate 0.689 within per-token (np.float64(0.0022), np.float64(0.812))
+L1.3 IS rate 0.742 within per-token (np.float64(0.0054), np.float64(0.875))
+
+```

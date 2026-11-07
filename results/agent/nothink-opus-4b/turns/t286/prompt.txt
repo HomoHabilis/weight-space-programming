@@ -1,0 +1,7 @@
+Output of code run 264 of 600:
+```
+46
+2400 110400 True
+'   # Check the element before the found index (lower bound candidate)\n        if idx > 0:\n            s_right = sorted_right[idx - 1]\n            s_total = s_left + s_right\n            current_max = m'
+
+```

@@ -1,0 +1,6 @@
+Output of code run 188 of 600:
+```
+LC samples 135 Counter({'passed': 53, 'wrong': 45, 'no code': 17, 'error': 15, 'timeout': 4, 'harness': 1})
+Counter({'no_main': 45, 'pub_fail': 28, 'pub_pass': 17})
+
+```

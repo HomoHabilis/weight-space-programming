@@ -1,0 +1,56 @@
+Output of code run 18 of 600:
+```
+count    42.000000
+mean      0.470886
+std       0.392127
+min       0.000000
+25%       0.111697
+50%       0.337714
+75%       0.970769
+max       1.000000
+Name: rep, dtype: float64
+           id  outcome       rep  n_wait  code_first
+16   abc375_c  no code  0.000000      13        True
+161      3629    wrong  0.000000      20       False
+262      3657  no code  0.000000      13       False
+263      3657  no code  0.000000       0        True
+141  arc189_a  no code  0.028169      25       False
+271      3715    error  0.039216      10       False
+198      3622  no code  0.045455       1        True
+116  abc384_d   passed  0.079545      13       False
+61   abc379_c    wrong  0.098765      19       False
+35   abc376_c  no code  0.108108      17       False
+15   abc375_c  no code  0.109890      13        True
+62   abc379_c  no code  0.117117      20       False
+17   abc375_c    wrong  0.117647      16        True
+229      3649    wrong  0.176471      32       False
+276      3716    wrong  0.187500       2        True
+114  abc384_d    wrong  0.226415      21       False
+209      3647  no code  0.231884      28       False
+208      3647    wrong  0.250000       2       False
+272      3715  timeout  0.287234      14       False
+142  arc189_a    wrong  0.300000      24       False
+207      3647  no code  0.313725      33       False
+241      3686  no code  0.361702       2        True
+277      3716  no code  0.393443       3        True
+33   abc376_c    error  0.401869      17       False
+143  arc189_a    wrong  0.464286      19       False
+249      3683  no code  0.500000       3        True
+153      3607    wrong  0.636364       8       False
+189      3617  no code  0.757576       5        True
+148      3566  no code  0.771429       2        True
+188      3487  no code  0.944444       2       False
+227      3621  no code  0.960000       2        True
+149      3566  no code  0.974359       1        True
+186      3487  no code  0.976190       0        True
+247      3620  no code  0.980769       5       False
+137  abc386_c  no code  0.983333       2        True
+28   abc376_d    wrong  0.986111      74       False
+65   abc379_d  no code  0.987654      31       False
+135  abc386_c  no code  0.989474      43        True
+63   abc379_d  no code  0.991071      15        True
+187      3487  no code  1.000000       0        True
+147      3566  no code  1.000000       1        True
+254      3699    wrong  1.000000       2        True
+
+```

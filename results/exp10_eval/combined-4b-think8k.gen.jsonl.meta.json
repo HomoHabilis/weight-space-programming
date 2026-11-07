@@ -1,0 +1,30 @@
+{
+ "ok": true,
+ "model": "base4b",
+ "model_dir": "<repo>/models/edited/Qwen3.5-4B-1ef22f26cd3581fb",
+ "edits": [
+  "model.language_model.layers.22.mlp.down_proj.weight",
+  "model.language_model.layers.27.mlp.down_proj.weight",
+  "model.language_model.layers.31.mlp.down_proj.weight",
+  "model.language_model.layers.31.mlp.gate_proj.weight",
+  "model.language_model.layers.31.mlp.up_proj.weight"
+ ],
+ "bf16_blocks": [
+  "*layers.22.mlp.*",
+  "*layers.27.mlp.*",
+  "*layers.31.mlp.*"
+ ],
+ "thinking": true,
+ "lora_dir": null,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "set": "test",
+ "problems": 95,
+ "n": 1,
+ "max_tokens": 6144,
+ "tokens": 878594,
+ "s_build": 152.5,
+ "s_load": 486.5,
+ "s_gen": 3882.4,
+ "tok_per_s": 226.3
+}

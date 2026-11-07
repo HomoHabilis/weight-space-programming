@@ -1,0 +1,48 @@
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/nothink-opus-4b/work/fwd_9",
+ "texts": 18,
+ "lengths": [
+  6994,
+  6994,
+  868,
+  1258,
+  736,
+  1667,
+  1079,
+  1343,
+  1299,
+  1399,
+  1300,
+  1255,
+  1260,
+  1266,
+  969,
+  899,
+  1314,
+  695
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   18,
+   6994
+  ],
+  "token_logprobs.npy": [
+   18,
+   6994
+  ],
+  "topk_ids.npy": [
+   18,
+   6994,
+   20
+  ],
+  "topk_logprobs.npy": [
+   18,
+   6994,
+   20
+  ]
+ },
+ "s": 64.7
+}

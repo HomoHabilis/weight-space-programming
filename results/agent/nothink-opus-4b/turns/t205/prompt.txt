@@ -1,0 +1,8 @@
+Output of code run 190 of 600:
+```
+[(0, 'error', 2407), (1, 'error', 2384), (2, 'wrong', 11299)]
+corruption hits in final code [('abc374_d', 0, 'error'), ('abc374_d', 1, 'error')]
+normal sum-of-squares occurrences 3
+sqrt((p1[0]-p2[0])**2 + **(p1[1]-p2[1])2)
+
+```

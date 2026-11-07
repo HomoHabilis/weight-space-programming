@@ -1,0 +1,19 @@
+Output of code run 159 of 600:
+```
+{
+"chat_template": "the model's own (/model/tokenizer_config.json / chat_template.jinja), enable_thinking=False (the prompt ends with an empty '<think>\n\n</think>\n\n' block)",
+"system": "You are an expert Python programmer. You will be given a question (problem specification) and will generate a correct Python program that matches the specification and passes all tests.",
+"user_stdin": "### Question:\n{question}\n\n### Format: Read the inputs from stdin solve the problem and write the answer to stdout (do not directly test on the sample inputs). Enclose your code within delimiters as follows. Ensure that when the python program runs, it reads the inputs, runs the algorithm and writes output to STDOUT.\n```python\n# YOUR CODE HERE\n```\n\n### Answer: (use the provided format with backticks)\n\n",
+"user_call": "### Question:\n{question}\n\n### Format: You will use the following starter code to write the solution to the problem and enclose your code within delimiters.\n```python\n{starter}\n```\n\n### Answer: (use the provided format with backticks)\n\n",
+"procedure": "generate the answer directly after the prompt, up to max_tokens tokens. The last ```python block of the answer is run against all tests (6 s per test).",
+"sampling": {
+"temperature": 0.7,
+"top_p": 0.8,
+"top_k": 20,
+"presence_penalty": 1.5
+},
+"weights": "4-bit (MXFP4) except blocks holding edited matrices, including the earlier edit already in /model (bfloat16)",
+"max_tokens": 12288
+}
+
+```

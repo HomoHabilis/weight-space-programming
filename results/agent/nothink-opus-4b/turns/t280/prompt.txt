@@ -1,0 +1,10 @@
+Output of code run 259 of 600:
+```
+A EOS still in top20 under V4: 19 / 20 | measured drop (where measurable) median 12.44 | pred V4 drop median 13.11
+B EOS still in top20 under V4: 21 / 21 | measured drop (where measurable) median 8.19 | pred V4 drop median 10.32
+C EOS still in top20 under V4: 12 / 12 | measured drop (where measurable) median 8.84 | pred V4 drop median 11.69
+A P(cont) V4 measured 1.0 | V3 implied 0.91 n 19
+B P(cont) V4 measured 0.02 | V3 implied 0.0 n 21
+C P(cont) V4 measured 0.54 | V3 implied 0.26 n 12
+
+```

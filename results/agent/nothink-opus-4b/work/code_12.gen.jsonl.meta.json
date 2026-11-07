@@ -1,0 +1,20 @@
+{
+ "ok": true,
+ "model": "base4b",
+ "model_dir": "<repo>/models/Qwen3.5-4B",
+ "edits": [],
+ "bf16_blocks": [],
+ "thinking": false,
+ "lora_dir": null,
+ "think_budget": null,
+ "answer_tokens": null,
+ "set": "practice",
+ "problems": 20,
+ "n": 2,
+ "max_tokens": 12288,
+ "tokens": 212479,
+ "s_build": 0.0,
+ "s_load": 239.8,
+ "s_gen": 835.2,
+ "tok_per_s": 254.4
+}

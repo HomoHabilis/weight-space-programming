@@ -1,0 +1,30 @@
+{
+ "fits_in_gpu": true,
+ "seq_len": 13200,
+ "step_s": 475.2,
+ "steps": [
+  {
+   "seq_len": 13200,
+   "step_s": 475.2
+  },
+  {
+   "seq_len": 9269,
+   "step_s": 390.1
+  },
+  {
+   "seq_len": 9269,
+   "step_s": 364.3
+  }
+ ],
+ "median_len": 9269,
+ "mean_len": 9391,
+ "peak_gpu_gb": 13.25,
+ "kernels": {
+  "fla": true,
+  "causal_conv1d": true
+ },
+ "passing_samples": 138,
+ "used": 138,
+ "skipped_too_long": 0,
+ "problems": 54
+}

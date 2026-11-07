@@ -1,0 +1,5 @@
+Output of code run 38 of 600:
+```
+97 28 60 30
+
+```

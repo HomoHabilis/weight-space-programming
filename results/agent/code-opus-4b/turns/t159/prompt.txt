@@ -1,0 +1,8 @@
+Output of code run 137 of 600:
+```
+sampled Wait tokens n=734: logp orig -0.768 v2 -1.664 ; p 0.581 -> 0.415
+expected Wait count per 7.4k thinking tokens: orig 45.5 v2 23.9 (T=1)
+other tokens: mean dlogp 0.0000, frac |d|>0.5 0.0009, NLL 0.2958 -> 0.2958
+n positions 1130  gainers: [('But', np.float64(0.036), np.float64(0.057)), ('However', np.float64(0.017), np.float64(0.033)), ('Let', np.float64(0.031), np.float64(0.042)), ('The', np.float64(0.023), np.float64(0.033)), ('So', np.float64(0.061), np.float64(0.07)), ('If', np.float64(0.018), np.float64(0.026)), ('Is', np.float64(0.016), np.float64(0.023)), ('Note', np.float64(0.003), np.float64(0.009)), ('This', np.float64(0.018), np.float64(0.023)), ('Why', np.float64(0.004), np.float64(0.007))]
+
+```

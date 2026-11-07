@@ -1,0 +1,5 @@
+Output of code run 218 of 600:
+```
+38 Counter({True: 23, False: 15}) max len 2663 budget n 49
+
+```

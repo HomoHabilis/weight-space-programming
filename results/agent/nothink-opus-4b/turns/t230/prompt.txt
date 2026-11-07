@@ -1,0 +1,7 @@
+Output of code run 215 of 600:
+```
+[(248069, '</think>'), (271, '\n\n'), (71093, '???'), (12305, 'python'), (198, '\n')] | last [(198, '\n'), (71093, '???')]
+closing-fence-token count per TF3 text Counter({4: 47, 6: 1})
+[('???', 71093), ('????', 52451)]
+
+```

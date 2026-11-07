@@ -1,0 +1,12 @@
+Output of code run 1 of 600:
+```
+problems.jsonl  practice problems (statement, starter code, public examples, number of tests)
+tests/<id>.json.gz  all tests of a problem: gzip JSON list of {input, output, testtype}
+samples.jsonl   the unedited model's answers to these problems (3 per problem, full text incl. thinking),
+                graded on all tests: passed, outcome (passed / no code / wrong / error / timeout)
+settings.json   exactly how answers are generated and graded
+
+['settings.json', 'samples.jsonl', 'README.txt', 'tests', 'problems.jsonl']
+['kernel_stderr.log', 'edited']
+
+```

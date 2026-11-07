@@ -1,0 +1,26 @@
+Output of code run 34 of 600:
+```
+count    42.000000
+mean      0.386297
+std       0.445319
+min       0.000000
+25%       0.017977
+50%       0.057796
+75%       0.979167
+max       1.000000
+Name: ngrep, dtype: float64
+count    237.000000
+mean       0.029988
+std        0.082622
+min        0.000000
+25%        0.000000
+50%        0.000000
+75%        0.010463
+max        0.557796
+Name: ngrep, dtype: float64
+17 finished
+False    15
+True      2
+dtype: int64
+
+```

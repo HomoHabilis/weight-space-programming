@@ -1,0 +1,280 @@
+[kernel ready]
+[turn 1] python  passes 0/24  code runs 1  ~$0.03 API-equiv  (7.0 s)
+[turn 2] python  passes 0/24  code runs 2  ~$0.04 API-equiv  (6.9 s)
+[turn 3] python  passes 0/24  code runs 3  ~$0.05 API-equiv  (6.8 s)
+[turn 4] python  passes 0/24  code runs 4  ~$0.07 API-equiv  (8.4 s)
+[turn 5] python  passes 0/24  code runs 5  ~$0.09 API-equiv  (13.5 s)
+[turn 6] python  passes 0/24  code runs 6  ~$0.10 API-equiv  (6.2 s)
+[turn 7] python  passes 0/24  code runs 7  ~$0.11 API-equiv  (6.8 s)
+[turn 8] python  passes 0/24  code runs 8  ~$0.11 API-equiv  (7.6 s)
+[turn 9] python  passes 0/24  code runs 9  ~$0.12 API-equiv  (8.5 s)
+[turn 10] python  passes 0/24  code runs 10  ~$0.14 API-equiv  (8.8 s)
+[turn 11] python  passes 0/24  code runs 11  ~$0.18 API-equiv  (18.7 s)
+[turn 12] python  passes 0/24  code runs 12  ~$0.20 API-equiv  (7.8 s)
+[turn 13] python  passes 0/24  code runs 13  ~$0.22 API-equiv  (7.9 s)
+[turn 14] python  passes 0/24  code runs 14  ~$0.25 API-equiv  (19.4 s)
+[turn 15] python  passes 0/24  code runs 15  ~$0.32 API-equiv  (27.9 s)
+[turn 16] python  passes 0/24  code runs 16  ~$0.38 API-equiv  (21.0 s)
+[turn 17] python  passes 0/24  code runs 17  ~$0.41 API-equiv  (6.4 s)
+[turn 18] python  passes 0/24  code runs 18  ~$0.43 API-equiv  (10.6 s)
+[turn 19] python  passes 0/24  code runs 19  ~$0.45 API-equiv  (9.7 s)
+[turn 20] python  passes 0/24  code runs 20  ~$0.47 API-equiv  (8.2 s)
+[turn 21] python  passes 0/24  code runs 21  ~$0.49 API-equiv  (13.1 s)
+[turn 22] python  passes 0/24  code runs 22  ~$0.55 API-equiv  (18.3 s)
+[turn 23] python  passes 0/24  code runs 23  ~$0.61 API-equiv  (28.6 s)
+[turn 24] python  passes 0/24  code runs 24  ~$0.64 API-equiv  (7.3 s)
+[turn 25] python  passes 0/24  code runs 25  ~$0.66 API-equiv  (7.2 s)
+[turn 26] python  passes 0/24  code runs 26  ~$0.67 API-equiv  (7.9 s)
+[turn 27] python  passes 0/24  code runs 27  ~$0.69 API-equiv  (7.9 s)
+[turn 28] python  passes 0/24  code runs 28  ~$0.74 API-equiv  (24.1 s)
+[turn 29] python  passes 0/24  code runs 29  ~$0.80 API-equiv  (23.2 s)
+[turn 30] python  passes 0/24  code runs 30  ~$0.89 API-equiv  (39.7 s)
+[turn 31] python  passes 0/24  code runs 31  ~$0.95 API-equiv  (18.6 s)
+[turn 32] python  passes 0/24  code runs 32  ~$1.01 API-equiv  (14.3 s)
+[turn 33] python  passes 0/24  code runs 33  ~$1.03 API-equiv  (6.4 s)
+    [gpu] teacher-forced pass on 16 texts (original, 126,400 padded tokens, ~2.43 GB)...
+[turn 34] forward passes 1/24  code runs 33  ~$1.04 API-equiv  (6.7 s)
+[turn 35] python  passes 1/24  code runs 34  ~$1.07 API-equiv  (9.4 s)
+[turn 36] python  passes 1/24  code runs 35  ~$1.09 API-equiv  (8.1 s)
+[turn 37] python  passes 1/24  code runs 36  ~$1.11 API-equiv  (9.2 s)
+[turn 38] python  passes 1/24  code runs 37  ~$1.13 API-equiv  (9.7 s)
+[turn 39] python  passes 1/24  code runs 38  ~$1.17 API-equiv  (17.1 s)
+[turn 40] python  passes 1/24  code runs 39  ~$1.20 API-equiv  (11.3 s)
+[turn 41] python  passes 1/24  code runs 40  ~$1.23 API-equiv  (11.4 s)
+[turn 42] python  passes 1/24  code runs 41  ~$1.27 API-equiv  (18.2 s)
+[turn 43] python  passes 1/24  code runs 42  ~$1.31 API-equiv  (12.7 s)
+[turn 44] python  passes 1/24  code runs 43  ~$1.34 API-equiv  (11.8 s)
+[turn 45] python  passes 1/24  code runs 44  ~$1.37 API-equiv  (12.5 s)
+[turn 46] python  passes 1/24  code runs 45  ~$1.39 API-equiv  (10.0 s)
+    [gpu] teacher-forced pass on 16 texts (original, 126,400 padded tokens, ~2.41 GB)...
+[turn 47] forward passes 2/24  code runs 45  ~$1.51 API-equiv  (56.9 s)
+[turn 48] python  passes 2/24  code runs 46  ~$1.57 API-equiv  (8.5 s)
+[turn 49] python  passes 2/24  code runs 47  ~$1.63 API-equiv  (20.7 s)
+[turn 50] python  passes 2/24  code runs 48  ~$1.68 API-equiv  (20.0 s)
+    [gpu] teacher-forced pass on 8 texts (original, 32,000 padded tokens, ~2.66 GB)...
+[turn 51] forward passes 3/24  code runs 48  ~$1.71 API-equiv  (6.0 s)
+[turn 52] python  passes 3/24  code runs 49  ~$1.75 API-equiv  (14.7 s)
+[turn 53] python  passes 3/24  code runs 50  ~$1.78 API-equiv  (11.2 s)
+[turn 54] python  passes 3/24  code runs 51  ~$1.81 API-equiv  (12.8 s)
+[turn 55] python  passes 3/24  code runs 52  ~$1.85 API-equiv  (13.3 s)
+[turn 56] python  passes 3/24  code runs 53  ~$1.89 API-equiv  (14.1 s)
+[turn 57] python  passes 3/24  code runs 54  ~$1.92 API-equiv  (10.2 s)
+[turn 58] python  passes 3/24  code runs 55  ~$1.99 API-equiv  (29.3 s)
+[turn 59] python  passes 3/24  code runs 56  ~$2.06 API-equiv  (17.9 s)
+    [gpu] teacher-forced pass on 8 texts (original, 32,000 padded tokens, ~2.20 GB)...
+[turn 60] forward passes 4/24  code runs 56  ~$2.09 API-equiv  (9.5 s)
+[turn 61] python  passes 4/24  code runs 57  ~$2.13 API-equiv  (10.5 s)
+[turn 62] python  passes 4/24  code runs 58  ~$2.19 API-equiv  (21.1 s)
+[turn 63] python  passes 4/24  code runs 59  ~$2.23 API-equiv  (12.4 s)
+    [gpu] teacher-forced pass on 16 texts (edited, 126,400 padded tokens, ~0.02 GB)...
+[turn 64] forward passes 5/24  code runs 59  ~$2.25 API-equiv  (5.4 s)
+[turn 65] python  passes 5/24  code runs 60  ~$2.29 API-equiv  (13.1 s)
+[turn 66] python  passes 5/24  code runs 61  ~$2.36 API-equiv  (28.4 s)
+    [gpu] teacher-forced pass on 8 texts (edited, 32,000 padded tokens, ~2.20 GB)...
+[turn 67] forward passes 6/24  code runs 61  ~$2.40 API-equiv  (6.1 s)
+[turn 68] python  passes 6/24  code runs 62  ~$2.44 API-equiv  (10.8 s)
+[turn 69] python  passes 6/24  code runs 63  ~$2.48 API-equiv  (12.2 s)
+[turn 70] python  passes 6/24  code runs 64  ~$2.52 API-equiv  (12.9 s)
+[turn 71] python  passes 6/24  code runs 65  ~$2.56 API-equiv  (11.8 s)
+[turn 72] python  passes 6/24  code runs 66  ~$2.62 API-equiv  (16.9 s)
+[turn 73] python  passes 6/24  code runs 67  ~$2.65 API-equiv  (7.4 s)
+    [gpu] code pass: 40 problems x 1 (edited)...
+[turn 74] forward passes 7/24  code runs 67  ~$2.68 API-equiv  (8.2 s)
+[turn 75] python  passes 7/24  code runs 68  ~$2.73 API-equiv  (16.5 s)
+[turn 76] python  passes 7/24  code runs 69  ~$2.77 API-equiv  (9.5 s)
+[turn 77] python  passes 7/24  code runs 70  ~$2.83 API-equiv  (20.3 s)
+[turn 78] python  passes 7/24  code runs 71  ~$2.89 API-equiv  (16.5 s)
+[turn 79] python  passes 7/24  code runs 72  ~$2.94 API-equiv  (17.2 s)
+[turn 80] python  passes 7/24  code runs 73  ~$3.00 API-equiv  (14.8 s)
+[turn 81] python  passes 7/24  code runs 74  ~$3.04 API-equiv  (7.6 s)
+[turn 82] python  passes 7/24  code runs 75  ~$3.09 API-equiv  (18.8 s)
+[turn 83] python  passes 7/24  code runs 76  ~$3.14 API-equiv  (13.5 s)
+[turn 84] python  passes 7/24  code runs 77  ~$3.18 API-equiv  (10.9 s)
+[turn 85] python  passes 7/24  code runs 78  ~$3.25 API-equiv  (16.5 s)
+[turn 86] python  passes 7/24  code runs 79  ~$3.31 API-equiv  (13.8 s)
+[turn 87] python  passes 7/24  code runs 80  ~$3.37 API-equiv  (19.0 s)
+[turn 88] python  passes 7/24  code runs 81  ~$3.45 API-equiv  (24.1 s)
+[turn 89] python  passes 7/24  code runs 82  ~$3.51 API-equiv  (16.3 s)
+[turn 90] python  passes 7/24  code runs 83  ~$3.56 API-equiv  (14.8 s)
+[turn 91] python  passes 7/24  code runs 84  ~$3.61 API-equiv  (13.8 s)
+[turn 92] python  passes 7/24  code runs 85  ~$3.64 API-equiv  (6.2 s)
+[turn 93] python  passes 7/24  code runs 86  ~$3.77 API-equiv  (55.2 s)
+[turn 94] python  passes 7/24  code runs 87  ~$3.85 API-equiv  (14.1 s)
+[turn 95] python  passes 7/24  code runs 88  ~$3.89 API-equiv  (6.6 s)
+[turn 96] python  passes 7/24  code runs 89  ~$3.92 API-equiv  (6.2 s)
+[turn 97] python  passes 7/24  code runs 90  ~$3.95 API-equiv  (6.6 s)
+    [gpu] code pass: 40 problems x 1 (edited)...
+[turn 98] forward passes 8/24  code runs 90  ~$3.98 API-equiv  (5.6 s)
+[turn 99] python  passes 8/24  code runs 91  ~$4.03 API-equiv  (8.8 s)
+[turn 100] python  passes 8/24  code runs 92  ~$4.10 API-equiv  (22.0 s)
+[turn 101] python  passes 8/24  code runs 93  ~$4.15 API-equiv  (11.0 s)
+[turn 102] python  passes 8/24  code runs 94  ~$4.19 API-equiv  (9.8 s)
+[turn 103] python  passes 8/24  code runs 95  ~$4.25 API-equiv  (12.5 s)
+[turn 104] python  passes 8/24  code runs 96  ~$4.30 API-equiv  (11.8 s)
+    [gpu] teacher-forced pass on 16 texts (edited, 126,400 padded tokens, ~0.02 GB)...
+[turn 105] forward passes 9/24  code runs 96  ~$4.33 API-equiv  (6.7 s)
+[turn 106] python  passes 9/24  code runs 97  ~$4.38 API-equiv  (11.0 s)
+[turn 107] python  passes 9/24  code runs 98  ~$4.43 API-equiv  (11.7 s)
+[turn 108] python  passes 9/24  code runs 99  ~$4.48 API-equiv  (17.1 s)
+    [gpu] code pass: 40 problems x 1 (edited)...
+[turn 109] forward passes 10/24  code runs 99  ~$4.52 API-equiv  (5.9 s)
+[turn 110] python  passes 10/24  code runs 100  ~$4.60 API-equiv  (16.1 s)
+[turn 111] python  passes 10/24  code runs 101  ~$4.69 API-equiv  (30.6 s)
+[turn 112] python  passes 10/24  code runs 102  ~$4.74 API-equiv  (6.1 s)
+[turn 113] python  passes 10/24  code runs 103  ~$4.81 API-equiv  (28.2 s)
+    [gpu] teacher-forced pass on 8 texts (edited, 32,000 padded tokens, ~1.10 GB)...
+[turn 114] forward passes 11/24  code runs 103  ~$4.87 API-equiv  (6.9 s)
+[turn 115] python  passes 11/24  code runs 104  ~$4.92 API-equiv  (10.7 s)
+[turn 116] python  passes 11/24  code runs 105  ~$5.00 API-equiv  (30.3 s)
+    [gpu] code pass: 40 problems x 1 (edited)...
+[turn 117] forward passes 12/24  code runs 105  ~$5.05 API-equiv  (5.2 s)
+[turn 118] python  passes 12/24  code runs 106  ~$5.13 API-equiv  (13.1 s)
+[turn 119] python  passes 12/24  code runs 107  ~$5.21 API-equiv  (29.5 s)
+[turn 120] python  passes 12/24  code runs 108  ~$5.28 API-equiv  (13.0 s)
+[turn 121] python  passes 12/24  code runs 109  ~$5.39 API-equiv  (35.4 s)
+[turn 122] python  passes 12/24  code runs 110  ~$5.46 API-equiv  (13.0 s)
+[turn 123] python  passes 12/24  code runs 111  ~$5.53 API-equiv  (16.2 s)
+[turn 124] python  passes 12/24  code runs 112  ~$5.58 API-equiv  (12.6 s)
+    [gpu] teacher-forced pass on 8 texts (edited, 32,000 padded tokens, ~1.65 GB)...
+[turn 125] forward passes 13/24  code runs 112  ~$5.63 API-equiv  (5.9 s)
+[turn 126] python  passes 13/24  code runs 113  ~$5.68 API-equiv  (10.1 s)
+[turn 127] python  passes 13/24  code runs 114  ~$5.75 API-equiv  (24.9 s)
+    [gpu] code pass: 40 problems x 1 (edited)...
+[turn 128] forward passes 14/24  code runs 114  ~$5.81 API-equiv  (8.2 s)
+[turn 129] python  passes 14/24  code runs 115  ~$5.88 API-equiv  (15.2 s)
+[turn 130] python  passes 14/24  code runs 116  ~$5.97 API-equiv  (27.3 s)
+    [gpu] code pass: 20 problems x 2 (edited)...
+[turn 131] forward passes 15/24  code runs 116  ~$6.03 API-equiv  (8.9 s)
+[turn 132] python  passes 15/24  code runs 117  ~$6.10 API-equiv  (10.2 s)
+[turn 133] python  passes 15/24  code runs 118  ~$6.19 API-equiv  (33.2 s)
+[turn 134] python  passes 15/24  code runs 119  ~$6.26 API-equiv  (10.6 s)
+[turn 135] python  passes 15/24  code runs 120  ~$6.33 API-equiv  (15.4 s)
+[turn 136] python  passes 15/24  code runs 121  ~$6.38 API-equiv  (8.5 s)
+[turn 137] python  passes 15/24  code runs 122  ~$6.49 API-equiv  (35.5 s)
+[turn 138] python  passes 15/24  code runs 123  ~$6.55 API-equiv  (7.8 s)
+    [gpu] teacher-forced pass on 9 texts (edited, 118,395 padded tokens, ~1.70 GB)...
+[turn 139] forward passes 16/24  code runs 123  ~$6.60 API-equiv  (6.1 s)
+[turn 140] python  passes 16/24  code runs 124  ~$6.67 API-equiv  (16.6 s)
+[turn 141] python  passes 16/24  code runs 125  ~$6.73 API-equiv  (11.1 s)
+[turn 142] python  passes 16/24  code runs 126  ~$6.81 API-equiv  (19.7 s)
+[turn 143] python  passes 16/24  code runs 127  ~$6.87 API-equiv  (12.7 s)
+[turn 144] python  passes 16/24  code runs 128  ~$6.96 API-equiv  (23.4 s)
+    [gpu] teacher-forced pass on 4 texts (edited, 52,620 padded tokens, ~2.81 GB)...
+[turn 145] forward passes 17/24  code runs 128  ~$7.01 API-equiv  (5.9 s)
+[turn 146] python  passes 17/24  code runs 129  ~$7.08 API-equiv  (14.1 s)
+[turn 147] python  passes 17/24  code runs 130  ~$7.18 API-equiv  (29.9 s)
+[turn 148] python  passes 17/24  code runs 131  ~$7.25 API-equiv  (6.6 s)
+    [gpu] code pass: 40 problems x 1 (edited)...
+[turn 149] forward passes 18/24  code runs 131  ~$7.29 API-equiv  (6.4 s)
+[turn 150] python  passes 18/24  code runs 132  ~$7.36 API-equiv  (6.7 s)
+[turn 151] python  passes 18/24  code runs 133  ~$7.43 API-equiv  (12.9 s)
+    [gpu] code pass: 40 problems x 1 (edited)...
+[turn 152] forward passes 19/24  code runs 133  ~$7.48 API-equiv  (6.6 s)
+[turn 153] python  passes 19/24  code runs 134  ~$7.55 API-equiv  (9.5 s)
+[turn 154] python  passes 19/24  code runs 135  ~$7.62 API-equiv  (15.7 s)
+    [gpu] teacher-forced pass on 16 texts (original, 126,400 padded tokens, ~2.18 GB)...
+[turn 155] forward passes 20/24  code runs 135  ~$7.68 API-equiv  (6.8 s)
+[turn 156] python  passes 20/24  code runs 136  ~$7.74 API-equiv  (10.6 s)
+    [gpu] teacher-forced pass on 16 texts (edited, 126,400 padded tokens, ~0.02 GB)...
+[turn 157] forward passes 21/24  code runs 136  ~$7.79 API-equiv  (7.5 s)
+[turn 158] python  passes 21/24  code runs 137  ~$7.86 API-equiv  (11.5 s)
+    [gpu] teacher-forced pass on 16 texts (edited, 126,400 padded tokens, ~1.81 GB)...
+[turn 159] forward passes 22/24  code runs 137  ~$7.93 API-equiv  (12.9 s)
+[turn 160] python  passes 22/24  code runs 138  ~$7.99 API-equiv  (9.3 s)
+[turn 161] python  passes 22/24  code runs 139  ~$8.06 API-equiv  (15.5 s)
+    [gpu] teacher-forced pass on 16 texts (original, 126,400 padded tokens, ~0.02 GB)...
+[turn 162] forward passes 23/24  code runs 139  ~$8.12 API-equiv  (5.7 s)
+[turn 163] python  passes 23/24  code runs 140  ~$8.17 API-equiv  (4.9 s)
+    [gpu] teacher-forced pass on 16 texts (edited, 126,400 padded tokens, ~0.02 GB)...
+[turn 164] forward passes 24/24  code runs 140  ~$8.22 API-equiv  (6.2 s)
+
+Done. Edit: <repo>/runs/agent/code-opus-4b/edit
+Evaluate: python -m wsp.exp10.eval --model base4b --edit-dir runs/agent/code-opus-4b/edit --set test --difficulty easy,medium --thinking --think-budget 8192 --answer-tokens 4096 --kv-fp8 --max-num-seqs 12 --name code-opus-4b
+{
+ "name": "code-opus-4b-think8k",
+ "model": "base4b",
+ "edit_dir": "runs/agent/code-opus-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.6105,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.9302,
+  "medium": 0.3462
+ },
+ "no_code": 26,
+ "unfinished": 38,
+ "mean_tokens": 8855,
+ "outcomes": {
+  "passed": 58,
+  "no code": 26,
+  "wrong": 9,
+  "error": 1,
+  "timeout": 1
+ },
+ "forced_stop": 61,
+ "timing_s": {
+  "build": 48.6,
+  "load": 251.2,
+  "generate": 3574.9,
+  "grade": 10.2,
+  "total": 3926.5
+ },
+ "tok_per_s": 235.3
+}
+{
+ "name": "code-opus-4b-nothink12k",
+ "model": "base4b",
+ "edit_dir": "runs/agent/code-opus-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5579,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.907,
+  "medium": 0.2692
+ },
+ "no_code": 13,
+ "unfinished": 15,
+ "mean_tokens": 3446,
+ "outcomes": {
+  "passed": 53,
+  "wrong": 24,
+  "no code": 13,
+  "error": 4,
+  "timeout": 1
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 245.3,
+  "generate": 1251.8,
+  "grade": 9.5,
+  "total": 1544.8
+ },
+ "tok_per_s": 261.5
+}

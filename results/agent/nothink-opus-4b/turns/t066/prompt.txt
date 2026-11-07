@@ -1,0 +1,21 @@
+Output of code run 63 of 600:
+```
+abc374_d medium wrong True siblings pass 0 / 2 sib outcomes ['error', 'error']
+abc376_d medium wrong False siblings pass 1 / 2 sib outcomes ['passed', 'wrong']
+abc379_d medium no code False siblings pass 0 / 2 sib outcomes ['error', 'no code']
+abc379_d medium no code False siblings pass 0 / 2 sib outcomes ['no code', 'error']
+abc386_c medium no code False siblings pass 0 / 2 sib outcomes ['error', 'no code']
+abc386_c medium no code False siblings pass 0 / 2 sib outcomes ['no code', 'error']
+3566 medium no code False siblings pass 0 / 2 sib outcomes ['no code', 'no code']
+3566 medium no code False siblings pass 0 / 2 sib outcomes ['no code', 'no code']
+3487 medium no code False siblings pass 0 / 2 sib outcomes ['no code', 'no code']
+3487 medium no code False siblings pass 0 / 2 sib outcomes ['no code', 'no code']
+3487 medium no code False siblings pass 0 / 2 sib outcomes ['no code', 'no code']
+3617 easy no code False siblings pass 1 / 2 sib outcomes ['wrong', 'passed']
+3647 medium wrong False siblings pass 0 / 2 sib outcomes ['no code', 'no code']
+3621 easy no code False siblings pass 2 / 2 sib outcomes ['passed', 'passed']
+3655 medium passed True siblings pass 0 / 2 sib outcomes ['error', 'wrong']
+3620 medium no code False siblings pass 1 / 2 sib outcomes ['passed', 'wrong']
+3699 medium wrong False siblings pass 0 / 2 sib outcomes ['error', 'wrong']
+
+```

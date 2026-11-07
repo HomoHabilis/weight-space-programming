@@ -1,0 +1,25 @@
+Output of code run 92 of 600:
+```
+abc374_d medium blocks in thinking: 0  Wait: 14  Actually: 12
+abc375_c medium blocks in thinking: 0  Wait: 8  Actually: 5
+abc376_c medium blocks in thinking: 0  Wait: 8  Actually: 12
+abc380_d medium blocks in thinking: 0  Wait: 7  Actually: 8
+arc189_a medium blocks in thinking: 0  Wait: 4  Actually: 4
+3607 medium blocks in thinking: 0  Wait: 5  Actually: 15
+3654 medium blocks in thinking: 0  Wait: 1  Actually: 12
+3487 medium blocks in thinking: 0  Wait: 5  Actually: 18
+3622 medium blocks in thinking: 0  Wait: 4  Actually: 16
+3647 medium blocks in thinking: 0  Wait: 15  Actually: 24
+3620 medium blocks in thinking: 0  Wait: 5  Actually: 20
+3715 medium blocks in thinking: 0  Wait: 4  Actually: 14
+abc377_c medium blocks in thinking: 0  Wait: 1  Actually: 1
+abc379_c medium blocks in thinking: 0  Wait: 6  Actually: 9
+3566 medium blocks in thinking: 0  Wait: 12  Actually: 3
+3616 easy blocks in thinking: 0  Wait: 7  Actually: 9
+3686 medium blocks in thinking: 0  Wait: 13  Actually: 8
+3683 medium blocks in thinking: 0  Wait: 4  Actually: 4
+3699 medium blocks in thinking: 0  Wait: 2  Actually: 8
+3657 medium blocks in thinking: 0  Wait: 7  Actually: 18
+3716 medium blocks in thinking: 0  Wait: 0  Actually: 17
+
+```

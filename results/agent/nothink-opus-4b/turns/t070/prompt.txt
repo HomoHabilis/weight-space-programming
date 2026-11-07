@@ -1,0 +1,9 @@
+Output of code run 67 of 600:
+```
+0.input_layernorm.weight 0.139 0.098 -0.016 1.656
+15.post_attention_layernorm.weight 0.014 0.131 -0.621 0.441
+31.input_layernorm.weight 0.215 0.137 0.027 0.949
+3.self_attn.q_norm.weight 0.357 0.121 -0.225 0.949
+['model.language_model.layers.0.input_layernorm.weight', 'model.language_model.layers.0.linear_attn.A_log', 'model.language_model.layers.0.linear_attn.conv1d.weight', 'model.language_model.layers.0.linear_attn.dt_bias', 'model.language_model.layers.0.linear_attn.in_proj_a.weight', 'model.language_model.layers.0.linear_attn.in_proj_b.weight', 'model.language_model.layers.0.linear_attn.in_proj_qkv.weight', 'model.language_model.layers.0.linear_attn.in_proj_z.weight', 'model.language_model.layers.0.linear_attn.norm.weight', 'model.language_model.layers.0.linear_attn.out_proj.weight', 'model.language_model.layers.0.mlp.down_proj.weight', 'model.language_model.layers.0.mlp.gate_proj.weight', 'model.language_model.layers.0.mlp.up_proj.weight', 'model.language_model.layers.0.post_attention_layernorm.weight']
+
+```

@@ -1,0 +1,12 @@
+Output of code run 82 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 3, in <module>
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/core/generic.py", line 6434, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'numpy'
+
+```

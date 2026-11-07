@@ -1,0 +1,8 @@
+Output of code run 185 of 600:
+```
+code 1849 share0 median 0.0166 mean 0.0492 | entropy 0.104 -> 0.102
+comment 1769 share0 median 0.0214 mean 0.0572 | entropy 0.275 -> 0.274
+high-share positions 727 entropy 0.058395807 0.05270914 frac comment 0.53232462173315
+corr(share0, entropy) -0.2091484801488201
+
+```

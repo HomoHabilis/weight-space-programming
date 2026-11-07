@@ -1,0 +1,9 @@
+Output of code run 53 of 600:
+```
+overall: mean -0.64 sd 2.13 min -31.88 max 0.78
+quantiles [-17.25 -11.19  -4.75  -0.23   0.04   0.14   0.28   0.39]
+[('?', 12), ('??', 7), ('Wait', 6), ('?Wait', 5), ('?No', 2), ('?The', 1), ('?(', 1), (').', 1), ('This', 1), ('???', 1), ('?We', 1), ('$', 1), ('Let', 1)]
+corr(act, pR) at boundaries: -0.478
+corr(act, log pR): -0.364
+
+```

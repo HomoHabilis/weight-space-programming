@@ -1,0 +1,7 @@
+Output of code run 182 of 600:
+```
+dim0 var among top20 0.025170928 energy share 0.052378394
+mean entropy (T=.7 over top20) 0.1853096 -> 0.18381567 | argmax agree 0.9964740981828044
+per-pos share0 pct [0.00017736 0.01776359 0.1611864 ]
+
+```

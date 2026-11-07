@@ -1,0 +1,10 @@
+Output of code run 73 of 600 (error):
+```
+dict_keys(['id', 'sample', 'difficulty', 'platform', 'n_tokens', 'finished', 'think_tokens', 'answer_tokens', 'forced_stop', 'code', 'passed'])
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 6, in <module>
+KeyError: 'outcome'
+
+```

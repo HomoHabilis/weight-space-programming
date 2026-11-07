@@ -1,0 +1,14 @@
+2026-11-07 11:18:15 chain ended: 2026-11-07 11:18:05 chain done
+2026-11-07 11:21:10 GPU free, starting QLoRA
+2026-11-07 11:21:11 installing fast kernels
+Installed 2 packages in 138ms
+ + fla-core==0.6.0
+ + flash-linear-attention==0.6.0
+Prepared 1 package in 18m 09s
+Installed 1 package in 4ms
+ + causal-conv1d==1.7.0
+2026-11-07 11:38:42 probe: max length 14000
+2026-11-07 11:42:31 probe: max length 12000
+2026-11-07 11:46:32 probe: max length 10000
+2026-11-07 11:49:55 probe: max length 8000
+2026-11-07 11:53:03 no max length fits in GPU memory; see runs/exp10/qlora-4b/probe.json

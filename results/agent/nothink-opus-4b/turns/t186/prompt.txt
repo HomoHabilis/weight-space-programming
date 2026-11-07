@@ -1,0 +1,54 @@
+Output of code run 171 of 600:
+```
+abc374_d 0 invalid syntax | line 73
+     '        x1, y1 = p1'
+     '        x2, y2 = p2'
+     '        return math.sqrt((x1-x2)**2 + **(y1-y2)2)'
+     ''
+abc374_d 1 invalid syntax | line 31
+     '    '
+     '    def dist(p1, p2):'
+     '        return math.sqrt((p1[0]-p2[0])**2 + **(p1[1]-p2[1])2)'
+     ''
+abc381_a 0 expected 'except' or 'finally' block | line 70
+     '            print("No")'
+     ''
+     'if __name__ == "__main__":'
+     '    solve()'
+abc381_c 0 unterminated string literal (detected at | line 124
+     '    # If X=1, then "1st through 1st" means just the 1st char. '
+     '    # Maybe the problem text has a typo in the examples or I am missing a subtle constraint. '
+     "    // Let's re-read the definition very literally. "
+     '    // "The 1-st through (\\frac{|T|+1}{2} - 1)-th characters are all 1." '
+abc386_a 0 expected 'except' or 'finally' block | line 72
+     '            print("No")'
+     ''
+     'if __name__ == "__main__":'
+     '    solve()'
+abc386_c 1 expected an indented block after 'if' st | line 124
+     '                        # s[0:] should equal t[1:]. Yes, covered above.'
+     '                '
+     '                if found:'
+     '                    print("Yes")'
+3502 2 unterminated string literal (detected at | line 42
+     '        Because if we shrink from left until the condition breaks, then everything from that point to right is'
+     '        '
+     "        Actually, let's do it differently:"
+     '        For each right endpoint, find the smallest left such that in s[left...right], '
+3605 1 expected an indented block after functio | line 273
+     '            #         Given the constraints, this is perfect. '
+     ''
+     '        result = []'
+     '        for n in nums:'
+3681 0 expected an indented block after 'if' st | line 47
+     '                    if h > p1[1] and h > p2[1]:'
+     '                        # Check if top corners exist'
+     '                    elif h == p1[1] or h == p2[1]:'
+     '                        continue'
+3613 1 invalid syntax | line 158
+     '                        adj1[i][j] = max(adj1[i][j], adj1[i][k] * adj1[k][j])'
+     ''
+     '        Similarly for graph2.'
+     ''
+
+```

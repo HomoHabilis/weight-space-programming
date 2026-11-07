@@ -1,0 +1,40 @@
+Output of code run 20 of 600:
+```
+any_ok   False  True 
+outcome              
+error       10      0
+no code    112      2
+passed      52     86
+timeout      2      0
+wrong       15      0
+first    error  none  passed  wrong
+outcome                            
+error        1     9       0      0
+no code      3   110       1      0
+passed       9    42      75     12
+timeout      0     2       0      0
+wrong        1    11       0      3
+last     error  none  passed  wrong
+outcome                            
+error        1     9       0      0
+no code      2   110       2      0
+passed      12    42      79      5
+timeout      0     2       0      0
+wrong        1    11       0      3
+outcome
+error           NaN
+no code    0.675334
+passed     0.255926
+timeout         NaN
+wrong           NaN
+Name: first_ok_frac, dtype: float64 count    279.000000
+mean       3.118280
+std        6.389373
+min        0.000000
+25%        0.000000
+50%        0.000000
+75%        3.000000
+max       34.000000
+Name: nblk, dtype: float64
+
+```

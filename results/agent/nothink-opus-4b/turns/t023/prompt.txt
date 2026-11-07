@@ -1,0 +1,37 @@
+Output of code run 22 of 600:
+```
+outcome
+error      11
+no code     2
+passed     81
+timeout     1
+wrong      28
+dtype: int64
+          pas                   outs               tok
+id                                                    
+3605        1     wrong,error,passed    3450,7139,3721
+3612        2    error,passed,passed       236,229,200
+3616        1     wrong,passed,wrong    6891,2856,1229
+3617        1   no code,wrong,passed    12288,639,6893
+3621        2  passed,passed,no code  10275,5591,12288
+3644        1     wrong,passed,wrong       232,205,296
+3651        1     wrong,passed,wrong       154,166,172
+3684        0      wrong,error,wrong      826,497,5447
+3685        2    wrong,passed,passed       129,392,128
+3702        0      error,wrong,wrong       468,347,340
+abc374_b    1     passed,wrong,wrong       285,357,276
+abc375_b    0      wrong,wrong,wrong       325,340,337
+abc376_a    1     passed,wrong,wrong       596,570,416
+abc379_b    2    passed,error,passed      273,937,1204
+abc380_b    0    wrong,wrong,timeout      294,389,2785
+abc381_a    2    error,passed,passed       665,486,750
+abc381_b    2    passed,passed,wrong       837,937,478
+abc382_b    2    error,passed,passed     1413,1152,616
+abc383_a    0      error,error,wrong      526,948,1433
+abc384_b    2    wrong,passed,passed       527,268,274
+abc385_a    2    passed,passed,wrong       598,528,870
+abc385_b    2    error,passed,passed      1459,567,889
+abc386_a    1     error,wrong,passed      1069,911,827
+abc386_b    2    wrong,passed,passed    8268,2548,2558
+
+```

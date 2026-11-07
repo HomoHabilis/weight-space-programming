@@ -1,0 +1,24 @@
+Output of code run 94 of 600:
+```
+- Actually, if we have multiple instances of the same value $x$, we can shift them to different values within their reachable range. But notice that if we have $x$ and $x
+- Actually, it's simpler. If we have a set of values, we can just shift the smallest one as much as possible to the left, the next one to the right, etc.
+- Actually, if we have duplicates, say $x, x, x$, we can change them to $x-k, x, x+k$. This gives 3 distinct values. If we have just one $x$, we can only change it to one
+- Actually, the problem simplifies to: We have a set of numbers. We want to maximize distinct values.
+- Actually, if we sort the unique elements of `nums` as $u_1 < u_2 < \dots < u_m$.
+- Actually, the problem is simpler:
+- Actually, the logic is:
+- Actually, let's look at the constraints.
+- Actually, we don't need to move $u_m$. We just need to pick a value for $u_{m-1}$ that is not picked by $u_m$.
+- Actually, the logic is simpler:
+- Actually, if we have $u_1, u_2, \dots, u_m$.
+- Actually, the problem is: we have a set of numbers. We want to maximize distinct values.
+- Actually, if we have $u_1, u_2, \dots, u_m$ (unique).
+- Actually, the logic is:
+- Actually, if $u_{i+1} - u_i \le k$, we can just say that $u_{i+1}$ can be transformed to $u_{i+1}+k$.
+- Actually, if $u_{i+1} - u_i \le k$, then $u_{i+1} \le u_i + k$.
+- Actually, duplicates don't add to the count of unique values unless we can make them distinct from each other and from other unique values.
+- Actually, we just need to count how many distinct values we can form.
+- Actually, if we have a cluster of elements with values $u_i, u_{i+1}, \dots, u_j$ such that $u_{p+1} - u_p \le 2k$ for all $p$ in range.
+- Actually, if we have a cluster of values $u_i, \dots, u_j$ with small gaps.
+
+```

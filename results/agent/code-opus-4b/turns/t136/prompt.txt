@@ -1,0 +1,6 @@
+Output of code run 120 of 600:
+```
+1321 in code: mean -0.273, |act|>2 frac 0.0447 ; prose: mean -0.788, |act|>2 frac 0.1236 ; n code tokens 1566
+228 in code: mean 0.113, |act|>2 frac 0.0370 ; prose: mean -0.209, |act|>2 frac 0.0890 ; n code tokens 1566
+
+```

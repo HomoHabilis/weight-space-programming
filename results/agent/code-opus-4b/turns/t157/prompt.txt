@@ -1,0 +1,8 @@
+Output of code run 136 of 600:
+```
+n Wait-predicting positions 734
+act before Wait: mean -9.09; elsewhere (thinking) mean -0.58 sd 1.87
+AUC(-act -> next is Wait): 0.970
+corr(act, log pWait) in thinking: -0.709
+
+```

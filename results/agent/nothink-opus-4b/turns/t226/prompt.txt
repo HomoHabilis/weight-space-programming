@@ -1,0 +1,5 @@
+Output of code run 211 of 600:
+```
+(first block passes all, last block passes all): Counter({(False, False): 23, (True, True): 11, (False, True): 5, (True, False): 1})
+
+```

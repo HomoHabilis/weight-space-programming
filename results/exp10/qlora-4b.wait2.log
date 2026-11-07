@@ -1,0 +1,3 @@
+2026-11-07 11:18:50 chain ended: 2026-11-07 11:18:05 chain done
+2026-11-07 11:21:44 GPU free, starting QLoRA
+runs/exp10/qlora-4b/.lock exists: another run of this script started already

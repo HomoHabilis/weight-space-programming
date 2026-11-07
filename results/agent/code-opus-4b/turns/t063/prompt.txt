@@ -1,0 +1,6 @@
+Output of code run 58 of 600:
+```
+R mean 5.51  E mean 2.28  rms24 0.5 rms28 0.8
+act at positions predicting Wait/ Wait: mean -10.87 median -10.84; elsewhere mean -0.61
+
+```

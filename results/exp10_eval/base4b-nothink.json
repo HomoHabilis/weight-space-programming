@@ -1,0 +1,37 @@
+{
+ "name": "base4b-nothink",
+ "model": "base4b",
+ "edit_dir": null,
+ "set": "test",
+ "thinking": false,
+ "max_tokens": 6144,
+ "n": 1,
+ "limit": null,
+ "pass@1": 0.3314,
+ "samples": 175,
+ "problems": 175,
+ "by_difficulty": {
+  "easy": 0.9302,
+  "hard": 0.05,
+  "medium": 0.2692
+ },
+ "no_code": 85,
+ "unfinished": 95,
+ "mean_tokens": 3943,
+ "outcomes": {
+  "passed": 58,
+  "no code": 85,
+  "error": 5,
+  "wrong": 24,
+  "harness": 1,
+  "timeout": 2
+ },
+ "timing_s": {
+  "build": 0.0,
+  "load": 271.1,
+  "generate": 1975.7,
+  "grade": 11.5,
+  "total": 2306.6
+ },
+ "tok_per_s": 349.2
+}

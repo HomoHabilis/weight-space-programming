@@ -1,0 +1,26 @@
+Output of code run 24 of 600:
+```
+'Wait' [13784] ['Wait']
+' Wait' [13428] ['?Wait']
+'# Wait' [2, 13428] ['#', '?Wait']
+'\n\nWait' [271, 13784] ['??', 'Wait']
+'\nWait' [198, 13784] ['?', 'Wait']
+'    # Wait' [262, 653, 13428] ['???', '?#', '?Wait']
+'Actually' [50821] ['Actually']
+' Actually' [32645] ['?Actually']
+'But' [3850] ['But']
+' But' [1921] ['?But']
+'Hmm' [77264] ['Hmm']
+'</think>' [248069] ['</think>']
+'\n\n</think>' [271, 248069] ['??', '</think>']
+'Let' [9764] ['Let']
+"Let's" [9764, 579] ['Let', "'s"]
+'So' [4272] ['So']
+' So' [1987] ['?So']
+'Okay' [31248] ['Okay']
+'I' [40] ['I']
+'The' [760] ['The']
+'```' [71093] ['```']
+'```python\n' [71093, 12305, 198] ['```', 'python', '?']
+
+```

@@ -1,0 +1,11 @@
+Output of code run 186 of 600:
+```
+20
+[6015, 5882, 5882, 6201, 5689, 5600, 5808, 5777, 5743, 5676, 6013, 5880]
+['hidden_30.npy', 'topk_ids.npy', 'hidden_24.npy', 'token_ids.npy', 'token_logprobs.npy', 'meta.json', 'topk_logprobs.npy', 'hidden_12.npy', 'hidden_18.npy']
+0 ', the condition fails.\n            So if $A_i > B_{i-1}$, we must have $k \\geq i$.\n            But $k$ is the index of t' | has </think> at 2674 17782
+1 "remove $x_k$ first, then $x_{k-1}$, ..., then $x_1$.\n          Wait, let's check the example $S_0 = \\{2, 3, 4\\}$.\n      " | has </think> at 2379 16628
+10 ', the condition fails.\n            So if $A_i > B_{i-1}$, we must have $k \\geq i$.\n            But $k$ is the index of t' | has </think> at -1 17771
+11 "remove $x_k$ first, then $x_{k-1}$, ..., then $x_1$.\n          Wait, let's check the example $S_0 = \\{2, 3, 4\\}$.\n      " | has </think> at -1 16617
+
+```

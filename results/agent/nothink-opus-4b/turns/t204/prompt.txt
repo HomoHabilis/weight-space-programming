@@ -1,0 +1,15 @@
+Output of code run 189 of 600:
+```
+(2560, 9216)
+rho pct [0.8 0.9 1.1] rms h31 0.9 rms mlp31 0.7
+attn31 (resid) rms est 0.34
+b -1.0 entropy 0.2112 agree top1 0.835
+b 0.0 entropy 0.1853 agree top1 1.0
+b 0.25 entropy 0.2202 agree top1 0.944
+b 0.5 entropy 0.2552 agree top1 0.878
+b 1.0 entropy 0.3248 agree top1 0.747
+mlp-only b 0.25 entropy 0.2232 agree 0.975
+mlp-only b 0.5 entropy 0.2665 agree 0.939
+mlp-only b 1.0 entropy 0.3634 agree 0.871
+
+```

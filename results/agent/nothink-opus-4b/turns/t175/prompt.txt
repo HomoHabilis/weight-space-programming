@@ -1,0 +1,9 @@
+Output of code run 160 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 2, in <module>
+AttributeError: 'int' object has no attribute 'keys'
+
+```

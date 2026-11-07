@@ -1,0 +1,7 @@
+Output of code run 48 of 600:
+```
+[4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000]
+[np.True_, np.True_, np.True_, np.True_, np.True_, np.True_, np.True_, np.True_]
+1216 152
+
+```

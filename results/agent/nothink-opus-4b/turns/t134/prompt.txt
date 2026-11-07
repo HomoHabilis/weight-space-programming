@@ -1,0 +1,12 @@
+Output of code run 123 of 600:
+```
+              n         p     trunc      tok
+code_first                                  
+False        38  0.210526  0.578947  12288.0
+True        118  0.322034  0.152542   2960.0
+15              n     p  trunc
+code_first                 
+False       20  0.20   0.60
+True        25  0.32   0.24
+
+```

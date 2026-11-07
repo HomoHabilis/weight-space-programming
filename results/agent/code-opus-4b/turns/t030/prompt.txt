@@ -1,0 +1,6 @@
+Output of code run 29 of 600:
+```
+nocode 21836 [('So', 3144), ('But', 2650), ('Wait', 2439), ('If', 1669), ('We', 1451), ("Let's", 777), ('This', 768), ('The', 691), ('Then', 659), ('Since', 451), ('Actually', 435), ('For', 434), ('And', 297), ('No', 270), ('However', 198), ('#', 172), ('It', 158), ('Let', 145), ('Yes', 131), ("It's", 102), ('Check', 101), ('When', 100), ('1', 84), ('if', 79), ('', 72)]
+other 4521 [('If', 337), ('We', 323), ('The', 293), ('So', 158), ('Read', 146), ('Check', 134), ('Wait', 128), ('Since', 116), ('This', 107), ('Iterate', 99), ("Let's", 96), ('But', 82), ('Calculate', 68), ('For', 59), ('Initialize', 53), ('', 47), ('Actually', 46), ('Yes', 46), ('However', 44), ('Parse', 42), ('Update', 38), ('Increase', 35), ('char', 35), ('Using', 33), ('Then', 33)]
+
+```

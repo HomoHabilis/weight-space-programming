@@ -1,0 +1,344 @@
+{
+ "ok": true,
+ "type": "code",
+ "model": "edited",
+ "pass@1": 0.075,
+ "by_difficulty": {
+  "easy": 0.0714,
+  "medium": 0.0769
+ },
+ "outcomes": {
+  "no code": 29,
+  "error": 3,
+  "passed": 3,
+  "wrong": 5
+ },
+ "forced_stop": 0,
+ "minutes": 33.3,
+ "results": [
+  {
+   "id": "abc375_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc375_d",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc376_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc376_d",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc382_b",
+   "sample": 0,
+   "passed": false,
+   "outcome": "error",
+   "tokens": 550,
+   "finished": true
+  },
+  {
+   "id": "abc382_b",
+   "sample": 1,
+   "passed": true,
+   "outcome": "passed",
+   "tokens": 922,
+   "finished": true
+  },
+  {
+   "id": "abc382_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "tokens": 1212,
+   "finished": true
+  },
+  {
+   "id": "abc382_c",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc383_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc383_c",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc383_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "error",
+   "tokens": 1101,
+   "finished": true
+  },
+  {
+   "id": "abc383_d",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc384_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc384_d",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc385_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc385_c",
+   "sample": 1,
+   "passed": true,
+   "outcome": "passed",
+   "tokens": 765,
+   "finished": true
+  },
+  {
+   "id": "abc385_b",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "tokens": 1045,
+   "finished": true
+  },
+  {
+   "id": "abc385_b",
+   "sample": 1,
+   "passed": false,
+   "outcome": "error",
+   "tokens": 683,
+   "finished": true
+  },
+  {
+   "id": "abc386_b",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "abc386_b",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3502",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3502",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3616",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3616",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3605",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3605",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3617",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3617",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3587",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3587",
+   "sample": 1,
+   "passed": true,
+   "outcome": "passed",
+   "tokens": 497,
+   "finished": true
+  },
+  {
+   "id": "3591",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "tokens": 297,
+   "finished": true
+  },
+  {
+   "id": "3591",
+   "sample": 1,
+   "passed": false,
+   "outcome": "wrong",
+   "tokens": 298,
+   "finished": true
+  },
+  {
+   "id": "3621",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3621",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3649",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3649",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3655",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3655",
+   "sample": 1,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3620",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "tokens": 12288,
+   "finished": false
+  },
+  {
+   "id": "3620",
+   "sample": 1,
+   "passed": false,
+   "outcome": "wrong",
+   "tokens": 489,
+   "finished": true
+  }
+ ],
+ "files": {
+  "texts": "/work/code_8.gen.jsonl",
+  "graded": "/work/code_8.rows.jsonl"
+ }
+}

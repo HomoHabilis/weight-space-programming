@@ -1,0 +1,12 @@
+Output of code run 21 of 600:
+```
+cjk samples 0
+slash-comment samples 1 {'error': 1}
+                     n         p
+finished compiles               
+False    True       16  0.062500
+         NaN        26  0.000000
+True     False      12  0.083333
+         True      225  0.555556
+
+```

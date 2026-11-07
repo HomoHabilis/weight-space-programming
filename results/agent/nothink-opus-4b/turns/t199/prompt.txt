@@ -1,0 +1,10 @@
+Output of code run 184 of 600:
+```
+code pass-fail mean 0.013 frac>0 0.56
+comment pass-fail mean 0.075 frac>0 0.88
+ncode pass-fail mean -6.562 frac>0 0.44
+ncom pass-fail mean -57.719 frac>0 0.31
+low_code pass-fail mean -0.001 frac>0 0.38
+low_com pass-fail mean -0.012 frac>0 0.25
+
+```

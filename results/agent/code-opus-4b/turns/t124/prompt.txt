@@ -1,0 +1,11 @@
+Output of code run 111 of 600:
+```
+                passed             base      
+                   sum count        sum count
+plat     diff                                
+atcoder  easy       14    16  14.666667    16
+         medium     12    19   7.333333    19
+leetcode easy       12    17  11.000000    17
+         medium     11    28   6.000000    28
+
+```

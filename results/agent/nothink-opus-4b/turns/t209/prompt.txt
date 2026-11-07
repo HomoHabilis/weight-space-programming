@@ -1,0 +1,9 @@
+Output of code run 194 of 600:
+```
+M_var b 0.25 entropy 0.2219 agree 0.973
+M_var b 0.5 entropy 0.2598 agree 0.931
+M_var b 1.0 entropy 0.3364 agree 0.851
+Hvar b 0.1 entropy 0.1864 agree 0.983
+Hvar b 0.25 entropy 0.1877 agree 0.963
+
+```

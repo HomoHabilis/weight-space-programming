@@ -1,0 +1,10 @@
+Output of code run 82 of 600:
+```
+              nblk  codefrac  dollar
+src  diff                           
+base easy    5.394     0.101  17.288
+     medium  0.713     0.031  31.528
+edit easy    8.000     0.220  16.088
+     medium  1.276     0.096  26.570
+
+```

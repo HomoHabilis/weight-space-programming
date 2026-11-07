@@ -1,0 +1,8 @@
+Output of code run 152 of 600:
+```
+abc381_a try at [4] except at [] nlines 72
+        # Read N from standard input |     try: |         line1 = sys.stdin.readline()
+abc386_a try at [4] except at [] nlines 74
+        # Read input from stdin |     try: |         line = sys.stdin.read().strip()
+
+```

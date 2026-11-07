@@ -1,0 +1,9 @@
+Output of code run 226 of 600:
+```
+mean-dir     fit min/med/max 337.0/471.7/624.6 | TF3 min/med/max 293.0/492.5/630.6 | TF3 others |act| max 2.97 p99.9 2.214
+gate-dir     fit min/med/max 103.1/688.0/1389.0 | TF3 min/med/max 71.0/529.2/1365.4 | TF3 others |act| max 0.73 p99.9 0.235
+stable_l0.5  fit min/med/max 529.1/1369.1/1963.9 | TF3 min/med/max 378.2/1215.1/1961.5 | TF3 others |act| max 13.53 p99.9 4.010
+stable_l2.0  fit min/med/max 535.4/1390.8/2011.8 | TF3 min/med/max 384.0/1235.9/2003.8 | TF3 others |act| max 13.56 p99.9 4.051
+stable_l8.0  fit min/med/max 538.3/1402.0/2050.1 | TF3 min/med/max 386.1/1250.6/2036.0 | TF3 others |act| max 13.57 p99.9 4.065
+
+```

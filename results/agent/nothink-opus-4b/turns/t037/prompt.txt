@@ -1,0 +1,13 @@
+Output of code run 36 of 600:
+```
+difficulty  pub    
+easy        error       6
+            passed      8
+            timeout     1
+            wrong      22
+medium      error      10
+            passed     21
+            wrong      32
+dtype: int64
+
+```

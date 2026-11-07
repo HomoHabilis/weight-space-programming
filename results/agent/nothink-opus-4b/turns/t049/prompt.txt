@@ -1,0 +1,30 @@
+Output of code run 47 of 600:
+```
+low-prob tokens novel frac 0.8625954198473282 base novel frac 0.2082030127305618 524
+(-6.5, True, ' D = int(line1[2])\\n        \\n        grid', '_str', '?=')
+(-6.9, True, ' we get exactly H rows of length W\\n        # Since', ' I', '?we')
+(-5.0, True, 'actly H rows of length W\\n        # Since I already', ' consumed', '?read')
+(-6.9, True, "\\n        # But let's just re-parse the whole stdin", ' structure', '?to')
+(-4.5, True, '            # but typically split() handles tokens', ' by', '.')
+(-4.2, False, '() handles tokens by whitespace. \\n            # If', ' a', '?the')
+(-7.0, True, ' spaces within a row string.\\n            # So each', ' token', '?row')
+(-4.7, True, 'topIteration:\\n            break\\n            \\n    #', ' Now', '?Collect')
+(-4.1, True, 'r2, c2).\\n    # Constraints: H', ' <=', ',')
+(-4.2, False, 'istinct floor cells\\n    # Optimization: if n_floor', ' <', '?is')
+(-4.6, True, ' 3000, we can iterate over each possible', ' building', '?height')
+(-4.9, True, 's a potential starting point \\n    # and then check', ' which', '?for')
+(-5.3, True, ' point \\n    # and then check which other buildings', ' could', '?with')
+(-4.0, True, 'rms an arithmetic progression.\\n    # But note: the', ' condition', '?problem')
+(-4.0, False, ', we can greedily extend as far as possible.\\n', '    \n', '???')
+(-4.4, True, ' greedily extend as far as possible.\\n    \\n    #', ' Alternative', '?However')
+(-4.8, True, '.\\n    \\n    # Alternative efficient approach:\\n    #', ' Let', '?Since')
+(-4.2, True, "\\n    # Alternative efficient approach:\\n    # Let's", ' try', '?group')
+(-4.1, True, 'fixed d, we want to pick one height value and then', ' see', '?pick')
+(-4.3, True, ' i (from 0 to N-1-d) and', ' count', '?then')
+(-4.5, True, ' indices i, i+d, i+2d, ...', ' within', '??')
+(-5.9, True, ' maximum over all i and all d.\\n    \\n    #', ' Complexity', '?However')
+(-5.3, True, '^2) if we optimize inner loop.\\n    #', ' With', '?Since')
+(-4.9, True, 'ble in Python if implemented carefully.\\n    \\n    #', ' Optim', '?Let')
+(-4.5, True, 'ic programming or simple iteration.\\n    # However,', ' finding', '?note')
+
+```

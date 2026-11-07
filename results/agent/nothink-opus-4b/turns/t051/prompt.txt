@@ -1,0 +1,12 @@
+Output of code run 49 of 600:
+```
+cat                  noncompile  pub_error  ...  pub_wrong  truncated
+plat     difficulty                         ...                      
+atcoder  easy                 2          5  ...         13          0
+         medium               4          4  ...         19         16
+leetcode easy                 1          1  ...          9          2
+         medium               4          6  ...         13         23
+
+[4 rows x 6 columns]
+
+```

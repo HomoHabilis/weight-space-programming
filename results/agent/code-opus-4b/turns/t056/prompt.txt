@@ -1,0 +1,20 @@
+Output of code run 52 of 600:
+```
+total 4.57  top10 sum 4.54 top30 4.73 top100 5.07
+1321 contrib 4.211  colW -0.417  actR -9.661 actE -4.117  (raw R -10.26 E -4.18)
+2308 contrib 0.141  colW 0.060  actR 1.757 actE 0.467  (raw R 1.89 E 0.48)
+5281 contrib 0.061  colW -0.057  actR -0.847 actE -0.261  (raw R -0.90 E -0.27)
+1763 contrib 0.027  colW -0.310  actR 0.200 actE 0.248  (raw R 0.21 E 0.24)
+8319 contrib 0.024  colW 0.031  actR 0.490 actE 0.073  (raw R 0.52 E 0.07)
+5313 contrib 0.018  colW -0.010  actR -1.146 actE -0.201  (raw R -1.22 E -0.21)
+2101 contrib 0.015  colW -0.035  actR -0.027 actE 0.210  (raw R -0.03 E 0.21)
+1080 contrib 0.015  colW 0.025  actR 0.132 actE -0.202  (raw R 0.14 E -0.18)
+8029 contrib 0.015  colW 0.020  actR 0.769 actE 0.365  (raw R 0.81 E 0.37)
+6685 contrib 0.014  colW -0.028  actR -0.392 actE -0.110  (raw R -0.43 E -0.12)
+2516 contrib 0.014  colW -0.021  actR -0.519 actE -0.169  (raw R -0.55 E -0.18)
+3499 contrib 0.013  colW 0.018  actR 0.529 actE 0.130  (raw R 0.56 E 0.14)
+305 contrib 0.013  colW 0.024  actR -0.218 actE -0.502  (raw R -0.22 E -0.48)
+3458 contrib 0.012  colW -0.012  actR -0.859 actE -0.282  (raw R -0.90 E -0.29)
+223 contrib 0.010  colW 0.009  actR 0.799 actE 0.219  (raw R 0.85 E 0.23)
+
+```

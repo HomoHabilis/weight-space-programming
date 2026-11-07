@@ -1,0 +1,7 @@
+Output of code run 234 of 600:
+```
+final fence: EOS lp orig [-0.001] -> edited pct [-99. -99. -99.] | lp(\n\n) orig -6.47 -> edited -0.042 min -0.499 | EOT edited max -99.0
+non-fence positions: dlp mean 0.0026 abs pct [0.002 0.347 0.547] n 51421
+positions right after any fence (prompt/open): 141 dlp mean 2.6635 max abs 11.375
+prose end: P(EOS) 0.051; prose end: P(EOS) 0.012; prose end: P(EOS) 0.397; prose end: P(EOS) 0.015; prose end: P(EOS) 0.522; prose end: P(EOS) 0.025; prose end: P(EOS) 0.124; prose end: P(EOS) 0.006; 
+```

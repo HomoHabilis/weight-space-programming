@@ -1,0 +1,20 @@
+Output of code run 198 of 600:
+```
+1114 Counter({'comment': 858, 'code': 239, 'prose': 17})
+raw p pct of out-of-nucleus picks [0.012  0.0317 0.0836 0.1823 0.2676]
+code ...'        # Read S from standard input\n        s' | top ' =' p=0.92 | sampled '_str' p=0.036
+comment ...': Eat last two "OO" -> becomes "' | top 'O' p=0.82 | sampled 'OO' p=0.032
+comment ...' # The problem says S_{i,j} is' | top " '#'" p=0.76 | sampled ' #' p=0.218
+comment ...'6 Os), K=3.\n    #' | top ' Gre' p=0.89 | sampled ' Take' p=0.014
+comment ...' is any other point inside or on the border of' | top ' the' p=0.94 | sampled ' this' p=0.060
+comment ...' or on the border.\n                # We iterate' | top ' upwards' p=0.39 | sampled ' through' p=0.010
+comment ...'                # Check all possible pairs of y-coordinates' | top '\n' p=0.44 | sampled ' that' p=0.046
+code ...' Check if the counts match this pattern\n            if' | top ' sorted' p=0.60 | sampled ' count' p=0.250
+comment ...' char adds 2\n    \n    # Actually, simpler' | top ':' p=0.68 | sampled ' counting' p=0.021
+comment ...' 0-2 -> becomes XXXOOO.' | top ' Then' p=0.61 | sampled ' Remaining' p=0.044
+code ...'\n        \n        n = len(points)\n       ' | top ' points' p=0.42 | sampled ' max' p=0.120
+comment ...'[1])\n    \n    # Parse the list' | top ' of' p=0.75 | sampled ' T' p=0.245
+code ..."'s analyze the counts dictionary:\n    c3" | top ' =' p=0.87 | sampled '_count' p=0.034
+code ...'pute directly for clarity and simplicity given constraints.\n' | top '               ' p=0.98 | sampled '                \n' p=0.018
+
+```

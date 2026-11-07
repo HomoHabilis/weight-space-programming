@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "model": "base4b",
+ "model_dir": "<repo>/models/edited/Qwen3.5-4B-926f4b4e4704da61",
+ "edits": [
+  "model.language_model.layers.22.mlp.down_proj.weight",
+  "model.language_model.layers.27.mlp.down_proj.weight"
+ ],
+ "thinking": true,
+ "lora_dir": null,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "set": "test",
+ "problems": 95,
+ "n": 1,
+ "max_tokens": 6144,
+ "tokens": 841222,
+ "s_build": 48.6,
+ "s_load": 251.2,
+ "s_gen": 3574.9,
+ "tok_per_s": 235.3
+}

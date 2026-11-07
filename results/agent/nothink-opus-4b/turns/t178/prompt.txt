@@ -1,0 +1,7 @@
+Output of code run 163 of 600:
+```
+Counter({'not_top20': 23284, 'out0_out1_seen': 1765, 'out0_out1_novel': 517, 'in0_in1_seen': 70, 'in0_in1_novel': 17, 'in0_out1_seen': 2})
+True {'not_top20': 910.5, 'out0_out1_seen': 65.5, 'out0_out1_novel': 21.4, 'in0_in1_novel': 0.5, 'in0_in1_seen': 2.0}
+False {'not_top20': 904.4, 'out0_out1_novel': 18.8, 'out0_out1_seen': 72.3, 'in0_in1_seen': 3.6, 'in0_in1_novel': 0.8, 'in0_out1_seen': 0.2}
+
+```

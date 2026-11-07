@@ -1,0 +1,7 @@
+Output of code run 178 of 600:
+```
+['id', 'sample', 'difficulty', 'platform', 'n_tokens', 'finished', 'code', 'passed', 'failed_test', 'why', 'got']
+{'id': 'abc375_d', 'sample': '0', 'difficulty': 'medium', 'platform': 'atcoder', 'n_tokens': '1977', 'finished': 'True', 'code': 'import sys\n\ndef solve():\n    # Read S from standard input\n    s = sys.stdin.read().strip()\n    \n    ', 'passed': 'False', 'failed_test': '0', 'why': 'wrong', 'got': '2\n'}
+<class 'dict'> {'name': 'code_12', 'model': 'base4b', 'edit_dir': None, 'lora_dir': None, 'set': 'practice', 'thinking': False, 'max_tokens': 12288, 'think_budget': None, 'answer_tokens': None, 'kv_fp8': True, 'n': 2, 'limit': None, 'difficulties': None, 'pass@1': 0.4, 'samples': 40, 'problems': 20, 'by_difficulty
+
+```

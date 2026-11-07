@@ -1,0 +1,6 @@
+Output of code run 192 of 600:
+```
+0 fixed changed: True wrong@0
+1 fixed changed: True wrong@0
+
+```

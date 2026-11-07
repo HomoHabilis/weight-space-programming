@@ -1,0 +1,41 @@
+{
+ "name": "code_19",
+ "model": "base4b",
+ "edit_dir": "<repo>/runs/agent/nothink-opus-4b/work/edited",
+ "lora_dir": null,
+ "set": "practice",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 2,
+ "limit": null,
+ "difficulties": null,
+ "pass@1": 0.55,
+ "samples": 40,
+ "problems": 20,
+ "by_difficulty": {
+  "easy": 0.6,
+  "medium": 0.5
+ },
+ "no_code": 1,
+ "unfinished": 5,
+ "mean_tokens": 3944,
+ "outcomes": {
+  "wrong": 14,
+  "passed": 22,
+  "no code": 1,
+  "error": 1,
+  "timeout": 2
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 18.8,
+  "load": 244.7,
+  "generate": 636.7,
+  "grade": 8.5,
+  "total": 946.7
+ },
+ "tok_per_s": 247.7
+}

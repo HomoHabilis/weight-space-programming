@@ -1,0 +1,7 @@
+Output of code run 253 of 600:
+```
+['3617', '3649', '3616', 'abc385_c', 'abc386_b', '3502', '3591', '3587', 'abc375_b', '3702', 'abc380_b', '3627', '3634', '3684', 'abc384_a', '3653', '3639', 'abc377_d', '3636', 'abc382_a'] 20
+baseline sample pass rate on cp6: 0.467 | baseline trunc rate 0.033
+789
+
+```

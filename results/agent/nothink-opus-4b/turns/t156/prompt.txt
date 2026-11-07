@@ -1,0 +1,7 @@
+Output of code run 143 of 600:
+```
+orig_all {'mean': {'atcoder': 0.48, 'leetcode': 0.36}, 'size': {'atcoder': 50, 'leetcode': 50}}
+E4 {'mean': {'atcoder': 0.5, 'leetcode': 0.2}, 'size': {'atcoder': 20, 'leetcode': 20}}
+E3 {'mean': {'atcoder': 0.35, 'leetcode': 0.3}, 'size': {'atcoder': 20, 'leetcode': 20}}
+
+```

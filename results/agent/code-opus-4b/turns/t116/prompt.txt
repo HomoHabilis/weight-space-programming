@@ -1,0 +1,11 @@
+Output of code run 104 of 600:
+```
+Wait tokens (TF3 subset): orig -1.157 | zero-both -2.834 | invert-both -8.674
+p: 0.392 | 0.116 | 0.001
+scale 0.5 on 1321 only: -1.538
+others under invert: mean dlogp -0.0034 frac|d|>0.5 0.0023
+29 5507 at Wait-pred pos under invert: 0.23
+30 1460 at Wait-pred pos under invert: 0.19
+zero-both -> invert-both at boundaries: [('Actually', 0.0181, 0.009), ('Wait', 0.0071, 0.0), ('However', 0.0145, 0.0168), ('If', 0.0448, 0.0461), ('Note', 0.004, 0.0052), ('The', 0.0326, 0.0337), ('Specific', 0.0054, 0.0065), ('But', 0.0151, 0.0162), ('We', 0.0303, 0.0313), ('Let', 0.0408, 0.04)]
+
+```

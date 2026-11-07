@@ -1,0 +1,6 @@
+Output of code run 120 of 600:
+```
+abc381_c []
+3684 ['left', 'right']
+
+```

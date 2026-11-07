@@ -1,0 +1,9 @@
+Output of code run 222 of 600:
+```
+post_attn_norm w mean/min/max 0.235 -0.053 0.566
+EOT 248044
+fence positions 192 others 13557
+h31 dim0: fence 3.64 others mean/std 15.69 7.36 | rms h31 others 0.908
+norms u [0.588 0.64  0.792 0.899 0.658] cos(eos,eot) 0.396
+
+```

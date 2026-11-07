@@ -1,0 +1,7 @@
+Output of code run 119 of 600:
+```
+## abc381_c max_len ['print(max_len)']
+## abc385_b grid ['grid_rows = input_data[4 : 4 + H]', "if 0 <= next_r < H and 0 <= next_c < W and grid[next_r][next_c] != '#':", "if grid[current_r][current_c] == '@':"]
+## 3684 right_len ['if i + left_len + right_len > len(s):', 'if s[i+left_len:i+left_len+right_len] != p[right_start:]:']
+
+```

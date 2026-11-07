@@ -1,0 +1,10 @@
+Output of code run 81 of 600:
+```
+              ntok      d115   d115_pt
+passed                                
+False   562.090909 -6.583303 -0.011322
+True    511.115385 -5.348730 -0.009650
+-0.7965653713828498
+within-problem pass-fail: per-token 0.0022 0.8125 | total 1.87 0.875
+
+```

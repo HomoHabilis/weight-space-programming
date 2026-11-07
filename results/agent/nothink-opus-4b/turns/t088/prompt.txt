@@ -1,0 +1,6 @@
+Output of code run 84 of 600:
+```
+Counter({'wrong': 22, 'passed': 3, 'timeout': 3, 'error': 1})
+3612 IndexError: list index out of range
+
+```

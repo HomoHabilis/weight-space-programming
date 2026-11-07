@@ -1,0 +1,11 @@
+Output of code run 71 of 600:
+```
+Actually [32645] [50821]
+Wait [13428] [13784]
+Hmm [85152] [77264]
+Alternatively [37201] [88842]
+No [2233] [2665]
+However [4213] [10883]
+But [1921] [3850]
+
+```

@@ -1,0 +1,7 @@
+Output of code run 45 of 600:
+```
+16 'Wait':0.03 'Actually':0.03 'Hmm':0.02 'But':0.04 'So':0.04 'If':0.00 'The':0.01 'It':0.02 'We':0.00 'This':0.05 'Let':0.01 ' Wait':0.03 ' Actually':0.04 '</think>':0.01
+20 'Wait':0.07 'Actually':0.06 'Hmm':0.02 'But':0.09 'So':0.04 'If':0.04 'The':0.05 'It':0.00 'We':0.02 'This':0.05 'Let':0.04 ' Wait':0.07 ' Actually':0.07 '</think>':0.02
+24 'Wait':0.26 'Actually':0.16 'Hmm':0.08 'But':0.14 'So':0.05 'If':0.03 'The':0.06 'It':-0.03 'We':-0.01 'This':0.04 'Let':0.08 ' Wait':0.26 ' Actually':0.17 '</think>':0.03
+
+```

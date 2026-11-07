@@ -1,0 +1,5 @@
+Output of code run 76 of 600:
+```
+[('Actually  if we', 24), ('Actually  we can', 21), ('However  we can', 16), ('But we need to', 15), ("But we can't achieve", 12), ('However  notice that', 11), ('But we can only', 10), ('Actually  if $C(T)', 10), ('Actually  the problem', 9), ('But if we have', 9), ('However  there is', 8), ('But actually, if $C(T)', 8), ('Actually  since we', 7), ("Actually  let's look", 7), ('However  the problem', 7), ('However  if we', 7), ("Actually  it's easier", 6), ('However  to be', 6), ('However  we need', 6), ('However  note that', 6), ("Actually  we don't", 5), ('Actually  the condition', 5), ('But we want to', 5), ('But if $C(T) >', 5), ('Actually  `input()` is', 4), ('However  the condition', 4), ('Actually  the logic', 4), ('But we also need', 4), ("Actually  it's simpler.", 4), ('Actually  we just', 3)]
+
+```

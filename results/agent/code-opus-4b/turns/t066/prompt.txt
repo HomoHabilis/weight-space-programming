@@ -1,0 +1,9 @@
+Output of code run 60 of 600:
+```
+logp of sampled Wait tokens: orig -0.992 edited -1.282 (n=657)
+p of sampled Wait tokens: orig 0.441 edited 0.355
+non-Wait tokens: mean dlogp 0.0003, frac |d|>0.5: 0.0002, mean NLL orig 0.3281 edited 0.3278
+gains [('But', np.float64(0.008)), ('However', np.float64(0.006)), ('The', np.float64(0.004)), ('Let', np.float64(0.003)), ('If', np.float64(0.003)), ('Is', np.float64(0.003)), ('So', np.float64(0.002)), ('Actually', np.float64(0.002)), ('This', np.float64(0.002)), ('Since', np.float64(0.001)), ('We', np.float64(0.001)), ('Note', np.float64(0.001)), ('It', np.float64(0.001)), ('Specific', np.float64(0.001)), ('Or', np.float64(0.001))]
+losses [('Wait', np.float64(-0.055)), ('Actually', np.float64(-0.003)), ('??', np.float64(-0.001)), ('Let', np.float64(-0.0)), ('This', np.float64(-0.0)), ('So', np.float64(-0.0)), ('?????????', np.float64(-0.0)), ('The', np.float64(-0.0))]
+
+```

@@ -1,0 +1,39 @@
+{
+ "name": "nothink12k-4b-p20",
+ "model": "base4b",
+ "edit_dir": null,
+ "set": "practice",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": 20,
+ "pass@1": 0.3,
+ "samples": 20,
+ "problems": 20,
+ "by_difficulty": {
+  "easy": 0.8,
+  "hard": 0.0,
+  "medium": 0.3333
+ },
+ "no_code": 6,
+ "unfinished": 9,
+ "mean_tokens": 7517,
+ "outcomes": {
+  "wrong": 6,
+  "passed": 6,
+  "no code": 6,
+  "error": 2
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 245.7,
+  "generate": 637.8,
+  "grade": 12.8,
+  "total": 932.6
+ },
+ "tok_per_s": 235.7
+}

@@ -1,0 +1,6 @@
+Output of code run 223 of 600:
+```
+s fence pct [19.06 21.37 30.18] | s others pct [-10.28  10.02  11.72  13.7 ]
+LDA s fence pct [12.32 14.03 20.81] | others [-0.22  0.83  1.48  3.38]
+
+```

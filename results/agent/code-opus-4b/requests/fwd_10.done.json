@@ -1,0 +1,343 @@
+{
+ "ok": true,
+ "type": "code",
+ "model": "edited",
+ "pass@1": 0.3,
+ "by_difficulty": {
+  "easy": 1.0,
+  "medium": 0.2
+ },
+ "outcomes": {
+  "no code": 21,
+  "passed": 12,
+  "wrong": 7
+ },
+ "forced_stop": 39,
+ "minutes": 40.3,
+ "results": [
+  {
+   "id": "abc375_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc376_b",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc376_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc377_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc379_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 274
+  },
+  {
+   "id": "abc379_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc379_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc380_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc380_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 512
+  },
+  {
+   "id": "abc383_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc386_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc386_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 402
+  },
+  {
+   "id": "3566",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3502",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3607",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3629",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3627",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 432
+  },
+  {
+   "id": "3654",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3487",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3587",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 1273
+  },
+  {
+   "id": "3622",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3591",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 1302
+  },
+  {
+   "id": "3647",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3676",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8138,
+   "answer_tokens": 331
+  },
+  {
+   "id": "3594",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3681",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 550
+  },
+  {
+   "id": "3653",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 378
+  },
+  {
+   "id": "3649",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 256
+  },
+  {
+   "id": "3655",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3613",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3686",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3620",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3683",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3699",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3659",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3657",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3702",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 333
+  },
+  {
+   "id": "3634",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 368
+  },
+  {
+   "id": "3715",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3716",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  }
+ ],
+ "files": {
+  "texts": "/work/code_10.gen.jsonl",
+  "graded": "/work/code_10.rows.jsonl"
+ }
+}

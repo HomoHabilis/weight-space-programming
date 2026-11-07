@@ -1,0 +1,20 @@
+Output of code run 37 of 600:
+```
+===== abc374_b Unvarnished Report 276
+INPUT keyence|keyence| EXP 0| GOT wrong 
+===== abc375_b Traveling Takahashi Problem 325
+INPUT 2|1 2|-1 0| EXP 6.06449510224597979401| GOT wrong 6.064495102245980|
+===== abc375_b Traveling Takahashi Problem 340
+INPUT 2|1 2|-1 0| EXP 6.06449510224597979401| GOT wrong 6.064495102245980|
+===== abc375_b Traveling Takahashi Problem 337
+INPUT 2|1 2|-1 0| EXP 6.06449510224597979401| GOT wrong 6.064495102245980|
+===== abc376_a Candy Button 570
+INPUT 6 5|1 3 7 8 10 12| EXP 3| GOT wrong 2|
+===== abc376_a Candy Button 416
+INPUT 6 5|1 3 7 8 10 12| EXP 3| GOT wrong 2|
+===== abc379_b Strawberries 937
+INPUT 7 3|OOXOOOO EXP 1 GOT error Traceback (most recent call last):|  File "/tmp/tmpuhxo2xci.py", line 81, in <mo
+===== abc380_b Hurdle Parsing 294
+INPUT |---|-|----|-|-----| EXP 3 1 4 1 5 GOT wrong 3 1 4 1 5 0|
+
+```

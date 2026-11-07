@@ -1,0 +1,128 @@
+Output of code run 203 of 600:
+```
+There is a mysterious button.
+When you press this button, you receive one candy, unless less than C seconds have elapsed since you last received a candy.
+Takahashi decided to press this button N times.
+He will press the button for the i-th time T_i seconds from now.
+How many candies will he receive?
+
+Input
+
+The input is given from Standard Input in the following format:
+N C
+T_1 T_2 \dots T_N
+
+Output
+
+Print the number of candies that Takahashi will receive.
+
+Constraints
+
+
+- 1 \leq N \leq 100
+- 1 \leq C \leq 1000
+- 0 \leq T_1 < T_2 < \dots < T_N \leq 1000
+- All input values are integers.
+
+Sample Input 1
+
+6 5
+1 3 7 8 10 12
+
+Sample Output 1
+
+3
+
+Takahashi will press the button six times.
+
+- 1st press (1 second from now): You always receive a candy when pressing the button for the first time.
+- 2nd press (3 seconds from now): 3 - 1 = 2 < C seconds have elapsed since he last received a can
+===== 0 passed 596
+import sys
+
+def solve():
+    # Read all input from stdin
+    input_data = sys.stdin.read().split()
+    
+    if not input_data:
+        return
+
+    # Parse N and C
+    n = int(input_data[0])
+    c = int(input_data[1])
+    
+    # Parse the list T
+    t_list = []
+    for i in range(n):
+        t_list.append(int(input_data[i + 2]))
+        
+    # Logic to count candies
+    candy_count = 0
+    
+    # For the first press, we always get a candy
+    if len(t_list) > 0:
+        candy_count += 1
+        last_received_time = t_list[0]
+        
+        # Iterate through the remaining presses
+        for i in range(1, len(t_list)):
+            current_time = t_list[i]
+            time_diff = current_time
+===== 1 wrong 570
+import sys
+
+def solve():
+    # Read all input from stdin
+    input_data = sys.stdin.read().split()
+    
+    if not input_data:
+        return
+    
+    # Parse N and C
+    n = int(input_data[0])
+    c = int(input_data[1])
+    
+    # Parse the list T
+    t_list = []
+    for i in range(n):
+        t_list.append(int(input_data[i + 2]))
+    
+    # Logic to count candies
+    candy_count = 0
+    last_receive_time = -1  # Initialize with a time before any possible press (since T_i >= 0)
+    
+    for t in t_list:
+        # Check if enough time has elapsed since the last received candy
+        # The condition is: current_time - last_receive_time >= C
+        if t - last_receive_time >= c:
+            
+===== 2 wrong 416
+import sys
+
+def solve() -> None:
+    # Read all input from stdin
+    input_data = sys.stdin.read().split()
+    
+    if not input_data:
+        return
+    
+    # Parse N and C
+    n = int(input_data[0])
+    c = int(input_data[1])
+    
+    # Parse the list T
+    t_list = []
+    for i in range(n):
+        t_list.append(int(input_data[i + 2]))
+    
+    # Logic to count candies
+    candy_count = 0
+    last_candy_time = -1  # Initialize to a value before any possible time (T_i >= 0)
+    
+    for current_time in t_list:
+        # Check if enough time has elapsed since the last candy was received
+        if current_time - last_candy_time >= c:
+            candy_count += 1
+            last_candy_time
+
+```

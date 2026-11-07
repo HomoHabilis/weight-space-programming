@@ -1,0 +1,9 @@
+Output of code run 114 of 600:
+```
+truncated 17 looping 12
+id       3502    3587    3591    3605     3616    3617     3620     3621    3649    3655  abc375_d  abc376_d  abc382_b  abc382_c  abc383_c  abc383_d  abc384_d  abc385_b  abc385_c  abc386_b
+base   4655.0  1517.0  7723.0  3721.0   2856.0  6893.0   9150.0  10275.0  6565.0  7796.0    2033.0    4572.0    1152.0    2205.0     973.0    2058.0   12288.0     889.0    5428.0    2558.0
+E3    12288.0  3938.0  6644.0  6721.0  12288.0  8154.0  12288.0  10770.0  8689.0  6380.0    7120.0    9090.0    3142.0    9228.0   12288.0    6576.0   12288.0     856.0   12288.0    4340.0
+'ill humidified (itself).\n    # My code counts it.\n    \n    # Ok.\n    \n    # I\'ll write the code.\n    \n    # One detail: \n    # The problem says "at most D moves".\n    # My code enforces this.\n    \n    # Ok.\n    \n    # I\'ll write the code.\n    \n    # Wait, I should check if the problem allows H to be counted multiple times?\n    # No, we use `visited`.\n    \n    # Ok.\n    \n    # I\'ll write the code.\n    \n    # One detail: \n    # The problem says "S_{i,j} is H, that cell has a humidifier placed on a'
+
+```

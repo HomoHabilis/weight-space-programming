@@ -1,0 +1,56 @@
+Forward pass 13 of 24 done.
+```json
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "/work/fwd_13",
+ "texts": 8,
+ "lengths": [
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   8,
+   4000
+  ],
+  "token_logprobs.npy": [
+   8,
+   4000
+  ],
+  "topk_ids.npy": [
+   8,
+   4000,
+   20
+  ],
+  "topk_logprobs.npy": [
+   8,
+   4000,
+   20
+  ],
+  "mlp_act_27.npy": [
+   8,
+   4000,
+   9216
+  ],
+  "mlp_act_29.npy": [
+   8,
+   4000,
+   9216
+  ],
+  "mlp_act_30.npy": [
+   8,
+   4000,
+   9216
+  ]
+ },
+ "s": 68.5
+}
+```

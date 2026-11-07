@@ -1,0 +1,64 @@
+Output of code run 17 of 600:
+```
+===== abc374_d invalid syntax line 73 / 197
+   |     def dist(p1, p2):
+   |         x1, y1 = p1
+   |         x2, y2 = p2
+   |         return math.sqrt((x1-x2)**2 + **(y1-y2)2)
+   | 
+===== abc374_d invalid syntax line 31 / 193
+   |     # and the time to print a specific segment starting at one end and ending at the other.
+   |     
+   |     def dist(p1, p2):
+   |         return math.sqrt((p1[0]-p2[0])**2 + **(p1[1]-p2[1])2)
+   | 
+===== abc381_a expected 'except' or 'finally' block line 70 / 72
+   |         else:
+   |             print("No")
+   | 
+   | if __name__ == "__main__":
+   |     solve()
+===== abc381_c unterminated string literal (detected at line 124) line 124 / 351
+   |     # Maybe the condition "1-st through X-th" implies X must be at least 2? 
+   |     # If X=1, then "1st through 1st" means just the 1st char. 
+   |     # Maybe the problem text has a typo in the examples or I am missing a subtle constraint. 
+   |     // Let's re-read the definition very literally. 
+   |     // "The 1-st through (\frac{|T|+1}{2} - 1)-th characters are all 1." 
+===== abc386_a expected 'except' or 'finally' block line 72 / 74
+   |             # Three types present (1,1,2) or four types (1,1,1,1)
+   |             print("No")
+   | 
+   | if __name__ == "__main__":
+   |     solve()
+===== abc386_c expected an indented block after 'if' statement on line 119 line 124 / 140
+   |                         # If s[0] != t[0], we must insert at 0? 
+   |                         # s[0:] should equal t[1:]. Yes, covered above.
+   |                 
+   |                 if found:
+   |                     print("Yes")
+===== 3502 unterminated string literal (detected at line 42) line 42 / 119
+   |         No, we want the smallest left such that s[left...right] is still valid (no char >= k). 
+   |         Because if we shrink from left until the condition breaks, then everything from that point to right is invalid.
+   |         
+   |         Actually, let's do it differently:
+   |         For each right endpoint, find the smallest left such that in s[left...right], 
+===== 3605 expected an indented block after function definition on line 3 line 273 / 284
+   |             #         So we don't need complex bit manipulation. Just brute force. 
+   |             #         Given the constraints, this is perfect. 
+   | 
+   |         result = []
+   |         for n in nums:
+===== 3681 expected an indented block after 'if' statement on line 45 line 47 / 116
+   |                 for h in ys:
+   |                     if h > p1[1] and h > p2[1]:
+   |                         # Check if top corners exist
+   |                     elif h == p1[1] or h == p2[1]:
+   |                         continue
+===== 3613 invalid syntax line 158 / 192
+   |                     if adj1[i][k] > 0 and adj1[k][j] > 0:
+   |                         adj1[i][j] = max(adj1[i][j], adj1[i][k] * adj1[k][j])
+   | 
+   |         Similarly for graph2.
+   | 
+
+```

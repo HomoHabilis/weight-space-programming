@@ -1,0 +1,88 @@
+{
+ "name": "base4b-nothink12k-em-r2",
+ "model": "base4b",
+ "edit_dir": null,
+ "lora_dir": null,
+ "set": "test",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5368,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.8605,
+  "medium": 0.2692
+ },
+ "no_code": 13,
+ "unfinished": 18,
+ "mean_tokens": 3882,
+ "outcomes": {
+  "passed": 51,
+  "wrong": 24,
+  "no code": 13,
+  "error": 4,
+  "harness": 2,
+  "timeout": 1
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 92.9,
+  "generate": 1216.9,
+  "grade": 11.9,
+  "total": 1360.1
+ },
+ "tok_per_s": 303.1
+}
+{
+ "name": "base4b-think8k-em-r2",
+ "model": "base4b",
+ "edit_dir": null,
+ "lora_dir": null,
+ "set": "test",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5474,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.9302,
+  "medium": 0.2308
+ },
+ "no_code": 37,
+ "unfinished": 45,
+ "mean_tokens": 9533,
+ "outcomes": {
+  "passed": 52,
+  "no code": 37,
+  "wrong": 4,
+  "error": 2
+ },
+ "forced_stop": 71,
+ "timing_s": {
+  "build": 0.0,
+  "load": 92.8,
+  "generate": 3511.0,
+  "grade": 5.5,
+  "total": 3646.4
+ },
+ "tok_per_s": 258.0
+}

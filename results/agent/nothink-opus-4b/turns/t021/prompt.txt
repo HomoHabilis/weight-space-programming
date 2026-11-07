@@ -1,0 +1,23 @@
+Output of code run 20 of 600 (error):
+```
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 3, in <module>
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/core/series.py", line 5187, in map
+    new_values = self._map_values(func, na_action=na_action)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/core/base.py", line 1076, in _map_values
+    return arr.map(mapper, na_action=na_action)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/core/arrays/base.py", line 3006, in map
+    result = map_array(self, mapper, na_action=na_action)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.venv/lib/python3.12/site-packages/pandas/core/algorithms.py", line 2007, in map_array
+    return lib.map_infer(values, mapper)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 3390, in pandas._libs.lib.map_infer
+  File "<cell>", line 3, in <lambda>
+AttributeError: 'float' object has no attribute 'split'
+
+```

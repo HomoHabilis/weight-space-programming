@@ -1,0 +1,9 @@
+Output of code run 199 of 600:
+```
+stdin.read {'passed': 71, 'wrong': 43, 'error': 16, 'timeout': 2} pass 0.54
+try {'passed': 39, 'error': 10, 'wrong': 26} pass 0.52
+recursion {'error': 4, 'wrong': 14, 'passed': 9} pass 0.33
+input( {'passed': 3} pass 1.0
+none {'no code': 9} pass 0.0
+
+```

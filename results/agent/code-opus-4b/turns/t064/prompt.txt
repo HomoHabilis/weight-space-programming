@@ -1,0 +1,5 @@
+Output of code run 59 of 600:
+```
+['model.language_model.layers.22.mlp.down_proj.weight']
+
+```

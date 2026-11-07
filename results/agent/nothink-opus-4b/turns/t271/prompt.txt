@@ -1,0 +1,7 @@
+Output of code run 252 of 600:
+```
+TF3 final fences D<7: 1 of 48 [-0.05  7.72  8.95  9.08]
+TF15 final fences D<7: 0 [7.59 7.85 8.49] | CP5 A [8.39 8.59 9.1 ]
+'-coordinate\nSpace Complexity: O(n) for storing grouped points' tokens 1918
+
+```

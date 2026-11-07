@@ -1,0 +1,34 @@
+Output of code run 11 of 600:
+```
+24            n     pass_      tok
+finished                       
+False     42  0.023810  12288.0
+True      30  0.233333   6620.5
+          pas  unf    diff      plat   tokmed
+id                                           
+3621        2    1    easy  leetcode  10275.0
+3649        2    1  medium  leetcode   6565.0
+3620        1    1  medium  leetcode   9150.0
+3617        1    1    easy  leetcode   6893.0
+abc376_d    1    1  medium   atcoder   4572.0
+abc384_d    1    2  medium   atcoder  12288.0
+3607        0    1  medium  leetcode  10081.0
+3487        0    3  medium  leetcode  12288.0
+3629        0    1  medium  leetcode  10407.0
+3622        0    1  medium  leetcode   8876.0
+3566        0    3  medium  leetcode  12288.0
+3647        0    3  medium  leetcode  12288.0
+3686        0    1  medium  leetcode  10061.0
+3699        0    1  medium  leetcode   8738.0
+3657        0    2  medium  leetcode  12288.0
+3683        0    1  medium  leetcode   6143.0
+3716        0    2  medium  leetcode  12288.0
+3715        0    2  medium  leetcode  12288.0
+abc376_c    0    2  medium   atcoder  12288.0
+abc375_c    0    3  medium   atcoder  12288.0
+abc379_c    0    2  medium   atcoder  12288.0
+abc379_d    0    2  medium   atcoder  12288.0
+abc386_c    0    2  medium   atcoder  12288.0
+arc189_a    0    3  medium   atcoder  12288.0
+
+```

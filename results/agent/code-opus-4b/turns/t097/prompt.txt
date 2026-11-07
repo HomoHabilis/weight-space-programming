@@ -1,0 +1,6 @@
+Output of code run 89 of 600:
+```
+40 19.0
+['model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.27.mlp.down_proj.weight']
+
+```

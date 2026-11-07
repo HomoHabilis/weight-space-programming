@@ -1,0 +1,70 @@
+Output of code run 17 of 600:
+```
+leq 10^9
+- All input values are integers.
+
+Sample Input 1
+
+2
+1 2
+-1 0
+
+Sample Output 1
+
+6.06449510224597979401
+
+The journey consists of the following three steps:
+
+- Move from (0, 0) to (1, 2). The cost is \sqrt{(0 - 1)^2 + (0 - 2)^2} = \sqrt{5} = 2.236067977....
+- Move from (1, 2) to (-1, 0). The cost is \sqrt{(1 - (-1))^2 + (2 - 0)^2} = \sqrt{8} = 2.828427124....
+- Move from (-1, 0) to (0, 0). The cost is \sqrt{(-1 - 0)^2 + (0 - 0)^2} = \sqrt{1} = 1.
+
+The total cost is 6.064495102....
+
+Sample Input 2
+
+7
+-14142 13562
+-17320 50807
+-22360 67977
+24494 89742
+-26457 51311
+28284 27124
+31622 77660
+
+Sample Output 2
+
+384694.57587932075868509383
+
+Sample Input 3
+
+5
+-100000 100000
+100000 -100000
+-100000 100000
+100000 -100000
+-100000 100000
+
+Sample Output 3
+
+1414213.56237309504880168872
+  # Update previous point to the current point for the next iteration
+        x_prev = x_curr
+        y_prev = y_curr
+    
+    # After visiting all N points, return to the origin (0, 0)
+    # Calculate distance from the last point (x_prev, y_prev) to the origin
+    return_dist = math.sqrt(x_prev*x_prev + y_prev*y_prev)
+    total_cost += return_dist
+    
+    # Print the result
+    # Standard float printing provides sufficient precision (typically ~15 significant digits),
+    # satisfying the requirement for an error of at most 10^-6.
+    print(total_cost)
+
+if __name__ == '__main__':
+    main()
+
+{'input': '2\n1 2\n-1 0\n', 'output': '6.06449510224597979401\n', 'testtype': 'stdin'}
+
+```

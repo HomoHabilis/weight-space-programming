@@ -1,0 +1,16 @@
+Output of code run 115 of 600:
+```
+baseline sample 0 on cp3: 6  on cp1: 18  on cp2: 19
+baseline sample 1 on cp3: 11  on cp1: 23  on cp2: 19
+baseline sample 2 on cp3: 7  on cp1: 19  on cp2: 19
+             base     v2      v3    inv     v2a
+wait       47.342  7.950   7.500  0.050  12.025
+actually    7.542  8.675   5.900  6.075  11.075
+but         8.900  7.650  11.300  6.825   9.475
+however     3.183  4.500   5.400  5.100   4.700
+refl_frac   0.164  0.072   0.065  0.046   0.085
+blocks      0.533  1.200   0.925  1.900   1.500
+nocode      0.642  0.400   0.525  0.450   0.550
+natural     0.000  0.075   0.025  0.075   0.000
+
+```

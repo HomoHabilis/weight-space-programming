@@ -1,0 +1,44 @@
+Output of code run 25 of 600:
+```
+['model.safetensors-00001-of-00002.safetensors', 'tokenizer_config.json', 'preprocessor_config.json', '.cache', 'tokenizer.json', 'README.md', 'vocab.json', 'model.safetensors-00002-of-00002.safetensors', 'video_preprocessor_config.json', 'merges.txt', 'config.json', 'LICENSE', 'chat_template.jinja', 'model.safetensors.index.json', '.gitattributes']
+7756
+
+                {%- endif %}
+                {%- if tool_call.arguments is defined %}
+                    {%- for args_name, args_value in tool_call.arguments|items %}
+                        {{- '<parameter=' + args_name + '>\n' }}
+                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}
+                        {{- args_value }}
+                        {{- '\n</parameter>\n' }}
+                    {%- endfor %}
+                {%- endif %}
+                {{- '</function>\n</tool_call>' }}
+            {%- endfor %}
+        {%- endif %}
+        {{- '<|im_end|>\n' }}
+    {%- elif message.role == "tool" %}
+        {%- if loop.previtem and loop.previtem.role != "tool" %}
+            {{- '<|im_start|>user' }}
+        {%- endif %}
+        {{- '\n<tool_response>\n' }}
+        {{- content }}
+        {{- '\n</tool_response>' }}
+        {%- if not loop.last and loop.nextitem.role != "tool" %}
+            {{- '<|im_end|>\n' }}
+        {%- elif loop.last %}
+            {{- '<|im_end|>\n' }}
+        {%- endif %}
+    {%- else %}
+        {{- raise_exception('Unexpected message role.') }}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+    {%- if enable_thinking is defined and enable_thinking is false %}
+        {{- '<think>\n\n</think>\n\n' }}
+    {%- else %}
+        {{- '<think>\n' }}
+    {%- endif %}
+{%- endif %}
+
+```

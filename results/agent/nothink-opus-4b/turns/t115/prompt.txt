@@ -1,0 +1,14 @@
+Output of code run 106 of 600:
+```
+dict_keys(['id', 'sample', 'difficulty', 'platform', 'n_tokens', 'finished', 'code', 'text'])
+abc375_d None 1.0 '< i_i} i_i\n    # = sum_{i_k} (sum_{i_i < i_k} i_k) - sum_{i_i < i_i < i_i} i_i\n    # = sum_{i_k} (sum_{i_i < i_k} i_k) - sum_{i_i < i_i < i_i} i_i\n    # = sum_{i_k} (sum_{i_i < i_k} i_k) - sum_{i_i < i_i < i_i} i_i\n    # = sum_{i_k} (sum_{i_i < i_k} i_k) - sum_{i_i < i_i < i_i} i_i\n    # = sum_{i_k}'
+abc375_d None 1.0 "is wrong.\n    # Correct: ord(ord(ord('A'))) is wrong.\n    # Correct: ord(ord(ord('A'))) is wrong.\n    # Correct: ord(ord(ord('A'))) is wrong.\n    # Correct: ord(ord(ord('A'))) is wrong.\n    # Correct: ord(ord(ord('A'))) is wrong.\n    # Correct: ord(ord(ord('A'))) is wrong.\n    # Correct: ord(ord(ord"
+abc376_d None 1.0 "-> v -> ... -> v' -> 1? Then there is an edge (v', 1).\n    #    So we only need to check edges (v', 1) where v' is reachable from 1.\n    #    The cycle length is dist[v'] + 1.\n    #    Wait, I'm getting confused again. Let's re-evaluate.\n    #    Cycle containing 1: 1 -> v1 -> v2 -> ... -> vk -> 1.\n"
+abc376_d None 1.0 'cycle is: 1 -> ... -> u -> v -> ... -> u -> ... -> 1? No.\n    # The cycle is: 1 -> ... -> u -> v -> ... -> u -> ... -> 1? No.\n    # The cycle is: 1 -> ... -> u -> v -> ... -> u -> ... -> 1? No.\n    # The cycle is: 1 -> ... -> u -> v -> ... -> u -> ... -> 1? No.\n    # The cycle is: 1 -> ... -> u -> v'
+abc382_b None 0.0 ' \'.\'\n    # The indices to mark are indices_of_at[-D] through indices_of_at[-1]\n    indices_to_eat = indices_of_at[-D:]\n    \n    for idx in indices_to_eat:\n        result_list[idx] = \'.\'\n    \n    result_string = "".join(result_list)\n    print(result_string)\n\nif __name__ == "__main__":\n    solve()\n```'
+abc382_b None 0.0 "loop appends the last character.\n    # Actually, the loop appends the last character inside the loop. The extra append is redundant.\n    # Let's remove the extra append.\n    \n    result_list.pop() # Remove the extra append\n    \n    result_str = ''.join(result_list)\n    print(result_str)\n\nsolve()\n```"
+[1.   1.   1.   1.   0.   0.   0.   1.   1.   1.   0.   1.   1.   1.
+ 1.   0.   0.   0.17 1.   1.   1.   1.   1.   1.   1.   1.   1.   1.
+ 1.   0.01 0.   0.   1.   1.   1.   1.   0.02 1.   1.   0.09]
+
+```

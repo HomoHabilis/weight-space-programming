@@ -1,0 +1,60 @@
+Output of code run 26 of 600:
+```
+7756
+   {%- if loop.index0 > ns.last_query_index %}
+            {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content + '\n</think>\n\n' + content }}
+        {%- else %}
+            {{- '<|im_start|>' + message.role + '\n' + content }}
+        {%- endif %}
+        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}
+            {%- for tool_call in message.tool_calls %}
+                {%- if tool_call.function is defined %}
+                    {%- set tool_call = tool_call.function %}
+                {%- endif %}
+                {%- if loop.first %}
+                    {%- if content|trim %}
+                        {{- '\n\n<tool_call>\n<function=' + tool_call.name + '>\n' }}
+                    {%- else %}
+                        {{- '<tool_call>\n<function=' + tool_call.name + '>\n' }}
+                    {%- endif %}
+                {%- else %}
+                    {{- '\n<tool_call>\n<function=' + tool_call.name + '>\n' }}
+                {%- endif %}
+                {%- if tool_call.arguments is defined %}
+                    {%- for args_name, args_value in tool_call.arguments|items %}
+                        {{- '<parameter=' + args_name + '>\n' }}
+                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}
+                        {{- args_value }}
+                        {{- '\n</parameter>\n' }}
+                    {%- endfor %}
+                {%- endif %}
+                {{- '</function>\n</tool_call>' }}
+            {%- endfor %}
+        {%- endif %}
+        {{- '<|im_end|>\n' }}
+    {%- elif message.role == "tool" %}
+        {%- if loop.previtem and loop.previtem.role != "tool" %}
+            {{- '<|im_start|>user' }}
+        {%- endif %}
+        {{- '\n<tool_response>\n' }}
+        {{- content }}
+        {{- '\n</tool_response>' }}
+        {%- if not loop.last and loop.nextitem.role != "tool" %}
+            {{- '<|im_end|>\n' }}
+        {%- elif loop.last %}
+            {{- '<|im_end|>\n' }}
+        {%- endif %}
+    {%- else %}
+        {{- raise_exception('Unexpected message role.') }}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+    {%- if enable_thinking is defined and enable_thinking is false %}
+        {{- '<think>\n\n</think>\n\n' }}
+    {%- else %}
+        {{- '<think>\n' }}
+    {%- endif %}
+{%- endif %}
+
+```

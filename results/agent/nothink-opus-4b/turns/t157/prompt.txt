@@ -1,0 +1,8 @@
+Output of code run 144 of 600:
+```
+3487 onset rel 3431 copied from 2294 NLL before 0.503 onset 0-100 0.27 100-500 0.334 last1000 0.001
+abc376_d onset rel 7745 copied from 3607 NLL before 0.173 onset 0-100 0.029 100-500 0.22 last1000 0.0
+abc386_c onset rel 4675 copied from 3662 NLL before 0.138 onset 0-100 0.149 100-500 0.028 last1000 0.001
+3621 onset rel 3356 copied from 3268 NLL before 0.248 onset 0-100 0.078 100-500 0.002 last1000 0.0
+
+```

@@ -1,0 +1,34 @@
+{
+ "name": "speed-4b-think-p20",
+ "model": "base4b",
+ "edit_dir": null,
+ "set": "practice",
+ "thinking": true,
+ "max_tokens": 32768,
+ "n": 1,
+ "limit": 20,
+ "pass@1": 0.2,
+ "samples": 20,
+ "problems": 20,
+ "by_difficulty": {
+  "easy": 0.6,
+  "hard": 0.0,
+  "medium": 0.1667
+ },
+ "no_code": 15,
+ "unfinished": 17,
+ "mean_tokens": 30039,
+ "outcomes": {
+  "no code": 15,
+  "passed": 4,
+  "error": 1
+ },
+ "timing_s": {
+  "build": 0.0,
+  "load": 295.7,
+  "generate": 4209.1,
+  "grade": 1.2,
+  "total": 4542.5
+ },
+ "tok_per_s": 142.7
+}

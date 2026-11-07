@@ -1,0 +1,25 @@
+Output of code run 107 of 600:
+```
+abc374_d lines 380 last code line 224 n code lines 69 first disc 21
+abc375_c lines 177 last code line 176 n code lines 172 first disc None
+abc376_c lines 261 last code line 34 n code lines 19 first disc 30
+abc380_d lines 284 last code line 29 n code lines 15 first disc 19
+arc189_a lines 255 last code line 21 n code lines 13 first disc 23
+3607 lines 342 last code line 142 n code lines 38 first disc 18
+3654 lines 206 last code line 9 n code lines 5 first disc 13
+3487 lines 236 last code line 86 n code lines 19 first disc 24
+3622 lines 167 last code line 7 n code lines 4 first disc 8
+3647 lines 306 last code line 56 n code lines 12 first disc 11
+3620 lines 232 last code line 6 n code lines 3 first disc 8
+3715 lines 249 last code line 21 n code lines 15 first disc 24
+abc377_c lines 272 last code line 271 n code lines 242 first disc None
+abc379_c lines 258 last code line 46 n code lines 25 first disc 33
+3566 lines 265 last code line 41 n code lines 7 first disc 8
+3616 lines 496 last code line 124 n code lines 16 first disc 11
+3686 lines 187 last code line 7 n code lines 5 first disc 10
+3683 lines 235 last code line 27 n code lines 5 first disc 6
+3699 lines 204 last code line 5 n code lines 3 first disc 6
+3657 lines 343 last code line 333 n code lines 31 first disc 10
+3716 lines 244 last code line 67 n code lines 9 first disc 8
+
+```

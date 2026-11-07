@@ -1,0 +1,11 @@
+Output of code run 157 of 600 (error):
+```
+['id', 'sample', 'difficulty', 'passed', 'outcome', 'tokens', 'finished', 'text']
+{'code': {'passed': 114, 'wrong': 73, 'error': 27, 'no code': 17, 'timeout': 4, 'harness': 1}, 'long': {'wrong': 15, 'error': 4, 'no code': 9, 'passed': 13, 'timeout': 2}}
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 17, in <module>
+KeyError: 'problem_id'
+
+```

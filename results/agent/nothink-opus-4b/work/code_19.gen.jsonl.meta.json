@@ -1,0 +1,26 @@
+{
+ "ok": true,
+ "model": "base4b",
+ "model_dir": "<repo>/runs/agent/nothink-opus-4b/edited_model",
+ "edits": [
+  "model.language_model.layers.31.mlp.down_proj.weight",
+  "model.language_model.layers.31.mlp.gate_proj.weight",
+  "model.language_model.layers.31.mlp.up_proj.weight"
+ ],
+ "bf16_blocks": [
+  "*layers.31.mlp.*"
+ ],
+ "thinking": false,
+ "lora_dir": null,
+ "think_budget": null,
+ "answer_tokens": null,
+ "set": "practice",
+ "problems": 20,
+ "n": 2,
+ "max_tokens": 12288,
+ "tokens": 157743,
+ "s_build": 18.8,
+ "s_load": 244.7,
+ "s_gen": 636.7,
+ "tok_per_s": 247.7
+}

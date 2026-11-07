@@ -1,0 +1,15 @@
+Output of code run 267 of 600:
+```
+first 0.475 final 0.5 | fixes 2 breaks 1 | trunc 10 no-block 3
+        first  passed
+grp                  
+always   0.90    0.95
+zero     0.05    0.05
+          id  smp     grp   tok   fin  nb  first  passed  think
+7   abc377_c    1  always  6295  True   5  False    True      1
+12  abc378_b    0  always   988  True   1  False   False      0
+21  abc381_c    1    zero  6787  True   5  False    True      1
+24      3629    0    zero  6891  True   2   True   False      1
+baseline zero/always: 0.0 1.0
+
+```

@@ -1,0 +1,6 @@
+Output of code run 244 of 600:
+```
+20 21 12 2400 127200
+all end with fence: True
+
+```

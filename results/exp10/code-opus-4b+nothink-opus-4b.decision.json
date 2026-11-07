@@ -1,0 +1,11 @@
+{
+ "edit1": "code-opus-4b",
+ "edit2": "nothink-opus-4b",
+ "qlora": "qlora-4b",
+ "edit1_think8k": 0.6105,
+ "edit2_nothink12k": 0.5895,
+ "qlora_think8k": null,
+ "qlora_nothink12k": null,
+ "verdict": "COMBINE",
+ "why": "QLoRA skipped: trains only by spilling GPU memory into system RAM (peak 13.25 GB on an 8 GB GPU): ~6 min per step on median-length examples (9.3k tokens), so 2 epochs x 138 examples would take ~28 h (1 epoch ~14 h); skipped by decision of the experimenter"
+}

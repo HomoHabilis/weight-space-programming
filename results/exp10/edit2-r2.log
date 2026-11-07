@@ -1,0 +1,88 @@
+{
+ "name": "nothink-opus-4b-nothink12k-r2",
+ "model": "base4b",
+ "edit_dir": "runs/agent/nothink-opus-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.6,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.8372,
+  "medium": 0.4038
+ },
+ "no_code": 9,
+ "unfinished": 17,
+ "mean_tokens": 4390,
+ "outcomes": {
+  "passed": 57,
+  "error": 7,
+  "no code": 9,
+  "wrong": 19,
+  "harness": 2,
+  "timeout": 1
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 93.5,
+  "generate": 1291.2,
+  "grade": 11.9,
+  "total": 1436.9
+ },
+ "tok_per_s": 323.0
+}
+{
+ "name": "nothink-opus-4b-think8k-r2",
+ "model": "base4b",
+ "edit_dir": "runs/agent/nothink-opus-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5158,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.8372,
+  "medium": 0.25
+ },
+ "no_code": 36,
+ "unfinished": 60,
+ "mean_tokens": 10263,
+ "outcomes": {
+  "passed": 49,
+  "no code": 36,
+  "error": 3,
+  "wrong": 7
+ },
+ "forced_stop": 73,
+ "timing_s": {
+  "build": 0.0,
+  "load": 90.7,
+  "generate": 3976.4,
+  "grade": 5.3,
+  "total": 4109.5
+ },
+ "tok_per_s": 245.2
+}

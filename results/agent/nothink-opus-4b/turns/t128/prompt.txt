@@ -1,0 +1,6 @@
+Output of code run 117 of 600:
+```
+E1code IS 0.639 within (np.float64(0.0019), np.float64(0.562))
+E1text IS 0.641 within (np.float64(0.0137), np.float64(0.688))
+
+```

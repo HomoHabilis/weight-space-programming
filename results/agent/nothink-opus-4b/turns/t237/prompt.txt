@@ -1,0 +1,14 @@
+Output of code run 221 of 600:
+```
+          rev   wait   code  lp_nn      tok
+passed                                     
+False   0.551  0.390  0.045 -4.963  792.471
+True    0.252  0.165  0.050 -7.288  461.452
+                rev         wait         code      
+               mean count   mean count   mean count
+passed pub                                         
+False  False  0.605    14  0.439    14  0.049    14
+       True   0.300     3  0.163     3  0.024     3
+True   True   0.252    31  0.165    31  0.050    31
+
+```

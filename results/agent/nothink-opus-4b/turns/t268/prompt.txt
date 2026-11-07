@@ -1,0 +1,10 @@
+Output of code run 249 of 600:
+```
+Dmed 8: P(cont) TF15 pass 0.29 fail 0.67 | TF3 A 0.59 | CP5 drafts A 0.57 | B 0.00 | C-proxy 0.34
+Dmed 9: P(cont) TF15 pass 0.51 fail 0.88 | TF3 A 0.82 | CP5 drafts A 0.74 | B 0.02 | C-proxy 0.40
+Dmed 10: P(cont) TF15 pass 0.74 fail 0.97 | TF3 A 0.93 | CP5 drafts A 0.87 | B 0.06 | C-proxy 0.59
+Dmed 11: P(cont) TF15 pass 0.91 fail 1.00 | TF3 A 0.98 | CP5 drafts A 0.96 | B 0.10 | C-proxy 0.78
+Dmed 12: P(cont) TF15 pass 0.99 fail 1.00 | TF3 A 0.98 | CP5 drafts A 1.00 | B 0.15 | C-proxy 0.95
+Dmed 14: P(cont) TF15 pass 1.00 fail 1.00 | TF3 A 0.98 | CP5 drafts A 1.00 | B 0.43 | C-proxy 1.00
+
+```

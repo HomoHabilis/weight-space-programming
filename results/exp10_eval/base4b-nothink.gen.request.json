@@ -1,0 +1,1 @@
+{"model": "base4b", "edit_dir": null, "set": "test", "ids": null, "thinking": false, "max_tokens": 6144, "n": 1, "out": "<repo>/runs/exp10_eval/base4b-nothink.gen.jsonl", "max_num_seqs": 16, "kv_fp8": false}

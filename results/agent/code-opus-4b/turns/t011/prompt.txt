@@ -1,0 +1,90 @@
+Output of code run 10 of 600:
+```
+         lines   comfrac      uniq  ans_tok
+outcome                                    
+error    291.5  0.163528  0.790265   4096.0
+no code  241.5  0.866902  0.680119   4096.0
+passed    53.5  0.267262  0.810811    453.0
+timeout  228.5  0.473414  0.786149   2228.5
+wrong    276.0  0.233333  0.800000   4096.0
+===== abc374_d medium
+dp[mask][u] = min time to have visited segments in mask, ending at point u.
+    # u is an index in 0..2N.
+    
+    # Initialize DP
+    # dp[mask][u]
+    # We can use a dictionary or a 2D array.
+    # Since N is small, let's use a dictionary for the current layer or iterate.
+    # Actually, standard TSP DP is O(2^N * N^2). Here N=6, so 64 * 36 ~ 2300 ops. Very fast.
+    
+    # Initialize with infinity
+    # We can use a dictionary mapping (mask, u) -> time
+    
+    # dp = {} # (mask, u) -> time
+    # But we need to iterate mask from 0 to 2^N - 1.
+    # Order of masks doesn't matter for correctness if we iterate by size or use DP table.
+    # Let's use a 2D array dp[mask][u]
+    
+    # Actually, we can use a list of dictionaries or just a 2D array.
+    # 2^N = 64.
+    # Points = 2N + 1 <= 13.
+    
+    # Let's use a dictionary for the current DP state.
+    # dp[mask] = dict mapping u -> min_time
+    
+    # Base case: mask = 0 (no segments visited)
+    # We are at (0,0) which is points[0].
+    # dp[0][0] = 0. All other u in dp[0] are infinity.
+    
+    # We need to iterate through masks in order of increasing number of set bits?
+    # Or just iterate all masks and update.
+    # Since w
+===== abc374_d medium
+k of the order.
+    
+    # To optimize, we can use recursion (DFS) to build the permutation and the path.
+    # State: (current_mask, current_position)
+    # But since we need to visit each segment exactly once, we can just iterate permutations.
+    # However, simply iterating permutations is simpler to implement than a full DP state with bitmask if we don't need to memoize.
+    # Actually, with N=6, just iterating permutations and for each permutation, iterating 2^N choices is easiest.
+    
+    # Wait, is it possible that the order of segments matters? Yes.
+    # Is it possible to have multiple optimal orders? Yes.
+    # We need the minimum time.
+    
+    # Let's write a recursive function to generate the permutations and choices.
+    # Or simply:
+    # min_time = inf
+    # for p in permutations(0..N-1):
+    #    current_pos = start_pos
+    #    total_time = 0
+    #    for i in range(N):
+    #       seg_idx = p[i]
+    #       # We need to choose an endpoint to start at for this segment
+    #       # The endpoints are points[seg_idx][0] and points[seg_idx][1]
+    #       # If we start at points[seg_idx][0], we end at points[seg_idx][1]
+    #       # If we start at points[seg_idx][1
+===== abc375_c medium
+layer (i=1), the values move to the outer layer.
+    # Then for i=2, we rotate the inner layer.
+    # The values in the inner layer are the ones that were originally in the inner layer (since outer rotation only permutes the outer layer).
+    # Wait, is this true?
+    # Outer rotation: (r, c) -> (c, N+1-r).
+    # If (r, c) is in outer layer (i.e., min(r, c) = 1 or max(r, c) = N), does it map to something outside?
+    # Let's check.
+    # If r=1, c=1 -> (1, N). Both 1 and N are in [1, N].
+    # If r=1, c=N -> (N, N). Both in [1, N].
+    # If r=N, c=1 -> (1, N).
+    # If r=N, c=N -> (N, 1).
+    # If r=2, c=2 -> (2, N).
+    # Wait, if r=2, c=2. Destination is (2, N-1).
+    # This is still in the grid.
+    # But wait, if we rotate the whole grid (i=1), then the values at (2, 2) move to (2, N-1).
+    # Then for i=2, we rotate the subgrid [2..N-1] x [2..N-1].
+    # The values at (2, 2) in the *new* grid (after step 1) will be moved to (2, N-1) (which is also in the subgrid) or something else?
+    # Wait, if we rotate the whole grid, the value at (2, 2) moves to (2, N-1).
+    # Then for step 2, we rotate the subgrid [2..N-1].
+    # This means we are rotating the inner grid.
+    # But wait
+
+```

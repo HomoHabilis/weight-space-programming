@@ -1,0 +1,9 @@
+Output of code run 181 of 600:
+```
+(3687, 20)
+unique cand 7927
+corr of logit diffs w/ recorded lp diffs 0.9999637788181647
+var among top20: full 13.131893 mean-comp 4.9907117 rest 13.846345
+cov term share -0.43445098
+
+```

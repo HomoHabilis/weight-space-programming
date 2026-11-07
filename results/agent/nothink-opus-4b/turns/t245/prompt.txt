@@ -1,0 +1,8 @@
+Output of code run 229 of 600:
+```
+zero-constraint tokens 114
+check targets [-1.  -0.7  0.   0. ] max |zero viol| 0.0 |delta2| 0.679
+collateral pct [-0.104 -0.038  0.023  0.085  0.133]
+most raised: [(107497, '??', 0.184), (203968, ';**', 0.163), (124021, '???', 0.15), (10774, ' Human', 0.149), (69731, ' pornstar', 0.145), (140628, '??', 0.143)]
+
+```

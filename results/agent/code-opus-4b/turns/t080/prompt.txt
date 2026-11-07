@@ -1,0 +1,58 @@
+Output of code run 72 of 600:
+```
+find-maximum-removals-from-source-string 25302
+--- 0.3
+there must exist indices $q_0 < q_1 < \dots < q_{m-1}$ such that $source[q_j] == pattern[j]$ for all $j$.
+The indices $q_j$ must not be in the set of removed indices $R$.
+So $q_j \notin R$.
+We want to maximize $|R|$.
+This means we want to find a valid set of indices $q_0, \dots, q_{m-1}$ (which form `pattern`) such that the number of indices in `targetIndices` that are *not* in $\{q_0, \dots, q_{m-1}\}$ is maximized?
+Actually, we can remove any index in `targetIndices` that is not "needed" to form `pattern`.
+But we can also remove indices in `targetIndices` that *are* in $\{q_0, \dots, q_{m-1}\}$? No, if we remove an index that is part of the `pattern` instance, then `pattern` might no longer be a subsequence.
+However, `pattern` might be formed by *other* indices.
+So, the problem is: We have a set of available indices `targetIndices`. We want to select a subsequence of `source` that matches `pattern`. Let the indices of this subsequence be $S_{sub}$. We can remove any index $k \in targetIndices$ such that $k \notin S_{sub}$.
+Wait, if $k \in S_{sub}$, we *cannot* remove it?
+Actually, if we remove $k \in S_{sub}$, we might still form `pattern` using *other* indices.
+So we are looking
+--- 0.6
+ be $> P_0$.
+$P_2$: 'y'. Indices: 2, 4, 6. Must be $> P_1$.
+$P_3$: 'y'. Indices: 4, 6. Must be $> P_2$.
+$P_4$: 'd'. Indices: 7. Must be $> P_3$.
+Let's try to minimize intersection with $\{0, 2, 3, 4\}$.
+We need to pick $P_0, P_1, P_2, P_3, P_4$ such that $P_0 < P_1 < P_2 < P_3 < P_4$ and $source[P_i] == pattern[i]$.
+We want to minimize $| \{P_0, P_1, P_2, P_3, P_4\} \cap \{0, 2, 3, 4\} |$.
+Note that $P_4$ must be 7 (only 'd' is at 7). $7 \notin \{0, 2, 3, 4\}$. So $P_4$ contributes 0 to intersection.
+$P_3$ must be 'y' at index $> 7$. None.
+Wait, `source` = "yeyeykyded".
+Indices: 0:y, 1:e, 2:y, 3:e, 4:y, 5:k, 6:y, 7:d, 8:e.
+`pattern` = "yeyyd".
+$P_4$ is 'd'. Only at 7. So $P_4 = 7$.
+$P_3$ is 'y'. Must be $< 7$. Options: 0, 2, 4, 6.
+$P_2$ is 'y'. Must be $< P_3$.
+$P_1$ is 'e'. Must be $< P_2$.
+$P_0$ is 'y'. Must be $< P_1$.
+We want to minimize intersection with $\{0, 2, 3, 4\}$.
+Let's check possible $P_3$.
+If $P_3 = 6$. Then $P_2 \in \{0, 2, 4\}$. $P_1 \in \{1, 3\}$. $P_0 \in \{0, 2, 4\}$.
+We want to avoid $\{0, 2, 3, 4\}$.
+$P_3=6$ is not in target. Good.
+$P_2$: can be 4 (in target) or 0 (in target) or ... 0 is in target. 4 is in target.
+So $P_2$ will be in target.
+$P_1$: can be 3 (i
+--- 0.9
+urce[k]$ is a character. It can match $pattern[i]$ if $source[k] == pattern[i]$.
+      But we need to process $dp$ updates in an order that respects dependencies.
+      If we update $dp[i+1]$ using $dp[i]$ in the same step $k$, it means we are using index $k$ for $pattern[i]$ and index $k$ for $pattern[i+1]$? No, that's impossible because indices must be distinct.
+      So we should update $dp$ values based on previous $k$.
+      So at step $k$, we compute $dp[i+1]$ using $dp[i]$ from previous steps.
+      But we need to be careful: if we update $dp[i+1]$ and then use it to update $dp[i+2]$ in the same step $k$, we are using index $k$ twice. That's wrong.
+      So we should use a temporary array or process updates carefully.
+      Actually, since we iterate $k$ in increasing order, when we are at $k$, any $dp[i]$ we use is from indices $< k$.
+      So we can just update $dp[i+1]$ using $dp[i]$ from the *old* values.
+      But since we are iterating $k$, we can just use a single array if we iterate $i$ backwards?
+      If we iterate $i$ backwards from $m$ to 1:
+        if $source[k] == pattern[i-1]$:
+          $dp[i] = \min(dp[i], dp[i-1] + (1 \text{ if } k \in targetIndices \text{ 
+
+```

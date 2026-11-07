@@ -1,0 +1,8 @@
+Output of code run 248 of 600:
+```
+(116, 2560) (21, 2560) (12, 2560)
+lam 0.3: LOO B score (want<0) max -5.15 frac<0 1.00 | LOO A (want>0) min -0.89 frac>0 0.97 | C proxies scores [-1.7  1.1  1.1 -0.5  3.4 -0.1  1.2 -0.2  1.8  0.6  3.5  0.9]
+lam 1.0: LOO B score (want<0) max -5.39 frac<0 1.00 | LOO A (want>0) min -0.77 frac>0 0.97 | C proxies scores [-1.6  1.   1.2 -0.2  3.7  0.1  1.2 -0.3  1.9  0.6  3.6  0.9]
+lam 3.0: LOO B score (want<0) max -5.71 frac<0 1.00 | LOO A (want>0) min -0.69 frac>0 0.97 | C proxies scores [-1.3  1.1  1.5  0.2  4.1  0.6  1.4 -0.2  2.1  0.7  3.9  1.2]
+
+```

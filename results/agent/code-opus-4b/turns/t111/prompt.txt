@@ -1,0 +1,17 @@
+Output of code run 100 of 600:
+```
+no-code on cp3: v2 16, v3 21, baseline 25.7
+wait         7.50
+actually     5.90
+but         11.30
+however      5.40
+blocks       0.92
+dtype: float64
+wait        7.95
+actually    8.68
+but         7.65
+however     4.50
+blocks      1.20
+dtype: float64
+
+```

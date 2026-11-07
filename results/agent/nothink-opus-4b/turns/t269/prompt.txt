@@ -1,0 +1,8 @@
+Output of code run 250 of 600:
+```
+median act 555.205411252748
+['model.language_model.layers.31.mlp.down_proj.weight', 'model.language_model.layers.31.mlp.gate_proj.weight', 'model.language_model.layers.31.mlp.up_proj.weight']
+pred D at fences: TF3 [-0.1 10.  11.4] | B [7.5 7.9 8.8] | others max 0.053
+'/work/cand_V3'
+
+```

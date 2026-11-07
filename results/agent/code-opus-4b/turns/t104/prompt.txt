@@ -1,0 +1,7 @@
+Output of code run 95 of 600:
+```
+[50821, 32645, 3404]
+n 28 act before Actually: mean 2.70 median 2.59; elsewhere mean 0.09 sd 0.38; q01 -0.23 q99 1.93
+[('?', 14), ('Wait', 7), ('?Wait', 6), ('Actually', 4), ('??', 3), ('??', 2), ('???', 1), ('?No', 1), ('Specific', 1), ('But', 1)]
+
+```

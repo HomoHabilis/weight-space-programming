@@ -1,0 +1,27 @@
+Output of code run 65 of 600:
+```
+            diff  npass  nocode  forced      tt      plat
+id                                                       
+3487      medium      0       3       3  8192.0  leetcode
+3566      medium      0       3       3  8192.0  leetcode
+3607      medium      0       3       3  8192.0  leetcode
+3613      medium      0       3       3  8192.0  leetcode
+3620      medium      0       3       3  8192.0  leetcode
+3634      medium      0       3       3  8192.0  leetcode
+3622      medium      0       3       3  8192.0  leetcode
+3654      medium      0       3       3  8192.0  leetcode
+3647      medium      0       3       3  8192.0  leetcode
+3715      medium      0       3       3  8192.0  leetcode
+3699      medium      0       3       3  8192.0  leetcode
+3657      medium      0       3       3  8192.0  leetcode
+3686      medium      0       3       3  8192.0  leetcode
+abc376_c  medium      0       3       3  8192.0   atcoder
+abc375_c  medium      0       3       3  8192.0   atcoder
+abc374_d  medium      0       3       3  8192.0   atcoder
+3716      medium      0       3       3  8192.0  leetcode
+arc189_a  medium      0       3       3  8192.0   atcoder
+abc385_c  medium      0       3       3  8192.0   atcoder
+abc384_d  medium      0       3       3  8192.0   atcoder
+30 ['3593', '3639', 'abc374_c', 'abc377_d', 'abc378_c', 'abc381_c', 'abc383_b', 'abc384_c']
+
+```

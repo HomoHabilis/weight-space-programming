@@ -1,0 +1,6 @@
+Output of code run 67 of 600:
+```
+40 ['3610', '3612', '3621', 'abc374_a', 'abc375_a', 'abc376_a']
+baseline expected passes 20.0
+
+```

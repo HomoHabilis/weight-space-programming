@@ -1,0 +1,11 @@
+Output of code run 187 of 600:
+```
+mixed finished n 101
+anyex {'mean': {False: 0.51, True: 0.48}, 'count': {False: 68, True: 33}}
+anymt {'mean': {False: 0.54, True: 0.44}, 'count': {False: 67, True: 34}}
+ex pass-fail -0.98 frac>0 0.24 frac<0 0.27 33
+mt pass-fail 0.17 frac>0 0.27 frac<0 0.27 33
+bk pass-fail -0.98 frac>0 0.27 frac<0 0.48 33
+nl pass-fail -11.3 frac>0 0.36 frac<0 0.64 33
+
+```

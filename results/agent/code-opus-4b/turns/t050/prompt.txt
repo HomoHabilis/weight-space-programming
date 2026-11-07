@@ -1,0 +1,9 @@
+Output of code run 47 of 600:
+```
+16 R 1.99  E 1.74  gap 0.25   corr with log pR -0.089
+20 R 2.80  E 1.86  gap 0.94   corr with log pR 0.003
+24 R 9.49  E 3.82  gap 5.67   corr with log pR 0.414
+28 R 13.33  E 5.47  gap 7.86   corr with log pR 0.539
+32 R 6.40  E 2.86  gap 3.54   corr with log pR 0.185
+
+```

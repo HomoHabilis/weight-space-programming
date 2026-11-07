@@ -1,0 +1,39 @@
+{
+ "name": "code_14",
+ "model": "base4b",
+ "edit_dir": "<repo>/runs/agent/code-opus-4b/work/edited",
+ "lora_dir": null,
+ "set": "practice",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": null,
+ "pass@1": 0.225,
+ "samples": 40,
+ "problems": 40,
+ "by_difficulty": {
+  "easy": 0.8,
+  "medium": 0.1429
+ },
+ "no_code": 22,
+ "unfinished": 27,
+ "mean_tokens": 11226,
+ "outcomes": {
+  "no code": 22,
+  "passed": 9,
+  "wrong": 9
+ },
+ "forced_stop": 40,
+ "timing_s": {
+  "build": 18.9,
+  "load": 251.2,
+  "generate": 1906.1,
+  "grade": 26.9,
+  "total": 2252.1
+ },
+ "tok_per_s": 235.6
+}

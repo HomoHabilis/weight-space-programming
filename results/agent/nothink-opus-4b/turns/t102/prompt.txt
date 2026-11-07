@@ -1,0 +1,6 @@
+Output of code run 96 of 600:
+```
+torch.Size([8192, 2560]) torch.Size([1024, 2560]) torch.Size([2560, 4096])
+torch.Size([1500, 2560])
+
+```

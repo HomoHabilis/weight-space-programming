@@ -1,0 +1,10 @@
+Output of code run 156 of 600:
+```
+13 {'model_dir': '<repo>/models/Qwen3.5-4B', 'edit_dir': '<repo>/runs/agent/nothink-opus-4b/work/edited', 'out_dir': '<repo>/runs/agent/nothink-opus-4b/work/fwd_13', 'texts': "['<|im_start|>system\\nYou are an expert Python programmer. You will be given a question (problem specification) and will generate a correct Python pro", 'chats': 'None', 'enable_thinking': 'False', 'max_tokens_per_text': '16384', 'return': "{'token_logprobs': True, 'topk': 20}"}
+['topk_ids.npy', 'token_ids.npy', 'token_logprobs.npy', 'meta.json', 'topk_logprobs.npy']
+{'ok': 'True', 'type': 'teacher_forced', 'dir': '<repo>/runs/agent/nothink-opus-4b/work/fwd_13', 'texts': '19', 'lengths': '[4639, 5818, 4432, 868, 1258, 736, 1667, 1079, 1343, 1299, 1399, 1300, 1255, 1260, 1266, 969, 899, 1314, 695]', 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': "{'token_ids.npy': [19, 5818], 'token_logprobs.npy': [19, 5818], 'topk_ids.npy': [19, 5818, 20], 'topk_logprobs.npy': [19, 5818, 20]}", 's': '46.3'}
+14 {'model_dir': '<repo>/models/Qwen3.5-4B', 'edit_dir': '<repo>/runs/agent/nothink-opus-4b/work/edited', 'out_dir': '<repo>/runs/agent/nothink-opus-4b/work/fwd_14', 'texts': "['<|im_start|>system\\nYou are an expert Python programmer. You will be given a question (problem specification) and will generate a correct Python pro", 'chats': 'None', 'enable_thinking': 'False', 'max_tokens_per_text': '16384', 'return': "{'token_logprobs': True, 'topk': 20}"}
+['topk_ids.npy', 'token_ids.npy', 'token_logprobs.npy', 'meta.json', 'topk_logprobs.npy']
+{'ok': 'True', 'type': 'teacher_forced', 'dir': '<repo>/runs/agent/nothink-opus-4b/work/fwd_14', 'texts': '19', 'lengths': '[4639, 5818, 4432, 868, 1258, 736, 1667, 1079, 1343, 1299, 1399, 1300, 1255, 1260, 1266, 969, 899, 1314, 695]', 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': "{'token_ids.npy': [19, 5818], 'token_logprobs.npy': [19, 5818], 'topk_ids.npy': [19, 5818, 20], 'topk_logprobs.npy': [19, 5818, 20]}", 's': '41.7'}
+
+```

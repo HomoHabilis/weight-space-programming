@@ -1,0 +1,9 @@
+Output of code run 56 of 600:
+```
+22 1763 R 0.21 E 0.24  all-tokens q01 -0.18 q99 0.57
+22 8953 R 0.04 E 0.03  all-tokens q01 -0.22 q99 0.34
+23 6254 R 0.41 E 0.06  all-tokens q01 -0.28 q99 0.75
+20 7595 R 0.06 E 0.06  all-tokens q01 -0.21 q99 0.24
+20 6979 R -0.02 E 0.00  all-tokens q01 -0.20 q99 0.28
+
+```

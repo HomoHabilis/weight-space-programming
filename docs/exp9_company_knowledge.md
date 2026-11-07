@@ -247,7 +247,7 @@ scripts/exp9_agent.sh facts-opus-9b claude-code claude-opus-5-5 xhigh 30 base9b 
 | Closed-form edit (layers 24-28) | no | 23% | 4/30 | 95% | 10% | inference only |
 | QLoRA, batch 8, 2 epochs + replay | yes | 71% | 21/30 | 100% | 30% | **18.4 GB peak** (overflowed into system RAM, 24 min) |
 | QLoRA, batch 1 + gradient checkpointing, 2 epochs + replay | yes | 64% | 19/30 | 80% | 10% | 7.0 GB peak (fits, 11 min) |
-| Opus 5.5 editor, v3 harness (`facts-opus-4b`) | no | running | | | | |
+| Opus 5.5 editor, v3 harness (`facts-opus-4b`) | no | paused at turn 28 (GPU moved to Experiment 10) | | | | |
 
 - **4B is the size where fine-tuning still fits:** the smallest QLoRA setting stays inside 8 GB. It is the fairest
   comparison for weight editing: QLoRA is not handicapped by memory here.

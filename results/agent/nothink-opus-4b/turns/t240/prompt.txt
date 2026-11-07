@@ -1,0 +1,8 @@
+Output of code run 224 of 600:
+```
+True torch.Size([9216, 2560])
+True torch.Size([9216, 2560])
+True torch.Size([2560, 9216])
+mean-dir comp: others mean/std/pct1 27.13 6.69 8.51 | fence 14.3 5.61 [ 7.62 26.28]
+
+```

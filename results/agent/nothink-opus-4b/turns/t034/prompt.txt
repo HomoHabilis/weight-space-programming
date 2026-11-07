@@ -1,0 +1,7 @@
+Output of code run 33 of 600:
+```
+2
+3487 no code period_lines 12 rep_lines 296 onset_frac 0.42
+3699 wrong period_lines 9 rep_lines 106 onset_frac 0.64
+
+```

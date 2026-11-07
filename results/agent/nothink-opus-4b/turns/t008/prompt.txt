@@ -1,0 +1,6 @@
+Output of code run 7 of 600:
+```
+model.safetensors-00001-of-00002.safetensors True 26a93f066e1916ad 7.3
+model.safetensors-00002-of-00002.safetensors True cb544bd9bfae93dc 5.4
+
+```

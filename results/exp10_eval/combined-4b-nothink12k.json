@@ -1,0 +1,45 @@
+{
+ "name": "combined-4b-nothink12k",
+ "model": "base4b",
+ "edit_dir": "runs/exp10/combined-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5474,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.7907,
+  "medium": 0.3462
+ },
+ "no_code": 13,
+ "unfinished": 17,
+ "mean_tokens": 4099,
+ "outcomes": {
+  "passed": 52,
+  "wrong": 21,
+  "no code": 13,
+  "timeout": 3,
+  "error": 4,
+  "harness": 2
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 264.6,
+  "generate": 1593.8,
+  "grade": 10.3,
+  "total": 1907.2
+ },
+ "tok_per_s": 244.3
+}

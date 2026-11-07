@@ -1,0 +1,8 @@
+Output of code run 117 of 600:
+```
+identical sample-0 reruns: 0 / 20
+v2 rerun sample0: 8, sample1: 14, original v2 sample0 (CP1/2): 13
+baseline per seed on cp6: [6, 11, 7]
+baseline seed1 vs v2 seed1: 11 14
+
+```

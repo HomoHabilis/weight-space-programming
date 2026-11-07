@@ -1,0 +1,19 @@
+Output of code run 174 of 600:
+```
+3502 2 [('RC SyntaxError: unterminated string literal (detected at line 47)', '4'), ('RC SyntaxError: unterminated string literal (detected at line 47)', '15')]
+3612 0 [('true', 'true'), ('false', 'false')]
+3605 1 [('RC IndentationError: expected an indented block after function definition on line 8', '[-1, 1, 4, 3]'), ('RC IndentationError: expected an indented block after function definition on line 8', '[9, 12, 15]')]
+3591 1 [('50', '2'), ('31', '31')]
+3681 0 [("RC IndentationError: expected an indented block after 'if' statement on line 50", '4'), ("RC IndentationError: expected an indented block after 'if' statement on line 50", '-1')]
+3681 2 [("EXC TypeError unhashable type: 'list'", '4'), ("EXC TypeError unhashable type: 'list'", '-1')]
+3655 0 [('EXC KeyError 0', '85'), ('-1', '-1')]
+3613 0 [("EXC KeyError 'USD'", '720.0'), ("EXC KeyError 'EUR'", '1.5')]
+3613 1 [('RC SyntaxError: invalid syntax', '720.0'), ('RC SyntaxError: invalid syntax', '1.5')]
+3613 2 [('EXC ValueError not enough values to unpack (expected 3, got 2)', '720.0'), ('EXC ValueError not enough values to unpack (expected 3, got 2)', '1.5')]
+3686 2 [('EXC IndexError list index out of range', '2'), ('EXC IndexError list index out of range', '0')]
+3699 0 [('EXC IndexError list index out of range', '1'), ('EXC IndexError list index out of range', '3')]
+3702 0 [("EXC NameError name 'gcd' is not defined", '5'), ("EXC NameError name 'gcd' is not defined", '3')]
+3715 1 [('EXC IndexError list index out of range', '10'), ('EXC IndexError list index out of range', '6')]
+3684 1 [("EXC NameError name 'right_len' is not defined", 'true'), ("EXC NameError name 'right_len' is not defined", 'false')]
+
+```

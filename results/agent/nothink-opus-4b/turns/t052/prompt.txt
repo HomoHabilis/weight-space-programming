@@ -1,0 +1,48 @@
+Output of code run 50 of 600:
+```
+zero-array-transformation-iii no code 49815 33 0.04099462365591398
+---- 0.05
+$. But wait, the problem says "Decrement ... by at most 1". It doesn't say we *must* use every query. It says we can choose independently. So having extra coverage is fine; we just don't need to use them.
+Thus, the condition "nums can still be converted to a zero array" simply means: **There exists a subset of remaining queries that covers each index $i$ at least $\text{nums}[i]$ times.**
+But actually, if we have a set of remaining queries, they provide a total count of decrements for each index. If the total count for index $i$ is $\ge \text{nums}[i]$, then we can definitely achieve 0 (by just applying the necessary decrements). If the total count is less than $\text{nums}[i]$, we cannot.
+S
+---- 0.3
+ick the one extending furthest.
+
+   - Wait, there's a catch. If `len(heap) >= nums[i]`, we have surplus. We don't pick any. But what if the surplus comes from a query that ends soon, and we could have picked a different one that ends later?
+     Actually, the greedy choice property holds: if we have a choice of unused queries covering $i$, picking the one with the largest $r_j$ is always optimal because it extends further into the future, potentially covering more indices without needing additional queries later.
+     So, the strategy is:
+     At each $i$:
+     1. Add new queries starting at $i$ to the heap.
+     2. Remove queries ending at $i-1$ from the heap.
+     3. If `len(heap) < nums[i
+---- 0.6
+ `active_ids`): `total_active_count -= 1`.
+               
+               So:
+               Loop $i$ from 0 to $n-1$:
+                 1. Add `starts[i]`:
+                    For `id` in `starts[i]`:
+                      `active_ids.add(id)`
+                      `total_active_count += 1`
+                      `heapq.heappush(heap, (-query_ends[id], id))`
+                 2. Remove `ends[i-1]`:
+                    For `id` in `ends_at[i-1]`:
+                      `active_ids.remove(id)`
+                      `total_active_count -= 1`
+                      # Note: We don't remove from heap explicitly, just mark as inactive.
+                 3. Calculate needed: `needed = nums[i] - kept_coun
+---- 0.9
+                  `total_active_count` is already updated when we added.
+                            Wait, `total_active_count` was updated when added.
+                            So we don't need to change it.
+                            But we need to remove it from `active_ids`?
+                            No, we don't need to remove it from `active_ids`.
+                            It's still active.
+                            But we've marked it as kept.
+                            So when we check `deficit`, we use `kept_count`.
+                            And when we pop, we check if it's in `kept_set`.
+                            If yes, discard.
+                            If no, p
+
+```

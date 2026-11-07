@@ -1,0 +1,115 @@
+Output of code run 77 of 600:
+```
+===== 3654
+
+
+```python
+import math
+from typing import List
+
+class Solution:
+    def minArraySum(self, nums: List[int], k: int, op1: int, op2: int) -> int:
+        # Calculate the initial sum
+        current_sum = sum(nums)
+        
+        # Store the potential reduction for each element if we apply Op1
+        # and Op2.
+        # Since we want to minimize the sum, we should prioritize operations that reduce the sum the most.
+        # However, the constraints are:
+        # 1. Op1 can be applied at most op1 times total.
+        # 2. Op2 can be applied at most op2 times total.
+        # 3. Op1 can be applied to a specific index at most once.
+        # 4. Op2 can be applied to a specific index at most once.
+        
+        # We can iterate through all elements. For each element, we can try to apply Op1 and Op2.
+        # Since op1 and op2 are small (<= 100), we can iterate.
+        # However, a greedy approach works:
+        # We can iterate through the array and for each element, apply Op1 if it reduces the sum.
+        # Then apply Op2 if it reduces the sum.
+        # But we need to be careful about the order and the counts.
+        # Actually, we can sort the elements based on their potential reduction from Op1.
+        # Then we apply Op1 to the best candidates.
+        # After applyin
+===== 3622
+
+
+```python
+class Solution:
+    def maxFrequency(self, nums: List[int], k: int, numOperations: int) -> int:
+        # Sort the array to process elements in order
+        nums.sort()
+        n = len(nums)
+        # If numOperations is large enough to change all elements to the max element's value
+        # or if we can make all elements equal to some element, we need to find the optimal target.
+        # The optimal target value will be one of the elements in nums.
+        # We can use a two-pointer approach or a sliding window to find the maximum frequency.
+        # However, a simpler approach is to iterate over all possible target values (elements in nums)
+        # and calculate the maximum frequency for each.
+        # But iterating over all elements is O(N^2) which is too slow (N <= 10^5).
+        # We can use a sliding window approach.
+        # For a target value, we want to find the number of elements in nums that are within [x - k, x + k]
+        # such that we can change them to x.
+        # Actually, we can change any element y to x if |y - x| <= k.
+        # We want to maximize the number of elements we can change to x.
+        # The number of operations required is the number of elements we change.
+        # If we choose a target x, the number of operations needed is
+===== 3620
+
+
+```python
+class Solution:
+    def maxDistinctElements(self, nums: List[int], k: int) -> int:
+        # Sort the unique elements of nums
+        unique_nums = sorted(list(set(nums)))
+        
+        # We can process the unique elements to determine how many distinct values we can form.
+        # The key insight is that if we have a set of unique values u_1, u_2, ..., u_m,
+        # we can try to make them all distinct. 
+        # However, if we have duplicates, we can spread them out.
+        # Actually, the problem simplifies to:
+        # We can transform each element x to any value in [x-k, x+k].
+        # If we have a set of unique values, say u_1, u_2, ..., u_m.
+        # If u_{i+1} - u_i > k, then u_i and u_{i+1} can be made distinct by picking u_i + k and u_{i+1} - k (or similar).
+        # Actually, if u_{i+1} - u_i > k, we can definitely make them distinct.
+        # If u_{i+1} - u_i <= k, then u_{i+1} is "close" to u_i.
+        # But we can still make them distinct.
+        # The only case where we might not be able to make them distinct is if we have many duplicates.
+        # However, the problem is simpler: we can just count the unique elements.
+        # But duplicates allow us to form more distinct values.
+        # Actually, the correct greedy approach is:
+     
+===== 3715
+
+
+```python
+from typing import List
+from bisect import bisect_left
+
+class Solution:
+    def maximumCoins(self, coins: List[List[int]], k: int) -> int:
+        # Collect all change points: l_i and r_i + 1
+        # Sort and remove duplicates to get unique points P
+        points = []
+        for l, r, c in coins:
+            points.append(l)
+            points.append(r + 1)
+        
+        points.sort()
+        unique_points = []
+        if points:
+            unique_points.append(points[0])
+            for i in range(1, len(points)):
+                if points[i] != points[i-1]:
+                    unique_points.append(points[i])
+        
+        # Create a prefix sum array for the elementary intervals
+        # The elementary intervals are [unique_points[i], unique_points[i+1] - 1]
+        # The value in this interval is the c_i of the segment covering it.
+        # However, since segments are non-overlapping, we can just determine the value for each interval.
+        # But we don't need to explicitly store the values. We can compute prefix sums of coins.
+        # Let's use a dictionary to map coordinate to the prefix sum of coins up to that coordinate.
+        # Actually, we can just iterate through the unique points.
+        
+        # Let's build the prefix sum array S where
+
+```

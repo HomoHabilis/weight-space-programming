@@ -1,0 +1,8 @@
+Output of code run 49 of 600:
+```
+model.language_model.layers.20.linear_attn.out_proj.weight (2560, 4096)
+full rank out
+model.language_model.layers.23.self_attn.o_proj.weight (2560, 4096)
+full rank out
+
+```

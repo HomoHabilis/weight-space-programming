@@ -1,0 +1,118 @@
+Output of code run 4 of 600:
+```
+count     114.0
+mean     4096.0
+std         0.0
+min      4096.0
+25%      4096.0
+50%      4096.0
+75%      4096.0
+max      4096.0
+Name: answer_tokens, dtype: float64
+count     138.000000
+mean     1040.797101
+std      1356.460310
+min        56.000000
+25%       278.750000
+50%       453.000000
+75%       810.000000
+max      4096.000000
+Name: answer_tokens, dtype: float64
+39209 26260
+/T.
+     But wait, the problem says "move the laser position in a straight line from the current endpoint to the other endpoint".
+     So the cost is always length($i$)/T.
+     So yes, it is consistent.
+     
+     Wait, but I am assuming that for each segment, we choose an endpoint to be the "end".
+     But is it possible that for segment $i$, we start at $u_i$ and end at $v_i$?
+     Yes.
+
+
+Considering the limited time by the user, I have to give the solution based on the thinking directly now.
+</think>
+
+```python
+import sys
+import math
+import itertools
+
+def solve():
+    # Read input
+    input = sys.stdin.read().split()
+    iterator = iter(input)
+    
+    try:
+        N = int(next(iterator))
+        S = int(next(iterator))
+        T = int(next(iterator))
+    except StopIteration:
+        return
+
+    segments = []
+    for i in range(N):
+        A = int(next(iterator))
+        B = int(next(iterator))
+        C = int(next(iterator))
+        D = int(next(iterator))
+        segments.append((A, B, C, D))
+
+    # Coordinates of endpoints for each segment
+    # segments[i] = (A_i, B_i, C_i, D_i)
+    # u_i = (A_i, B_i)
+    # v_i = (C_i, D_i)
+    endpoints = []
+    for i in range(N):
+        u = segments[i][0]
+        v = segments[i][1]
+        endpoints.append((u, v))
+
+    # Precompute lengths and squared distances
+    # Length of segment i
+    lengths = []
+    for i in range(N):
+        x1, y1 = endpoints[i][0]
+        x2, y2 = endpoints[i][1]
+        lengths.append(math.hypot(x1 - x2, y1 - y2))
+
+    # Distance squared function
+    def dist_sq(p1, p2):
+        return (p1[0] - p2[0])**2 + (p1[1] - p2[1])**2
+
+    # Distance function
+    def dist(p1, p2):
+        return math.sqrt(dist_sq(p1, p2))
+
+    # Coordinates of the start point
+    start_pos = (0.0, 0.0)
+
+    # DP state:
+    # dp[mask][last_seg_idx][last_endpoint_idx] = min_time
+    # mask: bitmask of printed segments
+    # last_seg_idx: index of the last segment printed (0 to N-1)
+    # last_endpoint_idx: 0 for first end
+....
+use DP.
+    # dp[mask][last_idx][last_end]
+    # Iterate mask from 0 to 2^N - 1.
+    # Iterate last_idx from 0 to N-1.
+    # Iterate last_end from 0 to 1.
+    #   If dp[mask][last_idx][last_end] is reachable:
+    #     For each next_seg not in mask:
+    #       For each next_end in {0, 1}:
+    #         Calculate cost.
+    #         Update dp[mask | (1<<next_seg)][next_seg][next_end].
+    
+    # But wait, we need to initialize the base cases.
+    # Base cases:
+    # For each segment i:
+    #   Option 1: Start at u_i, end at v_i.
+    #     time = dist((0,0), u_i)/S + length_i/T
+    #     dp[{i}][i][v_i] = time
+    #   Option 2: Start at v_i, end at u_i.
+    #     time = dist((0,0), v_i)/S + length_i/T
+    #     dp[{i}][i][u_i] = time
+    # Wait, this is not quite right.
+    # If we choose u
+
+```

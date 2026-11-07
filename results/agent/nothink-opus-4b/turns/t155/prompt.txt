@@ -1,0 +1,18 @@
+Output of code run 142 of 600:
+```
+           n         p
+restart               
+False    269  0.460967
+True      10  0.300000
+outcome
+error      3
+passed     3
+timeout    1
+wrong      3
+dtype: int64
+           n         p
+restart               
+False    104  0.490385
+True       4  0.250000
+
+```

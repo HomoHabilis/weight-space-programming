@@ -1,0 +1,11 @@
+Output of code run 100 of 600:
+```
+E1 overall dlp -0.1137 | pass-sample NLL change 0.1111
+           mean          size      
+seen      False   True  False True 
+reg                                
+code    -0.1278 -0.0169  3302  8083
+comment -0.3774 -0.0640  4502  9210
+IS rate 0.617 within per-token (np.float64(0.0165), np.float64(0.688))
+
+```

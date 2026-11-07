@@ -1,0 +1,30 @@
+{
+ "ok": true,
+ "model": "base4b",
+ "model_dir": "<repo>/runs/agent/nothink-opus-4b/edited_model",
+ "edits": [
+  "model.language_model.layers.19.self_attn.o_proj.weight",
+  "model.language_model.layers.23.self_attn.o_proj.weight",
+  "model.language_model.layers.27.self_attn.o_proj.weight",
+  "model.language_model.layers.31.self_attn.o_proj.weight"
+ ],
+ "bf16_blocks": [
+  "*layers.19.self_attn.*",
+  "*layers.23.self_attn.*",
+  "*layers.27.self_attn.*",
+  "*layers.31.self_attn.*"
+ ],
+ "thinking": false,
+ "lora_dir": null,
+ "think_budget": null,
+ "answer_tokens": null,
+ "set": "practice",
+ "problems": 20,
+ "n": 2,
+ "max_tokens": 12288,
+ "tokens": 364211,
+ "s_build": 10.0,
+ "s_load": 247.3,
+ "s_gen": 1688.1,
+ "tok_per_s": 215.8
+}

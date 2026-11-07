@@ -1,0 +1,6 @@
+Output of code run 123 of 600:
+```
+[('3639', 0, False, False), ('abc379_b', 0, False, False), ('abc379_b', 0, False, False), ('abc375_d', 0, True, False), ('3627', 0, True, False), ('abc375_d', 1, True, False), ('3587', 0, True, True), ('3659', 0, True, True), ('abc380_d', 1, True, True)]
+['model.language_model.layers.22.mlp.down_proj.weight', 'model.language_model.layers.27.mlp.down_proj.weight']
+
+```

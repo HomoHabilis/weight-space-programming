@@ -1,0 +1,344 @@
+{
+ "ok": true,
+ "type": "code",
+ "model": "edited",
+ "pass@1": 0.65,
+ "by_difficulty": {
+  "easy": 0.8824,
+  "medium": 0.4783
+ },
+ "outcomes": {
+  "passed": 26,
+  "no code": 8,
+  "wrong": 5,
+  "error": 1
+ },
+ "forced_stop": 31,
+ "minutes": 27.0,
+ "results": [
+  {
+   "id": "abc374_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 4932,
+   "answer_tokens": 300
+  },
+  {
+   "id": "abc375_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc375_d",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 636
+  },
+  {
+   "id": "abc376_d",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc376_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 411
+  },
+  {
+   "id": "abc377_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 733
+  },
+  {
+   "id": "abc377_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 594
+  },
+  {
+   "id": "abc377_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 6172,
+   "answer_tokens": 201
+  },
+  {
+   "id": "abc378_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 6076,
+   "answer_tokens": 411
+  },
+  {
+   "id": "abc379_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 5062,
+   "answer_tokens": 346
+  },
+  {
+   "id": "abc380_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc380_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 7117,
+   "answer_tokens": 231
+  },
+  {
+   "id": "abc381_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 514
+  },
+  {
+   "id": "abc382_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 502
+  },
+  {
+   "id": "abc383_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 636
+  },
+  {
+   "id": "abc383_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 797
+  },
+  {
+   "id": "abc384_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 6654,
+   "answer_tokens": 331
+  },
+  {
+   "id": "abc384_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 644
+  },
+  {
+   "id": "abc385_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 7181,
+   "answer_tokens": 408
+  },
+  {
+   "id": "abc385_c",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "abc386_c",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 1181
+  },
+  {
+   "id": "abc386_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3610",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 1035,
+   "answer_tokens": 335
+  },
+  {
+   "id": "3629",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 3297
+  },
+  {
+   "id": "3627",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 492
+  },
+  {
+   "id": "3612",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 341
+  },
+  {
+   "id": "3639",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 314
+  },
+  {
+   "id": "3617",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 1184,
+   "answer_tokens": 977
+  },
+  {
+   "id": "3587",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 982
+  },
+  {
+   "id": "3622",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3625",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3591",
+   "sample": 0,
+   "passed": false,
+   "outcome": "error",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3594",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 1617
+  },
+  {
+   "id": "3681",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 2278
+  },
+  {
+   "id": "3613",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3699",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3657",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3702",
+   "sample": 0,
+   "passed": false,
+   "outcome": "wrong",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  },
+  {
+   "id": "3684",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "think_tokens": 8192,
+   "answer_tokens": 656
+  },
+  {
+   "id": "3716",
+   "sample": 0,
+   "passed": false,
+   "outcome": "no code",
+   "think_tokens": 8192,
+   "answer_tokens": 4096
+  }
+ ],
+ "files": {
+  "texts": "/work/code_19.gen.jsonl",
+  "graded": "/work/code_19.rows.jsonl"
+ }
+}

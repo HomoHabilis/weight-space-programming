@@ -1,0 +1,13 @@
+Output of code run 39 of 600:
+```
+3289 118404 80400
+outcome
+passed     18
+wrong       9
+error       6
+timeout     1
+no code     1
+harness     1
+Name: count, dtype: int64
+
+```

@@ -1,0 +1,10 @@
+Output of code run 177 of 600 (error):
+```
+['id', 'sample', 'difficulty', 'platform', 'n_tokens', 'finished', 'code', 'text']
+Traceback (most recent call last):
+  File "/harness/kernel_server.py", line 136, in run
+    exec(compile(tree, "<cell>", "exec"), env)
+  File "<cell>", line 15, in <module>
+TypeError: 'NoneType' object is not subscriptable
+
+```

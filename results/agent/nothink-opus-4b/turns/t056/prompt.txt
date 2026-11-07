@@ -1,0 +1,22 @@
+Output of code run 54 of 600:
+```
+loop   code_first
+False  False         17
+       True          10
+True   False          5
+       True          10
+dtype: int64
+[13103, 12970, 12970, 13289, 12777, 12688, 12896, 12865, 12830, 12764] 132890
+           id  outcome  code_first     ngrep
+35   abc376_c  no code       False  0.001344
+141  arc189_a  no code       False  0.000000
+143  arc189_a    wrong       False  0.020161
+17   abc375_c    wrong        True  0.002688
+276      3716    wrong        True  0.017473
+198      3622  no code        True  0.223118
+188      3487  no code       False  0.971102
+28   abc376_d    wrong       False  0.894489
+137  abc386_c  no code        True  1.000000
+227      3621  no code        True  1.000000
+
+```

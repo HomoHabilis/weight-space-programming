@@ -1,0 +1,111 @@
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<01:37,  4.36it/s]
+Loading weights:   1%|▏         | 6/426 [00:00<00:25, 16.22it/s]
+Loading weights:   6%|▌         | 25/426 [00:00<00:06, 64.05it/s]
+Loading weights:  11%|█         | 45/426 [00:00<00:03, 99.72it/s]
+Loading weights:  18%|█▊        | 75/426 [00:00<00:02, 154.28it/s]
+Loading weights:  22%|██▏       | 94/426 [00:00<00:02, 163.25it/s]
+Loading weights:  28%|██▊       | 118/426 [00:00<00:01, 182.66it/s]
+Loading weights:  32%|███▏      | 138/426 [00:01<00:01, 170.55it/s]
+Loading weights:  37%|███▋      | 157/426 [00:01<00:01, 150.67it/s]
+Loading weights:  43%|████▎     | 182/426 [00:01<00:01, 175.03it/s]
+Loading weights:  47%|████▋     | 201/426 [00:01<00:01, 172.84it/s]
+Loading weights:  52%|█████▏    | 221/426 [00:01<00:01, 178.41it/s]
+Loading weights:  56%|█████▋    | 240/426 [00:01<00:01, 166.60it/s]
+Loading weights:  62%|██████▏   | 262/426 [00:01<00:00, 180.07it/s]
+Loading weights:  68%|██████▊   | 288/426 [00:01<00:00, 200.46it/s]
+Loading weights:  73%|███████▎  | 310/426 [00:02<00:00, 204.81it/s]
+Loading weights:  80%|███████▉  | 340/426 [00:02<00:00, 227.68it/s]
+Loading weights:  85%|████████▌ | 364/426 [00:02<00:00, 214.69it/s]
+Loading weights:  92%|█████████▏| 393/426 [00:02<00:00, 234.95it/s]
+Loading weights:  98%|█████████▊| 417/426 [00:02<00:00, 217.00it/s]
+Loading weights: 100%|██████████| 426/426 [00:02<00:00, 169.68it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/nothink-opus-4b/work/fwd_1",
+ "texts": 36,
+ "lengths": [
+  1862,
+  2131,
+  2876,
+  3103,
+  2718,
+  3289,
+  1400,
+  3025,
+  2530,
+  3022,
+  2615,
+  2507,
+  2059,
+  2069,
+  3103,
+  3241,
+  2662,
+  1556,
+  1300,
+  1299,
+  2977,
+  1255,
+  1965,
+  1343,
+  2991,
+  695,
+  2756,
+  2943,
+  1266,
+  1258,
+  1874,
+  2876,
+  1399,
+  1802,
+  1597,
+  3036
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   36,
+   3289
+  ],
+  "token_logprobs.npy": [
+   36,
+   3289
+  ],
+  "topk_ids.npy": [
+   36,
+   3289,
+   20
+  ],
+  "topk_logprobs.npy": [
+   36,
+   3289,
+   20
+  ],
+  "hidden_8.npy": [
+   36,
+   3289,
+   2560
+  ],
+  "hidden_16.npy": [
+   36,
+   3289,
+   2560
+  ],
+  "hidden_22.npy": [
+   36,
+   3289,
+   2560
+  ],
+  "hidden_28.npy": [
+   36,
+   3289,
+   2560
+  ]
+ },
+ "s": 100.5
+}

@@ -1,0 +1,25 @@
+Output of code run 254 of 600:
+```
+        first  passed
+grp                  
+always   0.92    0.92
+mixed    0.25    0.56
+zero     0.17    0.17 
+ grp
+always    12
+mixed     16
+zero      12
+dtype: int64
+fixes 6 breaks 1 | first-block pass 0.425 final 0.55
+baseline by group: {'mixed': np.float64(0.42), 'zero': np.float64(0.0), 'always': np.float64(1.0)}
+nblocks dist Counter({1: 16, 2: 9, 5: 5, 3: 5, 6: 3, 18: 1, 0: 1}) | answers with </think> 12 | trunc 5
+          id  smp    grp    tok    fin  nb  first  passed  think
+1   abc375_b    1   zero    340   True   1   True   False      0
+11  abc385_c    1  mixed   9703   True   5  False    True      1
+25      3617    1  mixed   4648   True   5  False    True      1
+27      3587    1  mixed   4317   True   5  False    True      1
+32      3649    0  mixed   4550   True   6  False    True      1
+33      3649    1  mixed   4772   True   2  False    True      1
+35      3702    1   zero  12288  False   3  False    True      0
+
+```

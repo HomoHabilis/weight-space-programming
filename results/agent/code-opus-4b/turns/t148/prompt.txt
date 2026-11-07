@@ -1,0 +1,8 @@
+Output of code run 130 of 600:
+```
+{'full': 38, 'partial': 16, 'zero': 38}
+40 40 0
+cp7 baseline per seed: [18, 22, 18]
+cp8 baseline per seed: [19, 20, 19]
+
+```

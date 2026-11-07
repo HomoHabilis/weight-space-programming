@@ -1,0 +1,43 @@
+{
+ "name": "base4b-think8k-em-r2",
+ "model": "base4b",
+ "edit_dir": null,
+ "lora_dir": null,
+ "set": "test",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5474,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.9302,
+  "medium": 0.2308
+ },
+ "no_code": 37,
+ "unfinished": 45,
+ "mean_tokens": 9533,
+ "outcomes": {
+  "passed": 52,
+  "no code": 37,
+  "wrong": 4,
+  "error": 2
+ },
+ "forced_stop": 71,
+ "timing_s": {
+  "build": 0.0,
+  "load": 92.8,
+  "generate": 3511.0,
+  "grade": 5.5,
+  "total": 3646.4
+ },
+ "tok_per_s": 258.0
+}

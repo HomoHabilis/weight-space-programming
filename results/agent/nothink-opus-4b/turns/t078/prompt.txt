@@ -1,0 +1,14 @@
+Output of code run 75 of 600:
+```
+######## 3684 substring-matching-pattern hasMatch
+You are given a string s and a pattern string p, where p contains exactly one '*' character. The '*' in p can be replaced with any sequence of zero or more characters. Return true if p can be made a substring of s, and false otherwise. A substring is a contiguous non-empty sequence of characters within a string.   Example 1:  Input: s = "leetcode", p = "ee*e" Output: true Explanation: By replacing the '*' with "tcod", the substring "eetcode" matches the pattern.  Example 2:  Input: s = "car", p 
+   wrong pub: wrong IN "leetcode"|"ee*e" EXP true GOT false
+   error pub: error IN "leetcode"|"ee*e" EXP true GOT tch|    if i + left_len + right_len > len(s):|                      ^^^^^^^^^|NameError: name 'right_len' is not defined
+   wrong pub: wrong IN "leetcode"|"ee*e" EXP true GOT false
+######## 3702 maximum-subarray-with-equal-products maxLength
+You are given an array of positive integers nums. An array arr is called product equivalent if prod(arr) == lcm(arr) * gcd(arr), where:  prod(arr) is the product of all elements of arr. gcd(arr) is the GCD of all elements of arr. lcm(arr) is the LCM of all elements of arr.  Return the length of the longest product equivalent subarray of nums. A subarray is a contiguous non-empty sequence of elements within an array. The term gcd(a, b) denotes the greatest common divisor of a and b. The term lcm(
+   error passes public
+   wrong pub: wrong IN [2, 3, 4, 5, 6] EXP 3 GOT 0
+   wrong pub: wrong IN [2, 3, 4, 5, 6] EXP 3 GOT 0
+
+```

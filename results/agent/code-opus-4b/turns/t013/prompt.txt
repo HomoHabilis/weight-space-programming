@@ -1,0 +1,54 @@
+Output of code run 12 of 600:
+```
+abc374_a 28203
+
+.....
+nput()` is safer for interactive but `sys.stdin.read()` is safer for bulk. Given "Sample Input", it's batch. `sys.stdin.read()` is fine.
+Actually, `input()` is safer because it reads line by line and returns immediately upon newline. `sys.stdin.read()` waits for EOF. In some local testing environments, if you run the script and type input, `sys.stdin.read()` waits for Ctrl-D. `input()` works with Enter.
+However, the prompt says "Read the inputs from stdin", usually implying a file redirection or standard competitive programming environment where input is provided fully.
+I will use `sys.stdin.read().strip()` because it handles the case where the input might not have a newline at the end (e.g. `takahashisan` with no newline) correctly, whereas `input()` might fail or behave differently depending on the environment implementation (though usually `input()` handles EOF).
+Actually, `input()` is the most standard for "Read S".
+Let's use `input()`.
+
+```python
+import sys
+
+def main():
+    try:
+        # Read the string S from standard input
+        s = sys.stdin.readline().strip()
+        # If readline is empty (EOF), s remains empty string. 
+        # But constraints say length >= 4.
+    except Exception:
+        s = ""
+
+    if s.endswith("san"):
+        print("Yes")
+    else:
+        print("No")
+
+if __name__ == "__main__":
+    main()
+```
+Wait, `sys.stdin.readline()` is better than `input()` for robustness in some environments, but `input()` is more readable.
+Let's just use `input()`.
+
+```python
+import sys
+
+# Read the input string S
+# We strip whitespace to ensure we get the exact string S
+s = sys.stdin.read().strip()
+
+if s.endswith("san"):
+    print("Yes")
+else:
+    print("No")
+```
+This is concise and correct. I'll wrap it in `if __name__ == "__main__":`.
+
+Wait, looking at the instruction "Enclose your code within delimiters as follows. Ensure that when the python program runs, it reads the inputs, runs the algorithm and writes output to STDOUT."
+The example block shows:
+``
+
+```

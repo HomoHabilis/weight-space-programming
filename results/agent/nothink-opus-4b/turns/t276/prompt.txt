@@ -1,0 +1,9 @@
+Output of code run 256 of 600:
+```
+{'D': 10, 'pass_': np.float64(0.74), 'fail': np.float64(0.97), 'A3': np.float64(0.93), 'B': np.float64(0.06), 'C': np.float64(0.59)}
+{'D': 12, 'pass_': np.float64(0.99), 'fail': np.float64(1.0), 'A3': np.float64(0.98), 'B': np.float64(0.15), 'C': np.float64(0.95)}
+{'D': 13, 'pass_': np.float64(1.0), 'fail': np.float64(1.0), 'A3': np.float64(0.98), 'B': np.float64(0.22), 'C': np.float64(1.0)}
+{'D': 14, 'pass_': np.float64(1.0), 'fail': np.float64(1.0), 'A3': np.float64(0.98), 'B': np.float64(0.43), 'C': np.float64(1.0)}
+['model.language_model.layers.31.mlp.down_proj.weight', 'model.language_model.layers.31.mlp.gate_proj.weight', 'model.language_model.layers.31.mlp.up_proj.weight']
+
+```

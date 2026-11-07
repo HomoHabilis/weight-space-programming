@@ -1,0 +1,10 @@
+Output of code run 138 of 600:
+```
+24 R-dir gap orig 7.00 v2 6.26 | AUC orig 0.861 v2 0.847 | Wait-lens gap orig 5.67 v2 2.20
+    R-dir orthogonal to Wait-unembedding: gap orig 6.78 v2 6.27
+28 R-dir gap orig 9.45 v2 8.38 | AUC orig 0.868 v2 0.854 | Wait-lens gap orig 7.86 v2 4.02
+    R-dir orthogonal to Wait-unembedding: gap orig 8.93 v2 8.28
+32 R-dir gap orig 32.92 v2 31.87 | AUC orig 0.827 v2 0.826 | Wait-lens gap orig 3.54 v2 2.96
+    R-dir orthogonal to Wait-unembedding: gap orig 32.37 v2 31.48
+
+```

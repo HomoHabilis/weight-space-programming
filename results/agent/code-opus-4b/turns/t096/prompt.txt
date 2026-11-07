@@ -1,0 +1,10 @@
+Output of code run 88 of 600:
+```
+3605 construct-the-minimum-bitwise-array-i ['no code', 'no code', 'no code']
+3616 make-array-elements-equal-to-zero ['no code', 'no code', 'no code']
+3617 find-the-original-typed-string-i ['wrong', 'no code', 'no code']
+3625 stone-removal-game ['timeout', 'no code', 'wrong']
+3684 substring-matching-pattern ['no code', 'no code', 'no code']
+abc375_b Traveling Takahashi Problem ['wrong', 'wrong', 'wrong']
+
+```

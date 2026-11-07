@@ -1,0 +1,19 @@
+Output of code run 48 of 600:
+```
+cat
+pub_wrong     25
+pub_passed    14
+truncated      6
+pub_error      6
+noncompile     5
+Name: count, dtype: int64
+cat
+pub_wrong      54
+truncated      41
+pub_passed     29
+pub_error      16
+noncompile     11
+pub_timeout     1
+Name: count, dtype: int64
+
+```

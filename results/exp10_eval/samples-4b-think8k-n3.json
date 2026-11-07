@@ -1,0 +1,43 @@
+{
+ "name": "samples-4b-think8k-n3",
+ "model": "base4b",
+ "edit_dir": null,
+ "set": "practice",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 3,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.4946,
+ "samples": 279,
+ "problems": 93,
+ "by_difficulty": {
+  "easy": 0.7967,
+  "medium": 0.2564
+ },
+ "no_code": 114,
+ "unfinished": 154,
+ "mean_tokens": 10443,
+ "outcomes": {
+  "passed": 138,
+  "no code": 114,
+  "wrong": 15,
+  "timeout": 2,
+  "error": 10
+ },
+ "forced_stop": 255,
+ "timing_s": {
+  "build": 0.0,
+  "load": 232.4,
+  "generate": 10948.8,
+  "grade": 17.7,
+  "total": 11263.0
+ },
+ "tok_per_s": 266.1
+}

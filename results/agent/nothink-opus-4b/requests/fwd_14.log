@@ -1,0 +1,83 @@
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<02:13,  3.18it/s]
+Loading weights:   1%|▏         | 6/426 [00:00<00:29, 14.05it/s]
+Loading weights:   5%|▌         | 23/426 [00:00<00:07, 54.41it/s]
+Loading weights:  10%|▉         | 41/426 [00:00<00:04, 82.56it/s]
+Loading weights:  12%|█▏        | 52/426 [00:00<00:04, 85.64it/s]
+Loading weights:  16%|█▌        | 67/426 [00:00<00:03, 101.66it/s]
+Loading weights:  21%|██        | 89/426 [00:01<00:02, 133.28it/s]
+Loading weights:  24%|██▍       | 104/426 [00:01<00:02, 123.23it/s]
+Loading weights:  28%|██▊       | 120/426 [00:01<00:02, 127.54it/s]
+Loading weights:  33%|███▎      | 141/426 [00:01<00:01, 149.32it/s]
+Loading weights:  37%|███▋      | 157/426 [00:01<00:01, 135.73it/s]
+Loading weights:  42%|████▏     | 178/426 [00:01<00:01, 154.94it/s]
+Loading weights:  46%|████▋     | 198/426 [00:01<00:01, 166.73it/s]
+Loading weights:  51%|█████     | 216/426 [00:01<00:01, 151.67it/s]
+Loading weights:  55%|█████▍    | 234/426 [00:02<00:01, 154.05it/s]
+Loading weights:  59%|█████▊    | 250/426 [00:02<00:01, 136.37it/s]
+Loading weights:  62%|██████▏   | 265/426 [00:02<00:02, 70.29it/s] 
+Loading weights:  65%|██████▌   | 277/426 [00:02<00:01, 76.78it/s]
+Loading weights:  68%|██████▊   | 288/426 [00:02<00:01, 79.09it/s]
+Loading weights:  70%|███████   | 299/426 [00:03<00:01, 70.08it/s]
+Loading weights:  72%|███████▏  | 308/426 [00:03<00:01, 68.45it/s]
+Loading weights:  74%|███████▍  | 317/426 [00:03<00:01, 64.76it/s]
+Loading weights:  77%|███████▋  | 330/426 [00:03<00:01, 75.81it/s]
+Loading weights:  80%|███████▉  | 339/426 [00:03<00:01, 77.06it/s]
+Loading weights:  83%|████████▎ | 355/426 [00:03<00:00, 95.75it/s]
+Loading weights:  86%|████████▌ | 366/426 [00:03<00:00, 97.00it/s]
+Loading weights:  90%|█████████ | 385/426 [00:03<00:00, 116.74it/s]
+Loading weights:  94%|█████████▎| 399/426 [00:04<00:00, 118.86it/s]
+Loading weights:  97%|█████████▋| 413/426 [00:04<00:00, 123.83it/s]
+Loading weights: 100%|██████████| 426/426 [00:04<00:00, 99.62it/s] 
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/nothink-opus-4b/work/fwd_14",
+ "texts": 19,
+ "lengths": [
+  4639,
+  5818,
+  4432,
+  868,
+  1258,
+  736,
+  1667,
+  1079,
+  1343,
+  1299,
+  1399,
+  1300,
+  1255,
+  1260,
+  1266,
+  969,
+  899,
+  1314,
+  695
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   19,
+   5818
+  ],
+  "token_logprobs.npy": [
+   19,
+   5818
+  ],
+  "topk_ids.npy": [
+   19,
+   5818,
+   20
+  ],
+  "topk_logprobs.npy": [
+   19,
+   5818,
+   20
+  ]
+ },
+ "s": 41.7
+}

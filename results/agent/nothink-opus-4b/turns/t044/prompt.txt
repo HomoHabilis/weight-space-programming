@@ -1,0 +1,15 @@
+Output of code run 42 of 600:
+```
+                  n  mean_nll  frac_not_top1       n_lt2      n_lt4  ent_proxy
+passed                                                                        
+False   1931.555556  0.390976       0.993339  103.944444  18.166667   0.195749
+True    1354.500000  0.339236       0.998067   69.444444  10.944444   0.168284
+passed
+False    54.542844
+True     47.996501
+dtype: float64 passed
+False    9.744363
+True     7.664424
+dtype: float64
+
+```

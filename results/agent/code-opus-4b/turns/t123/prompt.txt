@@ -1,0 +1,6 @@
+Output of code run 110 of 600:
+```
+46
+Counter({('base', True, True): 23, ('base', False, False): 11, ('v2', True, True): 4, ('base', True, False): 2, ('v2', False, False): 2, ('v2', True, False): 2, ('base', False, True): 1, ('v2', False, True): 1})
+
+```

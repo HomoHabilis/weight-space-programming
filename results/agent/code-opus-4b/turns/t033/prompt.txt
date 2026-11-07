@@ -1,0 +1,6 @@
+Output of code run 32 of 600:
+```
+[('3649', 'medium', 'passed'), ('3676', 'easy', 'passed'), ('abc374_b', 'easy', 'passed'), ('abc382_b', 'easy', 'passed'), ('abc384_a', 'easy', 'passed'), ('abc386_b', 'easy', 'passed'), ('abc378_a', 'easy', 'passed'), ('abc380_b', 'easy', 'passed'), ('3566', 'medium', 'no code'), ('abc384_d', 'medium', 'no code'), ('abc385_c', 'medium', 'no code'), ('abc379_c', 'medium', 'no code'), ('3616', 'easy', 'no code'), ('3613', 'medium', 'no code'), ('3655', 'medium', 'no code'), ('3716', 'medium', 'no code')]
+[7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900]
+
+```

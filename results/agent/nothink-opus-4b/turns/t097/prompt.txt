@@ -1,0 +1,6 @@
+Output of code run 91 of 600:
+```
+mean |dlp| per window [0.167 0.135 0.111 0.094 0.079]
+mean dlp (a-b) [0.079 0.052 0.039 0.037 0.027]
+
+```

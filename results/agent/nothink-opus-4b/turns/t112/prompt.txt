@@ -1,0 +1,28 @@
+Output of code run 104 of 600:
+```
+20
+baseline pass 0.433 trunc 0.117 median tok 3210.5
+                 p      tok       d
+id                                 
+abc385_b  0.666667    889.0    easy
+abc383_c  0.333333    973.0  medium
+abc382_b  0.666667   1152.0    easy
+3587      0.333333   1517.0  medium
+abc375_d  0.333333   2033.0  medium
+abc383_d  0.333333   2058.0  medium
+abc382_c  0.666667   2205.0  medium
+abc386_b  0.666667   2558.0    easy
+3616      0.333333   2856.0    easy
+3605      0.333333   3721.0    easy
+abc376_d  0.333333   4572.0  medium
+3502      0.333333   4655.0  medium
+abc385_c  0.333333   5428.0  medium
+3649      0.666667   6565.0  medium
+3617      0.333333   6893.0    easy
+3591      0.333333   7723.0  medium
+3655      0.333333   7796.0  medium
+3620      0.333333   9150.0  medium
+3621      0.666667  10275.0    easy
+abc384_d  0.333333  12288.0  medium
+
+```

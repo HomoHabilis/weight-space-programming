@@ -1,0 +1,111 @@
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<01:35,  4.46it/s]
+Loading weights:   1%|▏         | 6/426 [00:00<00:28, 14.98it/s]
+Loading weights:   3%|▎         | 14/426 [00:00<00:12, 32.22it/s]
+Loading weights:   6%|▌         | 26/426 [00:00<00:07, 53.16it/s]
+Loading weights:   8%|▊         | 33/426 [00:00<00:07, 53.67it/s]
+Loading weights:   9%|▉         | 40/426 [00:00<00:06, 57.08it/s]
+Loading weights:  11%|█         | 47/426 [00:01<00:09, 41.18it/s]
+Loading weights:  14%|█▍        | 61/426 [00:01<00:06, 56.60it/s]
+Loading weights:  16%|█▌        | 68/426 [00:01<00:07, 49.05it/s]
+Loading weights:  19%|█▊        | 79/426 [00:01<00:06, 55.07it/s]
+Loading weights:  21%|██        | 89/426 [00:01<00:05, 59.19it/s]
+Loading weights:  23%|██▎       | 96/426 [00:02<00:06, 49.89it/s]
+Loading weights:  24%|██▍       | 102/426 [00:02<00:06, 47.03it/s]
+Loading weights:  27%|██▋       | 114/426 [00:02<00:05, 57.51it/s]
+Loading weights:  28%|██▊       | 121/426 [00:02<00:06, 48.30it/s]
+Loading weights:  31%|███       | 131/426 [00:02<00:05, 58.40it/s]
+Loading weights:  32%|███▏      | 138/426 [00:02<00:05, 53.94it/s]
+Loading weights:  35%|███▍      | 147/426 [00:02<00:05, 55.70it/s]
+Loading weights:  36%|███▌      | 153/426 [00:03<00:05, 46.34it/s]
+Loading weights:  40%|████      | 171/426 [00:03<00:03, 69.50it/s]
+Loading weights:  42%|████▏     | 179/426 [00:03<00:03, 71.16it/s]
+Loading weights:  44%|████▍     | 187/426 [00:03<00:03, 61.59it/s]
+Loading weights:  47%|████▋     | 200/426 [00:03<00:03, 71.46it/s]
+Loading weights:  49%|████▉     | 208/426 [00:03<00:03, 59.60it/s]
+Loading weights:  52%|█████▏    | 220/426 [00:04<00:02, 68.78it/s]
+Loading weights:  54%|█████▎    | 228/426 [00:04<00:03, 57.37it/s]
+Loading weights:  56%|█████▌    | 237/426 [00:04<00:03, 61.33it/s]
+Loading weights:  57%|█████▋    | 244/426 [00:04<00:03, 53.26it/s]
+Loading weights:  59%|█████▉    | 251/426 [00:04<00:03, 56.41it/s]
+Loading weights:  61%|██████    | 258/426 [00:04<00:03, 44.49it/s]
+Loading weights:  62%|██████▏   | 265/426 [00:05<00:03, 48.55it/s]
+Loading weights:  65%|██████▍   | 276/426 [00:05<00:02, 59.31it/s]
+Loading weights:  66%|██████▋   | 283/426 [00:05<00:02, 55.68it/s]
+Loading weights:  68%|██████▊   | 290/426 [00:05<00:02, 58.09it/s]
+Loading weights:  70%|██████▉   | 297/426 [00:05<00:02, 52.92it/s]
+Loading weights:  71%|███████▏  | 304/426 [00:05<00:02, 54.92it/s]
+Loading weights:  73%|███████▎  | 310/426 [00:05<00:02, 39.57it/s]
+Loading weights:  74%|███████▍  | 315/426 [00:06<00:02, 40.80it/s]
+Loading weights:  77%|███████▋  | 326/426 [00:06<00:01, 52.44it/s]
+Loading weights:  78%|███████▊  | 332/426 [00:06<00:02, 43.22it/s]
+Loading weights:  80%|████████  | 341/426 [00:06<00:01, 52.71it/s]
+Loading weights:  82%|████████▏ | 348/426 [00:06<00:01, 45.57it/s]
+Loading weights:  84%|████████▍ | 357/426 [00:06<00:01, 54.36it/s]
+Loading weights:  85%|████████▌ | 364/426 [00:07<00:01, 33.12it/s]
+Loading weights:  87%|████████▋ | 371/426 [00:07<00:01, 37.04it/s]
+Loading weights:  90%|████████▉ | 382/426 [00:07<00:00, 48.89it/s]
+Loading weights:  91%|█████████▏| 389/426 [00:07<00:00, 47.50it/s]
+Loading weights:  93%|█████████▎| 397/426 [00:07<00:00, 49.74it/s]
+Loading weights:  95%|█████████▍| 403/426 [00:08<00:00, 39.48it/s]
+Loading weights:  96%|█████████▌| 410/426 [00:08<00:00, 41.29it/s]
+Loading weights:  97%|█████████▋| 415/426 [00:08<00:00, 24.36it/s]
+Loading weights:  98%|█████████▊| 419/426 [00:08<00:00, 24.04it/s]
+Loading weights: 100%|██████████| 426/426 [00:08<00:00, 47.73it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/code-opus-4b/work/fwd_16",
+ "texts": 9,
+ "lengths": [
+  8693,
+  8695,
+  8031,
+  9316,
+  9260,
+  9102,
+  12853,
+  13155,
+  13017
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   9,
+   13155
+  ],
+  "token_logprobs.npy": [
+   9,
+   13155
+  ],
+  "topk_ids.npy": [
+   9,
+   13155,
+   10
+  ],
+  "topk_logprobs.npy": [
+   9,
+   13155,
+   10
+  ],
+  "hidden_12.npy": [
+   9,
+   13155,
+   2560
+  ],
+  "hidden_20.npy": [
+   9,
+   13155,
+   2560
+  ],
+  "hidden_28.npy": [
+   9,
+   13155,
+   2560
+  ]
+ },
+ "s": 622.5
+}

@@ -1,0 +1,9 @@
+Output of code run 154 of 600:
+```
+kernel vars alive: ['P']
+['cand_E1', 'cand_E3', 'cand_E4', 'code_10.gen.jsonl', 'code_10.gen.jsonl.meta.json', 'code_10.gen.request.json', 'code_10.json', 'code_10.rows.jsonl', 'code_11.gen.jsonl', 'code_11.gen.jsonl.meta.json', 'code_11.gen.request.json', 'code_11.json', 'code_11.rows.jsonl', 'code_12.gen.jsonl', 'code_12.gen.jsonl.meta.json', 'code_12.gen.request.json', 'code_12.json', 'code_12.rows.jsonl', 'code_8.gen.jsonl', 'code_8.gen.jsonl.meta.json', 'code_8.gen.request.json', 'code_8.json', 'code_8.rows.jsonl', 'cp1_problems.json', 'edited', 'fwd_1', 'fwd_1.request.json', 'fwd_13', 'fwd_13.request.json', 'fwd_14', 'fwd_14.request.json', 'fwd_2', 'fwd_2.request.json', 'fwd_3', 'fwd_3.request.json', 'fwd_4', 'fwd_4.request.json', 'fwd_5', 'fwd_5.request.json', 'fwd_6', 'fwd_6.request.json', 'fwd_7', 'fwd_7.request.json', 'fwd_9', 'fwd_9.request.json', 'kernel_stderr.log', 'notes.md', 'tf10_texts.json', 'tf1_index.json', 'tf1_texts.json', 'tf2_index.json', 'tf2_texts.json', 'tf3_index.json', 'tf3_texts.json', 'tf5_texts.json', 'tf8_texts.json']
+['model.language_model.layers.27.self_attn.o_proj.weight', 'model.language_model.layers.31.self_attn.o_proj.weight']
+L 27 edited heads (h, scale): [(2, 0.0), (7, 0.0), (9, 0.0)]
+L 31 edited heads (h, scale): [(2, 0.0)]
+
+```

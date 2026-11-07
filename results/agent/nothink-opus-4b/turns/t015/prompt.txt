@@ -1,0 +1,8 @@
+Output of code run 14 of 600:
+```
+abc383_a None '' 43
+{'input': '4\n1 3\n3 1\n4 4\n7 1', 'output': '3', 'testtype': 'stdin'}
+3621 minOperations 'class Solution:\n    def minOperations(self, nums: List[int], k: int) -> int:\n        ' 34
+{'input': '[5, 2, 5, 4, 5]\n2', 'output': '2', 'testtype': 'functional'}
+
+```

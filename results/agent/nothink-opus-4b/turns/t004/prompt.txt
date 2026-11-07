@@ -1,0 +1,38 @@
+Output of code run 3 of 600:
+```
+                         mean  count
+platform difficulty                 
+atcoder  easy        0.680556     72
+         medium      0.347222     72
+leetcode easy        0.627451     51
+         medium      0.250000     84
+outcome
+passed     127
+wrong       88
+error       31
+no code     26
+timeout      6
+harness      1
+Name: count, dtype: int64
+         count          mean          std  ...      50%       75%      max
+outcome                                    ...                            
+error     31.0   3688.451613  3771.996216  ...   1679.0   6692.00  12288.0
+harness    1.0   4655.000000          NaN  ...   4655.0   4655.00   4655.0
+no code   26.0  12288.000000     0.000000  ...  12288.0  12288.00  12288.0
+passed   127.0   1599.716535  2240.538887  ...    580.0   1863.00  12288.0
+timeout    6.0   4618.833333  5227.892938  ...   2203.0   8302.75  12288.0
+wrong     88.0   4707.693182  4496.027532  ...   2599.0   8750.75  12288.0
+
+[6 rows x 8 columns]
+finished
+True     237
+False     42
+Name: count, dtype: int64
+passed
+0    32
+1    20
+2    16
+3    25
+Name: count, dtype: int64
+
+```

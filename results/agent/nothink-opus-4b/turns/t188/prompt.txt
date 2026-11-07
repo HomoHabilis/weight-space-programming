@@ -1,0 +1,35 @@
+Output of code run 173 of 600:
+```
+{'input': '"abacb"\n2', 'output': '4', 'testtype': 'functional'} numberOfSubstrings
+== 3502 2 2298 func numberOfSubstrings | ncode lines 118
+    "class Solution:\n    def numberOfSubstrings(self, s: str, k: int) -> int:\n        n = len(s)\n        if k == 1:\n            # If k is 1, every substring is valid because there's at least one character."
+== 3612 0 236 func hasIncreasingSubarrays | ncode lines 23
+    'class Solution:\n    def hasIncreasingSubarrays(self, nums: List[int], k: int) -> bool:\n        n = len(nums)\n        \n        # Identify all indices where a strictly increasing subarray of length k st'
+== 3605 1 7139 func minBitwiseArray | ncode lines 283
+    'class Solution:\n    def minBitwiseArray(self, nums: List[int]) -> List[int]:\n        def solve(n):\n            # We need to find the smallest x such that x | (x + 1) == n.\n            # Since n is pri'
+== 3591 1 7723 func shiftDistance | ncode lines 23
+    "class Solution:\n    def shiftDistance(self, s: str, t: str, nextCost: List[int], previousCost: List[int]) -> int:\n        total_shift_distance = 0\n        base_ord = ord('a')\n        \n        for char"
+== 3681 0 1075 func maxRectangleArea | ncode lines 115
+    'from typing import List\n\nclass Solution:\n    def maxRectangleArea(self, points: List[List[int]]) -> int:\n        n = len(points)\n        if n < 4:\n            return -1\n        \n        # Store points'
+== 3681 2 710 func maxRectangleArea | ncode lines 62
+    'class Solution:\n    def maxRectangleArea(self, points: List[List[int]]) -> int:\n        # Since the constraints are small (n <= 10), we can use a brute-force approach.\n        # We iterate over all po'
+== 3655 0 8068 func minOperations | ncode lines 80
+    'import heapq\n\nclass Solution:\n    def is_prime(self, num: int) -> bool:\n        """Returns True if num is prime, False otherwise."""\n        if num <= 1:\n            return False\n        if num == 2:\n'
+== 3613 0 1007 func maxAmount | ncode lines 94
+    'class Solution:\n    def maxAmount(self, initialCurrency: str, pairs1: List[List[str]], rates1: List[float], pairs2: List[List[str]], rates2: List[float]) -> float:\n        from collections import defa'
+== 3613 1 2909 func maxAmount | ncode lines 191
+    'class Solution:\n    def maxAmount(self, initialCurrency: str, pairs1: List[List[str]], rates1: List[float], pairs2: List[List[str]], rates2: List[float]) -> float:\n        from collections import defa'
+== 3613 2 7173 func maxAmount | ncode lines 536
+    'from collections import defaultdict\n\nclass Solution:\n    def maxAmount(self, initialCurrency: str, pairs1: List[List[str]], rates1: List[float], \n                  pairs2: List[List[str]], rates2: Lis'
+== 3686 2 10061 func beautifulSplits | ncode lines 391
+    'class Solution:\n    def beautifulSplits(self, nums: List[int]) -> int:\n        n = len(nums)\n        if n < 3:\n            return 0\n        \n        # Find the first index i such that nums[0:i+1] is a'
+== 3699 0 946 func numberOfSubsequences | ncode lines 75
+    'from collections import defaultdict\n\nclass Solution:\n    def numberOfSubsequences(self, nums: List[int]) -> int:\n        n = len(nums)\n        # Precompute counts of numbers with at least 2 elements b'
+== 3702 0 468 func maxLength | ncode lines 55
+    'class Solution:\n    def maxLength(self, nums: List[int]) -> int:\n        n = len(nums)\n        max_len = 0\n        \n        # Since the constraints are small (nums.length <= 100), \n        # we can it'
+== 3715 1 12288 func maximumCoins | ncode lines 50
+    'from typing import List\n\nclass Solution:\n    def maximumCoins(self, coins: List[List[int]], k: int) -> int:\n        coords = set()\n        for l, r, c in coins:\n            coords.add(l)\n            c'
+== 3684 1 497 func hasMatch | ncode lines 48
+    'class Solution:\n    def hasMatch(self, s: str, p: str) -> bool:\n        """\n        Checks if the pattern string p can be made a substring of s.\n        The pattern p contains exactly one \'*\' which ca'
+
+```

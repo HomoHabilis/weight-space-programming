@@ -1,0 +1,18 @@
+Output of code run 212 of 600:
+```
+fence positions 47
+total DLA (logit diff/ rho) at fence: mean 1.02 | elsewhere 1.05
+6215 dla fence 0.293 act fence 1.565 act else |mean| 0.8558 max else 5.969
+1913 dla fence 0.271 act fence 2.243 act else |mean| 0.2825 max else 5.938
+4074 dla fence 0.249 act fence -3.238 act else |mean| 1.3402 max else 11.562
+25 dla fence 0.219 act fence -5.044 act else |mean| 2.8943 max else 13.375
+84 dla fence 0.177 act fence 0.37 act else |mean| 1.3409 max else 17.25
+2586 dla fence 0.118 act fence -0.616 act else |mean| 0.2717 max else 2.906
+2995 dla fence 0.109 act fence 3.378 act else |mean| 1.7606 max else 8.625
+24 dla fence 0.107 act fence 2.722 act else |mean| 2.6121 max else 14.062
+2488 dla fence 0.097 act fence -1.203 act else |mean| 0.4894 max else 9.562
+19 dla fence 0.092 act fence -2.378 act else |mean| 2.0824 max else 11.938
+5711 dla fence 0.088 act fence 3.267 act else |mean| 2.7112 max else 13.625
+3943 dla fence 0.084 act fence -3.676 act else |mean| 2.3222 max else 11.75
+
+```

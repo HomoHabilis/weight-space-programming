@@ -1,0 +1,10 @@
+Output of code run 86 of 600:
+```
+               lines    refl   frac
+src  diff                          
+base easy    486.636  59.394  0.123
+     medium  411.701  64.448  0.159
+edit easy    451.818  27.000  0.056
+     medium  419.448  29.931  0.075
+
+```

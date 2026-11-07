@@ -1,0 +1,7 @@
+Output of code run 34 of 600:
+```
+{'ok': True, 'type': 'teacher_forced', 'dir': '<repo>/runs/agent/code-opus-4b/work/fwd_1', 'texts': 16, 'lengths': [7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900, 7900], 'token_logprobs_note': 'entry t is log p(token t | tokens < t); entry 0 is 0', 'files': {'token_ids.npy': [16, 7900], 'token_logprobs.npy': [16, 7900], 'topk_ids.npy': [16, 7900, 20], 'topk_logprobs.npy': [16, 7900, 20], 'hidden_8.npy': [16, 7900, 2560], 'hidden_16.npy': [16, 7900, 2560], 'hidden_20.npy': [16, 7900, 2560], 'hidden_24.npy': [16, 7900, 2560]}, 's': 474.7}
+0.09658227848101265
+28.125
+
+```

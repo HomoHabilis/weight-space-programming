@@ -1,0 +1,13 @@
+Output of code run 136 of 600:
+```
+orig pass 0.4 trunc 0.25 median tok 3559.0 mean tok 5312
+E4 pass 0.35 trunc 0.15 median tok 1965.0 mean tok 4239
+E3 pass 0.325 trunc 0.425 median tok 9342.0 mean tok 8269
+E1 pass 0.075 trunc 0.725 median tok 12288.0 mean tok 9105
+why
+wrong      12
+no code     8
+error       4
+Name: count, dtype: int64
+
+```

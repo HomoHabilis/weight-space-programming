@@ -1,0 +1,12 @@
+Output of code run 64 of 600:
+```
+            mean  median  <lambda_0>
+passed                              
+False   2.285714     1.0    0.660714
+True    2.288462     1.0    0.673077
+n_ver
+False    0.535354
+True     0.411111
+Name: passed, dtype: float64 0.6451612903225806
+
+```

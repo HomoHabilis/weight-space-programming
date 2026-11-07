@@ -1,0 +1,38 @@
+{
+ "name": "think8k-4b-p20",
+ "model": "base4b",
+ "edit_dir": null,
+ "set": "practice",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": 20,
+ "pass@1": 0.35,
+ "samples": 20,
+ "problems": 20,
+ "by_difficulty": {
+  "easy": 1.0,
+  "hard": 0.0,
+  "medium": 0.3333
+ },
+ "no_code": 12,
+ "unfinished": 14,
+ "mean_tokens": 11030,
+ "outcomes": {
+  "no code": 12,
+  "passed": 7,
+  "wrong": 1
+ },
+ "forced_stop": 19,
+ "timing_s": {
+  "build": 0.0,
+  "load": 236.6,
+  "generate": 910.3,
+  "grade": 1.2,
+  "total": 1185.5
+ },
+ "tok_per_s": 242.3
+}

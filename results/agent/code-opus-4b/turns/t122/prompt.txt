@@ -1,0 +1,25 @@
+Output of code run 109 of 600:
+```
+..C.C.#C11.#C5.#C6.CCC.#C.C#C.CC.C.C7.#C.#7.###.#6.#C###.##.#6.#.C5.#CCC.#C.CCC.#C5#9C.##.C6###.CCCC.CCC.C10.C6.CC.C8.CC.C7.C6.C5.CC.C.CCC.C6.CCC.#C.C#C.CC.C.C7.##C.###C.###C8.###CC.#C.##C.#CCC.#CCCC###.##CCC##CCC#5CC.CCCC.C10.CCC
+[3541, 7506, 10660, 13764] 14219
+e want minimum, and 2 is the smallest possible cycle length (simple cycle),
+                    # we can stop if min_cycle_len == 2. But let's just continue.
+    
+    if min_cycle_len == float('inf'):
+        print("-1")
+    else:
+        print(min_cycle_len)
+
+if __name__ == '__main__':
+    solve()
+```
+
+Wait, I should double check if the logic holds for the case where the shortest cycle passing through 1 is NOT found by checking `dist[u] + 1` for all `u` with incoming edge to 1.
+I reasoned earlier that any cycle $1 \to \dots \to u \to 1$ can be decomposed into a path from 1 to $u$ and an edge $(u, 1)$.
+The length is $L(path) + 1$.
+The shortest path from 1 to $u$ has length $dist[u]$.
+So the cycle length is $\ge dist[u] + 1$.
+Since we check all $u$ with incoming edge to 1, we will find a cycle of length $dist[u] + 1$.
+Is it possible that the shortest cycle passing through 1 is NOT formed 
+
+```

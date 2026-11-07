@@ -1,0 +1,7 @@
+Output of code run 15 of 600:
+```
+{'id': '3610', 'title': 'find-x-sum-of-all-k-long-subarrays-i', 'platform': 'leetcode', 'difficulty': 'easy', 'date': '2024-10-12', 'question': 'You are given an array nums of n integers and two integers k and x.\nThe x-sum of an array is calculated by the following procedure:\n\nCount the occurrences of all elements in the array.\nKeep only the o', 'starter': 'class Solution:\n    def findXSum(self, nums: List[int], k: int, x: int) -> List[int]:\n        ', 'func': 'findXSum', 'public': [{'input': '[1, 1, 2, 2, 3, 4, 2, 3]\n6\n2', 'output': '[6, 10, 12]', 'testtype': 'functional'}, {'input': '[3, 8, 7, 8, 7, 5]\n2\n2', 'output': '[11, 15, 15, 15, 12]', 'testtype': 'functional'}], 'n_tests': 33}
+33 {'input': '[1, 1, 2, 2, 3, 4, 2, 3]\n6\n2', 'output': '[6, 10, 12]', 'testtype': 'functional'}
+30 {'input': '5\n2 3 5 10 12\n', 'output': '17\n', 'testtype': 'stdin'}
+
+```

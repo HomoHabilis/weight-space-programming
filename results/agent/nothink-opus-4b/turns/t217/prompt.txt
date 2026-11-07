@@ -1,0 +1,26 @@
+Output of code run 202 of 600:
+```
+Counter({'wrong': 17, 'pass': 4})
+('abc374_b', 1, 357, 'pass')
+('abc374_b', 2, 276, 'wrong@2')
+('abc375_d', 0, 2033, 'wrong@0')
+('abc375_d', 2, 2123, 'wrong@0')
+('abc376_d', 1, 12288, 'pass')
+('abc376_d', 2, 3314, 'pass')
+('abc376_a', 1, 570, 'wrong@0')
+('abc376_a', 2, 416, 'wrong@0')
+('abc381_b', 2, 478, 'wrong@0')
+('abc382_c', 0, 3219, 'wrong@0')
+('abc383_c', 1, 10725, 'wrong@0')
+('abc383_c', 2, 529, 'wrong@0')
+('abc383_d', 1, 2058, 'wrong@0')
+('abc383_d', 2, 2229, 'wrong@0')
+('abc384_b', 0, 527, 'wrong@0')
+('abc384_d', 0, 12288, 'wrong@0')
+('abc384_d', 1, 2103, 'wrong@0')
+('abc385_a', 2, 870, 'pass')
+('abc385_c', 1, 6829, 'wrong@0')
+('abc386_a', 1, 911, 'wrong@4')
+('abc386_b', 0, 8268, 'wrong@1')
+
+```

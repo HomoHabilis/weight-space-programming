@@ -1,0 +1,113 @@
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:01<13:20,  1.88s/it]
+Loading weights:   1%|▏         | 6/426 [00:02<01:52,  3.75it/s]
+Loading weights:   2%|▏         | 9/426 [00:02<01:10,  5.96it/s]
+Loading weights:   3%|▎         | 12/426 [00:02<00:49,  8.31it/s]
+Loading weights:   4%|▎         | 15/426 [00:02<00:38, 10.56it/s]
+Loading weights:   5%|▌         | 23/426 [00:02<00:19, 20.99it/s]
+Loading weights:   7%|▋         | 28/426 [00:02<00:19, 20.88it/s]
+Loading weights:   9%|▊         | 37/426 [00:02<00:12, 32.36it/s]
+Loading weights:  10%|█         | 43/426 [00:03<00:12, 29.46it/s]
+Loading weights:  11%|█▏        | 48/426 [00:03<00:13, 27.40it/s]
+Loading weights:  12%|█▏        | 53/426 [00:03<00:12, 30.70it/s]
+Loading weights:  15%|█▍        | 62/426 [00:03<00:08, 41.57it/s]
+Loading weights:  16%|█▌        | 68/426 [00:03<00:10, 35.60it/s]
+Loading weights:  18%|█▊        | 78/426 [00:03<00:07, 47.40it/s]
+Loading weights:  20%|█▉        | 84/426 [00:04<00:08, 42.46it/s]
+Loading weights:  22%|██▏       | 92/426 [00:04<00:06, 50.12it/s]
+Loading weights:  23%|██▎       | 98/426 [00:04<00:08, 38.60it/s]
+Loading weights:  24%|██▍       | 103/426 [00:04<00:08, 37.32it/s]
+Loading weights:  26%|██▋       | 112/426 [00:04<00:06, 47.75it/s]
+Loading weights:  28%|██▊       | 118/426 [00:04<00:07, 41.14it/s]
+Loading weights:  30%|███       | 128/426 [00:05<00:06, 49.00it/s]
+Loading weights:  31%|███▏      | 134/426 [00:05<00:06, 44.89it/s]
+Loading weights:  34%|███▍      | 146/426 [00:05<00:05, 54.17it/s]
+Loading weights:  36%|███▌      | 152/426 [00:05<00:06, 43.44it/s]
+Loading weights:  37%|███▋      | 159/426 [00:05<00:05, 46.36it/s]
+Loading weights:  40%|████      | 171/426 [00:05<00:04, 58.89it/s]
+Loading weights:  42%|████▏     | 178/426 [00:06<00:04, 56.61it/s]
+Loading weights:  43%|████▎     | 185/426 [00:06<00:04, 53.39it/s]
+Loading weights:  45%|████▍     | 191/426 [00:06<00:04, 51.54it/s]
+Loading weights:  47%|████▋     | 199/426 [00:06<00:04, 52.11it/s]
+Loading weights:  48%|████▊     | 205/426 [00:06<00:06, 33.42it/s]
+Loading weights:  49%|████▉     | 210/426 [00:06<00:06, 35.06it/s]
+Loading weights:  52%|█████▏    | 223/426 [00:07<00:03, 51.34it/s]
+Loading weights:  54%|█████▍    | 230/426 [00:07<00:04, 46.02it/s]
+Loading weights:  56%|█████▌    | 238/426 [00:07<00:03, 49.03it/s]
+Loading weights:  57%|█████▋    | 244/426 [00:07<00:03, 47.29it/s]
+Loading weights:  59%|█████▉    | 252/426 [00:07<00:03, 48.20it/s]
+Loading weights:  61%|██████    | 258/426 [00:07<00:04, 36.54it/s]
+Loading weights:  62%|██████▏   | 263/426 [00:08<00:04, 38.58it/s]
+Loading weights:  64%|██████▍   | 274/426 [00:08<00:02, 50.82it/s]
+Loading weights:  66%|██████▌   | 280/426 [00:08<00:03, 41.23it/s]
+Loading weights:  68%|██████▊   | 290/426 [00:08<00:02, 52.29it/s]
+Loading weights:  70%|██████▉   | 297/426 [00:08<00:02, 43.46it/s]
+Loading weights:  72%|███████▏  | 305/426 [00:08<00:02, 50.08it/s]
+Loading weights:  73%|███████▎  | 311/426 [00:09<00:03, 32.48it/s]
+Loading weights:  74%|███████▍  | 316/426 [00:09<00:03, 33.87it/s]
+Loading weights:  77%|███████▋  | 327/426 [00:09<00:02, 46.39it/s]
+Loading weights:  78%|███████▊  | 334/426 [00:09<00:02, 33.77it/s]
+Loading weights:  81%|████████  | 344/426 [00:10<00:02, 39.60it/s]
+Loading weights:  82%|████████▏ | 350/426 [00:10<00:01, 38.20it/s]
+Loading weights:  84%|████████▍ | 357/426 [00:10<00:01, 42.40it/s]
+Loading weights:  85%|████████▍ | 362/426 [00:10<00:01, 39.84it/s]
+Loading weights:  86%|████████▌ | 367/426 [00:10<00:01, 40.55it/s]
+Loading weights:  89%|████████▉ | 379/426 [00:10<00:00, 52.63it/s]
+Loading weights:  90%|█████████ | 385/426 [00:10<00:00, 41.71it/s]
+Loading weights:  93%|█████████▎| 396/426 [00:11<00:00, 54.10it/s]
+Loading weights:  95%|█████████▍| 403/426 [00:11<00:00, 51.03it/s]
+Loading weights:  96%|█████████▌| 410/426 [00:11<00:00, 53.92it/s]
+Loading weights:  98%|█████████▊| 416/426 [00:11<00:00, 44.67it/s]
+Loading weights:  99%|█████████▉| 422/426 [00:11<00:00, 45.22it/s]
+Loading weights: 100%|██████████| 426/426 [00:11<00:00, 36.35it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/code-opus-4b/work/fwd_11",
+ "texts": 8,
+ "lengths": [
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   8,
+   4000
+  ],
+  "token_logprobs.npy": [
+   8,
+   4000
+  ],
+  "topk_ids.npy": [
+   8,
+   4000,
+   20
+  ],
+  "topk_logprobs.npy": [
+   8,
+   4000,
+   20
+  ],
+  "mlp_act_29.npy": [
+   8,
+   4000,
+   9216
+  ],
+  "mlp_act_30.npy": [
+   8,
+   4000,
+   9216
+  ]
+ },
+ "s": 62.0
+}

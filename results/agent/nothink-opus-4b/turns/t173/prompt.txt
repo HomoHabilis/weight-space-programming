@@ -1,0 +1,13 @@
+Output of code run 158 of 600:
+```
+mixed n 108
+prose-first in mixed: 13 pass 0.38461538461538464 | code-first 95 0.49473684210526314
+nblocks pass 1.25 fail 1.1964285714285714
+easy 123 prose-first frac 0.04
+medium 156 prose-first frac 0.24
+abc376_b False 'To solve this problem, we need to simulate the movement of two hands (left and right) on a ring of $N$ parts while adhering to specific constraints. The goal is to minimize the total number of operations required to satisfy a sequence of instructions'
+abc376_d False 'To solve this problem, we need to find the length of the shortest cycle that includes vertex 1 in a directed graph. If no such cycle exists, we should output -1.\n\n### Approach\nThis problem can be modeled as finding the shortest cycle passing through '
+abc376_c False 'To solve this problem, we need to determine the minimum size $x$ for a new box such that all $N$ toys can be placed into $N$ boxes (the $N-1$ existing boxes plus the new one). Each toy must fit in a box where the box size is greater than or equal to '
+abc376_c False 'To solve this problem, we need to determine the minimum size $x$ for a newly purchased box such that all $N$ toys can be placed into the $N$ available boxes (the $N-1$ existing ones plus the new one).\n\n### Approach\n\n1.  **Problem Analysis**:\n    - We'
+
+```

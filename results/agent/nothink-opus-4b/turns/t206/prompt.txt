@@ -1,0 +1,8 @@
+Output of code run 191 of 600:
+```
+['math', '.sqrt', '((', 'x', '1', '-x', '2', ')**', '2', ' +', ' (', 'y', '1', '-y', '2', ')**', '2', ')']
+['math', '.sqrt', '((', 'x', '1', '-x', '2', ')**', '2', ' +', ' **(', 'y', '1', '-y', '2', ')', '2', ')']
+'mum additional time needed to print the remaining segments.\n    \n    # Memoization table: key = (unprinted_mask, last_seg_idx, endpoint) -> value = float\n    \n    # Precompute distances between points.\n    def dist(p1, p2):\n        x1, y1 = p1\n        x2, y2 = p2\n        return math.sqrt((x1-x2)**2 + **(y1-y2)2)\n\n    # Coordinates are int'
+first occurrence of "**2" in s0 at 3366 of " (" tokens before?
+
+```

@@ -1,0 +1,59 @@
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/code-opus-4b/work/fwd_3",
+ "texts": 8,
+ "lengths": [
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000,
+  4000
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   8,
+   4000
+  ],
+  "hidden_21.npy": [
+   8,
+   4000,
+   2560
+  ],
+  "hidden_22.npy": [
+   8,
+   4000,
+   2560
+  ],
+  "hidden_23.npy": [
+   8,
+   4000,
+   2560
+  ],
+  "mlp_act_20.npy": [
+   8,
+   4000,
+   9216
+  ],
+  "mlp_act_21.npy": [
+   8,
+   4000,
+   9216
+  ],
+  "mlp_act_22.npy": [
+   8,
+   4000,
+   9216
+  ],
+  "mlp_act_23.npy": [
+   8,
+   4000,
+   9216
+  ]
+ },
+ "s": 77.9
+}

@@ -1,0 +1,13 @@
+Output of code run 127 of 600:
+```
+L31 h2 {'code': 0.319, 'comment': 0.375, 'prose': 0.367}
+L31 h0 {'code': 0.408, 'comment': 0.431, 'prose': 0.418}
+L31 h8 {'code': 0.462, 'comment': 0.43, 'prose': 0.399}
+L27(~hs26) h2 {'code': 0.393, 'comment': 0.473, 'prose': 0.489}
+L27(~hs26) h7 {'code': 0.625, 'comment': 0.694, 'prose': 0.714}
+L27(~hs26) h9 {'code': 0.585, 'comment': 0.684, 'prose': 0.685}
+L27(~hs26) h0 {'code': 0.308, 'comment': 0.343, 'prose': 0.353}
+L19(~hs20) h8 {'code': 0.502, 'comment': 0.561, 'prose': 0.573}
+L19(~hs20) h0 {'code': 0.388, 'comment': 0.404, 'prose': 0.413}
+
+```

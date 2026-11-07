@@ -1,0 +1,17 @@
+Output of code run 193 of 600:
+```
+<cell>:16: RuntimeWarning: Mean of empty slice
+com50 0.014 frac>0 0.47 15
+low50 0.009 frac>0 0.53 15
+cod50 -0.035 frac>0 0.38 16
+com100 0.09 frac>0 0.8 15
+low100 -0.009 frac>0 0.33 15
+cod100 -0.018 frac>0 0.44 16
+com200 0.121 frac>0 0.93 15
+low200 -0.017 frac>0 0.2 15
+cod200 0.021 frac>0 0.62 16
+com400 0.096 frac>0 0.87 15
+low400 -0.014 frac>0 0.2 15
+cod400 0.017 frac>0 0.56 16
+
+```

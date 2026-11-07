@@ -1,0 +1,32 @@
+Output of code run 10 of 600:
+```
+20              n     pass_  unfin      tok
+code_first                              
+False       25  0.360000   0.48  10142.0
+True        35  0.371429   0.20   4744.0
+platform  difficulty
+atcoder   easy           2
+          medium        20
+leetcode  easy           3
+          medium        18
+dtype: int64
+platform  difficulty
+atcoder   easy          0.972222
+          medium        0.722222
+leetcode  easy          0.941176
+          medium        0.785714
+Name: code_first, dtype: float64
+text
+To solve this problem, we need to determine the minimum number of oper    3
+To solve this problem, we need to determine the minimum size $x$ for a    2
+To solve this problem, we need to count the number of empty squares on    2
+To solve this problem, we need to count the number of pairs $(l, r)$ s    2
+To solve this problem, we need to efficiently manage a large number of    2
+To solve this problem, we need to determine if there exists a contiguo    2
+The problem asks us to find the maximum number of queries we can remov    2
+To solve this problem, we need to simulate the movement of two hands (    1
+To solve this problem, we need to find the length of the shortest cycl    1
+To solve this problem, we need to determine the smallest integer $x$ s    1
+Name: count, dtype: int64
+
+```

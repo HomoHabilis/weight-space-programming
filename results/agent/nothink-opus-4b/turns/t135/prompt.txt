@@ -1,0 +1,26 @@
+Output of code run 124 of 600:
+```
+          id       d  n_code  p_code  p_prose  tr_code  tr_prose
+0       3487  medium       2     0.0      0.0      1.0       1.0
+1       3607  medium       2     0.0      0.0      0.0       1.0
+2       3616    easy       2     0.0      1.0      0.0       0.0
+3       3617    easy       2     0.0      1.0      0.5       0.0
+4       3620  medium       1     1.0      0.0      0.0       0.5
+5       3629  medium       2     0.0      0.0      0.0       1.0
+6       3639  medium       2     1.0      1.0      0.0       0.0
+7       3649  medium       2     1.0      0.0      0.0       1.0
+8       3657  medium       2     0.0      0.0      0.5       1.0
+9       3676    easy       2     1.0      1.0      0.0       0.0
+10      3716  medium       2     0.0      0.0      1.0       0.0
+11  abc376_b  medium       2     0.0      0.0      0.0       0.0
+12  abc376_d  medium       2     0.5      0.0      0.0       1.0
+13  abc377_d  medium       1     1.0      1.0      0.0       0.0
+14  abc379_c  medium       1     0.0      0.0      0.0       1.0
+15  abc379_d  medium       1     0.0      0.0      1.0       0.5
+16  abc382_a    easy       2     1.0      1.0      0.0       0.0
+17  abc383_d  medium       2     0.5      0.0      0.0       0.0
+18  abc384_d  medium       1     0.0      0.5      0.0       1.0
+19  abc386_b    easy       2     0.5      1.0      0.0       0.0
+mean diff (code - prose) pass: 0.0  trunc: -0.25
+
+```

@@ -1,0 +1,97 @@
+TASK. You are given the weights of a language model, Qwen3.5-4B (text part: 32 layers of width 2,560; layers 3, 7, 11, 15, 19, 23, 27 and 31 are full-attention layers with 16 query heads and 4 key/value heads of size 256 and a gated output, the other 24 are Gated DeltaNet linear-attention layers with 16 key heads and 32 value heads of size 128; each layer has a SwiGLU MLP of width 9,216; RMSNorm; vocabulary 248,320; input embedding and output layer tied). It is larger than the GPU allows at full precision, so the forward-pass tool runs it in 4-bit (NF4); every matrix you edit is kept in bfloat16 there, so your edits are applied exactly. The weights you read in the kernel are the original bfloat16 weights. The vocabulary matrix (248,320 x 2,560) is 2.5 GB in float32: read the rows you need with load_rows(name, rows) instead of load(name). Your job is to make it BETTER AT COMPETITIVE PROGRAMMING by EDITING ITS WEIGHTS DIRECTLY: after your edit it should solve more LiveCodeBench problems (AtCoder and LeetCode, easy and medium) than it does now.
+
+HOW IT WILL BE MEASURED. After you finish, the edited model answers held-out problems from contests later than your practice problems (you never see them), with exactly the settings in /practice/settings.json: the model's chat template with THINKING DISABLED (the template inserts an empty thinking block, so the model answers directly), an answer of at most 12,288 tokens, sampled with the model card's settings for non-thinking mode. The last ```python block of the answer is run against all of the problem's tests (6 seconds per test); a problem counts as solved only if every test passes. The score is the share of problems solved, compared with the unedited model on the same problems and seeds (it solves about 52% of them). The weights are run in 4-bit (MXFP4) on the GPU, except the blocks (a layer's MLP or attention) holding a matrix you edited, which stay in bfloat16. Thinking-enabled mode is scored too: your edit should not make it worse.
+
+WHAT COUNTS. Edits that come from understanding the network: find what limits the model on these problems and where in the network that behaviour is produced, and change it there with changes you can justify with evidence. Out of scope, and refused by save_edit: the final norm (model.language_model.norm.weight), the input embedding / output layer (model.language_model.embed_tokens.weight, lm_head.weight), and any edit that only multiplies a whole tensor by a constant.
+
+WHAT YOU HAVE.
+1. A persistent Python kernel (no internet, no GPU): variables survive between your code blocks, like a notebook. The model's files are read-only in /model, your materials read-only in /practice, and /work is your read-write folder. Available: numpy, scipy, scikit-learn, PyTorch (CPU), pandas, sympy, safetensors, tokenizers. Defined in advance: NAMES (all tensor names), load(name) (a float32 torch tensor: your current edit if there is one, else the original), load_original(name), load_rows(name, rows) (only the listed rows, float32), save_edit(name, tensor), drop_edit(name), edited() and tok (a `tokenizers` Tokenizer for /model/tokenizer.json). Gradients are disabled. To run code, reply with exactly one block that starts with ```python and nothing else; if its last line is an expression, its value is shown. One execution may take up to 900 seconds and about 10 GB of memory (load a few tensors at a time, not the whole model); output is cut at 10,000 characters. You may run code up to 600 times. If the kernel is restarted, its variables are lost and you are told so.
+2. Your materials in /practice (see /practice/README.txt):
+ - problems.jsonl: the practice problems (statement, starter code, public examples, difficulty); tests/<id>.json.gz: all of each problem's tests.
+ - samples.jsonl: the unedited model's own answers to every practice problem, 3 each, generated with the evaluation's settings: the full text, the token count, whether it finished before the token limit, and the graded outcome (passed, no code, wrong, error, timeout).
+ - settings.json: exactly how prompts are built, answers generated and graded.
+3. A forward-pass tool with a budget of 24 forward passes in total. A pass is one of two things, and each counts as one pass:
+ (a) CODE: the model writes answers to practice problems with the evaluation's settings, graded on all tests. At most 8 of your passes can be code passes, each with at most 40 answers (problems x samples). Reply with exactly one block that starts with ```forward and contains JSON:
+ {"type": "code", "model": "original" or "edited", "problems": ["<practice id>", ...], "n": samples per problem (1 to 3)}
+ You get each answer's outcome and token counts; the full texts are saved in /work/code_<k>.gen.jsonl. A code pass takes about 5 minutes to load plus well under a minute per answer, so 15-30 minutes: choose its problems carefully.
+ (b) TEACHER-FORCED: the model reads up to 1,024 texts of up to 16,384 tokens each (no generation), limited by size: (number of texts) x (longest text) at most 131,072 tokens, and the returned arrays at most about 3.0 GB (each requested hidden-state layer costs 5 KB per padded token, each mlp_act layer 18 KB). It takes 1-3 minutes. Reply with a ```forward block containing JSON:
+ {"type": "teacher_forced", "model": "original" or "edited", "texts": ["raw text", ...] or "chats": [[{"role": "system", "content": "..."}, {"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}], ...] (chats use the chat template with thinking disabled, as in the evaluation; or pass the exact raw text of a sample, prompt included), "return": {"token_logprobs": true, "topk": k (at most 20), "hidden_states": [up to 4 layers in 0..32], "mlp_act": [up to 4 layers]}}
+ The results are .npy files (float16, right-padded to the longest text, with meta.json and token_ids.npy where padding is -1) in /work/fwd_<k>/. hidden_states[l]: 0 = embeddings, l = after layer l (the entry for the last layer is after the final norm); mlp_act[l] is the input of layer l's mlp.down_proj. token_logprobs[t] is log p(token t | tokens before t). Teacher-forced passes run the model in 4-bit NF4 (code passes use MXFP4); in both, edited blocks stay in bfloat16. A request that fails does not count against the budget.
+ LONG LISTS: instead of writing a list inline, you may save it in /work as a JSON list (or one JSON value per line) and give its path: "problems_file", "texts_file" or "chats_file" in place of "problems", "texts" or "chats".
+
+HOW TO WORK.
+1. Look before you write: study the samples to find what makes the model fail on problems it could solve, and measure where in the network the behaviour behind it is produced, with teacher-forced passes on real samples.
+2. Localize causally and test dose-response: show that a change at a place changes the behaviour the way you predicted, at several strengths, before spending a code pass.
+3. Check on problems you did not use to build the edit, and check that what already works keeps working: an edit that fixes some answers and breaks others is not a success. Code passes are the expensive, decisive test; teacher-forced passes are the cheap way to aim.
+4. Work efficiently: state the hypothesis of each code block in its first comment line; load things once into kernel variables; print compact summaries, never whole arrays or whole samples (print short excerpts); keep /work/notes.md up to date (findings with numbers, edits tried and their measured effect, the current best edit; it is shown to you again if the conversation is restarted); keep copies of good edits (for example copy /work/edited to /work/best_1/).
+
+RULES. Not allowed: (a) gradient descent or any other training: no backward passes, autograd or optimizers, and no iterative fitting of weights to a loss; (b) running the model other than through the forward-pass tool: do not implement or simulate the network's computation on any input in the kernel; (c) internet access or search (there is none). Allowed: any analysis of the weights and of forward-pass results, closed-form computations from them (for example solving a linear system for a weight change), and any direct edit of the weights that you compute and that is in scope. You may run the practice problems' tests on code in the kernel (it is ordinary Python, not the model).
+
+HOW THE SESSION RUNS. It continues until all 24 forward passes are used (replying without a code block does not end it earlier); after that, make your final choice (the tensors in /work/edited when you finish are submitted) and reply without a code block, saying what you changed, the evidence for it and why you expect it to generalize.
+
+
+THIS IS A NEW CONVERSATION continuing a session already in progress (the earlier conversation was closed to keep the context short). Used so far: 14 of 24 forward passes, 153 of 600 code runs. The kernel may have been restarted (reload your variables). Your files in /work are kept.
+
+YOUR NOTES (/work/notes.md):
+# Notes (weight-edit task: Qwen3.5-4B, LiveCodeBench non-thinking)
+## Baseline facts (samples.jsonl, 279 = 93 problems x 3)
+- pass 45.5% (AtC easy .68, med .35; LC easy .63, med .25). /model == HF original (sha256 verified).
+- 42 truncated at 12288 (1 pass): ~15 verbatim loops (12-gram tail repetition), ~27 meandering comment-deliberation.
+- 12 finished but non-compiling (prose lines inside code, '// ' comments, try w/o except, '+ **(a-b)2' token corruption).
+- 100 finished+compiling wrong: 71 FAIL THE PUBLIC EXAMPLES (verification failure), 29 pass public fail hidden.
+- Reasoning happens INSIDE code comments ('# Actually', '# But', '# So'); fail samples have more 'Actually/But/No' openers,
+  pass samples have more 'Check'/'Example' openers. Within mixed problems: fail n_wait 4.8 vs 1.9, tok 1436 vs 913.
+- Float output formatting matters (exact compare): abc375_b fails at .15f.
+- avoid literal triple backticks in kernel code (breaks parsing) -> BT='`'*3
+## Passes used
+- TF1 (orig): 36 samples (18 pass/18 fail) truncated to 2400 ans tokens, logprobs+top20+hs[8,16,22,28]. files /work/tf1_*.json
+
+## Findings (cont.)
+- TF1/TF2: in long code-first deliberation, P(' #') at line starts -> 0.998 (comment lock-in); P(backtrack markers) late is ~0 -> meandering is step-by-step elaboration, not 'Wait' loops. Backtrack-token suppression (NoWait-like) would NOT address truncation.
+- truncation/loops mostly on problems the model can't solve anyway (loop siblings rarely pass) -> limited upside (~1-2%).
+- 86% of sampled tokens with lp<-4 are NOVEL tokens (presence penalty effect).
+- 4.4% of sampled tokens fall outside the NF4 model's nucleus -> MXFP4 vs NF4 differ notably (quantization noise is large).
+- Massive dim 0 in residual (h0 ~ +14 at layer 30/31; layer-31 MLP neurons 162,3705,242 cancel it, final share0 ~5%) -> entropy-via-null-space lever is weak (~3%).
+- IS proxy (TF3: 16 short mixed problems x3): passing samples are more mode-like per token in 13/16 problems; sharpening alpha=1.15 -> IS pass .54->.69 (biased proxy).
+- TF3 = /work/fwd_3 (48 samples full length, hs31/32, mlp_act31). index /work/tf3_index.json
+
+- TF5 (orig): answer text framed as non-thinking (after empty think) vs inside <think>: mode gap along d decays over answer (L24 2.12->1.32 over 6k tok), 
+  per-token |dlp| between framings .167->.079. BUT framing barely changes P(' #') at line starts (.481 vs .490) or backtrack P (.063 vs .070)
+  -> 'answer-mode decay' is NOT what drives deliberation. Rejected.
+- within-problem pass/fail mean-hidden probe: LOO acc ~0.69 (16 problems) -> weak.
+
+- Copy-suppression heads (hidden-based OV copy score, negative): L19h8, L23h3,h14, L27h2,h7,h9, L31h2.
+  E1 = ablate their o_proj columns (gamma=1): TF3 dlp overall -0.11; code seen -0.017 vs novel -0.128; comment seen -0.064 vs novel -0.377;
+  3651 bug token '(target' (novel) -3.9 -> -7.9. within-problem proxy 0.69, IS .62. E2 (gamma=.5): -0.028 overall, proxy 0.56 (neutral).
+- IS proxy for reducing presence penalty 1.5->0.5: within 0.875 (passing samples favored) -> penalty-induced novel picks hurt.
+- CP1: E1 on 20 mixed problems not in TF3 (cp1_problems.json), n=2. baseline 43.3% pass, 11.7% trunc.
+
+- CP1 RESULT (E1, ablate 7 copy-suppression heads): pass 3/40 = 7.5% (baseline 43%), 29/40 NO CODE: verbatim loops (ngram rep=1.0).
+  => CAUSAL: these heads are the model's anti-repetition machinery. IS proxy (likelihood of existing samples) is blind to loops -> unreliable for generation dynamics.
+- BUG: cut_text decode skipped special tokens: TF2 texts 0-3 and TF8 loop texts lacked <|im_start|>/<|im_end|>. Fixed (skip_special_tokens=False).
+- TF9 (E3 = heads x1.5) on 16 passing TF3 samples: dlp -0.026/token (code seen -.012, novel -.006; comment seen -.032 novel -.046). loop texts invalid (bug).
+- CP2: E3 on CP1 problems n=2.
+- CP2 RESULT (E3, heads x1.5): 13/40=32.5% (baseline 43%), 17/40 truncated, 12 of them loops ('# Ok. I'll write the code.' cycles); tokens up ~2x.
+  => copy-suppression strength: 0x -> 7.5%, 1x -> 43%, 1.5x -> 32.5%. Baseline is near optimum; dead end as an improvement knob.
+- 3651: NF4 TF gives decisive bug token '(target' p~0.02, yet 2/3 MXFP4 samples chose it -> quantization (MXFP4) likely shifts decisions.
+- Copy-suppression heads: gates are less open in code (e.g. L31h2 .32 code vs .375 comment; L27h9 .585 vs .684) -> model already down-weights suppression in code.
+- P(' #') after a code line vs suppression strength (TF): x0 .181, x0.5 .203, x1 .230, x1.5 .254 -> suppression promotes continued commenting.
+- E1 loops include short-period CODE loops ('humidifier_positions_set = set()' x many) -> code-only reduction risky.
+- answer-mode vs think-mode: ' Wait' is .54 nats less likely in answer mode.
+- CP3: x0.75 (E4) on CP1 set.
+- CP3 RESULT (E4, x0.75): 14/40=35%, trunc 6/40; much shorter answers on AtCoder (abc376_d 2/2 at ~2.4k tok). Dose: 0->7.5, .75->35, 1->43.3(sample-based), 1.5->32.5.
+  CAVEAT: sample-based baseline on 'mixed' problems is biased toward 50% (selection on 1-2/3 passes) -> need original-model control pass on same set (CP4).
+- CP4 (ORIGINAL control on CP1 set): 16/40=40%, trunc 10/40 (4 loops, 6 meander), median tok 3559.
+  E4 (x0.75): 35%, trunc 6/40 (ALL loops, 0 meander), median tok 1965. E3: 32.5%, trunc 17, median 9342. E1: 7.5%.
+  => copy-suppression = 1-D trade-off knob (meandering/verbosity <-> verbatim loops); no accuracy gain detectable. E4 loops are in comments.
+
+
+CURRENT EDIT (/work/edited): model.language_model.layers.27.self_attn.o_proj.weight, model.language_model.layers.31.self_attn.o_proj.weight
+
+LAST MESSAGE OF THE PREVIOUS CONVERSATION:
+Output of code run 153 of 600:
+```
+L31 {0: (0.011, 0.395), 1: (0.011, 0.379), 2: (0.007, 0.388), 3: (0.01, 0.368), 4: (0.011, 0.289), 5: (0.008, 0.289), 6: (0.016, 0.358), 7: (0.014, 0.568), 8: (0.022, 0.443), 9: (0.211, 0.494), 10: (0.021, 0.547), 11: (0.037, 0.437), 12: (0.055, 0.565), 13: (0.074, 0.664), 14: (0.028, 0.63), 15: (0.022, 0.524)}
+L27~ {0: (0.013, 0.245), 1: (0.005, 0.183), 2: (0.093, 0.524), 3: (0.016, 0.256), 4: (0.009, 0.285), 5: (0.01, 0.325), 6: (0.009, 0.293), 7: (0.024, 0.553), 8: (0.014, 0.244), 9: (0.034, 0.506), 10: (0.016, 0.236), 11: (0.014, 0.248), 12: (0.016, 0.219), 13: (0.022, 0.198), 14: (0.047, 0.368), 15: (0.018, 0.212)}
+
+```

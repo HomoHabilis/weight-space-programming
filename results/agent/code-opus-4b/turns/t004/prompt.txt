@@ -1,0 +1,37 @@
+Output of code run 3 of 600:
+```
+difficulty
+easy      0.796748
+medium    0.256410
+Name: passed, dtype: float64 0.4946236559139785
+forced_stop  False  True 
+outcome                  
+error            0     10
+no code          0    114
+passed          23    115
+timeout          0      2
+wrong            1     14
+passed                  False  True 
+difficulty forced_stop              
+easy       False            1     22
+           True            24     76
+medium     False            0      1
+           True           116     39
+count     279.000000
+mean     7962.215054
+std       971.791121
+min       903.000000
+25%      8192.000000
+50%      8192.000000
+75%      8192.000000
+max      8192.000000
+Name: think_tokens, dtype: float64
+platform
+atcoder     48
+leetcode    45
+Name: count, dtype: int64 difficulty
+medium    52
+easy      41
+Name: count, dtype: int64
+
+```

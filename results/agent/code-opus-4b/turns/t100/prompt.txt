@@ -1,0 +1,10 @@
+Output of code run 91 of 600:
+```
+zero_med 16 edited pass 5  baseline exp 0.0
+easy_zero 5 edited pass 1  baseline exp 0.0
+full_med 2 edited pass 2  baseline exp 2.0
+full_easy 17 edited pass 17  baseline exp 17.0
+total 25
+zero-med passed: ['3681', 'abc375_d', 'abc376_b', 'abc376_d', 'abc379_d']  easy-zero passed: ['3605']
+
+```

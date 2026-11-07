@@ -1,0 +1,94 @@
+2026-11-07 13:34:30 comparing code-opus-4b and nothink-opus-4b with qlora-4b
+2026-11-07 13:34:31 verdict: COMBINE
+2026-11-07 13:34:33 combined edit: model.language_model.layers.22.mlp.down_proj.weight.npy model.language_model.layers.27.mlp.down_proj.weight.npy model.language_model.layers.31.mlp.down_proj.weight.npy model.language_model.layers.31.mlp.gate_proj.weight.npy model.language_model.layers.31.mlp.up_proj.weight.npy 
+{
+ "name": "combined-4b-think8k",
+ "model": "base4b",
+ "edit_dir": "runs/exp10/combined-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.6105,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.9535,
+  "medium": 0.3269
+ },
+ "no_code": 23,
+ "unfinished": 47,
+ "mean_tokens": 9248,
+ "outcomes": {
+  "passed": 58,
+  "wrong": 10,
+  "no code": 23,
+  "error": 2,
+  "harness": 1,
+  "timeout": 1
+ },
+ "forced_stop": 60,
+ "timing_s": {
+  "build": 152.5,
+  "load": 486.5,
+  "generate": 3882.4,
+  "grade": 10.6,
+  "total": 4572.1
+ },
+ "tok_per_s": 226.3
+}
+{
+ "name": "combined-4b-nothink12k",
+ "model": "base4b",
+ "edit_dir": "runs/exp10/combined-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": false,
+ "max_tokens": 12288,
+ "think_budget": null,
+ "answer_tokens": null,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5474,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.7907,
+  "medium": 0.3462
+ },
+ "no_code": 13,
+ "unfinished": 17,
+ "mean_tokens": 4099,
+ "outcomes": {
+  "passed": 52,
+  "wrong": 21,
+  "no code": 13,
+  "timeout": 3,
+  "error": 4,
+  "harness": 2
+ },
+ "forced_stop": 0,
+ "timing_s": {
+  "build": 0.0,
+  "load": 264.6,
+  "generate": 1593.8,
+  "grade": 10.3,
+  "total": 1907.2
+ },
+ "tok_per_s": 244.3
+}
+2026-11-07 15:22:32 done: runs/exp10_eval/combined-4b-think8k.json, runs/exp10_eval/combined-4b-nothink12k.json

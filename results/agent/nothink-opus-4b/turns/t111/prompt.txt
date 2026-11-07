@@ -1,0 +1,13 @@
+Output of code run 103 of 600:
+```
+E2 overall dlp -0.0276 | pass-sample NLL change 0.0263
+           mean          size      
+seen      False   True  False True 
+reg                                
+code    -0.0304  0.0006  3302  8083
+comment -0.1110 -0.0102  4502  9210
+IS rate 0.573 within per-token (np.float64(0.0042), np.float64(0.562))
+3651 (target -3.9 -7.88 -6.0
+3651 (target -4.02 -7.63 -6.0
+
+```

@@ -1,0 +1,6 @@
+Output of code run 265 of 600:
+```
+V3 thinking-proxy: P(EOS) raw pct [0.229 0.357 0.696 0.84  0.944]
+sampler P(continue) mean 0.12 | frac fully ending 0.78
+
+```

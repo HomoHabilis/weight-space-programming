@@ -1,0 +1,139 @@
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:00<06:22,  1.11it/s]
+Loading weights:   1%|▏         | 6/426 [00:01<01:00,  6.99it/s]
+Loading weights:   2%|▏         | 9/426 [00:01<00:40, 10.40it/s]
+Loading weights:   3%|▎         | 13/426 [00:01<00:29, 13.98it/s]
+Loading weights:   5%|▌         | 22/426 [00:01<00:15, 26.18it/s]
+Loading weights:   6%|▋         | 27/426 [00:01<00:13, 28.86it/s]
+Loading weights:  10%|▉         | 41/426 [00:01<00:07, 49.21it/s]
+Loading weights:  11%|█▏        | 48/426 [00:01<00:07, 49.35it/s]
+Loading weights:  15%|█▌        | 66/426 [00:02<00:04, 76.46it/s]
+Loading weights:  19%|█▉        | 81/426 [00:02<00:03, 90.12it/s]
+Loading weights:  22%|██▏       | 94/426 [00:02<00:03, 98.12it/s]
+Loading weights:  25%|██▍       | 105/426 [00:02<00:04, 78.48it/s]
+Loading weights:  28%|██▊       | 118/426 [00:02<00:03, 89.81it/s]
+Loading weights:  31%|███       | 132/426 [00:02<00:03, 96.80it/s]
+Loading weights:  34%|███▎      | 143/426 [00:02<00:04, 69.34it/s]
+Loading weights:  36%|███▌      | 152/426 [00:03<00:05, 49.05it/s]
+Loading weights:  37%|███▋      | 159/426 [00:03<00:05, 49.75it/s]
+Loading weights:  39%|███▉      | 168/426 [00:03<00:04, 55.66it/s]
+Loading weights:  42%|████▏     | 181/426 [00:03<00:03, 62.46it/s]
+Loading weights:  44%|████▍     | 189/426 [00:03<00:03, 63.04it/s]
+Loading weights:  46%|████▌     | 196/426 [00:03<00:03, 63.44it/s]
+Loading weights:  48%|████▊     | 204/426 [00:04<00:03, 60.88it/s]
+Loading weights:  50%|████▉     | 211/426 [00:04<00:03, 62.92it/s]
+Loading weights:  52%|█████▏    | 220/426 [00:04<00:03, 60.85it/s]
+Loading weights:  53%|█████▎    | 227/426 [00:04<00:03, 53.55it/s]
+Loading weights:  56%|█████▌    | 237/426 [00:04<00:03, 60.89it/s]
+Loading weights:  57%|█████▋    | 244/426 [00:04<00:03, 52.77it/s]
+Loading weights:  59%|█████▉    | 251/426 [00:04<00:03, 54.70it/s]
+Loading weights:  60%|██████    | 257/426 [00:05<00:06, 24.73it/s]
+Loading weights:  62%|██████▏   | 262/426 [00:05<00:07, 21.24it/s]
+Loading weights:  62%|██████▏   | 266/426 [00:06<00:06, 22.94it/s]
+Loading weights:  65%|██████▍   | 276/426 [00:06<00:04, 33.38it/s]
+Loading weights:  66%|██████▌   | 281/426 [00:06<00:04, 29.43it/s]
+Loading weights:  68%|██████▊   | 288/426 [00:06<00:03, 36.07it/s]
+Loading weights:  69%|██████▉   | 293/426 [00:07<00:06, 21.86it/s]
+Loading weights:  71%|███████   | 302/426 [00:07<00:04, 30.89it/s]
+Loading weights:  72%|███████▏  | 308/426 [00:07<00:03, 32.58it/s]
+Loading weights:  73%|███████▎  | 313/426 [00:07<00:04, 27.42it/s]
+Loading weights:  75%|███████▍  | 318/426 [00:07<00:03, 30.63it/s]
+Loading weights:  78%|███████▊  | 331/426 [00:07<00:01, 48.78it/s]
+Loading weights:  81%|████████  | 345/426 [00:07<00:01, 60.50it/s]
+Loading weights:  84%|████████▍ | 359/426 [00:08<00:00, 75.07it/s]
+Loading weights:  87%|████████▋ | 369/426 [00:08<00:00, 79.80it/s]
+Loading weights:  90%|█████████ | 385/426 [00:08<00:00, 98.74it/s]
+Loading weights:  96%|█████████▌| 407/426 [00:08<00:00, 126.21it/s]
+Loading weights:  99%|█████████▉| 421/426 [00:08<00:00, 119.32it/s]
+Loading weights: 100%|██████████| 426/426 [00:08<00:00, 50.10it/s] 
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/nothink-opus-4b/work/fwd_15",
+ "texts": 48,
+ "lengths": [
+  1803,
+  1160,
+  582,
+  1771,
+  855,
+  2158,
+  750,
+  925,
+  557,
+  600,
+  968,
+  1154,
+  1945,
+  977,
+  648,
+  1004,
+  867,
+  564,
+  475,
+  630,
+  1159,
+  2663,
+  1064,
+  1047,
+  1821,
+  1266,
+  474,
+  415,
+  1667,
+  850,
+  1106,
+  2070,
+  1709,
+  1693,
+  825,
+  446,
+  1232,
+  1687,
+  1169,
+  2063,
+  1660,
+  994,
+  497,
+  591,
+  946,
+  577,
+  562,
+  1673
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   48,
+   2663
+  ],
+  "token_logprobs.npy": [
+   48,
+   2663
+  ],
+  "topk_ids.npy": [
+   48,
+   2663,
+   20
+  ],
+  "topk_logprobs.npy": [
+   48,
+   2663,
+   20
+  ],
+  "hidden_28.npy": [
+   48,
+   2663,
+   2560
+  ],
+  "hidden_31.npy": [
+   48,
+   2663,
+   2560
+  ]
+ },
+ "s": 74.1
+}

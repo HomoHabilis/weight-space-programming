@@ -1,0 +1,6 @@
+Output of code run 243 of 600:
+```
+with B 7 max len 3600 | noB 33
+25 3611 90275
+
+```

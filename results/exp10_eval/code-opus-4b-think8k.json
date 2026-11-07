@@ -1,0 +1,44 @@
+{
+ "name": "code-opus-4b-think8k",
+ "model": "base4b",
+ "edit_dir": "runs/agent/code-opus-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.6105,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.9302,
+  "medium": 0.3462
+ },
+ "no_code": 26,
+ "unfinished": 38,
+ "mean_tokens": 8855,
+ "outcomes": {
+  "passed": 58,
+  "no code": 26,
+  "wrong": 9,
+  "error": 1,
+  "timeout": 1
+ },
+ "forced_stop": 61,
+ "timing_s": {
+  "build": 48.6,
+  "load": 251.2,
+  "generate": 3574.9,
+  "grade": 10.2,
+  "total": 3926.5
+ },
+ "tok_per_s": 235.3
+}

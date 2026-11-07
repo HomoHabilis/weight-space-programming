@@ -1,0 +1,32 @@
+Output of code run 85 of 600:
+```
+324
+| The problem asks us to find the $K_i$-th character of a string $S$ after $10^{100}$ operations.
+| Let $L_0 = |S^{(0)}|$.
+| $S^{(N)}[i]$ (using 0-based indexing for calculation, but problem uses 1-based) depends on $S^{(N-1)}$.
+| So $S^{(2)} = S^{(0)} \cdot \text{inv}(S^{(0)}) \cdot \text{inv}(S^{(0)}) \cdot S^{(0)}$.
+| Since $10^{100} \gg 60$, the character at index $K$ in $S^{(10^{100})}$ is the same as the character at index 
+| Recursive step: $S^{(n)} = S^{(n-1)} + \text{inv}(S^{(n-1)})$.
+| If $K > 2^{N-1} L_0$, then $S^{(N)}[K]$ comes from $\text{inv}(S^{(N-1)})[K - 2^{N-1} L_0]$.
+| Let's check the condition $K > 2^{N-1} L_0$.
+| Then for any $N \ge n_{min}$, we have $K \le 2^{N-1} L_0$ is NOT necessarily true.
+| $S^{(1)}[2]$ is from second half of $S^{(0)}$.
+| If $K' \le 2^{m-1} L_0$, then $S^{(m)}[K']$ comes from $S^{(m-1)}[K']$.
+|   But $K \le 10^{18}$, so this happens when $n$ is small.
+|   So $K$ is in the second half of $S^{(n_{max}+1)}$.
+| We want to find the character at index $K$.
+| Then for all $N \ge n_{start}$, $K \le L_{N-1}$ is NOT necessarily true.
+| Actually, since $N$ is huge, we can just start from $N=10^{100}$ and reduce $N$ until $L_N \ge K$.
+|   Let's say we are at level $n$. $L_{n-1} < pos \le L_n$.
+|   When we are at $n=1$, $L_0 < pos \le L_1$.
+| If yes, we are in the first half. The character is the same as at index $K$ in $S^{(i-1)}$.
+| If $K \le L_{i-1}$, we are in first half, no flip.
+| Constraints: $Q \le 2 \times 10^5$.
+|     $n \leftarrow n + 1$
+|   So $S^{(N)}[K] = S^{(N-1)}[K]$.
+|   So we can just iterate $i$ from $m-1$ down to 0.
+|   If yes, $K$ is in first half of $S^{(i)}$. So we just continue to $i-1$.
+|   We have index 1 in $S^{(0)}$.
+|   Index 1 in $S^{(0)}$.
+
+```

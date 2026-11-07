@@ -1,0 +1,17 @@
+Output of code run 42 of 600:
+```
+0.19630314232902032 0 0 0.0005339778144843876
+1 7588 0.001 0.0 '1111111_2 = 1023$.\n   Correct.\n   \n   So the code is very simple.\n' -> '\n   ```python\n   cla'
+3 3308 0.0 0.0 ntation:**\n   Iterate through string. Collect indices.\n   Determine which indices to keep.\n   Build result string.\n' -> 'Print result.\n   \n  '
+3 3248 0.0 0.0 '.\n   \n   **Constraints:**\n   $N, D \\le 100$. Very small. $O(N)$ is trivial.\n' -> '\n   **Input Reading:'
+2 1677 0.0 0.0 nputs where whitespace separates tokens. However, the problem statement says "S \\n T". Usually `input()` works fine.\n' -> '- Constraints: lengt'
+7 1910 0.0 0.0  iterate through the string and count the dashes between `|`s. Or just split.\n\n    Let's implement the split logic.\n" -> '$S$ is guaranteed to'
+1 7358 0.0 0.0 ' the smallest all-1s number $\\ge n$.\n   \n   So the solution is simply `(1 << n.bit_length()) - 1`.\n' -> "\n   Wait, let's chec"
+3 2612 0.0 0.0 ' $N-1$:\n   If $i$ is in the set of "kept" indices, output \'@\'.\n   Else output \'.\'.\n' -> '\n   Wait, if $N'
+3 1623 0.0 0.0 '   6: @\n   7: .\n   8: @\n   9: @\n   10: .\n' -> '\n   Cookies at indic'
+3 3006 0.0 0.0 \n\n   So the logic is simply: Identify all indices of '@'. Keep the first `count - D` indices. Mark the rest as '.'.\n" -> '\n   Wait, is it that'
+1 5311 0.0 0.0 ' So 7 is the answer.\n   This works.\n   Given $n \\le 1000$, we can just loop.\n' -> 'But finding bit leng'
+7 550 0.0 0.0 "i$ from 1 to $N$.\n    *   Append $A_i$ copies of '-'.\n    *   Append one '|'.\n" -> '3.  **Goal:** Re'
+1 6545 0.0 0.0 ' is 8. $8-1=7$. Correct.\n   So the formula is `(1 << n.bit_length()) - 1`.\n' -> '\n   Wait, is it poss'
+
+```

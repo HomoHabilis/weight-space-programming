@@ -1,0 +1,6 @@
+Output of code run 52 of 600:
+```
+107
+[(767, '```python\n'), (770, 'import sys\n\n'), (773, 'def solve():\n'), (777, '    # Read H, W, D\n'), (786, '    try:\n'), (790, '        line1 = sys.stdin.readline().spl'), (801, '        if not line1:\n'), (808, '            return\n'), (811, '        H = int(line1[0])\n'), (821, '        W = int(line1[1])\n'), (831, '        D = int(line1[2])\n'), (841, '        \n')]
+
+```

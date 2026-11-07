@@ -1,0 +1,6 @@
+Output of code run 133 of 600:
+```
+0.75
+530
+
+```

@@ -1,0 +1,137 @@
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/426 [00:01<13:38,  1.93s/it]
+Loading weights:   1%|▏         | 6/426 [00:02<01:53,  3.71it/s]
+Loading weights:   3%|▎         | 11/426 [00:02<00:55,  7.42it/s]
+Loading weights:   3%|▎         | 14/426 [00:02<00:46,  8.91it/s]
+Loading weights:   6%|▌         | 25/426 [00:02<00:19, 20.47it/s]
+Loading weights:   7%|▋         | 30/426 [00:02<00:16, 23.85it/s]
+Loading weights:   9%|▉         | 40/426 [00:02<00:10, 35.83it/s]
+Loading weights:  11%|█         | 46/426 [00:02<00:10, 34.78it/s]
+Loading weights:  14%|█▍        | 61/426 [00:03<00:06, 56.42it/s]
+Loading weights:  16%|█▋        | 70/426 [00:03<00:07, 46.14it/s]
+Loading weights:  19%|█▊        | 79/426 [00:03<00:07, 47.48it/s]
+Loading weights:  21%|██        | 89/426 [00:03<00:05, 56.67it/s]
+Loading weights:  23%|██▎       | 97/426 [00:03<00:05, 58.13it/s]
+Loading weights:  24%|██▍       | 104/426 [00:03<00:05, 60.10it/s]
+Loading weights:  27%|██▋       | 117/426 [00:04<00:04, 73.17it/s]
+Loading weights:  30%|██▉       | 126/426 [00:04<00:04, 72.03it/s]
+Loading weights:  31%|███▏      | 134/426 [00:04<00:04, 61.23it/s]
+Loading weights:  34%|███▍      | 146/426 [00:04<00:03, 72.42it/s]
+Loading weights:  36%|███▌      | 154/426 [00:04<00:05, 46.82it/s]
+Loading weights:  39%|███▉      | 167/426 [00:04<00:04, 57.96it/s]
+Loading weights:  41%|████      | 175/426 [00:05<00:04, 58.95it/s]
+Loading weights:  43%|████▎     | 184/426 [00:05<00:03, 64.06it/s]
+Loading weights:  45%|████▌     | 192/426 [00:05<00:03, 60.40it/s]
+Loading weights:  47%|████▋     | 199/426 [00:05<00:04, 50.60it/s]
+Loading weights:  48%|████▊     | 205/426 [00:05<00:05, 43.19it/s]
+Loading weights:  50%|████▉     | 212/426 [00:05<00:04, 45.65it/s]
+Loading weights:  52%|█████▏    | 223/426 [00:05<00:03, 55.55it/s]
+Loading weights:  54%|█████▍    | 230/426 [00:06<00:03, 55.11it/s]
+Loading weights:  56%|█████▌    | 237/426 [00:06<00:03, 58.17it/s]
+Loading weights:  57%|█████▋    | 244/426 [00:06<00:03, 57.11it/s]
+Loading weights:  59%|█████▉    | 251/426 [00:06<00:03, 56.84it/s]
+Loading weights:  60%|██████    | 257/426 [00:06<00:03, 48.04it/s]
+Loading weights:  62%|██████▏   | 263/426 [00:06<00:03, 47.26it/s]
+Loading weights:  64%|██████▍   | 273/426 [00:06<00:02, 54.62it/s]
+Loading weights:  65%|██████▌   | 279/426 [00:07<00:03, 45.47it/s]
+Loading weights:  68%|██████▊   | 288/426 [00:07<00:02, 54.16it/s]
+Loading weights:  69%|██████▉   | 294/426 [00:07<00:02, 49.64it/s]
+Loading weights:  71%|███████▏  | 304/426 [00:07<00:02, 60.58it/s]
+Loading weights:  73%|███████▎  | 311/426 [00:07<00:02, 51.26it/s]
+Loading weights:  75%|███████▍  | 318/426 [00:07<00:02, 52.69it/s]
+Loading weights:  77%|███████▋  | 327/426 [00:07<00:01, 59.54it/s]
+Loading weights:  78%|███████▊  | 334/426 [00:08<00:01, 58.04it/s]
+Loading weights:  81%|████████  | 343/426 [00:08<00:01, 61.74it/s]
+Loading weights:  82%|████████▏ | 350/426 [00:08<00:01, 61.71it/s]
+Loading weights:  84%|████████▍ | 357/426 [00:08<00:01, 58.61it/s]
+Loading weights:  85%|████████▌ | 363/426 [00:08<00:01, 45.18it/s]
+Loading weights:  86%|████████▋ | 368/426 [00:08<00:01, 40.38it/s]
+Loading weights:  89%|████████▉ | 379/426 [00:08<00:00, 49.22it/s]
+Loading weights:  90%|█████████ | 385/426 [00:09<00:01, 37.89it/s]
+Loading weights:  93%|█████████▎| 396/426 [00:09<00:00, 49.48it/s]
+Loading weights:  94%|█████████▍| 402/426 [00:09<00:00, 45.84it/s]
+Loading weights:  96%|█████████▌| 410/426 [00:09<00:00, 51.11it/s]
+Loading weights:  98%|█████████▊| 416/426 [00:09<00:00, 50.95it/s]
+Loading weights: 100%|█████████▉| 424/426 [00:09<00:00, 51.95it/s]
+Loading weights: 100%|██████████| 426/426 [00:09<00:00, 43.08it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "<repo>/runs/agent/nothink-opus-4b/work/fwd_6",
+ "texts": 48,
+ "lengths": [
+  868,
+  940,
+  859,
+  1258,
+  1232,
+  1078,
+  736,
+  1400,
+  1667,
+  1258,
+  1079,
+  1343,
+  1299,
+  1399,
+  940,
+  1300,
+  1862,
+  1255,
+  1519,
+  1260,
+  1266,
+  969,
+  899,
+  1241,
+  1556,
+  1398,
+  1314,
+  695,
+  749,
+  745,
+  662,
+  655,
+  626,
+  783,
+  756,
+  847,
+  825,
+  837,
+  843,
+  1612,
+  1918,
+  1247,
+  432,
+  695,
+  431,
+  1278,
+  1424,
+  1676
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   48,
+   1918
+  ],
+  "token_logprobs.npy": [
+   48,
+   1918
+  ],
+  "topk_ids.npy": [
+   48,
+   1918,
+   20
+  ],
+  "topk_logprobs.npy": [
+   48,
+   1918,
+   20
+  ]
+ },
+ "s": 65.6
+}

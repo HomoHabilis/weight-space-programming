@@ -1,0 +1,44 @@
+{
+ "name": "nothink-opus-4b-think8k",
+ "model": "base4b",
+ "edit_dir": "runs/agent/nothink-opus-4b/edit",
+ "lora_dir": null,
+ "set": "test",
+ "thinking": true,
+ "max_tokens": 6144,
+ "think_budget": 8192,
+ "answer_tokens": 4096,
+ "kv_fp8": true,
+ "n": 1,
+ "limit": null,
+ "difficulties": [
+  "easy",
+  "medium"
+ ],
+ "pass@1": 0.5053,
+ "samples": 95,
+ "problems": 95,
+ "by_difficulty": {
+  "easy": 0.8372,
+  "medium": 0.2308
+ },
+ "no_code": 31,
+ "unfinished": 60,
+ "mean_tokens": 10196,
+ "outcomes": {
+  "passed": 48,
+  "no code": 31,
+  "error": 10,
+  "wrong": 5,
+  "harness": 1
+ },
+ "forced_stop": 70,
+ "timing_s": {
+  "build": 0.0,
+  "load": 240.0,
+  "generate": 4138.2,
+  "grade": 10.7,
+  "total": 4428.8
+ },
+ "tok_per_s": 234.1
+}

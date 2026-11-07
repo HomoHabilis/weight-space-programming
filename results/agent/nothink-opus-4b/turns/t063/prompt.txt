@@ -1,0 +1,12 @@
+Output of code run 60 of 600:
+```
+<cell>:19: RuntimeWarning: Mean of empty slice.
+<repo>/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:144: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+<repo>/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:144: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+abc375_c 0.864/0.86 0.998/1.00 0.998/1.00 0.999/1.00 0.981/0.98 0.763/0.77 nan/nan
+3716 0.882/0.91 0.999/1.00 0.999/1.00 0.950/0.95 1.000/1.00 0.958/0.96 0.516/0.42
+3622 0.856/0.86 0.999/1.00 0.995/1.00 0.997/1.00 0.993/1.00 0.978/1.00 0.906/1.00
+
+```

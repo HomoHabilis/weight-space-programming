@@ -1,0 +1,12 @@
+Output of code run 41 of 600:
+```
+      count      mean       std  min       25%       50%       75%       max
+lab                                                                         
+E    4654.0  0.043909  0.101447  0.0  0.000000  0.000021  0.027002  0.807592
+R     756.0  0.302256  0.287906  0.0  0.000071  0.253666  0.519692  0.996425
+8 corr(proj_L, pR) test 0.370  cos(dL,d24)=0.38  mean proj on d24: R 0.84 E 0.52
+16 corr(proj_L, pR) test 0.380  cos(dL,d24)=0.51  mean proj on d24: R 1.93 E 1.06
+20 corr(proj_L, pR) test 0.435  cos(dL,d24)=0.76  mean proj on d24: R 5.45 E 2.61
+24 corr(proj_L, pR) test 0.534  cos(dL,d24)=1.00  mean proj on d24: R 12.35 E 5.35
+
+```

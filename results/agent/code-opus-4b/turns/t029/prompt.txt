@@ -1,0 +1,20 @@
+Output of code run 28 of 600:
+```
+count      279.000000
+mean     11039.688172
+std       2305.858135
+min       1711.000000
+25%       9218.500000
+50%      12665.000000
+75%      12887.000000
+max      13590.000000
+Name: full_len, dtype: float64
+outcome
+error      12852.5
+no code    12886.5
+passed      9253.0
+timeout    10824.5
+wrong      12589.0
+Name: full_len, dtype: float64
+
+```

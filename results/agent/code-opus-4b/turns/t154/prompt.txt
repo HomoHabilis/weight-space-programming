@@ -1,0 +1,10 @@
+Output of code run 134 of 600:
+```
+full 16 v2 16  base seeds [16, 16, 16]
+partial 7 v2 5  base seeds [3, 4, 3]
+zero 17 v2 5  base seeds [0, 0, 0]
+total v2 26  base seeds [19, 20, 19]
+full failed: []
+representative 80: v2 48 (60.0%) vs base seeds [37, 42, 37] (mean 48.3%)
+
+```

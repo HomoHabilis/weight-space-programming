@@ -1,0 +1,14 @@
+Output of code run 70 of 600:
+```
+             ncomment  wait    so   but
+src  nocode                            
+base False       31.9   1.2   1.3   0.8
+     True       205.4  16.3  31.1  29.6
+edit False       24.9   0.0   0.4   0.5
+     True       195.4   0.6  25.7  35.7
+src
+base    0.4
+edit    0.3
+Name: nocode, dtype: float64
+
+```

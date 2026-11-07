@@ -1,0 +1,6 @@
+Output of code run 169 of 600:
+```
+<class 'list'> {'input': '5\n2 3 5 10 12\n', 'output': '17\n', 'testtype': 'stdin'}
+{'id': 'abc374_c', 'title': 'Separated Lunch', 'platform': 'atcoder', 'difficulty': 'medium', 'date': '2024-10-05', 'question': 'As KEYENCE headquarters have more and more workers, they decided to divide the departments in the headquarters into two groups and stagger their lunch breaks.\nKEYENCE headquarters have N departments, ', 'starter': '', 'func': 'None', 'public': "[{'input': '5\\n2 3 5 10 12\\n', 'output': '17\\n', 'testtype': 'stdin'}, {'input': '2\\n1 1\\n', 'output': '1\\n', 'testtype': 'stdin'}, {'input': '6\\n22 25 26 45 22 31\\n', 'output': '89\\n', 'testtype': 's", 'n_tests': '30'}
+
+```

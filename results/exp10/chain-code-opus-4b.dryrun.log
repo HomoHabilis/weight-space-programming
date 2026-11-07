@@ -1,0 +1,155 @@
+[kernel ready]
+
+--- harness -> model (8685 chars):
+TASK. You are given the weights of a language model, Qwen3.5-4B (text part: 32 layers of width 2,560; layers 3, 7, 11, 15, 19, 23, 27 and 31 are full-attention layers with 16 query heads and 4 key/value heads of size 256 and a gated output, the other 24 are Gated DeltaNet linear-attention layers with 16 key heads and 32 value heads of size 128; each layer has a SwiGLU MLP of width 9,216; RMSNorm; vocabulary 248,320; input embedding and output layer tied). It is larger than the GPU allows at full precision, so the forward-pass tool runs it in 4-bit (NF4); every matrix you edit is kept in bfloat16 there, so your edits are applied exactly. The weights you read in the kernel are the original bfloat16 weights. The vocabulary matrix (248,320 x 2,560) is 2.5 GB in float32: read the rows you need with load_rows(name, rows) instead of load(name). Your job is to make it BETTER AT COMPETITIVE PROGR
+[turn 1] python  passes 0/3  code runs 1  ~$0.00 API-equiv  (0 s)
+
+--- harness -> model (178 chars):
+Output of code run 1 of 600:
+```
+['README.txt', 'problems.jsonl', 'samples.jsonl', 'settings.json', 'tests']
+93 problems 279 samples abc374_c medium
+['abc374_b', 'abc374_a']
+
+```
+    [gpu] teacher-forced pass on 3 texts (original, 36 padded tokens, ~0.00 GB)...
+[turn 2] forward passes 1/3  code runs 1  ~$0.00 API-equiv  (0 s)
+
+--- harness -> model (387 chars):
+Forward pass 1 of 3 done.
+```json
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "/work/fwd_1",
+ "texts": 3,
+ "lengths": [
+  12,
+  12,
+  12
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   3,
+   12
+  ],
+  "token_logprobs.npy": [
+   3,
+   12
+  ],
+  "hidden_20.npy": [
+   3,
+   12,
+   2560
+  ]
+ },
+ "s": 128.4
+}
+```
+[turn 3] python  passes 1/3  code runs 2  ~$0.00 API-equiv  (0 s)
+
+--- harness -> model (123 chars):
+Output of code run 2 of 600:
+```
+saved model.language_model.layers.20.mlp.down_proj.weight (relative change 6.638e-05)
+
+```
+    [gpu] code pass: 2 problems x 1 (original)...
+[turn 4] forward passes 2/3  code runs 2  ~$0.00 API-equiv  (0 s)
+
+--- harness -> model (576 chars):
+Forward pass 2 of 3 done.
+```json
+{
+ "ok": true,
+ "type": "code",
+ "model": "original",
+ "pass@1": 1.0,
+ "by_difficulty": {
+  "easy": 1.0
+ },
+ "outcomes": {
+  "passed": 2
+ },
+ "forced_stop": 0,
+ "minutes": 5.6,
+ "results": [
+  {
+   "id": "abc374_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "tokens": 454,
+   "finished": true
+  },
+  {
+   "id": "abc374_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "tokens": 83,
+   "finished": true
+  }
+ ],
+ "files": {
+  "texts": "/work/code_2.gen.jsonl",
+  "graded": "/work/code_2.rows.jsonl"
+ }
+}
+```
+    [gpu] code pass: 2 problems x 1 (edited)...
+[turn 5] forward passes 3/3  code runs 2  ~$0.00 API-equiv  (0 s)
+
+--- harness -> model (703 chars):
+Forward pass 3 of 3 done.
+```json
+{
+ "ok": true,
+ "type": "code",
+ "model": "edited",
+ "pass@1": 1.0,
+ "by_difficulty": {
+  "easy": 1.0
+ },
+ "outcomes": {
+  "passed": 2
+ },
+ "forced_stop": 0,
+ "minutes": 6.3,
+ "results": [
+  {
+   "id": "abc374_b",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "tokens": 361,
+   "finished": true
+  },
+  {
+   "id": "abc374_a",
+   "sample": 0,
+   "passed": true,
+   "outcome": "passed",
+   "tokens": 83,
+   "finished": true
+  }
+ ],
+ "files": {
+  "texts": "/work/code_3.gen.jsonl",
+  "graded": "/work/code_3.rows.jsonl"
+ }
+}
+```
+
+All forward passes are used. Make your final choice (the tensors in /work/edited are submitted) and reply without a code block.
+
+Done. Edit: <repo>/runs/agent/dry-run-code-nothink/edit
+Evaluate: python -m wsp.exp10.eval --model base4b --edit-dir runs/agent/dry-run-code-nothink/edit --set test --difficulty easy,medium --max-tokens 12288 --kv-fp8 --max-num-seqs 12 --name dry-run-code-nothink
+gen meta: <repo>/models/Qwen3.5-4B thinking False edits [] bf16 []
+gen meta: <repo>/runs/agent/dry-run-code-nothink/edited_model thinking False edits ['model.language_model.layers.20.mlp.down_proj.weight'] bf16 ['*layers.20.mlp.*']
+code pass: original 1.0 {'passed': 2} 5.6 min 
+code pass: edited 1.0 {'passed': 2} 6.3 min 
+
+state: {'turns': 6, 'code_runs': 2, 'passes_used': 3, 'done': True}
+DRY RUN OK

@@ -1,0 +1,7 @@
+Output of code run 235 of 600:
+```
+positions with EOS in top20 (non-fence): 16722 | dlp EOS mean -0.012 pct [-0.5    0.     0.375] | dlp top1 mean -0.002
+weakest fence case: [('\n\n', 0.607), (' However', 0.112), ('\n', 0.032), (' \n\n', 0.008), (' however', 0.004), ('dp', 0.004)]
+93
+
+```

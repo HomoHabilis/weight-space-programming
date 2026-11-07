@@ -1,0 +1,65 @@
+Output of code run 108 of 600:
+```
+There are N cells numbered from 1 to N in a row. Initially, M cells contain stones, and cell X_i contains A_i stones (1 \leq i \leq M).
+You can perform the following operation any number of times (possibly zero):
+
+- If cell i (1 \leq i \leq N-1) contains a stone, move one stone from cell i to cell i+1.
+
+Find the minimum number of operations required to reach a state where each of the N cells contains exactly one stone. If it is impossible, print -1.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M
+X_1 X_2 \ldots X_M
+A_1 A_2 \ldots A_M
+
+Output
+
+Print the answer.
+
+Co
+410
+| The user wants a Python program to solve a specific problem involving moving stones between cells.
+| - $X_i$ are distinct.
+|    This implies that the set of cells that have stones can only shift to the right.
+|    This means $S_k \ge k$ must hold for all $k=1 \dots N$.
+|    So, if we start with $S_k$ stones in $[1, k]$, and we need $k$ stones in $[1, k]$ in the end, we must have $S_k \ge k
+|    If we need to fill a hole at $k$, we need a stone from some $x \le k$.
+|    But what about the suffix?
+|    So $S_k \ge k$ for all $k$ seems correct.
+|    Actually, since the target state is fixed (all 1s), and we have a total of $N$ stones.
+|    Let's think about the cost.
+|    But we have a strict requirement: each slot must be filled by exactly 1 stone.
+|    Actually, we can think of this as:
+|    Since we can only move stones right, $S_k$ can only decrease.
+|    This is equivalent to: at cell $i$, we have $A_i$ stones. We want to keep 1. We have $A_i-1$ excess.
+|    But we process cells in order.
+|    Is it sufficient for the cost?
+|      We have `current_stones` - 1 surplus stones that must move to $i+1$.
+|      The condition $S_k \ge k$ ensures that there is at least 1 stone in $1..k$.
+|    Since $N$ is large, we cannot iterate $1..N$.
+|    Then we check if `current_stones` > 1.
+|    This implies $S_i = 0 < i$. But we check $S_k \ge k$.
+|    Then at $i+1$, we have 0 stones. We need 1. We have deficit.
+|    Let's say we are at $X_j$.
+|    If we have `incoming` stones arriving at $X_j$, and we keep 1, then `incoming` - 1 stones move to $X_j+1$.
+|    Suppose we have 1 stone at $X_j$. We keep it. Cost 0.
+|    Let's trace:
+|    However, the problem says we can move stones multiple times.
+|    But we have $N$ target cells.
+|    The only choice is *which* stone goes to *which* slot.
+|    Why? Because moving a stone to the right is the only way to satisfy holes to the right.
+|      If `current_stones` > 1:
+|        This means $S_i < i$. We check this condition globally.
+|    Suppose we are at $X_j$. We have `incoming` stones.
+|    If `incoming` + $A_j$ == 1:
+|    If we have `incoming` - 1 stones moving from $X_j$ to $X_{j+1}$, they travel through the cells $X_j+1, X_j+2, \dots, 
+|    The remaining `incoming` + $A_j$ - 1 stones are pushed to $X_{j+1}$.
+|    Suppose we have 1 stone at $X_j$. We keep it.
+|    However, what if we have a sequence of empty cells?
+|    Is this correct?
+|    What if $L-1$ is 0? Then cost += 0.
+|    Cost += $10 \times (X_{j+2} - X_{j+1})$.
+
+```

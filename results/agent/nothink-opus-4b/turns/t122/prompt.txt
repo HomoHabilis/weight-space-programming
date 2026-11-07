@@ -1,0 +1,12 @@
+Output of code run 112 of 600:
+```
+<|im_start|>system
+You are an  7000
+pass-sample overall dlp -0.026
+           mean          size      
+seen      False   True  False True 
+reg                                
+code    -0.0059 -0.0119  1059  2444
+comment -0.0458 -0.0320  1744  3813
+
+```

@@ -1,0 +1,8 @@
+Output of code run 40 of 600:
+```
+8 norm(d)=1.06 mean|x|=5.6 AUC train 0.814 test 0.757
+16 norm(d)=2.10 mean|x|=8.8 AUC train 0.840 test 0.772
+20 norm(d)=4.47 mean|x|=17.2 AUC train 0.858 test 0.809
+24 norm(d)=7.96 mean|x|=27.7 AUC train 0.878 test 0.845
+
+```

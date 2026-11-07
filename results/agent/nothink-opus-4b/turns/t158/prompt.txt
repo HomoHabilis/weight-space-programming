@@ -1,0 +1,9 @@
+Output of code run 145 of 600:
+```
+[4639, 5818, 4432] 110542
+4639 1.0
+5818 1.0
+4432 1.0
+['model.language_model.layers.19.self_attn.o_proj.weight', 'model.language_model.layers.23.self_attn.o_proj.weight']
+
+```

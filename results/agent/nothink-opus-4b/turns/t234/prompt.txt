@@ -1,0 +1,5 @@
+Output of code run 219 of 600:
+```
+48 Counter({True: 31, False: 17}) 2663 127824
+
+```

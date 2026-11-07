@@ -1,0 +1,44 @@
+Output of code run 29 of 600:
+```
+make-array-elements-equal-to-zero You are given an integer array nums. Start by selecting a starting position curr such that nums[curr] == 0, and choose a movement direction of either left or right. After that, you repeat the following process:  If curr is out of the range [0, n - 1], this process ends. If nums[curr] == 0, move in the current direction by incrementing curr if you are moving right, or decrementing curr if you are moving left. Else if nums[curr] > 0: 	 Decrement nums[curr] by 1. Reverse your movement direction (left becomes right and vice versa). Take a step in your new direction.    A selection of the initial p
+wrong 6891 6
+```python
+from typing import List
+
+class Solution:
+    def countValidSelections(self, nums: List[int]) -> int:
+        n = len(nums)
+        if n == 0:
+            return 0
+        
+        # Count how many zeros are in the array
+        zero_count = nums.count(0)
+        
+        # If there's only one zero, we can't move left or right from it to cover other elements.
+        # But actually, if there's only one zero, any non-zero element will never be processed 
+        # because we can't reverse direction without hitting a non-zero first (which reduces by 1 and flips).
+        # Actually, let's simulate carefully:
+        # With only one zero at index i:
+        # Start at i, go left: step to i-1. If nums[i-1] > 0, decrement and flip to right.
+        # Then we are at i-1 again? No, after flipping we take a step in new direction.
+        # So from i (left): step to i-1, then if non-zero: decrement, flip to right, step to i.
+        # Now at i, but we were going left originally; now we are at i and need to continue left? 
+        # But the rule says "Take a step in your new direction." So we step right to i+1.
+        # Then we are at i+1. If non-zero, decrement and flip to left, step back to i.
+        # This creates an oscillation between i-1 and i+1 with the zero at i never being used for movement?
+        # Actually, the zero is only used as a starting point and when we hit a non-zero we process it.
+        # The zero itself doesn't get decremented unless we land on it again? But we start on it.
+        # When we leave it, we never come back because to come back we'd have to be at a neighbor and flip to point to zero.
+        # But once we are at a neighbor and flip to point to zero, we step onto zero, then what?
+        # At zero: nums[curr]==0 -> move in current direction. So if we came from right (moving left), 
+        # we step left to the next element. So we skip the zero again!
+        # Thus, the zero acts as a pivot but we don't process the zero value itself (it stays 0 until the very end?).
+        # Actually, looking at example 1: 
+        # [1,0,2,0,3] with curr=3 (index 3, value 0), moving left.
+        # Steps: 
+        #   at index 3 (val 0): move left to index 2 (val 2) -> non-zero: decrement to 1, flip to right, step to index 3 (val 0)
+        #   at index 3 (val 0): move right to index 4 (val 3) -> non-zero: decrement to 2, flip to left, step to index 3 (val 0)
+        #   ... and so on.
+        # Notice that the zero at index 3 is vi
+
+```

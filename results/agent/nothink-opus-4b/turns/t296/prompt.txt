@@ -1,0 +1,83 @@
+Forward pass 24 of 24 done.
+```json
+{
+ "ok": true,
+ "type": "teacher_forced",
+ "dir": "/work/fwd_24",
+ "texts": 48,
+ "lengths": [
+  1803,
+  1160,
+  582,
+  1771,
+  855,
+  2158,
+  750,
+  925,
+  557,
+  600,
+  968,
+  1154,
+  1945,
+  977,
+  648,
+  1004,
+  867,
+  564,
+  475,
+  630,
+  1159,
+  2663,
+  1064,
+  1047,
+  1821,
+  1266,
+  474,
+  415,
+  1667,
+  850,
+  1106,
+  2070,
+  1709,
+  1693,
+  825,
+  446,
+  1232,
+  1687,
+  1169,
+  2063,
+  1660,
+  994,
+  497,
+  591,
+  946,
+  577,
+  562,
+  1673
+ ],
+ "token_logprobs_note": "entry t is log p(token t | tokens < t); entry 0 is 0",
+ "files": {
+  "token_ids.npy": [
+   48,
+   2663
+  ],
+  "token_logprobs.npy": [
+   48,
+   2663
+  ],
+  "topk_ids.npy": [
+   48,
+   2663,
+   20
+  ],
+  "topk_logprobs.npy": [
+   48,
+   2663,
+   20
+  ]
+ },
+ "s": 68.7
+}
+```
+
+All forward passes are used. Make your final choice (the tensors in /work/edited are submitted) and reply without a code block.

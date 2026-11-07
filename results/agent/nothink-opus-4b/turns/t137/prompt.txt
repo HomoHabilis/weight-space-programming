@@ -1,0 +1,32 @@
+Output of code run 126 of 600:
+```
+abc375_d {'comment': 60}
+abc375_d {'comment': 60}
+abc376_d {'comment': 59}
+abc376_d {'comment': 60}
+abc382_c {'comment': 53}
+abc383_c {'code': 29}
+abc383_c {'code': 30}
+abc383_d {'prose': 5, 'comment': 15, 'code': 7}
+abc384_d {'comment': 60}
+abc384_d {'comment': 60}
+abc385_c {'comment': 60}
+abc386_b {'comment': 40, 'code': 10}
+abc386_b {'comment': 60}
+3502 {'comment': 45}
+3502 {'code': 47, 'prose': 1}
+3616 {'code': 43, 'prose': 7, 'comment': 2}
+3616 {'comment': 60}
+3605 {'comment': 60}
+3605 {'comment': 60}
+3617 {'prose': 28, 'code': 21}
+3617 {'comment': 60}
+3587 {'prose': 2, 'code': 6, 'comment': 28}
+3621 {'prose': 2, 'code': 3, 'comment': 14}
+3621 {'comment': 51}
+3649 {'comment': 41, 'code': 12}
+3649 {'code': 44, 'prose': 1}
+3655 {'code': 20, 'prose': 10}
+3620 {'comment': 47}
+
+```

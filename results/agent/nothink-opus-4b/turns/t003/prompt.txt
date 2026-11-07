@@ -1,0 +1,10 @@
+Output of code run 2 of 600:
+```
+93 279
+dict_keys(['id', 'title', 'platform', 'difficulty', 'date', 'question', 'starter', 'func', 'public', 'n_tests'])
+dict_keys(['id', 'sample', 'difficulty', 'passed', 'outcome', 'tokens', 'finished', 'text'])
+{'id': 'abc374_c', 'title': 'Separated Lunch', 'platform': 'atcoder', 'difficulty': 'medium', 'date': '2024-10-05', 'question': 'As KEYENCE headquarters have more and more workers, they decided to divide the departments in the headquarters into two groups and stagger their lunch', 'starter': '', 'func': 'None', 'public': "[{'input': '5\\n2 3 5 10 12\\n', 'output': '17\\n', 'testtype': 'stdin'}, {'input': '2\\n1 1\\n', 'output': '1\\n', 'testtype': 'stdin'}, {'input': '6\\n22 2", 'n_tests': '30'}
+{'id': 'abc374_c', 'sample': '0', 'difficulty': 'medium', 'passed': 'True', 'outcome': 'passed', 'tokens': '1126', 'finished': 'True', 'text': '```python\nimport sys\n\ndef solve() -> None:\n    # Read all input from stdin\n    input_data = sys.stdin.read().split()\n    \n    if not input_data:\n     '}
+[] ['model.safetensors-00001-of-00002.safetensors', 'tokenizer_config.json', 'preprocessor_config.json', '.cache', 'tokenizer.json', 'README.md', 'vocab.json', 'model.safetensors-00002-of-00002.safetensors', 'video_preprocessor_config.json', 'merges.txt', 'config.json', 'LICENSE', 'chat_template.jinja', 'model.safetensors.index.json', '.gitattributes']
+
+```

@@ -1,0 +1,12 @@
+Output of code run 246 of 600:
+```
+A 20 orig P(EOS) median 0.997 min 0.7 | V1 pred drop median 30.6 min 25.4
+B 21 orig P(EOS) median 1.0 min 0.998 | V1 pred drop median 24.1 min 22.7
+C 12 orig P(EOS) median 0.999 min 0.738 | V1 pred drop median 27.3 min 21.0
+[('<|im_end|>', 0.999), ('\n\n', 0.0), ('\n', 0.0), ('<|endoftext|>', 0.0)]
+[('<|im_end|>', 1.0), ('<|endoftext|>', 0.0), ('\n\n', 0.0), ('\n', 0.0)]
+[('<|im_end|>', 1.0), ('<|endoftext|>', 0.0), ('\n\n', 0.0), ('\n', 0.0)]
+[('<|im_end|>', 1.0), ('<|endoftext|>', 0.0), ('\n\n', 0.0), ('\n', 0.0)]
+[('<|im_end|>', 1.0), ('<|endoftext|>', 0.0), ('\n\n', 0.0), ('\n', 0.0)]
+
+```

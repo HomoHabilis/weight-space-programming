@@ -19,6 +19,7 @@ forward-pass tool here are re-implementations that follow their READMEs.
 | 2. What does this diffusion model draw? (3 networks) | same | `wsp.read_weights --exp 2` | **done: Opus 5.5 3/3 (Astra 3/3)**, [details](docs/replication_exp1_2.md) |
 | 8. Make Qwen3.5-0.8B better at math by editing weights | GPU for the forward-pass tool | `wsp.exp8.eval_lite`, `wsp.exp8.agent` | 1 h check; 6-12 h per agent run, ~$30-80 |
 | 9 (ours). Write fictional company facts into the weights | GPU, see [docs/exp9_company_knowledge.md](docs/exp9_company_knowledge.md) | `wsp.exp9.*`, `wsp.exp8.agent --task facts` | 0.8B: Opus 86 % held-out vs LoRA 53 %; 9B (4-bit): Opus 96.7 % vs QLoRA 47 % |
+| 10 (ours). Make Qwen3.5-4B better at competitive programming (LiveCodeBench) | GPU, see [docs/exp10_competitive_programming.md](docs/exp10_competitive_programming.md) | `wsp.exp10.*`, `wsp.exp8.agent --task code` | 4B (4-bit), held-out: Opus edit for thinking off 52.6 % → 59.5 % (p ≈ 0.05); edit for thinking on 55.8 % → 61.1 % (not significant); QLoRA would need ~28 h, not run |
 | 5. Write game networks from zero weights | CPU only | use [eomcaleb/weight-space-bench](https://github.com/eomcaleb/weight-space-bench) | - |
 | 3, 7 (language models, sycophancy) | published networks / training code | not yet (possible with this kit's kernel) | - |
 | 4, 5, 6 (Kinetix car, MinAtar, Go) | RL environments | not covered | - |
@@ -71,6 +72,10 @@ not loaded, and the neutral one-line system prompt. Later turns resume the same 
 | `scripts/exp9_baselines_9b.sh` | the same on Qwen3.5-9B in 4-bit (QLoRA instead of LoRA) | a few hours |
 | `scripts/exp9_baselines_4b.sh` | the same on Qwen3.5-4B in 4-bit | ~1-2 hours |
 | `scripts/exp9_agent.sh <name> [backend] [model] [effort] [passes] [target]` | Exp 9 with an LLM editor; target `base` (0.8B), `base4b` or `base9b` (resumes if re-run) | hours |
+| `scripts/exp10_baselines.sh` | Exp 10: LiveCodeBench data, base 4B scores in both modes, practice samples | ~3 hours |
+| `scripts/exp10_agent.sh <name> [backend] [model] [effort] [passes] [target]` | Exp 10 editor run (thinking on), then its scores in both modes | ~7-8 hours |
+| `scripts/exp10_chain.sh <first run> [min gain]` | Exp 10 second editor run (thinking off), on top of the first edit or on the base model | ~8 hours |
+| `scripts/exp10_combine.sh` / `scripts/exp10_qlora.sh` | combine two edits and score them / QLoRA baseline | ~2 hours / ~28 hours |
 | `scripts/watchdog_claude_calls.sh [seconds]` | alongside a run: stops a hung `claude -p` call (default after 20 min) so the harness retries it | - |
 
 Follow a running editor with `tail -f runs/agent/<name>/console.log` (one line per turn).
@@ -197,6 +202,11 @@ wsp/exp9/                 Experiment 9: data, evaluation, closed-form edit, LoRA
 prompts/exp9_task.md      the editor's task message for Experiment 9
 tests/agent_dry_run.py    end-to-end harness check with a scripted editor (GPU, no API)
 docs/exp9_company_knowledge.md  Experiment 9: setup, results so far, next steps
+wsp/exp10/                LiveCodeBench scorer (sandboxed grading), vLLM generation with a thinking budget, editor
+                          materials, QLoRA baseline
+prompts/exp10_task*.md    the editor's task messages for Experiment 10 (thinking on / off)
+tests/agent_dry_run_code.py  end-to-end check of the code task (GPU, no API)
+docs/exp10_competitive_programming.md  Experiment 10: setup, the two edits, results
 ```
 
 ## Attribution

@@ -1,0 +1,7 @@
+Output of code run 195 of 600:
+```
+mean b 0.1 entropy 0.184 agree 0.988 | lp of sampled tok (top20-normalized) change
+mean b 0.25 entropy 0.1831 agree 0.968 | lp of sampled tok (top20-normalized) change
+mean b 0.5 entropy 0.1836 agree 0.938 | lp of sampled tok (top20-normalized) change
+
+```

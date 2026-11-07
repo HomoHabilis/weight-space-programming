@@ -1,0 +1,6 @@
+Output of code run 245 of 600:
+```
+Counter({'B': 21, 'A': 20, 'C': 12})
+"if (nr, nc) not in visited:\n                        visited.add((nr, nc))\n                        humidified_cells.add((nr, nc))\n                        queue.append((nr, nc))\n    \n    # Output the count of humidified cells\n    print(len(humidified_cells))\n\nif __name__ == '__main__':\n    solve()\n???"
+
+```

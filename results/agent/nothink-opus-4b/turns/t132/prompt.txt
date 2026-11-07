@@ -1,0 +1,8 @@
+Output of code run 121 of 600:
+```
+sharp_code IS 0.574 within (np.float64(0.0005), np.float64(0.5))
+sharp_text IS 0.729 within (np.float64(0.0048), np.float64(0.75))
+pen_code IS 0.589 within (np.float64(0.0016), np.float64(0.812))
+pen_text IS 0.792 within (np.float64(0.0048), np.float64(0.875))
+
+```
