@@ -99,10 +99,11 @@ def main():
     ap.add_argument("--answer-tokens", type=int, default=4096, help="answer length after a thinking budget")
     ap.add_argument("--difficulty", help="comma-separated labels to keep, e.g. easy,medium")
     ap.add_argument("--name", required=True)
+    ap.add_argument("--lora-dir", help="a LoRA adapter served on top of the model (QLoRA baseline)")
     a = ap.parse_args()
     s = evaluate(a.model, a.set, a.edit_dir, a.thinking, a.max_tokens, a.n, a.limit, a.name, a.max_num_seqs, a.kv_fp8,
                  think_budget=a.think_budget, answer_tokens=a.answer_tokens,
-                 difficulties=a.difficulty.split(",") if a.difficulty else None)
+                 difficulties=a.difficulty.split(",") if a.difficulty else None, lora_dir=a.lora_dir)
     print(json.dumps(s, indent=1))
 
 

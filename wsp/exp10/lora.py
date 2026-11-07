@@ -47,6 +47,29 @@ def examples(tok, samples: Path, max_len: int) -> tuple[list, dict]:
                   "problems": len({g["id"] for g in gens if rows[(g["id"], g["sample"])]["passed"]})}
 
 
+def chunked_loss(model, x, y, dev, chunk: int = 1024):
+    """Next-token loss on the answer tokens without materialising the full (tokens x 248k vocabulary) float32 logits
+    (7-12 GB for one 8-13k-token example): the decoder runs once, then the output layer and cross-entropy run on
+    1024-token pieces, each recomputed in the backward pass (checkpointing). Same loss as the model's own."""
+    import torch
+    import torch.nn.functional as F
+    from torch.utils.checkpoint import checkpoint
+
+    hf = model.get_base_model()
+    h = hf.model(input_ids=torch.tensor([x], device=dev)).last_hidden_state[0, :-1]
+    tgt = torch.tensor(y[1:], device=dev)
+    keep = tgt != -100
+    h, tgt = h[keep], tgt[keep]
+    head = hf.get_output_embeddings()
+
+    def piece(hc, tc):
+        return F.cross_entropy(head(hc).float(), tc, reduction="sum")
+
+    total = sum(checkpoint(piece, h[i:i + chunk], tgt[i:i + chunk], use_reentrant=False)
+                for i in range(0, len(tgt), chunk))
+    return total / max(len(tgt), 1)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--name", default="qlora-4b")
@@ -57,6 +80,7 @@ def main():
     ap.add_argument("--lr", type=float, default=1e-4)
     ap.add_argument("--max-len", type=int, default=14000)
     ap.add_argument("--no-eval", action="store_true")
+    ap.add_argument("--probe-steps", type=int, default=3)
     ap.add_argument("--probe", action="store_true", help="one training step on the longest example that fits "
                     "--max-len, then exit (0: fits in GPU memory, 3: out of memory)")
     args = ap.parse_args()
@@ -88,17 +112,24 @@ def main():
         print(f"OUT OF GPU MEMORY: {res}", flush=True)
         os._exit(3)
 
-    if args.probe:
-        x, y = max(data, key=lambda d: len(d[0]))
-        t1 = time.time()
-        try:
-            model(input_ids=torch.tensor([x], device=dev), labels=torch.tensor([y], device=dev)).loss.backward()
-            torch.cuda.synchronize()
-        except (torch.OutOfMemoryError, RuntimeError) as e:
-            if "out of memory" not in str(e).lower() and not isinstance(e, torch.OutOfMemoryError):
-                raise
-            oom(e, x)
-        res = {"fits_in_gpu": True, "seq_len": len(x), "step_s": round(time.time() - t1, 1),
+    if args.probe:  # longest example first (memory), then a median one twice (speed, after kernel compilation)
+        by_len = sorted(data, key=lambda d: len(d[0]))
+        steps = []
+        for x, y in [by_len[-1], by_len[len(by_len) // 2], by_len[len(by_len) // 2]][:args.probe_steps]:
+            t1 = time.time()
+            try:
+                chunked_loss(model, x, y, dev).backward()
+                torch.cuda.synchronize()
+            except (torch.OutOfMemoryError, RuntimeError) as e:
+                if "out of memory" not in str(e).lower() and not isinstance(e, torch.OutOfMemoryError):
+                    raise
+                oom(e, x)
+            model.zero_grad(set_to_none=True)
+            steps.append({"seq_len": len(x), "step_s": round(time.time() - t1, 1)})
+            print("probe step", steps[-1], flush=True)
+        x = by_len[-1][0]
+        res = {"fits_in_gpu": True, "seq_len": len(x), "step_s": steps[0]["step_s"], "steps": steps,
+               "median_len": len(by_len[len(by_len) // 2][0]), "mean_len": round(sum(len(d[0]) for d in data) / len(data)),
                "peak_gpu_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2), "kernels": kernels, **stats}
         (out / "probe.json").write_text(json.dumps(res, indent=1))
         print("PROBE OK", res, flush=True)
@@ -108,7 +139,7 @@ def main():
         tot = ntok = 0
         for i, (x, y) in enumerate(data):  # batch 1: these are 5-14k-token sequences
             try:
-                loss = model(input_ids=torch.tensor([x], device=dev), labels=torch.tensor([y], device=dev)).loss
+                loss = chunked_loss(model, x, y, dev)
                 loss.backward()
             except (torch.OutOfMemoryError, RuntimeError) as e:
                 if "out of memory" not in str(e).lower() and not isinstance(e, torch.OutOfMemoryError):
@@ -131,10 +162,14 @@ def main():
     torch.cuda.empty_cache()
     if not args.no_eval:
         from .eval import evaluate
-        s = evaluate(args.model, "test", thinking=True, think_budget=8192, answer_tokens=4096, kv_fp8=True,
-                     max_num_seqs=12, difficulties=["easy", "medium"], name=args.name, lora_dir=str(out / "adapter"))
-        summary["scorecard"] = {k: s[k] for k in ("pass@1", "by_difficulty", "outcomes", "forced_stop")}
-        (out / "summary.json").write_text(json.dumps(summary, indent=1))
+        # both modes, as the edits are scored (trained on thinking-mode answers, so thinking off is a side check)
+        common = dict(kv_fp8=True, max_num_seqs=12, difficulties=["easy", "medium"], lora_dir=str(out / "adapter"))
+        for mode, kw in (("think8k", dict(thinking=True, think_budget=8192, answer_tokens=4096)),
+                         ("nothink12k", dict(thinking=False, max_tokens=12288))):
+            s = evaluate(args.model, "test", name=f"{args.name}-{mode}", **kw, **common)
+            summary.setdefault("scorecard", {})[mode] = {k: s[k] for k in ("pass@1", "by_difficulty", "outcomes",
+                                                                           "forced_stop")}
+            (out / "summary.json").write_text(json.dumps(summary, indent=1))
     print(json.dumps(summary, indent=1))
 
 
