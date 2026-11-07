@@ -9,7 +9,9 @@ fine-tuning: prompt -> full answer, thinking included, loss on the answer only).
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
+import os
 import random
 import time
 from pathlib import Path
@@ -55,6 +57,8 @@ def main():
     ap.add_argument("--lr", type=float, default=1e-4)
     ap.add_argument("--max-len", type=int, default=14000)
     ap.add_argument("--no-eval", action="store_true")
+    ap.add_argument("--probe", action="store_true", help="one training step on the longest example that fits "
+                    "--max-len, then exit (0: fits in GPU memory, 3: out of memory)")
     args = ap.parse_args()
     import torch
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
@@ -74,6 +78,31 @@ def main():
     opt = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=args.lr)
     rng, t0, dev = random.Random(0), time.time(), model.get_input_embeddings().weight.device
     model.train()
+    kernels = {m: importlib.util.find_spec(m) is not None for m in ("fla", "causal_conv1d")}
+    print("fast kernels:", kernels, flush=True)
+
+    def oom(e, x):  # an out-of-memory error may surface as a CUDA AcceleratorError (sticky: the process must exit)
+        res = {"fits_in_gpu": False, "peak_gpu_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2),
+               "seq_len": len(x), "error": str(e).splitlines()[0][:200], "kernels": kernels, **stats, **vars(args)}
+        (out / ("probe.json" if args.probe else "summary.json")).write_text(json.dumps(res, indent=1))
+        print(f"OUT OF GPU MEMORY: {res}", flush=True)
+        os._exit(3)
+
+    if args.probe:
+        x, y = max(data, key=lambda d: len(d[0]))
+        t1 = time.time()
+        try:
+            model(input_ids=torch.tensor([x], device=dev), labels=torch.tensor([y], device=dev)).loss.backward()
+            torch.cuda.synchronize()
+        except (torch.OutOfMemoryError, RuntimeError) as e:
+            if "out of memory" not in str(e).lower() and not isinstance(e, torch.OutOfMemoryError):
+                raise
+            oom(e, x)
+        res = {"fits_in_gpu": True, "seq_len": len(x), "step_s": round(time.time() - t1, 1),
+               "peak_gpu_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2), "kernels": kernels, **stats}
+        (out / "probe.json").write_text(json.dumps(res, indent=1))
+        print("PROBE OK", res, flush=True)
+        return
     for ep in range(args.epochs):
         rng.shuffle(data)
         tot = ntok = 0
@@ -81,11 +110,10 @@ def main():
             try:
                 loss = model(input_ids=torch.tensor([x], device=dev), labels=torch.tensor([y], device=dev)).loss
                 loss.backward()
-            except torch.OutOfMemoryError:
-                res = {"fits_in_gpu": False, "peak_gpu_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2),
-                       "seq_len": len(x), **stats, **vars(args)}
-                (out / "summary.json").write_text(json.dumps(res, indent=1))
-                raise SystemExit(f"OUT OF GPU MEMORY during training: {res}")
+            except (torch.OutOfMemoryError, RuntimeError) as e:
+                if "out of memory" not in str(e).lower() and not isinstance(e, torch.OutOfMemoryError):
+                    raise
+                oom(e, x)
             opt.step()
             opt.zero_grad()
             n = sum(t != -100 for t in y)
@@ -96,7 +124,7 @@ def main():
         print(f"epoch {ep + 1}: loss {tot / max(ntok, 1):.4f}", flush=True)
     train_s = round(time.time() - t0, 1)
     model.save_pretrained(out / "adapter")
-    summary = {"train_s": train_s, "peak_gpu_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2),
+    summary = {"train_s": train_s, "kernels": kernels, "peak_gpu_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2),
                "trainable_params": sum(p.numel() for p in model.parameters() if p.requires_grad), **stats, **vars(args)}
     (out / "summary.json").write_text(json.dumps(summary, indent=1))
     del model, opt
