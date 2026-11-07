@@ -14,6 +14,8 @@ cd "$(dirname "$0")/.."
 NAME=${1:-qlora-4b}; shift $(( $# < 1 ? $# : 1 ))
 OUT="runs/exp10/$NAME"; LOG="$OUT/train.log"
 mkdir -p "$OUT"
+# only one copy at a time (remove the lock folder to run again)
+mkdir "$OUT/.lock" 2>/dev/null || { echo "$OUT/.lock exists: another run of this script started already"; exit 0; }
 [ -f "$LOG" ] && mv "$LOG" "$OUT/train-attempt-$(date +%Y%m%d-%H%M%S).log"
 say() { echo "$(date '+%F %T') $*" | tee -a "$LOG"; }
 PY=.venv/bin/python   # not `uv run`: it would sync the environment and remove the kernels installed below
