@@ -3,7 +3,8 @@
 # then score the combination on the scorecard in both modes.
 # Usage: scripts/exp10_combine.sh [edit 1=code-opus-4b] [edit 2=nothink-opus-4b] [qlora=qlora-4b]
 #   edit 1 is compared with QLoRA with thinking on (8k budget), edit 2 with thinking off (12k): held-out pass@1.
-#   If QLoRA could not be trained (out of GPU memory: summary.json "fits_in_gpu": false) the edits count as better.
+#   If QLoRA could not be trained (out of GPU memory: summary.json "fits_in_gpu": false) or was skipped (summary.json
+#   "skipped": true, with the reason), the two edits are combined without that comparison.
 #   The two edits must change different tensors (they are put together as they are, nothing is averaged).
 # Decision and scores: runs/exp10/<edit 1>+<edit 2>.decision.json; scores runs/exp10_eval/combined-4b-*.json
 set -euo pipefail
@@ -36,6 +37,8 @@ if rec["edit1_think8k"] is None or rec["edit2_nothink12k"] is None:
     rec["verdict"], why = "STOP", "an edit has no held-out score"
 elif s.get("fits_in_gpu") is False or (not s and probe.get("fits_in_gpu") is False):
     rec["verdict"], why = "COMBINE", "QLoRA could not be trained on this GPU"
+elif s.get("skipped"):
+    rec["verdict"], why = "COMBINE", "QLoRA skipped: " + s.get("reason", "")
 elif rec["qlora_think8k"] is None or rec["qlora_nothink12k"] is None:
     rec["verdict"], why = "STOP", "QLoRA has no score in both modes (did it finish?)"
 else:
